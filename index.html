@@ -267,27 +267,21 @@
             deforming scene using photos/videos captured casually from mobile phones.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            As opposed to evaluating computation and logic-based reasoning, current benchmarks for evaluating large language models (LLMs) in medicine are primarily
+            focused on question-answering involving domain knowledge and descriptive reasoning. While such qualitative capabilities are vital to medical diagnosis, in realworld scenarios, doctors frequently use clinical calculators that follow quantitative
+            equations and rule-based reasoning paradigms for evidence-based decision support.
+            To this end, we propose MEDCALC-BENCH, a first-of-its-kind dataset focused
+            on evaluating the medical calculation capability of LLMs. MEDCALC-BENCH
+            contains an evaluation set of over 1000 manually reviewed instances from 55 different medical calculation tasks. Each instance in MEDCALC-BENCH consists of a
+            patient note, a question requesting to compute a specific medical value, a ground
+            truth answer, and a step-by-step explanation showing how the answer is obtained.
+            While our evaluation results show the potential of LLMs in this area, none of them
+            are effective enough for clinical settings. Common issues include extracting the
+            incorrect entities, not using the correct equation or rules for a calculation task,
+            or incorrectly performing the arithmetic for the computation. We hope our study
+            highlights the quantitative knowledge and reasoning gaps in LLMs within medical
+            settings, encouraging future improvements of LLMs for various clinical calculation
+            tasks.            
           </p>
         </div>
       </div>
