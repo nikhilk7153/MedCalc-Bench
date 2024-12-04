@@ -206,56 +206,62 @@
         <div class="content has-text-justified">
           <p>
             MedCalc-Bench covers 55 different calculators. These were all listed as "popular" on MDCalc,
-            the most commonly used online medical calculator website by clinicians [9]. As shown in Figure
-            1, they fall into two major categories, rule-based calculation (19 calculators) and equation-based
-            calculation (36 calculators). Rule-based calculators typically contain a list of criteria, where each criterion is a condition of a
-            specific medical attribute. An instance of this would be the HEART score calculator [43], which takes
+            the most commonly used online medical calculator website by clinicians. As shown in the figure below, 
+            they fall into two major categories, rule-based calculation (19 calculators) and equation-based
+            calculation (36 calculators). 
+
+            Rule-based calculators typically contain a list of criteria, where each criterion is a condition of a
+            specific medical attribute. An instance of this would be the HEART score calculator, which takes
             in both numerical attributes such as the patient's age (e.g., if the patient is older than 65 years, add
             two points; if the patient's age is between 45 and 64, add one point; and zero points otherwise) and
             categorical variables such as the presence of significant ST elevation (adding two points if present;
             zero points otherwise). The final answer for these calculators will be a discrete value after taking the
-            sum of the sub-scores.Like rule-based calculators, equation-based calculators also take in both categorical (e.g., gender, race)
+            sum of the sub-scores.
+
+            Like rule-based calculators, equation-based calculators also take in both categorical (e.g., gender, race)
             and numerical variables (e.g., creatinine concentration, age, and height). However, equation-based
             calculators follow a specific formula to output a decimal, date, or time given the attributes instead of
             additively combining sub-scores for each criterion. An instance of an equation-based calculator would
-            be the MDRD GRF equation [26]. This equation computes the patient's eGFR, which is a function
+            be the MDRD GRF equation. This equation computes the patient's eGFR, which is a function
             of the patient's gender and race as coefficients in addition to the patient's creatinine concentration.
+
             The only equation-based calculators which do not output a decimal are Estimated Due Date (EDD),
             Estimated Date of Conception (EDC), and Estimated Gestational Age (EGA). These three calculators
-            compute a date (for EDC, EGA) or a time (for EGA) instead.For each instance, MedCalc-Bench also provides a natural language explanation for how the
-            final answer is computed. We implement template-based explanation generators for each of the 55
-            calculators. These templates first list the numerical and categorical variable values, and then plug
-            them in to show how the final answers are obtained. 
+            compute a date (for EDC, EGA) or a time (for EGA) instead. For each instance, MedCalc-Bench also 
+            provides a natural language explanation for how the final answer is computed. We implement 
+            template-based explanation generators for each of the 55 calculators. These templates first list the 
+            numerical and categorical variable values, and then plug them in to show how the final answers are obtained. 
           </p>
 
           <p>
             Our dataset evaluates three distinct capabilities required for medical calculation:
 
-            (1) Recall of medical calculation knowledge. The first required capability is to successfully recall
-            the formulas from seven different domains shown in Table 1. As mentioned above, medical calculators
-            can have various sub-types with varying number of attributes. Hence, LLMs are challenged to know
+            (1) Recall of medical calculation knowledge. The first required capability is to successfully recall 
+            the formulas from seven different domains shown in Table 1. As mentioned above, medical calculators 
+            can have various sub-types with varying number of attributes. Hence, LLMs are challenged to know 
             every detail about medical equations or rules to solve a question in MedCalc-Bench.
 
-            (2) Extraction of relevant patient attributes. The second required capability is the extraction
-            of correct attributes from patient notes, given the noises in the long context of over 500 words
-            on average. LLMs are required to extract both numerical and categorical attributes. The medical
-            context complicates such extractions, with the existence of multiple synonyms (e.g., both HbA1c and
-            glycohemoglobin denote the same entity) and the requirement of determining the presence of certain
-            medical cases without explicitly being stated (e.g., a blood pressure of 160/100 mmHg indicates the
-            presence of hypertension). Hence, LLMs require both medical knowledge and clinical reasoning to
-            solve questions in this dataset. 
+            (2) Extraction of relevant patient attributes. The second required capability is the extraction 
+            of correct attributes from patient notes, given the noises in the long context of over 500 words 
+            on average. LLMs are required to extract both numerical and categorical attributes. The medical 
+            context complicates such extractions, with the existence of multiple synonyms (e.g., both HbA1c and 
+            glycohemoglobin denote the same entity) and the requirement of determining the presence of certain 
+            medical cases without explicitly being stated (e.g., a blood pressure of 160/100 mmHg indicates the 
+            presence of hypertension). Hence, LLMs require both medical knowledge and clinical reasoning to 
+            solve questions in this dataset.
 
-            (3) Arithmetic computation of the final results. The third required capability is the computation
-            of final results, especially the derivation of scores through multi-step reasoning. While datasets like
-            GSM-8k have tested the arithmetic calculation capability of LLMs, MedCalc-Bench presents a
-            more challenging task. Our dataset requires LLMs to fully understand the sequence and dependencies
-            among multiple medical equations or rules, some of which need to be chained together, to obtain the
-            correct answer. Additionally, MedCalc-Bench also contains some exponential computations that
-            are not covered by other math datasets
-          </p>>
+            (3) Arithmetic computation of the final results. The third required capability is the computation 
+            of final results, especially the derivation of scores through multi-step reasoning. While datasets like 
+            GSM-8k have tested the arithmetic calculation capability of LLMs, MedCalc-Bench presents a 
+            more challenging task. Our dataset requires LLMs to fully understand the sequence and dependencies 
+            among multiple medical equations or rules, some of which need to be chained together, to obtain the 
+            correct answer. Additionally, MedCalc-Bench also contains some exponential computations that 
+            are not covered by other math datasets.
+          </p>
         </div>
       </div>
     </div>
+  </div>
 </section>
 
 
