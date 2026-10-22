@@ -1,0 +1,14 @@
+[
+ {
+  "calculator_id": "15",
+  "note_id": "pmc-6497474-1",
+  "replace": [
+   [
+    "splenomegaly, and ascites.",
+    "splenomegaly, and slight ascites."
+   ]
+  ],
+  "reason": "Ascites severity was not stated; the note now states the slight ascites its inputs use (user decision 2026-10-17)",
+  "row": "218"
+ }
+]

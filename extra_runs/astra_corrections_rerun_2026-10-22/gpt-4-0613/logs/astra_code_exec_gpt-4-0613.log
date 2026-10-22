@@ -1,0 +1,5 @@
+gpt-4-0613: 0 rows already done, 45 to run
+gpt-4-0613: 45 rows in 63s wall clock (1.0 min, 15 workers)
+per row: median 14s, max 43s; rounds median 2
+correct 7/45; API errors 0
+{"risk": {"average": 12.5, "std": 0.06}, "severity": {"average": 30.0, "std": 0.14}, "diagnosis": {"average": 0.0, "std": 0.0}, "overall": {"average": 15.56, "std": 0.05}}

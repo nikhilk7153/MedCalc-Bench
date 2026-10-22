@@ -1,0 +1,1592 @@
+{
+    "2_pmc-7671985-1": {
+        "analysis": "The prediction incorrectly classified the patient's BMI as normal, when it is actually underweight according to the ground-truth. This led to a different adjusted weight being used in the Cockcroft-Gault equation, resulting in a different final answer.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "2_pmc-8605939-1": {
+        "analysis": "The prediction incorrectly calculated the adjusted body weight. The ground-truth explanation states that the adjusted body weight should be the minimum of the ideal body weight and the patient's actual weight only if the patient is overweight or obese. However, the prediction incorrectly applied this rule to a patient with a normal BMI. Additionally, the prediction used the wrong formula to calculate the ideal body weight. The ground-truth does not provide a formula for the ideal body weight, but the prediction used a formula that is not mentioned in the ground-truth. This resulted in a different adjusted body weight, which led to a different result in the Cockcroft-Gault equation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-4886302-1": {
+        "analysis": "The prediction incorrectly calculated the patient's BMI and classified the patient as overweight. This led to the use of the wrong weight (ideal body weight instead of actual weight) in the Cockcroft-Gault equation, resulting in a different creatinine clearance value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_usmle-1002": {
+        "analysis": "The prediction incorrectly calculated the ideal body weight and used the wrong formula for the Cockcroft-Gault equation. The ideal body weight for a 160 cm woman should be approximately 52.38 kg, not 54 kg. The Cockcroft-Gault equation should also include the gender coefficient, which was not included in the prediction's calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-5526772-1": {
+        "analysis": "The prediction incorrectly calculated the Creatinine Clearance. The correct formula is ((140 - age) * adjusted weight * gender_coefficient) / (serum creatinine * 72), but the prediction used (140 - age) * weight / (72 * serum creatinine), missing the gender coefficient.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "2_pmc-3830277-1": {
+        "analysis": "The prediction correctly calculated the patient's BMI and correctly identified the patient as underweight. However, the prediction incorrectly calculated the patient's creatinine clearance. The prediction did not use the correct formula for the Cockcroft-Gault equation. The correct formula includes a gender coefficient, which was not included in the prediction's calculation. This resulted in a higher creatinine clearance value in the prediction compared to the ground truth.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "2_pmc-7220329-1": {
+        "analysis": "The prediction incorrectly calculated the adjusted body weight. The ground truth used the minimum of the ideal body weight and the patient's body weight, while the prediction used the minimum of the patient's actual weight and a calculated ideal body weight. This led to a different result in the Cockcroft-Gault equation.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "2_pmc-7785505-1": {
+        "analysis": "The prediction used the wrong formula for the Cockcroft-Gault equation and used the actual weight instead of the adjusted weight in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-8062170-1": {
+        "analysis": "The prediction correctly calculated the patient's BMI and correctly identified that the patient's weight is normal. However, the prediction incorrectly calculated the patient's adjusted body weight. The prediction used the ideal body weight for a 160 cm female as 54 kg, but the ground truth used a different method to calculate the adjusted body weight, resulting in a value of 52.38197 kg. This discrepancy led to a different result in the Cockcroft-Gault equation. Additionally, the prediction did not take into account the gender coefficient in the Cockcroft-Gault equation, which is 0.85 for females.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-7737526-1": {
+        "analysis": "The prediction correctly calculated the patient's BMI and adjusted body weight. However, the prediction incorrectly calculated the patient's creatinine clearance. The prediction did not use the gender coefficient in the Cockcroft-Gault equation, which is necessary for the calculation. The prediction also performed the arithmetic incorrectly, resulting in a different creatinine clearance than the ground truth.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "2_pmc-5676754-1": {
+        "analysis": "The prediction used the wrong formula to calculate the ideal body weight (Hamwi formula instead of the provided formula). Also, the prediction did not correctly calculate the adjusted body weight, as it used the ideal body weight instead of applying the correct formula. Finally, the prediction used the wrong weight (ideal body weight instead of adjusted body weight) in the Cockcroft-Gault Equation.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "2_pmc-5411626-1": {
+        "analysis": "The prediction did not take into account the gender coefficient in the Cockcroft-Gault equation, which is crucial for accurate calculation. The gender coefficient for females is 0.85, but the prediction did not include this in the calculation. This led to an overestimation of the creatinine clearance.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_usmle-3434": {
+        "analysis": "The prediction incorrectly calculated the ideal body weight and the adjusted body weight. The prediction also did not account for the gender coefficient in the Cockcroft-Gault equation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-8474094-1": {
+        "analysis": "The prediction incorrectly calculated the adjusted body weight and used the wrong gender coefficient in the Cockcroft-Gault equation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_usmle-1896": {
+        "analysis": "The prediction used a different formula to calculate the ideal body weight (Hamwi formula) instead of the formula provided in the ground truth. Also, the prediction did not calculate the adjusted body weight correctly, it assumed that the adjusted body weight is the same as the ideal body weight. This led to a different result in the Cockcroft-Gault equation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-2813128-1": {
+        "analysis": "The prediction incorrectly calculated the adjusted body weight. The ground truth used the minimum of the ideal body weight and the patient's body weight, while the prediction used the patient's actual weight. This led to a different result in the Cockcroft-Gault equation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "2_pmc-4641361-1": {
+        "analysis": "The prediction used a different formula to calculate the ideal body weight and the adjusted body weight. The prediction also used the wrong weight in the Cockcroft-Gault equation, using the ideal body weight instead of the adjusted body weight.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "2_pmc-6713257-1": {
+        "analysis": "The prediction used a different formula to calculate the ideal body weight and the adjusted body weight. The prediction also used the wrong weight in the Cockcroft-Gault Equation, using the ideal body weight instead of the adjusted body weight.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one provided in the ground-truth explanation. The prediction also incorrectly used the conversion factor for converting the serum creatinine level from \u03bcmol/L to mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction used the wrong formula for the calculation of GFR. The prediction also used the wrong coefficients for the patient's gender and creatinine concentration. The correct coefficients for a male patient with a creatinine concentration greater than 0.9 mg/dL are A = 0.9 and B = -1.2, not \u03ba = 0.9 and \u03b1 = -0.302. The prediction also performed the arithmetic incorrectly, resulting in a different GFR value.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction used the wrong coefficients for the calculation. The patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, so A should be 0.7 and B should be -1.2. However, the prediction used A = 0.7 and B = -0.241, which are the coefficients for a female patient with a creatinine concentration less than or equal to 0.7 mg/dL. Also, the prediction didn't consider the gender coefficient in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The prediction used the wrong coefficients for the calculation. The patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, so A should be 0.7 and B should be -1.2. However, the prediction used A = 0.7 and B = -0.241, which are the coefficients for a female patient with a creatinine concentration less than or equal to 0.7 mg/dL. The prediction also used a different conversion factor for converting the serum creatinine level from \u03bcmol/L to mg/dL. The ground-truth used a detailed conversion process, while the prediction used a direct conversion factor of 88.4.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which led to a different result. The prediction also used the wrong coefficients for A and B, which should have been 0.7 and -1.2 respectively, given the patient's gender and creatinine concentration.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction used the wrong formula for the calculation. The prediction also incorrectly converted the creatinine value from umol/L to mg/dL, which is not necessary as the given creatinine value was already in mg/dL. The prediction also used the wrong coefficients for the exponent in the formula.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which includes a term for race that is not present in the ground truth explanation. Additionally, the prediction used the wrong coefficients for A and B, using A = -0.241 and B = -1.200 when the creatinine concentration is greater than 0.7 mg/dL for a female patient, instead of A = 0.7 and B = -1.2 as stated in the ground truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one provided in the ground-truth explanation. The prediction also used different parameters for the calculation, using \u03ba = 0.7 and \u03b1 = -0.241 for males, which is different from the ground-truth explanation where A = 0.9 and B = -1.2 for males with a creatinine concentration greater than 0.9 mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant used the 2021 CKD-EPI Creatinine equation, which is different from the formula provided in the ground truth. The assistant also used different coefficients for the calculation, which resulted in a different GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction used the wrong formula for the calculation. The prediction also incorrectly converted the creatinine value from mg/dL to umol/L, which was not required. The prediction also used the wrong coefficients for the patient's gender and creatinine concentration.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The prediction used the wrong formula for the calculation. The prediction also incorrectly converted the creatinine value from mg/dL to umol/L, which was not necessary. The prediction also used the wrong coefficients for the patient's gender and creatinine concentration.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction used the wrong formula for the calculation. The prediction also incorrectly converted the creatinine value from mg/dL to umol/L, which was not required. The prediction also used the wrong coefficients for the exponent in the formula.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction used the wrong formula for the calculation. The prediction also incorrectly used the coefficients for the creatinine concentration less than or equal to 0.9 mg/dL for a male patient, while the ground truth explanation clearly states that the coefficients for a creatinine concentration greater than 0.9 mg/dL should be used for a male patient. The prediction also incorrectly assumed the patient's race based on their location, which was not mentioned in the ground truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction used a wrong formula for the calculation. The correct formula should have been 142 * (Scr/A)**B * 0.9938**age * gender_coefficient, where A = 0.9 and B = -1.2 for a male patient with a creatinine concentration greater than 0.9 mg/dL. However, the prediction used the formula for a male patient with a creatinine concentration less than or equal to 0.9 mg/dL.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, and also used the wrong coefficients for the patient's gender and creatinine concentration.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which resulted in a different answer. The prediction also incorrectly used the coefficients for the case where the creatinine concentration is less than or equal to 0.9 mg/dL for a male patient, while the ground truth explanation clearly states that the coefficients should be different for a creatinine concentration greater than 0.9 mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-7196137-1": {
+        "analysis": "The prediction incorrectly classified the patient's thromboembolism as a vascular disease, which is not the case according to the ground-truth explanation. The thromboembolism should have been classified under the 'Stroke, Transient Ischemic Attack (TIA), or Thromboembolism history' category, which would have added 2 points to the score instead of 1. This resulted in an underestimation of the patient's CHA2DS2-VASc score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-7099753-3": {
+        "analysis": "The prediction incorrectly extracted the patient's gender and history of stroke, leading to a lower CHA2DS2-VASc score than the ground truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "4_pmc-8136881-1": {
+        "analysis": "The prediction incorrectly calculated the CHA2DS2-VASc score. The prediction assigned 1 point for age \u2265 75 years, while the ground-truth explanation states that age \u2265 75 years should be assigned 2 points. The prediction also failed to assign 2 points for the presence of thromboembolism in the patient's history, which is part of the 'Stroke, Transient Ischemic Attack (TIA), or Thromboembolism history' criterion. Additionally, the prediction incorrectly assigned 1 point for vascular disease, while the ground-truth explanation states that the patient does not have a history of vascular disease.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "4_pmc-3317869-1": {
+        "analysis": "The prediction incorrectly assigned 2 points for atrial fibrillation, which is not a criterion in the CHA2DS2-VASc score calculation. Also, the prediction incorrectly stated that being female does not add any points, while in the ground-truth explanation, being female adds 1 point.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-3888688-1": {
+        "analysis": "The prediction incorrectly classified the patient's history of portal hypertension and varices as vascular disease, which is not included in the ground-truth explanation. The ground-truth explanation specifies that vascular disease refers to previous myocardial infarction, peripheral artery disease, or aortic plaque. Therefore, the patient should not have received a point for vascular disease.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "4_pmc-6939804-1": {
+        "analysis": "The prediction incorrectly calculated the CHA2DS2-VASc score. The patient's age is 75 years old, which should add 2 points to the score according to the ground-truth explanation, but the prediction only added 1 point for this. The prediction correctly identified the presence of vascular disease and added 1 point for this. The prediction correctly identified that the patient is male and did not add any points for this. The prediction correctly identified that the patient does not have a history of congestive heart failure, diabetes, stroke or transient ischemic attack, or hypertension and did not add any points for these. Therefore, the total score should be 3, not 2.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "4_pmc-8096577-1": {
+        "analysis": "The prediction incorrectly calculated the CHA2DS2-VASc score. The patient's age should have added 2 points instead of 1, and the presence of thromboembolism should have added 2 points instead of being counted as vascular disease for 1 point. The prediction also missed the fact that the patient's gender (female) should add 1 point to the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-3318870-1": {
+        "analysis": "The prediction incorrectly classified the patient's age as 65-74 years, when the patient is actually 63 years old. The prediction also incorrectly identified the patient as having diabetes due to glucose intolerance and hyperglycaemia, when the ground-truth explanation did not mention this.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "4_pmc-4967640-1": {
+        "analysis": "The prediction incorrectly calculated the CHA2DS2-VASc score as 3, while the correct score is 2. The prediction correctly identified the patient's hypertension and diabetes, but it seems to have added an extra point somewhere in the calculation.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "4_pmc-3286501-2": {
+        "analysis": "The prediction used the correct calculator and rules, but made an error in the arithmetic. The patient is 78 years old, which should add 2 points to the score, not 1 as the prediction stated. The correct total score should be 5, not 4.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "4_pmc-7437123-4": {
+        "analysis": "The prediction incorrectly assigned 2 points for the patient's age of 64, which should have been 0 points according to the ground-truth explanation. Also, the prediction incorrectly assigned 1 point for chronic atrial fibrillation, which is not a parameter in the CHA2DS2-VASc score calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-6533936-1": {
+        "analysis": "The prediction incorrectly classified the patient's age and hypertension history. The patient is 57 years old, which should be classified as 'Age: < 65 years = 0 points', not 'Age: 65-74 years = +1 point'. Also, the prediction incorrectly assumed the patient has a history of hypertension, while the ground-truth explanation stated that the patient does not have hypertension.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "4_pmc-4157480-1": {
+        "analysis": "The prediction incorrectly identified the patient's age as a risk factor and incorrectly classified atrial septal defect (ASD) as a vascular disease, which led to an incorrect CHA2DS2-VASc score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-6296059-1": {
+        "analysis": "The prediction incorrectly added an extra point for atrial fibrillation, which is not a part of the CHA2DS2-VASc score calculation according to the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "4_pmc-4464016-1": {
+        "analysis": "The prediction incorrectly classified hypertension as a vascular disease, which led to an incorrect calculation of the CHA2DS2-VASc score. The prediction also failed to account for the patient's history of stroke, which should have added 2 points to the score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "6_pmc-7292160-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the arithmetic was slightly off, leading to a slightly different result.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "8_pmc-8494530-1": {
+        "analysis": "The prediction incorrectly added an extra criterion (Alternative diagnosis less likely than PE) that is not part of the Wells' Criteria for Pulmonary Embolism. This led to an overestimation of the total score.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "8_pmc-5597065-1": {
+        "analysis": "The prediction incorrectly classified the patient's heart rate as being over 100 beats per minute, when the ground truth states that the heart rate is exactly 100 beats per minute, which does not meet the criteria for scoring points in the Wells' Criteria for Pulmonary Embolism. Therefore, the patient's score should remain at 0, not 1 as the prediction suggests.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "8_pmc-8647083-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction incorrectly identified a history of DVT, which was not mentioned in the ground-truth explanation. The prediction also failed to identify the presence of clinical signs and symptoms of DVT, which were mentioned in the ground-truth explanation. Therefore, the prediction's score is lower than the ground-truth's score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "8_pmc-8293858-1": {
+        "analysis": "The prediction incorrectly assigned 3 points for the second criterion, 'PE is #1 diagnosis OR equally likely'. The ground-truth explanation clearly states that PE is not reported to be the #1 diagnosis, hence no points should be assigned for this criterion. The prediction also performed the arithmetic incorrectly, summing up to 4.5 instead of the correct total of 1.5.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "8_usmle-9149": {
+        "analysis": "The prediction incorrectly states that the patient's symptoms are consistent with pulmonary embolism, which is not mentioned in the ground truth. Also, the prediction includes an additional criterion (Tachypnea) which is not part of the Wells' Criteria for Pulmonary Embolism. The arithmetic is performed correctly.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "8_pmc-8101672-1": {
+        "analysis": "The prediction failed to correctly calculate the score based on the patient's immobilization for at least 3 days. This should have added 1.5 points to the total score, making it 3.0 instead of 1.5.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "8_pmc-8294994-1": {
+        "analysis": "The prediction failed to add the points for 'PE is #1 diagnosis OR equally likely' to the total score. This criterion was met, as stated in the ground-truth explanation, but the prediction did not account for it. Therefore, the total score in the prediction is lower than the actual score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "8_usmle-7246": {
+        "analysis": "The assistant incorrectly added an extra criterion (Trauma) that is not part of the Wells' Criteria for Pulmonary Embolism. Also, the assistant incorrectly assigned 3 points for 'Alternative diagnosis less likely than pulmonary embolism' while the ground truth explanation clearly states that PE is not the #1 diagnosis.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "8_pmc-8443390-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. In the ground-truth, the patient did not have clinical signs and symptoms of DVT, but in the prediction, the patient was reported to have acute deep vein thrombosis in the right lower extremity. This led to an additional 3 points being added to the total score in the prediction.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "8_pmc-4119326-1": {
+        "analysis": "The prediction incorrectly classified the patient's heart rate as being above 100 bpm, when it was actually 96 bpm. This led to an incorrect addition of 1.5 points to the total score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "8_pmc-5039122-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The ground-truth states that the patient's heart rate is 115.0 beats per minute, which should add 1.5 points to the total score according to the Wells' Criteria for Pulmonary Embolism. However, the prediction incorrectly states that the patient's heart rate is 76 beats per minute, which does not add any points to the total score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "9_pmc-6007257-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-3764696-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, and also incorrectly converted the creatinine level from mg% to mg/dL. The correct conversion is 1 mg% = 1 mg/dL, not 10 mg/dL. Additionally, the assistant used the wrong gender coefficient for a male patient.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "9_pmc-4065736-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. Also, the assistant incorrectly used a race coefficient of 1.159 instead of 1.212.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6902272-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient * race_coefficient. This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6485150-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-4381148-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient * race_coefficient. Also, the assistant incorrectly used the race coefficient for African Americans (1.212) instead of the default value (1.0) when the race is not provided.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-6691829-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient. Also, the assistant incorrectly used the gender coefficient for females (0.742) for a male patient, instead of the correct coefficient of 1.0.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-1847820-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient * race_coefficient. Also, the assistant incorrectly used the race coefficient for non-blacks.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-5451771-1": {
+        "analysis": "The prediction incorrectly used the race coefficient for non-black patients. The ground-truth explanation clearly states that the race coefficient should be 1.0 if the race is not provided, not 1.212.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-6454930-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203). The assistant also did not consider the gender coefficient in the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-4652317-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR (mL/min/1.73 m\u00b2) = 186 \u00d7 (Cr)^-1.154 \u00d7 (Age)^-0.203 \u00d7 0.742 (if female) or 0.742 (if male). Also, the assistant incorrectly stated that the gender coefficient for males is 0.742, while it should be 1.0.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6122666-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * creatinine^(-1.154) * age^(-0.203) * race_coefficient. The assistant also didn't consider the gender coefficient in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-7787914-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient. Also, the assistant incorrectly used the gender coefficient for females (0.742) for a male patient, instead of the correct coefficient of 1.0.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-3104662-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient. Also, the assistant incorrectly used a gender coefficient of 0.742 for males, while the correct coefficient is 1.0.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-3841498-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient * race_coefficient.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-5971350-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_usmle-3704": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * creatinine^(-1.154) * age^(-0.203) * gender_coefficient.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-8022897-1": {
+        "analysis": "The prediction incorrectly used the race coefficient for non-black patients, which is not the correct rule according to the ground-truth explanation. The ground-truth explanation states that the race coefficient should be 1.0 if the race is not specified, not 1.212.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-8432418-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR (mL/min/1.73 m\u00b2) = 186 \u00d7 (serum creatinine in mg/dL)^-1.154 \u00d7 (age in years)^-0.203 \u00d7 0.742 (if female) or 0.742 (if male). Also, the assistant incorrectly used the female gender coefficient (0.742) for a male patient, where it should have been 1.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "10_pmc-7364813-1": {
+        "analysis": "The assistant used a different formula to calculate the ideal body weight for males. Instead of using the correct formula (50 kg + 2.3 kg * (height in inches - 60)), the assistant used the formula (50 + 0.91 * (height in inches - 60)). This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-4236960-1": {
+        "analysis": "The assistant used the wrong formula for calculating the ideal body weight for females. Instead of using the correct formula (45.5 kg + 2.3 kg * (height (in inches) - 60)), the assistant used the formula for males (50 kg + 2.3 kg * (height (in inches) - 60)).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-4805055-1": {
+        "analysis": "The assistant used the wrong formula to calculate the ideal body weight. The correct formula for males is 50 kg + 2.3 kg * (height (in inches) - 60), but the assistant used 50 kg + 0.425 kg/in * (height in inches - 60 inches). This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-8045308-1": {
+        "analysis": "The prediction used the correct formula for calculating the ideal body weight for females, but used the wrong multiplier for the height in inches over 60. Instead of using 2.3 kg, the prediction used 0.91, which led to a lower calculated ideal body weight.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-7297919-1": {
+        "analysis": "The assistant used a different formula to calculate the ideal body weight, which is not the same as the one provided in the ground-truth explanation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-6314998-1": {
+        "analysis": "The assistant used the wrong formula to calculate the ideal body weight for males. The correct formula is IBW = 50 kg + 2.3 kg * (height (in inches) - 60), but the assistant used IBW = 50 + 0.91 * (height in inches - 60).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-8204462-1": {
+        "analysis": "The assistant used the wrong formula to calculate the ideal body weight. The correct formula for females is 45.5 kg + 2.3 kg * (height (in inches) - 60), but the assistant used 45.5 kg + 0.91 (height in inches - 60).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "10_pmc-3643850-1": {
+        "analysis": "The assistant used the wrong formula for the calculation of the ideal body weight. The correct formula is 45.5 kg + 2.3 kg * (height (in inches) - 60), but the assistant used 45.5 kg + 0.91 (height in inches - 60). Also, the assistant performed the arithmetic incorrectly. The correct calculation should be 45.5 kg + 2.3 kg * (64.96066 (in inches) - 60) = 56.90952 kg, but the assistant calculated it as 45.5 + 4.61 = 50.11 kg.",
+        "error_type": [
+            "A. wrong calculator / rules used, or wrong knowledge about the calculation",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "11_6": {
+        "analysis": "The prediction incorrectly squared the RR interval instead of taking its square root. Also, the prediction incorrectly converted the final result from msec to sec, which was not necessary.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "11_11": {
+        "analysis": "The assistant correctly extracted the parameters and used the correct formula, but made a mistake in the arithmetic calculation. The assistant squared the RR interval instead of taking its square root.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "11_12": {
+        "analysis": "The assistant correctly identified the parameters and the formula to use. However, the assistant incorrectly squared the RR interval instead of taking its square root.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "15_3": {
+        "analysis": "The prediction incorrectly assigned points for each criterion of the Child-Pugh Score. The prediction assigned 2 points for bilirubin, 1 point for albumin, 2 points for INR, 2 points for ascites, and 1 point for encephalopathy. According to the ground-truth explanation, the correct points should be 3 for bilirubin, 2 for albumin, 2 for INR, 3 for ascites, and 2 for encephalopathy.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "15_4": {
+        "analysis": "The prediction incorrectly calculated the points for ascites and encephalopathy. The patient's ascites state was 'slight', which should correspond to 2 points, not 1. The encephalopathy state was 'Grade 3-4', which should correspond to 3 points, not 2. Therefore, the total score should be 11, not 9.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "15_5": {
+        "analysis": "The prediction incorrectly calculated the points for the bilirubin level, albumin level, and INR. The bilirubin level of 3.0 mg/dL should have been assigned 2 points, not 3. The albumin level of 2.7 g/dL should have been assigned 3 points, not 2. The INR of 2.4 should have been assigned 3 points, not 2. The prediction also failed to consider the patient's encephalopathy status, which should have been included in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "15_6": {
+        "analysis": "The prediction used incorrect scoring for each parameter in the Child-Pugh Score calculation. The prediction assigned 1 point for each parameter, while the ground-truth explanation clearly states different point assignments based on the severity of each parameter.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "15_7": {
+        "analysis": "The prediction incorrectly calculated the points for bilirubin, INR, and ascites. The bilirubin level of 1.8 mg/dL should have scored 1 point, not 2. The INR of 1.5 should have scored 1 point, not 2. The moderate ascites should have scored 3 points, not 2. The total score should have been 8, not 9.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "15_8": {
+        "analysis": "The prediction incorrectly assigned points for the bilirubin and albumin levels. According to the ground-truth, a bilirubin level of 3.0 mg/dL should correspond to 2 points, not 1. Similarly, an albumin level of 3.4 g/dL should correspond to 2 points, not 1. The prediction correctly assigned points for the INR, ascites, and encephalopathy.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "15_9": {
+        "analysis": "The prediction incorrectly calculated the INR score. The ground truth states that an INR of 1.7 should be assigned 2 points, but the prediction assigned it 1 point. This led to an incorrect total score.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "15_10": {
+        "analysis": "The prediction incorrectly assigned points for each parameter. The correct points for bilirubin 1.6 mg/dL is 1, albumin 3.0 g/dL is 2, INR 2.0 is 2, ascites (mild) is 2, and encephalopathy (absent) is 1. The total score should be 1 + 2 + 2 + 2 + 1 = 8, not 4.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "15_11": {
+        "analysis": "The prediction incorrectly assigned points for the parameters of bilirubin, albumin, and ascites. For bilirubin, the prediction assigned 2 points for a value of 2.5 mg/dL, but the ground truth assigns 2 points for values between 2-3 mg/dL. For albumin, the prediction assigned 2 points for a value of 2.8 g/dL, but the ground truth assigns 2 points for values between 2.8-3.5 g/dL. For ascites, the prediction assigned 2 points for a 'moderate' state, but the ground truth assigns 3 points for a 'moderate' state. The prediction correctly assigned points for the parameters of INR and encephalopathy. The final score calculated by the prediction was 10, but the correct score according to the ground truth is 11.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "15_13": {
+        "analysis": "The prediction incorrectly calculated the scores for bilirubin and INR. The bilirubin level of 1.9 mg/dL should have been assigned a score of 1, not 2. The INR of 1.6 should have been assigned a score of 1, not 2. The correct total score should be 8, not 9.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "15_14": {
+        "analysis": "The assistant incorrectly assigned 2 points for the INR value of 1.5. According to the ground-truth explanation, an INR value of less than 1.7 should correspond to 1 point, not 2. All other parameters were correctly extracted and assigned the correct points.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "15_15": {
+        "analysis": "The prediction incorrectly calculated the points for albumin and ascites. The albumin level of 2.6 g/dL should have been assigned 3 points, not 2. The ascites state 'moderate' should have been assigned 3 points, not 2.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "15_16": {
+        "analysis": "The prediction incorrectly calculated the points for bilirubin, albumin, and encephalopathy. For bilirubin, the prediction assigned 2 points for a value of 2.0 mg/dL, but the ground truth assigns 2 points for values between 2 and 3 mg/dL. For albumin, the prediction assigned 1 point for a value of 3.2 g/dL, but the ground truth assigns 2 points for values between 2.8 and 3.5 g/dL. For encephalopathy, the prediction assigned 1 point for 'mild' symptoms, but the ground truth assigns 2 points for Grade 1-2 symptoms.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "15_17": {
+        "analysis": "The prediction incorrectly calculated the points for encephalopathy and ascites. The patient's encephalopathy state was determined to be 'Grade 3-4', which should add three points to the score, not two. Also, the absence of ascites should add one point to the score, not zero.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "15_18": {
+        "analysis": "The prediction incorrectly calculated the Child-Pugh score. The prediction assigned 1 point for each parameter, regardless of the patient's actual values. This is incorrect as the Child-Pugh score assigns different points based on the severity of each parameter.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "15_19": {
+        "analysis": "The prediction incorrectly calculated the points for albumin, ascites, and encephalopathy. For albumin, the prediction assigned 2 points instead of 3. For ascites, the prediction assigned 2 points instead of 3. For encephalopathy, the prediction assigned 1 point instead of 2. The prediction also incorrectly summed up the points, resulting in a total score of 9 instead of 12.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "15_20": {
+        "analysis": "The prediction incorrectly calculated the points for albumin and INR. The albumin concentration of 3.4 g/dL should have scored 2 points, not 1, and the INR of 1.6 should have scored 1 point, not 2. The correct total score should be 7, not 6.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "15_21": {
+        "analysis": "The prediction used incorrect rules for the Child-Pugh Score calculation. The scoring system for each parameter was not correctly applied. For example, the bilirubin level of 1.9 mg/dL should score 1 point, not 2. The albumin level of 3.1 g/dL should score 2 points, not 1. The INR of 1.8 should score 2 points, not 1. The encephalopathy state of 'Grade 3-4' should score 3 points, not 1. The ascites state, assumed to be absent, should score 1 point, not 0. Therefore, the total score should be 9, not 4.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "16_pmc-5295552-1": {
+        "analysis": "The prediction failed to extract the correct parameters from the patient's note. The prediction stated that none of the criteria were mentioned in the patient's note, which is incorrect. The patient's note did mention 'bedridden recently >3 days,' 'major surgery within 12 weeks,' and 'alternative diagnosis to DVT as likely or more likely.' Therefore, the Wells' DVT score could have been calculated.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "16_pmc-6959932-1": {
+        "analysis": "The prediction used wrong points for the criteria 'active cancer' and 'recently bedridden for 3 days or more, or major surgery within 4 weeks'. It also extracted different parameters than the ground-truth, attributing points for 'bedridden for more than 3 days' and 'entire leg swelling' which were absent according to the ground-truth. The arithmetic was performed correctly based on the extracted parameters.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_usmle-9119": {
+        "analysis": "The prediction used the wrong scoring system for the 'active cancer' criterion, assigning it 3 points instead of 1. However, this did not affect the final score as the criterion was absent in the patient's note. The prediction correctly identified that all criteria were absent and correctly subtracted 2 points for the presence of an alternative diagnosis.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "16_pmc-4341247-1": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient's note. The prediction incorrectly stated that the patient has 'entire leg swelling' which is not mentioned in the ground-truth explanation. Also, the prediction failed to identify that the patient has an 'alternative diagnosis to DVT as likely or more likely', which should decrease the score by 2 points.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "16_pmc-3334262-1": {
+        "analysis": "The prediction incorrectly extracted the parameter 'major surgery within 12 weeks' from the patient's note, which was not mentioned in the ground-truth explanation. The prediction also incorrectly calculated the final score as 1, while the ground-truth explanation calculated it as -2.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-7059892-1": {
+        "analysis": "The prediction used incorrect rules for the Wells' Criteria for Deep Vein Thrombosis (DVT) score. The prediction incorrectly assigned 3 points for active cancer, while the ground truth explanation states that active cancer should be assigned 1 point. The prediction also incorrectly stated that major surgery within 4 weeks scores 1 point, while the ground truth explanation states that being bedridden for more than 3 days or having major surgery within 12 weeks scores 1 point. The prediction also failed to consider the criterion 'alternative diagnosis to DVT as likely or more likely', which should decrease the score by 2 points if present.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-4676672-1": {
+        "analysis": "The prediction incorrectly extracted the parameter 'recently hospitalized or surgery within 12 weeks' from the patient's note and assigned it a point, which is not in line with the ground-truth explanation. The ground-truth explanation states that the patient must be bedridden for more than 3 days or have had major surgery within 12 weeks to receive a point. The prediction also failed to deduct 2 points for the presence of an alternative diagnosis, which is more likely than DVT.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-3291722-1": {
+        "analysis": "The prediction incorrectly identified the number of items in the Wells' criteria for Deep Vein Thrombosis, stating there are 7 items instead of 10. The prediction also incorrectly scored the patient 1 point for an alternative diagnosis, when the correct scoring should decrease the score by 2 points. The prediction also failed to consider all the criteria in the patient's note.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-3876687-1": {
+        "analysis": "The prediction used the wrong rules for the Wells' Criteria for Deep Vein Thrombosis (DVT) score. The prediction incorrectly stated that the criteria for 'bedridden recently >3 days or major surgery' is 'recently bedridden for 3 days or more, or major surgery within 4 weeks,' while the ground truth states it as 'bedridden recently >3 days or major surgery within 12 weeks.' The prediction also incorrectly scored the 'active cancer' criterion as 0, while the ground truth scored it as 1. The prediction also incorrectly scored the 'alternative diagnosis to DVT as likely or more likely' criterion as 1, while the ground truth scored it as -2.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-2488320-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction incorrectly identified 'recently hospitalized or surgery within 4 weeks' as a criterion, which is not part of the Wells' Criteria for DVT. The correct criterion is 'bedridden recently >3 days or major surgery within 12 weeks'. Also, the prediction did not consider the criterion 'alternative diagnosis to DVT as likely or more likely', which should decrease the score by 2 points if present. The arithmetic error is due to the incorrect extraction of parameters.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-8168998-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction incorrectly assigned a point for 'Localized tenderness along the distribution of the deep venous system' and 'Swelling of the entire leg > 3 cm compared to the asymptomatic leg' which were not present according to the ground-truth. Also, the prediction incorrectly calculated the total score as 5 instead of 3.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-8514746-2": {
+        "analysis": "The prediction used a different scoring system for the Wells' Criteria for Deep Vein Thrombosis (DVT) than the ground-truth. The ground-truth assigns 1 point for each criterion, except for 'alternative diagnosis to DVT as likely or more likely,' which subtracts 2 points. However, the prediction assigns different points for each criterion, ranging from 1 to 3 points. Additionally, the prediction did not consider the criterion 'alternative diagnosis to DVT as likely or more likely,' which should have subtracted 2 points from the total score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-4918891-1": {
+        "analysis": "The prediction used wrong points for the 'active cancer' criterion and wrong time frame for the 'bedridden recently >3 days or major surgery' criterion. Also, the prediction extracted the wrong parameter from the patient's note, assigning a point for the 'bedridden recently >3 days or major surgery' criterion, which is not present in the patient's note according to the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-6940349-1": {
+        "analysis": "The prediction incorrectly extracted the parameter 'recently operated' from the patient's note, which was not mentioned in the ground-truth explanation. The prediction also failed to consider the criterion 'alternative diagnosis to DVT as likely or more likely,' which was present in the patient's note and should have decreased the score by 2. Therefore, the final score calculated by the prediction is incorrect.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-8383636-1": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient's note. The ground-truth explanation indicates that the patient did not have a recent surgery within 12 weeks, but the prediction states that the patient had a recent surgery (cesarean section) within 12 weeks. Additionally, the prediction failed to identify that the patient met the criteria for 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' and 'alternative diagnosis to DVT as likely or more likely,' which should have resulted in a score of -1, not 1.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "16_pmc-3127500-1": {
+        "analysis": "The prediction incorrectly identified the criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score. The prediction incorrectly assigned 3 points for the 'active cancer' criterion, while the ground truth assigns only 1 point. The prediction also incorrectly stated that 'major surgery within 4 weeks' is a criterion, while the ground truth states 'major surgery within 12 weeks'. The prediction also missed the presence of 'active cancer' in the patient's note, which should have added 1 point to the score. The prediction also incorrectly stated that there was no 'alternative diagnosis to DVT as likely or more likely', while the ground truth states that this criterion was present and should have subtracted 2 points from the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-4320908-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction incorrectly identified the 'active cancer' criterion as being met, despite the patient's cancer treatment being more than 6 months ago. The prediction also incorrectly identified the 'paralysis, paresis, or recent immobilization of the lower extremities' criterion as being met, despite the patient's note not indicating any recent immobilization. The prediction also failed to identify the 'alternative diagnosis to DVT as likely or more likely' criterion, which was present according to the ground-truth. The arithmetic was performed correctly, but the parameters used were incorrect.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "16_pmc-4882526-1": {
+        "analysis": "The prediction used wrong points for the 'active cancer' criterion and wrong time frame for the 'major surgery' criterion. It also incorrectly extracted the 'bedridden recently >3 days' parameter from the patient's note, which was not present according to the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction correctly identified that none of the criteria for the Wells' DVT score were met, except for the last one. The prediction failed to recognize that the 'alternative diagnosis to DVT as likely or more likely' criterion was met, which should have resulted in a decrease of 2 points from the total score. Therefore, the final score should have been -2, not 0.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction incorrectly identified the presence of a history of heart failure in the patient, which was not present according to the ground-truth. The prediction also incorrectly calculated the total score as a range (3-4) instead of a single value (3).",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "17_3": {
+        "analysis": "The prediction incorrectly classified the patient's diabetes and renal insufficiency as present, which are not mentioned in the ground-truth explanation. The prediction also incorrectly calculated the total score as 5, while the correct score according to the ground-truth explanation is 3.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "17_4": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient note. The patient does not have diabetes (pre-operative insulin treatment) and renal insufficiency (creatinine > 2 mg/dL) according to the ground-truth explanation. However, the prediction included these two factors in the calculation, leading to an incorrect total score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "17_6": {
+        "analysis": "The prediction incorrectly added a point for the preoperative serum creatinine level. According to the ground-truth explanation, a point should only be added if the preoperative serum creatinine is >2.0 mg/dL. In this case, the patient's preoperative serum creatinine is 1.7 mg/dL, which is not >2.0 mg/dL. Therefore, the prediction should not have added a point for this criterion. The correct RCRI score should be 2, not 3.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "17_8": {
+        "analysis": "The prediction incorrectly classified the patient's renal insufficiency. According to the ground-truth, a creatinine level of 1.3 mg/dL is not considered renal insufficiency for the RCRI score calculation. The threshold is a creatinine level >2 mg/dL. Therefore, the patient's RCRI score should be 2, not 3.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "17_10": {
+        "analysis": "The prediction incorrectly classified diabetes as a criterion for the Revised Cardiac Risk Index (RCRI), which is not listed in the ground-truth explanation. The correct criteria are elevated-risk surgery, history of ischemic heart disease, history of congestive heart failure, history of cerebrovascular disease, pre-operative treatment with insulin, and pre-operative creatinine >2 mg/dL. The prediction also incorrectly calculated the total score as 3, while the correct score according to the ground-truth explanation is 2.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "17_12": {
+        "analysis": "The prediction incorrectly classified the patient's renal insufficiency as a risk factor. According to the ground-truth, a creatinine level of 1.9 mg/dL does not meet the criterion for renal insufficiency (creatinine >2 mg/dL). Therefore, the prediction incorrectly added an extra point to the total score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "17_14": {
+        "analysis": "The prediction incorrectly classified the patient's pre-operative serum creatinine level as renal insufficiency, which is not the case according to the ground-truth explanation. The ground-truth explanation states that the patient's pre-operative creatinine is less than or equal to 2 mg/dL, which does not contribute to the RCRI score. Therefore, the prediction overestimated the RCRI score by 1 point.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "17_15": {
+        "analysis": "The prediction incorrectly classified the patient's renal insufficiency as present, despite the patient's creatinine level being less than the threshold of 2 mg/dL (176.8 \u03bcmol/L) specified in the ground-truth explanation. This led to an overestimation of the patient's Revised Cardiac Risk Index (RCRI) score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "17_18": {
+        "analysis": "The prediction incorrectly identified diabetes and renal insufficiency as predictors for the patient, which are not part of the criteria for the Revised Cardiac Risk Index (RCRI). The prediction also incorrectly calculated the total score as 4, while the correct score should be 2.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "17_19": {
+        "analysis": "The prediction incorrectly classified the patient's creatinine level as a risk factor. According to the ground-truth explanation, a creatinine level of 2.0 mg/dL does not qualify as a risk factor because the criterion is for levels greater than 2 mg/dL. Therefore, the patient only has two risk factors, not three.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "17_21": {
+        "analysis": "The prediction correctly identified the parameters and used the correct rules for calculation. However, the arithmetic was performed incorrectly. The patient has 5 predictors, not 4, so the total score should be 5, not 4.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "18_pmc-3466862-1": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient's note. The history was incorrectly classified as 'Highly suspicious' instead of 'Slightly suspicious', and the EKG was incorrectly classified as 'Non-specific repolarization disturbance' instead of 'Normal'. The age was incorrectly classified as '<45 years' instead of '45-64 years'. The risk factors were incorrectly classified as 'No known risk factors' instead of '1-2 risk factors'. The troponin level was correctly classified as '\u2264normal limit'. The arithmetic was performed correctly, but the total score is incorrect due to the incorrect parameter extraction.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "18_pmc-8643279-1": {
+        "analysis": "The prediction incorrectly extracted the parameters for 'history' and 'ECG' from the patient's note, and incorrectly calculated the points for 'history', 'ECG', and 'troponin'. The correct parameters for 'history' and 'ECG' should be 'Slightly suspicious' and 'Non-specific repolarization disturbance', respectively, which would score 0 and 1 points, respectively. The correct point for 'troponin' should be 0, not 1. Therefore, the correct HEART score should be 1, not 4.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "18_pmc-7752799-1": {
+        "analysis": "The prediction incorrectly classified the patient's history and risk factors, and also incorrectly calculated the patient's age score. The history of congestive heart failure does not contribute to the HEART score, and the patient's age should have scored 1 point, not 0. The risk factors were also incorrectly calculated, as the patient had 4 risk factors (hypertension, hypercholesterolemia, diabetes mellitus, smoking), which should have scored 2 points, not 1.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "18_pmc-6276522-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth for the 'history' and 'risk factors' categories. The prediction also incorrectly performed the arithmetic for the 'risk factors' category.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "18_pmc-8161714-1": {
+        "analysis": "The prediction incorrectly extracted the parameters for 'history' and 'electrocardiogram' from the patient's note. The ground-truth explanation shows that the 'history' was 'Slightly suspicious' and the 'electrocardiogram' was 'Normal', both of which should have been scored as 0 points. However, the prediction scored them as 2 and 1 points respectively. The prediction also incorrectly performed the arithmetic, adding up the points to 4 instead of 2.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "18_pmc-7966959-1": {
+        "analysis": "The prediction incorrectly calculated the risk factors score. The patient has three risk factors (hypercholesterolemia, family with cvd, atherosclerotic disease), which should score 2 points, not 1. The prediction also made an assumption about the troponin level based on the patient's history, which is not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "B",
+            "A"
+        ]
+    },
+    "18_pmc-4754474-1": {
+        "analysis": "The prediction incorrectly extracted the 'history' parameter from the patient's note. The ground-truth explanation states that the 'history' was 'Slightly suspicious', which corresponds to 0 points in the HEART Score. However, the prediction interpreted the patient's history as 'Highly suspicious', which corresponds to 2 points. All other parameters were correctly extracted and calculated.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "18_pmc-4244065-1": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient's note and also used wrong knowledge about the calculation. The prediction incorrectly stated that the patient's history is significant for osteoporosis, hypertension in her mother, and cardiovascular disease in her father, which is not mentioned in the ground-truth explanation. The prediction also incorrectly stated that the 'H' component scores 1 point for a history of atherosclerotic disease, which is not present in this patient. The 'A' component scores 1 point for age \u2265 65 years, which is not met in this patient. Therefore, the patient's HEART score is 0. However, the ground-truth explanation clearly states that the patient's HEART score is 2.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "18_pmc-7305571-1": {
+        "analysis": "The prediction incorrectly calculated the points for 'History', 'Age', and 'Troponin'. The 'History' was 'Moderately suspicious' which should have been 1 point, not 2. The 'Age' of the patient was 62 years old, which should have been 1 point, not 2. The 'Troponin' level was 'between the normal limit or up to three times the normal limit', which should have been 1 point, not 2. The correct total HEART Score should have been 6, not 9.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "18_pmc-7997683-3": {
+        "analysis": "The prediction incorrectly extracted the number of risk factors from the patient's note. The patient has obesity, which should have been counted as a risk factor, but the prediction stated that the patient has no known risk factors. This resulted in a miscalculation of the total HEART Score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "18_pmc-7290110-1": {
+        "analysis": "The prediction incorrectly classified the patient's history and EKG results, leading to a higher score than the ground truth. The prediction also incorrectly classified the patient's age, leading to a lower score than the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "18_pmc-7780869-1": {
+        "analysis": "The prediction incorrectly calculated the HEART score. The prediction incorrectly classified the 'history' as atypical, which should have been 'Moderately suspicious' and scored 1 point. The prediction also incorrectly classified the 'ECG' as having ST segment elevation less than 1 mm, which should have been 'Significant ST deviation' and scored 2 points. The other parameters were correctly identified and scored.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "A. wrong calculator / rules used, or wrong knowledge about the calculation"
+        ]
+    },
+    "18_pmc-6415980-1": {
+        "analysis": "The prediction incorrectly calculated the points for the patient's age and risk factors. The patient's age of 66 years should have scored 2 points, not 1. The presence of hypertension, hyperlipidemia, and coronary artery disease should have scored 2 points, not 1. The prediction also incorrectly interpreted the ECG results, but this did not affect the score as both interpretations resulted in 0 points.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "18_pmc-2783103-1": {
+        "analysis": "The prediction incorrectly extracted the parameters for 'history' and 'ECG' from the patient's note. The prediction also incorrectly calculated the total HEART score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "18_pmc-4980942-1": {
+        "analysis": "The prediction incorrectly calculated the EKG score. The patient's note indicated 'Significant ST deviation', which should have scored 2 points according to the HEART Score criteria, but the prediction only added 1 point. The rest of the parameters were correctly extracted and calculated.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "19_pmc-6925761-1": {
+        "analysis": "The prediction correctly identified the parameters and the formula for calculating the Fibrosis-4 index. However, the error occurred in the conversion of the platelet count from count/\u00b5L to billions per L. The prediction used the platelet count as 149,000 per mm3 instead of converting it to 149.0 billion per L, which led to an incorrect result.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-7524929-1": {
+        "analysis": "The prediction correctly identified the formula for Fibrosis-4 and extracted the correct parameters. However, the prediction made an error in the conversion of the platelet count from count/\u00b5L to billions/L. The prediction used the platelet count as 165000/\u00b5L instead of converting it to 165 billion/L. This led to an incorrect arithmetic calculation and a wrong final answer.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-3970270-1": {
+        "analysis": "The prediction incorrectly calculated the Fibrosis-4 score. The error occurred because the prediction did not convert the platelet count from count/\u00b5L to count/L before performing the calculation.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-3813587-1": {
+        "analysis": "The prediction correctly identified the parameters and the formula for calculating the Fibrosis-4 index. However, the error occurred when the platelet count was not converted from count/\u00b5L to billions per L before being used in the calculation.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_usmle-9883": {
+        "analysis": "The prediction incorrectly used the platelet count in \u00b5L instead of converting it to billions per L before plugging it into the formula.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-6095933-1": {
+        "analysis": "The prediction incorrectly calculated the Fibrosis-4 score. The error occurred because the prediction did not convert the platelet count from count/\u00b5L to count/L before plugging it into the formula.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-7184854-1": {
+        "analysis": "The prediction incorrectly calculated the Fibrosis-4 score. The error lies in the conversion of the platelet count from count/\u00b5L to billions/L. The prediction used the original platelet count (283 x 10^3/\u00b5L) instead of converting it to billions/L (283.0 billion/L) before plugging it into the formula.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-4423457-1": {
+        "analysis": "The prediction incorrectly used the platelet count in count/\u00b5L instead of converting it to count/L (billions) before plugging it into the formula.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "19_pmc-5066381-2": {
+        "analysis": "The prediction incorrectly used the platelet count in count/\u00b5L instead of converting it to count/L. This led to a different result than the ground truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "19_pmc-8383533-4": {
+        "analysis": "The prediction incorrectly used the platelet count in \u00b5L instead of converting it to billions per L before plugging it into the formula.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "19_pmc-6244097-1": {
+        "analysis": "The prediction used the wrong value for the platelet count. Instead of converting the platelet count to billions per liter, the prediction used the original value in K/\u03bcL. This led to a different result in the calculation.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-3326999-1": {
+        "analysis": "The prediction incorrectly used the platelet count in \u00b5L instead of converting it to billions per L before plugging it into the formula.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "19_pmc-3236148-1": {
+        "analysis": "The prediction incorrectly calculated the Fibrosis-4 score. The error seems to be in the conversion of the platelet count from K/mm3 to billions/L. The prediction used the original platelet count of 115 K/mm3 instead of converting it to 115 billion/L, which led to a lower Fibrosis-4 score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-8383518-1": {
+        "analysis": "The prediction incorrectly used the platelet count in \u00b5L instead of converting it to billions per L before plugging it into the formula.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "19_pmc-4943902-1": {
+        "analysis": "The prediction incorrectly calculated the Fibrosis-4 score. The correct calculation should have been (59 * 35.0)/(252.0 * sqrt(40.0)) = 1.29566, but the prediction calculated it as (59 * 35) / (252 * sqrt(40)) = 1.45. The error seems to be in the arithmetic calculation.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "19_pmc-5842090-1": {
+        "analysis": "The prediction incorrectly used the platelet count in \u00b5L instead of converting it to billions per L before performing the calculation.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "19_pmc-8309678-1": {
+        "analysis": "The prediction incorrectly calculated the Fibrosis-4 score. The correct calculation should have resulted in a score of 2.68233, but the prediction resulted in a score of 1.45.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "19_pmc-4426646-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters, but the final result is incorrect. This suggests an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "19_pmc-8063940-1": {
+        "analysis": "The prediction correctly identified the parameters and the formula for Fibrosis-4. However, the prediction failed to convert the platelet count from count/\u00b5L to count/L before plugging it into the formula, which led to an incorrect result.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "20_usmle-12605": {
+        "analysis": "The prediction incorrectly calculated the Centor Score. The prediction incorrectly added a point for the 'history of fever' criterion, even though the patient's temperature was less than 38 degrees Celsius. The prediction also incorrectly did not add a point for the 'absence of exudate or swelling on tonsils' criterion, even though the patient note reported this as absent.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_pmc-7205374-1": {
+        "analysis": "The prediction used the correct Centor Score formula and extracted the correct parameters from the patient's data. However, the prediction incorrectly calculated the score as 2, while the ground-truth explanation calculated the score as 1. The error occurred because the prediction incorrectly added a point for 'absence of tender anterior cervical adenopathy', while the ground-truth explanation correctly did not add a point for this criterion because it was absent. The prediction also incorrectly added a point for 'fever by history', while the ground-truth explanation correctly added a point for 'temperature >38\u00b0C'.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "20_usmle-414": {
+        "analysis": "The prediction missed the age criterion in the Centor Score calculation. The patient's age falls into the 3-14 years category, which should add 1 point to the score. Therefore, the correct Centor Score should be 4, not 3.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "20_pmc-8169128-1": {
+        "analysis": "The prediction incorrectly calculated the Centor Score. The prediction incorrectly counted the absence of cough as a positive point, while the patient was actually coughing according to the ground-truth. This led to an overestimation of the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_pmc-7362490-1": {
+        "analysis": "The prediction incorrectly calculated the Centor score. The patient's age was not taken into account, which should have subtracted a point from the score. The prediction also did not correctly apply the scoring for the presence of a cough, which should not have added a point to the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_usmle-4026": {
+        "analysis": "The prediction incorrectly assumed that 'exudate or swelling on tonsils' was present, while the ground-truth explanation assumed it to be absent due to lack of information. Also, the prediction assumed the presence of cough, while the ground-truth explanation assumed it to be absent due to lack of information. This led to a different final score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "20_usmle-6179": {
+        "analysis": "The prediction incorrectly extracted the parameter 'exudate or swelling on tonsils' from the patient note. The ground-truth explanation states that 'exudate or swelling on tonsils' is absent, but the prediction states that it is present. This led to an overestimation of the Centor score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "20_pmc-4307710-1": {
+        "analysis": "The prediction incorrectly calculated the Centor score. The prediction did not consider the age of the patient, which is a crucial parameter in the Centor score calculation. The prediction also incorrectly assumed that the presence of fever is a criterion, while the actual criterion is a temperature greater than 38\u00b0C. The prediction also did not convert the temperature from Fahrenheit to Celsius for comparison.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_usmle-8175": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient's note. The prediction did not consider the patient's age, which should have added 1 point to the score. The prediction also incorrectly assumed that the patient's 'tender/swollen anterior cervical lymph nodes' were not present, which should have added another point to the score. The prediction also incorrectly assumed that the patient had a cough, which should have added another point to the score. The prediction also incorrectly assumed that the patient did not have 'exudate or swelling on tonsils', which should not have changed the score. Therefore, the prediction's Centor Score of 1 is incorrect. The correct Centor Score should have been 4.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction used the correct Centor Score formula but extracted different parameters than the ground-truth. The prediction also failed to consider the age of the patient, which is a crucial part of the Centor Score calculation.",
+        "error_type": [
+            "B",
+            "A"
+        ]
+    },
+    "22_pmc-6176125-1": {
+        "analysis": "The assistant used a different rule to calculate the maintenance fluid rate. Instead of using the correct rule for patients with weight greater than 20 kg, the assistant used a rule that calculates the rate as 30 mL/kg/day for the first 10 kg, 20 mL/kg/day for the next 10-20 kg, and 10 mL/kg/day for the remaining weight. This rule is not mentioned in the ground truth.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "22_pmc-3659367-1": {
+        "analysis": "The assistant used the correct rule for calculating the maintenance fluid for a patient weighing more than 20 kg. However, the assistant incorrectly calculated the fluid requirement for the weight above 20 kg. The assistant calculated the fluid requirement for the remaining 33 kg, instead of the remaining 23 kg (43 kg - 20 kg).",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-6967275-1": {
+        "analysis": "The assistant used the correct rule for the patient's weight category, but made an arithmetic error when calculating the maintenance fluid for the weight above 20 kg. Instead of subtracting 20 kg from the total weight, the assistant subtracted 10 kg, leading to an incorrect calculation.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-4897797-1": {
+        "analysis": "The assistant correctly identified the patient's weight and used the correct rule for calculating the maintenance fluid. However, the assistant made an error in the final step of the calculation. Instead of dividing the total daily maintenance fluid by 24 to get the hourly rate, the assistant should have left the total as is, since the rule already calculates the hourly rate.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-6445561-1": {
+        "analysis": "The assistant correctly identified the patient's weight and the correct rule for calculating maintenance fluid for patients over 20 kg. However, the assistant incorrectly calculated the maintenance fluid rate for the weight above 20 kg. Instead of using 1 mL/kg/hr for every kg above 20 kg, the assistant used 0 mL/kg/hr, resulting in an incorrect total maintenance fluid rate.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-5548950-1": {
+        "analysis": "The assistant used the correct rule but applied it incorrectly. The assistant correctly identified that for the first 10 kg, the rate is 4 mL/kg/hr, and for every kg above 20 kg, the rate is 1 mL/kg/hr. However, the assistant incorrectly calculated the rate for the weight above 20 kg as 2 mL/kg/hr instead of 1 mL/kg/hr.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-8138236-1": {
+        "analysis": "The assistant used the correct formula but made a mistake in the arithmetic. The assistant incorrectly calculated the fluid rate for the weight above 20 kg. Instead of calculating 1 mL/hr x (54.7 kg - 20 kg), the assistant calculated 2 mL/hr x 40 kg + 1 mL/hr x 4.7 kg.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-3640174-1": {
+        "analysis": "The assistant used the correct rule for calculating maintenance fluid for a patient with a weight of 54 kg, but made an error in the arithmetic. The assistant correctly calculated the first 10 kg at 4 mL/kg/hr, but then incorrectly calculated the next 40 kg at 2 mL/kg/hr (it should have been the next 10 kg at 2 mL/kg/hr), and then incorrectly calculated the remaining 4 kg at 1 mL/kg/hr (it should have been the remaining 34 kg at 1 mL/kg/hr).",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-3206412-1": {
+        "analysis": "The assistant used the correct Holliday-Segar method for calculating the maintenance fluid, but incorrectly adjusted the final value by half, which is not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "22_pmc-7461646-1": {
+        "analysis": "The assistant used the correct formula but made a mistake in the calculation. The assistant should have calculated 2 mL/kg/hr for the next 10 kg (not 29.5 kg) and 1 mL/kg/hr for the remaining 19.5 kg (not included in the calculation).",
+        "error_type": [
+            "C"
+        ]
+    },
+    "22_pmc-6632496-1": {
+        "analysis": "The prediction used the correct formula for calculating the maintenance fluid for a patient with a weight greater than 20 kg. However, the arithmetic was performed incorrectly. The correct calculation should be 60 mL/hr + 1 mL/kg/hr * (63.0 kg - 20 kg) = 103.0 mL/hr, but the prediction calculated it as 40 mL/hr + 40 mL/hr + 33 mL/hr = 113 mL/hr.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "23_pmc-4528787-1": {
+        "analysis": "The assistant used a completely different formula to calculate the MELD Na score. The parameters extracted were correct, but the assistant did not adjust the bilirubin and sodium concentrations as per the ground truth explanation. The assistant also introduced an 'etiology' factor which is not part of the correct calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "23_pmc-3741440-1": {
+        "analysis": "The assistant used a completely different formula to calculate the MELD Na score. The parameters extracted from the patient's note were correct, but the formula used was incorrect. The assistant also did not consider the rules for capping the creatinine and sodium concentrations.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "23_pmc-3701851-1": {
+        "analysis": "The prediction used a completely different formula to calculate the MELD Na score. The parameters extracted from the patient's note were correct, but the calculator used was incorrect.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "23_pmc-4528898-1": {
+        "analysis": "The assistant used a completely different formula to calculate the MELD Na score. The formula used by the assistant is not the correct one as per the ground truth. The assistant also did not consider the sodium concentration in the calculation, which is a crucial parameter in the MELD Na score calculation. Moreover, the assistant introduced an 'etiology' parameter which is not part of the MELD Na calculation. The assistant also did not cap the creatinine concentration at 4.0 mg/dL as required when the concentration is greater than 4.0 mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_2": {
+        "analysis": "The prediction incorrectly calculated the HAS-BLED score. The prediction missed the point for liver disease, which was present in the patient according to the ground-truth explanation.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "25_3": {
+        "analysis": "The prediction incorrectly classified the patient's alcohol consumption as excessive, which led to an additional point being added to the HAS-BLED score. According to the ground-truth, the patient's alcohol consumption (4 drinks/week) does not meet the criteria for excessive alcohol consumption (\u22658 drinks/week) in the HAS-BLED score calculation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "25_4": {
+        "analysis": "The prediction correctly identified the parameters and used the correct rules for calculation. However, the arithmetic was performed incorrectly. The prediction missed the point for liver disease, which was present in the patient according to the ground-truth explanation.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "25_5": {
+        "analysis": "The prediction incorrectly assigned 1 point for the 'Drugs or alcohol' category, even though the patient only consumes 4 drinks per week, which is less than the threshold of 8 drinks per week for assigning a point in this category. Therefore, the prediction performed the arithmetic correctly but extracted different parameters than the ground-truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "25_7": {
+        "analysis": "The prediction missed the 'Alcohol use' criterion from the ground-truth explanation, which should have added 1 point to the total score. The patient's age was correctly identified as not contributing to the score. The hypertension, renal disease, and medication usage were correctly identified and scored. However, the 'Alcohol use' criterion was not considered in the prediction, leading to an underestimation of the total HAS-BLED score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "25_8": {
+        "analysis": "The prediction incorrectly classified a major bleeding episode as a stroke, which is not accurate according to the ground-truth explanation. Also, the prediction incorrectly assigned a point for alcohol consumption, even though the patient consumes less than 8 drinks per week, which should not contribute to the score according to the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_10": {
+        "analysis": "The prediction used the correct calculator and rules for the HAS-BLED score, and correctly extracted the parameters from the patient's information. However, the arithmetic was performed incorrectly. The prediction calculated a score of 4, but the correct score according to the ground-truth explanation is 5. The prediction missed the point for alcohol use.",
+        "error_type": [
+            "C",
+            "B"
+        ]
+    },
+    "25_11": {
+        "analysis": "The prediction used a different set of criteria for the HAS-BLED score calculation, and also extracted different parameters than the ground-truth. The prediction incorrectly considered the patient as elderly (age >65) and added a point for it, while the ground-truth explanation clearly states that the patient is 65 years old, which does not meet the criteria for adding a point. The prediction also missed the criteria for alcohol use.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_12": {
+        "analysis": "The prediction incorrectly assigned 1 point for the 'Drugs/alcohol' category, even though the patient consumes less than 8 drinks per week, which should result in 0 points according to the ground-truth explanation. All other parameters were correctly extracted and calculated.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "25_14": {
+        "analysis": "The prediction missed the presence of liver disease in the patient, which should have added 1 point to the total score. The prediction also did not mention alcohol use, which is a component of the HAS-BLED score, but in this case it would not have affected the score as the patient's alcohol consumption is below the threshold. The prediction also incorrectly assumed that abnormal renal function and stroke were not mentioned in the patient note, when in fact they were mentioned and confirmed to be absent.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction missed some parameters from the ground-truth explanation. The prediction did not account for the patient's alcohol consumption and liver disease, both of which should have added 1 point each to the total score. Therefore, the prediction's total score is lower than the ground-truth.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction missed the point for liver disease which was present in the patient according to the ground-truth explanation. This led to a lower total score in the prediction.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "26_pmc-7232043-1": {
+        "analysis": "The assistant used a different formula to calculate the corrected sodium concentration for hyperglycemia. The correct formula is Measured sodium + 0.024 * (Serum glucose - 100), but the assistant used Corrected Na = Measured Na + [(Glucose - 100) / 3.15].",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_usmle-5686": {
+        "analysis": "The prediction used a different formula than the ground-truth. The ground-truth used the Hiller, 1999 formula for Sodium Correction for Hyperglycemia, which is Measured sodium + 0.024 * (Serum glucose - 100). However, the prediction used a different formula: Corrected Na+ = Measured Na+ + [(Glucose - 100) / 3.15]. This resulted in a different answer than the ground-truth.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_pmc-7455384-1": {
+        "analysis": "The assistant used a different formula to calculate the corrected sodium concentration for hyperglycemia. The correct formula is Measured sodium + 0.024 * (Serum glucose - 100), but the assistant used Corrected Na = Measured Na + (1.6 x (Glucose - 5.5) / 5.5). This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_pmc-6549199-1": {
+        "analysis": "The assistant used a different formula to calculate the corrected sodium concentration. Instead of multiplying the difference between the glucose level and 100 by 0.024, the assistant divided it by 3.15. This led to a significantly higher corrected sodium concentration.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_pmc-7410512-1": {
+        "analysis": "The assistant used a different formula for Sodium Correction for Hyperglycemia than the one provided in the ground-truth explanation. The assistant also did not convert the sodium concentration from mmol/L to mEq/L as done in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-6142732-1": {
+        "analysis": "The assistant used a different formula to calculate the corrected sodium concentration for hyperglycemia. The correct formula is Measured sodium + 0.024 * (Serum glucose - 100), but the assistant used Corrected Na+ (mEq/L) = Measured Na+ (mEq/L) + [1.6 \u00d7 (Glucose - 5.5) / 5.5]. Also, the assistant incorrectly converted the glucose level from mmol/L to mg/dL by multiplying by 18, instead of following the correct conversion process.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_2": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The errors occurred in the calculation of the BUN score, systolic blood pressure score, and heart failure score. The BUN score was calculated as 2 instead of 4, the systolic blood pressure score was calculated as 1 instead of 2, and the heart failure score was calculated as 1 instead of 2.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "27_3": {
+        "analysis": "The prediction used a different scoring system for the Glasgow-Blatchford Score, which resulted in a different score. The prediction also did not account for the patient's recent syncope and hepatic disease history, which should have added points to the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_4": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The prediction did not account for the patient's recent syncope, which should have added 2 points to the score. Additionally, the prediction incorrectly calculated the score for the patient's BUN concentration and systolic blood pressure. The BUN concentration of 18 mg/dL does not meet the criteria for adding points, and the systolic blood pressure of 103 mmHg should have added 1 point to the score. Therefore, the correct score should have been 6, not 3.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "27_5": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Bleeding score. The prediction incorrectly assigned 1 point for BUN > 18 mg/dL, while the ground truth states that BUN < 18.2 mg/dL should receive 0 points. The prediction also incorrectly assigned 1 point for hemoglobin < 13 g/dL, while the ground truth states that for a female patient, hemoglobin >= 12 g/dL should receive 0 points. The prediction also incorrectly assigned 1 point for systolic blood pressure < 100 mmHg, while the ground truth states that systolic blood pressure 100-109 mmHg should receive 1 point. The prediction correctly assigned 1 point for pulse > 100 beats per minute.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_7": {
+        "analysis": "The prediction used a different scoring system for BUN, which resulted in a lower score. The correct scoring system for BUN is: <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points. The prediction also failed to convert the BUN value from mmol/L to mg/dL before applying the scoring system. The correct conversion would have resulted in a BUN value of 61.776 mg/dL, which should have added 4 points to the score, not 2. The prediction also failed to account for the patient's gender when scoring the hemoglobin level. The correct scoring system for hemoglobin in women is: >=12 = 0 points, <=10-12 = +1 point, <10 = +6 points. The prediction correctly identified that the patient's hemoglobin level was 12 g/dL, but incorrectly assigned 0 points instead of 1. The prediction also failed to account for the patient's cardiac failure status, which should have added 2 points to the score. The correct total score should have been 8, not 6.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "27_8": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The prediction did not correctly apply the scoring rules for each criterion, resulting in a lower score than the ground truth. For example, the prediction did not add points for the patient's elevated BUN and decreased hemoglobin levels, and it did not add points for the patient's cardiac failure.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_9": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The BUN level of 30 mg/dL should have scored 4 points, not 2. The prediction correctly identified the parameters and used the correct calculator, but made an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "27_10": {
+        "analysis": "The prediction used incorrect criteria for the Glasgow-Blatchford Score calculation. The prediction also incorrectly calculated the BUN and hemoglobin scores, and did not account for the patient's cardiac failure status.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_11": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The prediction assigned incorrect points for the systolic blood pressure, BUN level, and hemoglobin level. The prediction also failed to account for the presence of cardiac failure, which should have added 2 points to the total score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "27_12": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Bleeding score. The prediction incorrectly converted the BUN value from mmol/L to mg/dL, resulting in a lower score than the ground truth. The prediction also incorrectly calculated the total score, resulting in a lower total score than the ground truth.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "27_13": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The prediction incorrectly assigned 2 points for BUN level of 33 mg/dL, while the correct assignment should be 4 points according to the ground-truth. The prediction also missed the fact that the patient had a recent syncope, which should add 2 points to the score. Therefore, the correct score should be 6, not 2.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "27_14": {
+        "analysis": "The prediction used incorrect criteria for the Glasgow-Blatchford Score. The prediction incorrectly assigned points for BUN > 6.5 mmol/L, hemoglobin < 13 g/dL, pulse > 100 beats per minute, and did not consider the correct ranges for BUN and hemoglobin levels. The prediction also did not consider the patient's gender in the hemoglobin level calculation. Additionally, the prediction did not convert the BUN concentration from mmol/L to mg/dL, which is necessary for the correct calculation. The prediction also did not consider the patient's systolic blood pressure, recent syncope, and cardiac failure status.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_15": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The BUN value of 30 mg/dL should have added 4 points to the score, not 2. Additionally, the prediction failed to consider the patient's hepatic disease history and cardiac failure, which should have added 2 points each to the score. The correct Glasgow-Blatchford Score should be 8, not 2.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "27_16": {
+        "analysis": "The prediction used incorrect rules for calculating the Glasgow-Blatchford Score. The prediction incorrectly assigned 1 point for BUN > 18 mg/dL, while the correct rule is to assign 2 points for BUN between 18.2 and 22.3 mg/dL. The prediction also incorrectly assigned 1 point for Hemoglobin < 13 g/dL, while the correct rule is to assign 0 points for Hemoglobin >= 12 g/dL in women. The prediction also incorrectly assigned 1 point for Syncope, while the correct rule is to assign 2 points for Syncope.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "27_17": {
+        "analysis": "The prediction used different criteria for the Glasgow-Blatchford Score than the ground-truth. The prediction also incorrectly calculated the total score based on the patient's symptoms and lab results.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_18": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The BUN level of 26 mg/dL should correspond to 3 points, not 2. The heart rate of 94 beats per minute should correspond to 0 points, not 1. The prediction also missed the patient's hepatic disease history, which should add 2 points to the score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "27_19": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The prediction did not convert the BUN from mmol/L to mg/dL, which resulted in an incorrect score for BUN. The prediction also did not account for the patient's heart rate, recent syncope, and the absence of melena, hepatic disease, and cardiac failure, which are all parameters used in the score calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "27_20": {
+        "analysis": "The assistant extracted the correct parameters but made errors in the calculation of the Glasgow-Blatchford Score. The assistant incorrectly assigned 1 point for BUN level of 25 mg/dL, while according to the ground truth, it should have been 3 points. The assistant correctly identified the presence of melena and assigned 1 point, but the total score was incorrectly calculated as 2 instead of 4.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "27_21": {
+        "analysis": "The prediction incorrectly calculated the Glasgow-Blatchford Score. The prediction incorrectly scored the BUN level and the Hemoglobin level. The BUN level of 24 mmol/L was incorrectly scored as 2, when it should have been scored as 4. The Hemoglobin level of 10.2 g/dL was incorrectly scored as 1, when it should have been scored as 3. The prediction also failed to account for the patient's cardiac failure, which should have added 2 points to the score. The correct total score should have been 9, not 3.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "31_pmc-3114100-1": {
+        "analysis": "The prediction used the wrong conversion factor for insulin from pmol/L to \u00b5IU/mL. The correct conversion factor is 1 \u00b5IU/mL equals 6 pmol/L, but the prediction used 1 pmol/L equals 0.139 \u00b5IU/mL. This led to a different insulin value, which in turn affected the final HOMA-IR score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "32_3": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction also performed the arithmetic incorrectly. The prediction included conditions such as metastatic prostate cancer, cerebrovascular disease, and chronic kidney disease, which were not mentioned in the ground-truth. The prediction also calculated a total CCI score of 13, while the ground-truth calculated a total CCI score of 15.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "32_5": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction missed the patient's age, the presence of 'Congestive heart failure,' and the 'localized' solid tumor, which should have added 1, 1, and 2 points to the score respectively. The prediction also incorrectly added 1 point for 'mild liver disease,' which was not mentioned in the ground-truth.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    }
+}

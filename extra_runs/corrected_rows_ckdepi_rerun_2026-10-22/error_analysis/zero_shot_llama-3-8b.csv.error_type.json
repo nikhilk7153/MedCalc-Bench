@@ -1,0 +1,194 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant also did not convert the serum creatinine concentration from \u00b5mol/L to mg/dL, which is required for the correct formula. The assistant also used a different set of parameters for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, and also used a different conversion factor to convert the serum creatinine concentration from \u00b5mol/L to mg/dL. The prediction also did not take into account the patient's gender in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also used different parameters for the calculation, such as a different value for \u03ba.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant also incorrectly converted the serum creatinine concentration from \u00b5mol/L to mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which is not the one mentioned in the ground-truth explanation. The assistant also didn't consider the gender of the patient in the calculation, which is a crucial factor in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also did not take into account the patient's gender, which is a crucial factor in the ground-truth calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction used a different formula than the ground-truth. The prediction also performed the arithmetic incorrectly, as the calculated GFR value does not match the ground-truth.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction used a different formula than the ground-truth to calculate the GFR. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one mentioned in the ground-truth explanation. The prediction also did not take into account the patient's gender, which is a crucial factor in the ground-truth calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-7983145-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-8346262-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one mentioned in the ground-truth explanation. The prediction also used different parameters than the ground-truth, such as \u03ba = 1.209 for males, which is not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction used a different formula than the ground-truth to calculate the GFR. The prediction also used different parameters than the ground-truth, such as the minimum of the patient's creatinine value and 2.5, and different coefficients for the patient's gender.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also did not convert the serum creatinine concentration from \u00b5mol/L to mg/dL, which was done in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4448053-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one provided in the ground-truth explanation. The prediction also introduced a new parameter 'Pott' which is not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction failed to account for the criterion 'alternative diagnosis to DVT as likely or more likely,' which is present in the patient's note and should decrease the score by 2. Therefore, the final score should be -2, not 0.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction used wrong rules for the calculation. The age of the patient and the type of surgery were incorrectly included in the calculation, which are not part of the Revised Cardiac Risk Index (RCRI) score calculation. Also, the prediction incorrectly assigned 2 points for age and 1 point for high-risk surgery, which are not part of the scoring system. The prediction also incorrectly identified the patient's history of congestive heart failure as a moderate-risk factor, while it should be considered a high-risk factor and assigned 1 point.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "20_pmc-8169128-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction also used wrong knowledge about the calculation. The prediction considered 'white spots' on tonsils and 'inflamed lymph nodes' as separate parameters, each contributing 1 point to the Centor score. However, in the ground-truth, these are considered as one parameter 'exudate or swelling on tonsils' contributing 1 point to the score. The prediction also did not consider the absence of cough, which should have added 1 point to the score according to the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction also used wrong knowledge about the calculation. The prediction did not consider the patient's age, temperature, absence of cough, and presence of 'tender/swollen anterior cervical lymph nodes' in the calculation of the Centor score. Instead, it considered irrelevant parameters such as heart rate, malaise, fatigue, night sweats, gradual decrease in appetite, body weight loss, and laboratory analysis results.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction incorrectly extracted the parameters from the patient's medical history. The prediction incorrectly identified the patient as having hypertension and being of an age that would increase the HAS-BLED score. Additionally, the prediction incorrectly assigned 2 points for the patient's bleeding history, when the correct assignment should have been 1 point.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction also used wrong knowledge about the calculation, as it assigned incorrect points to the comorbidities according to the Charlson Comorbidity Index (CCI) scoring system.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The prediction used the wrong calculator/rules for the FeverPAIN score. The FeverPAIN score is used to assess the likelihood of streptococcal pharyngitis, not the severity of heart failure. The parameters used in the prediction are also different from the ground-truth. The prediction used age, NYHA functional class, and serum creatinine level, while the ground-truth used the presence of fever, absence of cough or coryza, symptom onset \u22643 days, purulent tonsils, and severe tonsil inflammation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-8454594-1": {
+        "analysis": "The prediction used a different calculator or rules for the FeverPAIN score calculation. The prediction also extracted different parameters than the ground-truth, such as the severity of the fever and the presence of a headache, which are not considered in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The FeverPAIN score is calculated based on the presence or absence of five symptoms: fever, purulence, attend rapidly (within 3 days), inflamed tonsils, and no cough or coryza. The prediction, however, used parameters such as right-sided abdominal pain, vital signs, and laboratory findings, which are not part of the FeverPAIN score calculation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "39_pmc-2657771-1": {
+        "analysis": "The assistant used a wrong formula to calculate the anion gap. It included potassium in the calculation, which is not part of the correct formula. The correct formula is sodium - (chloride + bicarbonate).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "21_1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth for the verbal response and motor response, leading to a different final score.",
+        "error_type": [
+            "B"
+        ]
+    }
+}

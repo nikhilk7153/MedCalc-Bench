@@ -1,0 +1,177 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The prediction incorrectly extracted the concentration of Serum Creatinine as 0.42 mg/dL instead of correctly converting 42.0 \u00b5mol/L to 0.4751 mg/dL. Also, the value of B was incorrectly given as -0.329 instead of -0.241. These errors led to a different GFR value.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different formula to calculate GFR, and also extracted a different serum creatinine concentration than the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also used different parameters for the calculation, such as \u03ba and \u03b1, which were not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction used a different formula for GFR calculation, which is not the same as the one used in the ground-truth. The prediction also extracted an additional parameter, hematocrit, which was not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The prediction used the wrong coefficient B for the calculation, and also extracted a different serum creatinine concentration after conversion from \u00b5mol/L to mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which led to a different result. The assistant also did not consider the gender coefficient in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction used a different value for the coefficient B than the ground-truth. The ground-truth used B = -1.2, while the prediction used B = -1.154.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different gender coefficient and B value than the ground truth. The ground truth used a gender coefficient of 1.012 for females, while the prediction used a coefficient of 1.212 for African American patients. The B value in the ground truth was -1.2, while the prediction used -1.209. The prediction also incorrectly identified the patient as African American, which was not mentioned in the ground truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and applied the correct rules. However, the arithmetic was performed incorrectly, leading to a different GFR value. Additionally, the prediction applied a correction factor for moderate renal failure, which was not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "C",
+            "A"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction correctly identified the formula and parameters for the GFR calculation. However, the arithmetic was performed incorrectly, resulting in a different GFR value. Additionally, the prediction introduced an adjustment to the GFR value based on the patient's creatinine concentration, which is not part of the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which led to a different result. The prediction also used different coefficients for the calculation, which are not in line with the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7983145-1": {
+        "analysis": "The prediction correctly identified the formula and parameters to use for the calculation. However, the value of B used in the calculation is incorrect. The ground truth states that B should be -1.2, but the prediction used -1.209. This led to a different final result.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "3_pmc-8346262-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, which is not the same as the one provided in the ground truth. The assistant also used different parameters for the calculation, such as \u03ba and \u03b1, which were not mentioned in the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction used a different formula for the calculation, which led to a different result. The correct formula is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), but the prediction used 144 x (Scr/0.7)**-1.209 x 0.9938^Age.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction correctly identified the formula for GFR and the patient's parameters. However, the arithmetic was performed incorrectly, leading to a different GFR value than the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which includes different parameters and coefficients than the ground-truth. The prediction also incorrectly assumed the patient's race, which was not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used incorrect values for the coefficients A and B. The ground truth states that for a male patient with a creatinine concentration greater than 0.9 mg/dL, A should be 0.9 and B should be -1.2. However, the prediction used A = 0.7 and B = -1.209.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one mentioned in the ground truth. The prediction also used different parameters for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction incorrectly states that the Well's DVT score cannot be negative, which is not true according to the ground-truth explanation. The correct score should be -2, not 0.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction does not provide a step-by-step calculation of the Centor score for the patient. It only provides a general explanation of how the Centor score is calculated, without applying this to the specific patient's case.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_6": {
+        "analysis": "The prediction started with a wrong initial score of 2 instead of 0. The prediction also incorrectly stated that the patient's score should be increased because they have more than 8 alcoholic drinks a week, while the ground truth states that the patient has less than 8 drinks a week and the score should not be changed. The prediction also introduced uncertainty about the stroke's disabling nature and the INR value, which are not mentioned in the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction incorrectly extracted the presence of hypertension and started with an incorrect initial score. The correct initial score should be 0, not 5. Also, hypertension was reported to be absent in the ground-truth, but the prediction considered it as present.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction incorrectly classified the patient's age as being greater than or equal to 65 years, and incorrectly reported the presence of hypertension. These errors led to an incorrect initial score and an incorrect addition to the score, respectively.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction made several errors. First, it added 2 points for the patient's age instead of 3. Second, it added a point for 'Hemiplegia,' which was not mentioned in the ground-truth. Third, it added a point for 'Diabetes mellitus,' which should have added 0 points according to the ground-truth. Lastly, the prediction's final CCI score was 15, while the ground-truth's final CCI score was 14.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-8454594-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction incorrectly added a point for the presence of a cough or corzyea at the time of admission, which should not have been added according to the ground-truth. The prediction also incorrectly added a point for the patient's symptoms lasting for more than 3 days, which contradicts the ground-truth stating that the symptom onset was \u22643 days. The prediction also made assumptions about the presence of purulent tonsils and severe tonsil inflammation, which were not reported in the ground-truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction incorrectly did not add a point for the absence of cough or coryza, which is a mistake in the rules used for the calculation. The prediction also incorrectly assumed that the absence of purulent tonsils and severe tonsil inflammation would not add points to the score, which is another mistake in the rules used for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    }
+}

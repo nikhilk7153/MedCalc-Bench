@@ -1,0 +1,189 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The prediction used the wrong coefficients A and B for the patient's gender and creatinine concentration. Also, the prediction did not convert the concentration of Serum Creatinine from \u00b5mol/L to mg/dL before plugging it into the formula.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used the wrong conversion factor for converting the concentration of Serum Creatinine from \u00b5mol/L to mg/dL. The correct conversion involves a series of steps including converting \u00b5mol to mol, mol to grams, grams to mg, and then adjusting for volume. The prediction also used the wrong values for coefficients A and B. The correct values are A = 0.7 and B = -1.2 for a female patient with a creatinine concentration greater than 0.7 mg/dL, not A = 0.9 and B = -1.2.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction incorrectly performed the arithmetic calculation. The correct GFR value should be 7.45479 ml/min/1.73 m\u00b2, but the prediction calculated it as 34.99991 ml/min/1.73 m\u00b2.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction incorrectly extracted the parameters for A and B. The prediction states that because the patient's gender is female and the creatinine concentration is less than or equal to 0.5 mg/dL, A = 0.7 and B = -0.329. However, the ground truth states that because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2. The prediction also incorrectly performed the arithmetic, leading to a different GFR value.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The prediction incorrectly extracted the parameters for A and B, and did not convert the concentration of Serum Creatinine from \u00b5mol/L to mg/dL before plugging it into the formula. This led to a different GFR value.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The prediction incorrectly identified the coefficients A and B. The ground truth states that for a female patient with a creatinine concentration greater than 0.7 mg/dL, A = 0.7 and B = -1.2. However, the prediction used A = 0.7 and B = -0.329, which is incorrect. This led to a different final GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction incorrectly extracted the value of A as 0.9 instead of 0.7, which led to a different GFR value.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different value for the parameter A than the ground-truth. The ground-truth used A = 0.7, while the prediction used A = 0.9. This led to a different result in the calculation.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct rules. However, the arithmetic was performed incorrectly, leading to a different result.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction incorrectly extracted the value of A as 0.9 instead of 0.7, which led to a different GFR value.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction used the wrong value for the coefficient A. The ground truth states that A should be 0.7 when the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL. However, the prediction used a value of 0.9 for A, which led to a different result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7983145-1": {
+        "analysis": "The prediction used the wrong values for the coefficients A and B. The ground truth states that for a female patient with a creatinine concentration greater than 0.7 mg/dL, A should be 0.7 and B should be -1.2. However, the prediction used A = 0.9 and B = -1.2, which led to a different result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct rules. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction used incorrect values for the coefficients A and B. According to the ground truth, for a female patient with a creatinine concentration greater than 0.7 mg/dL, A should be 0.7 and B should be -1.2. However, the prediction used A = 0.9 and B = -0.411. This led to a different final GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction incorrectly classified the creatinine concentration as less than 0.5 mg/dL, leading to the wrong values for A and B. Additionally, the prediction did not convert the creatinine concentration from \u03bcmol/L to mg/dL, which is the required unit for the calculation. This resulted in the wrong GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction correctly identified the formula for GFR and extracted the correct parameters. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct coefficients. However, the arithmetic was performed incorrectly, leading to a different GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct rules. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction incorrectly extracted the parameters 'active cancer' and 'alternative diagnosis to DVT as likely or more likely' from the patient's note. The ground-truth explanation states that 'active cancer' is absent and 'alternative diagnosis to DVT as likely or more likely' is present, but the prediction states the opposite. This led to an incorrect calculation of the Well's DVT score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction incorrectly included the use of nitroglycerin for occasional chest pain on exertion as a factor to increment the score, which is not mentioned in the ground-truth. Also, the prediction missed the absence of an elevated risk surgery and pre-operative insulin treatment, which were mentioned in the ground-truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "20_pmc-8169128-1": {
+        "analysis": "The prediction incorrectly assumed the absence of cough, 'tender/swollen anterior cervical lymph nodes', and 'exudate or swelling on tonsils' when these symptoms were actually present as per the ground-truth. This led to the prediction not adding the necessary points to the Centor score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "25_6": {
+        "analysis": "The prediction incorrectly increased the score for the patient's alcohol consumption and hypertension, which were not supposed to change the score according to the ground-truth. The prediction also incorrectly did not increase the score for the patient's medications for bleeding, which was supposed to increase the score according to the ground-truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction incorrectly increased the score based on the patient's age, which is less than 65 years. The prediction also incorrectly increased the score by 2 for the presence of prior bleeding, while the correct increment should be 1. The prediction correctly identified the presence of liver disease, prior bleeding, and medications for bleeding, and the absence of stroke history, renal disease, and labile INR.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction incorrectly increased the score based on the patient's age, which is less than 66 years. It also incorrectly increased the score by 2 for the history of bleeding, whereas the ground-truth explanation only increased the score by 1 for this factor. The prediction also failed to consider the factors of stroke history and labile inr, which were considered in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction made several errors. First, it added 2 points for the patient's age instead of 3. Second, it incorrectly assumed that 'Myocardial infarction' was present for the patient and added 1 point. Third, it only added 1 point for the patient's 'moderate to severe' liver disease instead of 3. Fourth, it incorrectly added 1 point for the presence of 'Diabetes mellitus' and the patient's solid tumor status, which should have added 0 and 2 points respectively. Lastly, it only added 1 point for the presence of 'Leukemia' instead of 2. These errors resulted in a lower CCI score than the ground truth.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction incorrectly assumed that the patient had a fever in the past 24 hours and had a cough or corzyea at the time of admission, which contradicts the ground-truth. The prediction also failed to add a point for the absence of cough or coryza, which was done in the ground-truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "33_pmc-8454594-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction failed to account for the patient's symptom onset \u22643 days, which should have added 1 point to the FeverPAIN score. Instead, the prediction incorrectly looked for symptom onset > 43 days, which is not a parameter in the FeverPAIN score calculation. This resulted in an incorrect final score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. In the ground-truth, the absence of cough or coryza added one point to the score, but in the prediction, the absence of pain or discomfort was considered instead, which did not add any points to the score. Also, the prediction assumed the absence of purulent tonsils and severe tonsil inflammation without any report, which is not in line with the ground-truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "21_1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth for the best eye, verbal, and motor responses. The arithmetic was performed correctly based on the extracted parameters.",
+        "error_type": [
+            "B"
+        ]
+    }
+}

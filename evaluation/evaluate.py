@@ -35,9 +35,9 @@ def check_correctness(answer: str, ground_truth, calid, upper_limit, lower_limit
         else:
             correctness = 0
     elif calid in [4, 15, 16, 17, 18, 20, 21, 25, 27, 28, 29, 32, 33, 36, 43, 45, 48, 51, 69]:
-        # Output Type: integer A
-        answer = round(eval(answer))
-        if answer == eval(ground_truth):
+        # Output Type: integer A; a non-whole answer (e.g. 2.5) is wrong rather than rounded
+        answer = float(eval(answer))
+        if answer.is_integer() and int(answer) == eval(ground_truth):
             correctness = 1
         else:
             correctness = 0

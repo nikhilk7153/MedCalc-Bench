@@ -1,0 +1,154 @@
+{
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different formula for GFR calculation, which is the 2021 CKD-EPI Creatinine equation, instead of the formula provided in the ground-truth. The prediction also used a different value for the coefficient 'A' (-0.241 instead of 0.7) and a different conversion rate for serum creatinine (0.0113 instead of the detailed conversion provided in the ground-truth).",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, specifically the 2021 CKD-EPI Creatinine equation, instead of the formula provided in the ground-truth explanation. The prediction also used different parameters, such as \u03ba and \u03b1, which were not mentioned in the ground-truth explanation. The arithmetic was performed correctly based on the formula and parameters used in the prediction.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant used the 2021 CKD-EPI Creatinine equation, which is different from the formula provided in the ground truth. The assistant also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR. The prediction also used a different conversion factor to convert the serum creatinine level from \u03bcmol/L to mg/dL. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which led to a different result. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction used a different formula than the ground-truth. The prediction also extracted different parameters than the ground-truth, using a different value for the coefficient A.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which includes a race coefficient and different exponents for the creatinine concentration. The ground truth does not mention the patient's race, and uses different exponents for the creatinine concentration.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR. The ground truth used a formula where the coefficients A and B are dependent on the patient's gender and creatinine concentration, while the prediction used the 2021 CKD-EPI Creatinine equation. The prediction also used a different \u03ba value (0.7) compared to the ground truth (0.9).",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction used a different formula than the ground-truth, and also made an assumption about the patient's race that was not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR. The prediction used the 2021 CKD-EPI Creatinine equation, which is different from the formula provided in the ground truth. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant used the 2021 CKD-EPI Creatinine equation, which is different from the formula provided in the ground truth. The assistant also used different parameters for the calculation, such as \u03b1 and \u03ba, which were not mentioned in the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one mentioned in the ground-truth explanation. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is the 2021 CKD-EPI Creatinine equation, instead of the formula provided in the ground-truth explanation. The prediction also used different parameters for the calculation, such as \u03ba = 0.7 for males and \u03b1 = -0.241 for males, which are not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one provided in the ground-truth explanation. The prediction also used different parameters for the calculation, such as the race of the patient, which was not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also used different parameters, such as the \u03ba value and the \u03b1 value, which were not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR. The ground truth used a formula that depends on the patient's gender and creatinine concentration, while the prediction used the 2021 CKD-EPI Creatinine equation. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction incorrectly extracted the parameter 'major surgery within 4 weeks' from the patient's note, which was not mentioned in the ground-truth explanation. The prediction also failed to extract the parameter 'alternative diagnosis to DVT as likely or more likely' which was present in the patient's note according to the ground-truth explanation. The arithmetic was performed correctly based on the extracted parameters.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction incorrectly identified the presence of diabetes in the patient, which was not mentioned in the ground-truth explanation. This led to an overestimation of the cardiac risk index score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction incorrectly calculated the Centor Score. The prediction incorrectly added a point for the presence of tender anterior cervical lymph nodes, despite the patient being over 44 years old, which should have resulted in a decrease in the score. The prediction also failed to account for the absence of a cough, which should have added a point to the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_6": {
+        "analysis": "The prediction incorrectly assigned a point for hypertension and alcohol consumption, which were not present or not excessive respectively according to the ground-truth. The prediction also missed assigning a point for medications for bleeding, which was present according to the ground-truth.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction incorrectly assigned 1 point for the 'Elderly' component of the HAS-BLED score. According to the ground-truth, the patient's age of 61 years does not warrant a point increase as the age threshold is 66 years. The prediction also incorrectly assigned 1 point for the 'Hypertension' component, while the ground-truth states that the patient does not have hypertension. The prediction also missed the presence of liver disease, which should have added 1 point to the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "32_21": {
+        "analysis": "The assistant correctly identified the conditions and their corresponding points according to the Charlson Comorbidity Index (CCI). However, the assistant made an arithmetic error when adding up the points. The correct total should be 14, not 13.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The prediction used a completely different rule for calculating the FeverPAIN score, which is incorrect. The FeverPAIN score is used to predict the likelihood of a streptococcal infection in patients with a sore throat, not to identify patients at low risk of serious causes of palpitations. The parameters used in the prediction are also different from the ones in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    }
+}

@@ -1,0 +1,205 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The assistant also did not convert the serum creatinine level from \u03bcmol/L to mg/dL before using it in the calculation. The assistant also used wrong values for the constants in the formula.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground truth. Also, the prediction extracted different parameters than the ground truth, such as the constant based on race and albumin level, which were not mentioned in the ground truth. The conversion of the serum creatinine level from \u03bcmol/L to mg/dL was also done differently in the prediction.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, and also extracted different parameters than the ground-truth. The prediction used the CKD-EPI Creatinine equation instead of the provided formula, and used parameters \u03ba and \u03b1 which were not mentioned in the ground-truth. The prediction also used a different conversion factor for the serum creatinine level.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction used a completely different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground-truth. Also, the prediction extracted different parameters (filtration fraction and hematocrit) which were not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The assistant also incorrectly converted the serum creatinine value from \u03bcmol/L to mg/dL. The correct conversion factor is not 0.0113 but involves a more complex calculation as shown in the ground truth explanation. The assistant also used the wrong coefficients for the CKD-EPI Creatinine equation.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The ground truth used a simpler formula, while the assistant used the CKD-EPI Creatinine equation, which is a more complex formula. This resulted in a different GFR value.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground-truth. The parameters extracted from the patient's data were correct, but the calculator/rules used were incorrect.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground-truth. Also, the prediction extracted different parameters than the ground-truth, such as the patient's race, which was not mentioned in the ground-truth. Finally, the prediction used the patient's laboratory result as the GFR, which is not the correct method according to the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant used the 2021 CKD-EPI Creatinine equation instead of the provided formula. Additionally, the assistant used a different value for the coefficient B (-0.739 instead of -1.2).",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the formula provided in the ground-truth explanation. Also, the prediction extracted different parameters than the ground-truth, as it considered race, which was not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. Instead of using the provided formula, the assistant used the CKD-EPI Creatinine equation. The assistant also used different parameters than the ground truth. The assistant used a different constant for the patient's gender and ethnicity, and a different constant based on age, gender, and ethnicity. The assistant also used a conversion factor to estimate the GFR based on creatinine clearance, which was not mentioned in the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8346262-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground-truth. Also, the prediction extracted different parameters than the ground-truth, such as the cystatin C ratio, which was not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant used the CKD-EPI Creatinine equation instead of the provided formula in the ground truth. The parameters extracted were correct, but the rules used for the calculation were wrong.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The assistant used the CKD-EPI Creatinine equation instead of the provided formula in the ground truth. Also, the assistant used different coefficients for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4448053-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. Also, the prediction used a different value for the coefficient 'A' in the formula.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The ground truth used a formula with different coefficients and exponents based on the patient's gender and creatinine concentration, while the assistant used the CKD-EPI Creatinine equation with different coefficients and exponents. This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used a different formula (2021 CKD-EPI Creatinine equation) to calculate the GFR, instead of the formula provided in the ground-truth explanation. The prediction also used different parameters, such as ethnicity and different constants for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used a different formula than the ground-truth. The ground-truth used a simpler formula for GFR calculation, while the prediction used the CKD-EPI Creatinine equation. The prediction also used different parameters than the ground-truth, including a different exponent for the creatinine ratio and additional factors for race and gender.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction does not follow the correct rules for calculating the Well's DVT Score. Instead, it discusses the risk of DVT based on the patient's immunosuppressive therapy, which is not part of the Well's DVT Score calculation. The prediction also mentions factors such as age and D-dimer level, which are not part of the Well's DVT Score. The prediction does not extract the correct parameters from the patient's note, and it does not perform any arithmetic based on the Well's DVT Score rules.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction used a different calculator/rule for the cardiac risk index, including parameters that were not mentioned in the ground-truth explanation. The prediction also did not include some parameters that were in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_pmc-8169128-1": {
+        "analysis": "The prediction incorrectly calculated the Centor score. The prediction incorrectly stated that the patient had an absence of exudate on a throat swab, while the ground-truth stated that the patient had 'exudate or swelling on tonsils'. This error led to a lower Centor score in the prediction than in the ground-truth.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction used a different set of rules to calculate the Centor Score, including criteria such as 'Atypical lymphocytes', 'Spleen palpable', 'Tonday morning sore throat', and 'Absence of monospot test result', which are not part of the standard Centor Score calculation. The standard Centor Score calculation includes criteria such as age, temperature, presence of cough, presence of tender/swollen anterior cervical lymph nodes, and presence of exudate or swelling on tonsils.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction incorrectly assumed that the HAS-BLED score could not be calculated due to the absence of anticoagulant therapy in the patient's medical history. However, the ground-truth explanation shows that the score can be calculated based on the patient's age, alcohol consumption, and presence or absence of certain medical conditions.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction incorrectly calculated the HAS-BLED score. The prediction missed the presence of prior bleeding which should have added 1 point to the score. Also, the prediction incorrectly mentioned the 'S' factor (abnormal coagulation) which was not provided in the patient note.",
+        "error_type": [
+            "B",
+            "A"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction used different weights for the comorbidities than the ground-truth. For example, the weight for 'Leukemia' was 6 in the prediction, while it was 2 in the ground-truth. Similarly, the weight for 'Congestive heart failure' was 3 in the prediction, while it was 1 in the ground-truth. The prediction also included 'Hepatoblastoma' and 'Type II diabetes mellitus' which were not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The assistant used the wrong calculator/rules for the calculation. The FeverPAIN score is not used to assess the risk of fever in patients with neutropenia, but rather to assess the severity of symptoms in patients with sore throat. The assistant also incorrectly assumed that the score is not applicable because there was no mention of neutropenia or fever in the patient's medical history, while the ground-truth explanation clearly states that the score is calculated based on the absence or presence of certain symptoms.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "33_pmc-8454594-1": {
+        "analysis": "The prediction used a different interpretation of the FeverPAIN score, considering parameters that are not part of the original FeverPAIN score calculation. The FeverPAIN score is a clinical prediction rule used in primary care to identify patients with sore throat who are at risk of streptococcal pharyngitis or tonsillitis. It does not include parameters such as pulse, respiratory rate, alertness, and infection markers like leukocytosis, CRP, and ESR. The prediction also did not extract the correct parameters from the patient's case, such as the presence of a cough or corzyea, symptom onset \u22643 days, purulent tonsils, and severe tonsil inflammation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction used a wrong definition of the FeverPAIN score, which is actually used to assess the severity of sore throat, not the risk of deep vein thrombosis (DVT) and pulmonary embolism (PE). The parameters used in the prediction are also different from the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "39_pmc-2657771-1": {
+        "analysis": "The prediction correctly identified the formula for calculating the anion gap and extracted the correct parameters. However, the arithmetic was performed incorrectly, leading to a different result than the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "21_1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction also used wrong knowledge about the calculation, as the scores assigned to the patient's responses do not match the standard Glasgow Coma Scale scoring system.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    }
+}

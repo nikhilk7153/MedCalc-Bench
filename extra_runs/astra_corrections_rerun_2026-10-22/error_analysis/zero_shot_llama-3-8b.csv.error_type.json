@@ -1,0 +1,321 @@
+{
+    "4_pmc-7196137-1": {
+        "analysis": "The prediction incorrectly added points for the patient's age and chronic TPN use, which are not part of the CHA2DS2-VASc score calculation. The prediction also failed to add a point for the patient's gender, which is part of the calculation. The prediction also incorrectly calculated the total score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "4_pmc-8136881-1": {
+        "analysis": "The prediction incorrectly added an extra point for the patient's gender. According to the ground-truth explanation, the patient's gender (female) was already accounted for in the calculation, and the final score should be 4, not 5.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "4_pmc-8096577-1": {
+        "analysis": "The prediction incorrectly assigned 2 points for atrial fibrillation or flutter, which is not a parameter in the CHA2DS2-VASc score calculation. The correct score should be 5, not 6.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "8_pmc-8101672-1": {
+        "analysis": "The assistant correctly identified the parameters for the Well's score calculation, but made an error in the arithmetic calculation. The patient's heart rate was 108 bpm, which is more than 100 bpm, and should have increased the score by 1.5. However, the assistant incorrectly stated that the heart rate was not more than 100 bpm and kept the score at 0.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "8_pmc-8294994-1": {
+        "analysis": "The prediction used a different scoring system for the Wells' criteria for Pulmonary Embolism, assigning a score of 0 or 1 for each criterion, while the ground-truth explanation used a different scoring system, with some criteria contributing more than 1 point to the total score. The prediction also extracted different parameters than the ground-truth, considering 'recent surgery or trauma' and 'immobilization or recent plaster cast' as separate criteria, while the ground-truth explanation considered them as one criterion. The prediction also considered 'alternative diagnosis is less likely' and 'alternative diagnosis is more likely' as separate criteria, while the ground-truth explanation did not consider these as separate criteria.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "8_pmc-5039122-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The ground-truth states that the patient's heart rate is 76.0 beats per minute, which is less than 100 bpm, and so the score remains unchanged, keeping the total score at 0. However, the prediction states that the patient has a heart rate of 115 beats/min, which meets criterion 3, and gives a score of 1. This is incorrect as per the ground-truth.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-6959932-1": {
+        "analysis": "The prediction incorrectly calculated the Well's DVT score. The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction also used wrong knowledge about the calculation, as it incorrectly identified criteria for the Well's DVT score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-4341247-1": {
+        "analysis": "The prediction used a different set of criteria for the Well's DVT Score calculation than the ground-truth. The ground-truth used criteria such as 'active cancer', 'bedridden recently >3 days', 'major surgery within 12 weeks', 'calf swelling >3 cm compared to the other leg', 'collateral (nonvaricose) superficial veins present', 'entire leg swollen', 'localized tenderness along the deep venous system', 'pitting edema, confined to symptomatic leg', 'paralysis, paresis, or recent plaster immobilization of the lower extremity', 'previously documented DVT', and 'alternative diagnosis to DVT as likely or more likely'. However, the prediction used criteria such as 'Active cancer', 'Paralysis or recent surgery', 'Recent trauma or plaster cast', 'Immobilization for more than 3 days', 'Recent hormone therapy', 'Recent infection', 'Recent inflammatory bowel disease', 'Recent surgery or trauma', and 'Age > 65 years'. This led to a different score calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "18_pmc-4244065-1": {
+        "analysis": "The prediction used the wrong calculator/rules for the HEART score, extracting different parameters than the ground-truth. The prediction also incorrectly performed the arithmetic, resulting in a different total score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "20_usmle-12605": {
+        "analysis": "The prediction incorrectly calculated the Centor score. It assigned a point for the patient's temperature being above 99.3 degrees Fahrenheit, while the ground truth explains that the temperature should be converted to Celsius and only adds a point if it's above 38 degrees Celsius. The prediction also failed to add a point for the absence of a cough, which the ground truth does. Additionally, the prediction considered many irrelevant factors for the Centor score calculation, such as history of rheumatic fever, difficulty swallowing, hoarseness, runny nose, and headache.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_pmc-4307710-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The prediction also used wrong knowledge about the calculation, as it did not correctly apply the Centor Score criteria.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "20_usmle-4768": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction also used wrong knowledge about the calculation, as it did not follow the correct Centor Score criteria.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "20_pmc-8240916-1": {
+        "analysis": "The prediction used wrong criteria for the Centor Score calculation. The Centor Score is calculated based on four criteria: age, temperature, absence of cough, and presence of tender/swollen anterior cervical lymph nodes or exudate/swelling on tonsils. The prediction, however, used symptoms and medical values that are not part of the Centor Score criteria, such as sore throat, difficulty breathing, swelling on the neck, white blood cell count, and C-reactive protein level.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "33_usmle-3456": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and used wrong knowledge about the calculation. The FeverPAIN score calculation should be based on the presence of fever, absence of cough or coryza, symptom onset \u22643 days, purulent tonsils, and severe tonsil inflammation. However, the prediction considered other factors such as sore throat, fatigue, temperature, pulse, blood pressure, physical examination findings, and laboratory results, which are not part of the FeverPAIN score calculation. Additionally, the prediction incorrectly calculated the FeverPAIN score as 7, which is not possible as the maximum score is 5.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-3603656-1": {
+        "analysis": "The prediction used a different formula to calculate the FeverPAIN score, which is not correct. The FeverPAIN score is calculated based on the presence of fever, purulence, attend rapidly (within 3 days), severely inflamed tonsils, and no cough or coryza. The prediction also extracted different parameters than the ground-truth, such as temperature in Fahrenheit, number of days of fever, and number of episodes of tonsillitis in the past year.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_usmle-7961": {
+        "analysis": "The prediction used a different method to calculate the FeverPain score. Instead of incrementing the score based on the presence of specific symptoms, the prediction multiplied the fever grade by the pain grade. This is not the correct method for calculating the FeverPain score.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "45_pmc-2988179-1": {
+        "analysis": "The prediction incorrectly added a point for the patient's blood pressure. According to the CURB-65 scoring system, a point is added if the systolic blood pressure is less than 90 mm Hg or the diastolic blood pressure is less than or equal to 60 mm Hg. The patient's blood pressure was 150/90 mm Hg, which does not meet these criteria. Therefore, no point should have been added for blood pressure.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "29_6": {
+        "analysis": "The prediction does not provide a detailed step-by-step calculation of the PSI score, making it impossible to identify the specific parameters used or the arithmetic performed. However, the final PSI score provided by the prediction is significantly different from the ground truth, indicating that an error has occurred somewhere in the calculation process.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_8": {
+        "analysis": "The prediction used a different method to calculate the PSI score, assigning points based on ranges for age, temperature, blood pressure, pulse, and arterial blood gas results. This is not the correct method for calculating the PSI score. The correct method involves adding the patient's age to the score, and then adding points for various conditions and measurements if they are present or fall within certain ranges. The prediction also did not consider all the parameters that the ground-truth did, such as the patient's gender, whether they are a nursing home resident, and their history of various diseases.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "29_18": {
+        "analysis": "The prediction did not correctly calculate the PSI score. The prediction did not add the patient's age to the score, did not add points for the patient's history of chronic kidney disease, prior stroke, and congestive heart failure, and did not correctly interpret the patient's lab results and vital signs. The prediction incorrectly stated that the patient's PSI score is 0, when the correct score is 101.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_19": {
+        "analysis": "The prediction incorrectly calculated the PSI score as 0, despite the patient's age and gender which should have been factored into the calculation. The prediction also failed to account for the patient's age and gender in the calculation, which are key parameters in determining the PSI score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "29_20": {
+        "analysis": "The prediction does not match the ground-truth explanation. The prediction does not provide a step-by-step calculation of the PSI score, and the final score is incorrect.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "21_13": {
+        "analysis": "The prediction incorrectly scored the verbal response as 1 (incomprehensible sounds) instead of 4 (oriented) as per the ground-truth explanation. The motor response was also incorrectly scored as 5 (obeys commands) instead of 6 (obeys commands).",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth",
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "28_1": {
+        "analysis": "The prediction incorrectly calculated the APACHE II score. The ground truth explanation shows that the correct score should be 15, but the prediction stated it as 24. The prediction also mentioned assessing the patient's level of consciousness as 'confused (4)', which is not mentioned in the ground truth explanation. Additionally, the prediction mentioned evaluating the patient's blood glucose level, which is not mentioned in the ground truth explanation.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "28_2": {
+        "analysis": "The prediction incorrectly calculated the APACHE II score. The prediction used incorrect rules for scoring the patient's age, temperature, white blood cell count, blood pressure, and pH. The prediction also failed to consider several parameters such as the patient's FiO2 percentage, A-a gradient, mean arterial pressure, heart rate, respiratory rate, sodium concentration, potassium concentration, creatinine concentration, hematocrit, and Glasgow Coma Score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "28_3": {
+        "analysis": "The prediction incorrectly calculated the points for the patient's age, blood pressure, heart rate, respiratory rate, creatinine level, sodium level, potassium level, fraction of inspired oxygen, arterial blood gas analysis, hematocrit, and white blood cell count. The prediction also failed to consider the patient's organ failure and surgery type.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_4": {
+        "analysis": "The prediction incorrectly assigned points for several parameters. For example, the blood pressure was assigned 2 points instead of 3, the respiratory rate was assigned 3 points instead of 1, the creatinine level was assigned 1 point instead of 4, the potassium level was assigned 1 point instead of 0, the hematocrit was assigned 1 point instead of 0, and the white blood cell count was assigned 2 points instead of 0. The prediction also failed to consider the patient's age and organ failure immunocompromise in the calculation.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_9": {
+        "analysis": "The prediction incorrectly assigned points to the physiological parameters. The APACHE II score was calculated incorrectly, with the prediction assigning points to parameters that should have received 0 points according to the ground-truth explanation. The prediction also failed to correctly calculate the points for the Glasgow Coma Score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_11": {
+        "analysis": "The prediction incorrectly calculated the points for the patient's age, heart rate, blood pressure, respiration rate, and Glasgow Coma Score. The prediction also incorrectly added up the total points.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "28_13": {
+        "analysis": "The prediction used a different scoring system for the APACHE II score calculation. The prediction also extracted different parameters than the ground-truth, such as the patient's age, chronic health condition, respiratory failure, and neurological deficit. The prediction also performed the arithmetic incorrectly, as the total score does not match the sum of the individual scores.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_14": {
+        "analysis": "The prediction incorrectly calculated the APACHE II score. The prediction assigned 1 point for the patient's heart rate and 1 point for the patient's creatinine level, which is incorrect according to the ground-truth explanation. The ground-truth explanation states that the patient's heart rate and creatinine level should not contribute any points to the APACHE II score. Therefore, the prediction's total score of 2 points is incorrect. The correct total score according to the ground-truth explanation is 4 points.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "28_16": {
+        "analysis": "The prediction incorrectly calculated the APACHE II score. The prediction only considered four parameters (respiratory rate, white blood cell count, Glasgow Coma Score, and pH level) and assigned incorrect points to the respiratory rate. The prediction also ignored several other parameters such as age, surgery type, FiO2 percentage, A-a gradient, temperature, mean arterial pressure, heart rate, sodium level, potassium level, creatinine level, hematocrit, and organ failure. The prediction also performed the arithmetic incorrectly, as the correct total score should be 15, not 3.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_1": {
+        "analysis": "The prediction has made several errors. It has assigned incorrect points to the patient's condition. For example, the patient's respiratory system should have been assigned 3 points, not 2. The patient's renal system should have been assigned 1 point, not 0. The patient's coagulation system should have been assigned 1 point, not 0. The patient's liver system should have been assigned 2 points, not 0. The patient's cardiovascular system should have been assigned 1 point, not 0. The patient's neurological system should have been assigned 3 points, not 2. The prediction also repeatedly mentions that various systems are not mentioned and assigns 0 points, which is incorrect as all the necessary information is provided in the ground truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "43_2": {
+        "analysis": "The prediction incorrectly assigned points for the hepatic, coagulation, renal, and neurological systems. The hepatic system should have been assigned 1 point instead of 2, the coagulation system should have been assigned 2 points instead of 3, the renal system should have been assigned 0 points instead of 1, and the neurological system should have been assigned 2 points instead of 3. The prediction also incorrectly calculated the total score as 14 instead of 10.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "43_4": {
+        "analysis": "The prediction incorrectly calculated the patient's SOFA score. The prediction incorrectly calculated the respiratory score, coagulation score, and renal score. The prediction did not correctly apply the rules for calculating the SOFA score, specifically the rules for the respiratory, coagulation, and renal systems. The prediction also did not correctly extract the parameters for the patient's FiO\u2082 and PaO\u2082 ratio, platelet count, and urine output.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_18": {
+        "analysis": "The prediction incorrectly assigned points for the Glasgow Coma Score, respiratory system, cardiovascular system, and renal system. The prediction also failed to consider the patient's partial pressure of oxygen to FiO\u2082 ratio and the patient's use of epinephrine or norepinephrine. Additionally, the prediction repeated the same steps multiple times, which is unnecessary and confusing.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "36_1": {
+        "analysis": "The prediction has extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction also seems to have used wrong knowledge about the calculation, as it has not considered all the factors that should be included in the Caprini score calculation.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_3": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction incorrectly assigned 1 point for the patient's age, while the ground-truth explanation assigned 2 points. The prediction also incorrectly assigned 1 point for the patient's history of MI, which was not mentioned in the ground-truth explanation. The prediction also incorrectly assigned 1 point for the patient's central venous access, while the ground-truth explanation assigned 2 points. The prediction also incorrectly assigned 2 points for the patient's mobility status, while the ground-truth explanation assigned 1 point. The prediction also incorrectly assigned 1 point for the patient's family history of thrombosis, while the ground-truth explanation assigned 3 points. The prediction also incorrectly calculated the total score as 8, while the ground-truth explanation calculated the total score as 14.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "36_5": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction also used wrong knowledge about the calculation, as it assigned incorrect points to the risk factors.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_6": {
+        "analysis": "The prediction incorrectly assigned points for the patient's conditions. For example, the patient's age should add 3 points, not 1. The patient's recent fracture should add 5 points, not 1. The patient's central venous line should add 2 points, not 1. The patient's history of deep vein thrombosis should add 3 points, not 1. The patient's positive result for serum homocysteine should add 3 points, not 1. The patient's varicose veins should add 1 point, which was correctly assigned. The patient's BMI should add 0 points, which was correctly assigned. The patient's lack of history of major surgery, acute spinal cord injury, acute myocardial infarction, or congestive heart failure within the last month should add 0 points, which was correctly assigned. Therefore, the total score should be 32, not 6.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "36_10": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction incorrectly assigned 2 points for being bedridden and 1 point for a history of deep vein thrombosis, while the ground-truth assigned 1 and 3 points respectively. The prediction also missed several factors such as the patient's age, surgery type, and Positive Factor V Leiden, which were included in the ground-truth and contributed to the total score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "36_13": {
+        "analysis": "The prediction incorrectly calculated the patient's Caprini Score for Venous Thromboembolism. The ground truth explanation shows that the correct score should be 23, but the prediction calculated it as 9. The prediction also mentioned a 'strong family history of thrombotic events', which was not mentioned in the ground truth explanation. This suggests that the prediction may have extracted different parameters than the ground truth.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "36_14": {
+        "analysis": "The prediction incorrectly calculated the Caprini Score for the patient. The prediction missed several risk factors such as the patient's age, previous DVT, other congenital or acquired thrombophilia, acute Myocardial infarction, and malignancy. The prediction also incorrectly mentioned minor surgery which was not present in the patient's history according to the ground truth. The arithmetic was also performed incorrectly as the total score was calculated as 6 instead of the correct score of 14.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_18": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction incorrectly assigned 2 points for heart failure exacerbation and 1 point for positive prothrombin 20210A mutation, while the ground-truth assigned 0 and 3 points respectively. The prediction also incorrectly assigned 2 points for being bedridden, while the ground-truth assigned 1 point. The total score calculated by the prediction is also incorrect.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    }
+}

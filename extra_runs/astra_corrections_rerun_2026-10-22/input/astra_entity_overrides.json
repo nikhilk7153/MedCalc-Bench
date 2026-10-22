@@ -1,0 +1,995 @@
+[
+ {
+  "calculator_id": "36",
+  "note_id": "6",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "reason": "Caprini: the laparoscopic operation was weeks ago and is already counted as major surgery in the last month; no current or planned surgery"
+ },
+ {
+  "calculator_id": "4",
+  "note_id": "pmc-7196137-1",
+  "set": {
+   "Thromboembolism history": false
+  },
+  "reason": "CHA2DS2-VASc: The documented portal vein thrombosis is venous thrombosis, not systemic arterial thromboembolism qualifying for CHA2DS2-VASc. No qualifying stroke, TIA, or systemic arterial embolism is documented. At admission, female sex and diabetes each contribute 1 point, yielding a score of 2.",
+  "origin": "fix1",
+  "row": "41"
+ },
+ {
+  "calculator_id": "4",
+  "note_id": "pmc-8136881-1",
+  "set": {
+   "Thromboembolism history": false
+  },
+  "reason": "CHA2DS2-VASc: The DVT was identified during subsequent evaluation and is a venous event, not the systemic arterial thromboembolism counted by CHA2DS2-VASc. No prior stroke, TIA, or systemic arterial thromboembolism is documented at admission. The qualifying admission factors are age 86 (2 points), hypertension (1",
+  "origin": "fix1",
+  "row": "43"
+ },
+ {
+  "calculator_id": "4",
+  "note_id": "pmc-8096577-1",
+  "set": {
+   "Thromboembolism history": false
+  },
+  "reason": "CHA2DS2-VASc: DVT and pulmonary embolism are venous thromboembolic events, not systemic arterial embolism qualifying for the CHA2DS2-VASc thromboembolism component. No qualifying arterial embolism, stroke, or TIA is documented. At admission, age ≥75 contributes 2 points, female sex 1, hypertension 1, and diabetes",
+  "origin": "fix1",
+  "row": "49"
+ },
+ {
+  "calculator_id": "8",
+  "note_id": "pmc-8101672-1",
+  "set": {
+   "Immobilization for at least 3 days": false
+  },
+  "reason": "Wells': No immobilization for at least three days before admission is documented, so this criterion is false. The quoted three-day interval occurred after treatment began and does not establish immobilization even then. The admission pulse was 108/min. Age 15 is not an input to this calculator and does not ",
+  "origin": "fix1",
+  "row": "128"
+ },
+ {
+  "calculator_id": "8",
+  "note_id": "pmc-8294994-1",
+  "set": {
+   "Pulmonary Embolism is #1 diagnosis OR equally likely": false
+  },
+  "reason": "Wells': The note does not document PE as the most likely or an equally likely diagnosis at admission. Performing CT angiography to exclude PE does not establish this criterion; its absence supports false, independently of the subsequent imaging result. Admission heart rate of 101/minute contributes 1.5 poin",
+  "origin": "fix1",
+  "row": "131"
+ },
+ {
+  "calculator_id": "8",
+  "note_id": "pmc-5039122-1",
+  "set": {
+   "Heart Rate or Pulse": [
+    76.0,
+    "beats per minute"
+   ]
+  },
+  "reason": "Wells': The reviewer identifies the incorrect heart-rate selection, but the encounter is not ambiguous: the question explicitly specifies first admission before treatment. The applicable heart rate is 76 beats/min; 115 beats/min belongs to readmission approximately one month later. These are not contradicto",
+  "origin": "fix1",
+  "row": "136"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-5295552-1",
+  "set": {
+   "Bedridden recently >3 days": false,
+   "Major surgery within 12 weeks": false
+  },
+  "reason": "Wells' DVT: bed rest and recent surgery not documented (STEMI 10 days earlier)",
+  "origin": "fix1",
+  "row": "221"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-6959932-1",
+  "set": {
+   "Paralysis, paresis, or recent plaster immobilization of the lower extremity": false
+  },
+  "reason": "Wells' DVT: hemiparesis began six days after the first admission",
+  "origin": "fix1",
+  "row": "222"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-4341247-1",
+  "set": {
+   "Localized tenderness along the deep venous system": false
+  },
+  "reason": "Wells': The note documents pain and claudication, not localized tenderness along deep veins. Arterial thrombosis provides an alternative diagnosis, and no other positive Wells DVT criteria are documented at admission, yielding a score of −2. The thrombectomies occurred later in the same hospitalization and ",
+  "origin": "fix1",
+  "row": "224"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-7059892-1",
+  "set": {
+   "Active cancer": false
+  },
+  "reason": "Wells' DVT: a previous basal cell carcinoma is not active cancer",
+  "origin": "fix1",
+  "row": "227"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-3127500-1",
+  "set": {
+   "Active cancer": false
+  },
+  "reason": "Wells' DVT: a WHO grade I meningioma is not active cancer",
+  "origin": "fix1",
+  "row": "237"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-4320908-1",
+  "set": {
+   "Localized tenderness along the deep venous system": false,
+   "Paralysis, paresis, or recent plaster immobilization of the lower extremity": false
+  },
+  "reason": "Wells': Trochanteric tenderness does not establish deep venous tenderness. Pain-limited mobility does not establish paralysis or paresis, and plaster immobilization is not documented. Metastatic cancer was present at admission, although confirmed later, and the iliopsoas abscess supplies an alternative diag",
+  "origin": "fix1",
+  "row": "238"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-4320908-1",
+  "set": {
+   "Active cancer": false
+  },
+  "reason": "Wells' DVT: cancer treated 3 years earlier; metastasis found only after admission",
+  "origin": "fix1",
+  "row": "238"
+ },
+ {
+  "calculator_id": "17",
+  "note_id": "pmc-5005698-1",
+  "set": {
+   "Pre-operative creatinine": null
+  },
+  "reason": "Revised: The reported creatinine belongs to the pre-discharge laboratory results, not admission before treatment. Admission creatinine is missing; null marks that absence rather than inventing a numeric value. With unmentioned clinical criteria treated as false, the score would be 0 for admission creatinine ",
+  "origin": "fix1",
+  "row": "242"
+ },
+ {
+  "calculator_id": "17",
+  "note_id": "pmc-5965104-1",
+  "set": {
+   "Congestive Heart Failure criteria for the Cardiac Risk Index rule": true
+  },
+  "reason": "Revised: At admission before treatment, bibasilar crackles meet the RCRI bilateral-rales physical-examination criterion, contributing 1 point. Initial creatinine of 11.9 mg/dL contributes another point. No other RCRI risk criteria are documented at that time. The corrected score is 2.",
+  "origin": "fix1",
+  "row": "245"
+ },
+ {
+  "calculator_id": "17",
+  "note_id": "pmc-7593214-1",
+  "set": {
+   "Pre-operative creatinine": [
+    1.0,
+    "mg/dL"
+   ],
+   "Congestive Heart Failure criteria for the Cardiac Risk Index rule": false,
+   "Elevated-risk surgery": false,
+   "History of ischemic heart disease": false,
+   "History of cerebrovascular disease": false,
+   "age": 72
+  },
+  "reason": "Revised: The requested pretreatment value is the baseline creatinine of 1.0 mg/dL, not the subsequent post-treatment value of 2.2 mg/dL. The differing values describe different time points and are not contradictory. Insulin use and the other RCRI risk criteria are not documented and therefore count as false;",
+  "origin": "fix1",
+  "row": "248"
+ },
+ {
+  "calculator_id": "17",
+  "note_id": "pmc-7059607-2",
+  "set": {
+   "Pre-operative creatinine": null
+  },
+  "reason": "Revised: The 1.7 mg/dL creatinine belongs to the donor. All reported recipient creatinine measurements are postoperative, so none establishes her preoperative creatinine. Null represents this missing required input. Retaining the surgical-risk point and treating unmentioned historical criteria as absent, the",
+  "origin": "fix1",
+  "row": "253"
+ },
+ {
+  "calculator_id": "17",
+  "note_id": "pmc-7748582-1",
+  "set": {
+   "Elevated-risk surgery": true
+  },
+  "reason": "Revised: Laparoscopic appendectomy is intraperitoneal surgery and meets the RCRI elevated-risk surgery criterion. Before treatment, diabetes was managed with metformin and canagliflozin, not insulin; insulin initiated later does not count. Admission creatinine was 0.9 mg/dL. No ischemic heart disease, conges",
+  "origin": "fix1",
+  "row": "259"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-3466862-1",
+  "set": {
+   "parent or sibling with Cardiovascular disease before age 65": false
+  },
+  "reason": "HEART: a nephew with PE is not a parent/sibling with CVD",
+  "origin": "fix1",
+  "row": "261"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-8643279-1",
+  "set": {
+   "Electrocardiogram Test": "Normal"
+  },
+  "reason": "HEART: Atrial fibrillation alone does not establish a repolarization disturbance. No ST deviation or repolarization abnormality is documented, so the HEART ECG category is Normal under the absent-if-unmentioned rule; this does not imply normal rhythm. The initial troponin is 0.017 ng/mL, but its assay-spec",
+  "origin": "fix1",
+  "row": "264"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-6276522-1",
+  "set": {
+   "Electrocardiogram Test": "Significant ST deviation"
+  },
+  "reason": "HEART: The normal ECG was the outpatient pre-exercise baseline, not the acute presentation prompting hospital transfer. The acute ECG showed significant ST deviation. Although recorded after initial office medications, it is the documented ECG associated with hospital presentation; no acute pretreatment EC",
+  "origin": "fix1",
+  "row": "266"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-4244065-1",
+  "set": {
+   "parent or sibling with Cardiovascular disease before age 65": false
+  },
+  "reason": "HEART: The father's age at cardiovascular disease onset is unspecified, so the before-age-65 criterion is not established. No admission ECG or initial troponin is reported; neither has a defined default. Their existing categories are retained only to preserve the required value formats, not as supported fi",
+  "origin": "fix1",
+  "row": "271"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-7290110-1",
+  "set": {
+   "Electrocardiogram Test": "Normal",
+   "obesity": true
+  },
+  "reason": "HEART: The reviewer correctly identifies that atrial fibrillation and abnormal R-wave progression do not establish a repolarization disturbance. No ST deviation or repolarization abnormality is documented, so under the required absent-if-unmentioned rule, the HEART ECG category is Normal; this does not imp",
+  "origin": "fix1",
+  "row": "274"
+ },
+ {
+  "calculator_id": "20",
+  "note_id": "usmle-12605",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "reason": "Centor: nodes not documented; no cough documented",
+  "origin": "fix1",
+  "row": "301"
+ },
+ {
+  "calculator_id": "20",
+  "note_id": "pmc-7205374-1",
+  "set": {
+   "Temperature": [
+    37.6,
+    "degrees celsius"
+   ]
+  },
+  "reason": "Centor: temperature at admission was 37.6 C (38.4 C was at home before admission)",
+  "origin": "fix1",
+  "row": "302"
+ },
+ {
+  "calculator_id": "20",
+  "note_id": "pmc-4307710-1",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "reason": "Centor: nodes not documented; no cough documented",
+  "origin": "fix1",
+  "row": "313"
+ },
+ {
+  "calculator_id": "20",
+  "note_id": "usmle-4768",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "reason": "Centor: posterior (not anterior) cervical nodes; no cough documented",
+  "origin": "fix1",
+  "row": "315"
+ },
+ {
+  "calculator_id": "20",
+  "note_id": "pmc-8240916-1",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "reason": "Centor: nodes not documented; no cough documented",
+  "origin": "fix1",
+  "row": "320"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "usmle-1741",
+  "set": {
+   "Prior major bleeding or predisposition to bleeding": true
+  },
+  "reason": "HAS-BLED: Admission hemoglobin of 8.1 g/dL establishes anemia, which qualifies as a bleeding predisposition under HAS-BLED. Together with systolic blood pressure of 170 mm Hg and creatinine of 5.3 mg/dL, this yields a score of 3. No other contributing criteria are documented.",
+  "origin": "fix1",
+  "row": "346"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-5798152-1",
+  "set": {
+   "Renal disease criteria for the HAS-BLED rule": false,
+   "Hypertension": false
+  },
+  "reason": "HAS-BLED: At presentation, hypertension was well controlled; uncontrolled systolic pressure >160 mmHg is not documented. CKD-3b and eGFR 41 alone do not meet the HAS-BLED renal criterion, and no patient dialysis, renal transplantation, or creatinine >200 µmol/L is documented. The remote macrohaematuria episod",
+  "origin": "fix1",
+  "row": "348"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-3152737-1",
+  "set": {
+   "Hypertension": false
+  },
+  "reason": "HAS-BLED: The note documents a history of hypertension but no admission systolic blood pressure above 160 mmHg, so the HAS-BLED hypertension criterion is false under the absent-criterion rule. Prior stroke is the only qualifying admission criterion. Warfarin does not count as a bleeding-predisposing medicatio",
+  "origin": "fix1",
+  "row": "349"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-7026384-1",
+  "set": {
+   "Medication usage predisposing to bleeding": false,
+   "Prior major bleeding or predisposition to bleeding": false
+  },
+  "reason": "HAS-BLED: At admission before treatment, the documented ischemic stroke contributes 1 point. The note does not document prior major bleeding or a bleeding predisposition; the ischemic infarction does not establish that criterion. Aspirin and clopidogrel were initiated after admission and are excluded at the r",
+  "origin": "fix1",
+  "row": "351"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-7887466-1",
+  "set": {
+   "Medication usage predisposing to bleeding": false
+  },
+  "reason": "HAS-BLED: At admission before treatment, the only documented medication was atorvastatin, which does not satisfy the bleeding-predisposing medication criterion. Dual antiplatelet therapy was started after admission. The presenting ischemic stroke and alcohol consumption contribute one point each, yielding HAS",
+  "origin": "fix1",
+  "row": "354"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-2475515-1",
+  "set": {
+   "Prior major bleeding or predisposition to bleeding": true
+  },
+  "reason": "HAS-BLED: The splenic rupture with substantial perisplenic bleeding explains the presenting illness and was subsequently confirmed on imaging, rather than documented as a new post-treatment event. It supports the bleeding criterion at admission. The other inputs remain unchanged: age over 65 and abnormal admi",
+  "origin": "fix1",
+  "row": "355"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-7869650-1",
+  "set": {
+   "Renal disease criteria for the HAS-BLED rule": false,
+   "Hypertension": false,
+   "Medication usage predisposing to bleeding": false
+  },
+  "reason": "HAS-BLED: At the first admission before treatment, systolic BP was exactly 160 mmHg, not greater than 160, and creatinine was below the HAS-BLED renal threshold. Dialysis occurred only later; renal infarction alone does not qualify. No baseline antiplatelet or NSAID use is documented; aspirin appears only at ",
+  "origin": "fix1",
+  "row": "360"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-6600126-1",
+  "set": {
+   "Prior major bleeding or predisposition to bleeding": true
+  },
+  "reason": "HAS-BLED: Admission anemia qualifies as a bleeding predisposition under HAS-BLED despite the absence of prior major bleeding. Together with age over 65 and abnormal renal function, this yields a score of 3. The remaining criteria score 0. The denial of prior bleeding does not contradict the documented anemia.",
+  "origin": "fix1",
+  "row": "362"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "usmle-10057",
+  "set": {
+   "Liver disease criteria for the HAS-BLED rule": false
+  },
+  "reason": "HAS-BLED: Hepatic metastases alone do not meet HAS-BLED abnormal liver function criteria. Neither cirrhosis nor qualifying bilirubin and liver enzyme elevations are documented, so this criterion is false under the missing-criteria rule. The hematuria is not established as major bleeding or a qualifying bleedi",
+  "origin": "fix1",
+  "row": "365"
+ },
+ {
+  "calculator_id": "32",
+  "note_id": "pmc-8356001-1",
+  "set": {
+   "age": [
+    61,
+    "years"
+   ]
+  },
+  "reason": "Charlson: The first documented hospital admission was the stroke admission, approximately two years after presentation at age 59, supporting an approximate admission age of 61. This is a timeline distinction, not a note contradiction. The remaining inputs are supported: stroke, Sjögren connective tissue disea",
+  "origin": "fix1",
+  "row": "428"
+ },
+ {
+  "calculator_id": "32",
+  "note_id": "pmc-6982502-1",
+  "set": {
+   "Moderate to severe Chronic Kidney Disease": false
+  },
+  "reason": "Charlson: The note documents CKD but gives no stage, renal function measurements, or other evidence establishing moderate-to-severe renal disease. That criterion must therefore be false. Diabetes with renal end-organ damage and localized prostate cancer remain supported. With age 71, the corrected CCI is 7.",
+  "origin": "fix1",
+  "row": "430"
+ },
+ {
+  "calculator_id": "32",
+  "note_id": "pmc-6451183-1",
+  "set": {
+   "Solid tumor": "metastatic"
+  },
+  "reason": "Charlson: The abdominal wall lesion present at admission was subsequently confirmed as acinic cell cancer, representing distant spread from the prior parotid primary. Its later histologic confirmation establishes the nature of the lesion already present before treatment. Negative follow-up scans after excisio",
+  "origin": "fix1",
+  "row": "434"
+ },
+ {
+  "calculator_id": "32",
+  "note_id": "pmc-8708478-1",
+  "set": {
+   "age": [
+    55,
+    "years"
+   ],
+   "Moderate to severe Chronic Kidney Disease": false
+  },
+  "reason": "Charlson: The specified time point is the initial pretreatment evaluation at age 55. Although stage IIIb CKD was present, the initial creatinine of 1.92 mg/dL does not meet the original Charlson renal criterion; ESRD, dialysis, and transplantation occurred later and must not be counted. Documented cerebral is",
+  "origin": "fix1",
+  "row": "446"
+ },
+ {
+  "calculator_id": "33",
+  "note_id": "usmle-3456",
+  "set": {
+   "Severe tonsil inflammation": false,
+   "Absence of cough or coryza": true
+  },
+  "reason": "FeverPAIN: no severe tonsil inflammation; no cough or coryza documented",
+  "origin": "fix1",
+  "row": "448"
+ },
+ {
+  "calculator_id": "33",
+  "note_id": "pmc-3603656-1",
+  "set": {
+   "Severe tonsil inflammation": false,
+   "Absence of cough or coryza": true
+  },
+  "reason": "FeverPAIN: Enlarged, erythematous tonsils do not establish severe tonsillar inflammation. Neither cough nor coryza is documented, so both are treated as absent under the stated rule. The missing absence-of-cough-or-coryza input is therefore true. Fever and the stated two-day symptom development support the oth",
+  "origin": "fix1",
+  "row": "451"
+ },
+ {
+  "calculator_id": "33",
+  "note_id": "pmc-3326926-1",
+  "set": {
+   "Purulent tonsils": false,
+   "Fever in past 24 hours": false,
+   "Absence of cough or coryza": true
+  },
+  "reason": "FeverPAIN: Purulent tonsils were fabricated: neither tonsillar purulence nor fever is documented, so both are false under the specified default. The 24-hour duration describes cardiac symptoms, not pharyngitis. The later toxicity assessment excludes only dry nonproductive cough; it does not establish absence o",
+  "origin": "fix1",
+  "row": "452"
+ },
+ {
+  "calculator_id": "33",
+  "note_id": "usmle-7961",
+  "set": {
+   "Severe tonsil inflammation": false
+  },
+  "reason": "FeverPAIN: The note documents tonsillar purulence and surrounding mucosal erythema, but not severe tonsillar inflammation. That undocumented criterion is false. At initial presentation, fever, symptom onset within 3 days, and purulent tonsils each contribute 1 point; cough is present. The corrected FeverPAIN s",
+  "origin": "fix1",
+  "row": "458"
+ },
+ {
+  "calculator_id": "33",
+  "note_id": "pmc-8454594-1",
+  "set": {
+   "Symptom onset <=3 days": false,
+   "Severe tonsil inflammation": false,
+   "Fever in past 24 hours": true,
+   "Absence of cough or coryza": false
+  },
+  "reason": "FeverPAIN: The illness was already established one week before hospitalization; the three-day history describes subsequent presenting symptoms rather than initial illness onset. Sinus inflammation and purulent nasal secretions do not establish tonsillar inflammation or purulent tonsils, neither of which is doc",
+  "origin": "fix1",
+  "row": "461"
+ },
+ {
+  "calculator_id": "33",
+  "note_id": "pmc-8091626-1",
+  "set": {
+   "Purulent tonsils": false,
+   "Fever in past 24 hours": false,
+   "Absence of cough or coryza": true
+  },
+  "reason": "FeverPAIN: The reviewer correctly identifies that purulent tonsils are unsupported. Neither tonsillar purulence nor absence of cough or coryza is documented; these criteria are false under the required unmentioned-criterion default. The presentation quote provides encounter context, not explicit negative findi",
+  "origin": "fix1",
+  "row": "465"
+ },
+ {
+  "calculator_id": "45",
+  "note_id": "pmc-2988179-1",
+  "set": {
+   "Blood Urea Nitrogen (BUN)": [
+    8.4,
+    "mg/dL"
+   ]
+  },
+  "reason": "CURB-65: The note reports total urea, not BUN. Urea 18 mg/dL converts to approximately 8.4 mg/dL BUN, which remains below the CURB-65 threshold. The other admission inputs are unchanged; confusion is not mentioned and remains false. The CURB-65 score remains 1. Separately, the creatinine unit gm/dl is an obv",
+  "origin": "fix1",
+  "row": "552"
+ },
+ {
+  "calculator_id": "63",
+  "note_id": "pmc-3094288-1",
+  "set": {
+   "Sodium": [
+    141.0,
+    "mEq/L"
+   ],
+   "Chloride": [
+    104.0,
+    "mEq/L"
+   ],
+   "Bicarbonate": [
+    29.0,
+    "mEq/L"
+   ]
+  },
+  "reason": "Delta Gap: use the initial (pre-treatment) electrolytes; the answer is unchanged",
+  "origin": "fix1",
+  "row": "748"
+ },
+ {
+  "calculator_id": "29",
+  "note_id": "6",
+  "set": {
+   "Heart Rate or Pulse": [
+    95.0,
+    "beats per minute"
+   ],
+   "Cerebrovascular disease history": false,
+   "Neoplastic disease": true,
+   "Congestive Heart Failure": false,
+   "Nursing home resident": false,
+   "Pleural effusion on x-ray": false
+  },
+  "reason": "PSI: Active neoplasia was omitted and the admission heart rate was misextracted. Undocumented cerebrovascular disease and congestive heart failure are false under the specified default, not inferred from the unknown cardiovascular history. The temperature unit spelling error is in the extracted inputs, n",
+  "origin": "fix1",
+  "row": "834"
+ },
+ {
+  "calculator_id": "29",
+  "note_id": "8",
+  "set": {
+   "Cerebrovascular disease history": false,
+   "Liver disease history": false,
+   "Pleural effusion on x-ray": false
+  },
+  "reason": "PSI: The benchmark's absent/false default applies to criteria not documented as present. Unavailable liver and cerebrovascular histories therefore do not constitute missing required inputs. Pleural effusion is not mentioned and also defaults to false; no supporting note quotation exists for that omission",
+  "origin": "fix1",
+  "row": "836"
+ },
+ {
+  "calculator_id": "29",
+  "note_id": "18",
+  "set": {
+   "Nursing home resident": false
+  },
+  "reason": "PSI: Under the specified rule, undocumented nursing-home residence defaults to false; the reviewer's residency objection is therefore not valid. A separate timing problem remains: the note describes a routine clinic follow-up, not the requested hospital admission before treatment. The retained measuremen",
+  "origin": "fix1",
+  "row": "846"
+ },
+ {
+  "calculator_id": "29",
+  "note_id": "19",
+  "set": {
+   "Neoplastic disease": false,
+   "Pleural effusion on x-ray": false
+  },
+  "reason": "PSI: The reviewer correctly identifies that prior breast cancer does not establish active cancer or diagnosis within the preceding year, and the unavailable X-ray does not establish pleural effusion. Both criteria default to false under the supplied rules, so these uncertainties do not require a missing-",
+  "origin": "fix1",
+  "row": "847"
+ },
+ {
+  "calculator_id": "29",
+  "note_id": "20",
+  "set": {
+   "Nursing home resident": false
+  },
+  "reason": "PSI: Nursing home residency is not established, so it defaults to false under the specified extraction rules rather than constituting a missing required input. MASH supports chronic liver disease; the PSI liver disease criterion is not restricted to cirrhosis. All other extracted values match the note, w",
+  "origin": "fix1",
+  "row": "848"
+ },
+ {
+  "calculator_id": "21",
+  "note_id": "1",
+  "set": {
+   "Best verbal response": "confused"
+  },
+  "reason": "Glasgow: The patient gives a coherent but disoriented answer, supporting confused verbal response (V4), not inappropriate words (V3). Eye opening to sternal rub supports E2. Moving her chest away from the examiner's hand supports withdrawal (M4), without clear localization. The admission GCS is 10.",
+  "origin": "fix1",
+  "row": "849"
+ },
+ {
+  "calculator_id": "21",
+  "note_id": "13",
+  "set": {
+   "Best verbal response": "not testable"
+  },
+  "reason": "Glasgow: At admission, the findings support E2 and M6. The tracheostomy prevents assessment of verbal response, so V1 should not be assigned. Report E2 VNT M6 without a numeric total; a testable verbal response required for this calculator is unavailable.",
+  "origin": "fix1",
+  "row": "861"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "1",
+  "set": {
+   "pH": 7.29,
+   "Diastolic Blood Pressure": [
+    84.0,
+    "mm Hg"
+   ]
+  },
+  "reason": "pH and diastolic BP did not match the note",
+  "origin": "fix1",
+  "row": "869"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "2",
+  "set": {
+   "Sodium": [
+    133.28,
+    "mmol/L"
+   ]
+  },
+  "reason": "Sodium did not match the note",
+  "origin": "fix1",
+  "row": "870"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "2",
+  "set": {
+   "Acute renal failure": false
+  },
+  "reason": "APACHE II: acute renal failure not documented (CKD with decreased urine output)",
+  "origin": "fix1",
+  "row": "870"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "3",
+  "set": {
+   "Acute renal failure": false
+  },
+  "reason": "APACHE: The room-air statement conflicts with the explicitly documented FiO2 of 63%; removing that phrase preserves the numerical measurements without introducing facts. Elevated creatinine establishes renal impairment but not acute renal failure. Cirrhosis alone does not document APACHE II qualifying sever",
+  "origin": "fix1",
+  "row": "871"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "4",
+  "set": {
+   "Systolic Blood Pressure": [
+    190.0,
+    "mm Hg"
+   ],
+   "History of severe organ failure or immunocompromise": false,
+   "Surgery Type": "Nonoperative"
+  },
+  "reason": "APACHE: The documented systolic pressure is 190, not 132 mm Hg. Conservatively managed chronic renal failure without chronic dialysis does not qualify for APACHE II chronic health points; no other qualifying organ failure or immunocompromise is documented. GCS remains 15 as the input, yielding a deficit of ",
+  "origin": "fix1",
+  "row": "872"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "5",
+  "set": {
+   "Surgery Type": "Nonoperative"
+  },
+  "reason": "APACHE: The note describes a medical encounter without surgery. Remove the trailing space from the existing surgery category to match the accepted value exactly; no clinical inputs otherwise require correction. The supported APACHE II score is 13: age 2, GCS deficit 3, A-a gradient 3, and qualifying chronic",
+  "origin": "fix1",
+  "row": "873"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "9",
+  "set": {
+   "Acute renal failure": false
+  },
+  "reason": "APACHE: Acute renal failure is described only as possible, not established; the creatinine elevation alone does not establish it. Therefore, creatinine points should not be doubled. The supported APACHE II score is 14, not 35. The temperature unit also contains an obvious spelling error.",
+  "origin": "fix1",
+  "row": "877"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "11",
+  "set": {
+   "Chronic renal failure": false
+  },
+  "reason": "APACHE: Stage II chronic kidney disease does not establish chronic renal failure or qualify for APACHE II chronic health points. The supported score is 13: age 5, heart rate 2, creatinine 3, pH 2, and GCS deficit 1. The temperature unit contains an obvious spelling typo; its numeric value is unchanged.",
+  "origin": "fix1",
+  "row": "879"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "13",
+  "set": {
+   "History of severe organ failure or immunocompromise": false
+  },
+  "reason": "APACHE: The reviewer is correct that stage II CKD does not qualify for APACHE II chronic-health points; qualifying severe organ failure or immunocompromise is not documented. This is distinct from the chronic renal failure input, which remains true because the note explicitly states its presence. Age contri",
+  "origin": "fix1",
+  "row": "881"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "14",
+  "set": {
+   "Chronic renal failure": false
+  },
+  "reason": "APACHE: The reviewer's score of 4 is consistent with age 50 contributing 2 points and pH 7.32 contributing 2 points; GCS 15 and the other documented measurements contribute zero. Chronic renal failure is not documented and therefore defaults to false. The temperature unit has a spelling typo; its numeric va",
+  "origin": "fix1",
+  "row": "882"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "16",
+  "set": {
+   "Surgery Type": "Nonoperative"
+  },
+  "reason": "APACHE II: nonoperative ED visit; surgery type was missing (0 instead of 5 chronic-health points)",
+  "origin": "fix1",
+  "row": "884"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "19",
+  "set": {
+   "Surgery Type": "Nonoperative"
+  },
+  "reason": "APACHE II: nonoperative clinic visit; surgery type was missing (0 instead of 5 chronic-health points)",
+  "origin": "fix1",
+  "row": "887"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "2",
+  "set": {
+   "Continuous positive airway pressure": true
+  },
+  "reason": "SOFA: note documents CPAP",
+  "origin": "fix1",
+  "row": "890"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "4",
+  "set": {
+   "norEPINEPHrine": [
+    0,
+    "mcg/kg/min"
+   ]
+  },
+  "reason": "Sequential: The extracted norepinephrine dose contradicts the explicit absence of vasopressor use. Neither mechanical ventilation nor CPAP is documented. Renal scoring is supported by urine output of 132 mL/day, not dialysis history alone. The corrected SOFA component scores are respiratory 2, coagulation 2, li",
+  "origin": "fix1",
+  "row": "892"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "6",
+  "set": {
+   "Continuous positive airway pressure": true
+  },
+  "reason": "Sequential: CPAP is explicitly documented and qualifies as respiratory support. All other extracted inputs match the note. Stable blood pressure does not negate the documented vasopressor category. The SOFA components are respiratory 3, coagulation 0, liver 2, cardiovascular 3, neurologic 3, and renal 1, totali",
+  "origin": "fix1",
+  "row": "894"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "11",
+  "set": {
+   "Diastolic Blood Pressure": [
+    70.0,
+    "mm Hg"
+   ]
+  },
+  "reason": "SOFA: BP from the note (91/70)",
+  "origin": "fix1",
+  "row": "899"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "12",
+  "set": {
+   "Systolic Blood Pressure": [
+    93.0,
+    "mm Hg"
+   ],
+   "Diastolic Blood Pressure": [
+    62.0,
+    "mm Hg"
+   ]
+  },
+  "reason": "SOFA: BP from the note (93/62)",
+  "origin": "fix1",
+  "row": "900"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "13",
+  "set": {
+   "Diastolic Blood Pressure": [
+    59.0,
+    "mm Hg"
+   ]
+  },
+  "reason": "SOFA: BP from the note (87/59)",
+  "origin": "fix1",
+  "row": "901"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "14",
+  "set": {},
+  "remove": [
+   "Diastolic Blood Pressure"
+  ],
+  "reason": "SOFA: the note gives no numeric diastolic pressure",
+  "origin": "fix1",
+  "row": "902"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "18",
+  "set": {
+   "Systolic Blood Pressure": [
+    85.0,
+    "mm Hg"
+   ],
+   "Diastolic Blood Pressure": [
+    45.0,
+    "mm Hg"
+   ]
+  },
+  "reason": "SOFA: BP from the note (85/45)",
+  "origin": "fix1",
+  "row": "906"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "1",
+  "set": {
+   "Mobility": "on bed rest"
+  },
+  "reason": "Caprini: The reviewer's conservative lower bound of 18 is supported by age 63, BMI above 25, varicose veins, prior DVT, family history of thrombosis, elevated homocysteine, and one fracture/trauma category, without surgery or mobility points. The note documents bed confinement but not its duration, so the >7",
+  "origin": "fix1",
+  "row": "909"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "1",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "reason": "Caprini: no current or planned surgery; the recent femoral operation is counted as major surgery in the last month",
+  "origin": "fix1",
+  "row": "909"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "2",
+  "set": {
+   "Major Surgery in the last month": false
+  },
+  "reason": "Caprini: the knee replacement is the current operation; no other surgery in the last month",
+  "origin": "fix1",
+  "row": "910"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "3",
+  "set": {
+   "Multiple trauma in the last month": false,
+   "Acute Myocardial infarction": false
+  },
+  "reason": "Caprini: The reviewer’s lower-bound claim does not establish the extraction errors. The note documents an MVA with one affected limb, not multiple trauma, and a historical MI rather than an acute MI. Both unsupported criteria must be false. Bed-bound status supports 'on bed rest'; no duration supports confin",
+  "origin": "fix1",
+  "row": "911"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "4",
+  "set": {
+   "Congestive Heart Failure in the last month": false,
+   "Acute spinal cord injury causing paralysis in the last month": false
+  },
+  "reason": "Caprini: The reviewer correctly identifies two unsupported inputs: congestive heart failure is not mentioned, and the spinal injury is not documented as causing paralysis; normal ambulation is explicitly documented. Both criteria must be false. The documented risk factors support the reviewer's conservative ",
+  "origin": "fix1",
+  "row": "912"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "5",
+  "set": {
+   "Mobility": "confined to bed >72 hours"
+  },
+  "reason": "Caprini: mostly confined to bed during a month-long stay",
+  "origin": "fix1",
+  "row": "913"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "10",
+  "set": {
+   "Major Surgery in the last month": false
+  },
+  "reason": "Caprini: The documented risk factors support the reviewer's conservative lower bound of at least 12. However, the current laparoscopic procedure does not establish a separate history of major surgery in the last month, so that additional criterion is false. Retain 'on bed rest'; a prolonged hospital stay doe",
+  "origin": "fix1",
+  "row": "918"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "13",
+  "set": {
+   "Family history of thrombosis": false,
+   "Major Surgery in the last month": false
+  },
+  "reason": "Caprini: The reviewer correctly identifies that family myocardial infarctions do not establish a family history of venous thrombosis. Thromboembolism removal alone also does not establish qualifying major surgery. The procedure's surgery classification is unspecified, so the required Surgery Type input canno",
+  "origin": "fix1",
+  "row": "921"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "14",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "reason": "Caprini: The minor surgery occurred months before this encounter and should not contribute a current surgical risk point. The documented applicable factors total 14 points: age 48 (1), BMI above 25 (1), varicose veins (1), acute myocardial infarction (1), central venous access (2), previous DVT (3), previous",
+  "origin": "fix1",
+  "row": "922"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "16",
+  "set": {
+   "Major Surgery in the last month": false
+  },
+  "reason": "Caprini: The documented factors support 13 points: age 61–74 (2), minor surgery (1), BMI >25 (1), immobilizing plaster cast (2), prior DVT (3), Factor V Leiden (3), and inflammatory bowel disease (1). The surgery is explicitly minor, so recent major surgery must be false. Cast immobilization does not establi",
+  "origin": "fix1",
+  "row": "924"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "18",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "reason": "Caprini: The encounter is a medical admission; arthroplasty was previously scheduled, not documented as performed or as the current operative encounter. Surgical points should therefore be omitted. The reviewer's 13-point conservative lower bound is supported, but it is not an exact score: both thrombophilia",
+  "origin": "fix1",
+  "row": "926"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "19",
+  "set": {
+   "Major Surgery in the last month": false
+  },
+  "reason": "Caprini: The reviewer correctly identifies that the note documents minor surgery, not major surgery. No major surgery in the last month is mentioned, so that input must be false. The remaining extracted inputs are supported by the note or reflect absent criteria.",
+  "origin": "fix1",
+  "row": "927"
+ }
+]

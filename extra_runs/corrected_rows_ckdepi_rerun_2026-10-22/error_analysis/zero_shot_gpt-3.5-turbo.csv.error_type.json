@@ -1,0 +1,183 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also did not convert the serum creatinine level from \u03bcmol/L to mg/dL, which was done in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground-truth. Also, the prediction did not convert the serum creatinine level from \u03bcmol/L to mg/dL as required by the ground-truth formula.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, instead of the provided formula in the ground-truth. Also, the prediction extracted different parameters than the ground-truth, such as race and whether the patient is of African descent, which were not mentioned in the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one mentioned in the ground-truth explanation. The parameters used in the prediction are also different from the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, which is not the same as the formula provided in the ground-truth explanation. Also, the prediction assumed the patient's race, which was not a parameter in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one used in the ground-truth explanation. The prediction also considered the patient's race, which was not a parameter in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which led to a different result. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction used a different formula (CKD-EPI Creatinine equation) to calculate the GFR, which is not the same as the one used in the ground-truth explanation. Also, the prediction assumed the patient's race as Black, which was not mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR, and also used different coefficients for the calculation. The assistant also did not take into account the gender coefficient in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8346262-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR. The ground truth used a formula that does not include race as a parameter, while the prediction used the CKD-EPI Creatinine equation, which does include race. Additionally, the prediction used different coefficients for the serum creatinine level and age.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The prediction used a different formula to calculate the GFR. The ground truth used a formula that does not consider race, while the prediction used the CKD-EPI Creatinine equation, which does consider race. The prediction also used different coefficients for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one provided in the ground-truth explanation. The prediction also did not use the correct coefficients for the patient's gender and creatinine concentration.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, and also used different coefficients for the calculation. The prediction also did not convert the serum creatinine level from \u00b5mol/L to mg/dL before using it in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-4448053-1": {
+        "analysis": "The prediction used a different formula than the ground truth. The prediction also extracted different parameters than the ground truth, as it did not consider the patient's gender.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one mentioned in the ground-truth explanation. The prediction also did not consider the gender coefficient correctly.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, which is not the same as the one provided in the ground-truth explanation. The prediction also used different parameters (kappa, alpha) than the ones used in the ground-truth (A, B).",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction incorrectly extracted the parameter 'alternative diagnosis as likely or more likely than DVT' from the patient's note. The ground-truth explanation states that this criterion is present, which should decrease the score by 2. However, the prediction states that there is no mention of an alternative diagnosis in the patient note, and so the score remains at 0. This resulted in a final score of 0 in the prediction, while the ground-truth score is -2.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction missed the presence of cerebrovascular disease in the patient's history, which should have added an additional point to the total score.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction incorrectly calculated the Centor score. The prediction did not account for the patient's age, which should have decreased the score by one point. Additionally, the prediction incorrectly identified the presence of fever as a positive criterion, which should not have increased the score as the patient's temperature was less than 38 degrees Celsius.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_6": {
+        "analysis": "The prediction incorrectly added a point for hypertension, even though the ground-truth explanation stated that the patient did not have this issue. The prediction also incorrectly added a point for alcohol usage, even though the ground-truth explanation stated that the patient's alcohol consumption did not warrant an increase in the score. The prediction correctly identified the other factors and calculated their contributions to the score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction incorrectly identified hypertension as a risk factor for the patient, which was not present according to the ground-truth. The prediction also incorrectly identified labile INR as a risk factor, which was not present according to the ground-truth. The prediction also incorrectly calculated the total score as 5, while the ground-truth calculated it as 4.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction incorrectly assigned 2 points for the history of bleeding, while the ground-truth explanation shows that each risk factor should only contribute 1 point to the HAS-BLED score. Additionally, the prediction incorrectly assigned 1 point for hypertension, while the ground-truth explanation shows that the patient does not have hypertension. The prediction also incorrectly assigned 0 points for renal disease, while the ground-truth explanation shows that the patient does have renal disease, which should contribute 1 point to the HAS-BLED score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and performed the arithmetic incorrectly. The prediction missed several comorbidities and conditions that were present in the patient's medical history, such as 'Myocardial infarction', 'Peripheral vascular disease', 'Transient ischemic attacks', 'Cerebral vascular accident', 'Chronic obstructive pulmonary disease', 'Hemiplegia', 'Peptic ulcer disease', 'Moderate to severe chronic kidney disease', 'Solid tumor', 'Lymphoma', and 'AIDS'. The prediction also incorrectly calculated the total CCI score as 10, while the correct total CCI score according to the ground-truth is 14.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The prediction incorrectly calculated the FeverPAIN score. The assistant failed to add a point for the absence of cough or coryza, which was mentioned in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-8454594-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth and used wrong knowledge about the calculation. The FeverPAIN score calculation in the prediction is incorrect as it considered 'purulent nasal secretions' and 'rapidly attended to in the hospital' which are not part of the FeverPAIN score calculation. The correct parameters are fever, purulent tonsils, rapid onset of symptoms (\u22643 days), inflamed tonsils, and no cough/coryza.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction incorrectly calculated the FeverPAIN score. The assistant did not add a point for the absence of cough or coryza, which was done in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    }
+}
