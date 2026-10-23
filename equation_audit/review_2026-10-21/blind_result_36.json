@@ -1,0 +1,2172 @@
+{
+ "calculator_id": "36",
+ "rows": [
+  {
+   "row": "909",
+   "fields": {
+    "age": {
+     "value": [
+      63,
+      "years"
+     ],
+     "quote": "A 63 year old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "63 year old female"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "a history of prior DVT"
+    },
+    "Multiple trauma in the last month": {
+     "value": true,
+     "quote": "following multiple traumas sustained in a motor vehicle collision"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": true,
+     "quote": "a left femoral shaft fracture"
+    },
+    "Acute spinal cord injury causing paralysis in the last month": {
+     "value": false,
+     "quote": "There was no spinal cord damage or paralysis"
+    },
+    "Mobility": {
+     "value": "confined to bed >72 hours",
+     "quote": "bhe patient remains confined to bed due to her injuries"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "denies history of heart failure"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "any recent infections or sepsis"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "denies ... any recent infections"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "denies ... stroke"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "denies ... pulmonary embolism"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "denies ... inflammatory bowel disease"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "denies ... coronary artery disease"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "denies ... chronic obstructive pulmonary disease"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "denies ... malignancy"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "Prior coagulability workup in the patient revealed elevated serum homocysteine"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "otherwise negative for factor V Leiden"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "negative for ... prothrombin 20210A"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "negative for ... lupus anticoagulant"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "negative for ... anticardiolipin antibody"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "Heparin has been administered throughout the hospitalization with no complications"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": false,
+     "quote": "no other history of congenital or acquired thrombophilia"
+    },
+    "Family history of thrombosis": {
+     "value": true,
+     "quote": "The patient's mother had a DVT/PE in her 50's"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      27.1,
+      "kg/m^2"
+     ],
+     "quote": "BMI is 27.1 kg/m^2"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "There patient has varicose veins bilaterally"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "There is no lower extremity edema"
+    }
+   },
+   "score": 25,
+   "score_working": "age 63:2; surgery (not stated):0; fracture:+5; multiple trauma:+5; varicose:+1; FHx:+3; homocysteine:+3; hx DVT/PE:+3; mobility confined to bed >72 hours:2; BMI 27.1:1 = 25",
+   "note_issues": [
+    {
+     "field": "Hip, pelvis, or leg fracture in the last month / Multiple trauma in the last month",
+     "issue": "Date of the MVC is not given; only that she was transferred from the hospital 1 day ago and the incision is 'well-healed'. If the injuries were >1 month ago, both items drop (-10).",
+     "alternative_score": 15
+    },
+    {
+     "field": "Major Surgery in the last month",
+     "issue": "Well-healed surgical incision over the femoral shaft implies operative fixation, but the surgery and its date are not stated (omitted). If within 1 month, +1.",
+     "alternative_score": 26
+    },
+    {
+     "field": "Mobility",
+     "issue": "'remains confined to bed' with no duration; scored as >72 h given hospital stay plus transfer. If read as bed rest, -1.",
+     "alternative_score": 24
+    },
+    {
+     "field": "Immobilizing plaster cast in the last month",
+     "issue": "'limited due to pain and immobilization' does not state a plaster cast (omitted). If a cast, +2.",
+     "alternative_score": 27
+    }
+   ]
+  },
+  {
+   "row": "910",
+   "fields": {
+    "age": {
+     "value": [
+      81,
+      "years"
+     ],
+     "quote": "An 81-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "81-year-old male"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      21.4,
+      "kg/m^2"
+     ],
+     "quote": "(BMI 21.4)"
+    },
+    "Positive prothrombin 20210A": {
+     "value": true,
+     "quote": "PMH of prothrombin 20210A mutation"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": true,
+     "quote": "HIT"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "previous DVT"
+    },
+    "Sepsis in the last month": {
+     "value": true,
+     "quote": "recent admission in the past month for sepsis and stroke"
+    },
+    "Stroke in the last month": {
+     "value": true,
+     "quote": "recent admission in the past month for sepsis and stroke"
+    },
+    "Surgery Type": {
+     "value": "elective major lower extremity arthroplasty",
+     "quote": "admitted following a scheduled right total knee replacement"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "there are varicose veins"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "and no swelling"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "no recent history of congestive heart failure"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "or pneumonia"
+    },
+    "Family history of thrombosis": {
+     "value": true,
+     "quote": "Family history is significant for thrombosis"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "able to mobalize normally"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "negative for inflammatory bowel disease"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "acute myocardial infarction"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "or malignancy"
+    }
+   },
+   "score": 27,
+   "score_working": "age 81:3; surgery elective major lower extremity arthroplasty:5; sepsis:+1; stroke:+5; varicose:+1; FHx:+3; PT20210A:+3; HIT:+3; hx DVT/PE:+3; mobility normal:0; BMI 21.4:0 = 27",
+   "note_issues": [
+    {
+     "field": "Major Surgery in the last month",
+     "issue": "The TKR is the index surgery (scored as Surgery Type). If it is also counted as recent major surgery, +1.",
+     "alternative_score": 28
+    },
+    {
+     "field": "Present or previous malignancy",
+     "issue": "Lung cancer appears only in family history; ROS negative for malignancy, so not counted (no change).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "911",
+   "fields": {
+    "age": {
+     "value": [
+      74,
+      "years"
+     ],
+     "quote": "A 74-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "74-year-old female"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      23.1,
+      "kg/m^2"
+     ],
+     "quote": "(BMI 23.1)"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "PMH of MI (2014)"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": true,
+     "quote": "immobilization of her left lower extremity with a plaster cast"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": true,
+     "quote": "Concurrent management of her congestive heart failure (CHF) was administered during this period"
+    },
+    "Surgery Type": {
+     "value": "minor",
+     "quote": "she underwent minor surgery for cosmetic reconstruction of the limb"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "necessitates central venous access for antibiotic therapy administration"
+    },
+    "Pneumonia in the last month": {
+     "value": true,
+     "quote": "hospital acquired pneumonia"
+    },
+    "Major Surgery in the last month": {
+     "value": false,
+     "quote": "no recent history of major surgery"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "sepsis"
+    },
+    "Acute spinal cord injury causing paralysis in the last month": {
+     "value": false,
+     "quote": "or acute spinal cord injury"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "no current evidence of swollen legs"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "there are numerous varicose veins"
+    },
+    "Family history of thrombosis": {
+     "value": true,
+     "quote": "She has a family history of thrombosis"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "she is negative for specific thrombophilic factors"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "she is negative for specific thrombophilic factors"
+    },
+    "Elevated serum homocysteine": {
+     "value": false,
+     "quote": "she is negative for specific thrombophilic factors"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "she is negative for specific thrombophilic factors"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "she is negative for specific thrombophilic factors"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": false,
+     "quote": "she is negative for specific thrombophilic factors"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "She is currently bed bound due to the cast and central line"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "She does not have a history of IBD"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "COPD"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "or malignancy"
+    }
+   },
+   "score": 14,
+   "score_working": "age 74:2; surgery minor:1; CHF:+1; pneumonia:+1; cast:+2; varicose:+1; CVA:+2; FHx:+3; mobility on bed rest:1; BMI 23.1:0 = 14",
+   "note_issues": [
+    {
+     "field": "Mobility",
+     "issue": "'bed bound' with no duration; if >72 h, +1.",
+     "alternative_score": 15
+    },
+    {
+     "field": "Hip, pelvis, or leg fracture in the last month",
+     "issue": "MVA leading to a leg plaster cast strongly suggests a leg fracture, but no fracture is stated (omitted). If counted, +5.",
+     "alternative_score": 19
+    },
+    {
+     "field": "Congestive Heart Failure in the last month",
+     "issue": "Wording 'concurrent management of her CHF' could mean chronic CHF rather than a recent episode; if not counted, -1.",
+     "alternative_score": 13
+    }
+   ]
+  },
+  {
+   "row": "912",
+   "fields": {
+    "age": {
+     "value": [
+      67,
+      "years"
+     ],
+     "quote": "A 67-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "67-year-old female"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      28.3,
+      "kg/m^2"
+     ],
+     "quote": "BMI of 28.3 kg/m^2"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "PMH of Factor V"
+    },
+    "Positive lupus anticoagulant": {
+     "value": true,
+     "quote": "positive lupus anticoagulant"
+    },
+    "Present or previous malignancy": {
+     "value": true,
+     "quote": "and breast cancer"
+    },
+    "Acute spinal cord injury causing paralysis in the last month": {
+     "value": false,
+     "quote": "recent fall resulting in a spinal injury ... is able to ambulate normally"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": true,
+     "quote": "nonoperative management of a lower leg fracture"
+    },
+    "Surgery Type": {
+     "value": "none",
+     "quote": "nonoperative management"
+    },
+    "Pneumonia in the last month": {
+     "value": true,
+     "quote": "She had a recent admission for pneumonia following a pulmonary embolism three weeks ago"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": true,
+     "quote": "following a pulmonary embolism three weeks ago"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "she exhibits swollen legs"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "is able to ambulate normally"
+    },
+    "Current central venous access": {
+     "value": false,
+     "quote": "There is no current central venous access"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "she denies any family history of thrombosis"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "no history of inflammatory bowel disease"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "MI"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "sepsis"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "or stroke"
+    }
+   },
+   "score": 21,
+   "score_working": "age 67:2; surgery none:0; pneumonia:+1; fracture:+5; swollen legs:+1; FVL:+3; LA:+3; malignancy:+2; hx DVT/PE:+3; mobility normal:0; BMI 28.3:1 = 21",
+   "note_issues": [
+    {
+     "field": "Acute spinal cord injury causing paralysis in the last month",
+     "issue": "'spinal injury' from a recent fall; no paralysis stated and she ambulates normally, so scored false. If counted as acute SCI with paralysis, +5.",
+     "alternative_score": 26
+    },
+    {
+     "field": "Multiple trauma in the last month",
+     "issue": "Spinal injury plus leg fracture from one fall; not described as multiple trauma (omitted). If counted, +5.",
+     "alternative_score": 26
+    },
+    {
+     "field": "Positive Factor V Leiden",
+     "issue": "'PMH of Factor V' is incomplete; assumed Factor V Leiden. If not, -3.",
+     "alternative_score": 18
+    }
+   ]
+  },
+  {
+   "row": "913",
+   "fields": {
+    "age": {
+     "value": [
+      76,
+      "years"
+     ],
+     "quote": "A 76-year-old man"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "76-year-old man"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": true,
+     "quote": "past medical history significant for chronic obstructive pulmonary disease"
+    },
+    "Surgery Type": {
+     "value": "elective major lower extremity arthroplasty",
+     "quote": "admitted for elective major lower extremity arthroplasty"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": true,
+     "quote": "Over the past month, heart failure exacerbation"
+    },
+    "Pneumonia in the last month": {
+     "value": true,
+     "quote": "and pneumonia had prolonged the patient's hospital stay"
+    },
+    "Mobility": {
+     "value": "confined to bed >72 hours",
+     "quote": "he remained mostly confined to his bed"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "needed central venous access for medication delivery"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": false,
+     "quote": "denies any recent fractures"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": false,
+     "quote": "nor immobilization with plaster cast"
+    },
+    "Stroke in the last month": {
+     "value": true,
+     "quote": "Recent cerebrovascular insult exacerbated his hospital course and he is still recovering"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "reveals presence of Factor V Leiden"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "Screening for prothrombin 20210A mutation ... were negative"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "and anticardiolipin antibody were negative"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "no history of heparin-induced thrombocytopenia"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": false,
+     "quote": "no other congenital or acquired thrombophilia"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "He has not had sepsis during the current admission"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      28,
+      "kg/m^2"
+     ],
+     "quote": "His BMI is 28 kg/m^2"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "the lower limbs appear bilaterally swollen"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "negative for inflammatory bowel disease"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "myocardial infarction"
+    },
+    "Acute spinal cord injury causing paralysis in the last month": {
+     "value": false,
+     "quote": "spinal cord injury"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "or malignancy"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "no family history of thrombosis has been reported"
+    }
+   },
+   "score": 25,
+   "score_working": "age 76:3; surgery elective major lower extremity arthroplasty:5; CHF:+1; pneumonia:+1; stroke:+5; swollen legs:+1; CVA:+2; FVL:+3; COPD:+1; mobility confined to bed >72 hours:2; BMI 28:1 = 25",
+   "note_issues": [
+    {
+     "field": "Current central venous access",
+     "issue": "'needed central venous access' is past tense; unclear whether the line is still in place. If not current, -2.",
+     "alternative_score": 23
+    },
+    {
+     "field": "Mobility",
+     "issue": "'mostly confined to his bed' (not fully); if read as bed rest, -1.",
+     "alternative_score": 24
+    }
+   ]
+  },
+  {
+   "row": "914",
+   "fields": {
+    "age": {
+     "value": [
+      56,
+      "years"
+     ],
+     "quote": "A 56 year old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "56 year old male"
+    },
+    "Stroke in the last month": {
+     "value": true,
+     "quote": "admitted to the hospital three weeks ago for ischemic stroke"
+    },
+    "Sepsis in the last month": {
+     "value": true,
+     "quote": "empiric broad-spectrum antibiotic therapy started for presumed sepsis"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "a central venous catheter was surgically inserted"
+    },
+    "Surgery Type": {
+     "value": "none",
+     "quote": "a central venous catheter was surgically inserted"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "He is able to ambulate around the room"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "no history of prior pneumonia"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "DVT or PE"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "DVT or PE"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "heart failure"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "myocardial infarction"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "malignancy"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "or inflammatory bowel disease"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "revealed elevated serum homocysteine"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": true,
+     "quote": "and positive anticardiolipin antibody"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "Evaluation of Factor V Leiden ... were negative"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "prothrombin 20210A ... were negative"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "and lupus anticoagulant were negative"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "There is no family history of thrombosis"
+    },
+    "Multiple trauma in the last month": {
+     "value": false,
+     "quote": "no recent history of trauma"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": false,
+     "quote": "or fractures"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      23.4,
+      "kg/m^2"
+     ],
+     "quote": "BMI is 23.4 kg/m^2"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "no edema"
+    },
+    "Varicose veins": {
+     "value": false,
+     "quote": "or varicose veins"
+    }
+   },
+   "score": 16,
+   "score_working": "age 56:1; surgery none:0; sepsis:+1; stroke:+5; CVA:+2; homocysteine:+3; aCL:+3; mobility on bed rest:1; BMI 23.4:0 = 16",
+   "note_issues": [
+    {
+     "field": "Mobility",
+     "issue": "'able to ambulate around the room' = bed rest per MDCalc (walking in room does not count). If read as normal, -1.",
+     "alternative_score": 15
+    },
+    {
+     "field": "Surgery Type",
+     "issue": "Central line was 'surgically inserted'; not treated as a surgery. If counted as minor surgery, +1.",
+     "alternative_score": 17
+    }
+   ]
+  },
+  {
+   "row": "915",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "A 68-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "68-year-old female"
+    },
+    "Surgery Type": {
+     "value": "laparoscopic",
+     "quote": "following recent major laparoscopic surgery performed for ovarian cancer"
+    },
+    "Present or previous malignancy": {
+     "value": true,
+     "quote": "performed for ovarian cancer"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "prior deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": true,
+     "quote": "and a pulmonary embolism"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      30,
+      "kg/m^2"
+     ],
+     "quote": "Her BMI is 30 kg/m^2"
+    },
+    "Mobility": {
+     "value": "confined to bed >72 hours",
+     "quote": "she has spent over 72 hours confined to bed"
+    },
+    "Acute Myocardial infarction": {
+     "value": true,
+     "quote": "complicated by acute myocardial infarction"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "reveals swelling in the legs"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "elevated serum homocysteine levels"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "Prothrombin 20210A ... are negative"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "lupus anticoagulant ... are negative"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "factor V Leiden mutation are negative"
+    },
+    "History of inflammatory bowel disease": {
+     "value": true,
+     "quote": "long-standing inflammatory bowel disease"
+    },
+    "Family history of thrombosis": {
+     "value": true,
+     "quote": "a positive family history of thrombosis"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "no history of chronic obstructive pulmonary disease"
+    },
+    "Multiple trauma in the last month": {
+     "value": false,
+     "quote": "trauma"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "or sepsis"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": false,
+     "quote": "no hip, pelvis, or leg fractures in the recent past"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": false,
+     "quote": "no immobilizing plaster casts"
+    }
+   },
+   "score": 21,
+   "score_working": "age 68:2; surgery laparoscopic:2; swollen legs:+1; FHx:+3; homocysteine:+3; IBD:+1; acute MI:+1; malignancy:+2; hx DVT/PE:+3; mobility confined to bed >72 hours:2; BMI 30:1 = 21",
+   "note_issues": [
+    {
+     "field": "Major Surgery in the last month",
+     "issue": "The recent major laparoscopic surgery is scored as Surgery Type; if also counted as major surgery <1 month, +1.",
+     "alternative_score": 22
+    }
+   ]
+  },
+  {
+   "row": "916",
+   "fields": {
+    "age": {
+     "value": [
+      39,
+      "years"
+     ],
+     "quote": "A 39-year-old man"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "39-year-old man"
+    },
+    "Surgery Type": {
+     "value": "minor",
+     "quote": "due to a recent minor surgery"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "is confined to bed rest"
+    },
+    "History of inflammatory bowel disease": {
+     "value": true,
+     "quote": "inflammatory bowel disease"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": true,
+     "quote": "recent decompensated congestive heart failure"
+    },
+    "Stroke in the last month": {
+     "value": true,
+     "quote": "suffered from a stroke in the last month"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "A central venous catheter was inserted for medication delivery"
+    },
+    "Acute spinal cord injury causing paralysis in the last month": {
+     "value": false,
+     "quote": "no record of acute spinal cord injury"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "denies any previous pulmonary embolism"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "malignant disease"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "or acute myocardial infarction"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      32,
+      "kg/m^2"
+     ],
+     "quote": "body mass index is 32 kg/m^2"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "elevated serum homocysteine levels"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "prothrombin 20210A mutation ... were negative"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "lupus anticoagulant were negative"
+    },
+    "Family history of thrombosis": {
+     "value": true,
+     "quote": "paternal grandmother had an incident of thrombosis"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "varicose veins were observed"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "no lower extremity swelling was noted"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": true,
+     "quote": "positive history of heparin-induced thrombocytopenia"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": false,
+     "quote": "He has required no immobilizing plaster casts"
+    }
+   },
+   "score": 22,
+   "score_working": "age 39:0; surgery minor:1; CHF:+1; stroke:+5; varicose:+1; CVA:+2; FHx:+3; homocysteine:+3; HIT:+3; IBD:+1; mobility on bed rest:1; BMI 32:1 = 22",
+   "note_issues": [
+    {
+     "field": "Family history of thrombosis",
+     "issue": "Grandmother's 'thrombosis' is unspecified (venous vs arterial) and second-degree; if not counted, -3.",
+     "alternative_score": 19
+    },
+    {
+     "field": "Mobility",
+     "issue": "'confined to bed rest' with no duration; if >72 h, +1.",
+     "alternative_score": 23
+    },
+    {
+     "field": "Surgery Type",
+     "issue": "Bed rest is attributed both to 'recent minor surgery' and to the stroke admission; the minor surgery may be past rather than current. If Surgery Type none, -1.",
+     "alternative_score": 21
+    }
+   ]
+  },
+  {
+   "row": "917",
+   "fields": {
+    "age": {
+     "value": [
+      45,
+      "years"
+     ],
+     "quote": "A 45-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "45-year-old woman"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": true,
+     "quote": "follow-up visit after treatment for a pulmonary embolism"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "active lifestyle with normal mobility"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      22,
+      "kg/m^2"
+     ],
+     "quote": "body mass index of 22 kg/m^2"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "no history of inflammatory bowel disease"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "congestive heart failure"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "stroke"
+    },
+    "Multiple trauma in the last month": {
+     "value": false,
+     "quote": "trauma"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "deep vein thrombosis"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "pneumonia"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "heparin-induced thrombocytopenia"
+    },
+    "Varicose veins": {
+     "value": false,
+     "quote": "or varicose veins"
+    },
+    "Major Surgery in the last month": {
+     "value": false,
+     "quote": "no recent surgeries"
+    },
+    "Surgery Type": {
+     "value": "none",
+     "quote": "no recent surgeries"
+    },
+    "Positive prothrombin 20210A": {
+     "value": true,
+     "quote": "presence of prothrombin 20210A mutation"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "Factor V Leiden ... testing were negative"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "anticardiolipin antibody testing were negative"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": false,
+     "quote": "no other congenital or acquired thrombophilia"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "elevated serum homocysteine levels"
+    },
+    "Present or previous malignancy": {
+     "value": true,
+     "quote": "She had breast cancer which was successfully treated"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "Family history is negative for thrombosis"
+    }
+   },
+   "score": 12,
+   "score_working": "age 45:1; surgery none:0; PT20210A:+3; homocysteine:+3; malignancy:+2; hx DVT/PE:+3; mobility normal:0; BMI 22:0 = 12",
+   "note_issues": []
+  },
+  {
+   "row": "918",
+   "fields": {
+    "age": {
+     "value": [
+      55,
+      "years"
+     ],
+     "quote": "A 55-year-old gentleman"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "55-year-old gentleman"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": true,
+     "quote": "history of chronic obstructive pulmonary disease"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": true,
+     "quote": "recent heart failure exacerbation"
+    },
+    "Surgery Type": {
+     "value": "laparoscopic",
+     "quote": "admitted for a laparoscopic surgery procedure"
+    },
+    "Pneumonia in the last month": {
+     "value": true,
+     "quote": "a recent episode of pneumonia"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "he remains on bed rest"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "a past incident of deep vein thrombosis"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "positive Factor V Leiden"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "Prothrombin 20210A ... tests are negative"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "anticardiolipin antibody tests are negative"
+    },
+    "Elevated serum homocysteine": {
+     "value": false,
+     "quote": "homocysteine levels are within normal limits"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      31,
+      "kg/m^2"
+     ],
+     "quote": "body mass index of 31 kg/m^2"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "no history of malignant cancer"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": false,
+     "quote": "congenital or acquired thrombophilia"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": false,
+     "quote": "or recent fractures"
+    }
+   },
+   "score": 14,
+   "score_working": "age 55:1; surgery laparoscopic:2; CHF:+1; pneumonia:+1; FVL:+3; COPD:+1; hx DVT/PE:+3; mobility on bed rest:1; BMI 31:1 = 14",
+   "note_issues": [
+    {
+     "field": "Surgery Type",
+     "issue": "Laparoscopic surgery duration not given (MDCalc +2 is for >45 min); if <45 min and scored minor, -1.",
+     "alternative_score": 13
+    },
+    {
+     "field": "Mobility",
+     "issue": "'remains on bed rest' with no duration; if >72 h, +1.",
+     "alternative_score": 15
+    },
+    {
+     "field": "Other congenital or acquired thrombophilia",
+     "issue": "Denies congenital thrombophilia while positive for Factor V Leiden (a congenital thrombophilia); read as 'no other' (no change).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "919",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "70-year-old woman"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": true,
+     "quote": "follow-up visit after a leg fracture"
+    },
+    "Multiple trauma in the last month": {
+     "value": false,
+     "quote": "which was her only injury from a skiing accident. She has no other trauma history"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "The patient's mobility is normal"
+    },
+    "Sepsis in the last month": {
+     "value": true,
+     "quote": "recent sepsis and stroke 1 month ago"
+    },
+    "Stroke in the last month": {
+     "value": true,
+     "quote": "recent sepsis and stroke 1 month ago"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": true,
+     "quote": "a history of pulmonary embolism"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "but no deep vein thrombosis"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": true,
+     "quote": "elevated anticardiolipin antibody"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "and Factor V Leiden"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "no past medical history of inflammatory bowel disease"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "heparin-induced thrombocytopenia"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "nor chronic obstructive pulmonary disease"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      24,
+      "kg/m^2"
+     ],
+     "quote": "Her BMI today is 24 kg/m^2"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "Her current management includes central venous access"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": true,
+     "quote": "monitoring for potential complications of Protein C deficiency"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "Apart from varicose veins"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "no significant swelling"
+    }
+   },
+   "score": 28,
+   "score_working": "age 70:2; surgery (not stated):0; sepsis:+1; fracture:+5; stroke:+5; varicose:+1; CVA:+2; FVL:+3; aCL:+3; other thrombophilia:+3; hx DVT/PE:+3; mobility normal:0; BMI 24:0 = 28",
+   "note_issues": [
+    {
+     "field": "Hip, pelvis, or leg fracture in the last month",
+     "issue": "Fracture date not given (follow-up visit); if >1 month ago, -5.",
+     "alternative_score": 23
+    },
+    {
+     "field": "Sepsis in the last month / Stroke in the last month",
+     "issue": "'1 month ago' sits on the 1-month boundary; if treated as outside the window, -6.",
+     "alternative_score": 22
+    },
+    {
+     "field": "Other congenital or acquired thrombophilia",
+     "issue": "Protein C deficiency mentioned only as 'monitoring for potential complications of'; if not a confirmed diagnosis, -3.",
+     "alternative_score": 25
+    }
+   ]
+  },
+  {
+   "row": "920",
+   "fields": {
+    "age": {
+     "value": [
+      52,
+      "years"
+     ],
+     "quote": "A 52-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "52-year-old male"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": true,
+     "quote": "medical history of chronic obstructive pulmonary disease"
+    },
+    "Mobility": {
+     "value": "confined to bed >72 hours",
+     "quote": "confined to bed rest for 4 days"
+    },
+    "Surgery Type": {
+     "value": "major",
+     "quote": "after a bowel resection (3 hours surgical time)"
+    },
+    "Present or previous malignancy": {
+     "value": true,
+     "quote": "for management of ascending colon carcinoma"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "denies having any acute myocardial infarction"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "congestive heart failure"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "stroke"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "pneumonia"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "or sepsis"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "previous history of deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": true,
+     "quote": "and pulmonary embolism"
+    },
+    "Positive lupus anticoagulant": {
+     "value": true,
+     "quote": "positive lupus anticoagulant"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "Prothrombin 20210A is normal"
+    },
+    "Elevated serum homocysteine": {
+     "value": false,
+     "quote": "serum homocysteine within normal range"
+    },
+    "Family history of thrombosis": {
+     "value": true,
+     "quote": "family history of thrombosis in his mother"
+    },
+    "Current central venous access": {
+     "value": false,
+     "quote": "He has no central venous access"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": false,
+     "quote": "no other congenital or acquired thrombophilia"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "no signs of current swollen legs"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      29,
+      "kg/m^2"
+     ],
+     "quote": "Body Mass Index (BMI) is 29 kg/m^2"
+    }
+   },
+   "score": 18,
+   "score_working": "age 52:1; surgery major:2; FHx:+3; LA:+3; COPD:+1; malignancy:+2; hx DVT/PE:+3; mobility confined to bed >72 hours:2; BMI 29:1 = 18",
+   "note_issues": [
+    {
+     "field": "Major Surgery in the last month",
+     "issue": "The bowel resection 4 days ago is scored as Surgery Type; if also counted as major surgery <1 month, +1.",
+     "alternative_score": 19
+    }
+   ]
+  },
+  {
+   "row": "921",
+   "fields": {
+    "age": {
+     "value": [
+      60,
+      "years"
+     ],
+     "quote": "A 60-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "60-year-old woman"
+    },
+    "Stroke in the last month": {
+     "value": true,
+     "quote": "admitted following a stroke and thromboembolism removal"
+    },
+    "Surgery Type": {
+     "value": "none",
+     "quote": "stroke and thromboembolism removal"
+    },
+    "Mobility": {
+     "value": "confined to bed >72 hours",
+     "quote": "confined to her bed for more than 72 hours"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": true,
+     "quote": "She currently has an immobilizing plaster cast due to a leg fracture"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": true,
+     "quote": "due to a leg fracture"
+    },
+    "Positive lupus anticoagulant": {
+     "value": true,
+     "quote": "She is positive for lupus anticoagulant"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "has an elevated serum homocysteine levels"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "anticardiolipin antibody test came back negative"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "Factor V Leiden mutation is not present"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "strong family history of thrombotic events with her mother and brother suffering MIs"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      27,
+      "kg/m^2"
+     ],
+     "quote": "Her BMI is reported as 27 kg/m^2"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "her legs were found to be swollen"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "ROS is negative for CHF"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "COPD"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "malignancy"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "sepsis"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "pneumonia"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "MI"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "and deep vein thrombosis"
+    }
+   },
+   "score": 23,
+   "score_working": "age 60:1; surgery none:0; cast:+2; fracture:+5; stroke:+5; swollen legs:+1; homocysteine:+3; LA:+3; mobility confined to bed >72 hours:2; BMI 27:1 = 23",
+   "note_issues": [
+    {
+     "field": "Family history of thrombosis",
+     "issue": "Labelled 'strong family history of thrombotic events' but the events are MIs (arterial), so scored false. If counted, +3.",
+     "alternative_score": 26
+    },
+    {
+     "field": "Surgery Type",
+     "issue": "'thromboembolism removal' (likely endovascular thrombectomy) not treated as surgery; if minor +1 (24), if major +2.",
+     "alternative_score": 25
+    },
+    {
+     "field": "Hip, pelvis, or leg fracture in the last month",
+     "issue": "Fracture date not stated; inferred recent from current cast. If >1 month, -5.",
+     "alternative_score": 18
+    }
+   ]
+  },
+  {
+   "row": "922",
+   "fields": {
+    "age": {
+     "value": [
+      48,
+      "years"
+     ],
+     "quote": "A 48-year-old man"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "48-year-old man"
+    },
+    "Acute Myocardial infarction": {
+     "value": true,
+     "quote": "recently ... diagnosed with acute myocardial infarction"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "a history of deep vein thrombosis"
+    },
+    "Present or previous malignancy": {
+     "value": true,
+     "quote": "a prostate cancer that is currently in remission"
+    },
+    "Surgery Type": {
+     "value": "none",
+     "quote": "He underwent minor surgery some months back for a trigger finger release"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "usually active, and is able to walk without pain"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      28,
+      "kg/m^2"
+     ],
+     "quote": "body mass index is recorded as 28 kg/m^2"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "there were signs of varicose veins"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "but no swelling in the legs"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "has a current central venous access in place"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "does not have positive lupus anticoagulant"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "or elevated anticardiolipin antibody"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": true,
+     "quote": "Genetics tests confirmed an acquired thrombophilia"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "no signs of pneumonia"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "there was no family history of thrombosis"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "denied any inflammatory bowel disease"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "did not fit the criteria for heparin-induced thrombocytopenia"
+    }
+   },
+   "score": 14,
+   "score_working": "age 48:1; surgery none:0; varicose:+1; CVA:+2; other thrombophilia:+3; acute MI:+1; malignancy:+2; hx DVT/PE:+3; mobility normal:0; BMI 28:1 = 14",
+   "note_issues": [
+    {
+     "field": "Other congenital or acquired thrombophilia",
+     "issue": "'Genetics tests confirmed an acquired thrombophilia' is self-contradictory (genetic vs acquired); counted as present. If excluded, -3.",
+     "alternative_score": 11
+    },
+    {
+     "field": "Mobility",
+     "issue": "'usually active' describes baseline; current mobility during the acute MI admission is not stated. If on bed rest, +1.",
+     "alternative_score": 15
+    }
+   ]
+  },
+  {
+   "row": "923",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "72-year-old female"
+    },
+    "Acute Myocardial infarction": {
+     "value": true,
+     "quote": "recently survived an acute myocardial infarction"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "her mobility is normal following PT"
+    },
+    "Acute spinal cord injury causing paralysis in the last month": {
+     "value": true,
+     "quote": "a recent spinal cord injury without fracture which led to a brief period of paralysis"
+    },
+    "Multiple trauma in the last month": {
+     "value": true,
+     "quote": "victim of a multi-trauma incident a few weeks ago"
+    },
+    "Major Surgery in the last month": {
+     "value": false,
+     "quote": "denies any major surgery in the past month"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "no previous episodes of deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "or pulmonary embolism"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      23,
+      "kg/m^2"
+     ],
+     "quote": "calculated as 23 kg/m^2"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "She has positive Factor V Leiden status"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "Her lowered extremities show noticeable swelling"
+    },
+    "Current central venous access": {
+     "value": false,
+     "quote": "no active central venous access"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "her sepsis screening reports were negative"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": true,
+     "quote": "positive history of heparin-induced thrombocytopenia"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "lupus anticoagulant is absent"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "denies any history of malignancy"
+    }
+   },
+   "score": 20,
+   "score_working": "age 72:2; surgery (not stated):0; multiple trauma:+5; SCI:+5; swollen legs:+1; FVL:+3; HIT:+3; acute MI:+1; mobility normal:0; BMI 23:0 = 20",
+   "note_issues": [
+    {
+     "field": "Acute spinal cord injury causing paralysis in the last month",
+     "issue": "Spinal cord injury is only 'recent' (date unstated) with 'brief' paralysis now resolved; if outside 1 month or not qualifying, -5.",
+     "alternative_score": 15
+    }
+   ]
+  },
+  {
+   "row": "924",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A 65-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "65-year-old woman"
+    },
+    "Surgery Type": {
+     "value": "minor",
+     "quote": "recently underwent minor surgery for bunion correction"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": true,
+     "quote": "currently immobilized with a plaster cast"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "She was active and ambulating normally before the procedure"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "a previously confirmed deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "no episodes of pulmonary embolism"
+    },
+    "Current central venous access": {
+     "value": false,
+     "quote": "she does not have a current central venous access"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "positive Factor V Leiden mutation"
+    },
+    "History of inflammatory bowel disease": {
+     "value": true,
+     "quote": "significant for inflammatory bowel disease"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      27,
+      "kg/m^2"
+     ],
+     "quote": "With a BMI of 27 kg/m^2"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "neither a family history of thrombosis"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "nor records of heparin-induced thrombocytopenia"
+    },
+    "Positive prothrombin 20210A": {
+     "value": false,
+     "quote": "negative for prothrombin 20210A mutation"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": false,
+     "quote": "and elevated anticardiolipin antibody"
+    }
+   },
+   "score": 13,
+   "score_working": "age 65:2; surgery minor:1; cast:+2; FVL:+3; IBD:+1; hx DVT/PE:+3; mobility normal:0; BMI 27:1 = 13",
+   "note_issues": [
+    {
+     "field": "Mobility",
+     "issue": "Only pre-operative mobility is stated ('before the procedure'); current mobility with the cast is unclear. If on bed rest, +1.",
+     "alternative_score": 14
+    }
+   ]
+  },
+  {
+   "row": "925",
+   "fields": {
+    "age": {
+     "value": [
+      56,
+      "years"
+     ],
+     "quote": "A 56-year-old man"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "56-year-old man"
+    },
+    "Pneumonia in the last month": {
+     "value": true,
+     "quote": "recently recovering from pneumonia"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": true,
+     "quote": "recent medical encounters include a hip fracture"
+    },
+    "Major Surgery in the last month": {
+     "value": true,
+     "quote": "requiring a major surgical intervention"
+    },
+    "Surgery Type": {
+     "value": "none",
+     "quote": "presents for follow up"
+    },
+    "Mobility": {
+     "value": "normal",
+     "quote": "He is ambulating well now"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": false,
+     "quote": "denies any immobilization or placement of a plaster cast"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": true,
+     "quote": "presence of elevated anticardiolipin antibodies"
+    },
+    "Positive Factor V Leiden": {
+     "value": true,
+     "quote": "and Factor V Leiden mutation"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "no past records of deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "or pulmonary embolism"
+    },
+    "Current central venous access": {
+     "value": false,
+     "quote": "No current central venous access"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      24,
+      "kg/m^2"
+     ],
+     "quote": "BMI of 24 kg/m^2"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "evident swelling of the lower extremities"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "no history of sepsis"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "acute myocardial infarction"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "stroke"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "or congestive heart failure"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "denies any history of inflammatory bowel disease"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "or chronic obstructive pulmonary disease"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": true,
+     "quote": "but has acquired thrombophilia"
+    },
+    "Present or previous malignancy": {
+     "value": false,
+     "quote": "neither been diagnosed with a malignancy"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "nor having any significant family history of thrombosis"
+    }
+   },
+   "score": 18,
+   "score_working": "age 56:1; surgery none:0; major surg<1mo:+1; pneumonia:+1; fracture:+5; swollen legs:+1; FVL:+3; aCL:+3; other thrombophilia:+3; mobility normal:0; BMI 24:0 = 18",
+   "note_issues": [
+    {
+     "field": "Hip, pelvis, or leg fracture in the last month / Major Surgery in the last month",
+     "issue": "Hip fracture and its surgery are only 'recent'; exact timing vs 1-month window not given. If >1 month, -6.",
+     "alternative_score": 12
+    },
+    {
+     "field": "Other congenital or acquired thrombophilia",
+     "issue": "'acquired thrombophilia' may just restate the anticardiolipin antibodies (double count); if excluded, -3.",
+     "alternative_score": 15
+    },
+    {
+     "field": "Surgery Type",
+     "issue": "Hip surgery is past (follow-up visit), so Surgery Type none; if the hip surgery is taken as the surgery type (major), +2.",
+     "alternative_score": 20
+    }
+   ]
+  },
+  {
+   "row": "926",
+   "fields": {
+    "age": {
+     "value": [
+      62,
+      "years"
+     ],
+     "quote": "A 62-year-old man"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "62-year-old man"
+    },
+    "Surgery Type": {
+     "value": "elective major lower extremity arthroplasty",
+     "quote": "on medical admission for elective major lower extremity arthroplasty"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "he is currently confined to bed rest"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "negative for inflammatory bowel disease"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "previous deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "and pulmonary embolism"
+    },
+    "Positive prothrombin 20210A": {
+     "value": true,
+     "quote": "positive prothrombin 20210A mutation"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "elevated serum homocysteine levels"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      30,
+      "kg/m^2"
+     ],
+     "quote": "Body Mass Index (BMI) was recorded at 30 kg/m^2"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "swelling was noted in the lower extremities"
+    },
+    "Varicose veins": {
+     "value": false,
+     "quote": "no varicose veins were appreciated"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": true,
+     "quote": "recent heart failure exacerbation"
+    }
+   },
+   "score": 17,
+   "score_working": "age 62:2; surgery elective major lower extremity arthroplasty:5; CHF:+1; swollen legs:+1; PT20210A:+3; homocysteine:+3; mobility on bed rest:1; BMI 30:1 = 17",
+   "note_issues": [
+    {
+     "field": "Mobility",
+     "issue": "'confined to bed rest' with no duration; if >72 h, +1.",
+     "alternative_score": 18
+    },
+    {
+     "field": "Congestive Heart Failure in the last month",
+     "issue": "'recent' heart failure exacerbation without date; if >1 month, -1.",
+     "alternative_score": 16
+    },
+    {
+     "field": "Stroke in the last month",
+     "issue": "Neurology team involvement hints at an unstated neurological event; no stroke documented (omitted).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "927",
+   "fields": {
+    "age": {
+     "value": [
+      58,
+      "years"
+     ],
+     "quote": "A 58-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "58-year-old woman"
+    },
+    "Hip, pelvis, or leg fracture in the last month": {
+     "value": true,
+     "quote": "a fall, resulting in a fracture to her hip"
+    },
+    "Pneumonia in the last month": {
+     "value": true,
+     "quote": "prolonged due to an episode of pneumonia"
+    },
+    "Surgery Type": {
+     "value": "minor",
+     "quote": "post minor surgery"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "able to ambulate without significant aid post minor surgery and was often seen navigating her room"
+    },
+    "Immobilizing plaster cast in the last month": {
+     "value": true,
+     "quote": "she does require a plaster cast for proper healing of her hip"
+    },
+    "Varicose veins": {
+     "value": true,
+     "quote": "revealed varicose veins"
+    },
+    "Current swollen legs": {
+     "value": false,
+     "quote": "she did not complain of swelling in her legs"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "presence of elevated serum homocysteine"
+    },
+    "Elevated anticardiolipin antibody": {
+     "value": true,
+     "quote": "and anticardiolipin antibody"
+    },
+    "Positive lupus anticoagulant": {
+     "value": false,
+     "quote": "the lupus anticoagulant test was negative"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": false,
+     "quote": "absence of a history of congestive heart failure"
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+     "value": false,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "stroke"
+    },
+    "Sepsis in the last month": {
+     "value": false,
+     "quote": "sepsis"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "pulmonary embolism"
+    },
+    "Heparin-induced thrombocytopenia": {
+     "value": false,
+     "quote": "or heparin-induced thrombocytopenia"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      25,
+      "kg/m^2"
+     ],
+     "quote": "within the normal range, calculated at 25 kg/m^2"
+    }
+   },
+   "score": 18,
+   "score_working": "age 58:1; surgery minor:1; pneumonia:+1; cast:+2; fracture:+5; varicose:+1; homocysteine:+3; aCL:+3; mobility on bed rest:1; BMI 25:0 = 18",
+   "note_issues": [
+    {
+     "field": "Mobility",
+     "issue": "Ambulating 'without significant aid' but described as navigating her room; per MDCalc walking within the room = bed rest. If read as normal, -1.",
+     "alternative_score": 17
+    },
+    {
+     "field": "Surgery Type",
+     "issue": "Hip fracture repair labelled 'minor surgery' (clinically implausible); if major, +1.",
+     "alternative_score": 19
+    },
+    {
+     "field": "Body Mass Index (BMI)",
+     "issue": "BMI exactly 25 (not >25), 0 points; note calls it normal range (consistent).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "928",
+   "fields": {
+    "age": {
+     "value": [
+      50,
+      "years"
+     ],
+     "quote": "A 50-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "50-year-old female"
+    },
+    "Mobility": {
+     "value": "on bed rest",
+     "quote": "recently been confined to bed rest due to a congestive heart failure exacerbation"
+    },
+    "Congestive Heart Failure in the last month": {
+     "value": true,
+     "quote": "due to a congestive heart failure exacerbation"
+    },
+    "Sepsis in the last month": {
+     "value": true,
+     "quote": "being stricken with sepsis"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": true,
+     "quote": "a previous deep vein thrombosis"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": true,
+     "quote": "and a pulmonary embolism"
+    },
+    "Current central venous access": {
+     "value": true,
+     "quote": "she has a central venous line in place"
+    },
+    "Elevated serum homocysteine": {
+     "value": true,
+     "quote": "elevated serum homocysteine levels"
+    },
+    "Other congenital or acquired thrombophilia": {
+     "value": true,
+     "quote": "further confirming the presence of another thrombophilia"
+    },
+    "Body Mass Index (BMI)": {
+     "value": [
+      30,
+      "kg/m^2"
+     ],
+     "quote": "body mass index is recorded at 30 kg/m^2"
+    },
+    "Current swollen legs": {
+     "value": true,
+     "quote": "reveals lower extremity edema"
+    },
+    "Varicose veins": {
+     "value": false,
+     "quote": "absent varicose veins"
+    },
+    "History of inflammatory bowel disease": {
+     "value": false,
+     "quote": "does not have a history of inflammatory bowel disease"
+    },
+    "Multiple trauma in the last month": {
+     "value": false,
+     "quote": "trauma"
+    },
+    "Acute Myocardial infarction": {
+     "value": false,
+     "quote": "myocardial infarction"
+    },
+    "Pneumonia in the last month": {
+     "value": false,
+     "quote": "pneumonia"
+    },
+    "Stroke in the last month": {
+     "value": false,
+     "quote": "stroke"
+    },
+    "Major Surgery in the last month": {
+     "value": false,
+     "quote": "or major surgery in the past month"
+    },
+    "Positive Factor V Leiden": {
+     "value": false,
+     "quote": "denies having a congenital disease like Factor V Leiden mutation"
+    },
+    "Family history of thrombosis": {
+     "value": false,
+     "quote": "or a family history of thrombosis"
+    }
+   },
+   "score": 17,
+   "score_working": "age 50:1; surgery (not stated):0; CHF:+1; sepsis:+1; swollen legs:+1; CVA:+2; homocysteine:+3; other thrombophilia:+3; hx DVT/PE:+3; mobility on bed rest:1; BMI 30:1 = 17",
+   "note_issues": [
+    {
+     "field": "Mobility",
+     "issue": "Bed rest duration not given though the stay is 'prolonged'; if >72 h, +1.",
+     "alternative_score": 18
+    }
+   ]
+  }
+ ]
+}

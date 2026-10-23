@@ -1,0 +1,39 @@
+{"Row Number": 6, "all_match": true, "problems": [], "Tokens": 1262}
+{"Row Number": 1, "all_match": true, "problems": [], "Tokens": 1236}
+{"Row Number": 3, "all_match": true, "problems": [], "Tokens": 1391}
+{"Row Number": 5, "all_match": true, "problems": [], "Tokens": 2696}
+{"Row Number": 4, "all_match": true, "problems": [], "Tokens": 1864}
+{"Row Number": 8, "all_match": true, "problems": [], "Tokens": 1017}
+{"Row Number": 7, "all_match": true, "problems": [], "Tokens": 1232}
+{"Row Number": 2, "all_match": false, "problems": [{"input": "Albumin", "extracted": "3.8 g/dL", "note_says": "3.8 mg/dL (38 g/L)", "issue": "conflicting_values_in_note"}], "Tokens": 906}
+{"Row Number": 13, "all_match": true, "problems": [], "Tokens": 1215}
+{"Row Number": 12, "all_match": true, "problems": [], "Tokens": 1741}
+{"Row Number": 10, "all_match": true, "problems": [], "Tokens": 1261}
+{"Row Number": 9, "all_match": true, "problems": [], "Tokens": 1855}
+{"Row Number": 14, "all_match": true, "problems": [], "Tokens": 1374}
+{"Row Number": 16, "all_match": true, "problems": [], "Tokens": 1289}
+{"Row Number": 15, "all_match": false, "problems": [{"input": "Albumin", "extracted": "8.0 g/dL", "note_says": "Hemoglobin is 8 g/dL; no albumin value is documented.", "issue": "not_in_note"}], "Tokens": 893}
+{"Row Number": 17, "all_match": true, "problems": [], "Tokens": 1560}
+{"Row Number": 18, "all_match": true, "problems": [], "Tokens": 1075}
+{"Row Number": 20, "all_match": true, "problems": [], "Tokens": 1154}
+{"Row Number": 21, "all_match": true, "problems": [], "Tokens": 2397}
+{"Row Number": 22, "all_match": true, "problems": [], "Tokens": 1404}
+{"Row Number": 23, "all_match": true, "problems": [], "Tokens": 1371}
+{"Row Number": 24, "all_match": true, "problems": [], "Tokens": 764}
+{"Row Number": 26, "all_match": true, "problems": [], "Tokens": 811}
+{"Row Number": 25, "all_match": true, "problems": [], "Tokens": 1607}
+{"Row Number": 11, "all_match": false, "problems": [{"input": "Chloride", "extracted": "113 mEq/L", "note_says": "113 mEq/L is postoperative; no pretreatment admission chloride is documented.", "issue": "wrong_time_point"}, {"input": "Albumin", "extracted": "21 g/L", "note_says": "Admission albumin was 30 g/L; 21 g/L is postoperative.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "16 mEq/L", "note_says": "Admission HCO3 was 22 mmol/L; 16 mEq/L is postoperative.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "143 mmol/L", "note_says": "Admission sodium was 138 mmol/L; 143 mmol/L is postoperative.", "issue": "wrong_time_point"}], "Tokens": 1782}
+{"Row Number": 27, "all_match": true, "problems": [], "Tokens": 991}
+{"Row Number": 28, "all_match": true, "problems": [], "Tokens": 811}
+{"Row Number": 29, "all_match": true, "problems": [], "Tokens": 1128}
+{"Row Number": 19, "all_match": false, "problems": [{"input": "Chloride", "extracted": "115.0 mmol/L", "note_says": "Chloride 115 mmol/L was measured at the later readmission; no chloride value is documented for the first admission.", "issue": "wrong_time_point"}, {"input": "Albumin", "extracted": "3.9 g/dL", "note_says": "Albumin 3.9 g/dL was measured at the later readmission; no albumin value is documented for the first admission.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "5.5 mmol/L", "note_says": "Bicarbonate was 19 mmol/L at the first admission before treatment. The 5.5 mmol/L value was measured at the later readmission.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "136.0 mmol/L", "note_says": "Sodium 136 mmol/L was measured at the later readmission; no sodium value is documented for the first admission.", "issue": "wrong_time_point"}], "Tokens": 2456}
+{"Row Number": 32, "all_match": true, "problems": [], "Tokens": 1323}
+{"Row Number": 31, "all_match": true, "problems": [], "Tokens": 1331}
+{"Row Number": 33, "all_match": true, "problems": [], "Tokens": 948}
+{"Row Number": 34, "all_match": true, "problems": [], "Tokens": 2263}
+{"Row Number": 35, "all_match": true, "problems": [], "Tokens": 1475}
+{"Row Number": 37, "all_match": true, "problems": [], "Tokens": 1665}
+{"Row Number": 36, "all_match": true, "problems": [], "Tokens": 1385}
+{"Row Number": 38, "all_match": true, "problems": [], "Tokens": 1455}
+{"Row Number": 39, "all_match": true, "problems": [], "Tokens": 1230}
+{"Row Number": 30, "all_match": false, "problems": [{"input": "Chloride", "extracted": "110.0 mEq/L", "note_says": "110 mEq/L during the current ICU evaluation after surgery and treatment, not at initial admission before treatment.", "issue": "wrong_time_point"}, {"input": "Albumin", "extracted": "2.5 mg/dL", "note_says": "2.5 mg/dL during the current ICU evaluation after surgery and treatment, not at initial admission before treatment.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "26.0 mEq/L", "note_says": "26 mEq/L during the current ICU evaluation after surgery and treatment, not at initial admission before treatment.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "145.0 mEq/L", "note_says": "145 mEq/L during the current ICU evaluation after surgery and treatment, not at initial admission before treatment.", "issue": "wrong_time_point"}], "Tokens": 1071}

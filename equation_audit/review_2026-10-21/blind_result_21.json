@@ -1,0 +1,546 @@
+{
+ "calculator_id": "21",
+ "rows": [
+  {
+   "row": "849",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "does momentarily open her eyes to sternal rub"
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "When asked if she knows where she is, she responds, 'I am in the Lego aisle of Target.'"
+    },
+    "Best motor response": {
+     "value": "withdrawal from pain",
+     "quote": "She also adjusted her position to move her chest away from the examiner's hand."
+    }
+   },
+   "score": 10,
+   "score_working": "E2 V4 M4",
+   "note_issues": [
+    {
+     "field": "Best motor response",
+     "issue": "Moving the chest away from the examiner's hand during sternal rub is a withdrawal (moving away from the stimulus), but the note may have intended 'localizes'. If localizes (M5) the score is 11.",
+     "alternative_score": 11
+    },
+    {
+     "field": "Best verbal response",
+     "issue": "The patient is described as unconscious and not arousable verbally, yet she answers a question with a full but disoriented sentence. Read as a conversational but disoriented answer this is confused (V4). If the off-topic answer is taken as inappropriate words (V3) the score is 9.",
+     "alternative_score": 9
+    },
+    {
+     "field": "general",
+     "issue": "Contradiction: 'unconscious... not able to be aroused verbally' conflicts with her giving a verbal answer to a question.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "850",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to verbal command",
+     "quote": "He intermittently opens his eyes in response to verbal commands"
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "The patient appears anxious and disoriented... unable to provide accurate information about the injury"
+    },
+    "Best motor response": {
+     "value": "localizes pain",
+     "quote": "He localizes painful stimuli."
+    }
+   },
+   "score": 12,
+   "score_working": "E3 V4 M5",
+   "note_issues": [
+    {
+     "field": "Best motor response",
+     "issue": "Whether he obeys commands is not tested. If he did obey (M6) the score would be 13.",
+     "alternative_score": 13
+    },
+    {
+     "field": "general",
+     "issue": "Sex mismatch: the note says '58 year old female' but then uses 'he'. This does not affect the GCS.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "851",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "She opens her eyes and withdraws in response to painful stimuli"
+    },
+    "Best verbal response": {
+     "value": "incomprehensible sounds",
+     "quote": "groans without intelligible speech"
+    },
+    "Best motor response": {
+     "value": "withdrawal from pain",
+     "quote": "withdraws in response to painful stimuli in all extremities"
+    }
+   },
+   "score": 8,
+   "score_working": "E2 V2 M4",
+   "note_issues": [
+    {
+     "field": "general",
+     "issue": "She is intubated later. The exam before intubation is used, so this does not change the score.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "852",
+   "fields": {
+    "Best eye response": {
+     "value": "eyes open spontaneously",
+     "quote": "he is awake, alert"
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "He is confused and tangential, but able to answer questions coherently"
+    },
+    "Best motor response": {
+     "value": "obeys commands",
+     "quote": "following simple commands"
+    }
+   },
+   "score": 14,
+   "score_working": "E4 V4 M6",
+   "note_issues": []
+  },
+  {
+   "row": "853",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "Her eyes open upon painful stimulus."
+    },
+    "Best verbal response": {
+     "value": "incomprehensible sounds",
+     "quote": "She grunts and moans on occasion, but no discernible words are appreciated."
+    },
+    "Best motor response": {
+     "value": "withdrawal from pain",
+     "quote": "a pinch to the nail bed induces a withdrawal response in her extremities"
+    }
+   },
+   "score": 8,
+   "score_working": "E2 V2 M4",
+   "note_issues": []
+  },
+  {
+   "row": "854",
+   "fields": {
+    "Best eye response": {
+     "value": "eyes open spontaneously",
+     "quote": "alert, with eyes open and actively looking around"
+    },
+    "Best verbal response": {
+     "value": "oriented",
+     "quote": "oriented to situation... spontaneously stating that he is in the hospital for dizziness"
+    },
+    "Best motor response": {
+     "value": "obeys commands",
+     "quote": "he follows two step commands"
+    }
+   },
+   "score": 15,
+   "score_working": "E4 V5 M6",
+   "note_issues": [
+    {
+     "field": "Best verbal response",
+     "issue": "The note says 'oriented to situation' and that he recognized the place and physician. Orientation to time is not stated, but nothing suggests confusion.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "855",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to verbal command",
+     "quote": "He opens his eyes upon verbal request."
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "His speech was disjointed and he appeared confused when asked about the day of the week"
+    },
+    "Best motor response": {
+     "value": "localizes pain",
+     "quote": "Upon sternal rub, he was able to specifically locate the sensation and attempted to push the hand away."
+    }
+   },
+   "score": 12,
+   "score_working": "E3 V4 M5",
+   "note_issues": [
+    {
+     "field": "Best motor response",
+     "issue": "Whether he obeys commands is not tested. If he did obey (M6) the score would be 13.",
+     "alternative_score": 13
+    },
+    {
+     "field": "Best eye response",
+     "issue": "He is described as 'awake', which could suggest spontaneous eye opening (E4), but the note specifically says he opens his eyes 'upon verbal request'. If E4 the score is 13.",
+     "alternative_score": 13
+    }
+   ]
+  },
+  {
+   "row": "856",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "When subjected to a sternal rub, his eyes slightly opened"
+    },
+    "Best verbal response": {
+     "value": "no verbal response",
+     "quote": "the patient remained nonverbal and not responsive to questions or requests"
+    },
+    "Best motor response": {
+     "value": "extension to pain",
+     "quote": "his limbs were noted to hesitatingly reflex into an extension movement"
+    }
+   },
+   "score": 5,
+   "score_working": "E2 V1 M2",
+   "note_issues": []
+  },
+  {
+   "row": "857",
+   "fields": {
+    "Best eye response": {
+     "value": "no eye opening",
+     "quote": "there was no eye opening"
+    },
+    "Best verbal response": {
+     "value": "no verbal response",
+     "quote": "he made no sounds or attempts to speak. His intubation prevented further assessment of verbal responsiveness."
+    },
+    "Best motor response": {
+     "value": "no motor response",
+     "quote": "no purposeful movement of his limbs in response to tactile or painful stimulation"
+    }
+   },
+   "score": 7,
+   "score_working": "E1 V5(NT, full points per dataset convention) M1",
+   "note_issues": [
+    {
+     "field": "Best verbal response",
+     "issue": "He is intubated, so verbal is not testable. 'Not testable' is not an allowed value, so the observed 'no verbal response' is recorded. With NT scored as full points the GCS is 7. Scored as the lowest response (V1) it is 3.",
+     "alternative_score": 3
+    },
+    {
+     "field": "Best motor response",
+     "issue": "'No purposeful movement' does not strictly exclude non-purposeful posturing (flexion or extension). It is read as no motor response (M1).",
+     "alternative_score": null
+    },
+    {
+     "field": "general",
+     "issue": "Exam during active CPR and cardiac arrest. The GCS is barely meaningful.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "858",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "his eyes only opened briefly with intense external stimulation before closing again"
+    },
+    "Best verbal response": {
+     "value": "inappropriate words",
+     "quote": "His verbal output consisted of random, inappropriate words that had no relevance to the questions"
+    },
+    "Best motor response": {
+     "value": "flexion to pain",
+     "quote": "Application of a painful stimulus led to abnormal flexion of his upper limbs."
+    }
+   },
+   "score": 8,
+   "score_working": "E2 V3 M3",
+   "note_issues": [
+    {
+     "field": "Best eye response",
+     "issue": "'Intense external stimulation' is not explicitly called painful. It is read as eye opening to pain (E2).",
+     "alternative_score": null
+    },
+    {
+     "field": "general",
+     "issue": "The exam is described during an ongoing generalized tonic-clonic seizure, which is clinically implausible alongside speech and abnormal flexion.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "859",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to verbal command",
+     "quote": "Upon hearing the nurse ask her to open her eyes, she complied."
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "her speech was disoriented and she was unable to provide coherent responses to questions related to time and place"
+    },
+    "Best motor response": {
+     "value": "obeys commands",
+     "quote": "She was able to follow simple commands."
+    }
+   },
+   "score": 13,
+   "score_working": "E3 V4 M6",
+   "note_issues": [
+    {
+     "field": "Best verbal response",
+     "issue": "'Unable to provide coherent responses' could be read as inappropriate words (V3), which gives 12. 'Disoriented' with confusion and delirium best fits confused (V4).",
+     "alternative_score": 12
+    }
+   ]
+  },
+  {
+   "row": "860",
+   "fields": {
+    "Best eye response": {
+     "value": "eyes open spontaneously",
+     "quote": "she was found to be opening her eyes spontaneously"
+    },
+    "Best verbal response": {
+     "value": "incomprehensible sounds",
+     "quote": "She did not produce intelligible responses but kept continuously groaning."
+    },
+    "Best motor response": {
+     "value": "localizes pain",
+     "quote": "she localized her hand to the site of the pain"
+    }
+   },
+   "score": 11,
+   "score_working": "E4 V2 M5",
+   "note_issues": []
+  },
+  {
+   "row": "861",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "He opens his eyes when pinched"
+    },
+    "Best verbal response": {
+     "value": "no verbal response",
+     "quote": "does not attempt to verbalize due to the tracheostomy"
+    },
+    "Best motor response": {
+     "value": "obeys commands",
+     "quote": "he is able to obey commands to grip and release his hand"
+    }
+   },
+   "score": 13,
+   "score_working": "E2 V5(NT, full points per dataset convention) M6",
+   "note_issues": [
+    {
+     "field": "Best verbal response",
+     "issue": "The tracheostomy makes verbal not testable. 'Not testable' is not an allowed value, so the observed 'no verbal response' is recorded. With NT scored as full points the GCS is 13. Scored as the lowest response (V1) it is 9.",
+     "alternative_score": 9
+    },
+    {
+     "field": "Best eye response",
+     "issue": "He obeys commands yet opens his eyes only to a pinch (E2). This is unusual but stated explicitly.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "862",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to verbal command",
+     "quote": "When the nurses called out his name, he was able to open his eyes."
+    },
+    "Best verbal response": {
+     "value": "inappropriate words",
+     "quote": "his speech was disjointed and included inappropriate words"
+    },
+    "Best motor response": {
+     "value": "extension to pain",
+     "quote": "he showed an abnormal extension in response to painful stimuli"
+    }
+   },
+   "score": 8,
+   "score_working": "E3 V3 M2",
+   "note_issues": [
+    {
+     "field": "general",
+     "issue": "Abnormal extension (decerebrate) alongside eye opening to voice and speech is clinically inconsistent. The arm-splinting stimulus on a fractured arm may confound the motor response.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "863",
+   "fields": {
+    "Best eye response": {
+     "value": "eyes open spontaneously",
+     "quote": "His eyes were open on arrival"
+    },
+    "Best verbal response": {
+     "value": "oriented",
+     "quote": "accurately identifying the date, his location, and explaining what had happened"
+    },
+    "Best motor response": {
+     "value": "withdrawal from pain",
+     "quote": "he instinctively pulled his arm away when pressure was applied to his nail bed"
+    }
+   },
+   "score": 13,
+   "score_working": "E4 V5 M4",
+   "note_issues": [
+    {
+     "field": "Best motor response",
+     "issue": "Commands are not tested, and the only motor finding is withdrawal to nail-bed pressure. In a fully alert, oriented patient the best motor response would almost certainly be obeys commands (M6), which gives 15. Scored literally as withdrawal it is 13.",
+     "alternative_score": 15
+    }
+   ]
+  },
+  {
+   "row": "864",
+   "fields": {
+    "Best eye response": {
+     "value": "eyes open spontaneously",
+     "quote": "He was noted to open his eyes without prompting during evaluation and was scanning the room"
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "occasionally responding to questions with somewhat accurate answers but often seeming disoriented and unable to keep track of the conversation"
+    },
+    "Best motor response": {
+     "value": "flexion to pain",
+     "quote": "Painful stimuli applied revealed a decorticate posture with abnormal flexion."
+    }
+   },
+   "score": 11,
+   "score_working": "E4 V4 M3",
+   "note_issues": [
+    {
+     "field": "general",
+     "issue": "He is intubated after the exam. The exam before intubation is used. Decorticate posturing alongside spontaneous eye opening and conversation is clinically inconsistent.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "865",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to verbal command",
+     "quote": "she showed a response to verbal commands by opening her eyes when she was told to"
+    },
+    "Best verbal response": {
+     "value": "confused",
+     "quote": "Her speech was rambling with significant tangents in her chain of thought."
+    },
+    "Best motor response": {
+     "value": "no motor response",
+     "quote": "the patient had no voluntary movements in her limbs, including to painful stimuli"
+    }
+   },
+   "score": 8,
+   "score_working": "E3 V4 M1",
+   "note_issues": [
+    {
+     "field": "Best verbal response",
+     "issue": "Rambling, tangential speech described as 'confused and delirious' is read as confused (V4). If read as inappropriate words (V3) the score is 7.",
+     "alternative_score": 7
+    },
+    {
+     "field": "Best motor response",
+     "issue": "'No voluntary movements' does not strictly exclude reflex posturing. It is read as no motor response (M1).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "866",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to pain",
+     "quote": "He opened his eyes only in response to sternal rub."
+    },
+    "Best verbal response": {
+     "value": "inappropriate words",
+     "quote": "the patient kept mumbling nonsensical words"
+    },
+    "Best motor response": {
+     "value": "localizes pain",
+     "quote": "moving his hands towards the site of the pinch"
+    }
+   },
+   "score": 10,
+   "score_working": "E2 V3 M5",
+   "note_issues": [
+    {
+     "field": "Best verbal response",
+     "issue": "'Mumbling nonsensical words' could be incomprehensible sounds (V2), which gives 9, rather than inappropriate words (V3). 'Words' favors V3.",
+     "alternative_score": 9
+    }
+   ]
+  },
+  {
+   "row": "867",
+   "fields": {
+    "Best eye response": {
+     "value": "no eye opening",
+     "quote": "Despite repeated prompting and a firm sternal rub, she steadfastly kept her eyes shut"
+    },
+    "Best verbal response": {
+     "value": "incomprehensible sounds",
+     "quote": "she responded with incomprehensible, garbled sounds"
+    },
+    "Best motor response": {
+     "value": "obeys commands",
+     "quote": "upon receiving commands, she was able to respond appropriately by lifting an arm or moving her fingers"
+    }
+   },
+   "score": 9,
+   "score_working": "E1 V2 M6",
+   "note_issues": [
+    {
+     "field": "Best eye response",
+     "issue": "She keeps her eyes shut ('steadfastly', 'did not attempt') while obeying motor commands. This could be voluntary eye closure, eyelid apraxia or a non-organic presentation rather than true absent eye opening. As written it is E1.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "868",
+   "fields": {
+    "Best eye response": {
+     "value": "eye opening to verbal command",
+     "quote": "On hearing his name called out, the patient managed to open his eyes"
+    },
+    "Best verbal response": {
+     "value": "no verbal response",
+     "quote": "He did not respond verbally to any inquiry or command."
+    },
+    "Best motor response": {
+     "value": "withdrawal from pain",
+     "quote": "the patient responded by grimacing and attempts to evade the source of the discomfort"
+    }
+   },
+   "score": 8,
+   "score_working": "E3 V1 M4",
+   "note_issues": [
+    {
+     "field": "Best motor response",
+     "issue": "'Attempts to evade the source of the discomfort' is read as withdrawal (M4). If read as localizing (M5) the score is 9.",
+     "alternative_score": 9
+    }
+   ]
+  }
+ ]
+}

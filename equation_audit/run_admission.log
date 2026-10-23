@@ -1,0 +1,50 @@
+567 equation-based rows across 31 calculators
+pass1_solve_admission.jsonl: 532 cached, 35 to run
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+credits exhausted; waiting 60s for auto-reload
+pass2_adjudicate_admission.jsonl: 0 cached, 119 to run
+  50/119
+  100/119
+ Calculator ID                                               Calculator Name Category  Rows  Model Accuracy  Label Wrong  Label Wrong (wrong_equation)  Ambiguous  Model Wrong  Label Wrong Rate
+            63                                                     Delta Gap      lab    20           0.000            8                             7         11            1             0.400
+            66                                   Albumin Corrected Delta Gap      lab    20           0.100            6                             5          7            5             0.300
+             3              CKD-EPI Equations for Glomerular Filtration Rate      lab    20           0.850            3                             2          0            0             0.150
+            46         Framingham Risk Score for Hard Coronary Heart Disease      lab    16           0.000           15                             1          1            0             0.938
+            23                                           MELD Na (UNOS/OPTN)      lab     5           0.000            5                             0          0            0             1.000
+            31 HOMA-IR (Homeostatic Model Assessment for Insulin Resistance)      lab     2           0.500            1                             0          0            0             0.500
+            40                         Fractional Excretion of Sodium (FENa)      lab     5           0.600            2                             0          0            0             0.400
+             9                                             MDRD GFR Equation      lab    20           0.600            7                             0          1            0             0.350
+            22                               Maintenance Fluids Calculations physical    20           0.700            6                             0          0            0             0.300
+            38                                            Free Water Deficit      lab    20           0.650            6                             0          0            1             0.300
+            44                                                LDL Calculated      lab    20           0.600            5                             0          3            0             0.250
+             7                        Calcium Correction for Hypoalbuminemia      lab    19           0.789            3                             0          1            0             0.158
+            65                                   Albumin Corrected Anion Gap      lab    20           0.800            3                             0          1            0             0.150
+             2               Creatinine Clearance (Cockcroft-Gault Equation)      lab    20           0.850            2                             0          1            0             0.100
+            19                   Fibrosis-4 (FIB-4) Index for Liver Fibrosis      lab    20           0.900            2                             0          0            0             0.100
+            64                                                   Delta Ratio      lab    20           0.750            2                             0          2            1             0.100
+            30                                              Serum Osmolality      lab    20           0.950            1                             0          0            0             0.050
+            39                                                     Anion Gap      lab    20           0.900            1                             0          1            0             0.050
+            62                                          Adjusted Body Weight physical    20           0.950            1                             0          0            0             0.050
+            67                                 Albumin Corrected Delta Ratio      lab    20           0.950            1                             0          0            0             0.050
+             5                                  Mean Arterial Pressure (MAP) physical    20           1.000            0                             0          0            0             0.000
+             6                                         Body Mass Index (BMI) physical    20           1.000            0                             0          0            0             0.000
+            10                                             Ideal Body Weight physical    20           1.000            0                             0          0            0             0.000
+            11                                         QTc Bazett Calculator physical    20           1.000            0                             0          0            0             0.000
+            26                           Sodium Correction for Hyperglycemia      lab    20           0.900            0                             0          2            0             0.000
+            56                                     QTc Fridericia Calculator physical    20           1.000            0                             0          0            0             0.000
+            57                                     QTc Framingham Calculator physical    20           1.000            0                             0          0            0             0.000
+            58                                         QTc Hodges Calculator physical    20           1.000            0                             0          0            0             0.000
+            59                                     QTc Rautaharju Calculator physical    20           1.000            0                             0          0            0             0.000
+            60                                  Body Surface Area Calculator physical    20           1.000            0                             0          0            0             0.000
+            61                                                 Target weight physical    20           1.000            0                             0          0            0             0.000
+
+Overall model accuracy: 0.790  |  total tokens: 941,059

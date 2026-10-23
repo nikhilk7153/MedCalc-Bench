@@ -1,0 +1,147 @@
+{
+ "calculator_id": "15",
+ "calculator_name": "Child-Pugh Score for Cirrhosis Mortality",
+ "fields": [
+  {
+   "field": "international normalized ratio",
+   "type": "number"
+  },
+  {
+   "field": "Ascites",
+   "type": "category",
+   "allowed_values": [
+    "absent",
+    "moderate",
+    "slight"
+   ]
+  },
+  {
+   "field": "Albumin",
+   "type": "number with unit",
+   "typical_units": [
+    "g/dL"
+   ]
+  },
+  {
+   "field": "Bilirubin",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL",
+    "µmol/L"
+   ]
+  },
+  {
+   "field": "Encephalopathy",
+   "type": "category",
+   "allowed_values": [
+    "Grade 1-2",
+    "Grade 3-4",
+    "No Encephalopathy"
+   ]
+  }
+ ],
+ "rows": [
+  {
+   "row": "201",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 61 year old male with a history of chronic iron deficiency anemia, type 2 diabetes mellitus, cirrhosis secondary to alpha 1 antitrypsin deficiency, hypertension, and chronic kidney disease presents to the emergency department from a skilled nursing facility for lethargy and confusion. History is limited by confusion, though the patient complains of abdominal pain. The patient is unsure when his last bowel movement was. He denies dysuria, nausea or vomiting. Vitals are as follows: heart rate 102 bpm, blood pressure 127/77, temperature 97.5°F. The patient is oriented only to self. Asterixis is present. Abdominal exam is notable for decreased bowel sounds, and negative for ascites. Labs are notable for sodium 135 mmol/L, potassium 3.3 mmol/L, BUN 38 mg/dL, creatinine 2.0 mg/dL, albumin 3.1 g/dL, bilirubin 40.2umol/L, ammonia 125 umol/L, TSH 1.83 ulU/mL, WBC 4.3, hemoglobin 8.9 g/dL, and INR 2.1. The patient is admitted to the medical service."
+  },
+  {
+   "row": "202",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 60 year old male with a past medical history of chronic obstructive sleep apnea on 2L home oxygen, chronic portal vein thrombosis with cavernous transformation, and cirrhosis complicated by history of variceal bleeding treated with band ligation is admitted to the hospital for abdominal pain and tactile hallucinations. The patient has a complex history including multiple admissions for gastrointestinal bleeding and worsening liver function tests. On admission, the patient reports that he had been doing well until earlier in the week when he began feeling like spiders were crawling on him. He also notes abdominal pain in the right lower quadrant which is sharp, constant, and 9/10 in severity, and he feels that his abdomen has recently become more distended. The patient is adherent to his prescribed regimen of Lactulose. He reports 3 bowel movements daily with no melena or hematochezia. He notes decrease urine output over the last 2-3 days. He denies any recent fever, dyspnea, cough, hematuria, or lower extremity swelling. He does not use alcohol, NSAIDs, or recreational drugs. Vital signs are stable. Physical exam is notable for jaundice, asterixis, and moderately distended abdomen with positive fluid wave and moderate tenderness. The abdomen is tympanic on percussion. Laboratory studies are notable for potassium 3.8 mmol/L, creatinine 1.67 mg/dL, BUN 30 mg/dL, total bilirubin 13.3 mg/dL, ALP 473 U/L, ALT 99 U/L, AST 121 U/L, lipase 63 U/L, ammonia 100 umol/L, WBC 5800/uL, hemoglobin 11.9 g/dL, albumin 3.33 g/dL and INR 2.2. A CT of the abdomen and pelvis is ordered and diagnostic paracentesis is performed."
+  },
+  {
+   "row": "203",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 62-year-old male with a history of AUD, HTN, and cirrhosis presents with progressive abdominal distension and altered mental status over the past few weeks. On examination, he appears jaundiced with minimal palpable ascites. Laboratory findings reveal an elevated INR of 2.1, serum albumin level of 3.1 g/dL, and Tbili of 2.45 mg/dL. Furthermore, liver function tests demonstrate a reduction in serum protein levels, with a total protein of 5.2 g/dL and elevated liver enzymes, including ALT at 140 U/L and AST at 160 U/L. On neurological exam the patient is A&Ox1 (self) with hyperactive reflexes, and rigidity."
+  },
+  {
+   "row": "204",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 74-year-old male with a history of alcohol abuse, HIV, and Hashimoto's thyroiditis presents with complaints of fatigue and intermittent abdominal discomfort over the past few weeks. He denies any recent alcohol intake but admits to a long-standing history of heavy alcohol consumption. On examination, there are no signs of jaundice, and his abdomen is soft with no tenderness appreciated. Laboratory evaluation reveals an elevated INR of 2.4, a total bilirubin level of 3.00 mg/dL and albumin level of 2.7 g/dL. Thyroid function tests reveal a TSH level of 8.5 mIU/L and a decreased free T4 level. On physical exam the patient is A&Ox3 all reflexes 2+ and absent asterixis."
+  },
+  {
+   "row": "205",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 54-year-old male with an extensive medical history, including Hepatitis C, hypertension, and recently diagnosed cirrhosis, presents to the clinic with complaints of increasing abdominal girth. On physical examination, the patient has mild jaundice, a slightly distended abdomen, and fine, flapping tremors of the hands indicative of asterixis. Relevant lab findings include INR of  1.8, albumin 3.1 g/dL, and serum bilirubin 2.4 mg/dL. His general orientation and cognition are slightly impaired (grade 1-2 encephalopathy). Hemoglobin A1c was 6.5 % indicating adequately controlled diabetes and creatinine levels are improved and within normal ranges, reflecting consistency in regular dialysis sessions. The patient is to continue diuretics for his mild ascites."
+  },
+  {
+   "row": "206",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old female with a past medical history of cholelithiasis and non-alcoholic steatohepatitis-induced cirrhosis presents for a progressively uncomfortable, bloated feeling in her abdomen. She is alert, oriented, and cooperative. Her abdomen was visibly distended on inspection, consistent with moderate ascites. Laboratory analysis demonstrates INR of 1.5, albumin 2.9 g/dL, and total bilirubin 1.8 mg/dL (direct bilirubin 0.8 mg/dL). Coordination was normal during Romberg's test, and she articulated her history well, indicating no encephalopathy. Her creatinine levels were within normal limits, and complete blood count (CBC) was normal. Her diuretic dose was increased to control her ascites and she will continue to monitor her liver health regularly."
+  },
+  {
+   "row": "207",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old female patient with history of Hepatitis B, DM type II, and recently diagnosed cirrhosis visited the clinic for her scheduled visit. A firm liver edge was palpated below the costal margin, but there was no detectable ascites on physical examination. Laboratory evaluation revealed a direct bilirubin of 1.5 mg/dL and a total bilirubin of 3.0 mg/dL. INR was 1.3. Her albumin level was 3.4 g/dL, slightly below normal range. Elevated levels for serum alkaline phosphatase and gamma-glutamyl transferase were also noted. Her random blood sugar was measured at 155 mg/dL and her BUN/Creatinine ratios were within normal limits. She was encouraged to abstain from alcohol, follow a low salt diet to prevent fluid accumulation, and regular follow-up visits for monitoring were scheduled."
+  },
+  {
+   "row": "208",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 50-year-old male with a history of chronic Hepatitis C and cirrhotic liver disease arrived at the ED with advanced disorientation and severe confusion. During the examination and assessment, the patient had considerable cognitive impairment, suggestive of grade 3-4 hepatic encephalopathy. There was no visible abdominal distension. Laboratory findings included an INR of 1.7, albumin of 3.2 g/dL, and total bilirubin at 2.1 mg/dL. Blood pressure readings showed pre-hypertensive levels, and the patient had leukocytosis, suggestive of systemic infection or inflammation. After stabilization, he was admitted to the hospital for comprehensive hepatic function assessment and intravenous lactulose therapy for hepatic encephalopathy. A liver transplantation consultation was also suggested."
+  },
+  {
+   "row": "209",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 52-year-old female with hypothyroidism, autoimmune hepatitis and recent diagnosis of cirrhosis arrives for routine follow-up. The patient has been experiencing a slight increase in her abdominal girth. Physical evaluation reveals mild distension in the abdominal area indicating slight ascites. She underwent laboratory tests, including coagulation studies, revealing an elevated INR of 2.0, a slight elevation in total bilirubin to 1.6 mg/dL and serum albumin 3.0 g/dL, indicative of decreased liver function. Thyroid function tests were also performed due to her reported symptoms of cold intolerance and fatigue, revealing a TSH of 6.2 mIU/L, indicating hypothyroidism. Her levothyroxine dose was adjusted."
+  },
+  {
+   "row": "210",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "The patient is a 59-year-old male with a known history of cirrhosis due to chronic Hepatitis B infection. Upon clinical examination, he has jaundice and his abdomen is moderately distended with a noticeable fluid wave on palpation, indicating moderate ascites. He has been experiencing episodes of short-term memory loss and confusion, consistent with grade 1-2 hepatic encephalopathy. His laboratory results reflected impaired coagulation status given INR of 1.9. Overall liver function tests showed albumin level of 2.8 g/dL and total bilirubin 2.5 mg/dL. His hemoglobin level was 12.3 g/dL, and other routine biochemical parameters were within acceptable range. His medication list includes diuretics, lactulose, and antiviral agents for ongoing Hepatitis B infection. The patient and his family have been advised to monitor his cognitive function at home and relay any further deterioration."
+  },
+  {
+   "row": "211",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A gentleman in his 60s with a known history of alcohol-related cirrhosis presented for routine liver function tests. He had been compliant with alcohol abstinence for about a year and was on thiamine supplementation. His abdomen appeared flat, with no ascites noted on percussion or palpation. Blood examination revealed a slightly raised INR of 1.4 and an Albumin level of 3.5 g/dL. Bilirubin was slightly elevated at 2.7 mg/dL. He was oriented to time, place, and person with no visible signs of hepatic encephalopathy. His speech was fluent. His platelets were slightly reduced, and other hematologic parameters were within normal limits. Echocardiogram and ECG were normal. Abdominal ultrasound confirmed cirrhotic changes in the liver. Adequate hydration, nutrition, and adherence to current medication regimens were advised."
+  },
+  {
+   "row": "212",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A male patient in his early 70s with alcoholic liver disease and diabetes was brought to the hospital due to extreme confusion and unresponsiveness to verbal stimuli. He has been experiencing a progressively worsening mental state suggestive of stage 3-4 hepatic encephalopathy. Blood investigation revealed an INR of 1.6, suggesting a coagulopathy consistent with liver disease. His bilirubin was 1.9 mg/dL, and albumin 3.3 g/dL, reflecting liver damage. He has been prescribed a low-protein diet with lactulose and rifaximin and has been referred for an immediate assessment for liver transplantation. His HbA1c level was also measured, which showed well-controlled blood-glucose levels at 7 %."
+  },
+  {
+   "row": "213",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old male with a history of cirrhosis 2/2 NASH who presented for a scheduled consultation. He mentions feeling bloated lately but denies any remarkable cognitive impairments. Physical examination revealed a mild JVD and minimally distended abdomen. Laboratory findings were notable for an INR of 1.5. His liver function test indicated compromised hepatic function with total bilirubin of 2.3 mg/dL and albumin levels at 3.1 g/dL. His hemoglobin was 11.9 g/dL and WBC count showed no alarming deviation from the norm. Electrocardiogram showed regular heart rhythms and echocardiography revealed preserved ejection fraction. He is maintained on a low-sodium diet and diuretics for ascitic control."
+  },
+  {
+   "row": "214",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 68-year-old female with a history of Hepatitis C,diabetes, hypertension, and recently diagnosed cirrhosis presenting for a regular check-up. During the physical examination, the patient's abdomen was moderately distended, along with the presence of a palpable liver edge. Laboratory findings revealed coagulopathy with an INR of 2.2. Markers indicating an impairment of liver function were found with a total bilirubin at 1.7 mg/dL and albumin level of 2.6 g/dL. The patient had a fasting blood glucose level of 126 mg/dL, consistent with her known diagnosis of diabetes. Renal function was within normal limits with BUN 14 mg/dL and creatinine 0.9 mg/dL. She was instructed to continue her current medications, which included diuretics for ascites and antiviral medications for Hepatitis C."
+  },
+  {
+   "row": "215",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 69-year-old male with a past medical history of hypertension, chronic alcohol use, and cirrhosis presented for a routine check. He was sober and although slight mental slowness and mild asterixis were present on exam, There was no evidence of ascites. The laboratory results revealed an INR of 1.9, increasing the concern for impaired liver function. His serum total bilirubin was 2.0 mg/dL and albumin was 3.2 g/dL, indicating diminished liver function. The patient's blood glucose was 120 mg/dL, raising the suspicion of prediabetes, and his creatinine was 1.0 mg/dL, indicating good renal function. He was ordered to abstain from alcohol consumption, maintain a balanced diet, and monitor his blood glucose regularly. His medications including diuretics and antihypertensives remained unaltered until his next appointment."
+  },
+  {
+   "row": "216",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58-year-old female with a PMH of Hepatitis C, hypertension, and recently diagnosed cirrhosis presents for a routine check-up. On neurological examination, the patient was disoriented and exhibited asterixis.Further, laboratory results were noted with total bilirubin at 2.2 mg/dL, suggestive of dysfunctional liver, and an international normalized ratio (INR) of 2.1 indicating a potential coagulopathy. Other lab results pointed to a serum albumin level of 3.0 g/dL. Her white cell count was elevated at 12,000 per μL which, combined with a low-grade pyrexia of 100.4°F, raises suspicion of an underlying infective process. Further investigations and strict monitoring are suggested, and she has been referred to a neurologist regarding her encephalopathy. Daily administration of her prescribed medications is strongly advised for better control over her hypertension and liver disease."
+  },
+  {
+   "row": "217",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 64-year-old gentleman with a medical history of ADPKD and cirrhosis secondary to NASH presented for a routine appointment. The patient's abdomen was slightly distended. Palpation revealed mild ascites. His cognitive function was fair, with fluent speech and no indications of hepatic encephalopathy. His latest laboratory workup showed slightly elevated INR, recorded at 1.7. Liver function tests determined a trimmed albumin level at 3.3 g/dL and total bilirubin of 1.5 mg/dL, suggestive of declining hepatic synthetic function. His creatinine level was slightly raised, indicating renal function needs monitoring considering the underlying ADPKD. The patient was instructed to maintain a low salt diet and continue his current prescribed diuretic therapy to manage ascites. Further instructions with strict alcohol avoidance were emphasized on discharge."
+  },
+  {
+   "row": "218",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 55-year-old female with a past medical history of primary Biliary Cholangitis (PBC) and cirrhosis presented with abdominal discomfort and episodic forgetfulness. Physical examination revealed an evidently distended abdomen with a fluid thrill sign indicative of moderate ascites. On biochemical investigation, the INR was elevated to 2.0, indicating the potential of coagulopathy. Laboratory data affirmed impaired liver function characterized by albumin levels at 2.7 g/dL and an elevated total bilirubin of 2.6 mg/dL. The CBC showed mild anemia with a hemoglobin level of 11.2 g/dL. Abdominal ultrasonography was advised to evaluate the extent of liver disease further. Medication instructions have been provided to manage the ascites and suspected hepatic encephalopathy. She was additionally prescribed Ursodeoxycholic Acid for PBC and was advised to adhere to a healthy lifestyle by monitoring her diet and avoiding alcohol."
+  },
+  {
+   "row": "219",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 62-year-old male with a known history of primary sclerosing cholangitis and recently diagnosed cirrhosis arrived for his scheduled consultation. On examination, no notable ascites was reported. His latest laboratory results showed an INR of 1.6, implying altered coagulation status. Further testing revealed a total bilirubin level of 2.8 mg/dL and an albumin level of 3.4 g/dL, pointing to decreased liver function. No specific evidence or comment was documented concerning hepatic encephalopathy during the visit. His vital signs were relatively stable with a blood pressure of 122/78 mmHg. His fasting lipid panel came back normal, and his CRP was slightly elevated at 7.3 mg/L, suggesting an underlying inflammation/infection. The patient was recommended to continue the prescribed medications to manage his sclerosing cholangitis and regularly monitor his condition. They were also advised to return if he noticed any cognitive impairment or confusion."
+  },
+  {
+   "row": "220",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 63-year-old male with recently diagnosed cirrhosis secondary to NAFLD came for a follow-up consultation. During the appointment, he exhibited confusion, asterixis, and slurred speech. Laboratory evaluations were remarkable with an increased INR value at 1.8. Liver function tests showed a total bilirubin count of 1.9 mg/dL and an albumin level of 3.1 g/dL demonstrating compromised liver function. Additional lab tests showed a glucose level at 130 mg/dL, though hemoglobin A1c was within acceptable bounds which indicate fairly well-controlled DM II. The patient was advised to maintain dietary restrictions and adhere to prescribed therapeutic management. Family intervention was also suggested considering his cognitive impairment. He was reassured that they would initiate steps to manage his encephalopathy right away."
+  }
+ ],
+ "mdcalc_rules": "Five criteria, each scored 1-3. Total bilirubin: <2 mg/dL (<34.2 umol/L) +1, 2-3 mg/dL (34.2-51.3 umol/L) +2, >3 mg/dL (>51.3 umol/L) +3. Albumin: >3.5 g/dL (>35 g/L) +1, 2.8-3.5 g/dL (28-35 g/L) +2, <2.8 g/dL +3. INR: <1.7 +1, 1.7-2.3 +2, >2.3 +3. Ascites: absent +1, slight +2, moderate +3. Encephalopathy: none +1, grade 1-2 +2, grade 3-4 +3. The middle bins include both endpoints, so bili 2.0 or 3.0 = +2, albumin 3.5 or 2.8 = +2, INR 1.7 or 2.3 = +2. Total 5-15 (class A 5-6, B 7-9, C 10-15 by the standard Pugh cutoffs).",
+ "mdcalc_source": "https://www.mdcalc.com/calc/340/child-pugh-score-cirrhosis-mortality"
+}

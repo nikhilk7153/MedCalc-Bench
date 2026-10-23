@@ -1,0 +1,8 @@
+106 rows from changed_rows_fix1.csv to check
+final_changed_fix1_verify.jsonl: 0 cached, 106 to run
+  50/106
+  100/106
+Verdict
+correct      78
+ambiguous    25
+incorrect     3

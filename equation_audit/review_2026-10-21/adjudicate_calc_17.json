@@ -1,0 +1,621 @@
+{
+ "calculator_id": "17",
+ "calculator_name": "Revised Cardiac Risk Index for Pre-Operative Risk",
+ "mdcalc_source": "https://www.mdcalc.com/calc/1739/revised-cardiac-risk-index-preoperative-risk (the requested /calc/1745/ URL returned 404; same RCRI calculator found via search)",
+ "mdcalc_rules": "6 criteria, +1 each (0-6): elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular); history of ischemic heart disease (MI, positive exercise test, current ischemic chest pain, nitrate use, or ECG pathological Q waves); history of CHF (pulmonary edema, bilateral rales or S3 gallop, PND, CXR pulmonary vascular redistribution); history of cerebrovascular disease (prior TIA or stroke); pre-operative insulin treatment; pre-operative creatinine >2 mg/dL (>176.8 umol/L).",
+ "code_vs_mdcalc": [
+  {
+   "issue": "None found. Code adds +1 per boolean criterion, creatinine strictly >2 mg/dL (2.0 scores 0, matching MDCalc), umol/L converted with MW 113.12 (equivalent to /88.4), missing criteria default to absent. Age is in name_to_python but unused, which is correct for RCRI.",
+   "rows_affected": []
+  }
+ ],
+ "code_file": "calculator_implementations_verified/cardiac_risk_index.py",
+ "dataset_conventions": [
+  "A criterion the note does not mention is absent/normal; for 'absence' criteria the criterion is met.",
+  "Values are taken at the time point the question names (admission/initial presentation before treatment) unless the question says otherwise.",
+  "GCS: a component documented as not testable gets full points.",
+  "Keep as close to v1.0 as possible; change only genuine mistakes (wrong input vs note, wrong label, unit/typo errors, contradictions). Prefer the smallest fix: correct an input if the note is clear; edit the note minimally if the note itself is ambiguous or contradictory."
+ ],
+ "rows": [
+  {
+   "row": "241",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 74 year old female with a history of non-insulin-dependent diabetes mellitus, ischemic stroke with mild residual aphasia, well-controlled congestive heart failure, and stable angina presents for evaluation prior to biopsy of a right sided breast mass found on mammogram. She uses nitroglycerin for occasional chest pain on exertion. Other medications include metformin, losartan, furosemide, and aspirin. The patient denies dyspnea, orthopnea, leg swelling, lightheadedness, cough, or palpitations. Vital signs are stable. On examination, the patient is generally well-appearing. Heart sounds are regular and no jugular venous distention is noted. Lung sounds are clear bilaterally and the abdomen is nontender. Lower extremities have no edema. Laboratory studies show creatinine of 2.1 mg/dL and otherwise unremarkable CBC and BMP.",
+   "stored_relevant_entities": "{'History of cerebrovascular disease': True, 'Pre-operative treatment with insulin': False, 'Congestive Heart Failure criteria for the Cardiac Risk Index rule': False, 'Pre-operative creatinine': [2.1, 'mg/dL'], 'History of ischemic heart disease': True, 'Elevated-risk surgery': False}",
+   "stored_answer": "3",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.\nThe concentration of Pre-Operative Creatinine is 2.1 mg/dL. The patient's pre-operative creatinine is greater than 2 mg/dL, so we increment the score by one and the current total will be 2 + 1 = 3.\n\nThe cardiac risk index score is 3.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "4",
+    "details": "congestive_heart_failure stored False, should be True. Note documents a diagnosis of CHF on furosemide; RCRI/MDCalc criterion is 'History of congestive heart failure'. The near-identical note in row 243 (same text) and row 260 ('well-managed CHF', euvolemic) are both stored True, so row 241 is internally inconsistent. Correct: IHD(+1, angina/nitroglycerin) + CHF(+1) + CVD(+1, ischemic stroke) + Cr 2.1 >2 (+1); breast biopsy not elevated-risk = 4. (A prior audit, entities_rcrifix.csv, also flagged CHF as omitted.)",
+    "evidence_quote": "history of non-insulin-dependent diabetes mellitus, ischemic stroke with mild residual aphasia, well-controlled congestive heart failure, and stable angina ... creatinine of 2.1 mg/dL"
+   },
+   "blind_pass": {
+    "score": 4,
+    "working": "surgery 0 (breast biopsy) + IHD 1 (stable angina, nitroglycerin) + CHF 1 + CVD 1 (stroke) + insulin 0 (metformin) + Cr 2.1>2 1 = 4",
+    "fields": {
+     "age": {
+      "value": [
+       74,
+       "years"
+      ],
+      "quote": "A 74 year old female"
+     },
+     "Elevated-risk surgery": {
+      "value": false,
+      "quote": "biopsy of a right sided breast mass"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": true,
+      "quote": "well-controlled congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": true,
+      "quote": "stable angina presents for evaluation"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": false,
+      "quote": "non-insulin-dependent diabetes mellitus"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       2.1,
+       "mg/dL"
+      ],
+      "quote": "creatinine of 2.1 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "ischemic stroke with mild residual aphasia"
+     }
+    },
+    "note_issues": []
+   }
+  },
+  {
+   "row": "242",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old woman appears for an evaluation related to her scheduled minor gynecological operation. She reports shortness of breath and associated fatigue. She experienced a transient ischemic attack several months ago, and her medical history includes episodes linked to ischemic heart disease and congestive heart failure. She does not rely on insulin for the management of her type 2 diabetes mellitus. She reports no known allergies to medication. Vital signs record a blood pressure of 132/80 mm Hg, heart rate of 85 beats per minute, and oxygen saturation 96 % on room air. On examination, an S3 gallop rhythm was noted, and reduced breath sounds seemed predominantly in the lower lung fields. Laboratory data including complete blood count and electrolytes were generally within normal range. However, the creatinine level was found to be 1.74 mg/dL. Interpretation of the electrocardiography revealed nonspecific ST-T wave changes, but no acute events transpired. Further cardiac workup is planned for the control of her heart failure before the pending procedure.",
+   "stored_relevant_entities": "{'History of cerebrovascular disease': True, 'Pre-operative treatment with insulin': False, 'Congestive Heart Failure criteria for the Cardiac Risk Index rule': True, 'Pre-operative creatinine': [1.74, 'mg/dL'], 'History of ischemic heart disease': True, 'Elevated-risk surgery': False}",
+   "stored_answer": "3",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.\nThe concentration of Pre-Operative Creatinine is 1.74 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.\n\nThe cardiac risk index score is 3.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "3",
+    "details": "Minor gyn op not elevated-risk; TIA (+1), IHD (+1), CHF with S3 (+1); no insulin; Cr 1.74.",
+    "evidence_quote": "transient ischemic attack ... ischemic heart disease and congestive heart failure ... S3 gallop"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "surgery 0 (minor gynecologic) + IHD 1 + CHF 1 (S3 gallop) + CVD 1 (TIA) + insulin 0 + Cr 1.74 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       75,
+       "years"
+      ],
+      "quote": "A 75-year-old woman"
+     },
+     "Elevated-risk surgery": {
+      "value": false,
+      "quote": "scheduled minor gynecological operation"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": true,
+      "quote": "congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": true,
+      "quote": "episodes linked to ischemic heart disease"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": false,
+      "quote": "She does not rely on insulin"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       1.74,
+       "mg/dL"
+      ],
+      "quote": "creatinine level was found to be 1.74 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "transient ischemic attack several months ago"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "'Minor gynecological operation' does not state the approach; if it were intraperitoneal (e.g. laparoscopic/abdominal) it would count",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "248",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 74-year-old male was evaluated in anticipation of a scheduled operation. He has a long-standing history of insulin-dependent diabetes, with no history of ischemic heart disease or cerebrovascular accidents. However, he has been diagnosed with congestive heart failure, with frequent hospital visits due to exacerbations and now experiences dyspnea and fatigue on moderate exertion. His daily medications include insulin, metolazone, and bisoprolol. On physical examination, his vitals were stable, but distal pitting edema and raised jugular venous pressure were noted. His lab reports indicated an elevated creatinine level of 140 µmol/L, potentially related to his chronic heart failure. The patient is counseled about the possible implications of his renal function status relating to the surgery, and the team will work towards optimizing his condition preoperatively.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': True, 'History of ischemic heart disease': False, 'Pre-operative treatment with insulin': True, 'Pre-operative creatinine': [1.6, 'mg/dL'], 'History of cerebrovascular disease': False, 'Elevated-risk surgery': False}",
+   "stored_answer": "2",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nThe concentration of Pre-Operative Creatinine is 1.6 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.\n\nThe cardiac risk index score is 2.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "2",
+    "details": "Insulin (+1), CHF (+1); no IHD/CVD; Cr 140 umol/L = 1.58 mg/dL (stored 1.6, <=2). Surgery type unspecified ('scheduled operation'); per dataset convention treated as not elevated-risk.",
+    "evidence_quote": "insulin-dependent diabetes ... diagnosed with congestive heart failure ... creatinine level of 140 umol/L"
+   },
+   "blind_pass": {
+    "score": 2,
+    "working": "surgery ? (type not stated, scored 0) + IHD 0 + CHF 1 + CVD 0 + insulin 1 + Cr 140 µmol/L (1.58 mg/dL) 0 = 2",
+    "fields": {
+     "age": {
+      "value": [
+       74,
+       "years"
+      ],
+      "quote": "A 74-year-old male"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": true,
+      "quote": "diagnosed with congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": false,
+      "quote": "no history of ischemic heart disease"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": true,
+      "quote": "daily medications include insulin"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       140,
+       "µmol/L"
+      ],
+      "quote": "creatinine level of 140 µmol/L"
+     },
+     "History of cerebrovascular disease": {
+      "value": false,
+      "quote": "or cerebrovascular accidents"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "Surgery type not specified ('a scheduled operation'); scored 0. If elevated-risk, score would be 3",
+      "alternative_score": 3
+     }
+    ]
+   }
+  },
+  {
+   "row": "250",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old female is being evaluated prior to a scheduled operation. Her medical history is significant for diabetes, ischemic heart disease requiring coronary stents, and a previous cerebrovascular accident with complete recovery. Her type 2 diabetes mellitus is managed with insulin and lifestyle modifications. She has no known history of congestive heart failure and remains asymptomatic, with no dyspnea or leg edema. On physical exam, her vitals were within normal limits, heart sounds were regular with no murmur, and her lungs were clear to auscultation. Laboratory investigations indicated a creatinine level of 1.2 mg/dL. Given her comorbidities, she is further referred for a detailed cardiology evaluation and optimal perioperative management.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': False, 'History of ischemic heart disease': True, 'Pre-operative treatment with insulin': True, 'Pre-operative creatinine': [1.2, 'mg/dL'], 'History of cerebrovascular disease': True, 'Elevated-risk surgery': False}",
+   "stored_answer": "3",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\nThe concentration of Pre-Operative Creatinine is 1.2 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.\n\nThe cardiac risk index score is 3.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "3",
+    "details": "IHD with stents (+1), prior CVA (+1), insulin (+1); no CHF; Cr 1.2. Surgery type unspecified ('scheduled operation'); treated as not elevated-risk per convention.",
+    "evidence_quote": "ischemic heart disease requiring coronary stents, and a previous cerebrovascular accident ... managed with insulin"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "surgery ? (type not stated, scored 0) + IHD 1 + CHF 0 + CVD 1 + insulin 1 + Cr 1.2 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       70,
+       "years"
+      ],
+      "quote": "A 70-year-old female"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": false,
+      "quote": "no known history of congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": true,
+      "quote": "ischemic heart disease requiring coronary stents"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": true,
+      "quote": "managed with insulin and lifestyle modifications"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       1.2,
+       "mg/dL"
+      ],
+      "quote": "creatinine level of 1.2 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "previous cerebrovascular accident with complete recovery"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "Surgery type not specified ('a scheduled operation'); scored 0. If elevated-risk, score would be 4",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "251",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 78-year-old man presents for a pre-operative assessment before his high-risk thoracic surgery for a large lung mass. His past medical history is significant for congestive heart failure, and he experienced a stroke three years prior. Medication list does not include insulin. As part of the pre-operative evaluation, his blood pressure and heart rate were found within normal limits, and his oxygen saturation was 93 % on room air. On inspection, slight pitting edema was noticed on lower extremities, and auscultation revealed an S3 heart sound. He is asymptomatic with no recent dyspnea or orthopnea, but his diuretic dosage will be optimized pre-operation due to his chronic heart failure. His latest labs report an increased creatinine level measured at 1.9 mg/dL, and he will receive further nephrology consultation to assess the best management of his renal function before the surgery.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': True, 'Elevated-risk surgery': True, 'Pre-operative treatment with insulin': False, 'Pre-operative creatinine': [1.9, 'mg/dL'], 'History of cerebrovascular disease': True, 'History of ischemic heart disease': False}",
+   "stored_answer": "3",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.\nThe concentration of Pre-Operative Creatinine is 1.9 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.\n\nThe cardiac risk index score is 3.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "3",
+    "details": "Thoracic surgery for lung mass = intrathoracic (+1); CHF (+1); stroke (+1); no insulin; Cr 1.9.",
+    "evidence_quote": "high-risk thoracic surgery for a large lung mass ... congestive heart failure ... stroke three years prior"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "surgery 1 (intrathoracic) + IHD 0 (not mentioned) + CHF 1 (S3) + CVD 1 (stroke) + insulin 0 + Cr 1.9 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       78,
+       "years"
+      ],
+      "quote": "A 78-year-old man"
+     },
+     "Elevated-risk surgery": {
+      "value": true,
+      "quote": "high-risk thoracic surgery for a large lung mass"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": true,
+      "quote": "significant for congestive heart failure"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": false,
+      "quote": "Medication list does not include insulin"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       1.9,
+       "mg/dL"
+      ],
+      "quote": "creatinine level measured at 1.9 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "experienced a stroke three years prior"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "History of ischemic heart disease",
+      "issue": "Ischemic heart disease not mentioned at all; scored 0. If present, score would be 4",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "252",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 64-year-old female patient presents to the clinic for her pre-operative evaluation for high-risk orthopedic surgery for revision hip replacement. Her medical history is significant for a cerebrovascular accident two years ago, with no residual deficits. No known history of congestive heart failure or ischemic heart disease is documented. Her vitals are stable, including a heart rate of 78 beats per minute, and blood pressure of 135/80 mmHg. The physical examination is unremarkable except for limited mobility due to hip pain. Her respiratory system was clear on auscultation, no edema or jugular vein distention was noticed, and heart sounds were noted to be normal. Laboratory investigations show her creatinine level is 1.5 mg/dL. Further cardiology and nephrology evaluations and consultations have been planned as part of the pre-surgical risk assessment and management. The patient is also reminded of the need for strict adherence to medication and regular post-operative follow-ups.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': False, 'Elevated-risk surgery': True, 'History of ischemic heart disease': False, 'Pre-operative creatinine': [1.5, 'mg/dL'], 'History of cerebrovascular disease': True, 'Pre-operative treatment with insulin': False}",
+   "stored_answer": "2",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.\nThe concentration of Pre-Operative Creatinine is 1.5 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.\n\nThe cardiac risk index score is 2.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "1",
+    "details": "elevated_risk_surgery stored True, should be False. MDCalc defines elevated-risk surgery strictly as intraperitoneal, intrathoracic or suprainguinal vascular; revision hip replacement is none of these, despite the note labelling it 'high-risk orthopedic'. Only CVA (+1); no CHF/IHD/insulin; Cr 1.5. Correct RCRI = 1.",
+    "evidence_quote": "pre-operative evaluation for high-risk orthopedic surgery for revision hip replacement"
+   },
+   "blind_pass": {
+    "score": 1,
+    "working": "surgery 0 (hip revision: not intraperitoneal/intrathoracic/suprainguinal vascular) + IHD 0 + CHF 0 + CVD 1 + insulin 0 (not mentioned) + Cr 1.5 0 = 1",
+    "fields": {
+     "age": {
+      "value": [
+       64,
+       "years"
+      ],
+      "quote": "A 64-year-old female"
+     },
+     "Elevated-risk surgery": {
+      "value": false,
+      "quote": "high-risk orthopedic surgery for revision hip replacement"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": false,
+      "quote": "No known history of congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": false,
+      "quote": "or ischemic heart disease is documented"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       1.5,
+       "mg/dL"
+      ],
+      "quote": "creatinine level is 1.5 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "cerebrovascular accident two years ago"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "Note labels revision hip replacement as 'high-risk orthopedic surgery', but it is not an RCRI elevated-risk procedure; if 'high-risk' were taken literally score would be 2",
+      "alternative_score": 2
+     }
+    ]
+   }
+  },
+  {
+   "row": "253",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old gentleman presents to the clinic for a pre-operative evaluation ahead of an elective hernia repair surgery. His past medical history is significant for stable ischemic heart disease for which he underwent successful percutaneous coronary intervention five years ago. He has type 2 diabetes mellitus, well controlled with insulin therapy. No known history of any cerebrovascular events is noted in his records. On examination, his vital signs, respiratory rate, and SpO2 levels are within standard norms. Cardiac auscultation reveals a regular rhythm with no murmurs, gallops, or rubs. Pulmonary assessment is unremarkable, with no audible crackles, wheezing, or pleural rubs. Peripheral examination did not reveal any ankle edema. His pre-operative serum creatinine level comes back slightly elevated with a reading of 1.4 mg/dL. Given his clinical history and findings, the patient’s operation will continue as planned with routine post-operative monitoring.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': False, 'Elevated-risk surgery': False, 'History of ischemic heart disease': True, 'Pre-operative treatment with insulin': True, 'Pre-operative creatinine': [1.4, 'mg/dL'], 'History of cerebrovascular disease': False}",
+   "stored_answer": "2",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nThe concentration of Pre-Operative Creatinine is 1.4 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.\n\nThe cardiac risk index score is 2.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "2",
+    "details": "Elective hernia repair not elevated-risk; IHD s/p PCI (+1); insulin (+1); no CVD/CHF; Cr 1.4.",
+    "evidence_quote": "stable ischemic heart disease ... percutaneous coronary intervention ... well controlled with insulin therapy"
+   },
+   "blind_pass": {
+    "score": 2,
+    "working": "surgery 0 (hernia repair) + IHD 1 + CHF 0 (no history mentioned, no S3/crackles/edema) + CVD 0 + insulin 1 + Cr 1.4 0 = 2",
+    "fields": {
+     "age": {
+      "value": [
+       72,
+       "years"
+      ],
+      "quote": "A 72-year-old gentleman"
+     },
+     "Elevated-risk surgery": {
+      "value": false,
+      "quote": "elective hernia repair surgery"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": false,
+      "quote": "regular rhythm with no murmurs, gallops, or rubs"
+     },
+     "History of ischemic heart disease": {
+      "value": true,
+      "quote": "stable ischemic heart disease"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": true,
+      "quote": "well controlled with insulin therapy"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       1.4,
+       "mg/dL"
+      ],
+      "quote": "reading of 1.4 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": false,
+      "quote": "No known history of any cerebrovascular events"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "Hernia type/approach not specified; a ventral/incisional or laparoscopic intraperitoneal repair could count as intraperitoneal, giving 3",
+      "alternative_score": 3
+     }
+    ]
+   }
+  },
+  {
+   "row": "256",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 76-year-old gentleman is evaluated prior to his elective abdominal aortic aneurysm repair surgery. He has a history of a cerebrovascular accident three years ago with minor residual right-sided deficits. He manages his type 2 diabetes mellitus with insulin therapy. He states that he has not experienced any symptoms suggestive of congestive heart failure such as dyspnea on exertion or lower limb swelling. His vitals are found to be within normal range. Physical examination did not reveal rales on chest auscultation or pitting edema. His pre-operative investigations show a slightly elevated creatinine level of 1.9 mg/dL. The patient is thoroughly counseled about the possible increased perioperative risk due to his renal function status. He is referred for further nephrologist evaluation and consultation to optimize his kidney function prior to his surgery.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': False, 'Elevated-risk surgery': True, 'Pre-operative treatment with insulin': True, 'Pre-operative creatinine': [1.9, 'mg/dL'], 'History of cerebrovascular disease': True, 'History of ischemic heart disease': False}",
+   "stored_answer": "3",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\nThe concentration of Pre-Operative Creatinine is 1.9 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.\n\nThe cardiac risk index score is 3.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "3",
+    "details": "AAA repair = suprainguinal vascular (+1); CVA (+1); insulin (+1); no CHF; Cr 1.9 (<=2).",
+    "evidence_quote": "abdominal aortic aneurysm repair ... cerebrovascular accident ... insulin therapy ... creatinine level of 1.9 mg/dL"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "surgery 1 (AAA repair) + IHD 0 (not mentioned) + CHF 0 + CVD 1 + insulin 1 + Cr 1.9 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       76,
+       "years"
+      ],
+      "quote": "A 76-year-old gentleman"
+     },
+     "Elevated-risk surgery": {
+      "value": true,
+      "quote": "elective abdominal aortic aneurysm repair surgery"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": false,
+      "quote": "has not experienced any symptoms suggestive of congestive heart failure"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": true,
+      "quote": "type 2 diabetes mellitus with insulin therapy"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       1.9,
+       "mg/dL"
+      ],
+      "quote": "creatinine level of 1.9 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "cerebrovascular accident three years ago"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "History of ischemic heart disease",
+      "issue": "Ischemic heart disease not mentioned at all; scored 0. If present, score would be 4",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "258",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 73-year-old man presents for pre-operative evaluation in anticipation of a high-risk surgery for carotid artery stenosis. His medical history includes a diagnosis of congestive heart failure, characterized by exertional dyspnea and lower limb swelling. He does not have any known history of ischemic heart disease nor cerebrovascular accidents. Physical examination reveals bilateral ankle edema and raised jugular venous pressure. Laboratory investigations show a creatinine level of 2.0 mg/dL. The patient's heart failure and renal function will be monitored and optimized leading up to his surgery. The patient is advised to follow a strict low-sodium diet and comply with his medications to manage his heart failure. His renal function will also be closely monitored leading up to and following the surgery.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': True, 'Elevated-risk surgery': True, 'History of ischemic heart disease': False, 'Pre-operative creatinine': [2.0, 'mg/dL'], 'History of cerebrovascular disease': False, 'Pre-operative treatment with insulin': False}",
+   "stored_answer": "2",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 2.\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.\nThe concentration of Pre-Operative Creatinine is 2.0 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.\n\nThe cardiac risk index score is 2.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "2",
+    "details": "Carotid stenosis surgery counted as elevated-risk (+1; carotid is suprainguinal vascular and note explicitly calls it high-risk — minor ambiguity since some sources rank carotid endarterectomy intermediate risk); CHF (+1); no IHD/CVA; carotid stenosis alone is not TIA/stroke; Cr 2.0 not >2.",
+    "evidence_quote": "high-risk surgery for carotid artery stenosis ... creatinine level of 2.0 mg/dL"
+   },
+   "blind_pass": {
+    "score": 2,
+    "working": "surgery 1 (carotid surgery read as suprainguinal vascular) + IHD 0 + CHF 1 + CVD 0 + insulin 0 (not mentioned) + Cr 2.0 (not >2) 0 = 2",
+    "fields": {
+     "age": {
+      "value": [
+       73,
+       "years"
+      ],
+      "quote": "A 73-year-old man"
+     },
+     "Elevated-risk surgery": {
+      "value": true,
+      "quote": "high-risk surgery for carotid artery stenosis"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": true,
+      "quote": "diagnosis of congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": false,
+      "quote": "does not have any known history of ischemic heart disease"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       2.0,
+       "mg/dL"
+      ],
+      "quote": "creatinine level of 2.0 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": false,
+      "quote": "nor cerebrovascular accidents"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "Carotid endarterectomy is anatomically suprainguinal vascular, but many interpretations of RCRI 'suprainguinal vascular' mean aortic/iliac procedures and guidelines class CEA as intermediate risk; if not counted score would be 1",
+      "alternative_score": 1
+     },
+     {
+      "field": "Pre-operative creatinine",
+      "issue": "Creatinine exactly 2.0 mg/dL sits on the >2 threshold; scores 0 under strict '>2'",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "260",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 77-year-old woman attends a pre-operative assessment visit for a major high-risk endovascular aneurysm repair. Her medical history is notable for a transient ischemic attack four years ago that subsequently resolved without any significant sequelae. Additionally, she has well-managed congestive heart failure that requires a regular medication regimen. Importantly, she's not been diagnosed with ischemic heart disease. She is noted to have very well controlled type 2 diabetes managed with insulin. Upon checking her vitals, she was found to be euvolemic without clinically appreciable signs of heart failure. Her baseline labs highlight an elevated creatinine of 2.3 mg/dL. The patient is counseled and informed about the increased likelihood of potential perioperative cardiac and renal risks, owing to her medical history and current conditions. She is advised to manage her heart failure meticulously and continue her current medications leading up to the surgery.",
+   "stored_relevant_entities": "{'Congestive Heart Failure criteria for the Cardiac Risk Index rule': True, 'Elevated-risk surgery': True, 'History of ischemic heart disease': False, 'Pre-operative treatment with insulin': True, 'Pre-operative creatinine': [2.3, 'mg/dL'], 'History of cerebrovascular disease': True}",
+   "stored_answer": "5",
+   "stored_explanation": "The current cardiac risk index is 0.\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\nBased on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 3 + 1 = 4.\nThe concentration of Pre-Operative Creatinine is 2.3 mg/dL. The patient's pre-operative creatinine is greater than 2 mg/dL, so we increment the score by one and the current total will be 4 + 1 = 5.\n\nThe cardiac risk index score is 5.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "5",
+    "details": "Endovascular aneurysm repair = suprainguinal vascular (+1); TIA (+1); CHF (+1); insulin (+1); Cr 2.3 >2 (+1); no IHD.",
+    "evidence_quote": "high-risk endovascular aneurysm repair ... transient ischemic attack ... congestive heart failure ... managed with insulin ... creatinine of 2.3 mg/dL"
+   },
+   "blind_pass": {
+    "score": 5,
+    "working": "surgery 1 (EVAR, presumed aortic = suprainguinal vascular) + IHD 0 + CHF 1 (history) + CVD 1 (TIA) + insulin 1 + Cr 2.3>2 1 = 5",
+    "fields": {
+     "age": {
+      "value": [
+       77,
+       "years"
+      ],
+      "quote": "A 77-year-old woman"
+     },
+     "Elevated-risk surgery": {
+      "value": true,
+      "quote": "major high-risk endovascular aneurysm repair"
+     },
+     "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+      "value": true,
+      "quote": "well-managed congestive heart failure"
+     },
+     "History of ischemic heart disease": {
+      "value": false,
+      "quote": "she's not been diagnosed with ischemic heart disease"
+     },
+     "Pre-operative treatment with insulin": {
+      "value": true,
+      "quote": "type 2 diabetes managed with insulin"
+     },
+     "Pre-operative creatinine": {
+      "value": [
+       2.3,
+       "mg/dL"
+      ],
+      "quote": "elevated creatinine of 2.3 mg/dL"
+     },
+     "History of cerebrovascular disease": {
+      "value": true,
+      "quote": "transient ischemic attack four years ago"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Elevated-risk surgery",
+      "issue": "Aneurysm location not stated (EVAR is usually aortic); if not aortic/suprainguinal, or if endovascular repair is not counted as open suprainguinal vascular surgery, score would be 4",
+      "alternative_score": 4
+     },
+     {
+      "field": "Congestive Heart Failure criteria for the Cardiac Risk Index rule",
+      "issue": "CHF history present but currently euvolemic with no signs; counted as history per MDCalc. If only current signs counted, score would be 4",
+      "alternative_score": 4
+     }
+    ]
+   }
+  }
+ ]
+}

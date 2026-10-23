@@ -1,0 +1,7 @@
+55 rows from one_shot_data.csv to check
+final_one_shot_verify.jsonl: 0 cached, 55 to run
+  50/55
+Verdict
+correct      49
+ambiguous     5
+incorrect     1

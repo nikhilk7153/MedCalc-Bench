@@ -1,0 +1,92 @@
+{"Row Number": 5, "all_match": true, "problems": [], "Tokens": 1177}
+{"Row Number": 8, "all_match": true, "problems": [], "Tokens": 716}
+{"Row Number": 1, "all_match": true, "problems": [], "Tokens": 1061}
+{"Row Number": 3, "all_match": true, "problems": [], "Tokens": 1125}
+{"Row Number": 7, "all_match": true, "problems": [], "Tokens": 1175}
+{"Row Number": 6, "all_match": true, "problems": [], "Tokens": 1270}
+{"Row Number": 2, "all_match": true, "problems": [], "Tokens": 1151}
+{"Row Number": 9, "all_match": true, "problems": [], "Tokens": 636}
+{"Row Number": 10, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 72 years old.", "issue": "omitted"}], "Tokens": 1546}
+{"Row Number": 4, "all_match": false, "problems": [{"input": "Pulmonary Embolism is #1 diagnosis OR equally likely", "extracted": "True", "note_says": "Pulmonary embolism is not documented as the leading or an equally likely diagnosis at admission. Admission findings include bilateral pulmonary congestion, bibasal crepitations, and bilateral pitting oedema in a patient with ischaemic cardiomyopathy.", "issue": "not_in_note"}], "Tokens": 1412}
+{"Row Number": 12, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 67 years old.", "issue": "omitted"}], "Tokens": 1436}
+{"Row Number": 15, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 66 years old.", "issue": "omitted"}], "Tokens": 1433}
+{"Row Number": 14, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 62 years old.", "issue": "omitted"}], "Tokens": 1426}
+{"Row Number": 16, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 68 years old at the pre-admission evaluation.", "issue": "omitted"}], "Tokens": 1623}
+{"Row Number": 17, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 58 years old.", "issue": "omitted"}], "Tokens": 1696}
+{"Row Number": 19, "all_match": true, "problems": [], "Tokens": 840}
+{"Row Number": 11, "all_match": false, "problems": [{"input": "Elevated-risk surgery", "extracted": "False", "note_says": "Elective laparoscopic cholecystectomy is planned. This is intraperitoneal surgery, which meets the RCRI surgery criterion even though it is not vascular surgery.", "issue": "wrong_value"}, {"input": "age", "extracted": "Absent", "note_says": "The patient is 63 years old.", "issue": "omitted"}], "Tokens": 1604}
+{"Row Number": 18, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 78 years old.", "issue": "omitted"}], "Tokens": 1683}
+{"Row Number": 21, "all_match": true, "problems": [], "Tokens": 1246}
+{"Row Number": 20, "all_match": true, "problems": [], "Tokens": 1043}
+{"Row Number": 13, "all_match": false, "problems": [{"input": "Elevated-risk surgery", "extracted": false, "note_says": "Planned laparoscopic cholecystectomy is an intraperitoneal procedure, which meets the RCRI elevated-risk surgery criterion despite the note's description of low cardiovascular hazard.", "issue": "wrong_value"}, {"input": "age", "extracted": "absent", "note_says": "The patient is 62 years old.", "issue": "omitted"}], "Tokens": 1739}
+{"Row Number": 23, "all_match": true, "problems": [], "Tokens": 1340}
+{"Row Number": 24, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "The EKG shows nonspecific changes.", "issue": "wrong_value"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No troponin result is documented.", "issue": "not_in_note"}], "Tokens": 697}
+{"Row Number": 26, "all_match": false, "problems": [{"input": "Initial troponin", "extracted": "greater than three times normal limit", "note_says": "Initial serum troponin was 60 ng/L; the assay's upper limit of normal is not provided, so the multiple of the normal limit cannot be established.", "issue": "not_in_note"}], "Tokens": 1052}
+{"Row Number": 28, "all_match": true, "problems": [], "Tokens": 1194}
+{"Row Number": 22, "all_match": false, "problems": [{"input": "Suspicion History", "extracted": "Highly suspicious", "note_says": "A 1-hour history of sudden-onset chest pain, resolved on arrival. No further anginal characteristics or explicit assessment of the history as highly suspicious are documented.", "issue": "not_in_note"}], "Tokens": 1644}
+{"Row Number": 32, "all_match": true, "problems": [], "Tokens": 1470}
+{"Row Number": 27, "all_match": false, "problems": [{"input": "Hypertension history", "extracted": "True", "note_says": "The patient had no known co-morbidities. Elevated blood pressure occurred during acute symptomatic episodes and subsequently normalized; a history of hypertension is not documented.", "issue": "not_in_note"}], "Tokens": 1553}
+{"Row Number": 31, "all_match": true, "problems": [], "Tokens": 1049}
+{"Row Number": 29, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "Admission ECG showed sinus rhythm with right bundle branch block and lateral T-wave inversions, unchanged from prior. These are repolarization abnormalities, not a normal ECG.", "issue": "wrong_value"}, {"input": "hypercholesterolemia", "extracted": "True", "note_says": "Hypercholesterolemia is not documented. Atorvastatin use alone does not establish this diagnosis, particularly in a patient with known coronary artery disease.", "issue": "not_in_note"}], "Tokens": 1543}
+{"Row Number": 25, "all_match": false, "problems": [{"input": "atherosclerotic disease", "extracted": true, "note_says": "At presentation, hypertension was the only reported cardiac risk factor. LMT occlusion was identified during subsequent coronary CT and angiography; pre-existing atherosclerotic disease was not documented at first admission.", "issue": "wrong_time_point"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No initial troponin value or statement that troponin was normal is documented.", "issue": "not_in_note"}], "Tokens": 1152}
+{"Row Number": 35, "all_match": true, "problems": [], "Tokens": 1447}
+{"Row Number": 30, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "The normal ECG was recorded after symptoms had been relieved by sublingual nitroglycerin. No pretreatment ECG is documented.", "issue": "wrong_time_point"}], "Tokens": 1168}
+{"Row Number": 38, "all_match": true, "problems": [], "Tokens": 1377}
+{"Row Number": 37, "all_match": true, "problems": [], "Tokens": 1325}
+{"Row Number": 36, "all_match": true, "problems": [], "Tokens": 1384}
+{"Row Number": 34, "all_match": true, "problems": [], "Tokens": 1568}
+{"Row Number": 33, "all_match": false, "problems": [{"input": "Initial troponin", "extracted": "between the normal limit or up to three times the normal limit", "note_says": "Initial high-sensitivity cardiac troponin I was within the institutional reference range before any ED-administered medications.", "issue": "wrong_value"}, {"input": "parent or sibling with Cardiovascular disease before age 65", "extracted": "false", "note_says": "Her father had premature coronary disease and required a stent in his mid-50s.", "issue": "omitted"}, {"input": "smoking", "extracted": "true", "note_says": "She has never used cigarettes or smokeless tobacco and does not vape.", "issue": "wrong_value"}], "Tokens": 1691}
+{"Row Number": 42, "all_match": true, "problems": [], "Tokens": 1698}
+{"Row Number": 41, "all_match": true, "problems": [], "Tokens": 1536}
+{"Row Number": 45, "all_match": true, "problems": [], "Tokens": 1633}
+{"Row Number": 43, "all_match": true, "problems": [], "Tokens": 1616}
+{"Row Number": 40, "all_match": true, "problems": [], "Tokens": 1680}
+{"Row Number": 39, "all_match": true, "problems": [], "Tokens": 1406}
+{"Row Number": 49, "all_match": true, "problems": [], "Tokens": 870}
+{"Row Number": 51, "all_match": true, "problems": [], "Tokens": 1319}
+{"Row Number": 50, "all_match": true, "problems": [], "Tokens": 1424}
+{"Row Number": 48, "all_match": true, "problems": [], "Tokens": 1817}
+{"Row Number": 52, "all_match": true, "problems": [], "Tokens": 1299}
+{"Row Number": 53, "all_match": true, "problems": [], "Tokens": 1029}
+{"Row Number": 55, "all_match": true, "problems": [], "Tokens": 1099}
+{"Row Number": 44, "all_match": false, "problems": [{"input": "Number of Alcoholic Drinks Per Week", "extracted": "9", "note_says": "The note explicitly states approximately 9 alcoholic drinks per week, but the listed intake\u2014one glass of wine on five nights and two beers on Saturday\u2014totals 7 drinks, without specifying serving sizes or alcohol content that would explain the difference.", "issue": "conflicting_values_in_note"}], "Tokens": 1609}
+{"Row Number": 54, "all_match": true, "problems": [], "Tokens": 873}
+{"Row Number": 56, "all_match": true, "problems": [], "Tokens": 1055}
+{"Row Number": 57, "all_match": true, "problems": [], "Tokens": 940}
+{"Row Number": 59, "all_match": true, "problems": [], "Tokens": 1100}
+{"Row Number": 58, "all_match": true, "problems": [], "Tokens": 1907}
+{"Row Number": 62, "all_match": true, "problems": [], "Tokens": 1115}
+{"Row Number": 61, "all_match": true, "problems": [], "Tokens": 1176}
+{"Row Number": 60, "all_match": true, "problems": [], "Tokens": 1180}
+{"Row Number": 64, "all_match": true, "problems": [], "Tokens": 1634}
+{"Row Number": 65, "all_match": true, "problems": [], "Tokens": 692}
+{"Row Number": 67, "all_match": true, "problems": [], "Tokens": 987}
+{"Row Number": 66, "all_match": true, "problems": [], "Tokens": 1259}
+{"Row Number": 63, "all_match": true, "problems": [], "Tokens": 900}
+{"Row Number": 72, "all_match": true, "problems": [], "Tokens": 694}
+{"Row Number": 68, "all_match": true, "problems": [], "Tokens": 1387}
+{"Row Number": 70, "all_match": true, "problems": [], "Tokens": 807}
+{"Row Number": 74, "all_match": true, "problems": [], "Tokens": 1239}
+{"Row Number": 71, "all_match": true, "problems": [], "Tokens": 1356}
+{"Row Number": 73, "all_match": true, "problems": [], "Tokens": 819}
+{"Row Number": 76, "all_match": true, "problems": [], "Tokens": 731}
+{"Row Number": 75, "all_match": true, "problems": [], "Tokens": 1197}
+{"Row Number": 77, "all_match": true, "problems": [], "Tokens": 1390}
+{"Row Number": 46, "all_match": false, "problems": [{"input": "age", "extracted": "53 years", "note_says": "He is 53 at the current arrhythmia clinic visit. The stroke hospitalization occurred approximately twelve months earlier; his age at that admission is not explicitly documented.", "issue": "wrong_time_point"}, {"input": "Medication usage predisposing to bleeding", "extracted": "true", "note_says": "Aspirin was added because of the cerebrovascular event, and ibuprofen use is documented at the current clinic visit. Neither aspirin nor NSAID use is established at the first hospital admission before treatment.", "issue": "wrong_time_point"}, {"input": "Number of Alcoholic Drinks Per Week", "extracted": "24", "note_says": "Approximately 24 alcoholic beverages weekly is reported at the current clinic visit. Intake at the earlier hospital admission is not quantified.", "issue": "wrong_time_point"}], "Tokens": 2097}
+{"Row Number": 78, "all_match": true, "problems": [], "Tokens": 1641}
+{"Row Number": 80, "all_match": true, "problems": [], "Tokens": 588}
+{"Row Number": 69, "all_match": false, "problems": [{"input": "Heart Rate or Pulse", "extracted": "90 beats per minute", "note_says": "Before treatment, paramedics documented ventricular tachycardia at 160\u2013180 beats/minute. The pulse of 90 beats/minute was recorded in the ED after intravenous lidocaine.", "issue": "wrong_time_point"}, {"input": "O\u2082 saturation percentage", "extracted": "96%", "note_says": "Before treatment, oxygen saturation was described only as normal. The numeric saturation of 96% was documented in the ED after intravenous lidocaine.", "issue": "wrong_time_point"}], "Tokens": 1264}
+{"Row Number": 82, "all_match": true, "problems": [], "Tokens": 1318}
+{"Row Number": 81, "all_match": true, "problems": [], "Tokens": 902}
+{"Row Number": 83, "all_match": true, "problems": [], "Tokens": 1256}
+{"Row Number": 84, "all_match": true, "problems": [], "Tokens": 1145}
+{"Row Number": 85, "all_match": true, "problems": [], "Tokens": 1023}
+{"Row Number": 79, "all_match": false, "problems": [{"input": "Chloride", "extracted": "108 mEq/L", "note_says": "Chloride was 108 mEq/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline; no pretreatment chloride is documented.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "15 mmol/L", "note_says": "Bicarbonate was 15 mmol/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline; no pretreatment bicarbonate is documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "139 mEq/L", "note_says": "Sodium was 139 mEq/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline; no pretreatment sodium is documented.", "issue": "wrong_time_point"}], "Tokens": 1440}
+{"Row Number": 86, "all_match": true, "problems": [], "Tokens": 1141}
+{"Row Number": 87, "all_match": true, "problems": [], "Tokens": 1220}
+{"Row Number": 88, "all_match": true, "problems": [], "Tokens": 1133}
+{"Row Number": 91, "all_match": true, "problems": [], "Tokens": 1236}
+{"Row Number": 89, "all_match": true, "problems": [], "Tokens": 1329}
+{"Row Number": 90, "all_match": false, "problems": [{"input": "Surgery Type", "extracted": "missing", "note_says": "Admitted in anticipation of a planned operative procedure for a non-urgent condition, consistent with elective surgery.", "issue": "omitted"}], "Tokens": 1431}
+{"Row Number": 92, "all_match": true, "problems": [], "Tokens": 1490}
+{"Row Number": 47, "all_match": false, "problems": [{"input": "Number of Alcoholic Drinks Per Week", "extracted": "21", "note_says": "The note explicitly states approximately 21 beverages per week, but the described pattern\u2014two glasses on each weeknight and three beers on each weekend day\u2014totals 16 per week.", "issue": "conflicting_values_in_note"}], "Tokens": 2320}

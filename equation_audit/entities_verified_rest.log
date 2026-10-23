@@ -1,0 +1,21 @@
+639 non-template rows from verified_rest.csv to check
+entities_verified_rest.jsonl: 0 cached, 639 to run
+  50/639
+  100/639
+  150/639
+  200/639
+  250/639
+  300/639
+  350/639
+639 non-template rows from verified_rest.csv to check
+entities_verified_rest.jsonl: 365 cached, 274 to run
+  50/274
+  100/274
+  150/274
+  200/274
+639 non-template rows from verified_rest.csv to check
+entities_verified_rest.jsonl: 579 cached, 60 to run
+  50/60
+Entities Match
+True     551
+False     88

@@ -1,0 +1,4 @@
+gpt-3.5-turbo: 50 rows in 33s wall clock (0.5 min, 8 workers)
+per row: median 2s, max 19s; rounds median 2
+correct 15/50; API errors 0
+{"lab": {"average": 36.84, "std": 0.11}, "risk": {"average": 8.33, "std": 0.08}, "physical": {"average": 45.45, "std": 0.15}, "severity": {"average": 0.0, "std": 0.0}, "diagnosis": {"average": 66.67, "std": 0.27}, "date": {"average": 0.0, "std": 0.0}, "overall": {"average": 30.0, "std": 0.06}}

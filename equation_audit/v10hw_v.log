@@ -1,0 +1,8 @@
+100 rows from v10_hw_check.csv to check
+final_v10hw_verify.jsonl: 0 cached, 100 to run
+  50/100
+  100/100
+Verdict
+correct      41
+ambiguous    32
+incorrect    27

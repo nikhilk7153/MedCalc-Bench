@@ -1,0 +1,911 @@
+{
+ "calculator_id": "15",
+ "calculator_name": "Child-Pugh Score for Cirrhosis Mortality",
+ "mdcalc_source": "https://www.mdcalc.com/calc/340/child-pugh-score-cirrhosis-mortality",
+ "mdcalc_rules": "Five criteria, each scored 1-3. Total bilirubin: <2 mg/dL (<34.2 umol/L) +1, 2-3 mg/dL (34.2-51.3 umol/L) +2, >3 mg/dL (>51.3 umol/L) +3. Albumin: >3.5 g/dL (>35 g/L) +1, 2.8-3.5 g/dL (28-35 g/L) +2, <2.8 g/dL +3. INR: <1.7 +1, 1.7-2.3 +2, >2.3 +3. Ascites: absent +1, slight +2, moderate +3. Encephalopathy: none +1, grade 1-2 +2, grade 3-4 +3. The middle bins include both endpoints, so bili 2.0 or 3.0 = +2, albumin 3.5 or 2.8 = +2, INR 1.7 or 2.3 = +2. Total 5-15 (class A 5-6, B 7-9, C 10-15 by the standard Pugh cutoffs).",
+ "code_vs_mdcalc": [
+  {
+   "issue": "Bilirubin in umol/L is converted with molar mass 584.66 (1 mg/dL = 17.104 umol/L), not the factor 17.1 that MDCalc's printed cutoffs imply. So exactly 34.2 umol/L becomes 1.9995 mg/dL and scores +1, while MDCalc puts 34.2 umol/L in the 2-3 bin (+2). The upper boundary is unaffected: 51.3 umol/L becomes 2.9993 and scores +2, as on MDCalc. This is an edge case only.",
+   "rows_affected": []
+  },
+  {
+   "issue": "All thresholds, inclusive boundaries, the albumin g/L to g/dL conversion and the defaults (missing ascites = absent +1, missing encephalopathy = none +1) match MDCalc. Minor robustness gaps: INR, bilirubin and albumin are required with no default; an ascites or encephalopathy string outside the expected labels silently adds 0 points; and the ascites 'absent' check reads input_variables['ascites'] directly rather than ascites_state, which is harmless. No stored row hits any of these.",
+   "rows_affected": []
+  }
+ ],
+ "code_file": "calculator_implementations_verified/child_pugh_score.py",
+ "dataset_conventions": [
+  "A criterion the note does not mention is absent/normal; for 'absence' criteria the criterion is met.",
+  "Values are taken at the time point the question names (admission/initial presentation before treatment) unless the question says otherwise.",
+  "GCS: a component documented as not testable gets full points.",
+  "Keep as close to v1.0 as possible; change only genuine mistakes (wrong input vs note, wrong label, unit/typo errors, contradictions). Prefer the smallest fix: correct an input if the note is clear; edit the note minimally if the note itself is ambiguous or contradictory."
+ ],
+ "rows": [
+  {
+   "row": "201",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 61 year old male with a history of chronic iron deficiency anemia, type 2 diabetes mellitus, cirrhosis secondary to alpha 1 antitrypsin deficiency, hypertension, and chronic kidney disease presents to the emergency department from a skilled nursing facility for lethargy and confusion. History is limited by confusion, though the patient complains of abdominal pain. The patient is unsure when his last bowel movement was. He denies dysuria, nausea or vomiting. Vitals are as follows: heart rate 102 bpm, blood pressure 127/77, temperature 97.5°F. The patient is oriented only to self. Asterixis is present. Abdominal exam is notable for decreased bowel sounds, and negative for ascites. Labs are notable for sodium 135 mmol/L, potassium 3.3 mmol/L, BUN 38 mg/dL, creatinine 2.0 mg/dL, albumin 3.1 g/dL, bilirubin 40.2umol/L, ammonia 125 umol/L, TSH 1.83 ulU/mL, WBC 4.3, hemoglobin 8.9 g/dL, and INR 2.1. The patient is admitted to the medical service.",
+   "stored_relevant_entities": "{'international normalized ratio': 2.1, 'Ascites': 'absent', 'Albumin': [3.1, 'g/dL'], 'Encephalopathy': 'Grade 1-2', 'Bilirubin': [40.2, 'µmol/L']}",
+   "stored_answer": "9",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.1. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 40.2 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of bilirubin from µmol to mg. The mass of bilirubin is 40.2 µmol. To convert 40.2 µmol of bilirubin to mol, multiply by the conversion factor 1e-06, giving us 40.2 µmol bilirubin * 1e-06 mol/µmol = 4.02e-05 mol bilirubin. To convert from mol bilirubin to grams, multiply by the molar mass 584.66 g/mol, which will give 4.02e-05 mol bilirubin * 584.66 g/mol = 0.023503 g bilirubin. To convert 0.023503 g of bilirubin to mg, multiply by the conversion factor 1000.0, giving us 0.023503 g bilirubin * 1000.0 mg/g = 23.503 mg bilirubin. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 23.503 mg bilirubin/10.0 dL = 2.3503 mg bilirubin/dL. The concentration value of 40.2 µmol bilirubin/L converts to 2.3503 mg bilirubin/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 2 + 2 = 4.\nThe concentration of albumin is 3.1 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 4 + 2 = 6.\nThe patient's ascites state is determined to be 'absent' and so we add 1 point to the score, making the current total 6 + 1 = 7.\nThe encephalopathy state is determined to be 'Grade 1-2' and so we add two points to the score, making the current total 7 + 2 = 9.\nThe patient's child pugh score is 9.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "9",
+    "details": "INR 2.1 (+2); bili 40.2 umol/L = 2.35 mg/dL (+2); albumin 3.1 (+2); ascites absent (+1); HE Grade 1-2 (+2): lethargy, confusion, asterixis fit West Haven grade 2. 'Oriented only to self' could be read as grade 3 gross disorientation (would give 10), but grade 1-2 is defensible and matches v1.0, so not flagged.",
+    "evidence_quote": "lethargy and confusion... oriented only to self. Asterixis is present... negative for ascites"
+   },
+   "blind_pass": {
+    "score": 9,
+    "working": "bili 40.2 umol/L (2.35 mg/dL) +2; albumin 3.1 +2; INR 2.1 +2; ascites absent +1; encephalopathy grade 1-2 +2 = 9",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.1,
+      "quote": "INR 2.1"
+     },
+     "Ascites": {
+      "value": "absent",
+      "quote": "negative for ascites"
+     },
+     "Albumin": {
+      "value": [
+       3.1,
+       "g/dL"
+      ],
+      "quote": "albumin 3.1 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       40.2,
+       "µmol/L"
+      ],
+      "quote": "bilirubin 40.2umol/L"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "lethargy and confusion ... oriented only to self. Asterixis is present"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Encephalopathy",
+      "issue": "Lethargy with orientation to self only could be read as West Haven grade 3 (gross disorientation, somnolence) rather than grade 2; grade not stated.",
+      "alternative_score": 10
+     }
+    ]
+   }
+  },
+  {
+   "row": "202",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 60 year old male with a past medical history of chronic obstructive sleep apnea on 2L home oxygen, chronic portal vein thrombosis with cavernous transformation, and cirrhosis complicated by history of variceal bleeding treated with band ligation is admitted to the hospital for abdominal pain and tactile hallucinations. The patient has a complex history including multiple admissions for gastrointestinal bleeding and worsening liver function tests. On admission, the patient reports that he had been doing well until earlier in the week when he began feeling like spiders were crawling on him. He also notes abdominal pain in the right lower quadrant which is sharp, constant, and 9/10 in severity, and he feels that his abdomen has recently become more distended. The patient is adherent to his prescribed regimen of Lactulose. He reports 3 bowel movements daily with no melena or hematochezia. He notes decrease urine output over the last 2-3 days. He denies any recent fever, dyspnea, cough, hematuria, or lower extremity swelling. He does not use alcohol, NSAIDs, or recreational drugs. Vital signs are stable. Physical exam is notable for jaundice, asterixis, and moderately distended abdomen with positive fluid wave and moderate tenderness. The abdomen is tympanic on percussion. Laboratory studies are notable for potassium 3.8 mmol/L, creatinine 1.67 mg/dL, BUN 30 mg/dL, total bilirubin 13.3 mg/dL, ALP 473 U/L, ALT 99 U/L, AST 121 U/L, lipase 63 U/L, ammonia 100 umol/L, WBC 5800/uL, hemoglobin 11.9 g/dL, albumin 3.33 g/dL and INR 2.2. A CT of the abdomen and pelvis is ordered and diagnostic paracentesis is performed.",
+   "stored_relevant_entities": "{'international normalized ratio': 2.2, 'Ascites': 'moderate', 'Albumin': [3.33, 'g/dL'], 'Encephalopathy': 'Grade 1-2', 'Bilirubin': [13.3, 'mg/dL']}",
+   "stored_answer": "12",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.2. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 13.3 mg/dL. Because the bilirubin concentration is greater than 3 mg/dL, we add 3 to the score, making the current total 2 + 3 = 5.\nThe concentration of albumin is 3.33 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 5 + 2 = 7.\nThe patient's ascites state is determined to be 'moderate' and so we add 3 points to the score, making the current total 7 + 3 = 10.\nThe encephalopathy state is determined to be 'Grade 1-2' and so we add two points to the score, making the current total 10 + 2 = 12.\nThe patient's child pugh score is 12.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "12",
+    "details": "INR 2.2 (+2); bili 13.3 (+3); albumin 3.33 (+2); moderate ascites with fluid wave (+3); HE grade 1-2 (hallucinations, asterixis) (+2).",
+    "evidence_quote": "moderately distended abdomen with positive fluid wave"
+   },
+   "blind_pass": {
+    "score": 12,
+    "working": "bili 13.3 +3; albumin 3.33 +2; INR 2.2 +2; ascites moderate +3; encephalopathy grade 1-2 +2 = 12",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.2,
+      "quote": "INR 2.2"
+     },
+     "Ascites": {
+      "value": "moderate",
+      "quote": "moderately distended abdomen with positive fluid wave"
+     },
+     "Albumin": {
+      "value": [
+       3.33,
+       "g/dL"
+      ],
+      "quote": "albumin 3.33 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       13.3,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin 13.3 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "tactile hallucinations ... asterixis"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Positive fluid wave and moderate distension suggest moderate ascites, but 'abdomen is tympanic on percussion' conflicts; ascites grade not explicitly stated (slight would give 11).",
+      "alternative_score": 11
+     },
+     {
+      "field": "Encephalopathy",
+      "issue": "HE grade not stated; tactile hallucinations are atypical for HE and asterixis implies at least grade 2, but patient gives a coherent history. Grade 1-2 assumed.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "203",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 62-year-old male with a history of AUD, HTN, and cirrhosis presents with progressive abdominal distension and altered mental status over the past few weeks. On examination, he appears jaundiced with minimal palpable ascites. Laboratory findings reveal an elevated INR of 2.1, serum albumin level of 3.1 g/dL, and Tbili of 2.45 mg/dL. Furthermore, liver function tests demonstrate a reduction in serum protein levels, with a total protein of 5.2 g/dL and elevated liver enzymes, including ALT at 140 U/L and AST at 160 U/L. On neurological exam the patient is A&Ox1 (self) with hyperactive reflexes, and rigidity.",
+   "stored_relevant_entities": "{'international normalized ratio': 2.1, 'Ascites': 'slight', 'Albumin': [3.1, 'g/dL'], 'Encephalopathy': 'Grade 3-4', 'Bilirubin': [2.45, 'mg/dL']}",
+   "stored_answer": "11",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.1. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 2.45 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 2 + 2 = 4.\nThe concentration of albumin is 3.1 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 4 + 2 = 6.\nThe patient's ascites state is determined to be 'slight' and so we add 2 points to the score, making the current total 6 + 2 = 8.\nThe encephalopathy state is determined to be 'Grade 3-4' and so we add three points to the score, making the current total 8 + 3 = 11.\nThe patient's child pugh score is 11.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "11",
+    "details": "INR 2.1 (+2); albumin 3.1 (+2); bili 2.45 (+2); minimal ascites = slight (+2); A&Ox1 with hyperreflexia and rigidity = grade 3-4 (+3).",
+    "evidence_quote": "minimal palpable ascites... A&Ox1 (self) with hyperactive reflexes, and rigidity"
+   },
+   "blind_pass": {
+    "score": 11,
+    "working": "bili 2.45 +2; albumin 3.1 +2; INR 2.1 +2; ascites slight +2; encephalopathy grade 3-4 +3 = 11",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.1,
+      "quote": "elevated INR of 2.1"
+     },
+     "Ascites": {
+      "value": "slight",
+      "quote": "minimal palpable ascites"
+     },
+     "Albumin": {
+      "value": [
+       3.1,
+       "g/dL"
+      ],
+      "quote": "serum albumin level of 3.1 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.45,
+       "mg/dL"
+      ],
+      "quote": "Tbili of 2.45 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 3-4",
+      "quote": "A&Ox1 (self) with hyperactive reflexes, and rigidity"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Encephalopathy",
+      "issue": "HE grade not stated; disorientation to all but self with hyperreflexia and rigidity fits West Haven grade 3, but could be read as grade 2 (altered mental status, patient still responsive).",
+      "alternative_score": 10
+     },
+     {
+      "field": "Ascites",
+      "issue": "'Progressive abdominal distension' contrasts with 'minimal palpable ascites'; minimal taken as slight.",
+      "alternative_score": 12
+     }
+    ]
+   }
+  },
+  {
+   "row": "204",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 74-year-old male with a history of alcohol abuse, HIV, and Hashimoto's thyroiditis presents with complaints of fatigue and intermittent abdominal discomfort over the past few weeks. He denies any recent alcohol intake but admits to a long-standing history of heavy alcohol consumption. On examination, there are no signs of jaundice, and his abdomen is soft with no tenderness appreciated. Laboratory evaluation reveals an elevated INR of 2.4, a total bilirubin level of 3.00 mg/dL and albumin level of 2.7 g/dL. Thyroid function tests reveal a TSH level of 8.5 mIU/L and a decreased free T4 level. On physical exam the patient is A&Ox3 all reflexes 2+ and absent asterixis.",
+   "stored_relevant_entities": "{'international normalized ratio': 2.4, 'Ascites': 'absent', 'Albumin': [2.7, 'g/dL'], 'Encephalopathy': 'No Encephalopathy', 'Bilirubin': [3.0, 'mg/dL']}",
+   "stored_answer": "10",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.4. Because the INR is greater than 2.3, we add three to the score, making the current total 0 + 3 = 3.\nThe concentration of bilirubin is 3.0 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 3 + 2 = 5.\nThe concentration of albumin is 2.7 g/dL. Because the albumin concentration is less than 2.8 g/dL, we add 3 points to the score, making the current total 5 + 3 = 8.\nThe patient's ascites state is determined to be 'absent' and so we add 1 point to the score, making the current total 8 + 1 = 9.\nThe patient is determined to not have any encephalopathy and so we add one point to the score, making the current total 9 + 1 = 10.\nThe patient's child pugh score is 10.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "10",
+    "details": "INR 2.4 (+3); bili 3.00 is in MDCalc's 2-3 bin (+2); albumin 2.7 (+3); ascites not mentioned = absent (+1); no HE (+1).",
+    "evidence_quote": "INR of 2.4, a total bilirubin level of 3.00 mg/dL and albumin level of 2.7 g/dL... A&Ox3... absent asterixis"
+   },
+   "blind_pass": {
+    "score": 10,
+    "working": "bili 3.00 +2 (middle bin inclusive); albumin 2.7 +3; INR 2.4 +3; ascites not documented, assumed absent +1; encephalopathy none +1 = 10",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.4,
+      "quote": "elevated INR of 2.4"
+     },
+     "Albumin": {
+      "value": [
+       2.7,
+       "g/dL"
+      ],
+      "quote": "albumin level of 2.7 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       3.0,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin level of 3.00 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "No Encephalopathy",
+      "quote": "A&Ox3 all reflexes 2+ and absent asterixis"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Ascites not explicitly documented; only 'abdomen is soft with no tenderness'. Assumed absent; slight would give 11.",
+      "alternative_score": 11
+     },
+     {
+      "field": "Bilirubin",
+      "issue": "Bilirubin exactly 3.00 mg/dL sits on the 2-3/>3 boundary; inclusive middle bin gives +2, a strict reading of >3 boundary would not change it, but implementations using >=3 for +3 would give 11.",
+      "alternative_score": 11
+     }
+    ]
+   }
+  },
+  {
+   "row": "207",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old female patient with history of Hepatitis B, DM type II, and recently diagnosed cirrhosis visited the clinic for her scheduled visit. A firm liver edge was palpated below the costal margin, but there was no detectable ascites on physical examination. Laboratory evaluation revealed a direct bilirubin of 1.5 mg/dL and a total bilirubin of 3.0 mg/dL. INR was 1.3. Her albumin level was 3.4 g/dL, slightly below normal range. Elevated levels for serum alkaline phosphatase and gamma-glutamyl transferase were also noted. Her random blood sugar was measured at 155 mg/dL and her BUN/Creatinine ratios were within normal limits. She was encouraged to abstain from alcohol, follow a low salt diet to prevent fluid accumulation, and regular follow-up visits for monitoring were scheduled.",
+   "stored_relevant_entities": "{'Bilirubin': [3.0, 'mg/dL'], 'Ascites': 'absent', 'international normalized ratio': 1.3, 'Albumin': [3.4, 'g/dL']}",
+   "stored_answer": "7",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.3. Because the INR is less than 1.7, we add 1 to the score, making the current total 0 + 1 = 1.\nThe concentration of bilirubin is 3.0 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 1 + 2 = 3.\nThe concentration of albumin is 3.4 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 3 + 2 = 5.\nThe patient's ascites state is determined to be 'absent' and so we add 1 point to the score, making the current total 5 + 1 = 6.\nThe encephalopathy state is not specified, and so we assume that the patient does not have encephalopathy. We add one point to the score, making the current total 6 + 1 = 7.\nThe patient's child pugh score is 7.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "7",
+    "details": "Total bili 3.0 is in the 2-3 bin (+2); no ascites (+1); INR 1.3 (+1); albumin 3.4 (+2); HE not mentioned = none (+1).",
+    "evidence_quote": "total bilirubin of 3.0 mg/dL. INR was 1.3. Her albumin level was 3.4 g/dL"
+   },
+   "blind_pass": {
+    "score": 7,
+    "working": "bili 3.0 +2 (middle bin inclusive); albumin 3.4 +2; INR 1.3 +1; ascites absent +1; encephalopathy not documented, assumed none +1 = 7",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.3,
+      "quote": "INR was 1.3"
+     },
+     "Ascites": {
+      "value": "absent",
+      "quote": "no detectable ascites on physical examination"
+     },
+     "Albumin": {
+      "value": [
+       3.4,
+       "g/dL"
+      ],
+      "quote": "albumin level was 3.4 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       3.0,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin of 3.0 mg/dL"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Encephalopathy",
+      "issue": "Mental status/encephalopathy not documented; assumed none.",
+      "alternative_score": null
+     },
+     {
+      "field": "Bilirubin",
+      "issue": "Total bilirubin exactly 3.0 mg/dL on the boundary; scored +2 per inclusive middle bin (+3 if boundary treated as >=3).",
+      "alternative_score": 8
+     }
+    ]
+   }
+  },
+  {
+   "row": "210",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "The patient is a 59-year-old male with a known history of cirrhosis due to chronic Hepatitis B infection. Upon clinical examination, he has jaundice and his abdomen is moderately distended with a noticeable fluid wave on palpation, indicating moderate ascites. He has been experiencing episodes of short-term memory loss and confusion, consistent with grade 1-2 hepatic encephalopathy. His laboratory results reflected impaired coagulation status given INR of 1.9. Overall liver function tests showed albumin level of 2.8 g/dL and total bilirubin 2.5 mg/dL. His hemoglobin level was 12.3 g/dL, and other routine biochemical parameters were within acceptable range. His medication list includes diuretics, lactulose, and antiviral agents for ongoing Hepatitis B infection. The patient and his family have been advised to monitor his cognitive function at home and relay any further deterioration.",
+   "stored_relevant_entities": "{'Bilirubin': [2.5, 'mg/dL'], 'Ascites': 'moderate', 'international normalized ratio': 1.9, 'Albumin': [2.8, 'g/dL'], 'Encephalopathy': 'Grade 1-2'}",
+   "stored_answer": "11",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.9. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 2.5 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 2 + 2 = 4.\nThe concentration of albumin is 2.8 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 4 + 2 = 6.\nThe patient's ascites state is determined to be 'moderate' and so we add 3 points to the score, making the current total 6 + 3 = 9.\nThe encephalopathy state is determined to be 'Grade 1-2' and so we add two points to the score, making the current total 9 + 2 = 11.\nThe patient's child pugh score is 11.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "11",
+    "details": "Bili 2.5 (+2); moderate ascites (+3); INR 1.9 (+2); albumin 2.8 is in the 2.8-3.5 bin (+2); HE grade 1-2 (+2).",
+    "evidence_quote": "albumin level of 2.8 g/dL... consistent with grade 1-2 hepatic encephalopathy"
+   },
+   "blind_pass": {
+    "score": 11,
+    "working": "bili 2.5 +2; albumin 2.8 +2 (middle bin inclusive); INR 1.9 +2; ascites moderate +3; encephalopathy grade 1-2 +2 = 11",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.9,
+      "quote": "INR of 1.9"
+     },
+     "Ascites": {
+      "value": "moderate",
+      "quote": "fluid wave on palpation, indicating moderate ascites"
+     },
+     "Albumin": {
+      "value": [
+       2.8,
+       "g/dL"
+      ],
+      "quote": "albumin level of 2.8 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.5,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin 2.5 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "consistent with grade 1-2 hepatic encephalopathy"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Albumin",
+      "issue": "Albumin exactly 2.8 g/dL on boundary; +2 per inclusive middle bin (+3 if <=2.8 treated as lowest bin).",
+      "alternative_score": 12
+     }
+    ]
+   }
+  },
+  {
+   "row": "211",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A gentleman in his 60s with a known history of alcohol-related cirrhosis presented for routine liver function tests. He had been compliant with alcohol abstinence for about a year and was on thiamine supplementation. His abdomen appeared flat, with no ascites noted on percussion or palpation. Blood examination revealed a slightly raised INR of 1.4 and an Albumin level of 3.5 g/dL. Bilirubin was slightly elevated at 2.7 mg/dL. He was oriented to time, place, and person with no visible signs of hepatic encephalopathy. His speech was fluent. His platelets were slightly reduced, and other hematologic parameters were within normal limits. Echocardiogram and ECG were normal. Abdominal ultrasound confirmed cirrhotic changes in the liver. Adequate hydration, nutrition, and adherence to current medication regimens were advised.",
+   "stored_relevant_entities": "{'Bilirubin': [2.7, 'mg/dL'], 'Ascites': 'absent', 'international normalized ratio': 1.4, 'Albumin': [3.5, 'g/dL'], 'Encephalopathy': 'No Encephalopathy'}",
+   "stored_answer": "7",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.4. Because the INR is less than 1.7, we add 1 to the score, making the current total 0 + 1 = 1.\nThe concentration of bilirubin is 2.7 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 1 + 2 = 3.\nThe concentration of albumin is 3.5 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 3 + 2 = 5.\nThe patient's ascites state is determined to be 'absent' and so we add 1 point to the score, making the current total 5 + 1 = 6.\nThe patient is determined to not have any encephalopathy and so we add one point to the score, making the current total 6 + 1 = 7.\nThe patient's child pugh score is 7.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "7",
+    "details": "Bili 2.7 (+2); no ascites (+1); INR 1.4 (+1); albumin 3.5 is not >3.5, so (+2); no HE (+1).",
+    "evidence_quote": "Albumin level of 3.5 g/dL. Bilirubin was slightly elevated at 2.7 mg/dL"
+   },
+   "blind_pass": {
+    "score": 7,
+    "working": "bili 2.7 +2; albumin 3.5 +2 (middle bin inclusive); INR 1.4 +1; ascites absent +1; encephalopathy none +1 = 7",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.4,
+      "quote": "INR of 1.4"
+     },
+     "Ascites": {
+      "value": "absent",
+      "quote": "no ascites noted on percussion or palpation"
+     },
+     "Albumin": {
+      "value": [
+       3.5,
+       "g/dL"
+      ],
+      "quote": "Albumin level of 3.5 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.7,
+       "mg/dL"
+      ],
+      "quote": "Bilirubin was slightly elevated at 2.7 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "No Encephalopathy",
+      "quote": "no visible signs of hepatic encephalopathy"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Albumin",
+      "issue": "Albumin exactly 3.5 g/dL on boundary; +2 per inclusive middle bin (+1 if >=3.5 treated as normal).",
+      "alternative_score": 6
+     }
+    ]
+   }
+  },
+  {
+   "row": "212",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A male patient in his early 70s with alcoholic liver disease and diabetes was brought to the hospital due to extreme confusion and unresponsiveness to verbal stimuli. He has been experiencing a progressively worsening mental state suggestive of stage 3-4 hepatic encephalopathy. Blood investigation revealed an INR of 1.6, suggesting a coagulopathy consistent with liver disease. His bilirubin was 1.9 mg/dL, and albumin 3.3 g/dL, reflecting liver damage. He has been prescribed a low-protein diet with lactulose and rifaximin and has been referred for an immediate assessment for liver transplantation. His HbA1c level was also measured, which showed well-controlled blood-glucose levels at 7 %.",
+   "stored_relevant_entities": "{'Bilirubin': [1.9, 'mg/dL'], 'international normalized ratio': 1.6, 'Albumin': [3.3, 'g/dL'], 'Encephalopathy': 'Grade 3-4'}",
+   "stored_answer": "8",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.6. Because the INR is less than 1.7, we add 1 to the score, making the current total 0 + 1 = 1.\nThe concentration of bilirubin is 1.9 mg/dL. Because the bilirubin concentration is less than 2 mg/dL, we add 1 to the score, making the current total 1 + 1 = 2.\nThe concentration of albumin is 3.3 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 2 + 2 = 4.\nThe patient's ascites state is not specified and so we will assume it to be absent. This means we add 1 point to the score, making the current total 4 + 1 = 5.\nThe encephalopathy state is determined to be 'Grade 3-4' and so we add three points to the score, making the current total 5 + 3 = 8.\nThe patient's child pugh score is 8.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "8",
+    "details": "Bili 1.9 (+1); INR 1.6 (+1); albumin 3.3 (+2); ascites not mentioned (+1); HE grade 3-4: unresponsive to verbal stimuli (+3).",
+    "evidence_quote": "extreme confusion and unresponsiveness to verbal stimuli... stage 3-4 hepatic encephalopathy"
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "bili 1.9 +1; albumin 3.3 +2; INR 1.6 +1; ascites not documented, assumed absent +1; encephalopathy grade 3-4 +3 = 8",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.6,
+      "quote": "INR of 1.6"
+     },
+     "Albumin": {
+      "value": [
+       3.3,
+       "g/dL"
+      ],
+      "quote": "albumin 3.3 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       1.9,
+       "mg/dL"
+      ],
+      "quote": "bilirubin was 1.9 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 3-4",
+      "quote": "suggestive of stage 3-4 hepatic encephalopathy"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Ascites not documented (no abdominal exam); assumed absent. Slight would give 9, moderate 10.",
+      "alternative_score": 9
+     }
+    ]
+   }
+  },
+  {
+   "row": "213",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old male with a history of cirrhosis 2/2 NASH who presented for a scheduled consultation. He mentions feeling bloated lately but denies any remarkable cognitive impairments. Physical examination revealed a mild JVD and minimally distended abdomen. Laboratory findings were notable for an INR of 1.5. His liver function test indicated compromised hepatic function with total bilirubin of 2.3 mg/dL and albumin levels at 3.1 g/dL. His hemoglobin was 11.9 g/dL and WBC count showed no alarming deviation from the norm. Electrocardiogram showed regular heart rhythms and echocardiography revealed preserved ejection fraction. He is maintained on a low-sodium diet and diuretics for ascitic control.",
+   "stored_relevant_entities": "{'Bilirubin': [2.3, 'mg/dL'], 'Ascites': 'slight', 'international normalized ratio': 1.5, 'Albumin': [3.1, 'g/dL'], 'Encephalopathy': 'No Encephalopathy'}",
+   "stored_answer": "8",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.5. Because the INR is less than 1.7, we add 1 to the score, making the current total 0 + 1 = 1.\nThe concentration of bilirubin is 2.3 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 1 + 2 = 3.\nThe concentration of albumin is 3.1 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 3 + 2 = 5.\nThe patient's ascites state is determined to be 'slight' and so we add 2 points to the score, making the current total 5 + 2 = 7.\nThe patient is determined to not have any encephalopathy and so we add one point to the score, making the current total 7 + 1 = 8.\nThe patient's child pugh score is 8.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "8",
+    "details": "Bili 2.3 (+2); minimally distended abdomen on diuretics = slight ascites (+2); INR 1.5 (+1); albumin 3.1 (+2); no HE (+1).",
+    "evidence_quote": "minimally distended abdomen... diuretics for ascitic control"
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "bili 2.3 +2; albumin 3.1 +2; INR 1.5 +1; ascites slight +2; encephalopathy none +1 = 8",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.5,
+      "quote": "INR of 1.5"
+     },
+     "Ascites": {
+      "value": "slight",
+      "quote": "minimally distended abdomen ... diuretics for ascitic control"
+     },
+     "Albumin": {
+      "value": [
+       3.1,
+       "g/dL"
+      ],
+      "quote": "albumin levels at 3.1 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.3,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin of 2.3 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "No Encephalopathy",
+      "quote": "denies any remarkable cognitive impairments"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Ascites grade not stated; inferred slight from 'minimally distended abdomen' and diuretic use. Absent would give 7.",
+      "alternative_score": 7
+     },
+     {
+      "field": "Encephalopathy",
+      "issue": "Encephalopathy based only on patient denial of cognitive impairment; no exam documented.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "214",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 68-year-old female with a history of Hepatitis C,diabetes, hypertension, and recently diagnosed cirrhosis presenting for a regular check-up. During the physical examination, the patient's abdomen was moderately distended, along with the presence of a palpable liver edge. Laboratory findings revealed coagulopathy with an INR of 2.2. Markers indicating an impairment of liver function were found with a total bilirubin at 1.7 mg/dL and albumin level of 2.6 g/dL. The patient had a fasting blood glucose level of 126 mg/dL, consistent with her known diagnosis of diabetes. Renal function was within normal limits with BUN 14 mg/dL and creatinine 0.9 mg/dL. She was instructed to continue her current medications, which included diuretics for ascites and antiviral medications for Hepatitis C.",
+   "stored_relevant_entities": "{'Bilirubin': [1.7, 'mg/dL'], 'Ascites': 'moderate', 'international normalized ratio': 2.2, 'Albumin': [2.6, 'g/dL']}",
+   "stored_answer": "10",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.2. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 1.7 mg/dL. Because the bilirubin concentration is less than 2 mg/dL, we add 1 to the score, making the current total 2 + 1 = 3.\nThe concentration of albumin is 2.6 g/dL. Because the albumin concentration is less than 2.8 g/dL, we add 3 points to the score, making the current total 3 + 3 = 6.\nThe patient's ascites state is determined to be 'moderate' and so we add 3 points to the score, making the current total 6 + 3 = 9.\nThe encephalopathy state is not specified, and so we assume that the patient does not have encephalopathy. We add one point to the score, making the current total 9 + 1 = 10.\nThe patient's child pugh score is 10.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "10",
+    "details": "Bili 1.7 (+1); moderately distended abdomen with ascites on diuretics = moderate (+3); INR 2.2 (+2); albumin 2.6 (+3); HE not mentioned (+1).",
+    "evidence_quote": "abdomen was moderately distended... diuretics for ascites"
+   },
+   "blind_pass": {
+    "score": 10,
+    "working": "bili 1.7 +1; albumin 2.6 +3; INR 2.2 +2; ascites moderate +3; encephalopathy not documented, assumed none +1 = 10",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.2,
+      "quote": "INR of 2.2"
+     },
+     "Ascites": {
+      "value": "moderate",
+      "quote": "abdomen was moderately distended ... diuretics for ascites"
+     },
+     "Albumin": {
+      "value": [
+       2.6,
+       "g/dL"
+      ],
+      "quote": "albumin level of 2.6 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       1.7,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin at 1.7 mg/dL"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Ascites grade inferred from 'moderately distended' abdomen; ascites itself not described on exam. Slight would give 9.",
+      "alternative_score": 9
+     },
+     {
+      "field": "Encephalopathy",
+      "issue": "Mental status/encephalopathy not documented; assumed none.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "215",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 69-year-old male with a past medical history of hypertension, chronic alcohol use, and cirrhosis presented for a routine check. He was sober and although slight mental slowness and mild asterixis were present on exam, There was no evidence of ascites. The laboratory results revealed an INR of 1.9, increasing the concern for impaired liver function. His serum total bilirubin was 2.0 mg/dL and albumin was 3.2 g/dL, indicating diminished liver function. The patient's blood glucose was 120 mg/dL, raising the suspicion of prediabetes, and his creatinine was 1.0 mg/dL, indicating good renal function. He was ordered to abstain from alcohol consumption, maintain a balanced diet, and monitor his blood glucose regularly. His medications including diuretics and antihypertensives remained unaltered until his next appointment.",
+   "stored_relevant_entities": "{'Bilirubin': [2.0, 'mg/dL'], 'Ascites': 'absent', 'international normalized ratio': 1.9, 'Albumin': [3.2, 'g/dL'], 'Encephalopathy': 'Grade 1-2'}",
+   "stored_answer": "9",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.9. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 2.0 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 2 + 2 = 4.\nThe concentration of albumin is 3.2 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 4 + 2 = 6.\nThe patient's ascites state is determined to be 'absent' and so we add 1 point to the score, making the current total 6 + 1 = 7.\nThe encephalopathy state is determined to be 'Grade 1-2' and so we add two points to the score, making the current total 7 + 2 = 9.\nThe patient's child pugh score is 9.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "9",
+    "details": "Bili 2.0 is in the 2-3 bin (+2); no ascites (+1); INR 1.9 (+2); albumin 3.2 (+2); slight mental slowness and mild asterixis = grade 1-2 (+2).",
+    "evidence_quote": "slight mental slowness and mild asterixis... no evidence of ascites"
+   },
+   "blind_pass": {
+    "score": 9,
+    "working": "bili 2.0 +2 (middle bin inclusive); albumin 3.2 +2; INR 1.9 +2; ascites absent +1; encephalopathy grade 1-2 +2 = 9",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.9,
+      "quote": "INR of 1.9"
+     },
+     "Ascites": {
+      "value": "absent",
+      "quote": "There was no evidence of ascites"
+     },
+     "Albumin": {
+      "value": [
+       3.2,
+       "g/dL"
+      ],
+      "quote": "albumin was 3.2 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.0,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin was 2.0 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "slight mental slowness and mild asterixis"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "No ascites on exam but patient is on diuretics; if ascites is considered medically controlled it may be scored slight (+2).",
+      "alternative_score": 10
+     },
+     {
+      "field": "Bilirubin",
+      "issue": "Bilirubin exactly 2.0 mg/dL on boundary; +2 per inclusive middle bin (+1 if <=2 treated as lowest bin).",
+      "alternative_score": 8
+     }
+    ]
+   }
+  },
+  {
+   "row": "216",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58-year-old female with a PMH of Hepatitis C, hypertension, and recently diagnosed cirrhosis presents for a routine check-up. On neurological examination, the patient was disoriented and exhibited asterixis.Further, laboratory results were noted with total bilirubin at 2.2 mg/dL, suggestive of dysfunctional liver, and an international normalized ratio (INR) of 2.1 indicating a potential coagulopathy. Other lab results pointed to a serum albumin level of 3.0 g/dL. Her white cell count was elevated at 12,000 per μL which, combined with a low-grade pyrexia of 100.4°F, raises suspicion of an underlying infective process. Further investigations and strict monitoring are suggested, and she has been referred to a neurologist regarding her encephalopathy. Daily administration of her prescribed medications is strongly advised for better control over her hypertension and liver disease.",
+   "stored_relevant_entities": "{'Bilirubin': [2.2, 'mg/dL'], 'international normalized ratio': 2.1, 'Albumin': [3.0, 'g/dL'], 'Encephalopathy': 'Grade 3-4'}",
+   "stored_answer": "10",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.1. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 2.2 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 2 + 2 = 4.\nThe concentration of albumin is 3.0 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 4 + 2 = 6.\nThe patient's ascites state is not specified and so we will assume it to be absent. This means we add 1 point to the score, making the current total 6 + 1 = 7.\nThe encephalopathy state is determined to be 'Grade 3-4' and so we add three points to the score, making the current total 7 + 3 = 10.\nThe patient's child pugh score is 10.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "9 (if HE graded 1-2) / 10 (if 3-4)",
+    "details": "Bili 2.2 (+2), INR 2.1 (+2), albumin 3.0 (+2) and ascites (not mentioned, +1) are fine. The note does not say how severe the HE is. 'Disoriented and exhibited asterixis' in a patient at a routine check-up matches West Haven grade 2 (disorientation, asterixis), not grade 3-4 (somnolence, stupor, gross disorientation, coma). The stored value is Grade 3-4 (+3), the same as v1.0. Grade 1-2 is the better-supported reading and gives 9. This also clashes with row 201, where a more impaired patient (oriented to self only, lethargic) was stored as Grade 1-2. Either state the HE grade in the note or change it to Grade 1-2 (answer 9).",
+    "evidence_quote": "presents for a routine check-up. On neurological examination, the patient was disoriented and exhibited asterixis"
+   },
+   "blind_pass": {
+    "score": 9,
+    "working": "bili 2.2 +2; albumin 3.0 +2; INR 2.1 +2; ascites not documented, assumed absent +1; encephalopathy grade 1-2 +2 = 9",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.1,
+      "quote": "INR) of 2.1"
+     },
+     "Albumin": {
+      "value": [
+       3.0,
+       "g/dL"
+      ],
+      "quote": "serum albumin level of 3.0 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.2,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin at 2.2 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "the patient was disoriented and exhibited asterixis"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Ascites not documented; assumed absent. Slight would give 10.",
+      "alternative_score": 10
+     },
+     {
+      "field": "Encephalopathy",
+      "issue": "HE grade not stated; disorientation with asterixis fits grade 2, but degree of disorientation unspecified (grade 3 possible).",
+      "alternative_score": 10
+     }
+    ]
+   }
+  },
+  {
+   "row": "217",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 64-year-old gentleman with a medical history of ADPKD and cirrhosis secondary to NASH presented for a routine appointment. The patient's abdomen was slightly distended. Palpation revealed mild ascites. His cognitive function was fair, with fluent speech and no indications of hepatic encephalopathy. His latest laboratory workup showed slightly elevated INR, recorded at 1.7. Liver function tests determined a trimmed albumin level at 3.3 g/dL and total bilirubin of 1.5 mg/dL, suggestive of declining hepatic synthetic function. His creatinine level was slightly raised, indicating renal function needs monitoring considering the underlying ADPKD. The patient was instructed to maintain a low salt diet and continue his current prescribed diuretic therapy to manage ascites. Further instructions with strict alcohol avoidance were emphasized on discharge.",
+   "stored_relevant_entities": "{'Bilirubin': [1.5, 'mg/dL'], 'Ascites': 'slight', 'international normalized ratio': 1.7, 'Albumin': [3.3, 'g/dL'], 'Encephalopathy': 'No Encephalopathy'}",
+   "stored_answer": "8",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.7. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 1.5 mg/dL. Because the bilirubin concentration is less than 2 mg/dL, we add 1 to the score, making the current total 2 + 1 = 3.\nThe concentration of albumin is 3.3 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 3 + 2 = 5.\nThe patient's ascites state is determined to be 'slight' and so we add 2 points to the score, making the current total 5 + 2 = 7.\nThe patient is determined to not have any encephalopathy and so we add one point to the score, making the current total 7 + 1 = 8.\nThe patient's child pugh score is 8.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "8",
+    "details": "Bili 1.5 (+1); mild ascites = slight (+2); INR 1.7 is in the 1.7-2.3 bin (+2); albumin 3.3 (+2); no HE (+1).",
+    "evidence_quote": "Palpation revealed mild ascites... no indications of hepatic encephalopathy... INR, recorded at 1.7"
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "bili 1.5 +1; albumin 3.3 +2; INR 1.7 +2 (middle bin inclusive); ascites slight +2; encephalopathy none +1 = 8",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.7,
+      "quote": "INR, recorded at 1.7"
+     },
+     "Ascites": {
+      "value": "slight",
+      "quote": "Palpation revealed mild ascites"
+     },
+     "Albumin": {
+      "value": [
+       3.3,
+       "g/dL"
+      ],
+      "quote": "albumin level at 3.3 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       1.5,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin of 1.5 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "No Encephalopathy",
+      "quote": "no indications of hepatic encephalopathy"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "international normalized ratio",
+      "issue": "INR exactly 1.7 on boundary; +2 per inclusive middle bin (+1 if <=1.7 treated as lowest bin).",
+      "alternative_score": 7
+     }
+    ]
+   }
+  },
+  {
+   "row": "218",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 55-year-old female with a past medical history of primary Biliary Cholangitis (PBC) and cirrhosis presented with abdominal discomfort and episodic forgetfulness. Physical examination revealed an evidently distended abdomen with a fluid thrill sign indicative of moderate ascites. On biochemical investigation, the INR was elevated to 2.0, indicating the potential of coagulopathy. Laboratory data affirmed impaired liver function characterized by albumin levels at 2.7 g/dL and an elevated total bilirubin of 2.6 mg/dL. The CBC showed mild anemia with a hemoglobin level of 11.2 g/dL. Abdominal ultrasonography was advised to evaluate the extent of liver disease further. Medication instructions have been provided to manage the ascites and suspected hepatic encephalopathy. She was additionally prescribed Ursodeoxycholic Acid for PBC and was advised to adhere to a healthy lifestyle by monitoring her diet and avoiding alcohol.",
+   "stored_relevant_entities": "{'Bilirubin': [2.6, 'mg/dL'], 'Ascites': 'moderate', 'international normalized ratio': 2.0, 'Albumin': [2.7, 'g/dL'], 'Encephalopathy': 'Grade 1-2'}",
+   "stored_answer": "12",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 2.0. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 2.6 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 2 + 2 = 4.\nThe concentration of albumin is 2.7 g/dL. Because the albumin concentration is less than 2.8 g/dL, we add 3 points to the score, making the current total 4 + 3 = 7.\nThe patient's ascites state is determined to be 'moderate' and so we add 3 points to the score, making the current total 7 + 3 = 10.\nThe encephalopathy state is determined to be 'Grade 1-2' and so we add two points to the score, making the current total 10 + 2 = 12.\nThe patient's child pugh score is 12.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "12",
+    "details": "Bili 2.6 (+2); moderate ascites (+3); INR 2.0 (+2); albumin 2.7 (+3); episodic forgetfulness with suspected HE = grade 1-2 (+2).",
+    "evidence_quote": "episodic forgetfulness... fluid thrill sign indicative of moderate ascites"
+   },
+   "blind_pass": {
+    "score": 12,
+    "working": "bili 2.6 +2; albumin 2.7 +3; INR 2.0 +2; ascites moderate +3; encephalopathy grade 1-2 +2 = 12",
+    "fields": {
+     "international normalized ratio": {
+      "value": 2.0,
+      "quote": "INR was elevated to 2.0"
+     },
+     "Ascites": {
+      "value": "moderate",
+      "quote": "fluid thrill sign indicative of moderate ascites"
+     },
+     "Albumin": {
+      "value": [
+       2.7,
+       "g/dL"
+      ],
+      "quote": "albumin levels at 2.7 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.6,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin of 2.6 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "episodic forgetfulness ... suspected hepatic encephalopathy"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Encephalopathy",
+      "issue": "Encephalopathy only 'suspected' based on episodic forgetfulness; no neuro exam or grade documented. If none, score 11.",
+      "alternative_score": 11
+     }
+    ]
+   }
+  },
+  {
+   "row": "219",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 62-year-old male with a known history of primary sclerosing cholangitis and recently diagnosed cirrhosis arrived for his scheduled consultation. On examination, no notable ascites was reported. His latest laboratory results showed an INR of 1.6, implying altered coagulation status. Further testing revealed a total bilirubin level of 2.8 mg/dL and an albumin level of 3.4 g/dL, pointing to decreased liver function. No specific evidence or comment was documented concerning hepatic encephalopathy during the visit. His vital signs were relatively stable with a blood pressure of 122/78 mmHg. His fasting lipid panel came back normal, and his CRP was slightly elevated at 7.3 mg/L, suggesting an underlying inflammation/infection. The patient was recommended to continue the prescribed medications to manage his sclerosing cholangitis and regularly monitor his condition. They were also advised to return if he noticed any cognitive impairment or confusion.",
+   "stored_relevant_entities": "{'Bilirubin': [2.8, 'mg/dL'], 'Ascites': 'absent', 'international normalized ratio': 1.6, 'Albumin': [3.4, 'g/dL']}",
+   "stored_answer": "7",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.6. Because the INR is less than 1.7, we add 1 to the score, making the current total 0 + 1 = 1.\nThe concentration of bilirubin is 2.8 mg/dL. Because the bilirubin concentration is between 2 mg/dL and 3 mg/dL, we add 2 to the score, making the current total 1 + 2 = 3.\nThe concentration of albumin is 3.4 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 3 + 2 = 5.\nThe patient's ascites state is determined to be 'absent' and so we add 1 point to the score, making the current total 5 + 1 = 6.\nThe encephalopathy state is not specified, and so we assume that the patient does not have encephalopathy. We add one point to the score, making the current total 6 + 1 = 7.\nThe patient's child pugh score is 7.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "7",
+    "details": "Bili 2.8 (+2); no ascites (+1); INR 1.6 (+1); albumin 3.4 (+2); HE not documented = none (+1).",
+    "evidence_quote": "no notable ascites... No specific evidence or comment was documented concerning hepatic encephalopathy"
+   },
+   "blind_pass": {
+    "score": 7,
+    "working": "bili 2.8 +2; albumin 3.4 +2; INR 1.6 +1; ascites absent +1; encephalopathy not documented, assumed none +1 = 7",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.6,
+      "quote": "INR of 1.6"
+     },
+     "Ascites": {
+      "value": "absent",
+      "quote": "no notable ascites was reported"
+     },
+     "Albumin": {
+      "value": [
+       3.4,
+       "g/dL"
+      ],
+      "quote": "albumin level of 3.4 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.8,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin level of 2.8 mg/dL"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Encephalopathy",
+      "issue": "Note explicitly states no evidence or comment documented on hepatic encephalopathy; assumed none.",
+      "alternative_score": null
+     },
+     {
+      "field": "Ascites",
+      "issue": "'No notable ascites' could allow trace/slight ascites; taken as absent. Slight would give 8.",
+      "alternative_score": 8
+     }
+    ]
+   }
+  },
+  {
+   "row": "220",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 63-year-old male with recently diagnosed cirrhosis secondary to NAFLD came for a follow-up consultation. During the appointment, he exhibited confusion, asterixis, and slurred speech. Laboratory evaluations were remarkable with an increased INR value at 1.8. Liver function tests showed a total bilirubin count of 1.9 mg/dL and an albumin level of 3.1 g/dL demonstrating compromised liver function. Additional lab tests showed a glucose level at 130 mg/dL, though hemoglobin A1c was within acceptable bounds which indicate fairly well-controlled DM II. The patient was advised to maintain dietary restrictions and adhere to prescribed therapeutic management. Family intervention was also suggested considering his cognitive impairment. He was reassured that they would initiate steps to manage his encephalopathy right away.",
+   "stored_relevant_entities": "{'Bilirubin': [1.9, 'mg/dL'], 'international normalized ratio': 1.8, 'Albumin': [3.1, 'g/dL'], 'Encephalopathy': 'Grade 3-4'}",
+   "stored_answer": "9",
+   "stored_explanation": "The current child pugh score is 0.\nThe patient's INR is 1.8. Because the INR is between 1.7 and 2.3, we add two to the score, making the current total 0 + 2 = 2.\nThe concentration of bilirubin is 1.9 mg/dL. Because the bilirubin concentration is less than 2 mg/dL, we add 1 to the score, making the current total 2 + 1 = 3.\nThe concentration of albumin is 3.1 g/dL. Because the albumin concentration is between 2.8 g/dL and 3.5 g/dL, we add 2 points to the score, making the current total 3 + 2 = 5.\nThe patient's ascites state is not specified and so we will assume it to be absent. This means we add 1 point to the score, making the current total 5 + 1 = 6.\nThe encephalopathy state is determined to be 'Grade 3-4' and so we add three points to the score, making the current total 6 + 3 = 9.\nThe patient's child pugh score is 9.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "8 (if HE graded 1-2) / 9 (if 3-4)",
+    "details": "Bili 1.9 (+1), INR 1.8 (+2), albumin 3.1 (+2) and ascites (not mentioned, +1) are fine. The HE grade is ambiguous. Asterixis and slurred speech (dysarthria) are West Haven/Conn grade 2 signs, and the patient is an outpatient at a follow-up visit. 'Confusion' alone could be read as grade 3, but there is no somnolence, stupor, gross disorientation, hyperreflexia or rigidity. The stored value is Grade 3-4 (+3), the same as v1.0. Grade 1-2 would give 8. Specify the grade in the note, or accept either answer.",
+    "evidence_quote": "came for a follow-up consultation. During the appointment, he exhibited confusion, asterixis, and slurred speech"
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "bili 1.9 +1; albumin 3.1 +2; INR 1.8 +2; ascites not documented, assumed absent +1; encephalopathy grade 1-2 +2 = 8",
+    "fields": {
+     "international normalized ratio": {
+      "value": 1.8,
+      "quote": "INR value at 1.8"
+     },
+     "Albumin": {
+      "value": [
+       3.1,
+       "g/dL"
+      ],
+      "quote": "albumin level of 3.1 g/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       1.9,
+       "mg/dL"
+      ],
+      "quote": "total bilirubin count of 1.9 mg/dL"
+     },
+     "Encephalopathy": {
+      "value": "Grade 1-2",
+      "quote": "confusion, asterixis, and slurred speech"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Ascites",
+      "issue": "Ascites not documented; assumed absent. Slight would give 9.",
+      "alternative_score": 9
+     },
+     {
+      "field": "Encephalopathy",
+      "issue": "HE grade not stated; confusion with asterixis and slurred speech taken as grade 2.",
+      "alternative_score": null
+     }
+    ]
+   }
+  }
+ ]
+}

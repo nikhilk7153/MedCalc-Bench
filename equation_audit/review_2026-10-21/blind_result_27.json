@@ -1,0 +1,1232 @@
+{
+ "calculator_id": "27",
+ "rows": [
+  {
+   "row": "386",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A 65-year-old female"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "black stools over the past couple of days"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "She has a history of heart failure"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "has not experienced any recent fainting episodes"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "She denies any history of liver disease"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      34,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level of 34 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      13,
+      "g/dL"
+     ],
+     "quote": "Her hemoglobin level is 13 g/dL"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      90,
+      "mmHg"
+     ],
+     "quote": "systolic blood pressure was noted to be slightly low at 90 mmHg"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      80,
+      "bpm"
+     ],
+     "quote": "HR is 80 bpm"
+    }
+   },
+   "score": 9,
+   "score_working": "BUN 34 mg/dL (12.14 mmol/L) +4; Hb 13 (Female) +0; SBP 90 +2; HR 80 +0; melena +1; syncope +0; hepatic +0; cardiac failure +2; total 9",
+   "note_issues": []
+  },
+  {
+   "row": "387",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A middle-aged male"
+    },
+    "Hepatic disease history": {
+     "value": true,
+     "quote": "past medical history of chronic liver disease"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "a recent episode of syncope"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      95,
+      "mmHg"
+     ],
+     "quote": "today's measurement was 95 mmHg systolic"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      110,
+      "beats per minute"
+     ],
+     "quote": "His pulse was slightly elevated at 110 beats per minute"
+    },
+    "Cardiac Failure Present": {
+     "value": false,
+     "quote": "He does not have a history of heart failure"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "noting no presence of dark, tarry stools"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      21,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) level at 21 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      14,
+      "g/dL"
+     ],
+     "quote": "his hemoglobin was on par with his previous readings at 14 g/dL"
+    }
+   },
+   "score": 9,
+   "score_working": "BUN 21 mg/dL (7.50 mmol/L) +2; Hb 14 (Male) +0; SBP 95 +2; HR 110 +1; melena +0; syncope +2; hepatic +2; cardiac failure +0; total 9",
+   "note_issues": []
+  },
+  {
+   "row": "388",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A 52-year-old gentleman"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "an incidence of sudden fainting earlier in the day"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "His medical records don't reveal any hepatic disease history"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "an ongoing treatment for heart failure"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      110,
+      "beats per minute"
+     ],
+     "quote": "slightly elevated pulse rate of 110 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      103,
+      "mmHg"
+     ],
+     "quote": "stable at a systolic 103 mmHg"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "denying any past or present occurrence of black tarry stools"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      18,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) concentration of 18 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      14,
+      "g/dL"
+     ],
+     "quote": "a hemoglobin count of 14 g/dL"
+    }
+   },
+   "score": 6,
+   "score_working": "BUN 18 mg/dL (6.43 mmol/L) +0; Hb 14 (Male) +0; SBP 103 +1; HR 110 +1; melena +0; syncope +2; hepatic +0; cardiac failure +2; total 6",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "18 mg/dL = 6.43 mmol/L, just under the 6.5 cutoff (18.2 mg/dL); a looser conversion or rounding to 6.5 would give +2.",
+     "alternative_score": 8
+    }
+   ]
+  },
+  {
+   "row": "389",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A 61-year-old female"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "She denies any history of chronic liver disease"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "nor has she had any recent fainting episodes"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "stating they're a regular brown color, not black or tarry in nature"
+    },
+    "Cardiac Failure Present": {
+     "value": false,
+     "quote": "with no heart failure events noted"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      115,
+      "beats per minute"
+     ],
+     "quote": "heart rate reading of 115 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      108,
+      "mmHg"
+     ],
+     "quote": "systolic blood pressure at 108 mmHg"
+    },
+    "Hemoglobin": {
+     "value": [
+      10.4,
+      "g/dL"
+     ],
+     "quote": "hemoglobin level of 10.4 g/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      18,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) level of 18 mg/dL"
+    }
+   },
+   "score": 3,
+   "score_working": "BUN 18 mg/dL (6.43 mmol/L) +0; Hb 10.4 (Female) +1; SBP 108 +1; HR 115 +1; melena +0; syncope +0; hepatic +0; cardiac failure +0; total 3",
+   "note_issues": [
+    {
+     "field": "Heart Rate or Pulse",
+     "issue": "'appears vitally stable' contradicts HR 115 bpm (tachycardic) and SBP 108; explicit numbers used, so no score change.",
+     "alternative_score": null
+    },
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "18 mg/dL = 6.43 mmol/L, just under the 6.5 cutoff; rounding up would add +2.",
+     "alternative_score": 5
+    }
+   ]
+  },
+  {
+   "row": "390",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A 69-year-old male"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "complaining of dark, tarry stools over the last two days"
+    },
+    "Cardiac Failure Present": {
+     "value": false,
+     "quote": "Claiming no history of heart failure"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      88,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 88 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure reading of 130 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      18,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) level of 18 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      13,
+      "g/dL"
+     ],
+     "quote": "hemoglobin concentration at 13 g/dL"
+    }
+   },
+   "score": 1,
+   "score_working": "BUN 18 mg/dL (6.43 mmol/L) +0; Hb 13 (Male) +0; SBP 130 +0; HR 88 +0; melena +1; syncope +0; hepatic +0; cardiac failure +0; total 1",
+   "note_issues": [
+    {
+     "field": "Recent Syncope, Hepatic disease history",
+     "issue": "Note silent on Recent Syncope, Hepatic disease history; treated as absent. If present, score would rise by up to 4.",
+     "alternative_score": null
+    },
+    {
+     "field": "Hemoglobin",
+     "issue": "Hb 13 g/dL sits exactly at male cutoff (>=13 = 0); if read as <13 it would be +1.",
+     "alternative_score": 2
+    },
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "18 mg/dL = 6.43 mmol/L, just under 6.5 cutoff; rounding up would add +2.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "391",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A 58-year-old female"
+    },
+    "Hepatic disease history": {
+     "value": true,
+     "quote": "presents with a history of liver disease"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "recent episode of syncope"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      96,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 96 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure at 120 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      22,
+      "mmol/L"
+     ],
+     "quote": "mildly elevated blood urea nitrogen levels at 22 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      12,
+      "g/dL"
+     ],
+     "quote": "lower boundary of normal at 12 g/dL"
+    }
+   },
+   "score": 8,
+   "score_working": "BUN 22 mmol/L +4; Hb 12 (Female) +0; SBP 120 +0; HR 96 +0; melena +0; syncope +2; hepatic +2; cardiac failure +0; total 8",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 22 mmol/L (~62 mg/dL) described as 'mildly elevated'; likely unit typo for 22 mg/dL (7.86 mmol/L -> +2 instead of +4).",
+     "alternative_score": 6
+    },
+    {
+     "field": "Melena Present, Cardiac Failure Present",
+     "issue": "Note silent on Melena Present, Cardiac Failure Present; treated as absent. If present, score would rise by up to 3.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "392",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A male patient"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "no history of hepatic disease"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "has been under management for heart failure"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      108,
+      "beats per minute"
+     ],
+     "quote": "heart rate was higher than usual at 108 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      100,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure was noted to be 100 mm Hg"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "normal brownish stools, ruling out the possibility of melena"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      25,
+      "mg/dL"
+     ],
+     "quote": "BUN at slightly elevated at 25 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      10,
+      "g/dL"
+     ],
+     "quote": "hemoglobin was marginally decreased, currently at 10 g/dL"
+    }
+   },
+   "score": 10,
+   "score_working": "BUN 25 mg/dL (8.93 mmol/L) +3; Hb 10 (Male) +3; SBP 100 +1; HR 108 +1; melena +0; syncope +0; hepatic +0; cardiac failure +2; total 10",
+   "note_issues": [
+    {
+     "field": "Recent Syncope",
+     "issue": "Note silent on Recent Syncope; treated as absent. If present, score would rise by up to 2.",
+     "alternative_score": null
+    },
+    {
+     "field": "Hemoglobin",
+     "issue": "Hb exactly 10 g/dL at male boundary (10-<12 = +3, <10 = +6); 'marginally decreased' understates it. If treated as <10, +6.",
+     "alternative_score": 13
+    },
+    {
+     "field": "Systolic Blood Pressure",
+     "issue": "SBP exactly 100 at boundary (100-109 = +1; 90-99 = +2).",
+     "alternative_score": 11
+    }
+   ]
+  },
+  {
+   "row": "393",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A 62-year-old male"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      72,
+      "beats per minute"
+     ],
+     "quote": "heart rate noted at 72 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      110,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure reading of 110 mm Hg"
+    },
+    "Cardiac Failure Present": {
+     "value": false,
+     "quote": "no prior history of cardiac failure"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "nor has he reported any recent fainting spells"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      30,
+      "mg/dL"
+     ],
+     "quote": "elevated BUN level at 30 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      14,
+      "g/dL"
+     ],
+     "quote": "hemoglobin was notably normal at 14 g/dL"
+    }
+   },
+   "score": 4,
+   "score_working": "BUN 30 mg/dL (10.71 mmol/L) +4; Hb 14 (Male) +0; SBP 110 +0; HR 72 +0; melena +0; syncope +0; hepatic +0; cardiac failure +0; total 4",
+   "note_issues": [
+    {
+     "field": "Melena Present, Hepatic disease history",
+     "issue": "Note silent on Melena Present, Hepatic disease history; treated as absent. If present, score would rise by up to 3.",
+     "alternative_score": null
+    },
+    {
+     "field": "Systolic Blood Pressure",
+     "issue": "SBP exactly 110 at boundary (>=110 = 0; 100-109 = +1).",
+     "alternative_score": 5
+    }
+   ]
+  },
+  {
+   "row": "394",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "a female patient"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "just after an episode of sudden fainting"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "concurrent occurrence of dark, tarry stools"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      80,
+      "beats per minute"
+     ],
+     "quote": "stable heart rate of 80 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      115,
+      "mm Hg"
+     ],
+     "quote": "good blood pressure at 115 mm Hg systolic"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "The patient denies having any hepatic ailments"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      28,
+      "mmol/L"
+     ],
+     "quote": "higher than average BUN level at 28 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      11,
+      "g/dL"
+     ],
+     "quote": "lower than usual hemoglobin levels at 11 g/dL"
+    }
+   },
+   "score": 10,
+   "score_working": "BUN 28 mmol/L +6; Hb 11 (Female) +1; SBP 115 +0; HR 80 +0; melena +1; syncope +2; hepatic +0; cardiac failure +0; total 10",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 28 mmol/L (~78 mg/dL) described only as 'higher than average'; likely unit typo for 28 mg/dL (10.0 mmol/L -> +4 instead of +6).",
+     "alternative_score": 8
+    },
+    {
+     "field": "Cardiac Failure Present",
+     "issue": "Note silent on Cardiac Failure Present; treated as absent. If present, score would rise by up to 2.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "395",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A female patient in her late sixties"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "after heart failure was diagnosed earlier this year"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "experiencing no recent episodes of fainting"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      92,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 92 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      140,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure of 140 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      24,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) level of 24 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      9,
+      "g/dL"
+     ],
+     "quote": "slightly reduced hemoglobin count at 9 g/dL"
+    }
+   },
+   "score": 11,
+   "score_working": "BUN 24 mg/dL (8.57 mmol/L) +3; Hb 9 (Female) +6; SBP 140 +0; HR 92 +0; melena +0; syncope +0; hepatic +0; cardiac failure +2; total 11",
+   "note_issues": [
+    {
+     "field": "Hemoglobin",
+     "issue": "Hb 9 g/dL described as 'slightly reduced' though it is in the highest-risk band (<10 = +6); explicit value used.",
+     "alternative_score": null
+    },
+    {
+     "field": "Melena Present, Hepatic disease history",
+     "issue": "Note silent on Melena Present, Hepatic disease history; treated as absent. If present, score would rise by up to 3.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "396",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A 60-year-old male"
+    },
+    "Hepatic disease history": {
+     "value": true,
+     "quote": "known history of liver disease"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "several instances of passing black, tarry stools in recent days"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      85,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 85 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      128,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure of 128 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      20,
+      "mmol/L"
+     ],
+     "quote": "BUN level at 20 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      15,
+      "g/dL"
+     ],
+     "quote": "hemoglobin concentration of 15 g/dL"
+    }
+   },
+   "score": 7,
+   "score_working": "BUN 20 mmol/L +4; Hb 15 (Male) +0; SBP 128 +0; HR 85 +0; melena +1; syncope +0; hepatic +2; cardiac failure +0; total 7",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 20 mmol/L (~56 mg/dL) is plausible but may be a unit typo for 20 mg/dL (7.14 mmol/L -> +2 instead of +4). Labs are 'recent laboratory studies', timing relative to presentation unclear.",
+     "alternative_score": 5
+    },
+    {
+     "field": "Recent Syncope, Cardiac Failure Present",
+     "issue": "Note silent on Recent Syncope, Cardiac Failure Present; treated as absent. If present, score would rise by up to 4.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "397",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A male patient"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "recently experiencing an episode of fainting"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      78,
+      "beats per minute"
+     ],
+     "quote": "relaxed heart rate of 78 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 120 mm Hg systolic"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "denied any instances of darkened, coffee-ground-like stools"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      33,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) at 33 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      14.5,
+      "g/dL"
+     ],
+     "quote": "good hemoglobin reading of 14.5 g/dL"
+    },
+    "Cardiac Failure Present": {
+     "value": false,
+     "quote": "The patient denied any history of heart failure"
+    }
+   },
+   "score": 6,
+   "score_working": "BUN 33 mg/dL (11.79 mmol/L) +4; Hb 14.5 (Male) +0; SBP 120 +0; HR 78 +0; melena +0; syncope +2; hepatic +0; cardiac failure +0; total 6",
+   "note_issues": [
+    {
+     "field": "Melena Present",
+     "issue": "Denial phrased as 'coffee-ground-like stools' (coffee-ground describes vomitus); mixed terminology but read as denial of dark stools. If melena considered not addressed/present, +1.",
+     "alternative_score": 7
+    },
+    {
+     "field": "Hepatic disease history",
+     "issue": "Note silent on Hepatic disease history; treated as absent. If present, score would rise by up to 2.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "398",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A 53-year-old female"
+    },
+    "Hepatic disease history": {
+     "value": true,
+     "quote": "recently diagnosed with liver disease"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "passage of black, tarry stools over the past couple of days"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      90,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 90 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      125,
+      "mm Hg"
+     ],
+     "quote": "blood pressure at 125/80 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      27,
+      "mmol/L"
+     ],
+     "quote": "Blood Urea Nitrogen (BUN) level of 27 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      11.5,
+      "g/dL"
+     ],
+     "quote": "hemoglobin was slightly lower than her average figures at 11.5 g/dL"
+    }
+   },
+   "score": 10,
+   "score_working": "BUN 27 mmol/L +6; Hb 11.5 (Female) +1; SBP 125 +0; HR 90 +0; melena +1; syncope +0; hepatic +2; cardiac failure +0; total 10",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 27 mmol/L (~76 mg/dL) in a 'clinically stable' patient; possible unit typo for 27 mg/dL (9.64 mmol/L -> +3 instead of +6).",
+     "alternative_score": 7
+    },
+    {
+     "field": "Recent Syncope, Cardiac Failure Present",
+     "issue": "Note silent on Recent Syncope, Cardiac Failure Present; treated as absent. If present, score would rise by up to 4.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "399",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A 67-year-old gentleman"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "has a history of cardiac failure"
+    },
+    "Hepatic disease history": {
+     "value": true,
+     "quote": "and liver disease"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      76,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 76 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      135,
+      "mmHg"
+     ],
+     "quote": "systolic 135 mmHg"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "He denied any recent black-out episodes"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      30,
+      "mg/dL"
+     ],
+     "quote": "Blood Urea Nitrogen (BUN) level at 30 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      16,
+      "g/dL"
+     ],
+     "quote": "hemoglobin concentration at 16 g/dL"
+    }
+   },
+   "score": 8,
+   "score_working": "BUN 30 mg/dL (10.71 mmol/L) +4; Hb 16 (Male) +0; SBP 135 +0; HR 76 +0; melena +0; syncope +0; hepatic +2; cardiac failure +2; total 8",
+   "note_issues": [
+    {
+     "field": "Recent Syncope",
+     "issue": "'black-out episodes' used for syncope; could be confused with black stools, but either reading gives 0 for both.",
+     "alternative_score": null
+    },
+    {
+     "field": "Melena Present",
+     "issue": "Note silent on Melena Present; treated as absent. If present, score would rise by up to 1.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "400",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A patient came in for her evaluation"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "after a recent fainting episode"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      98,
+      "beats per minute"
+     ],
+     "quote": "elevated heart rate at 98 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      118,
+      "mm Hg"
+     ],
+     "quote": "systolic measurement at 118 mm Hg"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "noticing black, tarry stools"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      21,
+      "mg/dL"
+     ],
+     "quote": "urea nitrogen level moderately high at 21 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      12,
+      "g/dL"
+     ],
+     "quote": "a low hemoglobin count at 12 g/dL"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "confirmed the absence of any chronic liver conditions"
+    }
+   },
+   "score": 5,
+   "score_working": "BUN 21 mg/dL (7.50 mmol/L) +2; Hb 12 (Female) +0; SBP 118 +0; HR 98 +0; melena +1; syncope +2; hepatic +0; cardiac failure +0; total 5",
+   "note_issues": [
+    {
+     "field": "Hemoglobin",
+     "issue": "Hb 12 g/dL called 'low', but for a female 12 is the >=12 band (0); if treated as <12, +1. Sex inferred only from pronouns.",
+     "alternative_score": 6
+    },
+    {
+     "field": "Heart Rate or Pulse",
+     "issue": "HR 98 described as 'elevated' but below the >=100 threshold; explicit value used.",
+     "alternative_score": null
+    },
+    {
+     "field": "Cardiac Failure Present",
+     "issue": "Note silent on Cardiac Failure Present; treated as absent. If present, score would rise by up to 2.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "401",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A woman in her late sixties"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "with history of heart failure"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "recent episodes of black, tarry stools"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      82,
+      "beats per minute"
+     ],
+     "quote": "heart rate was noted to be 82 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      105,
+      "mmHg"
+     ],
+     "quote": "systolic blood pressure reading was at 105 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      23,
+      "mmol/L"
+     ],
+     "quote": "blood urea nitrogen (BUN) level at 23 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      9.5,
+      "g/dL"
+     ],
+     "quote": "hemoglobin count was found to be below normal, at 9.5 g/dL"
+    }
+   },
+   "score": 14,
+   "score_working": "BUN 23 mmol/L +4; Hb 9.5 (Female) +6; SBP 105 +1; HR 82 +0; melena +1; syncope +0; hepatic +0; cardiac failure +2; total 14",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 23 mmol/L (~64 mg/dL); possible unit typo for 23 mg/dL (8.21 mmol/L -> +3 instead of +4).",
+     "alternative_score": 13
+    },
+    {
+     "field": "Recent Syncope, Hepatic disease history",
+     "issue": "Note silent on Recent Syncope, Hepatic disease history; treated as absent. If present, score would rise by up to 4.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "402",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "a male in his mid-seventies"
+    },
+    "Hepatic disease history": {
+     "value": true,
+     "quote": "known to have chronic liver disease"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      94,
+      "beats per minute"
+     ],
+     "quote": "heart rate was fairly on the high side with a reading of 94 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      112,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure was measured at 112 mm Hg"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "not having suffered any recent episodes of fainting"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      26,
+      "mg/dL"
+     ],
+     "quote": "Blood Urea Nitrogen (BUN) level at 26 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      14.2,
+      "g/dL"
+     ],
+     "quote": "hemoglobin stood healthy at 14.2 g/dL"
+    }
+   },
+   "score": 5,
+   "score_working": "BUN 26 mg/dL (9.29 mmol/L) +3; Hb 14.2 (Male) +0; SBP 112 +0; HR 94 +0; melena +0; syncope +0; hepatic +2; cardiac failure +0; total 5",
+   "note_issues": [
+    {
+     "field": "Heart Rate or Pulse",
+     "issue": "HR 94 described as 'on the high side' but below 100 threshold; explicit value used.",
+     "alternative_score": null
+    },
+    {
+     "field": "Melena Present, Cardiac Failure Present",
+     "issue": "Note silent on Melena Present, Cardiac Failure Present; treated as absent. If present, score would rise by up to 3.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "403",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A male arrived"
+    },
+    "Recent Syncope": {
+     "value": true,
+     "quote": "after a recent syncopal episode"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      100,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 100 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      110,
+      "mm Hg"
+     ],
+     "quote": "systolic blood pressure of 110 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      29,
+      "mmol/L"
+     ],
+     "quote": "BUN of 29 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      12.5,
+      "g/dL"
+     ],
+     "quote": "hemoglobin of 12.5 g/dL"
+    },
+    "Hepatic disease history": {
+     "value": false,
+     "quote": "denies current or past liver conditions"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "does not exhibit any symptoms or report any cases of dark, tarry stools"
+    },
+    "Cardiac Failure Present": {
+     "value": false,
+     "quote": "no history of heart failure"
+    }
+   },
+   "score": 10,
+   "score_working": "BUN 29 mmol/L +6; Hb 12.5 (Male) +1; SBP 110 +0; HR 100 +1; melena +0; syncope +2; hepatic +0; cardiac failure +0; total 10",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 29 mmol/L (~81 mg/dL) in an outpatient 'review'; possible unit typo for 29 mg/dL (10.36 mmol/L -> +4 instead of +6).",
+     "alternative_score": 8
+    },
+    {
+     "field": "Heart Rate or Pulse",
+     "issue": "HR exactly 100 at threshold (>=100 = +1); SBP exactly 110 at boundary (>=110 = 0).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "404",
+   "fields": {
+    "sex": {
+     "value": "Female",
+     "quote": "A 70-year-old woman"
+    },
+    "Melena Present": {
+     "value": true,
+     "quote": "recent episodes of black, tarry stools"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      86,
+      "beats per minute"
+     ],
+     "quote": "rested heart rate at 86 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      115,
+      "mmHg"
+     ],
+     "quote": "plateaued at 115 mmHg systolic"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "she denied any recent episodes of fainting"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      25,
+      "mg/dL"
+     ],
+     "quote": "Blood Urea Nitrogen (BUN) level at 25 mg/dL"
+    },
+    "Hemoglobin": {
+     "value": [
+      13,
+      "g/dL"
+     ],
+     "quote": "within normal limits at 13 g/dL"
+    }
+   },
+   "score": 4,
+   "score_working": "BUN 25 mg/dL (8.93 mmol/L) +3; Hb 13 (Female) +0; SBP 115 +0; HR 86 +0; melena +1; syncope +0; hepatic +0; cardiac failure +0; total 4",
+   "note_issues": [
+    {
+     "field": "Cardiac Failure Present, Hepatic disease history",
+     "issue": "Note silent on Cardiac Failure Present, Hepatic disease history; treated as absent. If present, score would rise by up to 4.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "405",
+   "fields": {
+    "sex": {
+     "value": "Male",
+     "quote": "A gentleman in his late fifties"
+    },
+    "Cardiac Failure Present": {
+     "value": true,
+     "quote": "managing heart failure"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      77,
+      "beats per minute"
+     ],
+     "quote": "resting heart rate of 77 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mmHg"
+     ],
+     "quote": "blood pressure at 130/85 mmHg"
+    },
+    "Recent Syncope": {
+     "value": false,
+     "quote": "He reported no recent fainting events"
+    },
+    "Melena Present": {
+     "value": false,
+     "quote": "hasn't noticed any black, tarry stools"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      24,
+      "mmol/L"
+     ],
+     "quote": "Blood Urea Nitrogen level at 24 mmol/L"
+    },
+    "Hemoglobin": {
+     "value": [
+      10.2,
+      "g/dL"
+     ],
+     "quote": "reduced hemoglobin level of 10.2 g/dL"
+    }
+   },
+   "score": 9,
+   "score_working": "BUN 24 mmol/L +4; Hb 10.2 (Male) +3; SBP 130 +0; HR 77 +0; melena +0; syncope +0; hepatic +0; cardiac failure +2; total 9",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN 24 mmol/L (~67 mg/dL) at a routine consultation; possible unit typo for 24 mg/dL (8.57 mmol/L -> +3 instead of +4).",
+     "alternative_score": 8
+    },
+    {
+     "field": "Hepatic disease history",
+     "issue": "Note silent on Hepatic disease history; treated as absent. If present, score would rise by up to 2.",
+     "alternative_score": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+# secrets
+.env
+
+# environments and caches
+.venv_openai028/
+__pycache__/
+.DS_Store
+.vscode/
+
+# large backups (copies of the GPU instance and pre-edit file versions); keep the archive's scripts and notes
+gpu_backup_2026-10-22/
+session_archive_2026-10-22/*
+!session_archive_2026-10-22/*.py
+!session_archive_2026-10-22/*.md
+!session_archive_2026-10-22/*.txt
+
+# separate git repository
+medcalc_verified_code/

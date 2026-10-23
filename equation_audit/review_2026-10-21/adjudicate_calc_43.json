@@ -1,0 +1,1186 @@
+{
+ "calculator_id": "43",
+ "calculator_name": "Sequential Organ Failure Assessment (SOFA) Score",
+ "mdcalc_source": "https://www.mdcalc.com/calc/691/sequential-organ-failure-assessment-sofa-score (platelet, GCS, bilirubin, cardiovascular, renal bands fetched directly; the PaO2/FiO2 point table did not render in the fetch, so respiratory bands are the standard MDCalc/Vincent 1996 ones)",
+ "mdcalc_rules": "Use worst value over 24 h. Resp PaO2/FiO2: >=400 0; 300-399 +1; 200-299 +2; <=199 and not mechanically ventilated (CPAP counts as ventilated) +2; 100-199 ventilated +3; <100 ventilated +4. Platelets x10^3/uL: >=150 0; 100-149 +1; 50-99 +2; 20-49 +3; <20 +4. GCS: 15 0; 13-14 +1; 10-12 +2; 6-9 +3; <6 +4. Bilirubin mg/dL (umol/L): <1.2 (<20) 0; 1.2-1.9 (20-32) +1; 2.0-5.9 (33-101) +2; 6.0-11.9 (102-204) +3; >=12 (>204) +4. CV (mcg/kg/min): no hypotension 0; MAP <70 +1; dopamine <=5 or any dobutamine +2; dopamine >5 or epi <=0.1 or norepi <=0.1 +3; dopamine >15 or epi >0.1 or norepi >0.1 +4. Renal creatinine mg/dL (umol/L): <1.2 (<110) 0; 1.2-1.9 (110-170) +1; 2.0-3.4 (171-299) +2; 3.5-4.9 (300-440) or UO <500 mL/day +3; >=5.0 (>440) or UO <200 mL/day +4.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "No substantive scoring difference found. Respiratory, CV (pressor hierarchy evaluated before MAP; MAP=(SBP+2*DBP)/3 <70 -> 1; hypotension flag used only when BP absent), GCS, platelets, bilirubin and renal (max of creatinine and urine output) bands and boundaries match MDCalc. CPAP is treated the same as mechanical ventilation, as on MDCalc. Code reproduces all 20 stored answers from the stored inputs.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Minor: SI values are converted to mg/dL (creatinine MW 113.12, bilirubin MW 584.66) and scored on mg/dL cut-offs, whereas MDCalc prints rounded umol/L bands. Values in the gaps (creatinine 106-109, 171-176, 300-308 umol/L; bilirubin 20.5-20.9, 33-34 umol/L etc.) could score one point differently. No test row or the one-shot falls in a gap (creatinine 92.12, 120, 121.32, 130, 140, 150, 160 umol/L; bilirubin 88.41 umol/L).",
+   "rows_affected": []
+  },
+  {
+   "issue": "Cosmetic: the not-ventilated <200 branch checks a misspelled key 'mechanical_ventillation'; because cpap/mechanical_ventilation are always defaulted beforehand, the logic still evaluates correctly. Vasopressor units are not checked (all inputs are mcg/kg/min).",
+   "rows_affected": []
+  }
+ ],
+ "code_file": "calculator_implementations_verified/sofa.py",
+ "dataset_conventions": [
+  "A criterion the note does not mention is absent/normal; for 'absence' criteria the criterion is met.",
+  "Values are taken at the time point the question names (admission/initial presentation before treatment) unless the question says otherwise.",
+  "GCS: a component documented as not testable gets full points.",
+  "Keep as close to v1.0 as possible; change only genuine mistakes (wrong input vs note, wrong label, unit/typo errors, contradictions). Prefer the smallest fix: correct an input if the note is clear; edit the note minimally if the note itself is ambiguous or contradictory."
+ ],
+ "rows": [
+  {
+   "row": "889",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 68-year-old male presents with a significant medical history, a BP of 63/41 and altered mental status (GCS: eye response to pain, inappropriate word use, withdrawls from pain). He is currently on mechanical ventilation with a fraction of inspired oxygen (FiO₂) set at 60 %, and is not on continuous positive airway pressure. His recent laboratory evaluations reveal a creatinine level of 121.32 µmol/L, indicating some degree of renal impairment. Additionally, his bilirubin level is elevated at 88.41 µmol/L, suggestive of possible liver dysfunction. His platelet count stands at 140,400 per microliter. The partial pressure of oxygen (PaO₂) measured at 76 mm Hg indicates compromised oxygenation. The patient has no urine output noted, raising concerns for renal or urinary complications. ",
+   "stored_relevant_entities": "{'On mechanical ventilation': True, 'Hypotension': True, 'Glasgow Coma Score': 9.0, 'creatinine': [121.32, 'µmol/L'], 'Bilirubin': [88.41, 'µmol/L'], 'Platelet count': [140400.0, 'µL'], 'Continuous positive airway pressure': False, 'Systolic Blood Pressure': [63, 'mm Hg'], 'Diastolic Blood Pressure': [41, 'mm Hg'], 'PaO2': [76.0, 'mm Hg'], 'FiO2': [60.0, '%']}",
+   "stored_answer": "11",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 60.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 126.66667. The patient is reported to be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is between 100 to 199, and the patient is using at least one of (i) mechanical ventillation or (ii) continious positive airway pressure, we increase the score by three points, makeing the current total 0 + 3 = 3.\nThe patient's systolic blood pressure is 63 mm Hg and the patient's diastolic blood pressure is 41 mm Hg, making the patient's mean arterial blood pressure 48.33333 mm Hg. For one point to be given, the patient's mean arterial pressure must be less than 70 mm Hg, making the current total 3 + 1 = 4.\nThe patient's glasgow coma score is 9.0. Because the patient's glasgow coma score is between 6 and 9, we add 3 points to the score, making the current score 4 + 3 = 7.\n The concentration of bilirubin is 88.41 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of bilirubin from µmol to mg. The mass of bilirubin is 88.41 µmol. To convert 88.41 µmol of bilirubin to mol, multiply by the conversion factor 1e-06, giving us 88.41 µmol bilirubin * 1e-06 mol/µmol = 8.841e-05 mol bilirubin. To convert from mol bilirubin to grams, multiply by the molar mass 584.66 g/mol, which will give 8.841e-05 mol bilirubin * 584.66 g/mol = 0.05169 g bilirubin. To convert 0.05169 g of bilirubin to mg, multiply by the conversion factor 1000.0, giving us 0.05169 g bilirubin * 1000.0 mg/g = 51.69 mg bilirubin. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 51.69 mg bilirubin/10.0 dL = 5.169 mg bilirubin/dL. The concentration value of 88.41 µmol bilirubin/L converts to 5.169 mg bilirubin/dL. Because the patient's bilirubin concentration is at least 2.0 mg/dL, but less than 6.0 mg/dL, we increment the score by two points, make the current score 7 + 2 = 9.\nThe patient's concentration of platelet is 140400.0 count/µL. Because the patient's platelet count is at least 100*10³/µL, but less than 150*10³/µL, we increment the score by one point, making the current score 9 + 1 = 10.\nThe concentration of creatinine is 121.32 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of creatinine from µmol to mg. The mass of creatinine is 121.32 µmol. To convert 121.32 µmol of creatinine to mol, multiply by the conversion factor 1e-06, giving us 121.32 µmol creatinine * 1e-06 mol/µmol = 0.00012132 mol creatinine. To convert from mol creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.00012132 mol creatinine * 113.12 g/mol = 0.013724 g creatinine. To convert 0.013724 g of creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.013724 g creatinine * 1000.0 mg/g = 13.724 mg creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 13.724 mg creatinine/10.0 dL = 1.3724 mg creatinine/dL. The concentration value of 121.32 µmol creatinine/L converts to 1.3724 mg creatinine/dL. Because the patient's creatinine concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, making the current total 10 + 1 = 11.\nHence, the patient's SOFA score is 11 points.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "14",
+    "details": "Urine Output omitted from inputs. Note states the patient is anuric; per the one-shot convention ('no urine output' -> 0 mL/day) renal scores 4 (urine <200 mL/day), not 1 from Cr 121.32 umol/L (1.37 mg/dL). Key 'Urine Output': stored (absent) -> correct [0, 'mL/day']. Other components correct: resp 76/0.60=126.7 ventilated -> 3; MAP 48.3 no pressors -> 1; GCS E2 V3 M4 = 9 -> 3; bili 88.41 umol/L = 5.17 mg/dL -> 2; plt 140.4k -> 1. Total 3+1+3+2+1+4 = 14. Code reproduces 14 with urine_output=[0,'mL/day'].",
+    "evidence_quote": "The patient has no urine output noted, raising concerns for renal or urinary complications."
+   },
+   "blind_pass": {
+    "score": 14,
+    "working": "Resp P/F 76/0.60=127 ventilated +3; Coag 140.4k +1; Liver 88.41 µmol/L (5.2 mg/dL) +2; CV no pressors, MAP 48 +1; CNS GCS 9 +3; Renal Cr 121.32 µmol/L (1.37 mg/dL) +1 vs UO 0 mL/day +4 -> +4; total 14",
+    "fields": {
+     "Systolic Blood Pressure": {
+      "value": [
+       63,
+       "mm Hg"
+      ],
+      "quote": "a BP of 63/41"
+     },
+     "Diastolic Blood Pressure": {
+      "value": [
+       41,
+       "mm Hg"
+      ],
+      "quote": "a BP of 63/41"
+     },
+     "Glasgow Coma Score": {
+      "value": 9,
+      "quote": "GCS: eye response to pain, inappropriate word use, withdrawls from pain (E2+V3+M4=9)"
+     },
+     "On mechanical ventilation": {
+      "value": true,
+      "quote": "He is currently on mechanical ventilation"
+     },
+     "FiO2": {
+      "value": [
+       60,
+       "%"
+      ],
+      "quote": "fraction of inspired oxygen (FiO₂) set at 60 %"
+     },
+     "Continuous positive airway pressure": {
+      "value": false,
+      "quote": "is not on continuous positive airway pressure"
+     },
+     "creatinine": {
+      "value": [
+       121.32,
+       "µmol/L"
+      ],
+      "quote": "creatinine level of 121.32 µmol/L"
+     },
+     "Bilirubin": {
+      "value": [
+       88.41,
+       "µmol/L"
+      ],
+      "quote": "bilirubin level is elevated at 88.41 µmol/L"
+     },
+     "Platelet count": {
+      "value": [
+       140400,
+       "per microliter"
+      ],
+      "quote": "platelet count stands at 140,400 per microliter"
+     },
+     "PaO2": {
+      "value": [
+       76,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) measured at 76 mm Hg"
+     },
+     "Urine Output": {
+      "value": [
+       0,
+       "mL/day"
+      ],
+      "quote": "The patient has no urine output noted"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Urine Output",
+      "issue": "'no urine output noted' is ambiguous: anuria (UO 0 -> renal 4) vs urine output simply not documented (renal by creatinine only = 1).",
+      "alternative_score": 11
+     },
+     {
+      "field": "Hypotension",
+      "issue": "Hypotension not stated explicitly; BP 63/41 (MAP 48) with no vasopressors mentioned. Scored MAP<70 = +1; vasopressor status unstated.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "890",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 65-year-old male with a history of hypertension and diabetes presents with altered mental status and jaundice. He reports feeling progressively weak over the past week with associated abdominal discomfort and swelling in his lower extremities. On examination, he is lethargic with a Glasgow Coma Scale score of 10, and scleral icterus is noted. His vital signs reveal a heart rate of 90 beats per minute. Laboratory investigations reveal a serum creatinine level of 92.12 µmol/L and a total bilirubin level of 1.57 mg/L, suggesting mild renal impairment and cholestasis, respectively. Additionally, his platelet count is decreased at 88400/µL. There are signs of overt hypotension, and so the patient is receiving norepi and epi infusions at 0.1 mcg/kg/min each, with a concurrent dopamine infusion at 6.32 mcg/kg/min. The patient is currently receiving 41 % FiO₂ with continuous positive airway pressure. His partial pressure of oxygen is recorded to be 90 mm Hg. Notably, there is no urine output recorded. Given the constellation of symptoms and laboratory findings, further investigation into the etiology of his hepatic and renal dysfunction is warranted.",
+   "stored_relevant_entities": "{'norEPINEPHrine': [0.1, 'mcg/kg/min'], 'On mechanical ventilation': False, 'EPINEPHrine': [0.1, 'mcg/kg/min'], 'DOPamine': [6.32, 'mcg/kg/min'], 'Hypotension': True, 'Glasgow Coma Score': 10.0, 'creatinine': [92.12, 'µmol/L'], 'Bilirubin': [1.57, 'mg/dL'], 'Platelet count': [88400.0, 'µL'], 'Continuous positive airway pressure': True, 'PaO2': [90.0, 'mm Hg'], 'FiO2': [41.0, '%']}",
+   "stored_answer": "10",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 90.0 mm Hg and FiO₂ percentage is 41.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 219.5122. The patient is reported to not be on mechanical ventillation. The patient is reported to be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is between 200 and 300, we increase the score by two points, makeing the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 10.0. Because the patient's glasgow coma score is between 10 and 12, we add 2 points to the score, making the current score 5 + 2 = 7.\n The concentration of bilirubin is 1.57 mg/dL. Because the patient's bilirubin concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, make the current score 7 + 1 = 8.\nThe patient's concentration of platelet is 88400.0 count/µL. Because the patient's platelet count is at least 50*10³/µL, but less than 100*10³/µL, we increment the score by two points, making the current score 8 + 2 = 10.\nThe concentration of creatinine is 92.12 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of creatinine from µmol to mg. The mass of creatinine is 92.12 µmol. To convert 92.12 µmol of creatinine to mol, multiply by the conversion factor 1e-06, giving us 92.12 µmol creatinine * 1e-06 mol/µmol = 9.212e-05 mol creatinine. To convert from mol creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 9.212e-05 mol creatinine * 113.12 g/mol = 0.010421 g creatinine. To convert 0.010421 g of creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.010421 g creatinine * 1000.0 mg/g = 10.421 mg creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 10.421 mg creatinine/10.0 dL = 1.0421 mg creatinine/dL. The concentration value of 92.12 µmol creatinine/L converts to 1.0421 mg creatinine/dL. Because the patient's creatinine concentration is less than 1.2 mg/dL, we do not add any points to the score, keeping the current total at 10.\nHence, the patient's SOFA score is 10 points.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "14 (most likely intent: anuria, bilirubin 1.57 mg/dL); 10 if urine output is read as 'not documented'",
+    "details": "Two issues. (1) Bilirubin unit: note says '1.57 mg/L' (= 0.157 mg/dL, 0 pts) but the stored input silently uses 1.57 mg/dL (1 pt); with jaundice and scleral icterus, mg/dL is clearly intended, so the note has a unit typo. (2) Urine output: 'no urine output recorded' reads as anuria (same wording style as the one-shot, which scores 0 mL/day -> 4 renal points) but could also mean 'not documented'; the inputs omit Urine Output, so renal = 0 from Cr 92.12 umol/L (1.04 mg/dL). Other components: CPAP, 90/0.41=219.5 -> 2; dopamine 6.32 (>5), norepi 0.1, epi 0.1 (<=0.1) -> 3; GCS 10 -> 2; plt 88.4k -> 2. Totals: stored reading 2+3+2+1+2+0=10; anuric reading 14; literal mg/L reading 13 (anuric) or 9. Recommend fixing note to 'mg/dL' and making urine output unambiguous (or adding Urine Output [0,'mL/day'] -> 14).",
+    "evidence_quote": "a total bilirubin level of 1.57 mg/L ... Notably, there is no urine output recorded."
+   },
+   "blind_pass": {
+    "score": 13,
+    "working": "Resp P/F 90/0.41=220 +2 (CPAP); Coag 88.4k +2; Liver 1.57 mg/L = 0.157 mg/dL +0; CV dopamine 6.32 >5 / epi 0.1 / norepi 0.1 +3; CNS GCS 10 +2; Renal Cr 92.12 µmol/L (1.04 mg/dL) +0 vs UO 0 +4 -> +4; total 13",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 10,
+      "quote": "Glasgow Coma Scale score of 10"
+     },
+     "creatinine": {
+      "value": [
+       92.12,
+       "µmol/L"
+      ],
+      "quote": "serum creatinine level of 92.12 µmol/L"
+     },
+     "Bilirubin": {
+      "value": [
+       1.57,
+       "mg/L"
+      ],
+      "quote": "total bilirubin level of 1.57 mg/L"
+     },
+     "Platelet count": {
+      "value": [
+       88400,
+       "/µL"
+      ],
+      "quote": "platelet count is decreased at 88400/µL"
+     },
+     "Hypotension": {
+      "value": true,
+      "quote": "There are signs of overt hypotension"
+     },
+     "norEPINEPHrine": {
+      "value": [
+       0.1,
+       "mcg/kg/min"
+      ],
+      "quote": "norepi and epi infusions at 0.1 mcg/kg/min each"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0.1,
+       "mcg/kg/min"
+      ],
+      "quote": "norepi and epi infusions at 0.1 mcg/kg/min each"
+     },
+     "DOPamine": {
+      "value": [
+       6.32,
+       "mcg/kg/min"
+      ],
+      "quote": "dopamine infusion at 6.32 mcg/kg/min"
+     },
+     "FiO2": {
+      "value": [
+       41,
+       "%"
+      ],
+      "quote": "receiving 41 % FiO₂"
+     },
+     "Continuous positive airway pressure": {
+      "value": true,
+      "quote": "with continuous positive airway pressure"
+     },
+     "PaO2": {
+      "value": [
+       90,
+       "mm Hg"
+      ],
+      "quote": "partial pressure of oxygen is recorded to be 90 mm Hg"
+     },
+     "Urine Output": {
+      "value": [
+       0,
+       "mL/day"
+      ],
+      "quote": "there is no urine output recorded"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Bilirubin",
+      "issue": "Unit 'mg/L' is likely a typo for mg/dL (patient has jaundice/scleral icterus; 0.157 mg/dL would be normal). If 1.57 mg/dL, liver +1.",
+      "alternative_score": 14
+     },
+     {
+      "field": "Urine Output",
+      "issue": "'no urine output recorded' is ambiguous: anuria (renal 4) vs not documented (renal by creatinine 1.04 mg/dL = 0).",
+      "alternative_score": 9
+     },
+     {
+      "field": "Note",
+      "issue": "Note text says 'mild renal impairment' but creatinine 1.04 mg/dL is normal; no BP values given (CV scored from vasopressors).",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "891",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 62-year-old male with a history of diabetes has been hospitalized for severe fatigue and weight loss. Despite manifesting a clear and oriented mental status, Glasgow Coma Score of 15, he displays other concerning symptoms. Neurological examination showed no abnormalities; however, lab workup revealed elevated bilirubin levels of 7.43 mg/dL. As well, impaired renal function was evident from a creatinine level of 2.56 mg/dL. Intravenous vasopressors, specifically EPINEPHrine of 0.33 mcg/kg/min and DOPamine of 9.1 mcg/kg/min, were administered to maintain a stable circulatory status, the patient currently is not presenting signs of hypotension, furthermore, the patient is not currently on mechanical ventilation or continuous positive airway pressure, with a fraction of inspired oxygen (FiO₂) at 53% and a measured partial pressure of oxygen (PaO₂) of 87 mm Hg. Thrombocytopenia was noted with a platelet count of 75,300/µL. ",
+   "stored_relevant_entities": "{'On mechanical ventilation': False, 'EPINEPHrine': [0.33, 'mcg/kg/min'], 'DOPamine': [9.1, 'mcg/kg/min'], 'Glasgow Coma Score': 15.0, 'creatinine': [2.56, 'mg/dL'], 'Bilirubin': [7.43, 'mg/dL'], 'Platelet count': [75300.0, 'µL'], 'Continuous positive airway pressure': False, 'PaO2': [87.0, 'mm Hg'], 'FiO2': [53.0, '%']}",
+   "stored_answer": "13",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 87.0 mm Hg and FiO₂ percentage is 53.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 164.15094. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor four points to be given, the patient must be taking more than 15 micrograms/kg/min, more than 0.1 micrograms/kg/min of epinephrine, or more than 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by four points, making the current total 2 + 4 = 6.\nThe patient's glasgow coma score is 15.0. Because the patient's glasgow coma score is 15, we add 0 points to the score, keeping the score at 6.\n The concentration of bilirubin is 7.43 mg/dL. Because the patient's bilirubin concentration is at least 6.0 mg/dL but less than 12.0 mg/dL, we increment the score by three points, make the current score 6 + 3 = 9.\nThe patient's concentration of platelet is 75300.0 count/µL. Because the patient's platelet count is at least 50*10³/µL, but less than 100*10³/µL, we increment the score by two points, making the current score 9 + 2 = 11.\nThe concentration of creatinine is 2.56 mg/dL. Because the patient's creatinine concentration is at least 2.0 mg/dL, but less than 3.5 mg/dL, we increment the score by two points, making the current total 11 + 2 = 13.\nHence, the patient's SOFA score is 13 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "13",
+    "details": "Resp 87/0.53=164 not ventilated -> 2; epi 0.33 (>0.1) -> 4 (dopamine 9.1 alone would be 3); GCS 15 -> 0; bili 7.43 -> 3; plt 75.3k -> 2; Cr 2.56 -> 2. Total 13.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 13,
+    "working": "Resp P/F 87/0.53=164 not ventilated +2; Coag 75.3k +2; Liver 7.43 +3; CV epi 0.33 >0.1 +4; CNS GCS 15 +0; Renal Cr 2.56 +2 (UO not given); total 13",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 15,
+      "quote": "Glasgow Coma Score of 15"
+     },
+     "Bilirubin": {
+      "value": [
+       7.43,
+       "mg/dL"
+      ],
+      "quote": "elevated bilirubin levels of 7.43 mg/dL"
+     },
+     "creatinine": {
+      "value": [
+       2.56,
+       "mg/dL"
+      ],
+      "quote": "creatinine level of 2.56 mg/dL"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0.33,
+       "mcg/kg/min"
+      ],
+      "quote": "EPINEPHrine of 0.33 mcg/kg/min"
+     },
+     "DOPamine": {
+      "value": [
+       9.1,
+       "mcg/kg/min"
+      ],
+      "quote": "DOPamine of 9.1 mcg/kg/min"
+     },
+     "Hypotension": {
+      "value": false,
+      "quote": "the patient currently is not presenting signs of hypotension"
+     },
+     "On mechanical ventilation": {
+      "value": false,
+      "quote": "not currently on mechanical ventilation or continuous positive airway pressure"
+     },
+     "Continuous positive airway pressure": {
+      "value": false,
+      "quote": "not currently on mechanical ventilation or continuous positive airway pressure"
+     },
+     "FiO2": {
+      "value": [
+       53,
+       "%"
+      ],
+      "quote": "fraction of inspired oxygen (FiO₂) at 53%"
+     },
+     "PaO2": {
+      "value": [
+       87,
+       "mm Hg"
+      ],
+      "quote": "partial pressure of oxygen (PaO₂) of 87 mm Hg"
+     },
+     "Platelet count": {
+      "value": [
+       75300,
+       "/µL"
+      ],
+      "quote": "platelet count of 75,300/µL"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Hypotension",
+      "issue": "Hypotension flagged false while on high-dose epinephrine and dopamine (vasopressors maintain BP). SOFA scores by vasopressor tier (+4); if a calculator gates CV on the hypotension flag, CV = 0.",
+      "alternative_score": 9
+     },
+     {
+      "field": "Urine Output",
+      "issue": "Urine output not given; renal scored from creatinine only.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "892",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 74-year-old female was admitted with multiple organ dysfunction. Despite her being afebrile, the neurology consultants noted a serious decrease in her level of consciousness, and her Glasgow Coma Score was 8/15. She has been normotensive and has not required vasopressors. Her FiO₂ was recorded at 71%, with a PaO₂ of 87 mm Hg. She's been on continuous veno-venous hemodialysis during the previous week with limited urine output of only 132 mL/day. She had significant jaundice with an elevated bilirubin level of 3.32 mg/dL. Her platelet count is 87,000/μL.",
+   "stored_relevant_entities": "{'On mechanical ventilation': False, 'Urine Output': [132, 'mL/day'], 'Glasgow Coma Score': 8.0, 'Bilirubin': [3.32, 'mg/dL'], 'Platelet count': [87000.0, 'µL'], 'Continuous positive airway pressure': False, 'PaO2': [87.0, 'mm Hg'], 'FiO2': [71.0, '%']}",
+   "stored_answer": "13",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 87.0 mm Hg and FiO₂ percentage is 71.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 122.53521. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nWhether the patient has hypotension is not reported, and so we do not add any points to the score, keeping the current total at 2.\nThe patient's glasgow coma score is 8.0. Because the patient's glasgow coma score is between 6 and 9, we add 3 points to the score, making the current score 2 + 3 = 5.\n The concentration of bilirubin is 3.32 mg/dL. Because the patient's bilirubin concentration is at least 2.0 mg/dL, but less than 6.0 mg/dL, we increment the score by two points, make the current score 5 + 2 = 7.\nThe patient's concentration of platelet is 87000.0 count/µL. Because the patient's platelet count is at least 50*10³/µL, but less than 100*10³/µL, we increment the score by two points, making the current score 7 + 2 = 9.\nThe patients urine output is 132 mL/day.\n\nFor four points to be given, either the patient's creatinine must be at least 5.0 mg/dL or the patient's urine output must be less than 200 mL/day. Because at least one of these statements is true, we increment the score by four points, making the current total 9 + 4 = 13.\nHence, the patient's SOFA score is 13 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "13",
+    "details": "Resp 87/0.71=122.5, ventilation not mentioned -> not ventilated -> 2; normotensive, no pressors -> 0; GCS 8 -> 3; bili 3.32 -> 2; plt 87k -> 2; urine 132 mL/day -> 4 (no creatinine given). Total 13.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 13,
+    "working": "Resp P/F 87/0.71=123, ventilation not stated -> treated as not ventilated +2; Coag 87k +2; Liver 3.32 +2; CV normotensive no pressors 0; CNS GCS 8 +3; Renal UO 132 mL/day <200 +4 (creatinine not given; on CVVHD); total 13",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 8,
+      "quote": "her Glasgow Coma Score was 8/15"
+     },
+     "Hypotension": {
+      "value": false,
+      "quote": "She has been normotensive and has not required vasopressors"
+     },
+     "DOPamine": {
+      "value": [
+       0,
+       "mcg/kg/min"
+      ],
+      "quote": "has not required vasopressors"
+     },
+     "DOBUTamine": {
+      "value": [
+       0,
+       "mcg/kg/min"
+      ],
+      "quote": "has not required vasopressors"
+     },
+     "norEPINEPHrine": {
+      "value": [
+       0,
+       "mcg/kg/min"
+      ],
+      "quote": "has not required vasopressors"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0,
+       "mcg/kg/min"
+      ],
+      "quote": "has not required vasopressors"
+     },
+     "FiO2": {
+      "value": [
+       71,
+       "%"
+      ],
+      "quote": "Her FiO₂ was recorded at 71%"
+     },
+     "PaO2": {
+      "value": [
+       87,
+       "mm Hg"
+      ],
+      "quote": "with a PaO₂ of 87 mm Hg"
+     },
+     "Urine Output": {
+      "value": [
+       132,
+       "mL/day"
+      ],
+      "quote": "limited urine output of only 132 mL/day"
+     },
+     "Bilirubin": {
+      "value": [
+       3.32,
+       "mg/dL"
+      ],
+      "quote": "elevated bilirubin level of 3.32 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       87000,
+       "/μL"
+      ],
+      "quote": "Her platelet count is 87,000/μL"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "On mechanical ventilation",
+      "issue": "Mechanical ventilation / CPAP status not stated; FiO2 71% suggests possible support. If ventilated or on CPAP, P/F 123 -> resp +3.",
+      "alternative_score": 14
+     },
+     {
+      "field": "creatinine",
+      "issue": "Creatinine not reported (patient on CVVHD); renal scored from urine output (+4), which is already maximal.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "893",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 56-year-old male with a longstanding pulmonary disorder is admitted to our ICU due to significant dyspnea and low oxygen saturation levels. He is placed on mechanical ventilation with a fraction of inspired oxygen (FiO₂) of 60%, resulting in a partial pressure of oxygen (PaO₂) of 68 mm Hg. His assessment indicates mild cognitive impairment, his Glasgow Coma Score being recorded as 13/15.  Laboratory investigations reveal a mildly elevated creatinine level of 1.5 mg/dL, along with bilirubin at 3 mg/dL. Thrombocytopenia is also present with a platelet count of 150000 µL. Although he is producing somewhat sufficient urine output, recorded at 600 mL/day, symptoms and lab results point to multiple organ dysfunction. Despite the challenging circumstances, the patient continues to show resilience and responsiveness to treatment.",
+   "stored_relevant_entities": "{'Urine Output': [600, 'mL/day'], 'Platelet count': [150000.0, 'µL'], 'On mechanical ventilation': True, 'Continuous positive airway pressure': False, 'Glasgow Coma Score': 13.0, 'Bilirubin': [3.0, 'mg/dL'], 'creatinine': [1.5, 'mg/dL'], 'PaO2': [68.0, 'mm Hg'], 'FiO2': [60.0, '%']}",
+   "stored_answer": "7",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 68.0 mm Hg and FiO₂ percentage is 60.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 113.33333. The patient is reported to be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is between 100 to 199, and the patient is using at least one of (i) mechanical ventillation or (ii) continious positive airway pressure, we increase the score by three points, makeing the current total 0 + 3 = 3.\nWhether the patient has hypotension is not reported, and so we do not add any points to the score, keeping the current total at 3.\nThe patient's glasgow coma score is 13.0. Because the patient's glasgow coma score is between 13 and 14, we add 1 point to the score, making the current score 3 + 1 = 4.\n The concentration of bilirubin is 3.0 mg/dL. Because the patient's bilirubin concentration is at least 2.0 mg/dL, but less than 6.0 mg/dL, we increment the score by two points, make the current score 4 + 2 = 6.\nThe patient's concentration of platelet is 150000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 6.\nThe concentration of creatinine is 1.5 mg/dL. The patients urine output is 600 mL/day.\n\nBecause the patient's creatinine concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, making the current total 6 + 1 = 7.\nHence, the patient's SOFA score is 7 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "7",
+    "details": "Resp 68/0.60=113.3 ventilated -> 3; no BP/pressors -> 0; GCS 13 -> 1; bili 3 -> 2; plt 150,000 -> 0 (note calls it 'thrombocytopenia' but value is exactly 150k, which scores 0; wording only); Cr 1.5 -> 1, urine 600. Total 7.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 7,
+    "working": "Resp P/F 68/0.60=113 ventilated +3; Coag 150k +0; Liver 3 +2; CV no BP/pressors given 0; CNS GCS 13 +1; Renal Cr 1.5 +1, UO 600 none -> +1; total 7",
+    "fields": {
+     "On mechanical ventilation": {
+      "value": true,
+      "quote": "He is placed on mechanical ventilation"
+     },
+     "FiO2": {
+      "value": [
+       60,
+       "%"
+      ],
+      "quote": "fraction of inspired oxygen (FiO₂) of 60%"
+     },
+     "PaO2": {
+      "value": [
+       68,
+       "mm Hg"
+      ],
+      "quote": "partial pressure of oxygen (PaO₂) of 68 mm Hg"
+     },
+     "Glasgow Coma Score": {
+      "value": 13,
+      "quote": "Glasgow Coma Score being recorded as 13/15"
+     },
+     "creatinine": {
+      "value": [
+       1.5,
+       "mg/dL"
+      ],
+      "quote": "creatinine level of 1.5 mg/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       3,
+       "mg/dL"
+      ],
+      "quote": "bilirubin at 3 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       150000,
+       "µL"
+      ],
+      "quote": "Thrombocytopenia is also present with a platelet count of 150000 µL"
+     },
+     "Urine Output": {
+      "value": [
+       600,
+       "mL/day"
+      ],
+      "quote": "recorded at 600 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Platelet count",
+      "issue": "Called 'thrombocytopenia' but 150,000 is the boundary that scores 0 (unit also written 'µL' rather than '/µL'). If intended <150k, coag +1.",
+      "alternative_score": 8
+     },
+     {
+      "field": "Cardiovascular",
+      "issue": "No blood pressure, hypotension or vasopressor information given; CV scored 0 by default.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "895",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "Patient is a 79-year-old woman brought in due to episodes of fainting and general weakness; she has been admitted to the ICU. A rapid decline in her cognitive functioning has been observed with a Glasgow Coma Score measuring 11, indicative of a moderate degree of impairment. Hemodynamic instability noted with her blood pressure considerably lower than what is usual. To maintain an optimal circulatory volume, her therapy includes the following: norEPINEPHrine prescribed at 0.06 mcg/kg/min and a flow of EPINEPHrine at 0.07 mcg/kg/min as well. Clinically, she does not require mechanical ventilation, at present, the fraction of inspired oxygen (FiO₂) is maintained at 45 % with measured partial pressure of oxygen (PaO₂) at 75 mm Hg. Lab reports reveal a serum creatinine level of 120 µmol/L suggestive of possibly compromised renal function; bilirubin count also appears slightly elevated at 1.8 mg/dL indicative of mild hepatic stress. Platelet count lies within a normal range reading as 180,000/µL. Her urine output has been maintained at nearly 600 mL/day.",
+   "stored_relevant_entities": "{'Urine Output': [600, 'mL/day'], 'norEPINEPHrine': [0.06, 'mcg/kg/min'], 'Bilirubin': [1.8, 'mg/dL'], 'creatinine': [120.0, 'µmol/L'], 'Platelet count': [180000.0, 'µL'], 'Hypotension': True, 'On mechanical ventilation': False, 'Glasgow Coma Score': 11.0, 'EPINEPHrine': [0.07, 'mcg/kg/min'], 'Continuous positive airway pressure': False, 'PaO2': [75.0, 'mm Hg'], 'FiO2': [45.0, '%']}",
+   "stored_answer": "9",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 45.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 166.66667. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 11.0. Because the patient's glasgow coma score is between 10 and 12, we add 2 points to the score, making the current score 5 + 2 = 7.\n The concentration of bilirubin is 1.8 mg/dL. Because the patient's bilirubin concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, make the current score 7 + 1 = 8.\nThe patient's concentration of platelet is 180000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 8.\nThe concentration of creatinine is 120.0 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of creatinine from µmol to mg. The mass of creatinine is 120.0 µmol. To convert 120.0 µmol of creatinine to mol, multiply by the conversion factor 1e-06, giving us 120.0 µmol creatinine * 1e-06 mol/µmol = 0.00012 mol creatinine. To convert from mol creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.00012 mol creatinine * 113.12 g/mol = 0.013574 g creatinine. To convert 0.013574 g of creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.013574 g creatinine * 1000.0 mg/g = 13.574 mg creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 13.574 mg creatinine/10.0 dL = 1.3574 mg creatinine/dL. The concentration value of 120.0 µmol creatinine/L converts to 1.3574 mg creatinine/dL. The patients urine output is 600 mL/day.\n\nBecause the patient's creatinine concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, making the current total 8 + 1 = 9.\nHence, the patient's SOFA score is 9 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "9",
+    "details": "Resp 75/0.45=166.7 not ventilated -> 2; norepi 0.06, epi 0.07 -> 3; GCS 11 -> 2; bili 1.8 -> 1; plt 180k -> 0; Cr 120 umol/L (1.36 mg/dL) -> 1, urine 600. Total 9.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 9,
+    "working": "Resp P/F 75/0.45=167 not ventilated +2; Coag 180k 0; Liver 1.8 +1; CV norepi 0.06/epi 0.07 +3; CNS GCS 11 +2; Renal Cr 120 µmol/L (1.36 mg/dL) +1, UO 600 none -> +1; total 9",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 11,
+      "quote": "Glasgow Coma Score measuring 11"
+     },
+     "Hypotension": {
+      "value": true,
+      "quote": "her blood pressure considerably lower than what is usual"
+     },
+     "norEPINEPHrine": {
+      "value": [
+       0.06,
+       "mcg/kg/min"
+      ],
+      "quote": "norEPINEPHrine prescribed at 0.06 mcg/kg/min"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0.07,
+       "mcg/kg/min"
+      ],
+      "quote": "EPINEPHrine at 0.07 mcg/kg/min"
+     },
+     "On mechanical ventilation": {
+      "value": false,
+      "quote": "she does not require mechanical ventilation"
+     },
+     "FiO2": {
+      "value": [
+       45,
+       "%"
+      ],
+      "quote": "(FiO₂) is maintained at 45 %"
+     },
+     "PaO2": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) at 75 mm Hg"
+     },
+     "creatinine": {
+      "value": [
+       120,
+       "µmol/L"
+      ],
+      "quote": "serum creatinine level of 120 µmol/L"
+     },
+     "Bilirubin": {
+      "value": [
+       1.8,
+       "mg/dL"
+      ],
+      "quote": "slightly elevated at 1.8 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       180000,
+       "/µL"
+      ],
+      "quote": "reading as 180,000/µL"
+     },
+     "Urine Output": {
+      "value": [
+       600,
+       "mL/day"
+      ],
+      "quote": "maintained at nearly 600 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Continuous positive airway pressure",
+      "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 167 -> resp +3.",
+      "alternative_score": 10
+     }
+    ]
+   }
+  },
+  {
+   "row": "897",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 78-year-old male was admitted due to diminished mental status over the past 24 hours. His Glasgow Coma Score was recorded to be 10. His blood pressure was stable with a systolic of 83 and diastolic of 60 mm Hg. Laboratory findings from the admission show creatinine of 2.1 mg/dL. His liver function test also showed a slightly elevated bilirubin of 2.8 mg/dL. His platelet count was 150,000/µL. The patient is receiving a continuous positive airway pressure (CPAP) therapy, with a FiO₂ set at 50%, maintaining a PaO₂ of 80 mm Hg. He has two vasopressors running concurrently, DOPamine and DOBUTamine at 6 mcg/kg/min and 2 mcg/kg/min. He had an adequate fluid balance with a urine output of 900 mL/day in the past 24 hours. Due to his significant organ dysfunction, he requires close monitoring in the ICU.",
+   "stored_relevant_entities": "{'Urine Output': [900, 'mL/day'], 'Bilirubin': [2.8, 'mg/dL'], 'creatinine': [2.1, 'mg/dL'], 'Platelet count': [150000.0, 'µL'], 'Diastolic Blood Pressure': [60.0, 'mm Hg'], 'Glasgow Coma Score': 10.0, 'PaO2': [80.0, 'mm Hg'], 'FiO2': [50.0, '%'], 'Systolic Blood Pressure': [83.0, 'mm Hg'], 'On mechanical ventilation': False, 'DOBUTamine': [2, 'mcg/kg/min'], 'DOPamine': [6, 'mcg/kg/min']}",
+   "stored_answer": "11",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 80.0 mm Hg and FiO₂ percentage is 50.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 160.0. The patient is reported to not be on mechanical ventillation. Whether the patient is on continuous positive airway pressure is not reported and so we assume this to be false. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 10.0. Because the patient's glasgow coma score is between 10 and 12, we add 2 points to the score, making the current score 5 + 2 = 7.\n The concentration of bilirubin is 2.8 mg/dL. Because the patient's bilirubin concentration is at least 2.0 mg/dL, but less than 6.0 mg/dL, we increment the score by two points, make the current score 7 + 2 = 9.\nThe patient's concentration of platelet is 150000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 9.\nThe concentration of creatinine is 2.1 mg/dL. The patients urine output is 900 mL/day.\n\nBecause the patient's creatinine concentration is at least 2.0 mg/dL, but less than 3.5 mg/dL, we increment the score by two points, making the current total 9 + 2 = 11.\nHence, the patient's SOFA score is 11 points.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "12",
+    "details": "'Continuous positive airway pressure' omitted from inputs (code defaults it to False). Note explicitly says the patient is on CPAP; MDCalc's ventilation toggle includes CPAP, so PaO2/FiO2 = 80/0.50 = 160 (<200) on CPAP scores 3, not 2. Key 'Continuous positive airway pressure': stored (absent -> False) -> correct True. Other components: dopamine 6 (>5) + dobutamine 2 -> 3 (BP 83/60 MAP 67.7 superseded by pressors); GCS 10 -> 2; bili 2.8 -> 2; plt 150k -> 0; Cr 2.1 -> 2, urine 900. Total 3+3+2+2+0+2 = 12. Code reproduces 12 with cpap=True.",
+    "evidence_quote": "The patient is receiving a continuous positive airway pressure (CPAP) therapy, with a FiO₂ set at 50%, maintaining a PaO₂ of 80 mm Hg."
+   },
+   "blind_pass": {
+    "score": 12,
+    "working": "Resp P/F 80/0.50=160 on CPAP +3; Coag 150k 0; Liver 2.8 +2; CV dopamine 6 >5 +3; CNS GCS 10 +2; Renal Cr 2.1 +2, UO 900 none -> +2; total 12",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 10,
+      "quote": "Glasgow Coma Score was recorded to be 10"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       83,
+       "mm Hg"
+      ],
+      "quote": "systolic of 83 and diastolic of 60 mm Hg"
+     },
+     "Diastolic Blood Pressure": {
+      "value": [
+       60,
+       "mm Hg"
+      ],
+      "quote": "systolic of 83 and diastolic of 60 mm Hg"
+     },
+     "creatinine": {
+      "value": [
+       2.1,
+       "mg/dL"
+      ],
+      "quote": "creatinine of 2.1 mg/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.8,
+       "mg/dL"
+      ],
+      "quote": "bilirubin of 2.8 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       150000,
+       "/µL"
+      ],
+      "quote": "platelet count was 150,000/µL"
+     },
+     "Continuous positive airway pressure": {
+      "value": true,
+      "quote": "receiving a continuous positive airway pressure (CPAP) therapy"
+     },
+     "FiO2": {
+      "value": [
+       50,
+       "%"
+      ],
+      "quote": "FiO₂ set at 50%"
+     },
+     "PaO2": {
+      "value": [
+       80,
+       "mm Hg"
+      ],
+      "quote": "PaO₂ of 80 mm Hg"
+     },
+     "DOPamine": {
+      "value": [
+       6,
+       "mcg/kg/min"
+      ],
+      "quote": "DOPamine and DOBUTamine at 6 mcg/kg/min and 2 mcg/kg/min"
+     },
+     "DOBUTamine": {
+      "value": [
+       2,
+       "mcg/kg/min"
+      ],
+      "quote": "DOPamine and DOBUTamine at 6 mcg/kg/min and 2 mcg/kg/min"
+     },
+     "Urine Output": {
+      "value": [
+       900,
+       "mL/day"
+      ],
+      "quote": "urine output of 900 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Systolic Blood Pressure",
+      "issue": "BP described as 'stable' but 83/60 gives MAP 67.7 (<70); no score change because vasopressors set CV.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "900",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 74-year-old gentleman was admitted to the ICU after slight confusion and diminished interaction levels were noted; the Glasgow Coma Scale score was 13, suggesting mild cognitive impairment. His blood pressure was 93/62 mm Hg. He was not on mechanical ventilation but FiO₂ was maintained at 55 % providing him an adequate partial pressure of oxygen (PaO₂) at 75 mm Hg. The doctors have placed him on multiple vasopressors -  DOBUTamine running at 5 mcg/kg/min, and norEPINEPHrine coupled with EPINEPHrine at 0.07 mcg/kg/min and 0.06 mcg/kg/min respectively. Lab reports displayed an elevated creatinine level of 2.4 mg/dL indicating impaired renal function. Also, at 2.3 mg/dL, his bilirubin level has spiked slightly beyond the usual range. His platelet counts were lower than average, recorded at 160,000/µL. He was having adequate fluid balance as his urine output was found to be 900 mL/day.",
+   "stored_relevant_entities": "{'Urine Output': [900, 'mL/day'], 'norEPINEPHrine': [0.07, 'mcg/kg/min'], 'Bilirubin': [2.3, 'mg/dL'], 'creatinine': [2.4, 'mg/dL'], 'DOBUTamine': [5.0, 'mcg/kg/min'], 'Platelet count': [160000.0, 'µL'], 'Hypotension': True, 'On mechanical ventilation': False, 'Diastolic Blood Pressure': [62.0, 'mm Hg'], 'Glasgow Coma Score': 13.0, 'EPINEPHrine': [0.06, 'mcg/kg/min'], 'Systolic Blood Pressure': [93.0, 'mm Hg'], 'Continuous positive airway pressure': False, 'PaO2': [75.0, 'mm Hg'], 'FiO2': [55.0, '%']}",
+   "stored_answer": "10",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 55.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 136.36364. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 13.0. Because the patient's glasgow coma score is between 13 and 14, we add 1 point to the score, making the current score 5 + 1 = 6.\n The concentration of bilirubin is 2.3 mg/dL. Because the patient's bilirubin concentration is at least 2.0 mg/dL, but less than 6.0 mg/dL, we increment the score by two points, make the current score 6 + 2 = 8.\nThe patient's concentration of platelet is 160000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 8.\nThe concentration of creatinine is 2.4 mg/dL. The patients urine output is 900 mL/day.\n\nBecause the patient's creatinine concentration is at least 2.0 mg/dL, but less than 3.5 mg/dL, we increment the score by two points, making the current total 8 + 2 = 10.\nHence, the patient's SOFA score is 10 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "10",
+    "details": "Resp 75/0.55=136.4 not ventilated -> 2; dobutamine 5, norepi 0.07, epi 0.06 -> 3; GCS 13 -> 1; bili 2.3 -> 2; plt 160k -> 0; Cr 2.4 -> 2, urine 900. Total 10.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 10,
+    "working": "Resp P/F 75/0.55=136 not ventilated +2; Coag 160k 0; Liver 2.3 +2; CV norepi 0.07/epi 0.06 +3; CNS GCS 13 +1; Renal Cr 2.4 +2, UO 900 none -> +2; total 10",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 13,
+      "quote": "the Glasgow Coma Scale score was 13"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       93,
+       "mm Hg"
+      ],
+      "quote": "blood pressure was 93/62 mm Hg"
+     },
+     "Diastolic Blood Pressure": {
+      "value": [
+       62,
+       "mm Hg"
+      ],
+      "quote": "blood pressure was 93/62 mm Hg"
+     },
+     "On mechanical ventilation": {
+      "value": false,
+      "quote": "He was not on mechanical ventilation"
+     },
+     "FiO2": {
+      "value": [
+       55,
+       "%"
+      ],
+      "quote": "FiO₂ was maintained at 55 %"
+     },
+     "PaO2": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) at 75 mm Hg"
+     },
+     "DOBUTamine": {
+      "value": [
+       5,
+       "mcg/kg/min"
+      ],
+      "quote": "DOBUTamine running at 5 mcg/kg/min"
+     },
+     "norEPINEPHrine": {
+      "value": [
+       0.07,
+       "mcg/kg/min"
+      ],
+      "quote": "norEPINEPHrine coupled with EPINEPHrine at 0.07 mcg/kg/min and 0.06 mcg/kg/min respectively"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0.06,
+       "mcg/kg/min"
+      ],
+      "quote": "norEPINEPHrine coupled with EPINEPHrine at 0.07 mcg/kg/min and 0.06 mcg/kg/min respectively"
+     },
+     "creatinine": {
+      "value": [
+       2.4,
+       "mg/dL"
+      ],
+      "quote": "creatinine level of 2.4 mg/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       2.3,
+       "mg/dL"
+      ],
+      "quote": "at 2.3 mg/dL, his bilirubin level"
+     },
+     "Platelet count": {
+      "value": [
+       160000,
+       "/µL"
+      ],
+      "quote": "recorded at 160,000/µL"
+     },
+     "Urine Output": {
+      "value": [
+       900,
+       "mL/day"
+      ],
+      "quote": "urine output was found to be 900 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Continuous positive airway pressure",
+      "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 136 -> resp +3.",
+      "alternative_score": 11
+     }
+    ]
+   }
+  },
+  {
+   "row": "901",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 64-year-old male with a history of chronic renal disease has been admitted with a Glasgow Coma Score of 11, implying a moderate cognitive impairment. His blood pressure readings have recorded lower values than normal, with systolic and diastolic measures at 87 and 59 mm Hg, respectively. For maintaining an optimum circulation, he currently receives EPINEPHrine infusions at rates of 0.04 mcg/kg/min. It was reported that FiO₂ is maintained at 53 %, leading to a partial pressure of oxygen (PaO₂) of 72 mm Hg. He is not on mechanical ventilation. His creatinine is 1.1 mg/dL and bilirubin is 1.8 mg/dL. His platelet count is 170,000/µL. His fluid balance was reported as satisfactory with a urine output recorded 850 mL/day.",
+   "stored_relevant_entities": "{'Urine Output': [850, 'mL/day'], 'Bilirubin': [1.8, 'mg/dL'], 'creatinine': [1.1, 'mg/dL'], 'Platelet count': [170000.0, 'µL'], 'Hypotension': True, 'Continuous positive airway pressure': False, 'Diastolic Blood Pressure': [59.0, 'mm Hg'], 'Glasgow Coma Score': 11.0, 'EPINEPHrine': [0.04, 'mcg/kg/min'], 'Systolic Blood Pressure': [87.0, 'mm Hg'], 'On mechanical ventilation': False, 'PaO2': [72.0, 'mm Hg'], 'FiO2': [53.0, '%']}",
+   "stored_answer": "8",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 72.0 mm Hg and FiO₂ percentage is 53.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 135.84906. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 11.0. Because the patient's glasgow coma score is between 10 and 12, we add 2 points to the score, making the current score 5 + 2 = 7.\n The concentration of bilirubin is 1.8 mg/dL. Because the patient's bilirubin concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, make the current score 7 + 1 = 8.\nThe patient's concentration of platelet is 170000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 8.\nThe concentration of creatinine is 1.1 mg/dL. The patients urine output is 850 mL/day.\n\nBecause the patient's creatinine concentration is less than 1.2 mg/dL, we do not add any points to the score, keeping the current total at 8.\nHence, the patient's SOFA score is 8 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "8",
+    "details": "Resp 72/0.53=135.8 not ventilated -> 2; epi 0.04 -> 3 (BP 87/59); GCS 11 -> 2; bili 1.8 -> 1; plt 170k -> 0; Cr 1.1 -> 0, urine 850. Total 8.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "Resp P/F 72/0.53=136 not ventilated +2; Coag 170k 0; Liver 1.8 +1; CV epi 0.04 <=0.1 +3; CNS GCS 11 +2; Renal Cr 1.1 0, UO 850 none -> 0; total 8",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 11,
+      "quote": "Glasgow Coma Score of 11"
+     },
+     "Hypotension": {
+      "value": true,
+      "quote": "blood pressure readings have recorded lower values than normal"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       87,
+       "mm Hg"
+      ],
+      "quote": "systolic and diastolic measures at 87 and 59 mm Hg"
+     },
+     "Diastolic Blood Pressure": {
+      "value": [
+       59,
+       "mm Hg"
+      ],
+      "quote": "systolic and diastolic measures at 87 and 59 mm Hg"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0.04,
+       "mcg/kg/min"
+      ],
+      "quote": "EPINEPHrine infusions at rates of 0.04 mcg/kg/min"
+     },
+     "FiO2": {
+      "value": [
+       53,
+       "%"
+      ],
+      "quote": "FiO₂ is maintained at 53 %"
+     },
+     "PaO2": {
+      "value": [
+       72,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) of 72 mm Hg"
+     },
+     "On mechanical ventilation": {
+      "value": false,
+      "quote": "He is not on mechanical ventilation"
+     },
+     "creatinine": {
+      "value": [
+       1.1,
+       "mg/dL"
+      ],
+      "quote": "His creatinine is 1.1 mg/dL"
+     },
+     "Bilirubin": {
+      "value": [
+       1.8,
+       "mg/dL"
+      ],
+      "quote": "bilirubin is 1.8 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       170000,
+       "/µL"
+      ],
+      "quote": "platelet count is 170,000/µL"
+     },
+     "Urine Output": {
+      "value": [
+       850,
+       "mL/day"
+      ],
+      "quote": "urine output recorded 850 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Continuous positive airway pressure",
+      "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 136 -> resp +3.",
+      "alternative_score": 9
+     }
+    ]
+   }
+  },
+  {
+   "row": "903",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 75-year-old female was admitted to our ICU with respiratory distress and increased confusion. This patient’s Glasgow Coma Score has been observed at 12, suggestive of a minor to moderate cognitive impairment. She did not require mechanical ventilation; instead, her oxygen requirement was manageable at 55% FiO₂ resulting in a measured partial pressure of oxygen (PaO₂) of 75 mm Hg. Hemodynamically, she has been stable throughout the day with a systolic and diastolic blood pressure documented as 115 and 62 mm Hg, respectively. She was given multiple vasopressor treatment regimens which included DOPamine running at 3.2 mcg/kg/min and norEPINEPHrine at 0.05 mcg/kg/min. Lab results revealed elevated bilirubin of 2.5 mg/dL and increased creatinine levels of 1.8 mg/dL, offering insights into potential liver and renal impairments. The platelet count was within a normal range as 175,000/µL. She was maintaining a good urine output, recorded at 920 mL/day. This case calls for a meticulous and steady monitoring of her vitals and organ function while in an ICU setup.",
+   "stored_relevant_entities": "{'Urine Output': [920, 'mL/day'], 'DOPamine': [3.2, 'mcg/kg/min'], 'norEPINEPHrine': [0.05, 'mcg/kg/min'], 'Bilirubin': [2.5, 'mg/dL'], 'creatinine': [1.8, 'mg/dL'], 'Platelet count': [175000.0, 'µL'], 'On mechanical ventilation': False, 'Diastolic Blood Pressure': [62.0, 'mm Hg'], 'Glasgow Coma Score': 12.0, 'Systolic Blood Pressure': [115.0, 'mm Hg'], 'Continuous positive airway pressure': False, 'PaO2': [75.0, 'mm Hg'], 'FiO2': [55.0, '%']}",
+   "stored_answer": "10",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 55.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 136.36364. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 12.0. Because the patient's glasgow coma score is between 10 and 12, we add 2 points to the score, making the current score 5 + 2 = 7.\n The concentration of bilirubin is 2.5 mg/dL. Because the patient's bilirubin concentration is at least 2.0 mg/dL, but less than 6.0 mg/dL, we increment the score by two points, make the current score 7 + 2 = 9.\nThe patient's concentration of platelet is 175000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 9.\nThe concentration of creatinine is 1.8 mg/dL. The patients urine output is 920 mL/day.\n\nBecause the patient's creatinine concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, making the current total 9 + 1 = 10.\nHence, the patient's SOFA score is 10 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "10",
+    "details": "Resp 75/0.55=136.4 not ventilated -> 2; dopamine 3.2 + norepi 0.05 -> 3 (BP 115/62); GCS 12 -> 2; bili 2.5 -> 2; plt 175k -> 0; Cr 1.8 -> 1, urine 920. Total 10.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 10,
+    "working": "Resp P/F 75/0.55=136 not ventilated +2; Coag 175k 0; Liver 2.5 +2; CV norepi 0.05 <=0.1 +3; CNS GCS 12 +2; Renal Cr 1.8 +1, UO 920 none -> +1; total 10",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 12,
+      "quote": "Glasgow Coma Score has been observed at 12"
+     },
+     "On mechanical ventilation": {
+      "value": false,
+      "quote": "She did not require mechanical ventilation"
+     },
+     "FiO2": {
+      "value": [
+       55,
+       "%"
+      ],
+      "quote": "manageable at 55% FiO₂"
+     },
+     "PaO2": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) of 75 mm Hg"
+     },
+     "Hypotension": {
+      "value": false,
+      "quote": "Hemodynamically, she has been stable throughout the day"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       115,
+       "mm Hg"
+      ],
+      "quote": "systolic and diastolic blood pressure documented as 115 and 62 mm Hg"
+     },
+     "Diastolic Blood Pressure": {
+      "value": [
+       62,
+       "mm Hg"
+      ],
+      "quote": "systolic and diastolic blood pressure documented as 115 and 62 mm Hg"
+     },
+     "DOPamine": {
+      "value": [
+       3.2,
+       "mcg/kg/min"
+      ],
+      "quote": "DOPamine running at 3.2 mcg/kg/min"
+     },
+     "norEPINEPHrine": {
+      "value": [
+       0.05,
+       "mcg/kg/min"
+      ],
+      "quote": "norEPINEPHrine at 0.05 mcg/kg/min"
+     },
+     "Bilirubin": {
+      "value": [
+       2.5,
+       "mg/dL"
+      ],
+      "quote": "elevated bilirubin of 2.5 mg/dL"
+     },
+     "creatinine": {
+      "value": [
+       1.8,
+       "mg/dL"
+      ],
+      "quote": "increased creatinine levels of 1.8 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       175000,
+       "/µL"
+      ],
+      "quote": "normal range as 175,000/µL"
+     },
+     "Urine Output": {
+      "value": [
+       920,
+       "mL/day"
+      ],
+      "quote": "recorded at 920 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Continuous positive airway pressure",
+      "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 136 -> resp +3.",
+      "alternative_score": 11
+     },
+     {
+      "field": "Hypotension",
+      "issue": "Described as hemodynamically stable (BP 115/62, MAP 80) yet on dopamine and norepinephrine. SOFA scores the vasopressor tier (+3); if a calculator gates CV on a hypotension flag, CV = 0.",
+      "alternative_score": 7
+     }
+    ]
+   }
+  },
+  {
+   "row": "906",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 77-year-old male was admitted to the ICU due to an unexpected drop in cognition, with a Glasgow Coma Score currently reading as 11. While he’s not on mechanical ventilation, he doesn’t suffer from respiratory distress; his fraction of inspired oxygen (FiO₂) is 54%, producing a partial pressure of oxygen (PaO₂) of 76 mm Hg. He is on multiple vasopressors; currently, DOPamine is flowing at 3.4 mcg/kg/min, DOBUTamine at 3 mcg/kg/min, norEPINEPHrine at 0.04 mcg/kg/min and EPINEPHrine at 0.02 mcg/kg/min. Recorded BP was 75/45. Blood chemistry revealed a creatinine level of 130 µmol/L and bilirubin level of 1.6 mg/dL – both mildly above the normal range, suggesting a possible renal and liver function disruption. His complete blood counts reported a platelet count of 165,000/µL. His urine output is documented at 910 mL/day, depicting a reasonable fluid balance. This patient requires stringent addressing to the current health conditions and monitoring of organ function while he remains under critical care.",
+   "stored_relevant_entities": "{'Urine Output': [910, 'mL/day'], 'DOPamine': [3.4, 'mcg/kg/min'], 'norEPINEPHrine': [0.04, 'mcg/kg/min'], 'Bilirubin': [1.6, 'mg/dL'], 'creatinine': [130.0, 'µmol/L'], 'DOBUTamine': [3.0, 'mcg/kg/min'], 'Platelet count': [165000.0, 'µL'], 'Hypotension': True, 'On mechanical ventilation': False, 'Diastolic Blood Pressure': [45.0, 'mm Hg'], 'Glasgow Coma Score': 11.0, 'EPINEPHrine': [0.02, 'mcg/kg/min'], 'Systolic Blood Pressure': [75.0, 'mm Hg'], 'Continuous positive airway pressure': False, 'PaO2': [76.0, 'mm Hg'], 'FiO2': [54.0, '%']}",
+   "stored_answer": "9",
+   "stored_explanation": "The patient's current SOFA score is 0.\nThe patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 54.0 %. This means that the patient's partial pressure of oxygen to FiO₂ ratio is 140.74074. The patient is reported to not be on mechanical ventillation. The patient is reported to not be using continuous positive airway pressure. Because the patient's partial pressure of oxygen to FiO₂ ratio is less than 200, the patient is not on mechanical ventillation and is not using continious positive airway pressure, we increase the score by two points, making the current total 0 + 2 = 2.\nFor three points to be given, the patient must be taking more than 5 micrograms/kg/min, less than or equal to 0.1 micrograms/kg/min of epinephrine, or less than or equal to 0.1 micrograms/kg/min of norepinephrine. Because at least one of these cases is true for the patient, we increment the score by three points, making the current total 2 + 3 = 5.\nThe patient's glasgow coma score is 11.0. Because the patient's glasgow coma score is between 10 and 12, we add 2 points to the score, making the current score 5 + 2 = 7.\n The concentration of bilirubin is 1.6 mg/dL. Because the patient's bilirubin concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, make the current score 7 + 1 = 8.\nThe patient's concentration of platelet is 165000.0 count/µL. Because the patient's platelet count is at least 150*10³/µL, we do not any points to the score, keeping the current score at 8.\nThe concentration of creatinine is 130.0 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of creatinine from µmol to mg. The mass of creatinine is 130.0 µmol. To convert 130.0 µmol of creatinine to mol, multiply by the conversion factor 1e-06, giving us 130.0 µmol creatinine * 1e-06 mol/µmol = 0.00013 mol creatinine. To convert from mol creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.00013 mol creatinine * 113.12 g/mol = 0.014706 g creatinine. To convert 0.014706 g of creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.014706 g creatinine * 1000.0 mg/g = 14.706 mg creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 14.706 mg creatinine/10.0 dL = 1.4706 mg creatinine/dL. The concentration value of 130.0 µmol creatinine/L converts to 1.4706 mg creatinine/dL. The patients urine output is 910 mL/day.\n\nBecause the patient's creatinine concentration is at least 1.2 mg/dL, but less than 2.0 mg/dL, we increment the score by one point, making the current total 8 + 1 = 9.\nHence, the patient's SOFA score is 9 points.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "9",
+    "details": "Resp 76/0.54=140.7 not ventilated -> 2; dopamine 3.4, dobutamine 3, norepi 0.04, epi 0.02 -> 3; GCS 11 -> 2; bili 1.6 -> 1; plt 165k -> 0; Cr 130 umol/L (1.47 mg/dL) -> 1, urine 910. Total 9.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 9,
+    "working": "Resp P/F 76/0.54=141 not ventilated +2; Coag 165k 0; Liver 1.6 +1; CV norepi 0.04/epi 0.02 <=0.1 +3; CNS GCS 11 +2; Renal Cr 130 µmol/L (1.47 mg/dL) +1, UO 910 none -> +1; total 9",
+    "fields": {
+     "Glasgow Coma Score": {
+      "value": 11,
+      "quote": "Glasgow Coma Score currently reading as 11"
+     },
+     "On mechanical ventilation": {
+      "value": false,
+      "quote": "While he’s not on mechanical ventilation"
+     },
+     "FiO2": {
+      "value": [
+       54,
+       "%"
+      ],
+      "quote": "(FiO₂) is 54%"
+     },
+     "PaO2": {
+      "value": [
+       76,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) of 76 mm Hg"
+     },
+     "DOPamine": {
+      "value": [
+       3.4,
+       "mcg/kg/min"
+      ],
+      "quote": "DOPamine is flowing at 3.4 mcg/kg/min"
+     },
+     "DOBUTamine": {
+      "value": [
+       3,
+       "mcg/kg/min"
+      ],
+      "quote": "DOBUTamine at 3 mcg/kg/min"
+     },
+     "norEPINEPHrine": {
+      "value": [
+       0.04,
+       "mcg/kg/min"
+      ],
+      "quote": "norEPINEPHrine at 0.04 mcg/kg/min"
+     },
+     "EPINEPHrine": {
+      "value": [
+       0.02,
+       "mcg/kg/min"
+      ],
+      "quote": "EPINEPHrine at 0.02 mcg/kg/min"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "Recorded BP was 75/45"
+     },
+     "Diastolic Blood Pressure": {
+      "value": [
+       45,
+       "mm Hg"
+      ],
+      "quote": "Recorded BP was 75/45"
+     },
+     "creatinine": {
+      "value": [
+       130,
+       "µmol/L"
+      ],
+      "quote": "creatinine level of 130 µmol/L"
+     },
+     "Bilirubin": {
+      "value": [
+       1.6,
+       "mg/dL"
+      ],
+      "quote": "bilirubin level of 1.6 mg/dL"
+     },
+     "Platelet count": {
+      "value": [
+       165000,
+       "/µL"
+      ],
+      "quote": "platelet count of 165,000/µL"
+     },
+     "Urine Output": {
+      "value": [
+       910,
+       "mL/day"
+      ],
+      "quote": "urine output is documented at 910 mL/day"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Continuous positive airway pressure",
+      "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 141 -> resp +3.",
+      "alternative_score": 10
+     },
+     {
+      "field": "BP units",
+      "issue": "BP 75/45 given without units (assumed mm Hg); no score change.",
+      "alternative_score": null
+     }
+    ]
+   }
+  }
+ ]
+}

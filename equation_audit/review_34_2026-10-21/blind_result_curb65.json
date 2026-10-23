@@ -1,0 +1,721 @@
+{
+ "rows": [
+  {
+   "calculator_id": "45",
+   "row": "533",
+   "fields": {
+    "age": {
+     "value": [
+      57,
+      "years"
+     ],
+     "quote": "A 57-year-old man"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 130/87 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      87,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 130/87 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      22,
+      "mg/dL"
+     ],
+     "quote": "BUN: 22 mg/dL"
+    },
+    "respiratory rate": {
+     "value": [
+      15,
+      "breaths per minute"
+     ],
+     "quote": "respirations are 15/min"
+    }
+   },
+   "score": 1,
+   "score_working": "Confusion not mentioned 0; BUN 22>19 +1; RR 15 0; BP 130/87 0; age 57 0 = 1",
+   "completeness": "COMPLETE",
+   "completeness_reason": "All presenting vitals/labs given; confusion not mentioned (treated absent).",
+   "eligibility_note": "Not a pneumonia case (presentation suggests DVT/PE); CURB-65 clinically not applicable.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "534",
+   "fields": {
+    "age": {
+     "value": [
+      76,
+      "years"
+     ],
+     "quote": "A 76-year-old Japanese woman"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      161,
+      "mm hg"
+     ],
+     "quote": "blood pressure, 161/78 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      78,
+      "mm hg"
+     ],
+     "quote": "blood pressure, 161/78 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      42.6,
+      "mg/dL"
+     ],
+     "quote": "BUN: 42.6 mg/dL"
+    },
+    "respiratory rate": {
+     "value": [
+      14,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate, 14 breaths/min"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion not mentioned 0; BUN 42.6>19 +1; RR 14 0; BP 161/78 0; age 76 +1 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Admission vitals and labs explicit; confusion not mentioned.",
+   "eligibility_note": "Pneumonia suspected on admission; final diagnosis pulmonary-renal syndrome (diffuse alveolar hemorrhage), not infectious pneumonia. BUN elevation driven by RPGN.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "537",
+   "fields": {
+    "age": {
+     "value": [
+      78,
+      "years"
+     ],
+     "quote": "A 78-year-old female"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      104,
+      "mm hg"
+     ],
+     "quote": "blood pressure 104/71 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      71,
+      "mm hg"
+     ],
+     "quote": "blood pressure 104/71 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      4.7,
+      "mmol/L"
+     ],
+     "quote": "urea 4.7 mmol/L (3.0–7.6)"
+    },
+    "respiratory rate": {
+     "value": [
+      19,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate 19/min"
+    }
+   },
+   "score": 1,
+   "score_working": "Confusion not mentioned 0; urea 4.7 mmol/L <=7 0; RR 19 0; BP 104/71 0; age 78 +1 = 1",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Initial-assessment vitals and labs explicit. Note gives serum UREA 4.7 mmol/L (not BUN); either way below threshold. Later RR 30 (day 3) and 37 (day 12) are post-admission and not used.",
+   "eligibility_note": "Eligible: COVID-19 pneumonia.",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "Value is urea in mmol/L, not BUN; urea 4.7 mmol/L (~13 mg/dL BUN) is below threshold under any interpretation.",
+     "alternative_score": null
+    },
+    {
+     "field": "respiratory rate",
+     "issue": "Day-3 RR 30/min would score if wrongly used; admission RR is 19.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "calculator_id": "45",
+   "row": "539",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A 65-year-old man"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      147,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 147/92 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      92,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 147/92 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      20,
+      "mg/dL"
+     ],
+     "quote": "BUN: 20 mg/dL"
+    },
+    "respiratory rate": {
+     "value": [
+      15,
+      "breaths per minute"
+     ],
+     "quote": "respirations are 15/min"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion not mentioned 0 (anxious, not confused); BUN 20>19 +1; RR 15 0; BP 147/92 0; age 65 +1 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "All values present at presentation; confusion not mentioned.",
+   "eligibility_note": "Not a pneumonia case (acute dyspnea with tachyarrhythmia).",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "540",
+   "fields": {
+    "age": {
+     "value": [
+      27,
+      "years"
+     ],
+     "quote": "A 27-year-old immigrant from Bolivia"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      90,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 90/65 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      65,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 90/65 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      20,
+      "mg/dL"
+     ],
+     "quote": "BUN: 20 mg/dL"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respirations are 18/min"
+    },
+    "Confusion": {
+     "value": false,
+     "quote": "Neurological and musculoskeletal exams are within normal limits."
+    }
+   },
+   "score": 1,
+   "score_working": "Confusion false 0; BUN 20>19 +1; RR 18 0; SBP 90 not <90 and DBP 65 >60 0; age 27 0 = 1",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Vitals given before IV fluids started; neuro exam normal.",
+   "eligibility_note": "Not a pneumonia case (cough/dyspnea with very high beta-hCG, cardiac murmur; likely molar pregnancy/heart failure picture).",
+   "note_issues": [
+    {
+     "field": "Systolic Blood Pressure",
+     "issue": "SBP exactly 90 is at the boundary; criterion is <90 so not scored.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "calculator_id": "45",
+   "row": "542",
+   "fields": {
+    "age": {
+     "value": [
+      37,
+      "years"
+     ],
+     "quote": "A 37-year-old Saudi female"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      110,
+      "mm hg"
+     ],
+     "quote": "blood pressure 110/65"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      65,
+      "mm hg"
+     ],
+     "quote": "blood pressure 110/65"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      10.9,
+      "mmol/L"
+     ],
+     "quote": "blood urea nitrogen (BUN) 10.9 mmol/L"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate 20"
+    },
+    "Confusion": {
+     "value": false,
+     "quote": "Her Glasgow coma scale (GCS) was 15"
+    }
+   },
+   "score": 1,
+   "score_working": "Confusion false (GCS 15) 0; BUN/urea 10.9 mmol/L >7 +1; RR 20 0; BP 110/65 0; age 37 0 = 1",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Admission values explicit. Labelled 'BUN' but in mmol/L (likely urea); 10.9 mmol/L exceeds the threshold whether read as urea (>7) or BUN (~30.5 mg/dL), so not determinative. Later GCS drop to 9 is post-treatment.",
+   "eligibility_note": "Presented with bilateral infiltrates treated with antibiotics, but final diagnosis is GPA with diffuse alveolar hemorrhage (later COVID-positive); borderline pneumonia eligibility.",
+   "note_issues": [
+    {
+     "field": "Confusion",
+     "issue": "GCS later dropped to 9/15 after ICU transfer; admission GCS 15 is used.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "calculator_id": "45",
+   "row": "543",
+   "fields": {
+    "age": {
+     "value": [
+      73,
+      "years"
+     ],
+     "quote": "A 73-year-old African American female"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      152,
+      "mm hg"
+     ],
+     "quote": "blood pressure (152/85)"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      85,
+      "mm hg"
+     ],
+     "quote": "blood pressure (152/85)"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      36,
+      "mg/dL"
+     ],
+     "quote": "BUN = 36"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate (18/minute)"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion not mentioned 0; BUN 36>19 +1; RR 18 0; BP 152/85 0; age 73 +1 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "BUN 36 given without unit (assumed mg/dL; US case); >threshold in either unit, so not determinative.",
+   "eligibility_note": "Primary problem is MTX-induced pancytopenia; CXR shows scattered infiltrates and antibiotics given for neutropenic fever; marginal pneumonia eligibility.",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "Unit not stated for BUN 36; positive under mg/dL or mmol/L.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "calculator_id": "45",
+   "row": "544",
+   "fields": {
+    "age": {
+     "value": [
+      32,
+      "years"
+     ],
+     "quote": "A 32-year-old male"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      70,
+      "mm hg"
+     ],
+     "quote": "hypotensive to 70/40 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      40,
+      "mm hg"
+     ],
+     "quote": "hypotensive to 70/40 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      14.3,
+      "mmol/L"
+     ],
+     "quote": "an elevated serum urea at 14.3 mmol/L"
+    },
+    "respiratory rate": {
+     "value": [
+      24,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 24 breaths/min"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion not mentioned 0; urea 14.3 mmol/L >7 +1; RR 24 0; BP 70/40 +1; age 32 0 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Arrival vitals explicit; urea given in mmol/L (urea, not BUN) and well above >7 threshold. Day-3 values (BP 50/35, RR 30) are later and not used.",
+   "eligibility_note": "Bronchiectasis with infection/sepsis and renal amyloidosis; reasonably eligible (pulmonary infection).",
+   "note_issues": [
+    {
+     "field": "respiratory rate",
+     "issue": "Day-3 RR 30/min would add a point if wrongly used.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "calculator_id": "45",
+   "row": "546",
+   "fields": {
+    "age": {
+     "value": [
+      44,
+      "years"
+     ],
+     "quote": "A 44-year-old woman"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      149,
+      "mm hg"
+     ],
+     "quote": "Initial blood pressure was 149/59 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      59,
+      "mm hg"
+     ],
+     "quote": "Initial blood pressure was 149/59 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      26,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen 26"
+    },
+    "respiratory rate": {
+     "value": [
+      26,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 26/minute"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion not mentioned 0; BUN 26>19 +1; RR 26 0; DBP 59 <=60 +1; age 44 0 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Initial vitals/labs explicit; BUN unit not stated (assumed mg/dL), positive in either unit.",
+   "eligibility_note": "Working diagnosis infectious pneumonia/ARDS; final diagnosis pulmonary PTCL-NOS. Eligible at presentation.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "547",
+   "fields": {
+    "age": {
+     "value": [
+      85,
+      "years"
+     ],
+     "quote": "An 85-year-old male"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      123,
+      "mm hg"
+     ],
+     "quote": "a blood pressure of 123/72 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      72,
+      "mm hg"
+     ],
+     "quote": "a blood pressure of 123/72 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      105,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN) of 105 mg/dL"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "a respiratory rate of 18 breaths per minute"
+    },
+    "Confusion": {
+     "value": false,
+     "quote": "the patient was alert and oriented without distress"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion false 0; BUN 105>19 +1; RR 18 0; BP 123/72 0; age 85 +1 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Exam explicitly documents alert and oriented at presentation; other values explicit.",
+   "eligibility_note": "Primary problem incarcerated hernia/SBO with hematemesis; RUL infiltrate on CXR and ceftriaxone given, so incidental pneumonia possible.",
+   "note_issues": [
+    {
+     "field": "Confusion",
+     "issue": "Pre-arrival history says 'weak and less responsive than usual to family members for the last day'; if counted as confusion score would be 3, but ED exam states alert and oriented.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "calculator_id": "45",
+   "row": "548",
+   "fields": {
+    "age": {
+     "value": [
+      61,
+      "years"
+     ],
+     "quote": "A 61-year-old Japanese man"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      97,
+      "mm hg"
+     ],
+     "quote": "a blood pressure of 97/51 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      51,
+      "mm hg"
+     ],
+     "quote": "a blood pressure of 97/51 mmHg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      23.7,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen 23.7 mg/dl"
+    },
+    "respiratory rate": {
+     "value": [
+      28,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 28 breaths/min"
+    }
+   },
+   "score": 2,
+   "score_working": "Confusion not mentioned 0; BUN 23.7>19 +1; RR 28 0; DBP 51 <=60 +1; age 61 0 = 2",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Presenting vitals and labs explicit; confusion not mentioned.",
+   "eligibility_note": "Not a pneumonia case: S. aureus SCJ septic arthritis/mediastinal abscess/spondylitis; chest X-ray normal.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "549",
+   "fields": {
+    "age": {
+     "value": [
+      41,
+      "years"
+     ],
+     "quote": "a 41-year-old man"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      121,
+      "mm hg"
+     ],
+     "quote": "his BP was 121/79"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      79,
+      "mm hg"
+     ],
+     "quote": "his BP was 121/79"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      21,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen (BUN)/creatinine of 21/1.0"
+    },
+    "respiratory rate": {
+     "value": [
+      19,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate (RR) 19"
+    }
+   },
+   "score": 1,
+   "score_working": "Confusion not mentioned 0; BUN 21>19 +1; RR 19 0; BP 121/79 0; age 41 0 = 1",
+   "completeness": "COMPLETE",
+   "completeness_reason": "ER values explicit; BUN unit not stated (assumed mg/dL).",
+   "eligibility_note": "Not a pneumonia case: liver abscesses/complicated UTI sepsis; CXR negative.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "551",
+   "fields": {
+    "age": {
+     "value": [
+      62,
+      "years"
+     ],
+     "quote": "A 62-year-old man"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      150,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 150/85 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      85,
+      "mm hg"
+     ],
+     "quote": "blood pressure is 150/85 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      14,
+      "mg/dL"
+     ],
+     "quote": "Urea nitrogen 14 mg/dL"
+    },
+    "respiratory rate": {
+     "value": [
+      16,
+      "breaths per minute"
+     ],
+     "quote": "respirations are 16/min"
+    }
+   },
+   "score": 0,
+   "score_working": "Confusion not mentioned 0; BUN 14 0; RR 16 0; BP 150/85 0; age 62 0 = 0",
+   "completeness": "COMPLETE",
+   "completeness_reason": "All values explicit at presentation.",
+   "eligibility_note": "Eligible: community-acquired (likely Legionella) pneumonia with bilateral infiltrates.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "45",
+   "row": "552",
+   "fields": {
+    "age": {
+     "value": [
+      50,
+      "years"
+     ],
+     "quote": "A fifty-year-old"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      150,
+      "mm hg"
+     ],
+     "quote": "blood pressure was 150/90 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      90,
+      "mm hg"
+     ],
+     "quote": "blood pressure was 150/90 mm Hg"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      18,
+      "mg/dL"
+     ],
+     "quote": "Urea 18 mg/dl"
+    },
+    "respiratory rate": {
+     "value": [
+      32,
+      "breaths per minute"
+     ],
+     "quote": "tachypneic (respiratory rate 32/min)"
+    }
+   },
+   "score": 1,
+   "score_working": "Confusion not mentioned 0; urea 18 mg/dL (BUN ~8.4) 0; RR 32 >=30 +1; BP 150/90 0; age 50 0 = 1",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Admission values explicit. Note gives UREA 18 mg/dL, not BUN; below threshold whether read as BUN (18<=19) or converted (~8.4 mg/dL BUN), so not determinative.",
+   "eligibility_note": "Not a pneumonia case: leaking thoracic aortic dissection with hemorrhagic pleural effusion.",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "Urea (not BUN) in mg/dL; negative under both readings.",
+     "alternative_score": null
+    }
+   ]
+  }
+ ]
+}

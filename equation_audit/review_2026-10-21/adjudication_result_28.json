@@ -1,0 +1,345 @@
+{
+ "calculator_id": "28",
+ "rows": [
+  {
+   "row": "869",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "14",
+   "final_answer": "14",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "suggesting oliguria.",
+    "new": "suggesting oliguria and acute renal failure."
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Stored ARF=True (Cr 1.85 doubled to 4) is clinically reasonable: no CKD history and 'Urine output over the past six hours was 104 mL, suggesting oliguria' (~17 mL/h, meets KDIGO AKI urine criterion). But ARF is never named, and the blind reviewer did not count it (12). Naming ARF in the oliguria sentence keeps the v1.0 answer 14. All other inputs match (T 34.9:1, HR 120:2, A-a 375 on 57%:3, pH 7.53:1, GCS 3+4+5=12:3).",
+   "confidence": "medium"
+  },
+  {
+   "row": "870",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "21",
+   "final_answer": "21",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "presents with decreased urine output,",
+    "new": "presents with acute renal failure with decreased urine output,"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Stored ARF=True with CRF=True (Cr 2.57 -> 3x2=6, total 21) is supported only by implication: 'presents with decreased urine output, mild abdominal tenderness, and suprapubic fullness' (obstructive AKI on CKD). The blind reviewer read it as no ARF (18). Naming ARF keeps the v1.0 answer. Other inputs correct (age 61:3, HR 143:3, K 6.43:3, Hct 54:2, WBC 27.5:2, A-a 240 on 68%:2, GCS 15); the 'mEq/L' K unit for 'mmol/L' does not matter.",
+   "confidence": "medium"
+  },
+  {
+   "row": "871",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "26",
+   "final_answer": "26",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "indicating impaired renal function",
+    "new": "indicating acute renal failure"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Stored ARF=True doubles Cr 4.58 to 8 (total 26), but the note only says 'creatinine level of 4.58 mg/dL, indicating impaired renal function' with no acute/chronic label; the blind reviewer scored 22 without ARF. Naming ARF keeps the v1.0 answer. Cirrhosis counts as severe organ insufficiency (MDCalc example), and 'management approach does not involve surgical intervention' with an ED admission gives Nonoperative +5; the rest checks (age 73:5, RR 35:3, A-a 331 on 63%:2, pH 7.29:2, WBC 15.1:1).",
+   "confidence": "medium"
+  },
+  {
+   "row": "872",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "15",
+   "final_answer": "18",
+   "corrected_relevant_entities": {
+    "Heart Rate or Pulse": [
+     73.0,
+     "beats per minute"
+    ],
+    "Sodium": [
+     132.39,
+     "mmol/L"
+    ],
+    "creatinine": [
+     3.67,
+     "mg/dL"
+    ],
+    "Systolic Blood Pressure": [
+     132.0,
+     "mm Hg"
+    ],
+    "age": [
+     57.0,
+     "years"
+    ],
+    "Acute renal failure": false,
+    "Hematocrit": [
+     32.0,
+     "%"
+    ],
+    "Glasgow Coma Score": 15.0,
+    "pH": 7.4,
+    "White blood cell count": [
+     12476.0,
+     "µL"
+    ],
+    "Potassium": [
+     4.31,
+     "mmol/L"
+    ],
+    "Temperature": [
+     37.2,
+     "degrees celsius"
+    ],
+    "respiratory rate": [
+     27.0,
+     "breaths per minute"
+    ],
+    "History of severe organ failure or immunocompromise": true,
+    "Chronic renal failure": true,
+    "Diastolic Blood Pressure": [
+     103.0,
+     "mm Hg"
+    ],
+    "Surgery Type": "Nonoperative",
+    "PaO2": [
+     57.0,
+     "mm Hg"
+    ],
+    "FiO2": [
+     32.0,
+     "%"
+    ]
+   },
+   "note_edit": {
+    "old": "had a scheduled kidney transplant in the past",
+    "new": "had a kidney transplant in the past and remains on immunosuppressive therapy"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Surgery Type 'Elective' is wrong: he 'presents to the emergency department' and only needs 'careful preoperative management', so he is a nonoperative admission awaiting surgery (+5, not +2). Stored organ failure=True rests on 'had a scheduled kidney transplant in the past', which is unclear (a scheduled transplant may not have happened), and 'chronic renal failure, managed conservatively' (no dialysis) does not qualify on its own. The blind reviewer scored 13 for this reason. The edit makes the transplant and immunosuppression explicit, which keeps v1.0's True label; with Nonoperative the total is 3+5+2(MAP 112.7)+1(RR 27)+3(PaO2 57 on 32%)+4(Cr 3.67, no ARF)=18.",
+   "confidence": "medium"
+  },
+  {
+   "row": "873",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Note states 'historical pattern of severe organ failure and present immunocompromised state' and presents to the hospital (Nonoperative +5); age 52:2, A-a 375 on 60% FiO2:3, GCS 12:3, Cr 1.2 with 'no recent onset of renal impairment':0. Both reviewers agree on 13.",
+   "confidence": "high"
+  },
+  {
+   "row": "874",
+   "verdict": "CORRECT",
+   "stored_answer": "19",
+   "final_answer": "19",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'a clear indication of an acute kidney injury' and 'acute onset of renal dysfunction' support ARF=True on CKD: Cr 2.0 -> 3x2=6. Long-standing CKD without dialysis is not severe organ insufficiency. Age 65:5, T 38.5:1, HR 110:2, PaO2 65 on 45%:1, pH 7.30:2, WBC 15.0:1, GCS 14:1 = 19. The gentleman/'Her' pronoun slip does not affect the score.",
+   "confidence": "high"
+  },
+  {
+   "row": "876",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "22",
+   "final_answer": "22",
+   "corrected_relevant_entities": {
+    "Heart Rate or Pulse": [
+     95.0,
+     "beats per minute"
+    ],
+    "Diastolic Blood Pressure": [
+     75.0,
+     "mm Hg"
+    ],
+    "pH": 7.32,
+    "Systolic Blood Pressure": [
+     135.0,
+     "mm Hg"
+    ],
+    "Acute renal failure": true,
+    "History of severe organ failure or immunocompromise": true,
+    "creatinine": [
+     3.8,
+     "mg/dL"
+    ],
+    "White blood cell count": [
+     12000.0,
+     "µL"
+    ],
+    "Sodium": [
+     138.0,
+     "mEq/L"
+    ],
+    "Potassium": [
+     4.5,
+     "mEq/L"
+    ],
+    "A-a gradient": 364,
+    "age": [
+     60.0,
+     "years"
+    ],
+    "respiratory rate": [
+     19.0,
+     "breaths per minute"
+    ],
+    "Glasgow Coma Score": 14.0,
+    "Hematocrit": [
+     43.0,
+     "%"
+    ],
+    "Temperature": [
+     37.2,
+     "degrees celsius"
+    ],
+    "Surgery Type": "Nonoperative",
+    "FiO2": [
+     55.0,
+     "%"
+    ]
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The emergency surgery is in the past ('treated with an emergency surgery in the past'), and this admission is a medical ED presentation, so Surgery Type should be Nonoperative, not Emergency (postoperative). The +5 is the same, so the answer stays 22, but the stored label and explanation are wrong. The note explicitly names 'acute renal failure symptomatology' and 'history of severe organ failure and immunocompromised', so Cr 3.8 x2=8 and the +5 hold (age 60:3, A-a 364 on 55%:3, pH 7.32:2, GCS 14:1).",
+   "confidence": "medium"
+  },
+  {
+   "row": "877",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "17",
+   "final_answer": "17",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "the possible occurrence of acute renal failure",
+    "new": "the occurrence of acute renal failure"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Stored ARF=True (Cr 2.5 -> 6, total 17) is what the note intends ('renal supportive care'), and both reviewers counted it, but it is hedged as 'the possible occurrence of acute renal failure'. Without ARF the score is 14. Deleting 'possible' removes the ambiguity and keeps the v1.0 answer. FiO2 exactly 50% correctly uses A-a 473:3; the rest checks (age 67:5, T 38.7:1, GCS 13:2).",
+   "confidence": "medium"
+  },
+  {
+   "row": "879",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "CKD stage II with no ARF stated: Cr 2.0 scores 3. CKD is not severe organ insufficiency. Age 70:5, HR 115:2, pH 7.28:2, PaO2 80 on 40%:0, GCS 14:1 = 13, and both reviewers agree. The blind reviewer's note that Cr 2.0 is high for stage II is speculative; the note never suggests an acute process, so the score does not change.",
+   "confidence": "high"
+  },
+  {
+   "row": "884",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "12",
+   "final_answer": "15",
+   "corrected_relevant_entities": {
+    "Heart Rate or Pulse": [
+     102.0,
+     "beats per minute"
+    ],
+    "Diastolic Blood Pressure": [
+     75.0,
+     "mm Hg"
+    ],
+    "pH": 7.31,
+    "Systolic Blood Pressure": [
+     120.0,
+     "mm Hg"
+    ],
+    "Acute renal failure": false,
+    "History of severe organ failure or immunocompromise": true,
+    "creatinine": [
+     1.3,
+     "mg/dL"
+    ],
+    "White blood cell count": [
+     7800.0,
+     "µL"
+    ],
+    "Sodium": [
+     142.0,
+     "mEq/L"
+    ],
+    "Potassium": [
+     4.7,
+     "mEq/L"
+    ],
+    "A-a gradient": 400,
+    "age": [
+     57.0,
+     "years"
+    ],
+    "respiratory rate": [
+     19.0,
+     "breaths per minute"
+    ],
+    "Glasgow Coma Score": 13.0,
+    "Hematocrit": [
+     41.0,
+     "%"
+    ],
+    "Temperature": [
+     36.7,
+     "degrees celsius"
+    ],
+    "Surgery Type": "Nonoperative",
+    "FiO2": [
+     54.0,
+     "%"
+    ]
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'chronic liver failure requiring a scheduled transplant' is a future operation; the patient 'presented to the emergency unit with complaints of recent onset lethargy', so this is a nonoperative admission with severe organ insufficiency (+5), not elective postoperative (+2). Age 57:3, A-a 400 on 54%:3, pH 7.31:2, GCS 13:2, Cr 1.3 with 'no evidence of acute renal failure':0 -> 15. Both reviewers give 15.",
+   "confidence": "high"
+  },
+  {
+   "row": "885",
+   "verdict": "CORRECT",
+   "stored_answer": "4",
+   "final_answer": "4",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Explicit 'Glasgow Coma Score of 14' with 'mildly confused' gives 1 point. 'adequately oriented to person, place, and time' is a slight inconsistency, but the stated GCS decides the score. Age 59:3, PaO2 76 on 43%:0, Cr 0.7:0 ('slightly high' wording has no score effect) -> 4. Both reviewers agree.",
+   "confidence": "high"
+  },
+  {
+   "row": "886",
+   "verdict": "CORRECT",
+   "stored_answer": "9",
+   "final_answer": "9",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Long-standing CKD with no dialysis or ARF stated: Cr 1.8 scores 2 and gives no chronic health points. Age 61:3, A-a 445 on 53% FiO2:3, GCS 14:1 -> 9. Both reviewers agree. The blind reviewer's dialysis alternative is not supported by the note.",
+   "confidence": "high"
+  },
+  {
+   "row": "887",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'previously experienced severe liver failure managed with medications' and 'history of severe organ failure' qualify as severe hepatic insufficiency (prior hepatic failure per Knaus), and an outpatient presentation is Nonoperative (+5). Age 68:5, everything else normal (PaO2 78 on 45%, GCS 15, Cr 1.3) -> 10. Both reviewers agree.",
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,926 @@
+{
+ "calculator_id": "25",
+ "rows": [
+  {
+   "row": "346",
+   "fields": {
+    "age": {
+     "value": [
+      22,
+      "years"
+     ],
+     "quote": "A 22-year-old female"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "a kidney transplant ... confirmed renal disease"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "hypertension, evident with several recorded high blood pressure readings in the clinic"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "she suffered a transient ischemic attack of her brain last year"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 12,
+     "quote": "a weekly average of 12 alcoholic beverages"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "there are suggestive signs of hepatic cirrhosis"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "She denies using any medication known to exacerbate bleeding such as NSAIDs, anticoagulants or antiplatelet agents"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": false,
+     "quote": "no clear history of a major bleeding episode or any known coagulation disorders that predispose her to bleeding"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "show a stable international normalized ratio (INR)"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 0; HTN 1; Renal 1; Liver 1; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 1 = 4",
+   "note_issues": [
+    {
+     "field": "Stroke",
+     "issue": "Only a TIA is documented, not a stroke; scored 0. If TIA counted as stroke, +1.",
+     "alternative_score": 5
+    },
+    {
+     "field": "Hypertension",
+     "issue": "Hypertension asserted from 'several recorded high blood pressure readings' without stating it is uncontrolled or giving systolic >160; scored 1. If not counted, -1.",
+     "alternative_score": 3
+    },
+    {
+     "field": "Liver disease criteria for the HAS-BLED rule",
+     "issue": "Only 'suggestive signs of hepatic cirrhosis' with no confirmed diagnosis or bilirubin/enzyme values; scored 1. If not counted, -1.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "347",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old male"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "his treatments have never included medications known to increase bleeding risk like NSAIDs or anticoagulants"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "void of any significant incidents like a stroke or major bleeding episodes"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": false,
+     "quote": "void of any significant incidents like a stroke or major bleeding episodes"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 4,
+     "quote": "roughly four alcoholic beverages on a weekly basis"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "a consistence in the international normalized ratio (INR) levels without demonstrating a propensity to fluctuate"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "demonstrating no abnormalities suggestive of liver or renal disease"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "demonstrating no abnormalities suggestive of liver or renal disease"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "Hypertension too seems to be absent from his health portrait, with normal blood pressure measurements"
+    }
+   },
+   "score": 1,
+   "score_working": "Age>65 1; HTN 0; Renal 0; Liver 0; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 0 = 1",
+   "note_issues": []
+  },
+  {
+   "row": "348",
+   "fields": {
+    "age": {
+     "value": [
+      57,
+      "years"
+     ],
+     "quote": "A 57-year-old male"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "His medical history is void of any stroke or hypertension incidents"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "His medical history is void of any stroke or hypertension incidents"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 4,
+     "quote": "approximately four drinks per week"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "His medication regimen does not include any medicines with potential bleeding risk"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "AST and ALT were 4 times the normal value), suggesting liver disease"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "evidence of kidney disease as indicated by his elevated creatinine levels and a decrease in glomerular filtration rate"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "an event of significant gastrointestinal bleeding, requiring admission"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "a consistently maintained international normalized ratio (INR)"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 0; HTN 0; Renal 1; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": [
+    {
+     "field": "Liver disease criteria for the HAS-BLED rule",
+     "issue": "AST/ALT 4x normal given but no bilirubin and no cirrhosis; MDCalc requires bilirubin >2x normal together with enzymes >3x. Scored 1 per note's assertion; strictly not met, -1.",
+     "alternative_score": 2
+    },
+    {
+     "field": "Renal disease criteria for the HAS-BLED rule",
+     "issue": "Kidney disease asserted from 'elevated creatinine' without a value; cannot confirm Cr >2.26 mg/dL, dialysis or transplant. If not counted, -1.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "row": "349",
+   "fields": {
+    "age": {
+     "value": [
+      33,
+      "years"
+     ],
+     "quote": "A 33-year-old male"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "already diagnosed with hypertension which is being managed with antihypertensive medication"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "His medication list also includes a specific anticoagulant recommended following a DVT"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 4,
+     "quote": "about 4 alcoholic drinks per week"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "does not have any known history of liver disease"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "the renal profile from his last workup did not suggest any kidney diseases"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "There exists no record of a past stroke event either"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "have demonstrated stability thus far"
+    }
+   },
+   "score": 0,
+   "score_working": "Age>65 0; HTN 0; Renal 0; Liver 0; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 0 = 0",
+   "note_issues": [
+    {
+     "field": "Hypertension",
+     "issue": "Hypertension history 'managed with antihypertensive medication' with no BP values or statement of control; scored 0 (not shown uncontrolled). If counted, +1.",
+     "alternative_score": 1
+    },
+    {
+     "field": "Medication usage predisposing to bleeding",
+     "issue": "Only an anticoagulant is listed; MDCalc drug point is antiplatelets/NSAIDs, so scored 0. If anticoagulant counted, +1.",
+     "alternative_score": 1
+    }
+   ]
+  },
+  {
+   "row": "350",
+   "fields": {
+    "age": {
+     "value": [
+      75,
+      "years"
+     ],
+     "quote": "A 75-year-old gentleman"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "He's had a history of stroke"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "uncontrolled hypertension - although his blood pressure has been consistently well-controlled in recent times"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "His medication regimen includes anticoagulants, initiated after his stroke"
+    },
+    "Labile international normalized ratio": {
+     "value": true,
+     "quote": "a fluctuating international normalized ratio (INR) raising some concern"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 5,
+     "quote": "about 5 alcoholic drinks per week"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "there's no obvious renal compromise, evidenced by normal creatinine and glomerular filtration rate"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "tests related to liver function have consistently returned normal, pointing away from any liver disease"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 1; HTN 0; Renal 0; Liver 0; Stroke 1; Bleeding 0; Labile INR 1; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": [
+    {
+     "field": "Hypertension",
+     "issue": "Contradiction: 'uncontrolled hypertension' yet 'blood pressure has been consistently well-controlled in recent times'; scored 0 on current control. If counted as uncontrolled, +1.",
+     "alternative_score": 4
+    },
+    {
+     "field": "Medication usage predisposing to bleeding",
+     "issue": "Only anticoagulants listed (not antiplatelet/NSAID); scored 0. If anticoagulant counted, +1.",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "351",
+   "fields": {
+    "age": {
+     "value": [
+      58,
+      "years"
+     ],
+     "quote": "A 58-year-old male"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "No past stroke history can be detected in his medical records"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": true,
+     "quote": "He is currently being prescribed aspirin and NSAIDs"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 12,
+     "quote": "consuming up to 12 drinks per week"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "his blood pressure readings have tended to be elevated at above 170 mmHg for the systolic pressure"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "his INR has remained stable during his multiple lab tests, eliminating any concerns about its lability"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "He also shows laboratory evidence of chronic kidney disease"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 0; HTN 1; Renal 1; Liver 0; Stroke 0; Bleeding 0; Labile INR 0; Meds 1; Alcohol>=8 1 = 4",
+   "note_issues": [
+    {
+     "field": "Renal disease criteria for the HAS-BLED rule",
+     "issue": "'Laboratory evidence of chronic kidney disease' with no creatinine value, dialysis or transplant; CKD does not necessarily meet Cr >2.26 mg/dL. If not counted, -1.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "352",
+   "fields": {
+    "age": {
+     "value": [
+      67,
+      "years"
+     ],
+     "quote": "A 67-year-old gentleman"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "a longstanding diagnosis of hypertension, which despite efforts, seems to be poorly controlled recently"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "The patient does not take any blood-thinning agents or other medications known to predispose to bleeding"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 3,
+     "quote": "about three drinks per week"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "a major bleeding episode that occurred in the past"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "irreversible, end stage liver fibrosis"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "renal pathologies remain absence in his medical dossier as the renal function records show no signs of compromise"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 1; HTN 1; Renal 0; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 0; Alcohol>=8 0 = 4",
+   "note_issues": [
+    {
+     "field": "Hypertension",
+     "issue": "'Poorly controlled' stated but no systolic value to confirm >160 mmHg; scored 1. If not counted, -1.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "353",
+   "fields": {
+    "age": {
+     "value": [
+      82,
+      "years"
+     ],
+     "quote": "An 82-year-old man"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "marked by a stroke a few years ago"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 0,
+     "quote": "abstaining completely from alcohol"
+    },
+    "Labile international normalized ratio": {
+     "value": true,
+     "quote": "his INR readings have been somewhat variable, demonstrating instances of lability"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "consistently within a normal range, ruling out any active case of uncontrolled hypertension"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": false,
+     "quote": "lacks any recorded episodes of major bleeding, and further probing reveals an absence of any known predisposition to bleeding disorders"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "no discernable renal impairment, with a satisfactory glomerular filtration rate and normal creatinine levels"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 1; HTN 0; Renal 0; Liver 0; Stroke 1; Bleeding 0; Labile INR 1; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "354",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old man"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "His well-documented history of uncontrolled hypertension"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "there is no suggestion of a previous stroke episode"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 9,
+     "quote": "averaging 9 drinks per week"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "repeated indications of hepatic impairment due to ALD"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "demonstrated by an elevated creatinine and reduced glomerular filtration rate"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "he has never been prescribed any medication known to accelerate bleeding"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "a consistently normal international normalized ratio (INR)"
+    }
+   },
+   "score": 5,
+   "score_working": "Age>65 1; HTN 1; Renal 1; Liver 1; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 1 = 5",
+   "note_issues": [
+    {
+     "field": "Liver disease criteria for the HAS-BLED rule",
+     "issue": "'Hepatic impairment due to ALD' with no cirrhosis and no bilirubin/enzyme values; MDCalc criteria not demonstrated. If not counted, -1.",
+     "alternative_score": 4
+    },
+    {
+     "field": "Renal disease criteria for the HAS-BLED rule",
+     "issue": "'Elevated creatinine' without a value; cannot confirm Cr >2.26 mg/dL. If not counted, -1.",
+     "alternative_score": 4
+    },
+    {
+     "field": "Hypertension",
+     "issue": "'History of uncontrolled hypertension' with no current systolic value to confirm >160 mmHg; scored 1. If not counted, -1.",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "355",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A 65-year-old gentleman"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "He has a history of suffering a stroke a few years back"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "the gentleman does not have hypertension and maintains a controlled blood pressure"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 2,
+     "quote": "about two drinks per week"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": true,
+     "quote": "His medical regimen includes clopidogrel"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "he suffered significant bleeding that prolonged his hospital stay"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "Liver function tests consistently returned within normal parameters, alleviating any fear of liver disease"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 0; HTN 0; Renal 0; Liver 0; Stroke 1; Bleeding 1; Labile INR 0; Meds 1; Alcohol>=8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "356",
+   "fields": {
+    "age": {
+     "value": [
+      78,
+      "years"
+     ],
+     "quote": "A 78-year-old man"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "a pattern of elevated blood pressure readings consistent with uncontrolled hypertension"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "he does not have a past history of stroke"
+    },
+    "Labile international normalized ratio": {
+     "value": true,
+     "quote": "His blood work frequently demonstrates an unpredictable INR"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": false,
+     "quote": "he has been lucky to have escaped any major bleeding episodes in the past"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "with a well-preserved glomerular filtration rate and creatinine levels"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 7,
+     "quote": "consuming an average of 7 drinks per week"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 1; HTN 1; Renal 0; Liver 0; Stroke 0; Bleeding 0; Labile INR 1; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": [
+    {
+     "field": "Hypertension",
+     "issue": "Uncontrolled hypertension stated but no systolic value to confirm >160 mmHg; scored 1. If not counted, -1.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "row": "357",
+   "fields": {
+    "age": {
+     "value": [
+      85,
+      "years"
+     ],
+     "quote": "An 85-year-old gentleman"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "His past is significantly marked by a stroke incident"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "a major bleeding episode that required a prolonged period of recovery"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": true,
+     "quote": "He is on antiplatelet medications for secondary prevention of stroke"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "renal impairment - a high creatinine level and a low glomerular filtration rate"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "His liver function tests have consistently returned healthy, denying any history of associated hepatic disease"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 4,
+     "quote": "about four drinks per week on average"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "it is well-managed and within acceptable limits"
+    }
+   },
+   "score": 5,
+   "score_working": "Age>65 1; HTN 0; Renal 1; Liver 0; Stroke 1; Bleeding 1; Labile INR 0; Meds 1; Alcohol>=8 0 = 5",
+   "note_issues": [
+    {
+     "field": "Renal disease criteria for the HAS-BLED rule",
+     "issue": "'High creatinine' without a value; cannot confirm Cr >2.26 mg/dL, dialysis or transplant. If not counted, -1.",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "358",
+   "fields": {
+    "age": {
+     "value": [
+      62,
+      "years"
+     ],
+     "quote": "62-year-old male"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "liver cirrhosis indicated by raised liver enzymes over time"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "He's had an event of major bleeding that necessitated hospital care"
+    },
+    "Labile international normalized ratio": {
+     "value": true,
+     "quote": "his labile INR over successive tests"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "He has not been on any medications that risk exacerbating bleeding"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 1,
+     "quote": "limited to a single drink per week"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "being free from hypertension"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 0; HTN 0; Renal 0; Liver 1; Stroke 0; Bleeding 1; Labile INR 1; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "359",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old man"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "he had suffered a stroke in the past"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "recent BP measurements reflect a lack of effective control (164/113)"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 0,
+     "quote": "reporting zero drinks per week"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "no predominant signs of renal impairment ... normal creatinine levels and glomerular filtration rate"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "INR have consistently been within the normal range without noteworthy fluctuations"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": false,
+     "quote": "does not note any significant bleeding episodes, suggesting no predisposition to bleeding"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 1; HTN 1; Renal 0; Liver 0; Stroke 1; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "360",
+   "fields": {
+    "age": {
+     "value": [
+      52,
+      "years"
+     ],
+     "quote": "A 52-year-old man"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "has been doing well with controlled blood pressure readings on his antihypertensive medications"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "Liver function tests have been showing concerning levels, indicating liver cirrhosis"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "his major bleeding episode, requiring an inpatient stay and multiple transfusions"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 8,
+     "quote": "about 8 alcoholic drinks each week"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": true,
+     "quote": "regularly takes ibuprofen, generally 1-2 times per day"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "his International Normalized Ratio has remained within normal range"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 0; HTN 0; Renal 0; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 1; Alcohol>=8 1 = 4",
+   "note_issues": []
+  },
+  {
+   "row": "361",
+   "fields": {
+    "age": {
+     "value": [
+      59,
+      "years"
+     ],
+     "quote": "A 59-year-old gentleman"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "significant for a previous stroke"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "uncontrolled hypertension (182/111)"
+    },
+    "Labile international normalized ratio": {
+     "value": true,
+     "quote": "a labile INR, with a supra-therapeutic range nearly 80 % of the time"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "A significant bleeding event that happened following a minor operative procedure is documented"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 3,
+     "quote": "approximately three alcoholic beverages per week"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "the liver function tests appear normal suggesting no liver disease"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "his renal function tests showing no kidney impairment"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 0; HTN 1; Renal 0; Liver 0; Stroke 1; Bleeding 1; Labile INR 1; Meds 0; Alcohol>=8 0 = 4",
+   "note_issues": []
+  },
+  {
+   "row": "362",
+   "fields": {
+    "age": {
+     "value": [
+      61,
+      "years"
+     ],
+     "quote": "A 61-year-old male patient"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "currently his blood pressure profile shows well-controlled readings (118/61)"
+    },
+    "Stroke": {
+     "value": false,
+     "quote": "there's no history of stroke"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "an unfortunate incidence of significant bleeding during a dental extraction"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "elevated liver function parameters and a diagnosis of liver cirrhosis"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "abnormally high levels of creatinine (baseline 3.2 mg/dL)"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "He does not regularly take aspirin, NSAIDs, or clopidogrel"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 0,
+     "quote": "he denies any tobacco or alcohol consumption"
+    }
+   },
+   "score": 3,
+   "score_working": "Age>65 0; HTN 0; Renal 1; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 0; Alcohol>=8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "363",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A 65-year-old gentleman"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "he is known to have experienced a stroke several years ago"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "he does not have any history of hypertension"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 10,
+     "quote": "estimating about 10 drinks per week"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": true,
+     "quote": "His treatment plan includes clopidogrel for his stroke"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "elevated creatinine (baseline ~2.8 mg/dL)"
+    },
+    "Labile international normalized ratio": {
+     "value": false,
+     "quote": "His INR has remained stable in the consecutive lab tests, ruling out any lability"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": false,
+     "quote": "does not suggest any prior major bleeding instances or known predisposition to bleeding"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 0; HTN 0; Renal 1; Liver 0; Stroke 1; Bleeding 0; Labile INR 0; Meds 1; Alcohol>=8 1 = 4",
+   "note_issues": []
+  },
+  {
+   "row": "364",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old gentleman"
+    },
+    "Hypertension": {
+     "value": true,
+     "quote": "poorly controlled hypertension, with his recent primary care visit demonstrating 172/114"
+    },
+    "Labile international normalized ratio": {
+     "value": true,
+     "quote": "His INR results have fluctuated and have been elevated above therapeutic range in more than two-thirds of measurements"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 0,
+     "quote": "keeping his weekly alcoholic drink count to zero"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": false,
+     "quote": "He denies use of aspirin, clopidogrel, or NSAIDs"
+    },
+    "Prior major bleeding or predisposition to bleeding": {
+     "value": true,
+     "quote": "admitted due to a significant instance of bleeding requiring transfusion"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "His liver function tests have been normal, excluding any ongoing liver disease"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 1; HTN 1; Renal 0; Liver 0; Stroke 0; Bleeding 1; Labile INR 1; Meds 0; Alcohol>=8 0 = 4",
+   "note_issues": []
+  },
+  {
+   "row": "365",
+   "fields": {
+    "age": {
+     "value": [
+      80,
+      "years"
+     ],
+     "quote": "An 80-year-old male"
+    },
+    "Stroke": {
+     "value": true,
+     "quote": "significant for a stroke that happened 2 years ago"
+    },
+    "Liver disease criteria for the HAS-BLED rule": {
+     "value": true,
+     "quote": "confirming a diagnosis of cirrhosis"
+    },
+    "Number of Alcoholic Drinks Per Week": {
+     "value": 4,
+     "quote": "about four alcoholic drinks each week"
+    },
+    "Medication usage predisposing to bleeding": {
+     "value": true,
+     "quote": "His medication list includes daily aspirin"
+    },
+    "Hypertension": {
+     "value": false,
+     "quote": "the patient does not have uncontrolled hypertension; his blood pressure readings have been consistently within normal limits"
+    },
+    "Renal disease criteria for the HAS-BLED rule": {
+     "value": false,
+     "quote": "His kidney functions have consistently proven to be within the normal range"
+    }
+   },
+   "score": 4,
+   "score_working": "Age>65 1; HTN 0; Renal 0; Liver 1; Stroke 1; Bleeding 0; Labile INR 0; Meds 1; Alcohol>=8 0 = 4",
+   "note_issues": []
+  }
+ ]
+}

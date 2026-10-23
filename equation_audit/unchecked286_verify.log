@@ -1,0 +1,11 @@
+286 rows from unchecked_286.csv to check
+final_unchecked286_verify.jsonl: 0 cached, 286 to run
+  50/286
+  100/286
+  150/286
+  200/286
+  250/286
+Verdict
+correct      207
+ambiguous     55
+incorrect     24

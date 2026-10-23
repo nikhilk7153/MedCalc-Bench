@@ -1,0 +1,5 @@
+12 non-template rows from crcl_train_cand.csv to check
+entities_crcltr.jsonl: 0 cached, 12 to run
+Entities Match
+True     11
+False     1

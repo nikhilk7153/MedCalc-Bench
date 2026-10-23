@@ -1,0 +1,552 @@
+{
+ "rows": [
+  {
+   "calculator_id": "18",
+   "row": "263",
+   "fields": {
+    "age": {
+     "value": [
+      64,
+      "years"
+     ],
+     "quote": "A 64-year-old woman"
+    },
+    "obesity": {
+     "value": false,
+     "quote": "She was 170 cm and weighed 84 kg"
+    }
+   },
+   "score": 1,
+   "score_working": "History: no cardiac complaint described -> slightly suspicious 0; ECG not documented -> normal 0; Age 64 (45-64) -> 1; Risk factors: BMI 84/1.70^2 = 29.1 (<30, not obese), no HTN/DM/lipids/smoking/family history mentioned -> 0; Troponin not documented -> <= normal 0. Total 1.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "All HEART components resolvable via dataset conventions (no ECG/troponin -> normal; unmentioned risk factors absent). Nothing ambiguous.",
+   "eligibility_note": "Not clinically eligible: ophthalmology/hydroxychloroquine-toxicity case with no chest pain; HEART not applicable.",
+   "note_issues": [
+    {
+     "field": "obesity",
+     "issue": "Only height/weight given; BMI 29.1 is just under the >30 obesity threshold, so obesity scored absent.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "calculator_id": "18",
+   "row": "270",
+   "fields": {
+    "age": {
+     "value": [
+      25,
+      "years"
+     ],
+     "quote": "A 25-year-old previously healthy male"
+    },
+    "Suspicion History": {
+     "value": "Slightly suspicious",
+     "quote": "epigastric pain that started immediately after swallowing a boneless chicken nugget one hour prior to presentation"
+    },
+    "Hypertension history": {
+     "value": false,
+     "quote": "He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux"
+    },
+    "Diabetes mellitus": {
+     "value": false,
+     "quote": "He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux"
+    },
+    "hypercholesterolemia": {
+     "value": false,
+     "quote": "He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux"
+    },
+    "atherosclerotic disease": {
+     "value": false,
+     "quote": "previously healthy male"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "previously healthy male"
+    }
+   },
+   "score": 0,
+   "score_working": "History: epigastric pain/dyspnea immediately after swallowing food (esophageal rupture), non-cardiac -> slightly suspicious 0; ECG not documented -> normal 0; Age 25 (<45) -> 0; Risk factors: previously healthy, none documented -> 0; Troponin not listed among presentation labs -> <= normal 0. Total 0.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "No ECG/troponin documented -> scored normal by convention; history clearly non-cardiac; no other ambiguity.",
+   "eligibility_note": "Presented with epigastric pain and dyspnea (not chest pain) from esophageal perforation; chest pain only appears 5 days later. HEART marginally/not applicable.",
+   "note_issues": [
+    {
+     "field": "Suspicion History",
+     "issue": "Suspicion level is a judgment; non-cardiac mechanism (food bolus, esophageal rupture) makes 'slightly suspicious' most defensible. 'Moderately suspicious' would give 1.",
+     "alternative_score": 1
+    }
+   ]
+  },
+  {
+   "calculator_id": "18",
+   "row": "271",
+   "fields": {
+    "age": {
+     "value": [
+      63,
+      "years"
+     ],
+     "quote": "a 63-year-old post-menopausal G3P3003 Caucasian female"
+    },
+    "smoking": {
+     "value": false,
+     "quote": "She denied tobacco, alcohol, or intravenous drug use."
+    },
+    "parent or sibling with Cardiovascular disease before age 65": {
+     "value": false,
+     "quote": "Family history was significant for hypertension in her mother and cardiovascular disease in her father."
+    },
+    "Suspicion History": {
+     "value": "Slightly suspicious",
+     "quote": "presenting with complaints of progressively increased hair growth, deepening voice, and a receding hairline"
+    }
+   },
+   "score": 1,
+   "score_working": "History: no cardiac symptoms (virilization, pelvic discomfort) -> slightly suspicious 0; ECG not documented -> normal 0; Age 63 (45-64) -> 1; Risk factors: non-smoker, PMH only osteoporosis, no meds; father's cardiovascular disease has no age of onset so the '<65' family-history criterion is not established -> 0; Troponin not documented -> 0. Total 1.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Components resolvable via conventions; the only soft point is the family history age-of-onset (see note_issues), treated as not documented -> absent.",
+   "eligibility_note": "Not clinically eligible: Sertoli-Leydig cell tumor/hyperandrogenism case with no chest pain.",
+   "note_issues": [
+    {
+     "field": "parent or sibling with Cardiovascular disease before age 65",
+     "issue": "Father has 'cardiovascular disease' but age at onset is not stated; if counted as positive family history, risk factors = 1 -> +1.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "calculator_id": "18",
+   "row": "277",
+   "fields": {
+    "age": {
+     "value": [
+      27,
+      "years"
+     ],
+     "quote": "A 27-year-old white woman"
+    },
+    "smoking": {
+     "value": false,
+     "quote": "She did not smoke"
+    },
+    "Suspicion History": {
+     "value": "Slightly suspicious",
+     "quote": "reported palpitations and dizziness when supine"
+    },
+    "atherosclerotic disease": {
+     "value": false,
+     "quote": "There was no history of known structural heart disease, arrhythmias or prior unexplained syncope."
+    },
+    "Initial troponin": {
+     "value": "less than or equal to normal limit",
+     "quote": "The patient performed laboratory tests and transthoracic echocardiogram; all exams were within normal range"
+    }
+   },
+   "score": 0,
+   "score_working": "History: palpitations/dizziness when supine, no chest pain, no exertional symptoms -> slightly suspicious 0; ECG: no 12-lead described (Holter showed VPCs only, not a repolarization disturbance) -> normal 0; Age 27 -> 0; Risk factors: non-smoker, previously healthy -> 0; Troponin: labs within normal range/not specifically reported -> 0. Total 0.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "ECG/troponin not specifically reported -> normal by convention; nothing ambiguous.",
+   "eligibility_note": "Not clinically eligible: pregnant woman with positional palpitations (ventricular premature contractions), no chest pain.",
+   "note_issues": [
+    {
+     "field": "Initial troponin",
+     "issue": "Note says 'laboratory tests ... all within normal range' without listing troponin; scored normal either way.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "calculator_id": "48",
+   "row": "571",
+   "fields": {
+    "age": {
+     "value": [
+      35,
+      "years"
+     ],
+     "quote": "a 35-year-old Hispanic female"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      60,
+      "beats per minute"
+     ],
+     "quote": "pulse of 60"
+    },
+    "O₂ saturation percentage": {
+     "value": [
+      100,
+      "%"
+     ],
+     "quote": "pulse oximetry 100% on ambient air"
+    },
+    "Recent surgery or trauma": {
+     "value": false,
+     "quote": "Surgical history was unremarkable."
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "with no past medical history"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "with no past medical history"
+    },
+    "Hormone use": {
+     "value": false,
+     "quote": "The patient was not taking any medications at time of hospitalization."
+    },
+    "Hemoptysis": {
+     "value": false,
+     "quote": "Review of systems was otherwise negative."
+    }
+   },
+   "score": 0,
+   "score_working": "Age 35 (<50) 0; HR 60 (<100) 0; SpO2 100% room air (>=95) 0; unilateral leg swelling not mentioned 0; hemoptysis absent 0; no recent surgery/trauma 0; no prior DVT/PE 0; no hormone use (no medications) 0. Total 0.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Vitals at presentation on room air; all criteria determinable.",
+   "eligibility_note": "Presentation is abnormal uterine bleeding/purpura, not suspected PE; PERC clinically irrelevant but computable.",
+   "note_issues": [
+    {
+     "field": "Heart Rate or Pulse",
+     "issue": "Pulse written as 'pulse of 60' with no unit; bpm implied.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "calculator_id": "48",
+   "row": "575",
+   "fields": {
+    "age": {
+     "value": [
+      76,
+      "years"
+     ],
+     "quote": "A 76-year-old male"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      76,
+      "beats per minute"
+     ],
+     "quote": "pulse 76 beats per minute"
+    },
+    "O₂ saturation percentage": {
+     "value": [
+      99,
+      "%"
+     ],
+     "quote": "pulse oximetry 99% on room air"
+    },
+    "Recent surgery or trauma": {
+     "value": false,
+     "quote": "family denied any recent trauma, bleeding, or surgery"
+    }
+   },
+   "score": 1,
+   "score_working": "Age 76 (>=50) 1; HR 76 0; SpO2 99% room air 0; leg swelling not mentioned 0; hemoptysis not mentioned 0; recent surgery/trauma denied 0; prior DVT/PE not mentioned (PMH hypertension only) 0; hormone use not mentioned 0. Total 1.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Initial vitals on room air, pre-tPA; all criteria determinable.",
+   "eligibility_note": "Stroke alert presentation, not suspected PE; PERC clinically irrelevant but computable.",
+   "note_issues": []
+  },
+  {
+   "calculator_id": "48",
+   "row": "579",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A 65-year-old man"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      107,
+      "beats/min"
+     ],
+     "quote": "heart rate was 107 beats/min"
+    },
+    "O₂ saturation percentage": {
+     "value": [
+      88,
+      "%"
+     ],
+     "quote": "oxyhemoglobin saturation was 88% while breathing a 50% oxygen concentration with a face mask"
+    },
+    "Hemoptysis": {
+     "value": true,
+     "quote": "complaining of sudden dyspnea and hemoptysis for half a day"
+    },
+    "Recent surgery or trauma": {
+     "value": false,
+     "quote": "Surgical treatment was not performed because the patient worried about the risks of surgery."
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "The patient had a disease-free personal and family history."
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "The patient had a disease-free personal and family history."
+    }
+   },
+   "score": 4,
+   "score_working": "Age 65 (>=50) 1; HR 107 (>=100) 1; SpO2 88% on 50% O2 -> room-air SpO2 necessarily <95% -> 1; hemoptysis 1; leg swelling not mentioned 0; no recent surgery/trauma 0; no prior DVT/PE 0; hormone use not mentioned 0. Total 4.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "SpO2 is only reported on 50% supplemental O2 (PERC wants room air), but 88% on supplemental oxygen implies room-air saturation is also <95%, so the criterion is met regardless; score is not guesswork.",
+   "eligibility_note": "Dyspnea with hemoptysis and shock (pheochromocytoma crisis/AAA); PE was a reasonable differential, PERC applicable in form though patient is not low-risk.",
+   "note_issues": [
+    {
+     "field": "O₂ saturation percentage",
+     "issue": "Saturation measured on 50% face-mask oxygen, not room air. Direction is unambiguous (room air would be <=88%), so criterion counted met; a strict reader excluding non-room-air values would score 3.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "calculator_id": "48",
+   "row": "581",
+   "fields": {
+    "age": {
+     "value": [
+      54,
+      "years"
+     ],
+     "quote": "A 54-year-old female"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      82,
+      "beats per minute"
+     ],
+     "quote": "heart rate 82 beats per minute"
+    },
+    "O₂ saturation percentage": {
+     "value": [
+      96,
+      "%"
+     ],
+     "quote": "oxygen saturation 96% on room air"
+    },
+    "Unilateral Leg Swelling": {
+     "value": false,
+     "quote": "negative for ... extremity swelling"
+    },
+    "Recent surgery or trauma": {
+     "value": false,
+     "quote": "She denied any medical or surgical history"
+    },
+    "Previously documented Deep Vein Thrombosis": {
+     "value": false,
+     "quote": "She denied any medical or surgical history"
+    },
+    "Previously Documented Pulmonary Embolism": {
+     "value": false,
+     "quote": "She denied any medical or surgical history"
+    },
+    "Hormone use": {
+     "value": false,
+     "quote": "additional courses of prednisone in the last two of the five visits"
+    }
+   },
+   "score": 1,
+   "score_working": "Age 54 (>=50) 1; HR 82 0; SpO2 96% room air 0; extremity swelling denied 0; hemoptysis not mentioned 0; no surgery/trauma 0; no prior DVT/PE 0; hormone use: only prednisone (a glucocorticoid, not estrogen/OCP/HRT) -> 0. Total 1.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Vitals on room air at presentation; all criteria determinable.",
+   "eligibility_note": "Facial swelling (later SVC-type picture on chest imaging), not a typical suspected-PE presentation; PERC computable.",
+   "note_issues": [
+    {
+     "field": "Hormone use",
+     "issue": "Patient received recent prednisone courses; PERC 'hormone use' means estrogenic hormones (OCP/HRT), so not counted. If a corticosteroid were counted as hormone use the score would be 2.",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "calculator_id": "51",
+   "row": "594",
+   "fields": {
+    "Temperature": {
+     "value": [
+      37.4,
+      "°C"
+     ],
+     "quote": "her body temperature was 37.4°C"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      87,
+      "beats per minute"
+     ],
+     "quote": "her pulse rate was 87 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "Her respiratory rate was 20 breaths per minute"
+    },
+    "White blood cell count": {
+     "value": [
+      830,
+      "µL"
+     ],
+     "quote": "Full blood count performed at our hospital revealed severe leucopenia with a WBC count of 830/µL"
+    }
+   },
+   "score": 1,
+   "score_working": "Temp 37.4 C (36-38) 0; HR 87 (<=90) 0; RR 20 (not >20), no PaCO2 0; WBC 830/uL (<4000) 1. Total 1.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Vitals and full blood count are both from presentation at the authors' hospital before its treatment; earlier clinic WBCs (7920, 1050/uL) are prior encounters and not used.",
+   "eligibility_note": "Adult (96 y); eligible.",
+   "note_issues": [
+    {
+     "field": "White blood cell count",
+     "issue": "Earlier outside-clinic WBCs exist (7920/uL normal; 1050/uL low); any admission-time WBC is <4000 so score unchanged. Patient had 'high-grade fever' before referral but was 37.4 C at presentation.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "calculator_id": "51",
+   "row": "598",
+   "fields": {
+    "Temperature": {
+     "value": [
+      39.0,
+      "°C"
+     ],
+     "quote": "temperature 39.0°C (102.2°F)"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      92,
+      "/min"
+     ],
+     "quote": "pulse 92/min"
+    },
+    "respiratory rate": {
+     "value": [
+      25,
+      "/min"
+     ],
+     "quote": "respiratory rate 25/min"
+    }
+   },
+   "score": 3,
+   "score_working": "Temp 39.0 C (>38) 1; HR 92 (>90) 1; RR 25 (>20) 1; WBC not reported -> treated as normal 0. Total 3.",
+   "completeness": "INCOMPLETE",
+   "completeness_reason": "No WBC count in the note; the WBC criterion cannot be assessed (a pyelonephritis patient may well have leukocytosis), so 3 vs 4 depends on an unreported value.",
+   "eligibility_note": "Adult (23 y); eligible.",
+   "note_issues": [
+    {
+     "field": "White blood cell count",
+     "issue": "WBC absent from note; if leukocytosis were present the score would be 4.",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "calculator_id": "51",
+   "row": "599",
+   "fields": {
+    "Temperature": {
+     "value": [
+      37.3,
+      "C"
+     ],
+     "quote": "body temperature of 37.3 C"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      88,
+      "beats/min"
+     ],
+     "quote": "a pulse rate of 88 beats/min"
+    },
+    "respiratory rate": {
+     "value": [
+      16,
+      "breaths/min"
+     ],
+     "quote": "a respiratory rate of 16 breaths/min"
+    },
+    "White blood cell count": {
+     "value": [
+      13.7,
+      "× 10^4/L"
+     ],
+     "quote": "a white blood cell count of 13.7 × 104/L with 80% neutrophils"
+    }
+   },
+   "score": 1,
+   "score_working": "Temp 37.3 C 0; HR 88 0; RR 16, no PaCO2 0; WBC 13.7 (intended x10^9/L = 13,700/uL, >12,000) 1. Total 1.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "WBC unit is garbled ('× 104/L'), but every reading (13,700/uL leukocytosis, or a literal 137,000/L leukopenia) meets the WBC criterion, so the score is unaffected.",
+   "eligibility_note": "Adult (39 y); eligible.",
+   "note_issues": [
+    {
+     "field": "White blood cell count",
+     "issue": "Unit written '13.7 × 104/L' (likely typo for ×10^9/L; hemoglobin 15.3 g/L similarly mis-united). Literal value 1.37×10^5/L would be <4000/uL, also meeting the criterion; score 1 either way.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "calculator_id": "51",
+   "row": "604",
+   "fields": {
+    "Temperature": {
+     "value": [
+      36,
+      "degrees (unit not written)"
+     ],
+     "quote": "temperature was 36"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      120,
+      "bpm"
+     ],
+     "quote": "pulse 120 bpm"
+    },
+    "respiratory rate": {
+     "value": [
+      32,
+      "breaths per minute (unit not written)"
+     ],
+     "quote": "respiratory rate 32"
+    },
+    "White blood cell count": {
+     "value": [
+      21.16,
+      "(unit not written)"
+     ],
+     "quote": "leukocyte count of 21.16 with neutrophilia of 18.95"
+    }
+   },
+   "score": 3,
+   "score_working": "Temp 36 (C implied; not <36) 0; HR 120 (>90) 1; RR 32 (>20) 1; WBC 21.16 (x10^9/L implied = 21,160/uL, >12,000) 1. Total 3.",
+   "completeness": "COMPLETE",
+   "completeness_reason": "Arrival vitals given; WBC unit missing but 21.16 can only sensibly be x10^9/L (leukocytosis). Blood tests presumably on arrival.",
+   "eligibility_note": "Adult (52 y) trauma patient; eligible (SIRS is non-specific to infection).",
+   "note_issues": [
+    {
+     "field": "Temperature",
+     "issue": "Temperature exactly 36 (C implied) sits on the boundary; MDCalc criterion is <36 so not met. If <=36 were counted, score 4.",
+     "alternative_score": 4
+    },
+    {
+     "field": "White blood cell count",
+     "issue": "No unit given for 21.16; interpreted as x10^9/L.",
+     "alternative_score": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+    "9_pmc-6007257-1": {
+        "analysis": "The prediction used a different formula for the MDRD GFR Equation than the ground truth. The prediction divided the creatinine level by 88.4 before raising it to the power of -1.154, while the ground truth raised the creatinine level to the power of -1.154 directly. This indicates that the prediction used a wrong calculator or rules for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-3764696-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters. However, the arithmetic calculation was incorrect.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-4065736-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters. However, the arithmetic was performed incorrectly, leading to a different result.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6902272-1": {
+        "analysis": "The prediction used a different formula for the MDRD GFR Equation than the ground-truth. The prediction divided the creatinine level by 88.4 before raising it to the power of -1.154, while the ground-truth raised the creatinine level to the power of -1.154 without dividing it by 88.4. This led to a different result in the GFR calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6485150-1": {
+        "analysis": "The prediction used a different formula for the MDRD GFR Equation than the ground-truth. The prediction divided the creatinine level by 88.4 before raising it to the power of -1.154, while the ground-truth raised the creatinine level to the power of -1.154 directly. This indicates that the prediction used a wrong calculator or rules for the calculation.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-4381148-1": {
+        "analysis": "The assistant used the correct MDRD equation but made a mistake in the calculation. The assistant divided the creatinine level by 88.4 before plugging it into the equation, which is not required according to the ground truth explanation. This led to a different GFR result.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_pmc-6691829-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the arithmetic calculation of the GFR value is incorrect. The ground truth calculation resulted in a GFR of 8.85245 mL/min/1.73m\u00b2, while the prediction calculated a GFR of 9.8 mL/min/1.73m\u00b2.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-1847820-1": {
+        "analysis": "The assistant used the correct MDRD equation but made an error in the conversion of creatinine from mg/dL to \u00b5mol/L. The assistant converted the creatinine level to \u00b5mol/L, which is not necessary in this case as the creatinine concentration is already given in mg/dL. This led to an incorrect calculation of the GFR.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_pmc-5451771-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for GFR calculation. However, the prediction did not provide the final calculated GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6454930-1": {
+        "analysis": "The prediction incorrectly stated that the patient's gender was not mentioned, while the ground-truth clearly stated that the patient is male. The prediction also used a different formula for the GFR calculation, which is incorrect according to the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-4652317-1": {
+        "analysis": "The prediction correctly identified the MDRD GFR Equation and extracted the correct parameters. However, the arithmetic calculation was performed incorrectly, leading to a different GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6122666-1": {
+        "analysis": "The prediction used the wrong formula for the MDRD GFR Equation. The creatinine value should not be divided by 88.4 in the equation. This led to an incorrect calculation of the GFR.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_pmc-7787914-1": {
+        "analysis": "The assistant used a different formula for the calculation of GFR. Instead of using the creatinine value directly, the assistant divided it by 88.4 before raising it to the power of -1.154. This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-3104662-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters from the patient's information. However, the final calculated GFR value is different from the ground truth. This suggests that the arithmetic was performed incorrectly.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-3841498-1": {
+        "analysis": "The prediction correctly identified the parameters and the formula to use. However, it did not perform the calculation to provide the final GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_usmle-3514": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for GFR calculation. However, the final result of the calculation is not provided.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-5971350-1": {
+        "analysis": "The assistant used a different formula for the MDRD GFR Equation. Instead of using the creatinine concentration directly, the assistant divided the creatinine by 88.4. This is not the correct formula as per the ground truth.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_usmle-3704": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the final calculated GFR value is incorrect.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-8022897-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula for calculation. However, the prediction did not provide the final calculated GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-8432418-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters from the patient's information. However, the arithmetic calculation was incorrect, leading to a different GFR result.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "26_pmc-5389145-1": {
+        "analysis": "The prediction correctly identified the formula and parameters for sodium correction for hyperglycemia. However, it did not perform the final arithmetic calculation to provide the corrected sodium concentration.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "26_pmc-2803813-1": {
+        "analysis": "The prediction correctly identified the formula and parameters for Sodium Correction for Hyperglycemia. However, it did not complete the final arithmetic calculation to provide the corrected sodium concentration.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    }
+}

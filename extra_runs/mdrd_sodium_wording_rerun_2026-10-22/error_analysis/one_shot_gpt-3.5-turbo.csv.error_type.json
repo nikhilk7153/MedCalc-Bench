@@ -1,0 +1,123 @@
+{
+    "9_pmc-6007257-1": {
+        "analysis": "The prediction correctly identified and used all the parameters and the correct MDRD equation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-3764696-1": {
+        "analysis": "The prediction used the correct formula and parameters, but the final calculated value is different from the ground truth.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-4065736-1": {
+        "analysis": "The prediction used the correct formula and parameters, but the final result is different from the ground-truth. This suggests an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6902272-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for the calculation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6485150-1": {
+        "analysis": "The prediction correctly identified and used all the parameters and the correct MDRD equation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-4381148-1": {
+        "analysis": "The prediction correctly identified and used all the parameters and the correct MDRD equation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6691829-1": {
+        "analysis": "The prediction incorrectly converted the creatinine concentration from \u03bcmol/L to mg/dL by dividing by 88.4, instead of following the correct conversion process as described in the ground-truth explanation. This led to a different GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-1847820-1": {
+        "analysis": "The prediction correctly identified and used all the parameters from the ground-truth. However, the final calculated GFR value is different from the ground-truth. This suggests that the arithmetic was performed incorrectly.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-5451771-1": {
+        "analysis": "The prediction used the correct formula and parameters, but the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6454930-1": {
+        "analysis": "The prediction correctly identified and used all the parameters and the correct MDRD equation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-4652317-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for GFR calculation. However, the final calculated GFR value is incorrect.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-6122666-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the final calculated value is different from the ground truth.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-7787914-1": {
+        "analysis": "The prediction used the correct formula and parameters, but the final calculated value is different from the ground truth.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-3104662-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for the calculation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-3841498-1": {
+        "analysis": "The prediction correctly identified and used all the parameters and the correct MDRD equation for GFR calculation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_usmle-3514": {
+        "analysis": "The prediction used the correct formula and parameters, but the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-5971350-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for the calculation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_usmle-3704": {
+        "analysis": "The prediction used the correct formula and parameters, but the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-8022897-1": {
+        "analysis": "The prediction correctly identified and used the MDRD equation for calculating the GFR. The parameters extracted from the problem are also correct. However, the final calculated GFR value is different from the ground truth. This suggests an arithmetic error in the calculation.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-8432418-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for the calculation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    }
+}

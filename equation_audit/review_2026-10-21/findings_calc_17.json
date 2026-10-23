@@ -1,0 +1,181 @@
+{
+ "calculator_id": "17",
+ "mdcalc_source": "https://www.mdcalc.com/calc/1739/revised-cardiac-risk-index-preoperative-risk (the requested /calc/1745/ URL returned 404; same RCRI calculator found via search)",
+ "mdcalc_rules": "6 criteria, +1 each (0-6): elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular); history of ischemic heart disease (MI, positive exercise test, current ischemic chest pain, nitrate use, or ECG pathological Q waves); history of CHF (pulmonary edema, bilateral rales or S3 gallop, PND, CXR pulmonary vascular redistribution); history of cerebrovascular disease (prior TIA or stroke); pre-operative insulin treatment; pre-operative creatinine >2 mg/dL (>176.8 umol/L).",
+ "code_vs_mdcalc": [
+  {
+   "issue": "None found. Code adds +1 per boolean criterion, creatinine strictly >2 mg/dL (2.0 scores 0, matching MDCalc), umol/L converted with MW 113.12 (equivalent to /88.4), missing criteria default to absent. Age is in name_to_python but unused, which is correct for RCRI.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Lap cholecystectomy = intraperitoneal (+1); insulin (+1); Cr 2.1 >2 (+1); IHD absent (denies MI, negative stress test, no chest pain/nitrates); no CHF/CVD.",
+   "evidence_quote": "elective laparoscopic cholecystectomy ... managed with insulin ... serum creatinine level of 2.1 mg/dL"
+  },
+  {
+   "row": "241",
+   "status": "INPUT_ERROR",
+   "stored_answer": "3",
+   "mdcalc_answer": "4",
+   "details": "congestive_heart_failure stored False, should be True. Note documents a diagnosis of CHF on furosemide; RCRI/MDCalc criterion is 'History of congestive heart failure'. The near-identical note in row 243 (same text) and row 260 ('well-managed CHF', euvolemic) are both stored True, so row 241 is internally inconsistent. Correct: IHD(+1, angina/nitroglycerin) + CHF(+1) + CVD(+1, ischemic stroke) + Cr 2.1 >2 (+1); breast biopsy not elevated-risk = 4. (A prior audit, entities_rcrifix.csv, also flagged CHF as omitted.)",
+   "evidence_quote": "history of non-insulin-dependent diabetes mellitus, ischemic stroke with mild residual aphasia, well-controlled congestive heart failure, and stable angina ... creatinine of 2.1 mg/dL"
+  },
+  {
+   "row": "242",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Minor gyn op not elevated-risk; TIA (+1), IHD (+1), CHF with S3 (+1); no insulin; Cr 1.74.",
+   "evidence_quote": "transient ischemic attack ... ischemic heart disease and congestive heart failure ... S3 gallop"
+  },
+  {
+   "row": "243",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Breast biopsy not elevated-risk; IHD, CHF, CVD (+3); non-insulin DM; Cr 1.8.",
+   "evidence_quote": "ischemic stroke ... well-controlled congestive heart failure, and stable angina"
+  },
+  {
+   "row": "244",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Retinal detachment repair not elevated-risk; CAD/MI (+1), HFrEF (+1), TIAs (+1); no insulin; Cr 1.6.",
+   "evidence_quote": "coronary artery disease with myocardial infarction ... heart failure with reduced ejection fraction ... multiple transient ischemic attacks"
+  },
+  {
+   "row": "245",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Shoulder arthroscopy not elevated-risk; CAD s/p CABG (+1), CHF (+1); denies stroke/TIA; Cr 1.7.",
+   "evidence_quote": "history of coronary artery disease and congestive heart failure"
+  },
+  {
+   "row": "246",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "AAA repair = suprainguinal vascular (+1); prior CVA (+1); insulin (+1); no CHF; no IHD mentioned; Cr 1.36.",
+   "evidence_quote": "high-risk abdominal aortic aneurysm repair ... cerebrovascular accident ... managed with insulin"
+  },
+  {
+   "row": "247",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Inguinal hernia repair not elevated-risk; IHD s/p PCI (+1), cerebrovascular event (+1); no CHF, no insulin; Cr 1.3.",
+   "evidence_quote": "ischemic heart disease, status post percutaneous coronary intervention ... a cerebrovascular event"
+  },
+  {
+   "row": "248",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Insulin (+1), CHF (+1); no IHD/CVD; Cr 140 umol/L = 1.58 mg/dL (stored 1.6, <=2). Surgery type unspecified ('scheduled operation'); per dataset convention treated as not elevated-risk.",
+   "evidence_quote": "insulin-dependent diabetes ... diagnosed with congestive heart failure ... creatinine level of 140 umol/L"
+  },
+  {
+   "row": "249",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Colonic resection = intraperitoneal (+1); IHD (+1); oral agents only; no CHF/CVD; Cr 1.5.",
+   "evidence_quote": "colonic resection ... ischemic heart disease ... oral antihyperglycemics only"
+  },
+  {
+   "row": "250",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "IHD with stents (+1), prior CVA (+1), insulin (+1); no CHF; Cr 1.2. Surgery type unspecified ('scheduled operation'); treated as not elevated-risk per convention.",
+   "evidence_quote": "ischemic heart disease requiring coronary stents, and a previous cerebrovascular accident ... managed with insulin"
+  },
+  {
+   "row": "251",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Thoracic surgery for lung mass = intrathoracic (+1); CHF (+1); stroke (+1); no insulin; Cr 1.9.",
+   "evidence_quote": "high-risk thoracic surgery for a large lung mass ... congestive heart failure ... stroke three years prior"
+  },
+  {
+   "row": "252",
+   "status": "INPUT_ERROR",
+   "stored_answer": "2",
+   "mdcalc_answer": "1",
+   "details": "elevated_risk_surgery stored True, should be False. MDCalc defines elevated-risk surgery strictly as intraperitoneal, intrathoracic or suprainguinal vascular; revision hip replacement is none of these, despite the note labelling it 'high-risk orthopedic'. Only CVA (+1); no CHF/IHD/insulin; Cr 1.5. Correct RCRI = 1.",
+   "evidence_quote": "pre-operative evaluation for high-risk orthopedic surgery for revision hip replacement"
+  },
+  {
+   "row": "253",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Elective hernia repair not elevated-risk; IHD s/p PCI (+1); insulin (+1); no CVD/CHF; Cr 1.4.",
+   "evidence_quote": "stable ischemic heart disease ... percutaneous coronary intervention ... well controlled with insulin therapy"
+  },
+  {
+   "row": "254",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "TURP not elevated-risk; stroke (+1), CHF with S3 (+1); no IHD, no insulin; Cr 150 umol/L = 1.70 mg/dL (<=2).",
+   "evidence_quote": "stroke three years ago ... congestive heart failure ... creatinine of 150 umol/L"
+  },
+  {
+   "row": "255",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Lung cancer resection = intrathoracic (+1); CHF (+1); IHD s/p CABG (+1); no CVD; insulin not mentioned; Cr 1.8.",
+   "evidence_quote": "lung cancer resection ... congestive heart failure ... ischemic heart disease that required coronary artery bypass grafting"
+  },
+  {
+   "row": "256",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "AAA repair = suprainguinal vascular (+1); CVA (+1); insulin (+1); no CHF; Cr 1.9 (<=2).",
+   "evidence_quote": "abdominal aortic aneurysm repair ... cerebrovascular accident ... insulin therapy ... creatinine level of 1.9 mg/dL"
+  },
+  {
+   "row": "257",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Inguinal hernia repair not elevated-risk; IHD/NSTEMI (+1); TIA (+1); metformin only; Cr 1.6.",
+   "evidence_quote": "non-ST-segment elevation myocardial infarction ... transient ischemic attack two years ago"
+  },
+  {
+   "row": "258",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Carotid stenosis surgery counted as elevated-risk (+1; carotid is suprainguinal vascular and note explicitly calls it high-risk — minor ambiguity since some sources rank carotid endarterectomy intermediate risk); CHF (+1); no IHD/CVA; carotid stenosis alone is not TIA/stroke; Cr 2.0 not >2.",
+   "evidence_quote": "high-risk surgery for carotid artery stenosis ... creatinine level of 2.0 mg/dL"
+  },
+  {
+   "row": "259",
+   "status": "OK",
+   "stored_answer": "2",
+   "mdcalc_answer": "2",
+   "details": "Knee replacement not elevated-risk; IHD s/p PCI (+1); insulin (+1); no CHF; CVD not mentioned (absent); Cr 1.2.",
+   "evidence_quote": "knee replacement surgery ... ischemic heart disease ... type 2 diabetes with insulin therapy"
+  },
+  {
+   "row": "260",
+   "status": "OK",
+   "stored_answer": "5",
+   "mdcalc_answer": "5",
+   "details": "Endovascular aneurysm repair = suprainguinal vascular (+1); TIA (+1); CHF (+1); insulin (+1); Cr 2.3 >2 (+1); no IHD.",
+   "evidence_quote": "high-risk endovascular aneurysm repair ... transient ischemic attack ... congestive heart failure ... managed with insulin ... creatinine of 2.3 mg/dL"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{"Row Number": 830, "all_match": true, "problems": [], "Tokens": 1013}
+{"Row Number": 832, "all_match": true, "problems": [], "Tokens": 1158}
+{"Row Number": 831, "all_match": true, "problems": [], "Tokens": 951}
+{"Row Number": 829, "all_match": true, "problems": [], "Tokens": 1031}
+{"Row Number": 834, "all_match": true, "problems": [], "Tokens": 1111}
+{"Row Number": 836, "all_match": true, "problems": [], "Tokens": 1082}
+{"Row Number": 833, "all_match": true, "problems": [], "Tokens": 1061}
+{"Row Number": 835, "all_match": true, "problems": [], "Tokens": 1007}
+{"Row Number": 837, "all_match": true, "problems": [], "Tokens": 1058}
+{"Row Number": 839, "all_match": true, "problems": [], "Tokens": 1145}
+{"Row Number": 840, "all_match": true, "problems": [], "Tokens": 1112}
+{"Row Number": 838, "all_match": true, "problems": [], "Tokens": 1144}
+{"Row Number": 841, "all_match": true, "problems": [], "Tokens": 1013}
+{"Row Number": 843, "all_match": true, "problems": [], "Tokens": 1074}
+{"Row Number": 844, "all_match": true, "problems": [], "Tokens": 1077}
+{"Row Number": 842, "all_match": true, "problems": [], "Tokens": 1079}
+{"Row Number": 845, "all_match": true, "problems": [], "Tokens": 1107}
+{"Row Number": 846, "all_match": true, "problems": [], "Tokens": 1127}
+{"Row Number": 847, "all_match": true, "problems": [], "Tokens": 1164}
+{"Row Number": 848, "all_match": true, "problems": [], "Tokens": 1165}
+{"Row Number": 850, "all_match": true, "problems": [], "Tokens": 787}
+{"Row Number": 849, "all_match": true, "problems": [], "Tokens": 866}
+{"Row Number": 852, "all_match": true, "problems": [], "Tokens": 942}
+{"Row Number": 853, "all_match": true, "problems": [], "Tokens": 945}
+{"Row Number": 854, "all_match": true, "problems": [], "Tokens": 933}
+{"Row Number": 856, "all_match": true, "problems": [], "Tokens": 910}
+{"Row Number": 855, "all_match": true, "problems": [], "Tokens": 919}
+{"Row Number": 858, "all_match": true, "problems": [], "Tokens": 871}
+{"Row Number": 857, "all_match": false, "problems": [{"input": "Best motor response", "extracted": "flexion to pain", "note_says": "On initial evaluation, painful stimulation elicited an explicitly described flexion withdrawal response.", "issue": "wrong_value"}], "Tokens": 1194}
+{"Row Number": 860, "all_match": true, "problems": [], "Tokens": 995}
+{"Row Number": 851, "all_match": false, "problems": [{"input": "Best motor response", "extracted": "flexion to pain", "note_says": "At presentation, he withdrew from the painful stimulus with body and limb flexion. Abnormal or decorticate flexion was not documented.", "issue": "wrong_value"}], "Tokens": 1107}
+{"Row Number": 859, "all_match": true, "problems": [], "Tokens": 1057}
+{"Row Number": 861, "all_match": true, "problems": [], "Tokens": 967}
+{"Row Number": 863, "all_match": true, "problems": [], "Tokens": 957}
+{"Row Number": 864, "all_match": true, "problems": [], "Tokens": 911}
+{"Row Number": 866, "all_match": true, "problems": [], "Tokens": 1028}
+{"Row Number": 865, "all_match": true, "problems": [], "Tokens": 981}
+{"Row Number": 867, "all_match": true, "problems": [], "Tokens": 1055}
+{"Row Number": 868, "all_match": true, "problems": [], "Tokens": 1006}
+{"Row Number": 862, "all_match": false, "problems": [{"input": "Best motor response", "extracted": "obeys commands", "note_says": "At arrival, she was described as unresponsive to verbal commands, but also as following commands to raise her hand and squeeze the examiner's fingers.", "issue": "conflicting_values_in_note"}, {"input": "Best verbal response", "extracted": "oriented", "note_says": "At arrival, she was described as unresponsive to verbal commands, but also as articulating clear responses and being oriented to person, place, and time.", "issue": "conflicting_values_in_note"}], "Tokens": 949}
+{"Row Number": 871, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": [16000, "mm^3"], "note_says": "16,000/mm^3", "issue": "wrong_unit"}], "Tokens": 1226}
+{"Row Number": 870, "all_match": false, "problems": [{"input": "Surgery Type", "extracted": "absent", "note_says": "Emergency surgical intervention was warranted, and the patient was stabilized and prepared for surgery.", "issue": "omitted"}], "Tokens": 1282}
+{"Row Number": 869, "all_match": false, "problems": [{"input": "Surgery Type", "extracted": "absent", "note_says": "No surgical intervention was required, and there were no recent or scheduled operative procedures (nonoperative patient).", "issue": "omitted"}], "Tokens": 1160}
+{"Row Number": 873, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": "14000 mm^3", "note_says": "14,000/mm^3", "issue": "wrong_unit"}], "Tokens": 1244}
+{"Row Number": 872, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": "13000 mm^3", "note_says": "13,000/mm^3", "issue": "wrong_unit"}, {"input": "Surgery Type", "extracted": "Absent", "note_says": "The patient has no history of recent surgery and is presenting for medical management, indicating nonoperative status.", "issue": "omitted"}], "Tokens": 1286}
+{"Row Number": 874, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": "[12500, 'mm^3']", "note_says": "12,500/mm^3", "issue": "wrong_unit"}, {"input": "Surgery Type", "extracted": "absent", "note_says": "The patient was being prepared for emergency surgery for suspected acute appendicitis.", "issue": "omitted"}], "Tokens": 1279}
+{"Row Number": 875, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": [14500, "mm^3"], "note_says": "14,500/mm^3", "issue": "wrong_unit"}], "Tokens": 1124}
+{"Row Number": 877, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": [12500, "mm^3"], "note_says": "12,500/mm^3", "issue": "wrong_unit"}, {"input": "Surgery Type", "extracted": "absent", "note_says": "A non-operative approach was deemed appropriate at presentation.", "issue": "omitted"}], "Tokens": 1234}
+{"Row Number": 878, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": [13000, "mm^3"], "note_says": "13,000/mm^3", "issue": "wrong_unit"}, {"input": "Surgery Type", "extracted": "absent", "note_says": "No recent surgery and no surgical intervention necessary at presentation (nonoperative).", "issue": "omitted"}], "Tokens": 1234}
+{"Row Number": 879, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": [13800, "mm^3"], "note_says": "13,800/mm^3", "issue": "wrong_unit"}], "Tokens": 1205}
+{"Row Number": 880, "all_match": true, "problems": [], "Tokens": 1367}
+{"Row Number": 876, "all_match": false, "problems": [{"input": "PaO2", "extracted": [72, "mm Hg"], "note_says": "Documents 'oxygen saturation' of 72 mm Hg, not explicitly PaO2; the measurement label and unit are inconsistent.", "issue": "not_in_note"}, {"input": "White blood cell count", "extracted": [14200, "mm^3"], "note_says": "14,200/mm^3, a count per cubic millimeter rather than cubic millimeters.", "issue": "wrong_unit"}, {"input": "Surgery Type", "extracted": "absent", "note_says": "States both that she had not undergone any recent surgeries and that she had a recent elective procedure a few weeks prior.", "issue": "conflicting_values_in_note"}], "Tokens": 1544}
+{"Row Number": 881, "all_match": true, "problems": [], "Tokens": 1307}
+{"Row Number": 882, "all_match": false, "problems": [{"input": "Surgery Type", "extracted": "Emergency", "note_says": "Emergent dialysis was planned, but no surgery is documented.", "issue": "not_in_note"}, {"input": "White blood cell count", "extracted": "[16000, 'mm^3']", "note_says": "White blood cell count of 16,000/mm^3.", "issue": "wrong_unit"}], "Tokens": 1349}
+{"Row Number": 884, "all_match": true, "problems": [], "Tokens": 1206}
+{"Row Number": 886, "all_match": true, "problems": [], "Tokens": 1201}
+{"Row Number": 883, "all_match": true, "problems": [], "Tokens": 1256}
+{"Row Number": 885, "all_match": true, "problems": [], "Tokens": 1252}
+{"Row Number": 889, "all_match": true, "problems": [], "Tokens": 1192}
+{"Row Number": 887, "all_match": true, "problems": [], "Tokens": 1256}
+{"Row Number": 890, "all_match": true, "problems": [], "Tokens": 1121}
+{"Row Number": 888, "all_match": true, "problems": [], "Tokens": 1371}
+{"Row Number": 893, "all_match": true, "problems": [], "Tokens": 1061}
+{"Row Number": 892, "all_match": true, "problems": [], "Tokens": 949}
+{"Row Number": 896, "all_match": true, "problems": [], "Tokens": 1074}
+{"Row Number": 891, "all_match": true, "problems": [], "Tokens": 1193}
+{"Row Number": 894, "all_match": false, "problems": [{"input": "Hypotension", "extracted": false, "note_says": "The note explicitly documents underlying hypotension requiring pharmacological support with DOBUTamine.", "issue": "wrong_value"}], "Tokens": 1084}
+{"Row Number": 895, "all_match": true, "problems": [], "Tokens": 1104}
+{"Row Number": 900, "all_match": true, "problems": [], "Tokens": 1203}
+{"Row Number": 897, "all_match": true, "problems": [], "Tokens": 1204}
+{"Row Number": 898, "all_match": true, "problems": [], "Tokens": 1017}
+{"Row Number": 902, "all_match": false, "problems": [{"input": "DOPamine", "extracted": [2, "mcg/kg/min"], "note_says": "A low-dose dopamine infusion was initiated, but no numerical dose was documented.", "issue": "not_in_note"}], "Tokens": 1172}
+{"Row Number": 899, "all_match": false, "problems": [{"input": "Platelet count", "extracted": "115000 \u00b5L", "note_says": "115,000/\u00b5L", "issue": "wrong_unit"}], "Tokens": 1305}
+{"Row Number": 901, "all_match": false, "problems": [{"input": "Hypotension", "extracted": "absent", "note_says": "Hypotension was suspected, and dopamine at 3 mcg/kg/min was required to maintain adequate blood pressure after inadequate response to fluid resuscitation.", "issue": "omitted"}], "Tokens": 1294}
+{"Row Number": 903, "all_match": false, "problems": [{"input": "EPINEPHrine", "extracted": "0.1 mcg/kg/min", "note_says": "An epinephrine infusion was initiated at a dose sufficient to maintain adequate blood pressure and tissue perfusion; no numerical dose was documented.", "issue": "not_in_note"}], "Tokens": 1327}
+{"Row Number": 904, "all_match": true, "problems": [], "Tokens": 1249}
+{"Row Number": 907, "all_match": true, "problems": [], "Tokens": 1156}
+{"Row Number": 905, "all_match": true, "problems": [], "Tokens": 1094}
+{"Row Number": 909, "all_match": true, "problems": [], "Tokens": 1356}
+{"Row Number": 908, "all_match": true, "problems": [], "Tokens": 1176}
+{"Row Number": 906, "all_match": false, "problems": [{"input": "Platelet count", "extracted": [137000, "\u00b5L"], "note_says": "137,000/\u00b5L", "issue": "wrong_unit"}], "Tokens": 1333}
+{"Row Number": 910, "all_match": true, "problems": [], "Tokens": 1231}
+{"Row Number": 911, "all_match": true, "problems": [], "Tokens": 1210}
+{"Row Number": 915, "all_match": true, "problems": [], "Tokens": 1260}
+{"Row Number": 913, "all_match": false, "problems": [{"input": "Surgery Type", "extracted": "major", "note_says": "Major abdominal surgery was performed several years ago. No surgery is documented for the current encounter.", "issue": "wrong_time_point"}], "Tokens": 1360}
+{"Row Number": 912, "all_match": false, "problems": [{"input": "Mobility", "extracted": "normal", "note_says": "Current mobility is restricted due to postoperative immobilization in a plaster cast. Normal mobility was documented only before surgery two weeks ago.", "issue": "wrong_time_point"}], "Tokens": 1395}
+{"Row Number": 917, "all_match": true, "problems": [], "Tokens": 1301}
+{"Row Number": 914, "all_match": false, "problems": [{"input": "Pneumonia in the last month", "extracted": false, "note_says": "The patient reports a recent lung infection requiring antibiotic treatment. The absence of current lower respiratory symptoms does not negate this recent infection.", "issue": "omitted"}], "Tokens": 1459}
+{"Row Number": 918, "all_match": true, "problems": [], "Tokens": 1370}
+{"Row Number": 920, "all_match": true, "problems": [], "Tokens": 1329}
+{"Row Number": 921, "all_match": true, "problems": [], "Tokens": 1383}
+{"Row Number": 916, "all_match": false, "problems": [{"input": "Major Surgery in the last month", "extracted": "false", "note_says": "The patient underwent surgical fixation of a left hip fracture three weeks ago.", "issue": "omitted"}, {"input": "Surgery Type", "extracted": "minor", "note_says": "The planned procedure is arthroscopic surgery on the right knee.", "issue": "wrong_value"}], "Tokens": 1495}
+{"Row Number": 919, "all_match": false, "problems": [{"input": "Current swollen legs", "extracted": "absent", "note_says": "The patient reports persistent leg pain and swelling, but the physical examination states there is no peripheral edema currently.", "issue": "conflicting_values_in_note"}], "Tokens": 1468}
+{"Row Number": 925, "all_match": true, "problems": [], "Tokens": 1310}
+{"Row Number": 922, "all_match": false, "problems": [{"input": "Current swollen legs", "extracted": true, "note_says": "The cardiovascular examination states that no peripheral edema is noted, but lower-extremity inspection documents mild, symmetrical swelling; the patient also reports episodic leg swelling.", "issue": "conflicting_values_in_note"}], "Tokens": 1485}
+{"Row Number": 924, "all_match": true, "problems": [], "Tokens": 1323}
+{"Row Number": 923, "all_match": false, "problems": [{"input": "Acute Myocardial infarction", "extracted": "true", "note_says": "Myocardial infarction occurred three years ago; no acute myocardial infarction is documented for this encounter.", "issue": "wrong_time_point"}, {"input": "Chronic Obstructive Pulmonary Disease", "extracted": "absent", "note_says": "The patient has COPD, regularly uses inhalers, and has wheezing and diminished breath sounds.", "issue": "omitted"}], "Tokens": 1426}
+{"Row Number": 926, "all_match": true, "problems": [], "Tokens": 1474}
+{"Row Number": 928, "all_match": false, "problems": [{"input": "Congestive Heart Failure in the last month", "extracted": "True", "note_says": "The note states that he has no history of congestive heart failure, but later reports an episode of congestive heart failure in the last month.", "issue": "conflicting_values_in_note"}], "Tokens": 1352}
+{"Row Number": 927, "all_match": false, "problems": [{"input": "Mobility", "extracted": "normal", "note_says": "Current mobility is reduced following sepsis, with increased periods of bed rest and hampered physical activity. Normal mobility describes his status before sepsis.", "issue": "wrong_value"}, {"input": "Major Surgery in the last month", "extracted": "False", "note_says": "The note initially describes major abdominal surgery scheduled in two weeks, but later cites a 'recent major surgical history.' These descriptions leave prior major surgery and its timing unclear.", "issue": "conflicting_values_in_note"}], "Tokens": 1764}

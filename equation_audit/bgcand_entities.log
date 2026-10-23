@@ -1,0 +1,6 @@
+52 non-template rows from bg_candidates.csv to check
+entities_bgcand.jsonl: 0 cached, 52 to run
+  50/52
+Entities Match
+True     47
+False     5

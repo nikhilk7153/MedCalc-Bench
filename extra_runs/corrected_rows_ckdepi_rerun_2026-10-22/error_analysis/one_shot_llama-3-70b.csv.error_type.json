@@ -1,0 +1,183 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The prediction used a different conversion factor for converting the concentration of Serum Creatinine from \u00b5mol/L to mg/dL, which resulted in a different value for the concentration in mg/dL. This different value was then used in the GFR calculation, leading to a different final result.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction used a different conversion factor for converting the concentration of Serum Creatinine from \u00b5mol/L to mg/dL, resulting in a different concentration value. Also, the prediction used a different threshold for the creatinine concentration to determine the coefficients A and B.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction incorrectly used the concentration of Serum Creatinine. The ground-truth converted the concentration from \u00b5mol/L to mg/dL, while the prediction used the incorrect value of 7.65 mg/dL. This led to a different final GFR value.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction incorrectly identified the coefficients A and B. The prediction stated that because the patient's gender is female and the creatinine concentration is less than or equal to 0.7 mg/dL, A = 0.7 and B = -0.241. However, the ground truth states that because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2. This led to a different final GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The prediction incorrectly converted the concentration of Serum Creatinine from \u00b5mol/L to mg/dL, and used wrong coefficients A and B for the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The prediction incorrectly identified the coefficients A and B. The prediction stated that because the patient's gender is female and the creatinine concentration is less than or equal to 0.7 mg/dL, A = 0.7 and B = -0.241. However, the ground truth states that because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2. This led to a different final GFR value.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction correctly identified the formula for GFR and extracted the correct parameters. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction incorrectly states that the creatinine concentration is greater than 0.9 mg/dL, which leads to a different final GFR value. The correct creatinine concentration is greater than 0.7 mg/dL as stated in the ground truth.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction correctly identified the formula, parameters, and coefficients for the GFR calculation. However, the final calculated GFR value is incorrect when compared to the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters. However, the arithmetic was performed incorrectly, leading to a different GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction incorrectly assigned the coefficients A and B. The patient's creatinine concentration is greater than 0.7 mg/dL, so A should be 0.7 and B should be -1.2. However, the prediction incorrectly assumed that the creatinine concentration is less than or equal to 0.7 mg/dL, and assigned A as 0.7 and B as -0.241. This led to a different GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-7983145-1": {
+        "analysis": "The prediction used the correct formula and extracted the correct parameters. However, the arithmetic was performed incorrectly, leading to a different GFR value.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The prediction correctly identified the formula for GFR and extracted the correct parameters. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction incorrectly identified the coefficients A and B. The prediction stated that because the patient's gender is female and the creatinine concentration is less than or equal to 0.7 mg/dL, A = 0.7 and B = -0.241. However, the ground truth states that because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2. This led to a different final GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction used a different conversion factor for converting the concentration of Serum Creatinine from \u00b5mol/L to mg/dL, which resulted in a different value for the concentration in mg/dL. This led to a different final GFR value.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "3_pmc-4448053-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct rules. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction correctly identified the formula for GFR and extracted the correct parameters. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct coefficients. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction used the correct formula, extracted the correct parameters, and used the correct rules. However, the final calculated GFR value is different from the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction incorrectly extracted the parameter 'major surgery within 12 weeks' as present, while the ground-truth explanation states it is absent. Also, the prediction incorrectly extracted the parameter 'alternative diagnosis to DVT as likely or more likely' as absent, while the ground-truth explanation states it is present. These incorrect extractions led to a different final score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "17_2": {
+        "analysis": "The prediction incorrectly identified an elevated risk surgery as present for the patient, which led to an increment in the score. The ground-truth explanation indicates that an elevated risk surgery was absent for the patient.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction incorrectly calculated the Centor score. The error occurred when the patient's age was considered. According to the ground-truth, the score should be decreased by one point if the patient's age is greater than 44 years. However, the prediction did not decrease the score. Therefore, the final Centor score in the prediction is higher than the actual score.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "25_6": {
+        "analysis": "The prediction incorrectly increased the score based on the patient's alcohol consumption and the presence of hypertension, which were not factors in the ground-truth explanation. The prediction also incorrectly stated the age threshold for increasing the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "25_16": {
+        "analysis": "The prediction incorrectly extracted the parameter for hypertension, stating it was present when the ground-truth explanation reported it as absent. This led to an incorrect increment in the HAS-BLED score.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction incorrectly increased the score based on the patient's age and the presence of hypertension. The patient's age is less than 66 years and hypertension is reported to be absent, so the score should not have been increased in these instances.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction incorrectly added 1 point for 'Diabetes mellitus,' which should have added 0 points according to the ground-truth. The prediction also incorrectly classified the patient's solid tumor status as 'leukemia' and 'hepatoblastoma,' adding 2 points, while the ground-truth only mentions a 'localized' solid tumor, which should have added 2 points. The total score in the prediction is 15, while the ground-truth total score is 14.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The prediction incorrectly assumed that the absence of cough or coryza does not add to the FeverPain score, while the ground-truth explanation states that it should add one point to the score. The prediction also incorrectly assumed that the absence of purulent tonsils and severe tonsil inflammation does not add to the score, while the ground-truth explanation states that these factors should not affect the score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction incorrectly did not add a point to the FeverPain score when the patient was reported to not have a cough or coryza. In the ground-truth, this absence of symptom was supposed to add one point to the score.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    }
+}

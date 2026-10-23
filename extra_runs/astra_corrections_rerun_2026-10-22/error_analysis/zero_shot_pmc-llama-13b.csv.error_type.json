@@ -1,0 +1,295 @@
+{
+    "4_pmc-7196137-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it is impossible to classify the error type.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "4_pmc-8136881-1": {
+        "analysis": "The prediction did not provide any calculation or reasoning, thus it's impossible to identify the specific error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "4_pmc-8096577-1": {
+        "analysis": "The prediction did not provide any calculation or reasoning.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "8_pmc-8101672-1": {
+        "analysis": "The prediction incorrectly calculated the Well's score for pulmonary embolism as 4, while the ground truth explanation shows that the correct score is 1.5. The prediction also extracted different parameters than the ground truth, such as the patient's history of abdominal pain, the presence of UTI, and anemia, which are not part of the Well's score calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "8_pmc-8294994-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "8_pmc-5039122-1": {
+        "analysis": "The prediction incorrectly calculated the Well's score for pulmonary embolism. It used parameters such as age and temperature, which are not part of the Well's score calculation. The prediction also incorrectly calculated the score as 2, while the ground-truth explanation clearly states that the score should be 0.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-6959932-1": {
+        "analysis": "The prediction used different parameters than the ground-truth and also performed the arithmetic incorrectly. The prediction used parameters such as 'Fever', 'High-Risk Chemotherapy', 'Inherited Thrombophilia', 'Pregnancy', 'Immediate Past DVT', 'Unprovoked DVT', 'Homan's Score > 4', 'Pretest Clinical Probability', and 'Post-test Clinical Probability', which are not part of the Well's DVT Score calculation. Also, the prediction incorrectly added points for each parameter, resulting in a total score of 7, which is not in line with the ground-truth score of -2.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-4341247-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it is impossible to classify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "18_pmc-4244065-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "18_pmc-7290110-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "20_usmle-12605": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it's impossible to identify the error type.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "20_pmc-4307710-1": {
+        "analysis": "The prediction did not provide any calculation or reasoning.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "20_usmle-4768": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it's impossible to identify a specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "20_pmc-8240916-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it's impossible to classify the error type.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "33_usmle-3456": {
+        "analysis": "The prediction did not provide any calculation or reasoning.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "33_pmc-3603656-1": {
+        "analysis": "The prediction did not provide any calculation or reasoning.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "33_usmle-7961": {
+        "analysis": "The prediction did not provide any calculation or reasoning.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "45_pmc-2988179-1": {
+        "analysis": "The prediction does not provide any calculation or reasoning.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "29_6": {
+        "analysis": "The prediction is missing or not a number.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "29_8": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it is impossible to classify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "29_18": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it is impossible to classify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "29_19": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it is impossible to classify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "29_20": {
+        "analysis": "The prediction used a different set of rules and parameters for calculating the PSI score. The prediction assigned points based on different conditions such as BUN > 10, Sodium < 135, age > 65, Respiratory rate > 30, blood pressure < 90, Temperature < 90, Change in mental status, Arterial pH < 7.35, and PaO2 < 60 mm Hg. This is different from the ground-truth explanation which used a different set of conditions and parameters for calculating the PSI score.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "21_13": {
+        "analysis": "The prediction incorrectly calculated the Glasgow Coma Score (GCS). The prediction incorrectly assigned 5 points each for the best motor response and the best verbal response, resulting in a total GCS of 10. However, the correct calculation should have been 6 points for the best motor response ('obeys commands') and 4 points for the best verbal response ('not testable'), resulting in a total GCS of 12.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "28_1": {
+        "analysis": "The prediction is significantly different from the ground-truth. The ground-truth APACHE II score is 15, while the prediction is 75.5. The prediction does not provide any explanation or calculation steps, making it impossible to identify the specific error type.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "28_2": {
+        "analysis": "The prediction does not follow the correct steps for calculating the APACHE II score. It includes irrelevant factors such as the patient's gender, weight, and water reserve, which are not part of the APACHE II score calculation. It also incorrectly states that certain conditions would automatically give the patient a higher or lower score, which is not accurate according to the APACHE II scoring system. The prediction also does not correctly calculate the points for each parameter according to the APACHE II scoring system.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "28_3": {
+        "analysis": "The prediction does not match the ground-truth explanation. The prediction seems to have used incorrect parameters and values, and the arithmetic is also incorrect. The predicted APACHE II score is 65, while the ground-truth explanation shows that the correct score is 22.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_4": {
+        "analysis": "The prediction incorrectly calculated the APACHE II score. The ground truth explanation shows that the correct score should be 14, not 28 as predicted.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "28_9": {
+        "analysis": "The prediction incorrectly assigns points for various parameters. For example, it assigns 1 point for creatinine > 2.0 mg/dL, while the ground truth assigns 3 points for creatinine level between 2.0 and 3.5 mg/dL. The prediction also assigns 1 point for white blood cell count > 15,000 per \u00b5L, while the ground truth assigns 0 points for white blood cell count between 3x10^9/L and 15 x10^9/L. The prediction assigns 1 point for pH < 7.40, while the ground truth assigns 0 points for pH between 7.33 and 7.50. The prediction assigns 1 point for A-a-gradient > 350, while the ground truth assigns 3 points for A-a gradient between 350 and 499. The prediction assigns 1 point for hematocrit < 30 %, while the ground truth assigns 0 points for hematocrit between 30% and 46%. The prediction assigns 1 point for FiO2 > 0.50, while the ground truth assigns 3 points for FiO2 percentage of 50% or greater with A-a gradient between 350 and 499. The prediction assigns 1 point for age > 60 years old, while the ground truth assigns 5 points for age between 65 and 74 years old. The prediction also repeats the same steps multiple times.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "28_11": {
+        "analysis": "The prediction incorrectly assigns points for the patient's age, chief complaint, vital signs, laboratory values, underlying disease, acid-base values, neurological condition, temperature, and type of admission. The prediction also incorrectly calculates the APACHE II score by multiplying the points assigned for each category by the number of categories, rather than adding the points together.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_13": {
+        "analysis": "The prediction did not provide any calculation or reasoning.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "28_14": {
+        "analysis": "The prediction is incorrect. The ground-truth explanation shows that the patient's APACHE II score is 4, but the prediction states that the score is 28.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "28_16": {
+        "analysis": "The prediction incorrectly calculated the APACHE II score. The prediction incorrectly assigned points for the patient's age, underlying health, present condition, and laboratory findings. The prediction also incorrectly calculated the total APACHE II score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_1": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it is impossible to classify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "43_2": {
+        "analysis": "The prediction used a different scoring system and extracted different parameters than the ground-truth. The prediction also incorrectly subtracted points from the score.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_4": {
+        "analysis": "The prediction incorrectly calculated the SOFA score. The prediction repeatedly added points for the same conditions, which is not how the SOFA score is calculated. The prediction also incorrectly assigned points for hepatic failure, coagulopathy, and cardiovascular failure.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "43_18": {
+        "analysis": "The prediction used a different set of rules to calculate the SOFA score. It also did not consider all the parameters mentioned in the ground-truth explanation, such as the Glasgow coma score, platelet count, and bilirubin concentration. The arithmetic was also incorrect, as the total score was calculated as 6 instead of 9.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_1": {
+        "analysis": "The prediction incorrectly calculated the total score as 7, while the ground truth explanation shows that the correct total score is 24. The prediction also failed to account for several factors such as the patient's gender, surgery type, and various health conditions that were considered in the ground truth explanation.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_3": {
+        "analysis": "The prediction did not provide any calculation or reasoning, hence it's impossible to classify the error type.",
+        "error_type": []
+    },
+    "36_5": {
+        "analysis": "The prediction incorrectly calculated the Caprini score for venous thromboembolism. The ground truth explanation shows a detailed step-by-step calculation of the score, which results in a total of 24. However, the prediction states the score as 7, which is significantly lower than the correct score.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "36_6": {
+        "analysis": "The prediction is missing or not available.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "36_10": {
+        "analysis": "The prediction has multiple errors. It has extracted different parameters than the ground-truth, such as trauma, surgery duration, and homocysteine level, which are not mentioned in the ground-truth. It also incorrectly assigns points for parameters like age, BMI, and surgery type multiple times, which is not in line with the rules used in the ground-truth. Furthermore, the prediction incorrectly assigns points for parameters like cancer and cardiac disease, which are contradicted by the ground-truth.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_13": {
+        "analysis": "The prediction did not provide any calculation or reasoning, hence it's impossible to classify the error type.",
+        "error_type": []
+    },
+    "36_14": {
+        "analysis": "The prediction does not provide any calculation or reasoning, hence it's impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "36_18": {
+        "analysis": "The prediction did not provide any calculation or reasoning, hence it's impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    }
+}

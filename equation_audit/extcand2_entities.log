@@ -1,0 +1,5 @@
+4 non-template rows from extracted_candidates2.csv to check
+entities_extcand2.jsonl: 0 cached, 4 to run
+Entities Match
+False    2
+True     2

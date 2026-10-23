@@ -1,0 +1,266 @@
+{
+  "rows": [
+    {
+      "calculator_id": "20",
+      "row": "302",
+      "fields": {
+        "age": {
+          "value": [
+            14,
+            "months"
+          ],
+          "quote": "A 14-month-old previously healthy boy"
+        },
+        "Cough Absent": {
+          "value": false,
+          "quote": "had dry cough, runny nose and decreased appetite"
+        },
+        "Temperature": {
+          "value": [
+            37.6,
+            "degrees celsius"
+          ],
+          "quote": "The physical examination at admission revealed the following: body temperature 37.6 °C (ear temperature)"
+        },
+        "Exudate or swelling on tonsils": {
+          "value": false,
+          "quote": "There was mild throat congestion, but no enlargement of tonsils."
+        }
+      },
+      "score": 0,
+      "score_working": "Age 14 months (<3 y): 0 (MDCalc gives points only for ages 3-14 (+1), 15-44 (0), >=45 (-1)). Cough present: 0. Temp at admission 37.6 C (not >38): 0. Anterior cervical nodes not mentioned, so absent: 0. Tonsils not enlarged, no exudate: 0. Total 0.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "Admission exam gives temperature (37.6 C) and tonsil findings explicitly. Cough is present. Nodes are not mentioned, so absent by convention.",
+      "eligibility_note": "Ineligible. This is a 14-month-old with SARS-CoV-2 fever, cough and coryza, not a sore-throat presentation. MDCalc notes GAS is rare under age 3.",
+      "note_issues": [
+        {
+          "field": "Temperature",
+          "issue": "Earlier history reports 'The child's body temperature was 38.4 °C' (fever clinic or home, timing unclear). The admission exam value is 37.6 C (ear). Using 38.4 C would add +1.",
+          "alternative_score": 1
+        },
+        {
+          "field": "age",
+          "issue": "Under 3 years: MDCalc gives no points for this band. Some implementations might give +1 for age <15.",
+          "alternative_score": 1
+        }
+      ]
+    },
+    {
+      "calculator_id": "20",
+      "row": "304",
+      "fields": {
+        "age": {
+          "value": [
+            29,
+            "years"
+          ],
+          "quote": "A 29-year-old Syrian man"
+        },
+        "Temperature": {
+          "value": [
+            37.0,
+            "degrees celsius"
+          ],
+          "quote": "His temperature was 37.0°C."
+        },
+        "Tender/swollen anterior cervical lymph nodes": {
+          "value": true,
+          "quote": "the patient had two inflamed lymph nodes below the jaw"
+        },
+        "Exudate or swelling on tonsils": {
+          "value": true,
+          "quote": "an extensive membrane covering the right tonsil"
+        }
+      },
+      "score": 3,
+      "score_working": "Age 29 (15-44): 0. Cough not mentioned, so absent: +1. Temp 37.0 C: 0. Inflamed nodes below the jaw: +1. Membrane/white spots on tonsil: +1. Total 3.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "Day-2 clinic exam gives temperature, nodes and tonsil findings. The patient also denies fever.",
+      "eligibility_note": "Marginal fit. The patient explicitly denies sore throat and fever. The diagnosis was infectious mononucleosis, found on tonsillar white spots before elective surgery.",
+      "note_issues": [
+        {
+          "field": "Tender/swollen anterior cervical lymph nodes",
+          "issue": "Nodes are described as 'below the jaw' (submandibular), not explicitly anterior cervical. If they are not counted, the score is 2.",
+          "alternative_score": 2
+        },
+        {
+          "field": "Temperature",
+          "issue": "Oral antibiotics were prescribed by phone on day 1, so the day-2 exam may be after treatment started. This makes no practical difference because the patient reports no fever.",
+          "alternative_score": null
+        }
+      ]
+    },
+    {
+      "calculator_id": "33",
+      "row": "450",
+      "fields": {
+        "Symptom onset <=3 days": {
+          "value": true,
+          "quote": "Approximately 90 minutes prior to arrival... The patient immediately felt a burning sensation in his mouth and throat"
+        },
+        "Severe tonsil inflammation": {
+          "value": false,
+          "quote": "Complete physical examination was negative for posterior oropharyngeal erythema"
+        },
+        "Absence of cough or coryza": {
+          "value": true,
+          "quote": "He otherwise denied any other complaints."
+        }
+      },
+      "score": 2,
+      "score_working": "Onset about 90 min ago: +1. Purulent tonsils not mentioned: 0. Fever not mentioned (no temperature recorded): 0. No oropharyngeal erythema: 0. No cough/coryza: +1. Total 2.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "All criteria are determinable: some are stated explicitly and the rest are absent by convention.",
+      "eligibility_note": "Ineligible. This is caustic hydrogen peroxide ingestion, not pharyngitis.",
+      "note_issues": [
+        {
+          "field": "Symptom onset <=3 days",
+          "issue": "The acute symptoms are chemical burn/vomiting, not sore-throat illness. If onset is read as applying only to a pharyngitis illness, it would be 0.",
+          "alternative_score": 1
+        },
+        {
+          "field": "Fever in past 24 hours",
+          "issue": "No temperature is recorded among the vitals, so this is treated as absent.",
+          "alternative_score": null
+        }
+      ]
+    },
+    {
+      "calculator_id": "33",
+      "row": "452",
+      "fields": {
+        "Symptom onset <=3 days": {
+          "value": true,
+          "quote": "presented with history of recurrent palpitation and pre-syncope of 24-hour duration"
+        },
+        "Absence of cough or coryza": {
+          "value": true,
+          "quote": "The patient did not have any history of dry nonproductive cough"
+        }
+      },
+      "score": 2,
+      "score_working": "Onset 24 h: +1. Fever not mentioned: 0. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned: 0. No cough and coryza not mentioned: +1. Total 2.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "Fever and tonsil findings are not mentioned, so absent by convention. Onset is given as 24 h. Cough is explicitly denied.",
+      "eligibility_note": "Ineligible. This is amiodarone-induced polymorphic VT, a cardiac presentation, not pharyngitis.",
+      "note_issues": [
+        {
+          "field": "Symptom onset <=3 days",
+          "issue": "Onset refers to palpitations/pre-syncope, not throat symptoms. If only sore-throat onset counts, this is 0.",
+          "alternative_score": 1
+        },
+        {
+          "field": "Absence of cough or coryza",
+          "issue": "The cough denial comes from a later amiodarone-toxicity assessment. Coryza is not mentioned. Either way the criterion is met.",
+          "alternative_score": null
+        }
+      ]
+    },
+    {
+      "calculator_id": "33",
+      "row": "456",
+      "fields": {
+        "Symptom onset <=3 days": {
+          "value": true,
+          "quote": "A few minutes after administration of the second dose of metoclopramide, she complained of pain and stiffness of the neck"
+        },
+        "Fever in past 24 hours": {
+          "value": false,
+          "quote": "temperature of 37.3 °C"
+        }
+      },
+      "score": 2,
+      "score_working": "Onset minutes: +1. Temperature 37.3 C, and fever not otherwise mentioned: 0. Purulent tonsils not mentioned: 0. Severe tonsil inflammation not mentioned ('rest of her examination was unremarkable'): 0. Cough/coryza not mentioned: +1. Total 2.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "Only one set of vitals is given. It was taken at the dystonic reaction, after quinine and metoclopramide had started, and shows 37.3 C. No admission temperature is given, so fever is treated as absent by convention. The other criteria are not mentioned (absent).",
+      "eligibility_note": "Ineligible. This is a metoclopramide-induced acute dystonic reaction during treatment of severe malaria, not pharyngitis.",
+      "note_issues": [
+        {
+          "field": "Fever in past 24 hours",
+          "issue": "Severe malaria patients are usually febrile at admission, but the note gives only the post-treatment temperature of 37.3 C. If fever in the past 24 h is assumed, the score is 3.",
+          "alternative_score": 3
+        },
+        {
+          "field": "Symptom onset <=3 days",
+          "issue": "Onset refers to dystonia (the neck pain/stiffness and difficulty swallowing are dystonic), not pharyngitis. Malaria symptom duration is unknown. If not counted, the score is 1.",
+          "alternative_score": 1
+        }
+      ]
+    },
+    {
+      "calculator_id": "33",
+      "row": "461",
+      "fields": {
+        "Symptom onset <=3 days": {
+          "value": true,
+          "quote": "The patient presented high fever, severe headache, and purulent nasal secretions over the last three days"
+        },
+        "Fever in past 24 hours": {
+          "value": true,
+          "quote": "The patient presented high fever ... over the last three days"
+        },
+        "Absence of cough or coryza": {
+          "value": false,
+          "quote": "purulent nasal secretions over the last three days"
+        }
+      },
+      "score": 2,
+      "score_working": "Onset within the last 3 days: +1. High fever: +1. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned: 0. Coryza present (purulent nasal secretions): 0. Total 2.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "Fever and coryza are explicit. Onset is stated as 'over the last three days'. Tonsil findings are not mentioned (absent).",
+      "eligibility_note": "Ineligible. This is bacterial sinusitis complicated by a brain abscess and seizures, not pharyngitis.",
+      "note_issues": [
+        {
+          "field": "Symptom onset <=3 days",
+          "issue": "Paranasal sinusitis was diagnosed one week before hospitalization and antibiotics were started then. If onset is dated to the sinusitis (>=7 days), the criterion is not met.",
+          "alternative_score": 1
+        },
+        {
+          "field": "Fever in past 24 hours",
+          "issue": "Time point: the patient had already been on amoxicillin/clavulanate + clindamycin for a week, so no pre-treatment presentation exists. The fever is current at presentation and at transfer.",
+          "alternative_score": null
+        }
+      ]
+    },
+    {
+      "calculator_id": "33",
+      "row": "465",
+      "fields": {
+        "Symptom onset <=3 days": {
+          "value": false,
+          "quote": "with a 3-month history of right-sided abdominal pain"
+        },
+        "Fever in past 24 hours": {
+          "value": false,
+          "quote": "as well as history of fever or night sweats ... (temperature, 36.7°C"
+        }
+      },
+      "score": 1,
+      "score_working": "Onset 3 months: 0. Fever denied, T 36.7 C: 0. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned: 0. Cough/coryza not mentioned: +1. Total 1.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "All criteria are determinable: some are stated explicitly and the rest are absent by convention.",
+      "eligibility_note": "Ineligible. This is ovarian vein thrombosis / hepatic hemangiomas with abdominal pain, not pharyngitis.",
+      "note_issues": []
+    },
+    {
+      "calculator_id": "33",
+      "row": "466",
+      "fields": {
+        "Symptom onset <=3 days": {
+          "value": false,
+          "quote": "left-sided neck pain and headache for about a month and worse for one week"
+        },
+        "Fever in past 24 hours": {
+          "value": false,
+          "quote": "She denied fever, chills"
+        }
+      },
+      "score": 1,
+      "score_working": "Onset about 1 month: 0. Fever denied: 0. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned ('Physical examination was benign'): 0. Cough/coryza not mentioned: +1. Total 1.",
+      "completeness": "COMPLETE",
+      "completeness_reason": "All criteria are determinable: some are stated explicitly and the rest are absent by convention.",
+      "eligibility_note": "Ineligible. This is Takayasu arteritis with carotidynia, not pharyngitis.",
+      "note_issues": []
+    }
+  ]
+}

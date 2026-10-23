@@ -1,0 +1,214 @@
+{
+ "calculator_id": "36",
+ "mdcalc_source": "https://www.mdcalc.com/calc/3970/caprini-score-venous-thromboembolism-2005",
+ "mdcalc_rules": "Age <=40:0, 41-60:+1, 61-74:+2, >=75:+3. Sex Male/Female (no points; the static page shows no female-only items, and no note mentions pregnancy, postpartum or OCP/HRT). Type of surgery (pick one): none 0, minor +1, major >45 min / laparoscopic >45 min / arthroscopic +2, elective major lower-extremity arthroplasty +5. Recent (<1 month) events: major surgery +1, CHF +1, sepsis +1, pneumonia +1, immobilizing plaster cast +2, hip/pelvis/leg fracture +5, stroke +5, multiple trauma +5, acute spinal cord injury causing paralysis +5. Venous disease/clotting: varicose veins +1, current swollen legs +1, current central venous access +2, History of DVT/PE (ONE combined item) +3, family history of thrombosis +3, Factor V Leiden +3, prothrombin 20210A +3, elevated homocysteine +3, lupus anticoagulant +3, elevated anticardiolipin Ab +3, HIT +3, other congenital/acquired thrombophilia +3. Mobility (pick one): normal/out of bed 0, medical patient currently on bed rest +1, confined to bed >72 h +2. Bed rest means unable to walk 30 ft (10 m) at one time; bathroom privileges or walking in the room do not count as ambulation. Other: IBD +1, BMI >25 +1, acute MI +1, COPD +1, present or previous malignancy +2, other risk factors +1.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "Code scores previous DVT (+3) and previous PE (+3) separately, so a patient with both gets +6. MDCalc has one combined 'History of DVT/PE' item worth +3.",
+   "rows_affected": [
+    "915",
+    "920",
+    "928"
+   ]
+  },
+  {
+   "issue": "MDCalc's 'Other risk factors' (+1) item is missing from the code. No row uses it.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Interface mismatch: caprini_score() takes surgery_type_value and mobility_value, but name_to_python maps to surgery_type and mobility, so caprini_score(**inputs) raises TypeError on every row. Labels come from caprini_score_explanation(), which gives the same totals. No label impact.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Cosmetic: when surgery_type is absent, the explanation indexes a plain string (param_full_name['surgery_type'][0]) and prints 'does not report anything about s'. It still adds 0 points.",
+   "rows_affected": [
+    "917",
+    "919",
+    "921",
+    "923",
+    "925",
+    "928"
+   ]
+  },
+  {
+   "issue": "Cosmetic: BMI exactly 25 is printed as 'less than 25'. Scoring is correct (>25 required).",
+   "rows_affected": [
+    "927"
+   ]
+  },
+  {
+   "issue": "Point values, age bands, surgery-type strings (none/minor/major/laparoscopic/arthroscopic/elective major lower extremity arthroplasty), mobility strings (normal/on bed rest/confined to bed >72 hours) and BMI >25 all match MDCalc. Female-only items are not modelled, and no row needs them.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "909",
+   "status": "OK",
+   "stored_answer": "26",
+   "mdcalc_answer": "26",
+   "details": "Age 63 +2. Surgery major +2 (femoral shaft fracture fixation during the recent trauma admission). Femur fracture +5, multiple trauma +5, varicose veins +1, prior DVT +3, family history (mother DVT/PE) +3, homocysteine +3, bed rest +1, BMI 27.1 +1 = 26. Minor caveat: the surgery is already past ('well-healed incision'). Scoring it as 'major surgery <1 month' (+1) instead of surgery type (+2) would give 25. Stored reading is acceptable.",
+   "evidence_quote": "well-healed surgical incision over the left femoral shaft ... The patient remains confined to bed due to her injuries"
+  },
+  {
+   "row": "910",
+   "status": "OK",
+   "stored_answer": "27",
+   "mdcalc_answer": "27",
+   "details": "Age 81 +3, TKA +5, sepsis +1, stroke +5, varicose veins +1, prior DVT +3, family history +3, prothrombin +3, HIT +3, mobility normal, BMI 21.4 = 27.",
+   "evidence_quote": "recent admission in the past month for sepsis and stroke is admitted following a scheduled right total knee replacement"
+  },
+  {
+   "row": "911",
+   "status": "INPUT_ERROR",
+   "stored_answer": "20",
+   "mdcalc_answer": "14",
+   "details": "'Acute Myocardial infarction' stored True but should be False: the MI was in 2014, so it is history, not acute (-1). 'Multiple trauma in the last month' stored True but should be False: the note describes only a left lower-extremity injury from the MVA, and multiple trauma is never stated (-5). Corrected: age 2 + minor surgery 1 + CHF 1 + pneumonia 1 + cast 2 + varicose veins 1 + CVC 2 + family history 3 + bed rest 1 = 14. Note caveat: the leg cast after the MVA suggests a leg fracture, but no fracture is stated (stored False).",
+   "evidence_quote": "PMH of MI (2014) HTN, and dementia presents following a recent motor vehicle accident (MVA) resulting in the immobilization of her left lower extremity with a plaster cast"
+  },
+  {
+   "row": "912",
+   "status": "OK",
+   "stored_answer": "21",
+   "mdcalc_answer": "21",
+   "details": "Age 67 +2, leg fracture +5, pneumonia +1, prior PE +3, FVL +3, LA +3, breast cancer +2, swollen legs +1, BMI 28.3 +1, mobility normal = 21. The spinal injury has no paralysis, so it scores 0.",
+   "evidence_quote": "recent fall resulting in a spinal injury and nonoperative management of a lower leg fracture. She had a recent admission for pneumonia following a pulmonary embolism three weeks ago"
+  },
+  {
+   "row": "913",
+   "status": "INPUT_ERROR",
+   "stored_answer": "23",
+   "mdcalc_answer": "24",
+   "details": "'Congestive Heart Failure in the last month' is missing from relevant_entities (so treated as False) but should be True (+1). Corrected: age 3 + arthroplasty 5 + CHF 1 + pneumonia 1 + stroke 5 + COPD 1 + bed rest 1 + CVC 2 + FVL 3 + BMI 28 1 + swollen legs 1 = 24. Possible further +1: 'remained mostly confined to his bed' during a prolonged stay could be scored as confined to bed >72 h (25).",
+   "evidence_quote": "Over the past month, heart failure exacerbation and pneumonia had prolonged the patient's hospital stay, during which he remained mostly confined to his bed"
+  },
+  {
+   "row": "914",
+   "status": "INPUT_ERROR",
+   "stored_answer": "15",
+   "mdcalc_answer": "16",
+   "details": "Mobility stored 'normal' but should be 'on bed rest' (+1). The inpatient walks only around the room, and MDCalc says walking in the room is not ambulation (bed rest = unable to walk 30 ft). Other items are correct: age 56 +1, sepsis +1, stroke +5, CVC +2, homocysteine +3, anticardiolipin +3, BMI 23.4 = 15, so the total is 16 with bed rest.",
+   "evidence_quote": "He is able to ambulate around the room."
+  },
+  {
+   "row": "915",
+   "status": "CODE_ISSUE",
+   "stored_answer": "24",
+   "mdcalc_answer": "21",
+   "details": "Inputs are correct. The code adds +3 for prior DVT and +3 for prior PE. MDCalc's single 'History of DVT/PE' item gives +3. Age 2 + laparoscopic 2 + DVT/PE 3 + malignancy 2 + BMI 30 1 + bed >72h 2 + acute MI 1 + swollen legs 1 + homocysteine 3 + IBD 1 + family history 3 = 21.",
+   "evidence_quote": "Her medical history includes prior deep vein thrombosis and a pulmonary embolism."
+  },
+  {
+   "row": "916",
+   "status": "OK",
+   "stored_answer": "22",
+   "mdcalc_answer": "22",
+   "details": "Age 39 0, minor surgery +1, IBD +1, CHF +1, stroke +5, CVC +2, BMI 32 +1, homocysteine +3, family history +3, varicose veins +1, HIT +3, bed rest +1 = 22.",
+   "evidence_quote": "A 39-year-old man is confined to bed rest due to a recent minor surgery."
+  },
+  {
+   "row": "917",
+   "status": "OK",
+   "stored_answer": "12",
+   "mdcalc_answer": "12",
+   "details": "Age 45 +1, prior PE +3, prothrombin +3, homocysteine +3, previous breast cancer +2, normal mobility, BMI 22 = 12.",
+   "evidence_quote": "follow-up visit after treatment for a pulmonary embolism ... She had breast cancer which was successfully treated"
+  },
+  {
+   "row": "918",
+   "status": "OK",
+   "stored_answer": "14",
+   "mdcalc_answer": "14",
+   "details": "Age 55 +1, laparoscopic +2, COPD +1, CHF +1, pneumonia +1, bed rest +1, prior DVT +3, FVL +3, BMI 31 +1 = 14.",
+   "evidence_quote": "recent heart failure exacerbation was admitted for a laparoscopic surgery procedure ... he remains on bed rest"
+  },
+  {
+   "row": "919",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "28",
+   "mdcalc_answer": "28",
+   "details": "Stored inputs match the most plausible reading. But the note gives no date for the leg fracture (+5) at an outpatient follow-up, and sepsis and stroke are 'recent ... 1 month ago', on the <1-month boundary (+6). These timings drive 11 of the 28 points. Protein C deficiency counts as other thrombophilia +3. Keep 28, but consider rewording the note to state that the events were within the last month.",
+   "evidence_quote": "follow-up visit after a leg fracture ... history of recent sepsis and stroke 1 month ago"
+  },
+  {
+   "row": "920",
+   "status": "CODE_ISSUE",
+   "stored_answer": "21",
+   "mdcalc_answer": "18",
+   "details": "Inputs are correct. Prior DVT and PE are double-counted (+6). MDCalc's single 'History of DVT/PE' item gives +3. Age 52 +1, major surgery (3 h) +2, bed >72h +2, COPD +1, malignancy +2, DVT/PE +3, LA +3, family history +3, BMI 29 +1 = 18.",
+   "evidence_quote": "He has a previous history of deep vein thrombosis and pulmonary embolism."
+  },
+  {
+   "row": "921",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "27",
+   "mdcalc_answer": "27 (24 if family history of MI is not counted)",
+   "details": "'Family history of thrombosis' (+3) rests on the mother's and brother's MIs. Those are arterial events, not the venous thrombosis the Caprini item is meant for, although the note itself calls them 'thrombotic events'. Also, 'thromboembolism removal' (probably endovascular thrombectomy) is scored as major surgery <1 month (+1), which is debatable. Other items: age 60 +1, stroke +5, bed >72h +2, cast +2, leg fracture +5, LA +3, homocysteine +3, BMI 27 +1, swollen legs +1.",
+   "evidence_quote": "She has a strong family history of thrombotic events with her mother and brother suffering MIs."
+  },
+  {
+   "row": "922",
+   "status": "INPUT_ERROR",
+   "stored_answer": "15",
+   "mdcalc_answer": "14",
+   "details": "Surgery Type stored 'minor' (+1) but should be 'none'. The minor surgery was months ago, is not a current or planned procedure, and is outside the <1-month window. Corrected: age 48 +1, acute MI +1, prior DVT +3, prostate cancer +2, BMI 28 +1, varicose veins +1, CVC +2, acquired thrombophilia +3 = 14.",
+   "evidence_quote": "He underwent minor surgery some months back for a trigger finger release."
+  },
+  {
+   "row": "923",
+   "status": "OK",
+   "stored_answer": "20",
+   "mdcalc_answer": "20",
+   "details": "Age 72 +2, acute MI +1, acute SCI with paralysis +5, multiple trauma +5, FVL +3, swollen legs +1, HIT +3, normal mobility, BMI 23 = 20.",
+   "evidence_quote": "recent spinal cord injury without fracture which led to a brief period of paralysis ... victim of a multi-trauma incident a few weeks ago"
+  },
+  {
+   "row": "924",
+   "status": "OK",
+   "stored_answer": "13",
+   "mdcalc_answer": "13",
+   "details": "Age 65 +2, minor surgery +1, cast +2, prior DVT +3, FVL +3, IBD +1, BMI 27 +1, mobility normal = 13. Mobility is described only before the procedure, but no reduced mobility is stated, so normal is acceptable under the convention.",
+   "evidence_quote": "recently underwent minor surgery for bunion correction currently immobilized with a plaster cast. She was active and ambulating normally before the procedure."
+  },
+  {
+   "row": "925",
+   "status": "OK",
+   "stored_answer": "18",
+   "mdcalc_answer": "18",
+   "details": "Age 56 +1, pneumonia +1, hip fracture +5, major surgery <1 month +1, anticardiolipin +3, FVL +3, acquired thrombophilia +3, swollen legs +1, BMI 24, normal mobility = 18.",
+   "evidence_quote": "recent medical encounters include a hip fracture requiring a major surgical intervention. He is ambulating well now"
+  },
+  {
+   "row": "926",
+   "status": "INPUT_ERROR",
+   "stored_answer": "16",
+   "mdcalc_answer": "17",
+   "details": "'Congestive Heart Failure in the last month' is missing (so treated as False) but should be True (+1). This matches how rows 916 and 918 treat 'recent' CHF. Corrected: age 62 +2, arthroplasty +5, bed rest +1, prothrombin +3, homocysteine +3, BMI 30 +1, swollen legs +1, CHF +1 = 17.",
+   "evidence_quote": "His medical history and recent heart failure exacerbation placed him in a high-risk category"
+  },
+  {
+   "row": "927",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "17",
+   "mdcalc_answer": "17 (18 if scored as bed rest per MDCalc's room-walking rule)",
+   "details": "Mobility is unclear. She is 'able to ambulate without significant aid' but is only described walking around her room, which MDCalc says is not ambulation (that would be bed rest, +1). Also, calling hip-fracture surgery 'minor' is clinically odd, though the note says it explicitly. Other items: age 58 +1, hip fracture +5, pneumonia +1, minor surgery +1, cast +2, varicose veins +1, homocysteine +3, anticardiolipin +3, BMI 25 (not >25) 0.",
+   "evidence_quote": "she was able to ambulate without significant aid post minor surgery and was often seen navigating her room"
+  },
+  {
+   "row": "928",
+   "status": "CODE_ISSUE",
+   "stored_answer": "20",
+   "mdcalc_answer": "17",
+   "details": "Inputs are correct. Prior DVT and PE are double-counted (+6). MDCalc's single 'History of DVT/PE' item gives +3. Age 50 +1, CHF +1, sepsis +1, bed rest +1, DVT/PE +3, CVC +2, homocysteine +3, other thrombophilia +3, BMI 30 +1, swollen legs +1 = 17.",
+   "evidence_quote": "she has a past medical history noted with a previous deep vein thrombosis and a pulmonary embolism"
+  },
+  {
+   "row": "one_shot",
+   "status": "INPUT_ERROR",
+   "stored_answer": "15",
+   "mdcalc_answer": "16",
+   "details": "Same note as row 914. Mobility stored 'normal' but should be 'on bed rest' (+1), because walking only around the room is not ambulation per MDCalc. All other inputs are correct.",
+   "evidence_quote": "He is able to ambulate around the room."
+  }
+ ]
+}

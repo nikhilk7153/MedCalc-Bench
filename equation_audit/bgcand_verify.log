@@ -1,0 +1,7 @@
+52 rows from bg_candidates.csv to check
+final_bgcand_verify.jsonl: 0 cached, 52 to run
+  50/52
+Verdict
+correct      44
+ambiguous     6
+incorrect     2

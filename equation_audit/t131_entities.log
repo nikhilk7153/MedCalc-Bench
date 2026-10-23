@@ -1,0 +1,5 @@
+20 non-template rows from t131_candidates.csv to check
+entities_t131.jsonl: 0 cached, 20 to run
+Entities Match
+True     19
+False     1

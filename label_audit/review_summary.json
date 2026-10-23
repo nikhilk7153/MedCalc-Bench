@@ -1,0 +1,14 @@
+{
+  "records": 1047,
+  "calculators": 55,
+  "counts": {
+    "no error identified": 665,
+    "incorrect": 181,
+    "ambiguous": 105,
+    "minor rounding difference": 3,
+    "out of domain": 30,
+    "insufficient information": 60,
+    "invalid numeric target": 3
+  },
+  "source_sha256": "c2d23097f8bdb7ae4a77dbf4a5a767335df7303998d7c7664a73a29fd8e2b31a"
+}

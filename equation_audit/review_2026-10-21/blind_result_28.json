@@ -1,0 +1,2612 @@
+{
+ "calculator_id": "28",
+ "rows": [
+  {
+   "row": "869",
+   "fields": {
+    "age": {
+     "value": [
+      43,
+      "years"
+     ],
+     "quote": "A 43-year-old male"
+    },
+    "Temperature": {
+     "value": [
+      34.9,
+      "degrees celsius"
+     ],
+     "quote": "hypothermia (34.9°C)"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      122,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure is 122/81 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      81,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure is 122/81 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      94.67,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure is 122/81 mmHg (MAP computed)"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      120,
+      "beats per minute"
+     ],
+     "quote": "tachycardia to 120 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      17,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate is 17 breaths per minute"
+    },
+    "Sodium": {
+     "value": [
+      137.49,
+      "mmol/L"
+     ],
+     "quote": "sodium level of 137.49 mmol/L"
+    },
+    "Potassium": {
+     "value": [
+      5.43,
+      "mmol/L"
+     ],
+     "quote": "potassium level of 5.43 mmol/L"
+    },
+    "creatinine": {
+     "value": [
+      1.85,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.85 mg/dL"
+    },
+    "Acute renal failure": {
+     "value": false,
+     "quote": "Urine output over the past six hours was 104 mL, suggesting oliguria"
+    },
+    "White blood cell count": {
+     "value": [
+      9103,
+      "µL"
+     ],
+     "quote": "white blood cell count of 9,103/µL"
+    },
+    "Hematocrit": {
+     "value": [
+      35,
+      "%"
+     ],
+     "quote": "Hematocrit is 35%"
+    },
+    "pH": {
+     "value": 7.53,
+     "quote": "pH of 7.53"
+    },
+    "FiO2": {
+     "value": [
+      57,
+      "%"
+     ],
+     "quote": "FiO₂ of 57%"
+    },
+    "A-a gradient": {
+     "value": 375,
+     "quote": "A-a gradient of 375"
+    },
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "eye movements to verbal command (3), is confused (4) and responds to localized pain (5)"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "history of Type 2 Diabetes Mellitus (DM2) and diabetic retinopathy"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents with tachycardia"
+    }
+   },
+   "score": 12,
+   "score_working": "age 43:0; T 34.9:1; MAP 94.7:0; HR 120:2; RR 17:0; FiO2 57% A-a 375:3; pH 7.53:1; Na 137.49:0; K 5.43:0; Cr 1.85:2; Hct 35:0; WBC 9.103:0; GCS 12:3; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "Acute renal failure",
+     "issue": "Oliguria (104 mL/6 h) with creatinine 1.85 suggests acute kidney injury but ARF is never stated; if counted, creatinine points double 2->4.",
+     "alternative_score": 14
+    }
+   ]
+  },
+  {
+   "row": "870",
+   "fields": {
+    "age": {
+     "value": [
+      61,
+      "years"
+     ],
+     "quote": "A 61-year-old male"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      143,
+      "beats per minute"
+     ],
+     "quote": "His HR is 143"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      125,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is  125/83 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      83,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is  125/83 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      97.0,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is  125/83 mmHg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      21,
+      "breaths per minute"
+     ],
+     "quote": "RR of 21"
+    },
+    "Temperature": {
+     "value": [
+      38.3,
+      "degrees celsius"
+     ],
+     "quote": "T of 38.3C"
+    },
+    "Sodium": {
+     "value": [
+      133.28,
+      "mmol/L"
+     ],
+     "quote": "sodium level of 133.28 mmol/L"
+    },
+    "Potassium": {
+     "value": [
+      6.43,
+      "mmol/L"
+     ],
+     "quote": "potassium level of 6.43 mmol/L"
+    },
+    "creatinine": {
+     "value": [
+      2.57,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 2.57 mg/dL"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "chronic kidney disease not requiring dialysis"
+    },
+    "Acute renal failure": {
+     "value": false,
+     "quote": "presents with decreased urine output ... suprapubic fullness"
+    },
+    "White blood cell count": {
+     "value": [
+      27463,
+      "µL"
+     ],
+     "quote": "white blood cell count of 27,463 count/µL"
+    },
+    "Hematocrit": {
+     "value": [
+      54,
+      "%"
+     ],
+     "quote": "Hematocrit of 54 %"
+    },
+    "pH": {
+     "value": 7.47,
+     "quote": "ABG shows pH of 7.47"
+    },
+    "FiO2": {
+     "value": [
+      68,
+      "%"
+     ],
+     "quote": "a 68 % FiO₂"
+    },
+    "A-a gradient": {
+     "value": 240,
+     "quote": "A-a-gradient of 240"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "alert and oriented to person, place, time, and situation (AxOx4)"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "chronic kidney disease not requiring dialysis, diabetes, and HLD"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents with decreased urine output"
+    }
+   },
+   "score": 18,
+   "score_working": "age 61:3; T 38.3:0; MAP 97.0:0; HR 143:3; RR 21:0; FiO2 68% A-a 240:2; pH 7.47:0; Na 133.28:0; K 6.43:3; Cr 2.57:3; Hct 54:2; WBC 27.463:2; GCS 15:0; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "Acute renal failure",
+     "issue": "Decreased urine output with suprapubic fullness suggests acute (obstructive) kidney injury on CKD, but ARF is not stated; if counted, creatinine 3->6.",
+     "alternative_score": 21
+    },
+    {
+     "field": "Glasgow Coma Score",
+     "issue": "GCS not given numerically; inferred 15 from 'alert and oriented AxOx4'.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "871",
+   "fields": {
+    "age": {
+     "value": [
+      73,
+      "years"
+     ],
+     "quote": "A 73-year-old male"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      138,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 138/92 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      92,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 138/92 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      107.33,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 138/92 mmHg (MAP computed)"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      107,
+      "beats per minute"
+     ],
+     "quote": "heart rate is 107 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      35,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate is 35 breaths per minute"
+    },
+    "Temperature": {
+     "value": [
+      37.2,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 37.2°C"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "Glasgow Coma Scale score is 15"
+    },
+    "creatinine": {
+     "value": [
+      4.58,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 4.58 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      143.21,
+      "mmol/L"
+     ],
+     "quote": "sodium level of 143.21 mmol/L"
+    },
+    "Potassium": {
+     "value": [
+      3.68,
+      "mmol/L"
+     ],
+     "quote": "potassium level of 3.68 mmol/L"
+    },
+    "FiO2": {
+     "value": [
+      63,
+      "%"
+     ],
+     "quote": "fraction of inspired oxygen is 63%"
+    },
+    "pH": {
+     "value": 7.29,
+     "quote": "pH of 7.29"
+    },
+    "PaO2": {
+     "value": [
+      78,
+      "mm Hg"
+     ],
+     "quote": "PaO₂ of 78 mm Hg"
+    },
+    "A-a gradient": {
+     "value": 331,
+     "quote": "A-a gradient of 331 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "Hematocrit is at 41%"
+    },
+    "White blood cell count": {
+     "value": [
+      15105,
+      "µL"
+     ],
+     "quote": "white blood cell count is 15,105 cells/µL"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": true,
+     "quote": "liver cirrhosis"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "his management approach does not involve surgical intervention"
+    }
+   },
+   "score": 22,
+   "score_working": "age 73:5; T 37.2:0; MAP 107.3:0; HR 107:0; RR 35:3; FiO2 63% A-a 331:2; pH 7.29:2; Na 143.21:0; K 3.68:0; Cr 4.58:4; Hct 41:0; WBC 15.105:1; GCS 15:0; chronic True/Nonoperative:5",
+   "note_issues": [
+    {
+     "field": "History of severe organ failure or immunocompromise",
+     "issue": "Cirrhosis is stated but not as biopsy-proven or with portal hypertension/hepatic failure as Knaus requires; if not counted, -5.",
+     "alternative_score": 17
+    },
+    {
+     "field": "Acute renal failure",
+     "issue": "Creatinine 4.58 'indicating impaired renal function' with acute presentation; acute vs chronic not specified. If ARF, creatinine 4->8.",
+     "alternative_score": 26
+    }
+   ]
+  },
+  {
+   "row": "872",
+   "fields": {
+    "age": {
+     "value": [
+      57,
+      "years"
+     ],
+     "quote": "A 57-year-old male"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      73,
+      "beats per minute"
+     ],
+     "quote": "pulse is 73 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      27,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 27 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      132,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure is elevated at 132/103 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      103,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure is elevated at 132/103 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      112.67,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure is elevated at 132/103 mm Hg (MAP computed)"
+    },
+    "Temperature": {
+     "value": [
+      37.2,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 37.2°C"
+    },
+    "Sodium": {
+     "value": [
+      132.39,
+      "mmol/L"
+     ],
+     "quote": "sodium level of 132.39 mmol/L"
+    },
+    "creatinine": {
+     "value": [
+      3.67,
+      "mg/dL"
+     ],
+     "quote": "creatinine of 3.67 mg/dL"
+    },
+    "Potassium": {
+     "value": [
+      4.31,
+      "mmol/L"
+     ],
+     "quote": "potassium of 4.31 mmol/L"
+    },
+    "Hematocrit": {
+     "value": [
+      32,
+      "%"
+     ],
+     "quote": "hematocrit of 32 %"
+    },
+    "White blood cell count": {
+     "value": [
+      12476,
+      "µL"
+     ],
+     "quote": "white blood cell count is 12,476 cells/µL"
+    },
+    "pH": {
+     "value": 7.4,
+     "quote": "pH of 7.40"
+    },
+    "PaO2": {
+     "value": [
+      57,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 57 mm Hg"
+    },
+    "FiO2": {
+     "value": [
+      32,
+      "%"
+     ],
+     "quote": "while breathing 32 % oxygen"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "Glasgow Coma Scale score is 15"
+    },
+    "Acute renal failure": {
+     "value": false,
+     "quote": "no signs of acute renal failure"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "history of chronic renal failure, managed conservatively"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "chronic renal failure, managed conservatively"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "suggest a need for careful preoperative management"
+    }
+   },
+   "score": 13,
+   "score_working": "age 57:3; T 37.2:0; MAP 112.7:2; HR 73:0; RR 27:1; FiO2 32% PaO2 57:3; pH 7.4:0; Na 132.39:0; K 4.31:0; Cr 3.67:4; Hct 32:0; WBC 12.476:0; GCS 15:0; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "History of severe organ failure or immunocompromise",
+     "issue": "'had a scheduled kidney transplant in the past' is ambiguous: if he received a transplant he would be on immunosuppression (+5). Text says CRF managed conservatively (not dialysis), so scored false.",
+     "alternative_score": 18
+    },
+    {
+     "field": "Surgery Type",
+     "issue": "Note mentions 'preoperative management' and 'postoperative complications' with no surgery done; treated as Nonoperative (awaiting surgery). Surgery type only matters if chronic health is positive.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "873",
+   "fields": {
+    "age": {
+     "value": [
+      52,
+      "years"
+     ],
+     "quote": "A 52-year-old patient"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      90,
+      "beats per minute"
+     ],
+     "quote": "pulse rate of 90 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measurement displayed 120/70 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      70,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measurement displayed 120/70 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      86.67,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measurement displayed 120/70 mm Hg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      16,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate was 16 breaths per minute"
+    },
+    "FiO2": {
+     "value": [
+      60,
+      "%"
+     ],
+     "quote": "60 % FiO₂"
+    },
+    "Temperature": {
+     "value": [
+      37,
+      "degrees celsius"
+     ],
+     "quote": "at 37°C"
+    },
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "Glasgow Coma Score of 12"
+    },
+    "creatinine": {
+     "value": [
+      1.2,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.2 mg/dL"
+    },
+    "Acute renal failure": {
+     "value": false,
+     "quote": "indicating no recent onset of renal impairment"
+    },
+    "White blood cell count": {
+     "value": [
+      7000,
+      "µL"
+     ],
+     "quote": "white blood cell count of 7000 per microliter"
+    },
+    "Sodium": {
+     "value": [
+      137,
+      "mEq/L"
+     ],
+     "quote": "sodium and potassium concentrations at 137 and 4.8 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.8,
+      "mEq/L"
+     ],
+     "quote": "sodium and potassium concentrations at 137 and 4.8 mEq/L"
+    },
+    "pH": {
+     "value": 7.35,
+     "quote": "pH of 7.35"
+    },
+    "A-a gradient": {
+     "value": 375,
+     "quote": "A-a-gradient of 375"
+    },
+    "Hematocrit": {
+     "value": [
+      45,
+      "%"
+     ],
+     "quote": "Hematocrit level was observed at a standard 45 %"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": true,
+     "quote": "historical pattern of severe organ failure and present immunocompromised state"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presented to the hospital with general malaise"
+    }
+   },
+   "score": 13,
+   "score_working": "age 52:2; T 37:0; MAP 86.7:0; HR 90:0; RR 16:0; FiO2 60% A-a 375:3; pH 7.35:0; Na 137:0; K 4.8:0; Cr 1.2:0; Hct 45:0; WBC 7:0; GCS 12:3; chronic True/Nonoperative:5",
+   "note_issues": [
+    {
+     "field": "History of severe organ failure or immunocompromise",
+     "issue": "Organ failures are unspecified ('several organ failures managed with medications'); counted because note explicitly states severe organ failure and immunocompromised state. If not qualifying per Knaus, -5.",
+     "alternative_score": 8
+    }
+   ]
+  },
+  {
+   "row": "874",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A gentleman of 65 years of age"
+    },
+    "Temperature": {
+     "value": [
+      38.5,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 38.5°C"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      110,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 110 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 20 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      140,
+      "mm Hg"
+     ],
+     "quote": "blood pressure recorded at 140/80 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "blood pressure recorded at 140/80 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      100.0,
+      "mm Hg"
+     ],
+     "quote": "blood pressure recorded at 140/80 mm Hg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score of 14 recorded"
+    },
+    "creatinine": {
+     "value": [
+      2.0,
+      "mg/dL"
+     ],
+     "quote": "creatinine levels of 2.0 mg/dL"
+    },
+    "Acute renal failure": {
+     "value": true,
+     "quote": "a clear indication of an acute kidney injury"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "long-standing diagnosis of chronic kidney disease"
+    },
+    "White blood cell count": {
+     "value": [
+      15000,
+      "µL"
+     ],
+     "quote": "15000 white blood cells per µL"
+    },
+    "Sodium": {
+     "value": [
+      140,
+      "mEq/L"
+     ],
+     "quote": "sodium concentration of 140 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      5.2,
+      "mEq/L"
+     ],
+     "quote": "potassium level of 5.2 mEq/L"
+    },
+    "pH": {
+     "value": 7.3,
+     "quote": "pH of 7.30"
+    },
+    "PaO2": {
+     "value": [
+      65,
+      "mm Hg"
+     ],
+     "quote": "partial pressure of oxygen at 65 mm Hg"
+    },
+    "FiO2": {
+     "value": [
+      45,
+      "%"
+     ],
+     "quote": "on 45% FiO₂"
+    },
+    "Hematocrit": {
+     "value": [
+      39,
+      "%"
+     ],
+     "quote": "hematocrit was somewhat depressed at 39%"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "long-standing diagnosis of chronic kidney disease"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "has attended the hospital complaining of severe back pain"
+    }
+   },
+   "score": 19,
+   "score_working": "age 65:5; T 38.5:1; MAP 100.0:0; HR 110:2; RR 20:0; FiO2 45% PaO2 65:1; pH 7.3:2; Na 140:0; K 5.2:0; Cr 2.0 x2 ARF:6; Hct 39:0; WBC 15:1; GCS 14:1; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "Acute renal failure",
+     "issue": "Creatinine 2.0 called 'borderline high' yet 'clear indication of an acute kidney injury' in a patient with long-standing CKD; AKI on CKD is asserted rather than shown. Without ARF doubling, creatinine 6->3.",
+     "alternative_score": 16
+    },
+    {
+     "field": "age",
+     "issue": "Sex inconsistency ('gentleman' vs 'Her hematocrit'); no score impact. GCS 14 vs 'responds to verbal commands occasionally' slightly inconsistent; GCS 14 used.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "875",
+   "fields": {
+    "age": {
+     "value": [
+      58,
+      "years"
+     ],
+     "quote": "A 58-year-old male"
+    },
+    "Temperature": {
+     "value": [
+      36.5,
+      "degrees celsius"
+     ],
+     "quote": "temperature is 36.5°C"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      85,
+      "beats per minute"
+     ],
+     "quote": "heart rate is 85 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate is 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 130/78 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      78,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 130/78 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      95.33,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 130/78 mmHg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Glasgow Coma Score of 13"
+    },
+    "creatinine": {
+     "value": [
+      1.3,
+      "mg/dL"
+     ],
+     "quote": "creatinine of 1.3 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      139,
+      "mEq/L"
+     ],
+     "quote": "sodium 139 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      5.0,
+      "mEq/L"
+     ],
+     "quote": "potassium 5.0 mEq/L"
+    },
+    "White blood cell count": {
+     "value": [
+      8000,
+      "µL"
+     ],
+     "quote": "white blood cell count of 8000 count/µL"
+    },
+    "Hematocrit": {
+     "value": [
+      42,
+      "%"
+     ],
+     "quote": "Hematocrit was measured at 42 %"
+    },
+    "pH": {
+     "value": 7.37,
+     "quote": "pH of 7.37"
+    },
+    "A-a gradient": {
+     "value": 425,
+     "quote": "A_A_gradient of 425"
+    },
+    "FiO2": {
+     "value": [
+      54,
+      "%"
+     ],
+     "quote": "on 54 % FiO2"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "no significant past medical history"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents to the emergency department"
+    }
+   },
+   "score": 8,
+   "score_working": "age 58:3; T 36.5:0; MAP 95.3:0; HR 85:0; RR 18:0; FiO2 54% A-a 425:3; pH 7.37:0; Na 139:0; K 5.0:0; Cr 1.3:0; Hct 42:0; WBC 8:0; GCS 13:2; chronic False/Nonoperative:0",
+   "note_issues": []
+  },
+  {
+   "row": "876",
+   "fields": {
+    "age": {
+     "value": [
+      60,
+      "years"
+     ],
+     "quote": "A 60-year-old male"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      95,
+      "beats per minute"
+     ],
+     "quote": "tachycardia to 95 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      19,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 19 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      135,
+      "mm Hg"
+     ],
+     "quote": "blood pressure registering at 135/75 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "blood pressure registering at 135/75 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      95.0,
+      "mm Hg"
+     ],
+     "quote": "blood pressure registering at 135/75 mm Hg (MAP computed)"
+    },
+    "Temperature": {
+     "value": [
+      37.2,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 37.2°C"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score of 14"
+    },
+    "creatinine": {
+     "value": [
+      3.8,
+      "mg/dL"
+     ],
+     "quote": "creatinine levels at 3.8 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      138,
+      "mEq/L"
+     ],
+     "quote": "sodium at 138"
+    },
+    "Potassium": {
+     "value": [
+      4.5,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.5 mEq/L"
+    },
+    "White blood cell count": {
+     "value": [
+      12000,
+      "µL"
+     ],
+     "quote": "12,000 per µL"
+    },
+    "Hematocrit": {
+     "value": [
+      43,
+      "%"
+     ],
+     "quote": "Hematocrit was just within normal range at 43%"
+    },
+    "pH": {
+     "value": 7.32,
+     "quote": "pH of 7.32"
+    },
+    "A-a gradient": {
+     "value": 364,
+     "quote": "A-a-gradient of 364"
+    },
+    "FiO2": {
+     "value": [
+      55,
+      "%"
+     ],
+     "quote": "FiO₂ of 55 %"
+    },
+    "Acute renal failure": {
+     "value": true,
+     "quote": "This patient's acute renal failure symptomatology"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": true,
+     "quote": "history of severe organ failure and immunocompromised"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "treated with an emergency surgery in the past, presents to the emergency department"
+    }
+   },
+   "score": 22,
+   "score_working": "age 60:3; T 37.2:0; MAP 95.0:0; HR 95:0; RR 19:0; FiO2 55% A-a 364:3; pH 7.32:2; Na 138:0; K 4.5:0; Cr 3.8 x2 ARF:8; Hct 43:0; WBC 12:0; GCS 14:1; chronic True/Nonoperative:5",
+   "note_issues": [
+    {
+     "field": "Surgery Type",
+     "issue": "Emergency surgery was in the past (not this admission) so Nonoperative; reading it as Emergency postoperative gives the same +5, so no score change.",
+     "alternative_score": 22
+    },
+    {
+     "field": "Acute renal failure",
+     "issue": "'acute renal failure symptomatology' is vague; if ARF not counted, creatinine 8->4.",
+     "alternative_score": 18
+    },
+    {
+     "field": "History of severe organ failure or immunocompromise",
+     "issue": "Organ failure/immunocompromise type not specified; prior aortic dissection is not a qualifying condition. If not counted, -5.",
+     "alternative_score": 17
+    },
+    {
+     "field": "Heart Rate or Pulse",
+     "issue": "'tachycardia to 95' is internally inconsistent (95 is not tachycardic); no score impact.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "877",
+   "fields": {
+    "age": {
+     "value": [
+      67,
+      "years"
+     ],
+     "quote": "A 67-year-old patient"
+    },
+    "Temperature": {
+     "value": [
+      38.7,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 38.7 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      105,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 105 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      22,
+      "breaths per minute"
+     ],
+     "quote": "breathing rate at 22 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      138,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 138/82 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      82,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 138/82 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      100.67,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 138/82 mm Hg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Glasgow Coma Score is assessed at 13"
+    },
+    "creatinine": {
+     "value": [
+      2.5,
+      "mg/dL"
+     ],
+     "quote": "creatinine at 2.5 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      10000,
+      "µL"
+     ],
+     "quote": "10,000 per µL"
+    },
+    "Sodium": {
+     "value": [
+      142,
+      "mEq/L"
+     ],
+     "quote": "142 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.7,
+      "mEq/L"
+     ],
+     "quote": "4.7 mEq/L"
+    },
+    "pH": {
+     "value": 7.33,
+     "quote": "pH of 7.33"
+    },
+    "A-a gradient": {
+     "value": 473,
+     "quote": "A-a-gradient of 473"
+    },
+    "FiO2": {
+     "value": [
+      50,
+      "%"
+     ],
+     "quote": "FiO2 of 50 %"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "Hematocrit measures 41 %"
+    },
+    "Acute renal failure": {
+     "value": true,
+     "quote": "the possible occurrence of acute renal failure"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "admitted to the hospital with fever"
+    }
+   },
+   "score": 17,
+   "score_working": "age 67:5; T 38.7:1; MAP 100.7:0; HR 105:0; RR 22:0; FiO2 50% A-a 473:3; pH 7.33:0; Na 142:0; K 4.7:0; Cr 2.5 x2 ARF:6; Hct 41:0; WBC 10:0; GCS 13:2; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "Acute renal failure",
+     "issue": "ARF is only 'possible'; counted as present (plan for renal supportive care). If not counted, creatinine 6->3.",
+     "alternative_score": 14
+    },
+    {
+     "field": "FiO2",
+     "issue": "FiO2 exactly 50% sits at the threshold; per rule (>=50%) A-a gradient used (473 -> 3). PaO2 not given, so PaO2 route impossible.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "878",
+   "fields": {
+    "age": {
+     "value": [
+      55,
+      "years"
+     ],
+     "quote": "A 55-year-old female"
+    },
+    "Temperature": {
+     "value": [
+      36.8,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 36.8 degrees Celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      98,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 98 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 20 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      128,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 128/76 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 128/76 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      93.33,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 128/76 mm Hg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "Glasgow Coma Score measured at 15"
+    },
+    "creatinine": {
+     "value": [
+      1.6,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.6 mg/dL"
+    },
+    "Acute renal failure": {
+     "value": true,
+     "quote": "consistent with acute renal failure not requiring dialysis"
+    },
+    "pH": {
+     "value": 7.41,
+     "quote": "normal limits at 7.41"
+    },
+    "White blood cell count": {
+     "value": [
+      9000,
+      "µL"
+     ],
+     "quote": "9,000 per µL"
+    },
+    "Sodium": {
+     "value": [
+      141,
+      "mEq/L"
+     ],
+     "quote": "sodium at 141 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.6,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.6 mEq/L"
+    },
+    "A-a gradient": {
+     "value": 430,
+     "quote": "A-a gradient of 430"
+    },
+    "FiO2": {
+     "value": [
+      52,
+      "%"
+     ],
+     "quote": "on 52% FiO₂"
+    },
+    "Hematocrit": {
+     "value": [
+      40,
+      "%"
+     ],
+     "quote": "Hematocrit stands at a normal 40%"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "no significant past medical history"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presented to the clinic for a routine check-up"
+    }
+   },
+   "score": 10,
+   "score_working": "age 55:3; T 36.8:0; MAP 93.3:0; HR 98:0; RR 20:0; FiO2 52% A-a 430:3; pH 7.41:0; Na 141:0; K 4.6:0; Cr 1.6 x2 ARF:4; Hct 40:0; WBC 9:0; GCS 15:0; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "FiO2",
+     "issue": "Clinically implausible: routine clinic check-up in a patient on 52% FiO2 with A-a gradient 430 and ARF; values used as written, no score change.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "879",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old male"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      115,
+      "beats per minute"
+     ],
+     "quote": "high heart rate at 115 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      125,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 125/90 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      90,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 125/90 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      101.67,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 125/90 mm Hg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiration rate of 18 breaths per minute"
+    },
+    "Temperature": {
+     "value": [
+      37.4,
+      "degrees celsius"
+     ],
+     "quote": "37.4 degrees celsius"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score was tallied at 14"
+    },
+    "Sodium": {
+     "value": [
+      145,
+      "mEq/L"
+     ],
+     "quote": "sodium concentration of 145 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.2,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.2 mEq/L"
+    },
+    "creatinine": {
+     "value": [
+      2.0,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 2.0 mg/dL"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "chronic kidney disease stage II"
+    },
+    "White blood cell count": {
+     "value": [
+      11000,
+      "µL"
+     ],
+     "quote": "11,000 per µL"
+    },
+    "Hematocrit": {
+     "value": [
+      37,
+      "%"
+     ],
+     "quote": "hematocrit was slightly low at 37 %"
+    },
+    "pH": {
+     "value": 7.28,
+     "quote": "decreased pH of 7.28"
+    },
+    "PaO2": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 80 mmHg"
+    },
+    "FiO2": {
+     "value": [
+      40,
+      "%"
+     ],
+     "quote": "on 40 % FiO2"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "chronic kidney disease stage II"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "attended the clinic"
+    }
+   },
+   "score": 13,
+   "score_working": "age 70:5; T 37.4:0; MAP 101.7:0; HR 115:2; RR 18:0; FiO2 40% PaO2 80:0; pH 7.28:2; Na 145:0; K 4.2:0; Cr 2.0:3; Hct 37:0; WBC 11:0; GCS 14:1; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "creatinine",
+     "issue": "Creatinine 2.0 mg/dL is inconsistent with CKD stage II (eGFR 60-89) in a 70-year-old; may imply an unstated acute component. If ARF, creatinine 3->6.",
+     "alternative_score": 16
+    }
+   ]
+  },
+  {
+   "row": "880",
+   "fields": {
+    "age": {
+     "value": [
+      63,
+      "years"
+     ],
+     "quote": "A 63-year-old female"
+    },
+    "Temperature": {
+     "value": [
+      36.6,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 36.6 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      129,
+      "beats per minute"
+     ],
+     "quote": "pulse that reads 129 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      32,
+      "breaths per minute"
+     ],
+     "quote": "breathing rate of 32 respirations per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      150,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 150/95 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      95,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 150/95 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      113.33,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 150/95 mmHg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "Glasgow Coma Score of 15"
+    },
+    "creatinine": {
+     "value": [
+      1.1,
+      "mg/dL"
+     ],
+     "quote": "creatinine level at 1.1 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      6500,
+      "µL"
+     ],
+     "quote": "6500 cells per µL"
+    },
+    "Sodium": {
+     "value": [
+      140,
+      "mEq/L"
+     ],
+     "quote": "Sodium is measured at 140"
+    },
+    "Potassium": {
+     "value": [
+      4.4,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.4 mEq/L"
+    },
+    "FiO2": {
+     "value": [
+      46,
+      "%"
+     ],
+     "quote": "FiO2 was reported as 46%"
+    },
+    "pH": {
+     "value": 7.36,
+     "quote": "pH of 7.36"
+    },
+    "PaO2": {
+     "value": [
+      74,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 74 mmHg"
+    },
+    "Hematocrit": {
+     "value": [
+      38,
+      "%"
+     ],
+     "quote": "hematocrit value is at 38%"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents to herself to the emergency department"
+    }
+   },
+   "score": 8,
+   "score_working": "age 63:3; T 36.6:0; MAP 113.3:2; HR 129:2; RR 32:1; FiO2 46% PaO2 74:0; pH 7.36:0; Na 140:0; K 4.4:0; Cr 1.1:0; Hct 38:0; WBC 6.5:0; GCS 15:0; chronic False/Nonoperative:0",
+   "note_issues": []
+  },
+  {
+   "row": "881",
+   "fields": {
+    "age": {
+     "value": [
+      56,
+      "years"
+     ],
+     "quote": "A 56-year-old male"
+    },
+    "Temperature": {
+     "value": [
+      37.1,
+      "degrees celsius"
+     ],
+     "quote": "temperature is documented at 37.1 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      92,
+      "beats per minute"
+     ],
+     "quote": "heart rate at 92 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      16,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 16 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      122,
+      "mm Hg"
+     ],
+     "quote": "blood pressure at 122/74 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      74,
+      "mm Hg"
+     ],
+     "quote": "blood pressure at 122/74 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      90.0,
+      "mm Hg"
+     ],
+     "quote": "blood pressure at 122/74 mmHg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Glasgow Coma Score of 13"
+    },
+    "creatinine": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.8 mg/dL"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "The presence of chronic renal failure"
+    },
+    "White blood cell count": {
+     "value": [
+      7500,
+      "µL"
+     ],
+     "quote": "7500 cells per µL"
+    },
+    "Sodium": {
+     "value": [
+      135,
+      "mEq/L"
+     ],
+     "quote": "Sodium is measured at 135 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.6,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.6 mEq/L"
+    },
+    "pH": {
+     "value": 7.34,
+     "quote": "blood pH at 7.34"
+    },
+    "FiO2": {
+     "value": [
+      49,
+      "%"
+     ],
+     "quote": "FiO2% of 49%"
+    },
+    "PaO2": {
+     "value": [
+      77,
+      "mm Hg"
+     ],
+     "quote": "PaO2 at 77 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "hematocrit level is noted to be slightly reduced to 41 %"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "chronic kidney disease stage II"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents to the clinic for routine follow-up"
+    }
+   },
+   "score": 7,
+   "score_working": "age 56:3; T 37.1:0; MAP 90.0:0; HR 92:0; RR 16:0; FiO2 49% PaO2 77:0; pH 7.34:0; Na 135:0; K 4.6:0; Cr 1.8:2; Hct 41:0; WBC 7.5:0; GCS 13:2; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "FiO2",
+     "issue": "Implausible setting: routine clinic follow-up yet confused (GCS 13) and on 49% FiO2 with ABG; values used as written. FiO2 49% just below the 50% cut-off, so PaO2 route applies (77 -> 0).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "882",
+   "fields": {
+    "age": {
+     "value": [
+      50,
+      "years"
+     ],
+     "quote": "A 50-year-old individual"
+    },
+    "Temperature": {
+     "value": [
+      37.5,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 37.5 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      100,
+      "beats per minute"
+     ],
+     "quote": "heart rate at 100 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate at 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      124,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 124/77 mmHg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      77,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 124/77 mmHg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      92.67,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 124/77 mmHg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "full Glasgow Coma Score of 15"
+    },
+    "creatinine": {
+     "value": [
+      1.4,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.4 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      8000,
+      "µL"
+     ],
+     "quote": "8,000 per µL"
+    },
+    "Sodium": {
+     "value": [
+      138,
+      "mEq/L"
+     ],
+     "quote": "sodium at 138 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.9,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.9 mEq/L"
+    },
+    "pH": {
+     "value": 7.32,
+     "quote": "pH of 7.32"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "partial pressure of oxygen of 76 mmHg"
+    },
+    "FiO2": {
+     "value": [
+      48,
+      "%"
+     ],
+     "quote": "FiO₂ of 48 %"
+    },
+    "Hematocrit": {
+     "value": [
+      40,
+      "%"
+     ],
+     "quote": "measuring at 40 %"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "no history of severe organ failure or immunocompromise"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents to the emergency department due to fatigue"
+    }
+   },
+   "score": 4,
+   "score_working": "age 50:2; T 37.5:0; MAP 92.7:0; HR 100:0; RR 18:0; FiO2 48% PaO2 76:0; pH 7.32:2; Na 138:0; K 4.9:0; Cr 1.4:0; Hct 40:0; WBC 8:0; GCS 15:0; chronic False/Nonoperative:0",
+   "note_issues": []
+  },
+  {
+   "row": "883",
+   "fields": {
+    "age": {
+     "value": [
+      64,
+      "years"
+     ],
+     "quote": "A 64-year-old individual"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      96,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 96 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 130/80 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 130/80 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      96.67,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 130/80 mm Hg (MAP computed)"
+    },
+    "Temperature": {
+     "value": [
+      37.0,
+      "degrees celsius"
+     ],
+     "quote": "37.0 degrees celsius"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score of 14"
+    },
+    "creatinine": {
+     "value": [
+      1.4,
+      "mg/dL"
+     ],
+     "quote": "recorded at 1.4 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      7000,
+      "µL"
+     ],
+     "quote": "7000 per µL"
+    },
+    "Sodium": {
+     "value": [
+      139,
+      "mEq/L"
+     ],
+     "quote": "sodium reported at 139 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.5,
+      "mEq/L"
+     ],
+     "quote": "potassium reading 4.5 mEq/L"
+    },
+    "pH": {
+     "value": 7.33,
+     "quote": "pH of 7.33"
+    },
+    "A-a gradient": {
+     "value": 478,
+     "quote": "A-a-gradient of 478"
+    },
+    "FiO2": {
+     "value": [
+      52,
+      "%"
+     ],
+     "quote": "FiO₂ of 52 %"
+    },
+    "Hematocrit": {
+     "value": [
+      43,
+      "%"
+     ],
+     "quote": "at 43 %"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "no known medical history"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "brought to the emergency department due to episodes of mild confusion"
+    }
+   },
+   "score": 7,
+   "score_working": "age 64:3; T 37.0:0; MAP 96.7:0; HR 96:0; RR 18:0; FiO2 52% A-a 478:3; pH 7.33:0; Na 139:0; K 4.5:0; Cr 1.4:0; Hct 43:0; WBC 7:0; GCS 14:1; chronic False/Nonoperative:0",
+   "note_issues": []
+  },
+  {
+   "row": "884",
+   "fields": {
+    "age": {
+     "value": [
+      57,
+      "years"
+     ],
+     "quote": "a 57-year-old individual"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      102,
+      "beats per minute"
+     ],
+     "quote": "pulse rate of 102 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 120/75 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 120/75 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      90.0,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 120/75 mm Hg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      19,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 19 breaths per minute"
+    },
+    "Temperature": {
+     "value": [
+      36.7,
+      "degrees celsius"
+     ],
+     "quote": "36.7 degrees Celsius"
+    },
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Glasgow Coma Score was calculated to be 13"
+    },
+    "creatinine": {
+     "value": [
+      1.3,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.3 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      7800,
+      "µL"
+     ],
+     "quote": "white blood cell count of 7800/µL"
+    },
+    "Sodium": {
+     "value": [
+      142,
+      "mEq/L"
+     ],
+     "quote": "sodium levels at 142 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.7,
+      "mEq/L"
+     ],
+     "quote": "normal range at 4.7 mEq/L"
+    },
+    "pH": {
+     "value": 7.31,
+     "quote": "pH of 7.31"
+    },
+    "A-a gradient": {
+     "value": 400,
+     "quote": "A-a gradient of 400"
+    },
+    "FiO2": {
+     "value": [
+      54,
+      "%"
+     ],
+     "quote": "on 54% FiO₂"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "at 41%"
+    },
+    "Acute renal failure": {
+     "value": false,
+     "quote": "no evidence of acute renal failure"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": true,
+     "quote": "significant chronic liver failure requiring a scheduled transplant"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presented to the emergency unit with complaints of recent onset lethargy"
+    }
+   },
+   "score": 15,
+   "score_working": "age 57:3; T 36.7:0; MAP 90.0:0; HR 102:0; RR 19:0; FiO2 54% A-a 400:3; pH 7.31:2; Na 142:0; K 4.7:0; Cr 1.3:0; Hct 41:0; WBC 7.8:0; GCS 13:2; chronic True/Nonoperative:5",
+   "note_issues": [
+    {
+     "field": "Surgery Type",
+     "issue": "'scheduled transplant' is a future elective operation, not this admission; Nonoperative gives +5. Misreading as Elective postoperative would give +2.",
+     "alternative_score": 12
+    }
+   ]
+  },
+  {
+   "row": "885",
+   "fields": {
+    "age": {
+     "value": [
+      59,
+      "years"
+     ],
+     "quote": "A 59-year-old individual"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      104,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 104 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      126,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading of 126/72 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      72,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading of 126/72 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      90.0,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading of 126/72 mm Hg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      17,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate was noted to be 17 breaths per minute"
+    },
+    "Temperature": {
+     "value": [
+      36.5,
+      "degrees celsius"
+     ],
+     "quote": "36.5 degrees celsius"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score of 14"
+    },
+    "creatinine": {
+     "value": [
+      0.7,
+      "mg/dL"
+     ],
+     "quote": "creatinine value of 0.7 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      8800,
+      "µL"
+     ],
+     "quote": "8800 cells per µL"
+    },
+    "Sodium": {
+     "value": [
+      138,
+      "mEq/L"
+     ],
+     "quote": "sodium measured at 138 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.3,
+      "mEq/L"
+     ],
+     "quote": "potassium at 4.3 mEq/L"
+    },
+    "pH": {
+     "value": 7.33,
+     "quote": "pH of 7.33"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 76 mm Hg"
+    },
+    "FiO2": {
+     "value": [
+      43,
+      "%"
+     ],
+     "quote": "on 43 % FiO₂"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "measured at 41 %"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "absence of a significant past medical history"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "visited the office after feeling \"out of sorts\""
+    }
+   },
+   "score": 4,
+   "score_working": "age 59:3; T 36.5:0; MAP 90.0:0; HR 104:0; RR 17:0; FiO2 43% PaO2 76:0; pH 7.33:0; Na 138:0; K 4.3:0; Cr 0.7:0; Hct 41:0; WBC 8.8:0; GCS 14:1; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "Glasgow Coma Score",
+     "issue": "GCS 14 attributed to mild confusion but patient 'adequately oriented to person, place, and time' (verbal 5 -> GCS 15). If GCS 15, -1.",
+     "alternative_score": 3
+    },
+    {
+     "field": "creatinine",
+     "issue": "Note calls creatinine 0.7 mg/dL 'slightly high', which contradicts the value; no score impact (0 points).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "886",
+   "fields": {
+    "age": {
+     "value": [
+      61,
+      "years"
+     ],
+     "quote": "a 61-year-old patient"
+    },
+    "Temperature": {
+     "value": [
+      37,
+      "degrees celsius"
+     ],
+     "quote": "body temperature at 37 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      98,
+      "beats per minute"
+     ],
+     "quote": "heart rate was slightly high at 98 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "blood pressure registering at 130/74 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      74,
+      "mm Hg"
+     ],
+     "quote": "blood pressure registering at 130/74 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      92.67,
+      "mm Hg"
+     ],
+     "quote": "blood pressure registering at 130/74 mm Hg (MAP computed)"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score of 14"
+    },
+    "creatinine": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "elevated creatinine at 1.8 mg/dL"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "longstanding diagnosis of chronic kidney disease"
+    },
+    "White blood cell count": {
+     "value": [
+      8000,
+      "µL"
+     ],
+     "quote": "white blood cell count of 8000/µL"
+    },
+    "Sodium": {
+     "value": [
+      141,
+      "mEq/L"
+     ],
+     "quote": "Sodium levels were slightly above the normal range at 141 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.4,
+      "mEq/L"
+     ],
+     "quote": "potassium levels were near normal at 4.4 mEq/L"
+    },
+    "pH": {
+     "value": 7.33,
+     "quote": "pH of 7.33"
+    },
+    "A-a gradient": {
+     "value": 445,
+     "quote": "A-a-gradient of 445"
+    },
+    "FiO2": {
+     "value": [
+      53,
+      "%"
+     ],
+     "quote": "(FiO₂) of 53 %"
+    },
+    "Hematocrit": {
+     "value": [
+      42,
+      "%"
+     ],
+     "quote": "within normal limits at 42 %"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": false,
+     "quote": "longstanding diagnosis of chronic kidney disease"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presented to the emergency department due to increased fatigue"
+    }
+   },
+   "score": 9,
+   "score_working": "age 61:3; T 37:0; MAP 92.7:0; HR 98:0; RR 18:0; FiO2 53% A-a 445:3; pH 7.33:0; Na 141:0; K 4.4:0; Cr 1.8:2; Hct 42:0; WBC 8:0; GCS 14:1; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "History of severe organ failure or immunocompromise",
+     "issue": "CKD severity/dialysis status not stated; scored false (not dialysis-dependent). If dialysis-dependent, +5.",
+     "alternative_score": 14
+    }
+   ]
+  },
+  {
+   "row": "887",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "a 68-year-old individual"
+    },
+    "Temperature": {
+     "value": [
+      37.6,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 37.6 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      89,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 89 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      110,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure was measured at 110/72 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      72,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure was measured at 110/72 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      84.67,
+      "mm Hg"
+     ],
+     "quote": "Blood pressure was measured at 110/72 mm Hg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      16,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate was recorded as 16 breaths per minute"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "perfect Glasgow Coma Score of 15"
+    },
+    "creatinine": {
+     "value": [
+      1.3,
+      "mg/dL"
+     ],
+     "quote": "creatinine at 1.3 mg/dL"
+    },
+    "Chronic renal failure": {
+     "value": true,
+     "quote": "chronic kidney disease stage I"
+    },
+    "White blood cell count": {
+     "value": [
+      7000,
+      "µL"
+     ],
+     "quote": "white blood cell count of 7000/µL"
+    },
+    "Sodium": {
+     "value": [
+      136,
+      "mEq/L"
+     ],
+     "quote": "136 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.2,
+      "mEq/L"
+     ],
+     "quote": "documented at 4.2 mEq/L"
+    },
+    "pH": {
+     "value": 7.4,
+     "quote": "typical pH of 7.4"
+    },
+    "PaO2": {
+     "value": [
+      78,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) being 78 mm Hg"
+    },
+    "FiO2": {
+     "value": [
+      45,
+      "%"
+     ],
+     "quote": "on 45 % FiO₂"
+    },
+    "Hematocrit": {
+     "value": [
+      38,
+      "%"
+     ],
+     "quote": "mildly reduced to 38%"
+    },
+    "History of severe organ failure or immunocompromise": {
+     "value": true,
+     "quote": "previously experienced severe liver failure managed with medications"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presented to the outpatient clinic, complaining of increased fatigue"
+    }
+   },
+   "score": 10,
+   "score_working": "age 68:5; T 37.6:0; MAP 84.7:0; HR 89:0; RR 16:0; FiO2 45% PaO2 78:0; pH 7.4:0; Na 136:0; K 4.2:0; Cr 1.3:0; Hct 38:0; WBC 7:0; GCS 15:0; chronic True/Nonoperative:5",
+   "note_issues": [
+    {
+     "field": "History of severe organ failure or immunocompromise",
+     "issue": "'previously experienced severe liver failure managed with medications' - prior hepatic failure qualifies per Knaus, but it may be read as resolved/not chronic. If not counted, -5.",
+     "alternative_score": 5
+    }
+   ]
+  },
+  {
+   "row": "888",
+   "fields": {
+    "age": {
+     "value": [
+      64,
+      "years"
+     ],
+     "quote": "A 64-year-old male"
+    },
+    "Temperature": {
+     "value": [
+      37.1,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 37.1 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      93,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 93 beats per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      115,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measured to be 115/75 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measured to be 115/75 mm Hg"
+    },
+    "Mean arterial pressure": {
+     "value": [
+      88.33,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measured to be 115/75 mm Hg (MAP computed)"
+    },
+    "respiratory rate": {
+     "value": [
+      14,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 14 breaths per minute"
+    },
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "Glasgow Coma Score at 15"
+    },
+    "creatinine": {
+     "value": [
+      1.4,
+      "mg/dL"
+     ],
+     "quote": "documented at 1.4 mg/dL"
+    },
+    "White blood cell count": {
+     "value": [
+      7300,
+      "µL"
+     ],
+     "quote": "7300 count/µL"
+    },
+    "Sodium": {
+     "value": [
+      138,
+      "mEq/L"
+     ],
+     "quote": "sodium level of 138 mEq/L"
+    },
+    "Potassium": {
+     "value": [
+      4.6,
+      "mEq/L"
+     ],
+     "quote": "potassium level of 4.6 mEq/L"
+    },
+    "pH": {
+     "value": 7.34,
+     "quote": "pH of 7.34"
+    },
+    "PaO2": {
+     "value": [
+      77,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 77 mm Hg"
+    },
+    "FiO2": {
+     "value": [
+      46,
+      "%"
+     ],
+     "quote": "FiO₂ of 46%"
+    },
+    "Hematocrit": {
+     "value": [
+      38,
+      "%"
+     ],
+     "quote": "slightly below average at 38%"
+    },
+    "Surgery Type": {
+     "value": "Nonoperative",
+     "quote": "presents to the ICU department with complaints of feeling lethargic"
+    }
+   },
+   "score": 3,
+   "score_working": "age 64:3; T 37.1:0; MAP 88.3:0; HR 93:0; RR 14:0; FiO2 46% PaO2 77:0; pH 7.34:0; Na 138:0; K 4.6:0; Cr 1.4:0; Hct 38:0; WBC 7.3:0; GCS 15:0; chronic False/Nonoperative:0",
+   "note_issues": [
+    {
+     "field": "Acute renal failure",
+     "issue": "Creatinine 1.4 'suggestive of some level of renal impairment' but acute vs chronic not stated; 1.4 scores 0 either way, so no change.",
+     "alternative_score": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "calculator_id": "29",
+ "calculator_name": "PSI Score: Pneumonia Severity Index for CAP",
+ "fields": [
+  {
+   "field": "Heart Rate or Pulse",
+   "type": "number with unit",
+   "typical_units": [
+    "beats per minute"
+   ]
+  },
+  {
+   "field": "pH",
+   "type": "number"
+  },
+  {
+   "field": "Systolic Blood Pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "Blood Urea Nitrogen (BUN)",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL"
+   ]
+  },
+  {
+   "field": "Renal disease history",
+   "type": "boolean"
+  },
+  {
+   "field": "Cerebrovascular disease history",
+   "type": "boolean"
+  },
+  {
+   "field": "Neoplastic disease",
+   "type": "boolean"
+  },
+  {
+   "field": "Sodium",
+   "type": "number with unit",
+   "typical_units": [
+    "mEq/L",
+    "mmol/L"
+   ]
+  },
+  {
+   "field": "Liver disease history",
+   "type": "boolean"
+  },
+  {
+   "field": "Congestive Heart Failure",
+   "type": "boolean"
+  },
+  {
+   "field": "Nursing home resident",
+   "type": "boolean"
+  },
+  {
+   "field": "Partial pressure of oxygen",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "age",
+   "type": "number with unit",
+   "typical_units": [
+    "years"
+   ]
+  },
+  {
+   "field": "respiratory rate",
+   "type": "number with unit",
+   "typical_units": [
+    "breaths per minute"
+   ]
+  },
+  {
+   "field": "sex",
+   "type": "category",
+   "allowed_values": [
+    "Female",
+    "Male"
+   ]
+  },
+  {
+   "field": "Hematocrit",
+   "type": "number with unit",
+   "typical_units": [
+    "%"
+   ]
+  },
+  {
+   "field": "Glucose",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL",
+    "mmol/L"
+   ]
+  },
+  {
+   "field": "Temperature",
+   "type": "number with unit",
+   "typical_units": [
+    "degrees celsius",
+    "degrees fahrenheit"
+   ]
+  },
+  {
+   "field": "Pleural effusion on x-ray",
+   "type": "boolean"
+  },
+  {
+   "field": "Altered mental status",
+   "type": "boolean"
+  }
+ ],
+ "rows": [
+  {
+   "row": "829",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 25-year-old male patient presents at the clinic for a routine physical examination. The patient describes a recent episode of fever and altered mental state. He denies any past history of heart disease, renal disease, cerebrovascular disease, liver disease, or cancer. The patient is currently unemployed and lives alone. Upon physical examination, the patient has a measured body temperature of 34 degrees celsius, a heart rate of 101 beats per minute, and a respiratory rate of 32 breaths per minute. His blood pressure measures at 123/85 mm Hg. Laboratory findings show a hematocrit level of 35, a blood glucose level of 15 mmol/L, and a BUN of 33.21 mg/dL. His sodium level is moderately low at 123 mmol/L. Arterial blood gas results show a PaO2 of 67 mm Hg and a slightly acidotic pH of 7.17. The patient's chest X-ray shows no signs of pleural effusion."
+  },
+  {
+   "row": "830",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 64-year-old male patient presents to the emergency department with complaints of fever, disorientation, and rapid breathing. His history includes renal disease and liver disease, but has no documented history of heart failure or cerebrovascular disease. The patient is not currently residing in a nursing home and has no history of neoplastic disease. On examination, his vital signs are as follows: Heart rate of 94 beats per minute, respiratory rate of 34 breaths per minute, blood pressure 94/70 mm Hg, and a temperature of 38 degrees celsius. The patient's altered mental status is consistent with potential encephalopathy. Laboratory workup shows a hematocrit of 37 and a glucose level of 251.12 mg/dL, indicative of hyperglycemia. The blood urea nitrogen levels are relatively high at 26.75 mg/dL, with a sodium level of 128.43 mmol/L. Arterial blood gas results indicate a PaO2 level of 75 mm Hg and an alkalotic pH level of 7.60. A chest X-ray reveals the presence of a pleural effusion."
+  },
+  {
+   "row": "831",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 77-year-old female patient with a past medical history significant for chronic kidney disease and previous cerebrovascular accident, with otherwise no history of liver disease, neoplastic disease, or congestive heart failure visits the outpatient clinic today for increased fatigue and confusion over the past week. She is not a nursing home resident and has no change in her mental status at present. Physical exam notes a temperature of 42 degrees celsius, a heart rate of 130 beats per minute, a respiratory rate of 34 breaths per minute, and a blood pressure reading of 87/70 mm Hg. Lab studies reveal a hematocrit of 37, a sodium level of 117 mmol/L and an elevated random blood glucose of 250.21 mg/dL. Her blood urea nitrogen (BUN) level is significantly high at 36.75 mg/dL. An arterial blood gas analysis shows a PaO2 of 87 mm Hg and a normal pH at 7.39. A chest X-ray shows no signs of any pleural effusion."
+  },
+  {
+   "row": "832",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 73-year-old female patient coming from her house arrives at the emergency department. She had an altered mental status onset around an hour prior to arrival. She denies any past medical history of congestive heart failure, renal disease, cerebrovascular disease, liver disease, or neoplastic disease. Her vital signs on presentation include a body temperature of 36 degrees celsius, heart rate of 130 beats per minute, respiratory rate of 31 breaths per minute, and a blood pressure of 140/90 mm Hg. Laboratory findings demonstrated a hematocrit of 28, an elevated glucose level of 17 mmol/L, and a blood urea nitrogen level of 28.43 mg/dL. Sodium was slightly low at 127 mmol/L, and Arterial blood gas results showed a PaO2 of 59 mm Hg and an alkalotic pH of 7.81. The patient's chest X-ray was positive for pleural effusion."
+  },
+  {
+   "row": "833",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old female patient with a past medical history of stroke and congestive heart failure, is brought to the emergency department unclear of any kidney or liver diseases previously. She is alert and responsive, with an afebrile body temperature of 37.6 degrees celsius. Her vital signs include a heart rate of 85 beats per minute, a respiratory rate of 20 breaths per minute, and a blood pressure of 125/85 mm Hg. Laboratory studies report a hematocrit level of 39 % an average glucose level of 122 mg/dL, and a blood urea nitrogen (BUN) level of 22 mg/dL. Her sodium level is normal at 138 mEq/L. Analysis of arterial blood gas showed pH to be 7.2 indicating mild acidemia and the partial pressure of oxygen (PaO₂) is 75 mm Hg. The patient's chest X-ray could not be reviewed during the examination."
+  },
+  {
+   "row": "834",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 78-year-old male who lives independently, presents to the emergency department with an altered mental status. His past medical history includes renal disease and he is currently under treatment for neoplasia. He doesn’t have a history of any liver disease. On examination, the patient is found with a temperature of 99.5 degrees Fahrenheit, heart rate of 85 beats per minute, respiratory rate of 24 breaths per minute, and blood pressure of 115/75 mm Hg. Laboratory tests report a hematocrit of 33%, a glucose level of 7.2 mmol/L, and a blood urea nitrogen level of 30 mg/dl. His sodium level is within the normal range at 140 mEq/L. Arterial Blood Gas shows a pH of 7.35 and PaO2 of 70 mm Hg. The chest X-ray does not denote any pleural effusion. His cardiovascular history could not be ascertained during medical inquiries."
+  },
+  {
+   "row": "835",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 68-year-old female who resides in a nursing home is admitted with intermittent fever and known liver disease. Her past medical history is not significant for cerebrovascular disease or congestive heart failure. On admission, her vitals are recorded: body temperature is 38.2 degrees celsius, heart rate is 110 beats per minute, respiratory rate is 16 breaths per minute, and blood pressure is 135/90 mm Hg. She shows no signs of altered mental status. Laboratory investigations reveal a hematocrit of 41 % and slightly elevated glucose level at 165 mg/dL. Her Blood Urea Nitrogen (BUN) is within normal range at 15 mg/dL and sodium at slightly low at 132 mEq/L. An arterial blood gas drawn from her shows a pH of 7.48 and a PaO2 of 92 mm Hg. Her chest X-ray reveals the presence of pleural effusion. The patient does not have any history of renal conditions or neoplastic diseases."
+  },
+  {
+   "row": "836",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 80-year-old male patient, not a nursing home resident, presents to the emergency department with fever and an altered mental status. He has a documented history of congestive heart failure and is currently under treatment for neoplastic disease. His past medical conditions do not list renal disease. His present vital signs include a body temperature of 100.2 degrees Fahrenheit, heart rate of 90 beats per minute, respiratory rate of 18 breaths per minute, and blood pressure of 140/85 mm Hg. Results from his initial laboratory evaluations include a hematocrit of 38 % and a glucose level of 6.0 mmol/L. His blood urea nitrogen level is found to be 18 mg/dL while his sodium level is within normal limits at 135 mEq/L. His arterial blood gas reveals a PaO2 of 60 mm Hg and pH of 7.28. His history pertaining to liver disease or cerebrovascular disease could not be obtained at the time of presentation."
+  },
+  {
+   "row": "837",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old woman presents to the clinic for a routine checkup. She has a history of a prior stroke. The patient reports no known incidents of congestive heart failure and no existing kidney ailments. A physical examination reveals a standard body temperature of 36.6 degrees celsius, a heart rate of 105 beats per minute, a respiratory rate of 22 breaths per minute, and a blood pressure reading of 120/85 mm Hg. Laboratory investigations identify a hematocrit of 42 %, a sodium level of 137 mEq/L, a glucose level of 95 mg/dL, and a Blood Urea Nitrogen (BUN) of 24 mg/dL. Arterial Blood Gas results show a pH of 7.40 and a PaO2 of 80 mm Hg. A chest X-ray shows the presence of pleural effusion."
+  },
+  {
+   "row": "838",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 67-year-old male residing in a nursing home is brought to the ER due to recent episodes of confusion. His past medical history is significant for chronic renal disease and liver illness. The patient doesn't have any known history of congestive heart failure. His vitals on admission show a blood pressure of 130/90 mm Hg, a heart rate of 100 beats per minute, respiratory rate at a steady 24 breaths per minute, and a body temperature holding at a normal 98.6 degrees Fahrenheit. Laboratory findings indicate a hematocrit level of 37 %, sodium concentration at 134 mEq/L, blood urea nitrogen level elevated at 28 mg/dL, and a glucose level at 150 mg/dL. An arterial blood gas shows a slightly decreased pH of 7.32 and a PaO2 of 88 mm Hg. Chest X-ray findings are notable for the absence of pleural effusion."
+  },
+  {
+   "row": "839",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old female presents to the outpatient department for a follow-up consultation after her recent discharge from the hospital due to congestion heart failure. The patient's medical history shed light on a previous cerebrovascular accident, but no evidence of neoplastic disease or liver disease. Her vital signs are stable, indicating a body temperature of 36.8 degrees celsius, heart rhythm showing 80 beats per minute, breathing rate counted at 19 breaths per minute, and a blood pressure reading of 140/85 mm Hg. Laboratory results illustrate a hematocrit of 44 %, a glucose level of 4.8 mmol/L, and blood urea nitrogen of 26 mg/dL. Sodium levels are normal at 135 mEq/L. An arterial blood gas analysis shows pH at 7.36 and a PaO2 of 77 mm Hg. Chest X-ray indicates the presence of a pleural effusion."
+  },
+  {
+   "row": "840",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 76-year-old male resident of a nursing home is noted to have increased fatigue and change of appetite. He has a history of renal disease, is undergoing treatment for neoplastic disease, but exhibits no signs of cognitive impairment. His medical record doesn't highlight any history of heart disease or stroke. Temperature readings show a stable 98.4 degrees Fahrenheit. His heart rate is at 92 beats per minute, respiratory rate is 21 breaths per minute, and his blood pressure is found to be 150/90 mm Hg. Laboratory tests reveal a hematocrit level of 36 %, a glucose level of 120 mg/dL, and a blood urea nitrogen level of 23 mg/dL. Sodium readings are robust coming in at 143 mEq/L. Arterial blood gas analysis presents with a pH value of 7.44, and a PaO2 of 68 mm Hg."
+  },
+  {
+   "row": "841",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 68-year-old female resident of a nearby nursing home has been brought to the emergency department due to alterations in her mental status. She has no previous record of renal disease, congestive heart failure, or cancer. On physical examination, she is found to have a heart rate of 88 beats per minute, a respiratory pace of 22 breaths per minute, a blood pressure of 130/80 mm Hg, and temperature of 37.4 degrees celsius. Lab results showed her hematocrit is at 40 %, glucose reading stands at 7.1 mmol/L, with a blood urea nitrogen (BUN) reaching 25 mg/dL. Her sodium level measures within the normal range at 142 mEq/L. The arterial blood gas detected a pH of 7.38 with a partial pressure of oxygen at 82 mm Hg. A chest X-ray revealed the presence of pleural effusion."
+  },
+  {
+   "row": "842",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 80-year-old male presents to the clinic for his regular health check-up. His past history is significant for chronic kidney disease and a previous cerebrovascular accident. The patient also has a history of congestive heart failure but no known neoplastic conditions or liver illness. On examination, he is stable with a heart rate of 110 beats per minute, respiratory rate of 20 breaths per minute, a blood pressure of 120/80 mm Hg, and a temperature of 38.2 degrees celsius. Lab studies show a hematocrit level of 41 %, Blood Urea Nitrogen value at 30 mg/dL, a glucose of 105 mg/dL, and sodium level at 139 mEq/L. An arterial blood gas analysis delivers a result of a pH at 7.46 and a PaO2 of 90 mm Hg. He currently lives at home with his son."
+  },
+  {
+   "row": "843",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 74-year-old woman living independently visits the clinic reporting malaise and weakness. She has a known history of liver disease. She denies any past heart failure or prior strokes. At present, her mental status appears undisturbed. Today's exam measures her body temperature at 99.5 degrees Fahrenheit, and vitals recorded an elevated heart rate at 115 beats per minute, a respiratory rate of 18 breaths per minute, and slightly lower blood pressure at 110/75 mm Hg. Laboratory studies reveal a hematocrit of 37 %, blood urea nitrogen at 28 mg/dL, glucose at 6.4 mmol/L, and sodium at the upper normal limit at 136 mEq/L. Results from arterial blood gas reports a pH of 7.42 and a PaO2 at 84 mm Hg, suggesting good oxygen levels. A recent chest X-ray demonstrates presence of pleural effusion."
+  },
+  {
+   "row": "844",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 79-year-old male who lives independently at home comes to the clinic accompanied by his daughter, who noticed her dad showing signs of confusion in recent days. His medical history includes renal disease and an active neoplastic condition, but no records of cerebrovascular disease, congestive heart failure or liver disease. On physical examination, he is A&Ox2 (but not to year or situation), his body temperature registers at 37.0 degrees celsius, his heart rate is measured at 95 beats per minute, the respiratory rate is regular at 24 breaths per minute, and his blood pressure is noted to be 115/70 mm Hg. Laboratory findings indicate a hematocrit level of 36 %, a slightly elevated blood urea nitrogen concentration of 35 mg/dL, and a glucose level of 8.0 mmol/L. Sodium level in his blood is found to be 141 mEq/L. Arterial blood gas results show a pH of 7.34 and a PaO2 of 75 mm Hg, which are within normal limits."
+  },
+  {
+   "row": "845",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old female residing in a nursing home is brought to the outpatient department by her nurse for a regular health check. Her medical records indicate a past history of congestive heart failure but no known liver disease or neoplastic conditions. Today's examination finds her mentally alert with a body temperature reading of 36.5 degrees celsius, a pulse rate of 82 beats per minute, a respiratory rate of 22 breaths per minute, and blood pressure measuring at 128/80 mm Hg. Laboratory results are collected; hematocrit at 39 %, glucose elevated to 180 mg/dL, blood urea nitrogen (BUN) slightly high at 27 mg/dL, and sodium within normal limits at 139 mEq/L. An arterial blood gas analysis reports a pH of 7.40 and PaO2 at 80 mm Hg. Chest X-rays show indications of pleural effusion."
+  },
+  {
+   "row": "846",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 71-year-old male visited the clinic today for a routine follow-up. His medical records indicate a history of chronic kidney disease, a prior stroke in 2018, and an active diagnosis of congestive heart failure. His living situation is not recorded, and he exhibits no sign of altered mental status today. His vital signs are within normal limits with a body temperature of 37.8 degrees celsius, heart rate of 105 beats per minute, a steady respiratory rate of 19 breaths per minute, and blood pressure reading at 140/80 mm Hg, efficient for a patient his age. From his recent diagnostics, lab results reveal a hematocrit level of 45 %, a glucose level of 7.2 mmol/L, and a blood urea nitrogen concentration of 22 mg/dL. Sodium level is slightly low at 133 mEq/L. An arterial blood gas analysis was conducted revealing a pH of 7.37 and PaO2 of 75 mm Hg. His chest x-ray from the previous consultation was without any abnormalities. He has no past history of liver disease or neoplastic diseases."
+  },
+  {
+   "row": "847",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 77-year-old female patient, living in her own home, visits the primary care clinic for her regular check-up. Today, she appears alert and well-oriented. Her medical history is significant for prior breast cancer, but there is no record of liver, renal or cerebrovascular diseases, or congestive heart failure. Today's vital signs find her with a temperature at 98.6 degrees Fahrenheit, heart rate counted at 78 beats per minute, a breathing rate of 18 breaths per minute, and a blood pressure level of 135/85 mm Hg. The hematocrit is at 42 % and a blood glucose level of 6.9 mmol/L from lab results. Her blood urea nitrogen (BUN) value is 20 mg/dL and sodium is within the normal range at 140 mEq/L. An arterial blood gas analysis returns normal with a pH of 7.45 and a PaO2 of 78 mm Hg. The patient's most recent chest X-ray does not seem to be available at this visit."
+  },
+  {
+   "row": "848",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 73-year-old male patient presents to the clinic with family reporting recent episodes of confusion. The patient's medical history is indicative of both a prior stroke and MASH, however, there's no mention of renal or neoplastic disease, and the patient has no reported heart failure. Today, he appears stable with a body temperature of 36.3 degrees celsius, a heart rate of 90 beats per minute, a respiratory rate of 20 breaths per minute, and a blood pressure of 120/80 mm Hg. Mental status on physical exam reveals only A&Ox2. His laboratory results included a hematocrit level of 39 %, blood urea nitrogen level of 24 mg/dL, a glucose value of 115 mg/dL, and the patient's sodium level is at 137 mEq/L. The arterial blood gas analysis presents a pH of 7.48 and a PaO2 of 72 mm Hg. His recent chest X-ray was marked by the presence of pleural effusion. His residency status is not clearly mentioned in the patient's current records."
+  }
+ ],
+ "mdcalc_rules": "Points = age in years; female -10; nursing home +10; neoplastic disease +30; liver disease +20; CHF +10; cerebrovascular disease +10; renal disease +10; altered mental status +20; RR >=30 +20; SBP <90 +20; temp <35C or >39.9C (Step-1 text says >=40C) +15; pulse >=125 +10; pH <7.35 +30; BUN >=30 mg/dL (>=11 mmol/L) +20; Na <130 mmol/L +20; glucose >=250 mg/dL (>=14 mmol/L) +10; Hct <30% +10; PaO2 <60 mmHg (<8 kPa) +10; pleural effusion +10. Classes: <=70, 71-90, 91-130, >130. MDCalc page lists PaO2 only (no SaO2 <90% option, which Fine 1997 includes) and gives no definitions for comorbidities.",
+ "mdcalc_source": "https://www.mdcalc.com/calc/33/psi-port-score-pneumonia-severity-index-cap"
+}

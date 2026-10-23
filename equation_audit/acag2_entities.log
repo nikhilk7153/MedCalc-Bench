@@ -1,0 +1,4 @@
+2 non-template rows from acag_from_acdr.csv to check
+entities_acag2.jsonl: 0 cached, 2 to run
+Entities Match
+True    2

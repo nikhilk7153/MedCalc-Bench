@@ -1,0 +1,872 @@
+[
+ {
+  "calculator_id": "45",
+  "calculator": "CURB-65 Score for Pneumonia Severity",
+  "row": "537",
+  "note_id": "pmc-8104349-1",
+  "stored_answer": "1",
+  "blind_score": 1,
+  "code_on_blind": "1",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Initial-assessment vitals and labs explicit. Note gives serum UREA 4.7 mmol/L (not BUN); either way below threshold. Later RR 30 (day 3) and 37 (day 12) are post-admission and not used.",
+  "eligibility_note": "Eligible: COVID-19 pneumonia.",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"Blood Urea Nitrogen (BUN)\", \"issue\": \"Value is urea in mmol/L, not BUN; urea 4.7 mmol/L (~13 mg/dL BUN) is below threshold under any interpretation.\", \"alternative_score\": null}, {\"field\": \"respiratory rate\", \"issue\": \"Day-3 RR 30/min would score if wrongly used; admission RR is 19.\", \"alternative_score\": 2}]",
+  "queued": true,
+  "question": "What is the patient's CURB-65 score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 78-year-old female ex-smoker was admitted with an 8-day history of nonproductive cough, fever, and worsening malaise. Prior to admission, she required help with high-order activities of daily living, such as heavy housework; she was relatively independent with activities of daily living, receiving some support from her family for the same, but she rarely left her house. This put her in the category of “mildly frail” on the Clinical Frailty Scale 5.[] Her past medical history included hypertension, chronic obstructive pulmonary disease (COPD), and diet-controlled diabetes mellitus-type 2. Her vital signs following initial assessment were: Heart rate 94/min, blood pressure 104/71 mmHg, respiratory rate 19/min, temperature 36.2° C and oxygen saturation 92% on 6 L O2 delivered through nasal cannula. Her laboratory results revealed: White cell count 3.4 × 10 9/L (normal range: 4.0–11.0 × 109/L), neutrophils 2.43 × 10 9/L (2.0–7.7), lymphocyte 0.82 × 10 9/L (0.8–3.4), C-reactive protein (CRP) 100 mg/L (0–8), urea 4.7 mmol/L (3.0–7.6), and creatinine of 62 umol/L (65–114). Chest X-ray (CXR) showed bilateral infiltrates that were most apparent in the left middle and right lower zones [].\nShe was initially managed as suspected COVID-19 pneumonia with an exacerbation of COPD. On day-3 of admission she deteriorated significantly; she became cyanosed and tachypnoeic at 30 breaths per minute and 15 L/min oxygen via a mask with a reservoir bag was required to achieve oxygen saturation of 90%. Molecular testing confirmed the presence of severe acute respiratory syndrome coronavirus 2 on nasopharyngeal swab, confirming the diagnosis of COVID-19 pneumonia. Arterial blood gas analysis on 15 L/min oxygen via a mask with a reservoir bag showed: pH 7.49, pC02–4.9 kPa, and pO2–4.2 kPa, in keeping with severe lung injury. She was commenced on CPAP of 10 cm H20 with 60% fraction of inspired oxygen (FiO2). Following initiation of CPAP, she improved symptomatically with reduction in respiratory rate and achieved saturations at 92% on 60% FiO2. The CPAP management strategy was to titrate pressures up to a maximum of 15 cm H20 with an aim to keep FiO2 requirements to 60% or less, as far as possible, with target saturation of 88%–92%.[] A do-not-attempt resuscitation order was placed and agreed with the family, which included the decision that the patient would not be suitable for invasive ventilation through an endotracheal tube; this was based on the patient's premorbid functional status and perceived poor prognosis with these interventions.\nOn day 4 of the admission, her oxygen requirements increased to an Fio2 of 90%, and she was CPAP dependent on 15 cm H2O, rapidly desaturating when it was removed. A nasogastric (NG) tube was inserted to maintain both nutrition and hydration. A repeat CXR showed worsening consolidation in both lungs consistent with worsening COVID-19 pneumonia []. Rising inflammatory markers prompted the initiation of empirical antibiotics (Moxifloxacin) to cover possible secondary bacterial infection []. The patient's condition initially stabilized; by day 10, she was weaned to overnight CPAP only, maintaining adequate oxygen saturation on 2 L/min of oxygen delivered through nasal cannula and the feeding NG-tube was removed.\nDespite initial improvement, she experienced a second phase of clinical deterioration on day 12 (20 days from onset of symptoms) with worsening respiratory parameters (respiratory rate 37 and oxygen saturations falling to 86% on 5 L/min oxygen through nasal cannulae). CPAP was recommenced with titration of pressure and FiO2 as earlier described. A feeding NG-tube was reinserted. A repeat CXR [] showed worsening infiltrates bilaterally, suggestive of ARDS and there was a concomitant rise in CRP levels []. Along with raised CRP levels, interleukin-6 levels were raised at 50.1 pg/mL (0–7), ferritin levels were 302 ug/L and D-dimer 4236 ng/mL. Although the clinical picture was in keeping with worsening COVID-19, empirical antibiotic therapy with piperacillin-tazobactam was restarted to cover for hospital-acquired pneumonia. However, multiple sputum and blood cultures did not demonstrate growth of pathogens. The patient slowly improved and was again weaned from CPAP with this being discontinued on day 27 of admission, completing 24 days of CPAP treatment in total. Clinical improvement was reflected in the decline of CRP levels to 11 mg/L from a high of 314 mg/L. Interleukin-6 levels also decreased to 14.2 pg/ml. She was discharged after 30 days of treatment for COVID-19 at which time she no longer required supplementary oxygen and was close to her normal premorbid state. The progression of our patient's clinical observations, CPAP settings, and CRP levels are summarized in , supporting the “biphasic” nature of our patient's condition.",
+  "stored_relevant_entities": "{'Systolic Blood Pressure': [104.0, 'mm hg'], 'respiratory rate': [19.0, 'breaths per minute'], 'Blood Urea Nitrogen (BUN)': [4.7, 'mmol/L'], 'Confusion': False, 'Diastolic Blood Pressure': [71.0, 'mm hg'], 'age': [78.0, 'years']}",
+  "stored_explanation": "The CURB-65 score is current at 0 points.\nThe patient is 78.0 years old. The patient's age is greater than or equal to 65 years, and so we add 1 point to the score, making the current total 0 + 1 = 1.\nBecause the patient does not have confusion, 0 points are added to the score, keeping the score at 1.\nThe concentration of BUN is 4.7 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of BUN from mmol to mg. The mass of BUN is 4.7 mmol. To convert 4.7 mmol of BUN to mol, multiply by the conversion factor 0.001, giving us 4.7 mmol BUN * 0.001 mol/mmol = 0.0047 mol BUN. To convert from mol BUN to grams, multiply by the molar mass 28.02 g/mol, which will give 0.0047 mol BUN * 28.02 g/mol = 0.13169 g BUN. To convert 0.13169 g of BUN to mg, multiply by the conversion factor 1000.0, giving us 0.13169 g BUN * 1000.0 mg/g = 131.69 mg BUN. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 131.69 mg BUN/10.0 dL = 13.169 mg BUN/dL. The concentration value of 4.7 mmol BUN/L converts to 13.169 mg BUN/dL. The patient's BUN concentration is less than or equal to 19 mg/dL and so 0 points are added to score, keeping the current total at 1.\nThe patient's respiratory rate is 19 breaths per minute. Because the respiratory rate is less than 30 breaths per minute, 0 points are added to the score, keeping the current total at 1.\nThe patient's systiolic blood pressure is 104 mm Hg. The patient's diastolic blood pressure is 71 mm Hg. For a point a point to be added, the systiolic blood pressure must be less than 90 mm Hg or the diastolic blood pressure must be less than or equal to 60 mm Hg. Because neither of these statements are true, 0 points are added to score, keeping the current total to 1.\nThe patient's CURB-65 score is 1.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     78,
+     "years"
+    ],
+    "quote": "A 78-year-old female"
+   },
+   "Systolic Blood Pressure": {
+    "value": [
+     104,
+     "mm hg"
+    ],
+    "quote": "blood pressure 104/71 mmHg"
+   },
+   "Diastolic Blood Pressure": {
+    "value": [
+     71,
+     "mm hg"
+    ],
+    "quote": "blood pressure 104/71 mmHg"
+   },
+   "Blood Urea Nitrogen (BUN)": {
+    "value": [
+     4.7,
+     "mmol/L"
+    ],
+    "quote": "urea 4.7 mmol/L (3.0–7.6)"
+   },
+   "respiratory rate": {
+    "value": [
+     19,
+     "breaths per minute"
+    ],
+    "quote": "respiratory rate 19/min"
+   }
+  },
+  "blind_working": "Confusion not mentioned 0; urea 4.7 mmol/L <=7 0; RR 19 0; BP 104/71 0; age 78 +1 = 1"
+ },
+ {
+  "calculator_id": "45",
+  "calculator": "CURB-65 Score for Pneumonia Severity",
+  "row": "540",
+  "note_id": "usmle-6150",
+  "stored_answer": "1",
+  "blind_score": 1,
+  "code_on_blind": "1",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Vitals given before IV fluids started; neuro exam normal.",
+  "eligibility_note": "Not a pneumonia case (cough/dyspnea with very high beta-hCG, cardiac murmur; likely molar pregnancy/heart failure picture).",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"Systolic Blood Pressure\", \"issue\": \"SBP exactly 90 is at the boundary; criterion is <90 so not scored.\", \"alternative_score\": 2}]",
+  "queued": true,
+  "question": "What is the patient's CURB-65 score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 27-year-old immigrant from Bolivia presents to the emergency department with cough and shortness of breath. She immigrated to the United States five months ago and does not present with any medical records. The patient also complains of nausea and vomiting. Her temperature is 99.5°F (37.5°C), blood pressure is 90/65 mmHg, pulse is 140/min, respirations are 18/min, and oxygen saturation is 98% on room air. Cardiac exam reveals an apical murmur. Pulmonary exam reveals mild bibasilar crackles. On abdominal exam, you note increased abdominal girth without any tenderness. Neurological and musculoskeletal exams are within normal limits. Laboratory values are ordered as seen below.\n\nHemoglobin: 12 g/dL\nHematocrit: 36%\nLeukocyte count: 4,500/mm^3 with normal differential\nPlatelet count: 100,000/mm^3\n\nSerum:\nNa+: 139 mEq/L\nCl-: 100 mEq/L\nK+: 4.4 mEq/L\nHCO3-: 24 mEq/L\nBUN: 20 mg/dL\nGlucose: 220 mg/dL\nCreatinine: 1.1 mg/dL\nCa2+: 10.2 mg/dL\nß-hCG: 175,000 mIU/mL\nAST: 12 U/L\nALT: 10 U/L\n\nAn EKG is performed as seen in Figure A. The patient is started on IV fluids.",
+  "stored_relevant_entities": "{'Systolic Blood Pressure': [90.0, 'mm hg'], 'respiratory rate': [18.0, 'breaths per minute'], 'Blood Urea Nitrogen (BUN)': [20.0, 'mg/dL'], 'Confusion': False, 'Diastolic Blood Pressure': [65.0, 'mm hg'], 'age': [27.0, 'years']}",
+  "stored_explanation": "The CURB-65 score is current at 0 points.\nThe patient is 27.0 years old. The patient's age is less than 65 years, and so we add 0 points to the score, keeping the current total at 0.\nBecause the patient does not have confusion, 0 points are added to the score, keeping the score at 0.\nThe concentration of BUN is 20.0 mg/dL. The patient's BUN concentration is greater than 19 mg/dL and so we add 1 point to score making the current total 0 + 1 = 1.\nThe patient's respiratory rate is 18 breaths per minute. Because the respiratory rate is less than 30 breaths per minute, 0 points are added to the score, keeping the current total at 1.\nThe patient's systiolic blood pressure is 90 mm Hg. The patient's diastolic blood pressure is 65 mm Hg. For a point a point to be added, the systiolic blood pressure must be less than 90 mm Hg or the diastolic blood pressure must be less than or equal to 60 mm Hg. Because neither of these statements are true, 0 points are added to score, keeping the current total to 1.\nThe patient's CURB-65 score is 1.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     27,
+     "years"
+    ],
+    "quote": "A 27-year-old immigrant from Bolivia"
+   },
+   "Systolic Blood Pressure": {
+    "value": [
+     90,
+     "mm hg"
+    ],
+    "quote": "blood pressure is 90/65 mmHg"
+   },
+   "Diastolic Blood Pressure": {
+    "value": [
+     65,
+     "mm hg"
+    ],
+    "quote": "blood pressure is 90/65 mmHg"
+   },
+   "Blood Urea Nitrogen (BUN)": {
+    "value": [
+     20,
+     "mg/dL"
+    ],
+    "quote": "BUN: 20 mg/dL"
+   },
+   "respiratory rate": {
+    "value": [
+     18,
+     "breaths per minute"
+    ],
+    "quote": "respirations are 18/min"
+   },
+   "Confusion": {
+    "value": false,
+    "quote": "Neurological and musculoskeletal exams are within normal limits."
+   }
+  },
+  "blind_working": "Confusion false 0; BUN 20>19 +1; RR 18 0; SBP 90 not <90 and DBP 65 >60 0; age 27 0 = 1"
+ },
+ {
+  "calculator_id": "45",
+  "calculator": "CURB-65 Score for Pneumonia Severity",
+  "row": "542",
+  "note_id": "pmc-7480889-1",
+  "stored_answer": "1",
+  "blind_score": 1,
+  "code_on_blind": "1",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Admission values explicit. Labelled 'BUN' but in mmol/L (likely urea); 10.9 mmol/L exceeds the threshold whether read as urea (>7) or BUN (~30.5 mg/dL), so not determinative. Later GCS drop to 9 is post-treatment.",
+  "eligibility_note": "Presented with bilateral infiltrates treated with antibiotics, but final diagnosis is GPA with diffuse alveolar hemorrhage (later COVID-positive); borderline pneumonia eligibility.",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"Confusion\", \"issue\": \"GCS later dropped to 9/15 after ICU transfer; admission GCS 15 is used.\", \"alternative_score\": 2}]",
+  "queued": true,
+  "question": "What is the patient's CURB-65 score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 37-year-old Saudi female, who is not known to have any medical illness, presented to the emergency department with chest pain, cough, shortness of breath, hemoptysis and generalized joint pain. Her symptoms progressed over the last four days. There was no history of fever, skin rashes, sicca symptoms, no uveitis, no oral or genital ulcers. She denied any history of drug abuse and alcohol intake. She is not a smoker. There was no history of previous miscarriages and thrombovenous embolism.\nThe patient was admitted to isolation section in the emergency department (ER). Her Glasgow coma scale (GCS) was 15, temperature 37 C, blood pressure 110/65, respiratory rate 20, heart rate 120 bpm. Oxygen saturation on room air was 90% improved to 96% on high flow oxygen. Heart sounds were normal, no murmurs, jugular venous pressure (JVP) not raised, bilateral lower limb pedal pitting edema, bilateral equal breathing sound with audible crackles in both lungs and no tenderness or guarding in the abdomen. Musculoskeletal exam showed active arthritis in the 2nd, 3rd and 4th proximal interphalangeal joints of the right hand.\nInitial hematological examination revealed white blood cells (WBC) 13,000 cells/µL, hemoglobin 5.2 g/dL, platelets 414,000 u/L, normal coagulation profile, glucose 9.1 mmol, creatinine 284 µmmol/L, blood urea nitrogen (BUN) 10.9 mmol/L, sodium (Na) 134 mmol/L, potassium (K) 3.8 mmol/L, chloride (Cl) 96 mmol/L, lactic acid 1.8 mmol, albumin 35 g/L; liver function tests were normal, cardiac enzymes and electrocardiogram were normal, C-reactive protein (CRP) 252 mg/L; urine analysis and microscopy revealed no red blood cells casts. Chest X-ray revealed bilateral pulmonary infiltration (Figure ). COVID-19 polymerase chain reaction (PCR) test was negative. CT brain showed no acute brain insults. Chest CT showed a widespread lung patchy consolidation with a central and peripheral distribution, permeated by ground glass areas and crazy paving pattern. The apices lower zones were relatively spared. Findings were likely suggestive of diffuse alveolar hemorrhage (Figures -).\nPatient's blood, urine and wound cultures were taken. Toxicology screen was negative. The patient was stabilized, received proper hydration, 2 units packed red blood cells and broad-spectrum antibiotics initiated. Her serology showed that C-ANCA (PR3) 94.79 AU/mL (strong positive), P-ANCA 7.88 AU/mL (negative), antinuclear antibody (ANA) mild positive 1/80. Her complement C3 and C4 levels were within normal, the rest of rheumatological workup was unremarkable. At this point intravenous pulse methyl prednisone was initiated for three days.\nThe patient was shifted to the intensive care unit (ICU), as she had ongoing hemoptysis and her oxygen saturation dropped to 84% on BiPAP with FiO2 75%. After she completed the pulse steroids, prednisone 60 mg daily was initiated; linezolid was added to the antibiotic regimen. Twenty-four hours later, her GCS dropped to 9/15; she was intubated, and she was initiated on six sessions of plasmapheresis.\nAfter she completed the plasmapheresis, the second COVID-19 swab test was positive. At this point, ritonavir/lopinavir was added and antibiotics was changed to imipenem based on infectious disease recommendations. Prednisone was reduced to 30 mg and intravenous immunoglobulin was initiated for a total of five doses.\nTo confirm the diagnosis of COVID-19 infection, a third sample was taken and it came positive. She was having continuous fever; antifungal treatment was added. Her hemoptysis decreased significantly after the intravenous immunoglobulin (IVIG). After 20 days of ICU admission, she had increased oxygen demands and required more vasopressors, and eventually passed away.",
+  "stored_relevant_entities": "{'age': [37.0, 'years'], 'Systolic Blood Pressure': [110.0, 'mm hg'], 'Diastolic Blood Pressure': [65.0, 'mm hg'], 'Blood Urea Nitrogen (BUN)': [10.9, 'mmol/L'], 'respiratory rate': [20.0, 'breaths per minute'], 'Confusion': False}",
+  "stored_explanation": "The CURB-65 score is current at 0 points.\nThe patient is 37.0 years old. The patient's age is less than 65 years, and so we add 0 points to the score, keeping the current total at 0.\nBecause the patient does not have confusion, 0 points are added to the score, keeping the score at 0.\nThe concentration of BUN is 10.9 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of BUN from mmol to mg. The mass of BUN is 10.9 mmol. To convert 10.9 mmol of BUN to mol, multiply by the conversion factor 0.001, giving us 10.9 mmol BUN * 0.001 mol/mmol = 0.0109 mol BUN. To convert from mol BUN to grams, multiply by the molar mass 28.02 g/mol, which will give 0.0109 mol BUN * 28.02 g/mol = 0.30542 g BUN. To convert 0.30542 g of BUN to mg, multiply by the conversion factor 1000.0, giving us 0.30542 g BUN * 1000.0 mg/g = 305.42 mg BUN. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 305.42 mg BUN/10.0 dL = 30.542 mg BUN/dL. The concentration value of 10.9 mmol BUN/L converts to 30.542 mg BUN/dL. The patient's BUN concentration is greater than 19 mg/dL and so we add 1 point to score making the current total 0 + 1 = 1.\nThe patient's respiratory rate is 20 breaths per minute. Because the respiratory rate is less than 30 breaths per minute, 0 points are added to the score, keeping the current total at 1.\nThe patient's systiolic blood pressure is 110 mm Hg. The patient's diastolic blood pressure is 65 mm Hg. For a point a point to be added, the systiolic blood pressure must be less than 90 mm Hg or the diastolic blood pressure must be less than or equal to 60 mm Hg. Because neither of these statements are true, 0 points are added to score, keeping the current total to 1.\nThe patient's CURB-65 score is 1.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     37,
+     "years"
+    ],
+    "quote": "A 37-year-old Saudi female"
+   },
+   "Systolic Blood Pressure": {
+    "value": [
+     110,
+     "mm hg"
+    ],
+    "quote": "blood pressure 110/65"
+   },
+   "Diastolic Blood Pressure": {
+    "value": [
+     65,
+     "mm hg"
+    ],
+    "quote": "blood pressure 110/65"
+   },
+   "Blood Urea Nitrogen (BUN)": {
+    "value": [
+     10.9,
+     "mmol/L"
+    ],
+    "quote": "blood urea nitrogen (BUN) 10.9 mmol/L"
+   },
+   "respiratory rate": {
+    "value": [
+     20,
+     "breaths per minute"
+    ],
+    "quote": "respiratory rate 20"
+   },
+   "Confusion": {
+    "value": false,
+    "quote": "Her Glasgow coma scale (GCS) was 15"
+   }
+  },
+  "blind_working": "Confusion false (GCS 15) 0; BUN/urea 10.9 mmol/L >7 +1; RR 20 0; BP 110/65 0; age 37 0 = 1"
+ },
+ {
+  "calculator_id": "45",
+  "calculator": "CURB-65 Score for Pneumonia Severity",
+  "row": "544",
+  "note_id": "pmc-7755652-1",
+  "stored_answer": "2",
+  "blind_score": 2,
+  "code_on_blind": "2",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Arrival vitals explicit; urea given in mmol/L (urea, not BUN) and well above >7 threshold. Day-3 values (BP 50/35, RR 30) are later and not used.",
+  "eligibility_note": "Bronchiectasis with infection/sepsis and renal amyloidosis; reasonably eligible (pulmonary infection).",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"respiratory rate\", \"issue\": \"Day-3 RR 30/min would add a point if wrongly used.\", \"alternative_score\": 3}]",
+  "queued": true,
+  "question": "What is the patient's CURB-65 score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 32-year-old male was admitted to the medicine ward with chief complaints of generalized body swelling and decreased urine output since two months. The feet and legs had swollen first, and then the face and periorbits. Six months back, the patient first began to go down-hill. He developed dyspnea unrelated to exertion and a cough associated with daily mucopurulent, occasionally blood-streaked, foul-smelling sputum. He was fatigued most days and nights, and a low-grade fever had been present intermittently, but he reported no weight loss, wheezing or pleuritic chest pain. In retrospect, he was diagnosed with pulmonary TB in February, 2004 on the basis of sputum smear microscopy for acid-fast bacilli (AFB) and history of contact with a patient of active TB, received appropriate antitubercular therapy (ATT) for it; Tab Myrin-P Forte 4×once daily (OD) for two months, followed by Tab Myrin 4×OD for four months and Tab Vita-6 1×OD for six months; and recovered thereafter. Following that, his temperature was never over 99 F. Sputum was positive until July, 2004, and was said to have been negative after that time. He had no history of any other pulmonary illness, diabetes, or hypertension.\nOn examination at arrival he was nauseated, pale in the conjunctivae, febrile with an axillary temperature of 38.4 C, hypotensive to 70/40 mmHg, tachycardic with a pulse rate of 104 beats/min, slightly tachypneic at a respiratory rate of 24 breaths/min, and showed signs of periorbital edema, facial puffiness, and lower extremity pitting edema. The lungs were dull to percussion, a few rhonchi over the right lung and diffuse, bilateral crackles were heard on auscultation. The infection protocol was implemented, including intravenous crystalloids, empiric broad-spectrum antibiotics, and chest physiotherapy. There were no signs of joint swelling, any rash or discoloration, or evidence of heart failure or enlargement.\nEarly laboratory investigations revealed: hemoglobin, 6.9 g/dL with normal mean corpuscular volume; leukocyte count, 12.5 × 109/L; platelet count, 388 × 109/L; serum albumin, 2.0 g/dL; serum calcium, 6.7 mg/dL; serum potassium, 5.9 mEq/L; a markedly elevated serum creatinine at 271 μmol/L and an elevated serum urea at 14.3 mmol/L. Parathyroid hormone level was 146.9 pg/mL (normal: 10-65 pg/mL). Urinalysis showed protein (++), hyaline casts, and 24-hour urine protein raised at 3.7 g/day. Serum immunoglobulin levels were normal thus ruling out common variable immunodeficiency as a cause of secondary amyloidosis. Table gives an overview of the investigations. He was started on angiotensin-converting enzyme inhibitors, and a one-off dialysis session after nephrology consultation.\nA single sputum smear was negative for AFB. A high-resolution computed tomography scan done about four months prior was consistent with bronchiectasis in the right lung, with no evidence of active TB (Figures , ).\nUltrasonography of the kidneys revealed bilaterally enlarged, echogenic kidneys with poor corticomedullary differentiation suggesting chronic kidney disease (Figure ).\nSuspecting amyloidosis, a biopsy was in order. The biopsy came directly from the kidneys, revealing renal amyloidosis (Figure ).\nSoon the symptoms became worse. By the third inpatient day, he ran a daily fever, continued to have a productive cough, raising from one-quarter to one cupful of sputum a day, and became hypoxic to the extent of utilizing 3 L per minute oxygen by nasal cannula. The third day of hospitalization saw a sizable drop in blood pressure to 50/35 mmHg, an increase in heart rate to 151 beats/min, and more rapid breathing at 30/min. Norepinephrine, vasopressin over titrating norepinephrine dose, and phenylephrine were used as a resort. However, the combination of all three vasopressors had little further effect. He was unable to maintain a mean arterial pressure above 65 mmHg, and breathed his last during the day.",
+  "stored_relevant_entities": "{'Systolic Blood Pressure': [70.0, 'mm hg'], 'respiratory rate': [24.0, 'breaths per minute'], 'Blood Urea Nitrogen (BUN)': [14.3, 'mmol/L'], 'Confusion': False, 'Diastolic Blood Pressure': [40.0, 'mm hg'], 'age': [32.0, 'years']}",
+  "stored_explanation": "The CURB-65 score is current at 0 points.\nThe patient is 32.0 years old. The patient's age is less than 65 years, and so we add 0 points to the score, keeping the current total at 0.\nBecause the patient does not have confusion, 0 points are added to the score, keeping the score at 0.\nThe concentration of BUN is 14.3 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of BUN from mmol to mg. The mass of BUN is 14.3 mmol. To convert 14.3 mmol of BUN to mol, multiply by the conversion factor 0.001, giving us 14.3 mmol BUN * 0.001 mol/mmol = 0.0143 mol BUN. To convert from mol BUN to grams, multiply by the molar mass 28.02 g/mol, which will give 0.0143 mol BUN * 28.02 g/mol = 0.40069 g BUN. To convert 0.40069 g of BUN to mg, multiply by the conversion factor 1000.0, giving us 0.40069 g BUN * 1000.0 mg/g = 400.69 mg BUN. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 400.69 mg BUN/10.0 dL = 40.069 mg BUN/dL. The concentration value of 14.3 mmol BUN/L converts to 40.069 mg BUN/dL. The patient's BUN concentration is greater than 19 mg/dL and so we add 1 point to score making the current total 0 + 1 = 1.\nThe patient's respiratory rate is 24 breaths per minute. Because the respiratory rate is less than 30 breaths per minute, 0 points are added to the score, keeping the current total at 1.\nThe patient's systiolic blood pressure is 70 mm Hg. The patient's diastolic blood pressure is 40 mm Hg. For a point a point to be added, the systiolic blood pressure must be less than 90 mm Hg or the diastolic blood pressure must be less than or equal to 60 mm Hg. Because at least one of these statements is true, 1 point is added to score, making the current total 1 + 1 = 2.\nThe patient's CURB-65 score is 2.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     32,
+     "years"
+    ],
+    "quote": "A 32-year-old male"
+   },
+   "Systolic Blood Pressure": {
+    "value": [
+     70,
+     "mm hg"
+    ],
+    "quote": "hypotensive to 70/40 mmHg"
+   },
+   "Diastolic Blood Pressure": {
+    "value": [
+     40,
+     "mm hg"
+    ],
+    "quote": "hypotensive to 70/40 mmHg"
+   },
+   "Blood Urea Nitrogen (BUN)": {
+    "value": [
+     14.3,
+     "mmol/L"
+    ],
+    "quote": "an elevated serum urea at 14.3 mmol/L"
+   },
+   "respiratory rate": {
+    "value": [
+     24,
+     "breaths per minute"
+    ],
+    "quote": "respiratory rate of 24 breaths/min"
+   }
+  },
+  "blind_working": "Confusion not mentioned 0; urea 14.3 mmol/L >7 +1; RR 24 0; BP 70/40 +1; age 32 0 = 2"
+ },
+ {
+  "calculator_id": "45",
+  "calculator": "CURB-65 Score for Pneumonia Severity",
+  "row": "547",
+  "note_id": "pmc-8025799-1",
+  "stored_answer": "2",
+  "blind_score": 2,
+  "code_on_blind": "2",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Exam explicitly documents alert and oriented at presentation; other values explicit.",
+  "eligibility_note": "Primary problem incarcerated hernia/SBO with hematemesis; RUL infiltrate on CXR and ceftriaxone given, so incidental pneumonia possible.",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"Confusion\", \"issue\": \"Pre-arrival history says 'weak and less responsive than usual to family members for the last day'; if counted as confusion score would be 3, but ED exam states alert and oriented.\", \"alternative_score\": 3}]",
+  "queued": true,
+  "question": "What is the patient's CURB-65 score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "An 85-year-old male, with a history of chronic inguinal hernia with remote history of mesh placement, chronic obstructive pulmonary disease (COPD) on 2 L home O2, hypertension, and insulin-dependent diabetes presented with hematemesis. Per emergency medical services (EMS) history, the patient was found down and covered with black-colored, coffee ground emesis. The patient had been complaining of abdominal pain and had been weak and less responsive than usual to family members for the last day. The patient endorsed decreased bowel movements. He denied any history of blood thinner or nonsteroidal anti-inflammatory use, alcoholism, or liver cirrhosis.\nOn his initial vitals, the patient had a pulse oximetry of 98% on 2 L of nasal cannula, a blood pressure of 123/72 mmHg, temperature of 36.7°C, heart rate of 115 beats per minute, and a respiratory rate of 18 breaths per minute. On physical examination, the patient was alert and oriented without distress, with coffee ground emesis on his clothes. His head and body were without obvious external signs of trauma. A cervical collar was placed by EMS. The patient was tachycardic with a regular rhythm, equal pulses bilaterally, and lungs were clear to auscultation. Abdomen was greatly distended with localized tenderness to the right lower quadrant without guarding or rigidity. A nonreducible, tender, right-sided hernia with extension into the scrotum was found on groin examination. Skin examination was unremarkable.\nInitial laboratory studies were remarkable for a blood urea nitrogen (BUN) of 105 mg/dL and creatinine 2.7 mg/dL, with a BUN/creatinine ratio (BUN/Cr) of 38.9 and a lactic acid of 3.4 mmol/L. Glucose was 672 mg/dL. Hemoglobin and hematocrit were within normal ranges. Troponin and electrocardiogram were unremarkable. White blood cell count, lipase, creatine kinase, liver function tests, and electrolytes were also unremarkable. Computed tomography (CT) scan of the head and neck without contrast were unremarkable. Chest radiography showed a right upper lobe pulmonary infiltrate. CT scan of the abdomen with contrast showed an SBO caused by a large right-side indirect hernia with multiple loops of small bowel extending into the hernia defect, along with a direct hernia and small bowel distention throughout the abdomen (Figure ).\nThe small bowel extended all the way into the right hemiscrotum through the right inguinal canal (Figure ).\nThe patient was seated upright, given intravenous fluids, pantoprazole, ondansetron, and analgesia. Blood cultures were obtained before administration of ceftriaxone. Given laboratory and imaging findings, worsening symptoms, and clinical presentation, the patient was admitted. During admission, he became acutely obstructed without flatus and bowel movement, and he ultimately underwent right open inguinal hernia repair, where he was found to have massive incarcerated right pantaloon inguinal hernia, extensive adhesions, and a meshoma from a previous inguinal surgery. A pantaloon hernia consists of concurrent direct and indirect inguinal herniae where hernial sacs are present on both sides of the inferior epigastric vessels and are separated by the posterior wall of the inguinal canal. There were multiple loops of small bowel, some with adhesions to the hernia sac at the level of the scrotal component requiring right pantaloon hernia repair with mesh, right orchiectomy, and extensive lysis of adhesions. The patient was sent to the intensive care unit post-operatively in a stable condition and he was ultimately discharged without further complications.",
+  "stored_relevant_entities": "{'age': [85.0, 'years'], 'Systolic Blood Pressure': [123.0, 'mm hg'], 'Diastolic Blood Pressure': [72.0, 'mm hg'], 'Blood Urea Nitrogen (BUN)': [105.0, 'mg/dL'], 'respiratory rate': [18.0, 'breaths per minute'], 'Confusion': False}",
+  "stored_explanation": "The CURB-65 score is current at 0 points.\nThe patient is 85.0 years old. The patient's age is greater than or equal to 65 years, and so we add 1 point to the score, making the current total 0 + 1 = 1.\nBecause the patient does not have confusion, 0 points are added to the score, keeping the score at 1.\nThe concentration of BUN is 105.0 mg/dL. The patient's BUN concentration is greater than 19 mg/dL and so we add 1 point to score making the current total 1 + 1 = 2.\nThe patient's respiratory rate is 18 breaths per minute. Because the respiratory rate is less than 30 breaths per minute, 0 points are added to the score, keeping the current total at 2.\nThe patient's systiolic blood pressure is 123 mm Hg. The patient's diastolic blood pressure is 72 mm Hg. For a point a point to be added, the systiolic blood pressure must be less than 90 mm Hg or the diastolic blood pressure must be less than or equal to 60 mm Hg. Because neither of these statements are true, 0 points are added to score, keeping the current total to 2.\nThe patient's CURB-65 score is 2.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     85,
+     "years"
+    ],
+    "quote": "An 85-year-old male"
+   },
+   "Systolic Blood Pressure": {
+    "value": [
+     123,
+     "mm hg"
+    ],
+    "quote": "a blood pressure of 123/72 mmHg"
+   },
+   "Diastolic Blood Pressure": {
+    "value": [
+     72,
+     "mm hg"
+    ],
+    "quote": "a blood pressure of 123/72 mmHg"
+   },
+   "Blood Urea Nitrogen (BUN)": {
+    "value": [
+     105,
+     "mg/dL"
+    ],
+    "quote": "blood urea nitrogen (BUN) of 105 mg/dL"
+   },
+   "respiratory rate": {
+    "value": [
+     18,
+     "breaths per minute"
+    ],
+    "quote": "a respiratory rate of 18 breaths per minute"
+   },
+   "Confusion": {
+    "value": false,
+    "quote": "the patient was alert and oriented without distress"
+   }
+  },
+  "blind_working": "Confusion false 0; BUN 105>19 +1; RR 18 0; BP 123/72 0; age 85 +1 = 2"
+ },
+ {
+  "calculator_id": "20",
+  "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "row": "302",
+  "note_id": "pmc-7205374-1",
+  "stored_answer": "1",
+  "blind_score": 0,
+  "code_on_blind": "0",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Admission exam gives temperature (37.6 C) and tonsil findings explicitly. Cough is present. Nodes are not mentioned, so absent by convention.",
+  "eligibility_note": "Ineligible. This is a 14-month-old with SARS-CoV-2 fever, cough and coryza, not a sore-throat presentation. MDCalc notes GAS is rare under age 3.",
+  "n_field_diffs": 1,
+  "field_diffs": "[{\"field\": \"Temperature\", \"stored\": [38.4, \"degrees celsius\"], \"blind\": [37.6, \"degrees celsius\"]}]",
+  "note_issues": "[{\"field\": \"Temperature\", \"issue\": \"Earlier history reports 'The child's body temperature was 38.4 °C' (fever clinic or home, timing unclear). The admission exam value is 37.6 C (ear). Using 38.4 C would add +1.\", \"alternative_score\": 1}, {\"field\": \"age\", \"issue\": \"Under 3 years: MDCalc gives no points for this band. Some implementations might give +1 for age <15.\", \"alternative_score\": 1}]",
+  "queued": true,
+  "question": "What is the patient's Centor Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 14-month-old previously healthy boy sought medical care at the fever clinic of our hospital with” fever for 2 days” as the chief complaint. The child developed fever on the evening of January 31, 2020. The child’s body temperature was 38.4 °C, and had dry cough, runny nose and decreased appetite. The child had a normal birth and growth history, and received vaccinations according to plan. Furthermore, the child was breastfed and ate age-appropriate food. The child tested positive for SARS-CoV-2 by reverse transcription polymerase chain reaction (RT-PCR) in the nasopharyngeal swab in the evening of February 1, 2020, and was admitted to the hospital with symptoms of fever, dry cough and running nose. The patient’s mother also tested positive for SARS-CoV-2 by RT-PCR, and was admitted at the same time.\nThe physical examination at admission revealed the following: body temperature 37.6 °C (ear temperature), respiratory rate 23/min, pulse rate 105 beats/min, blood pressure 95/56 mmHg (1 mmHg = 0.133 kPa), and SPO2 99%. The child was fully conscious, and had a good response. The skin and mucosa were intact, with no signs of rash or bleeding points. The anterior fontanel was closed. The conjunctivae were clear without exudates or hemorrhage. The sclera was non-icteric. There was mild throat congestion, but no enlargement of tonsils. The patient presented no signs of respiratory distress. The breath sounds were clear bilaterally in all lobes, without rhonchi or crackles. The heart rate and rhythm were normal. No murmurs, gallops, or rubs are auscultated. The abdomen was soft and flat, with no signs of pain upon palpation. No masses, hepatomegaly, or splenomegaly were noted. The neurological examination was normal. The capillary refill was 2 seconds.\nLaboratory examinations were performed on February 2 after admission. The results revealed the following. Nasopharyngeal swabs revealed negative results (colloidal gold-based immunochromatographic method) for influenza A and B virus, respiratory syncytial virus and adenovirus. In addition, the influenza A and B virus RNA (PCR method) was also found to be negative. Routine blood count: white blood cells 7 × 109/L (neutrophil 37.5%, lymphocyte 50.3% and monocyte 10.1%), hemoglobin 107 g/L, and platelets 353 × 109/L;C-reactive protein 7.6 mg/L; serum procalcitonin (PCT) 0.138 μg/L, serum aspartate aminotransferase 43 U/L, alanine aminotransferase 17 U/L, lactate dehydrogenase 223 U/L, creatine kinase isoenzyme 291.8 U/L, and creatinine 24 μmol/L; the coagulation analysis was normal and D-dimer 0.17 mg/L; immunoglobulin + complement: IgG 4.87 g/L, IgA 0.2 g/L, IgM 0.66 g/L, C3 0.69 g/L and C4 0.19 g/L; the T lymphocyte, B lymphocyte and NK lymphocyte subset analysis was normal; routine urine and stool analysis was normal. The chest computed tomography (CT) on February 5 revealed scattered ground glass opacities in the right lower lobe close to the pleura (Fig. a, c).\nThe possible route of transmission was investigated, and the following was revealed. The patient attended a family gathering event together with the patient’s mother and grandmother on January 20. One person who also attended the gathering recently went to Wuhan, but was asymptomatic at that time. The patient was subsequently diagnosed with COVID-19 on January 28. The child’s grandmother started to present symptoms of fever and minor cough at 3 days after the gathering. She tested positive for SARS-CoV-2 by RT-PCR in the nasopharyngeal swab (negative results in urine and stool) on January 29, and was admitted to the hospital for treatment. Her chest CT presented signs of viral pneumonia. The patient’s mother presented with a symptom of nasal congestion without fever on January 31, and tested positive for SARS-CoV-2 by RT-PCR in the nasopharyngeal swab on February 1. The virus RNA in stool, urine, vaginal discharge and breast milk were all negative despite the repeated testing. The chest CT indicated viral pneumonia. The patient’s father tested negative for SARS-CoV-2 RNA on repeated tests.\nAfter admission, the patient was treated with 1.5 million units of recombinant human interferon α-2b by aerosolization, twice daily, during a course of 7 days, and also received other symptomatic treatment. On the second day of admission, the patient’s body temperature returned to normal. The patient continued to have occasional dry cough, but the runny nose and appetite improved. The symptoms were completely relieved on February 8, with the disappearance of fever, cough and runny nose.\nThe test results for SARS-CoV-2 after admission: On February 5 (at 6 days after symptom onset), the virus RNA in urine was negative. On February 6, 7, 10, 14 and 25 (at 7, 8, 11, 15 and 26 days after symptom onset), the virus RNA in the nasopharyngeal swabs were positive. During the same period, virus RNA was also found to be positive in stool. On February 27 and 29 (at 28 and 30 days after symptom onset), the virus RNA tests were repeatedly negative in both the nasopharyngeal swabs and stool. The reevaluation of the chest CT on February 28 also revealed the resorption of ground glass opacities that were previously observed in the right lower lobe (Fig. b, d). The patient was discharged on February 29.",
+  "stored_relevant_entities": "{'age': [14.0, 'months'], 'Cough Absent': False, 'Temperature': [38.4, 'degrees celsius'], 'Exudate or swelling on tonsils': False, 'Tender/swollen anterior cervical lymph nodes': False}",
+  "stored_explanation": "The current Centor score is 0.\nThis means that the patient is 1.0 year and 2.0 oldThe patient's temperature is 38.4 degrees celsius. The patient's temperature is greater than 38 degrees Celsius, and so we add one point to the score, making the current score 0 + 1 = 1.\nThe patient note report reports that the patient is coughing and so we do not change the score, keeping the current score at 1.\nThe patient note reports 'tender/swollen anterior cervical lymph nodes' as absent for the patient. Hence, we do not change the score, keeping the current score at 1.\nThe patient note reports 'exudate or swelling on tonsils' as absent for the patient. Hence, we do not change the score, keeping the current score at 1.\nHence, the Centor score for the patient is 1.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     14,
+     "months"
+    ],
+    "quote": "A 14-month-old previously healthy boy"
+   },
+   "Cough Absent": {
+    "value": false,
+    "quote": "had dry cough, runny nose and decreased appetite"
+   },
+   "Temperature": {
+    "value": [
+     37.6,
+     "degrees celsius"
+    ],
+    "quote": "The physical examination at admission revealed the following: body temperature 37.6 °C (ear temperature)"
+   },
+   "Exudate or swelling on tonsils": {
+    "value": false,
+    "quote": "There was mild throat congestion, but no enlargement of tonsils."
+   }
+  },
+  "blind_working": "Age 14 months (<3 y): 0 (MDCalc gives points only for ages 3-14 (+1), 15-44 (0), >=45 (-1)). Cough present: 0. Temp at admission 37.6 C (not >38): 0. Anterior cervical nodes not mentioned, so absent: 0. Tonsils not enlarged, no exudate: 0. Total 0."
+ },
+ {
+  "calculator_id": "20",
+  "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "row": "304",
+  "note_id": "pmc-8169128-1",
+  "stored_answer": "2",
+  "blind_score": 3,
+  "code_on_blind": "3",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Day-2 clinic exam gives temperature, nodes and tonsil findings. The patient also denies fever.",
+  "eligibility_note": "Marginal fit. The patient explicitly denies sore throat and fever. The diagnosis was infectious mononucleosis, found on tonsillar white spots before elective surgery.",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"Tender/swollen anterior cervical lymph nodes\", \"issue\": \"Nodes are described as 'below the jaw' (submandibular), not explicitly anterior cervical. If they are not counted, the score is 2.\", \"alternative_score\": 2}, {\"field\": \"Temperature\", \"issue\": \"Oral antibiotics were prescribed by phone on day 1, so the day-2 exam may be after treatment started. This makes no practical difference because the patient reports no fever.\", \"alternative_score\": null}]",
+  "queued": true,
+  "question": "What is the patient's Centor Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 29-year-old Syrian man called his primary care physician on day one before his scheduled elective surgery on day six. He initially complained of having “white spots” on his right tonsil. The General Practitioner (GP) prescribed him antibiotics immediately, assuming he had streptococcal pharyngitis.\nOn the second day, the patient came to the clinic for further evaluation. On physical examination, the patient had two inflamed lymph nodes below the jaw and an extensive membrane covering the right tonsil. His temperature was 37.0°C. He was prescribed intramuscular ceftriaxone twice a day along with 2 g of oral amoxicillin per day. His physical examination was otherwise normal. He reported no fever, malaise, or any sore throat. He reported that he sought medical help only because he had a scheduled surgery and wanted to make sure everything was alright.\nOn the fourth day, the patient was referred to an otolaryngologist for further evaluation. His left tonsil started showing increasing numbers of white spots as well. No improvement was seen on the tonsils. The otolaryngologist repeated the physical and confirmed the findings of the GP, and instructed the patient to continue with the antibiotics.\nOn the fifth day, the patient visited the infectious disease department in a local hospital, where the resident doctor instructed him to stop the medications and order some lab work for him.\nOn the sixth day, the lab results came back confirming a diagnosis of IM. The patient was asked to follow-up with the infectious disease department weekly to monitor his condition. Table shows the first laboratory results of the patient.\nTable shows the second blood analysis of the patient.\nTable shows the third blood analysis of the patient.\nTable shows the fourth blood analysis of the patient.",
+  "stored_relevant_entities": "{'age': [29.0, 'years'], 'Temperature': [37.0, 'degrees celsius'], 'Tender/swollen anterior cervical lymph nodes': True, 'Exudate or swelling on tonsils': True, 'Cough Absent': False}",
+  "stored_explanation": "The current Centor score is 0.\nThe patient is 29.0 years old. Because the age is in between 15 and 44 years, the score does not change, keeping the score at 0.\nThe patient's temperature is 37.0 degrees celsius. The patient's temperature is less than or equal to 38 degrees Celsius, and so we do not make any changes to the score, keeping the score at 0.\nThe patient note report reports that the patient is coughing and so we do not change the score, keeping the current score at 0.\nThe patient note reports 'tender/swollen anterior cervical lymph nodes' as present for the patient. Hence, we increase the score by 1, making the current score 0 + 1 = 1.\nThe patient note reports 'exudate or swelling on tonsils' as present for the patient. Hence, we increase the score by 1, making the current score 1 + 1 = 2.\nHence, the Centor score for the patient is 2.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     29,
+     "years"
+    ],
+    "quote": "A 29-year-old Syrian man"
+   },
+   "Temperature": {
+    "value": [
+     37.0,
+     "degrees celsius"
+    ],
+    "quote": "His temperature was 37.0°C."
+   },
+   "Tender/swollen anterior cervical lymph nodes": {
+    "value": true,
+    "quote": "the patient had two inflamed lymph nodes below the jaw"
+   },
+   "Exudate or swelling on tonsils": {
+    "value": true,
+    "quote": "an extensive membrane covering the right tonsil"
+   }
+  },
+  "blind_working": "Age 29 (15-44): 0. Cough not mentioned, so absent: +1. Temp 37.0 C: 0. Inflamed nodes below the jaw: +1. Membrane/white spots on tonsil: +1. Total 3."
+ },
+ {
+  "calculator_id": "33",
+  "calculator": "FeverPAIN Score for Strep Pharyngitis",
+  "row": "450",
+  "note_id": "pmc-8610453-1",
+  "stored_answer": "1",
+  "blind_score": 2,
+  "code_on_blind": "2",
+  "completeness": "COMPLETE",
+  "completeness_reason": "All criteria are determinable: some are stated explicitly and the rest are absent by convention.",
+  "eligibility_note": "Ineligible. This is caustic hydrogen peroxide ingestion, not pharyngitis.",
+  "n_field_diffs": 1,
+  "field_diffs": "[{\"field\": \"Symptom onset <=3 days\", \"stored\": null, \"blind\": true}]",
+  "note_issues": "[{\"field\": \"Symptom onset <=3 days\", \"issue\": \"The acute symptoms are chemical burn/vomiting, not sore-throat illness. If onset is read as applying only to a pharyngitis illness, it would be 0.\", \"alternative_score\": 1}, {\"field\": \"Fever in past 24 hours\", \"issue\": \"No temperature is recorded among the vitals, so this is treated as absent.\", \"alternative_score\": null}]",
+  "queued": true,
+  "question": "What is the patient's FeverPAIN score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 77-year-old male with a past medical history significant for hypertension, stroke, and prostate cancer presented to the emergency department for accidental ingestion with nausea and vomiting. Approximately 90 minutes prior to arrival, the patient had gone to the refrigerator for water and had mistaken a bottle of 35% hydrogen peroxide for water, subsequently ingesting approximately 150 milliliters (mL). The patient immediately felt a burning sensation in his mouth and throat, followed by nausea and vomiting. He reportedly vomited several times, mostly dry heaving, but at one point had a small amount of blood in the vomitus. He otherwise denied any other complaints.\nThe patient was in no acute distress upon arrival. His blood pressure was elevated at 157/84 millimeters of mercury, respiratory rate 20 breaths per minute, pulse 65 beats per minute, and arterial oxygen saturation was 98% on room air. Complete physical examination was negative for posterior oropharyngeal erythema, abdominal tenderness, rebound, or guarding. Laboratory results were significant for an elevated leukocyte count of 18.9 × 103 thousand per millimeters cubed (K/mm3) (reference range: 4.5–11.0 K/mm3), hemoglobin of 16.4 grams per deciliter (g/dL) (12.0–16.0 g/dL), creatinine of 1.7 milligrams (mg)/dL (0.5–1.4 mg/dL), and lipase of 844 U/L (73–393 U/L). Initial imaging via computed tomography (CT) of the abdomen and pelvis with contrast revealed gastric pneumatosis extending into the distal esophagus with extensive portal venous air, diverticulosis, multiple left renal cysts, and a 5.8-centimeter (cm) adrenal myolipoma ().\nGiven the patient’s presenting symptoms combined with the CT findings of gastric pneumatosis, the poison center and gastroenterology were consulted. The patient was admitted for observation with plans for an endoscopy; however, upon surgical consultation, he was emergently transferred to a tertiary care hospital due to concerns for a potential perforation and necrosis of the gastric body and distal esophagus, which may have necessitated a total gastrectomy as well as distal esophagectomy. The patient had been placed on a nothing-by-mouth restriction on admission and was hemodynamically stable on intravenous (IV) fluids, pantoprazole IV drip, and piperacillin-tazobactam at time of transfer.\nUpon arrival at the tertiary center, the patient reported overall improvement of his abdominal pain and sore mouth. Esophagogastroduodenoscopy performed there confirmed moderate to severe distal esophagitis and severe pangastritis but no evidence of necrosis, linear ulcerations along the lesser curvature, or mild bulbar duodenitis. Gastric biopsy later demonstrated fundic type gastric mucosa with acute inflammation and epithelial erosion. Following his endoscopy, the patient tolerated clear liquids and had his diet advanced to surgical soft. He remained pain-free and was deemed stable for discharge on the third day with recommendations for a repeat endoscopy in two to three months.",
+  "stored_relevant_entities": "{'Purulent tonsils': False, 'Severe tonsil inflammation': False, 'Absence of cough or coryza': True}",
+  "stored_explanation": "The patient's current FeverPain score is 0.\nWhether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.\nThe patient is determined to have an absence of cough or coryza. Because of this, we add one point to the score, making the current total 0 + 1 = 1.\nWhether the patient has a symptom onset ≤3 days is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 1.\nThe patient is reported to not have purulent tonsils and so we do not increment the score, keeping the current total at 1.\nThe patient is reported to not have severe tonsil inflammation and so we do not increment the score, keeping the current total at 1.\nThe patient's FeverPain score is 1 points.",
+  "blind_fields": {
+   "Symptom onset <=3 days": {
+    "value": true,
+    "quote": "Approximately 90 minutes prior to arrival... The patient immediately felt a burning sensation in his mouth and throat"
+   },
+   "Severe tonsil inflammation": {
+    "value": false,
+    "quote": "Complete physical examination was negative for posterior oropharyngeal erythema"
+   },
+   "Absence of cough or coryza": {
+    "value": true,
+    "quote": "He otherwise denied any other complaints."
+   }
+  },
+  "blind_working": "Onset about 90 min ago: +1. Purulent tonsils not mentioned: 0. Fever not mentioned (no temperature recorded): 0. No oropharyngeal erythema: 0. No cough/coryza: +1. Total 2."
+ },
+ {
+  "calculator_id": "33",
+  "calculator": "FeverPAIN Score for Strep Pharyngitis",
+  "row": "452",
+  "note_id": "pmc-3326926-1",
+  "stored_answer": "2",
+  "blind_score": 2,
+  "code_on_blind": "2",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Fever and tonsil findings are not mentioned, so absent by convention. Onset is given as 24 h. Cough is explicitly denied.",
+  "eligibility_note": "Ineligible. This is amiodarone-induced polymorphic VT, a cardiac presentation, not pharyngitis.",
+  "n_field_diffs": 3,
+  "field_diffs": "[{\"field\": \"Absence of cough or coryza\", \"stored\": null, \"blind\": true}, {\"field\": \"Purulent tonsils\", \"stored\": true, \"blind\": null}, {\"field\": \"Symptom onset <=3 days\", \"stored\": false, \"blind\": true}]",
+  "note_issues": "[{\"field\": \"Symptom onset <=3 days\", \"issue\": \"Onset refers to palpitations/pre-syncope, not throat symptoms. If only sore-throat onset counts, this is 0.\", \"alternative_score\": 1}, {\"field\": \"Absence of cough or coryza\", \"issue\": \"The cough denial comes from a later amiodarone-toxicity assessment. Coryza is not mentioned. Either way the criterion is met.\", \"alternative_score\": null}]",
+  "queued": true,
+  "question": "What is the patient's FeverPAIN score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 39-year-old male patient, a known case of non-ischemic dilated cardiomyopathy (Left Ventricular Ejection Fraction 30%) who was in NYHA functional class II on drug therapy (Frusemide 20 mg, Aldactone 50 mg, Ramipril 5 mg and Carvedilol 6.25 mg twice daily) presented with history of recurrent palpitation and pre-syncope of 24-hour duration. His ECG revealed polymorphic ventricular tachycardia (PVT) []. On further enquiry, it was found that the patient is taking amiodarone 600 mg daily for last 3 months. Amiodarone was prescribed to him for one episode of sustained monomorphic ventricular tachycardia (VT) requiring cardioversion and he was continuing with the loading dosage of amiodarone by mistake for 3 months. There was no history of any other drug intake. Serum electrolytes were within normal limits. As there was association with no other offending agent other than high dosage of amiodarone, we kept the possibility of amiodarone induced PVT. The patient was treated with intravenous magnesium (2 g) along with intravenous lidocaine (1 mg/kg IV bolus) with out any effect. Intravenous Atropine 1.2 mg was also given to accelerate the sinus rate but failed to suppress the arrhythmia. Two more boluses of lidocaine at five minute intervals along with infusion at a rate of 1 mg/min were administered but the patient continued to have PVT. As the arrhythmia failed to respond to intravenous magnesium, atropine and lidocaine, we thought to try phenytoin to suppress the arrhythmia (a class IB antiarrhythmic drug that suppresses early after depolarization (EAD)) responsible for initiation of PVT secondary to amiodarone overdose).[] Phenytoin was administered in a dosage of 100 mg slowly every 5 minutes. After administration of 300 mg of phenytoin, significant reduction in episodes of PVT was noted and sustained sinus rhythm with corrected QTc of 490 milliseconds was restored within 30 minutes []. The patient was administered intravenous phenytoin 300 mg/day for 2 more days followed by oral phenytoin 300 mg/day. He was discharged after 1 week on oral phenytoin. Predischarge holter monitoring showed normal sinus rhythm with infrequent monomorphic VPCs and no evidence of nonsustained or sustained VT. As the patient had developed amiodarone-induced PVT due to overdose, we also assessed the patient for extra cardiac toxic effects of amiodarone. The patient did not have any history of dry nonproductive cough and lung function test was normal. His liver function test was normal but thyroid function test showed evidence of hypothyroidism (TSH>10 m IU/ml with decrease in T3 and T4 levels). The patient, however, did not have any symptoms of hypothyroidism which can be subtle or even absent.[] Ophthalmological examination revealed evidence of corneal deposit but no visual impairment. In view of previous history of ventricular tachycardia requiring cardioversion with LV dysfunction, patient was advised Implantable Cardioverter-Defibrillator, but he refused due to non-affordability. He is at present asymptomatic and on medical follow-up with diuretic (Frusemide 20 mg+Aldactone 50 mg), ACE inhibitor (Ramipril 5 mg), β-blocker (carvedilol 50 mg/day), L-thyroxine 25 μg and oral phenytoin (300 mg/day) for last 2 months.",
+  "stored_relevant_entities": "{'Purulent tonsils': True, 'Symptom onset <=3 days': False, 'Severe tonsil inflammation': False}",
+  "stored_explanation": "The patient's current FeverPain score is 0.\nWhether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.\nWhether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 0 + 1 =  1.\nThe patient is reported to not have a symptom onset ≤3 days and so we do not increment the score, keeping the current total at 1.\nThe patient is reported to have purulent tonsils and so we increment the score by 1, making the current total 1 + 1 = 2.\nThe patient is reported to not have severe tonsil inflammation and so we do not increment the score, keeping the current total at 2.\nThe patient's FeverPain score is 2 points.",
+  "blind_fields": {
+   "Symptom onset <=3 days": {
+    "value": true,
+    "quote": "presented with history of recurrent palpitation and pre-syncope of 24-hour duration"
+   },
+   "Absence of cough or coryza": {
+    "value": true,
+    "quote": "The patient did not have any history of dry nonproductive cough"
+   }
+  },
+  "blind_working": "Onset 24 h: +1. Fever not mentioned: 0. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned: 0. No cough and coryza not mentioned: +1. Total 2."
+ },
+ {
+  "calculator_id": "33",
+  "calculator": "FeverPAIN Score for Strep Pharyngitis",
+  "row": "456",
+  "note_id": "pmc-5219707-1",
+  "stored_answer": "1",
+  "blind_score": 2,
+  "code_on_blind": "2",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Only one set of vitals is given. It was taken at the dystonic reaction, after quinine and metoclopramide had started, and shows 37.3 C. No admission temperature is given, so fever is treated as absent by convention. The other criteria are not mentioned (absent).",
+  "eligibility_note": "Ineligible. This is a metoclopramide-induced acute dystonic reaction during treatment of severe malaria, not pharyngitis.",
+  "n_field_diffs": 1,
+  "field_diffs": "[{\"field\": \"Symptom onset <=3 days\", \"stored\": false, \"blind\": true}]",
+  "note_issues": "[{\"field\": \"Fever in past 24 hours\", \"issue\": \"Severe malaria patients are usually febrile at admission, but the note gives only the post-treatment temperature of 37.3 C. If fever in the past 24 h is assumed, the score is 3.\", \"alternative_score\": 3}, {\"field\": \"Symptom onset <=3 days\", \"issue\": \"Onset refers to dystonia (the neck pain/stiffness and difficulty swallowing are dystonic), not pharyngitis. Malaria symptom duration is unknown. If not counted, the score is 1.\", \"alternative_score\": 1}]",
+  "queued": true,
+  "question": "What is the patient's FeverPAIN score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 16 year old female Muslim from the Extreme North of Cameroon with no significant past history was treated for severe malaria using intravenous quinine. Due to refractory nausea and vomiting she was also put on intravenous metoclopramide, 10 mg three times a day. A few minutes after administration of the second dose of metoclopramide, she complained of pain and stiffness of the neck and an inability to keep her tongue in her mouth. On examination, she was conscious and anxious with a blood pressure of 124/78 mmHg, pulse rate of 90 beats/minute, respiratory rate of 20 breaths/minute and temperature of 37.3 °C. Her neck was slightly arched backwards and her tongue was hanging out. There was no accumulation of saliva in her mouth and she could swallow, but with difficulty. There were no signs of respiratory distress. The rest of her examination was unremarkable. A diagnosis of metoclopramide induced acute dystonic reaction was made. She was administered 8 mg of oral chlorpheniramine. Her dystonic symptoms subsided 4 h later, as did the nausea and vomiting. She continued her antimalarial treatment and the metoclopramide was discontinued. She did not have any further dystonic symptoms. She was discharged 2 days later and was advised to avoid taking metoclopramide. Follow-up visit 2 weeks later was unremarkable.",
+  "stored_relevant_entities": "{'Symptom onset <=3 days': False}",
+  "stored_explanation": "The patient's current FeverPain score is 0.\nWhether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.\nWhether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 0 + 1 =  1.\nThe patient is reported to not have a symptom onset ≤3 days and so we do not increment the score, keeping the current total at 1.\nWhether the patient has purulent tonsils is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 1.\nWhether the patient has severe tonsil inflammation is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 1.\nThe patient's FeverPain score is 1 points.",
+  "blind_fields": {
+   "Symptom onset <=3 days": {
+    "value": true,
+    "quote": "A few minutes after administration of the second dose of metoclopramide, she complained of pain and stiffness of the neck"
+   },
+   "Fever in past 24 hours": {
+    "value": false,
+    "quote": "temperature of 37.3 °C"
+   }
+  },
+  "blind_working": "Onset minutes: +1. Temperature 37.3 C, and fever not otherwise mentioned: 0. Purulent tonsils not mentioned: 0. Severe tonsil inflammation not mentioned ('rest of her examination was unremarkable'): 0. Cough/coryza not mentioned: +1. Total 2."
+ },
+ {
+  "calculator_id": "33",
+  "calculator": "FeverPAIN Score for Strep Pharyngitis",
+  "row": "461",
+  "note_id": "pmc-8454594-1",
+  "stored_answer": "3",
+  "blind_score": 2,
+  "code_on_blind": "2",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Fever and coryza are explicit. Onset is stated as 'over the last three days'. Tonsil findings are not mentioned (absent).",
+  "eligibility_note": "Ineligible. This is bacterial sinusitis complicated by a brain abscess and seizures, not pharyngitis.",
+  "n_field_diffs": 2,
+  "field_diffs": "[{\"field\": \"Fever in past 24 hours\", \"stored\": null, \"blind\": true}, {\"field\": \"Severe tonsil inflammation\", \"stored\": true, \"blind\": null}]",
+  "note_issues": "[{\"field\": \"Symptom onset <=3 days\", \"issue\": \"Paranasal sinusitis was diagnosed one week before hospitalization and antibiotics were started then. If onset is dated to the sinusitis (>=7 days), the criterion is not met.\", \"alternative_score\": 1}, {\"field\": \"Fever in past 24 hours\", \"issue\": \"Time point: the patient had already been on amoxicillin/clavulanate + clindamycin for a week, so no pre-treatment presentation exists. The fever is current at presentation and at transfer.\", \"alternative_score\": null}]",
+  "queued": true,
+  "question": "What is the patient's FeverPAIN score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 39-year-old male was transferred to our university hospital from a rural general hospital with generalized tonic-clonic seizures. The patient presented high fever, severe headache, and purulent nasal secretions over the last three days but his vital parameters were normal. Apart from his statement that he was a tobacco smoker, no previous medical conditions were reported.\nInitially, one week prior to hospitalization, he was diagnosed with inflammation of the paranasal sinusitis by a private otorhinolaryngologist who had prescribed a combined antibacterial medical treatment of amoxicillin/clavulanate potassium and clindamycin. However, five days later, he was referred to the emergency department (ED) of the rural hospital with epileptic seizure. Regarding his medical history, the patient had suffered from sinusitis five years ago but no history of epilepsy was mentioned, not even in his family history.\nThe CT scan that was performed revealed findings only in the right maxillary, ethmoid, and frontal sinuses but not in the parenchymal brain (Figures , ). Concerning the laboratory results, it was found a leukocytosis of over 20,000 per cubic millimeter of blood, elevated levels of C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR), and mild electrolyte disturbances. Because of high suspicion for meningitis or encephalitis, the patient was transported by ambulance to our university hospital for further investigation and treatment.\nFirstly in the neurology department, an intravenous combination of ceftriaxone, clindamycin, and acyclovir was given along with antiepileptics. However, for the following three days, there was no response to the antibiotics. On the contrary, the patient displayed dyspnoea and bradycardia but echocardiography did not demonstrate any pathology. For the dyspnoea, a CT scan of the chest was executed, which revealed pleural effusion and therefore it was decided to modify the antibiotic medication with vancomycin and meropenem.\nAfter 48 hours of treatment, the patient presented disorientation and abnormal behavior. The MRI of the brain that was performed, indicated the presence of a cerebral abscess in the right frontal lobe surrounded by oedema, which caused a slight displacement of the midline (Figure ). In a new CT scan, shadows in the right frontal sinus accompanied by frontal bone thinning in the lower-posterior wall were observed.\nA new evaluation was made by the otorhinolaryngologists who decided to proceed operatively. Endoscopically and under general anaesthesia, nasal polyps were detected in the nasal cavity, which were removed with the use of a flexible rhino endoscope. Then anterior ethmoidectomy and middle maxillary antrostomy were done along with drainage of pus from right sinuses. Ten days later, the fever was lower but still high and the leukocytosis was remaining. The patient started having disorientation while his headache was getting worse over days.\nDue to the unimproved clinical condition, neurosurgeons considered to proceed more drastically. Specifically, under general anaesthesia, a pterional craniotomy was performed and an open approach of the frontal and right temporal lobe was achieved (Figure ). Thereafter, the brain abscess was found in the right frontal lobe and anterior part of the right temporal lobe. The purulent material and the surrounding abscess capsule were completely removed, with intend to eradicate the infectious sources and to decompress the brain parenchyma by lessening intracranial pressure. In addition, samples were taken from the abscess and sent for microbiological study for antibiotic sensitivity. Pus culture was consistent with alpha-hemolytic streptococcus that was sensitive to the antibiotics.\nSubsequently, the patient was referred to the intensive care unit for constant care and close supervision for five days continuing intravenous antibiotics. The fever subsided within 72 hours. Neurological symptoms started resolving after 15 days and the patient was discharged nearly one month after the last operation presenting mild irritability, which was decreased gradually over the next two months. Six months later, an MRI was implemented where no signs of brain abscess were observed (Figure ). At the time of the last follow-up, one year postoperatively, the patient was found to be totally asymptomatic.",
+  "stored_relevant_entities": "{'Purulent tonsils': False, 'Symptom onset <=3 days': True, 'Severe tonsil inflammation': True}",
+  "stored_explanation": "The patient's current FeverPain score is 0.\nWhether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.\nWhether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 0 + 1 =  1.\nThe patient is reported to have a symptom onset ≤3 days and so we increment the score by 1, making the current total 1 + 1 = 2.\nThe patient is reported to not have purulent tonsils and so we do not increment the score, keeping the current total at 2.\nThe patient is reported to have severe tonsil inflammation and so we increment the score by 1, making the current total 2 + 1 = 3.\nThe patient's FeverPain score is 3 points.",
+  "blind_fields": {
+   "Symptom onset <=3 days": {
+    "value": true,
+    "quote": "The patient presented high fever, severe headache, and purulent nasal secretions over the last three days"
+   },
+   "Fever in past 24 hours": {
+    "value": true,
+    "quote": "The patient presented high fever ... over the last three days"
+   },
+   "Absence of cough or coryza": {
+    "value": false,
+    "quote": "purulent nasal secretions over the last three days"
+   }
+  },
+  "blind_working": "Onset within the last 3 days: +1. High fever: +1. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned: 0. Coryza present (purulent nasal secretions): 0. Total 2."
+ },
+ {
+  "calculator_id": "33",
+  "calculator": "FeverPAIN Score for Strep Pharyngitis",
+  "row": "465",
+  "note_id": "pmc-8091626-1",
+  "stored_answer": "2",
+  "blind_score": 1,
+  "code_on_blind": "1",
+  "completeness": "COMPLETE",
+  "completeness_reason": "All criteria are determinable: some are stated explicitly and the rest are absent by convention.",
+  "eligibility_note": "Ineligible. This is ovarian vein thrombosis / hepatic hemangiomas with abdominal pain, not pharyngitis.",
+  "n_field_diffs": 1,
+  "field_diffs": "[{\"field\": \"Purulent tonsils\", \"stored\": true, \"blind\": null}]",
+  "note_issues": "[]",
+  "queued": true,
+  "question": "What is the patient's FeverPAIN score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A previously healthy 32-year-old Egyptian lady presented to the outpatient medical clinic with a 3-month history of right-sided abdominal pain exacerbated by movement and relieved with over-the-counter analgesics. The pain was related to food intake. She described the pain as stabbing in nature and radiating to the back. She denied any history of melena, dysphagia, weight loss, anorexia, nausea, and vomiting as well as history of fever or night sweats. She did not complain of vaginal discharge or menstrual abnormalities.\nShe is a nonsmoker and denied any personal or family history of venous thromboembolism. Her gynecological history was remarkable for five pregnancies. She had normal vaginal deliveries except for the last one, which required an emergency Cesarean section at 36 weeks and 5 days of gestation due to placenta previa type III. One month after delivery, the patient was started on desogestrel (0.075 mg oral daily) for contraception, which she continued for 2 years. Her menstrual period was irregular, and the last withdrawal bleeding was 2 weeks prior to clinic visit.\nDuring the initial clinic visit, her vital signs were within normal limits (temperature, 36.7°C; heart rate, 78 bpm; blood pressure, 100/66 mmHg). Abdominal examination was significant for a mild tenderness in the right upper quadrant. Bowel sounds were noted.\nInitial laboratory findings, including complete blood count, renal parameters, and electrolytes, liver function, lipase, and amylase levels, were within normal limits. Beta-hCG was negative. Initial differentials included cholecystitis, hepatitis, or hepatic abscess. Thrombosis of the portal vein is a possible differential diagnosis; however, in the absence of significant risk factors in the patient's history, further evaluation by ultrasound of the abdomen is required.\nAbdominal ultrasound showed multiple hyperechoic focal lesions, the largest measuring 15 × 15 mm in the right hepatic lobe, suggestive of hemangiomas, indicating further evaluation by abdominal gadolinium-enhanced MRI, which confirmed hepatic hemangiomas; additionally, right OVT was suspected. Therefore, pelvic MRI with gadolinium-based contrast was requested, which revealed a prominent right ovarian vein measuring 8 mm in diameter with loss of flow void and persistent central nonenhancement with mild peripheral enhancement, indicating partial thrombosis of the right ovarian vein. Furthermore, the left ovarian vein was patent. Mild pelvic congestion and a small follicular cyst in the right ovary was noted (, ).\nFurther laboratory investigations were performed to evaluate the underlying cause of the thrombosis, including factor V Leiden mutation, ANA, lupus anticoagulant, anticardiolipin antibody, beta-2 microglobulin, and JAK2 mutation, which were all negative (). Few thrombophilia tests such as anti-thrombin III, Methylenetetrahydrofolate reductase (MTHFR) gene, and protein C were not performed.",
+  "stored_relevant_entities": "{'Purulent tonsils': True, 'Symptom onset <=3 days': False, 'Severe tonsil inflammation': False}",
+  "stored_explanation": "The patient's current FeverPain score is 0.\nWhether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.\nWhether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 0 + 1 =  1.\nThe patient is reported to not have a symptom onset ≤3 days and so we do not increment the score, keeping the current total at 1.\nThe patient is reported to have purulent tonsils and so we increment the score by 1, making the current total 1 + 1 = 2.\nThe patient is reported to not have severe tonsil inflammation and so we do not increment the score, keeping the current total at 2.\nThe patient's FeverPain score is 2 points.",
+  "blind_fields": {
+   "Symptom onset <=3 days": {
+    "value": false,
+    "quote": "with a 3-month history of right-sided abdominal pain"
+   },
+   "Fever in past 24 hours": {
+    "value": false,
+    "quote": "as well as history of fever or night sweats ... (temperature, 36.7°C"
+   }
+  },
+  "blind_working": "Onset 3 months: 0. Fever denied, T 36.7 C: 0. Purulent tonsils not mentioned: 0. Tonsil inflammation not mentioned: 0. Cough/coryza not mentioned: +1. Total 1."
+ },
+ {
+  "calculator_id": "18",
+  "calculator": "HEART Score for Major Cardiac Events",
+  "row": "270",
+  "note_id": "pmc-4754474-1",
+  "stored_answer": "0",
+  "blind_score": 0,
+  "code_on_blind": "0",
+  "completeness": "COMPLETE",
+  "completeness_reason": "No ECG/troponin documented -> scored normal by convention; history clearly non-cardiac; no other ambiguity.",
+  "eligibility_note": "Presented with epigastric pain and dyspnea (not chest pain) from esophageal perforation; chest pain only appears 5 days later. HEART marginally/not applicable.",
+  "n_field_diffs": 2,
+  "field_diffs": "[{\"field\": \"Electrocardiogram Test\", \"stored\": \"Normal\", \"blind\": null}, {\"field\": \"Initial troponin\", \"stored\": \"less than or equal to normal limit\", \"blind\": null}]",
+  "note_issues": "[{\"field\": \"Suspicion History\", \"issue\": \"Suspicion level is a judgment; non-cardiac mechanism (food bolus, esophageal rupture) makes 'slightly suspicious' most defensible. 'Moderately suspicious' would give 1.\", \"alternative_score\": 1}]",
+  "queued": true,
+  "question": "What is the patient's score of the HEART Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 25-year-old previously healthy male presented to our Emergency Department with shortness of breath and epigastric pain that started immediately after swallowing a boneless chicken nugget one hour prior to presentation. He had no antecedent history of marked vomiting prior to symptom onset and denied any foreign body sensation. He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux. Our patient was not taking any medications at the time of presentation.\nAt admission, he was afebrile with a pulse of 64 beats/min, blood pressure of 134/87 mmHg, and oxygen saturation of 100%. He was alert and oriented with facial pallor and appeared uncomfortable on the stretcher. Physical examination revealed a tender, rigid abdomen (predominantly in the epigastric region) with voluntary guarding (2+) but no signs of peritonitis. On respiratory examination equal air entry was auscultated bilaterally with no adventitious sounds, no signs of subcutaneous air or tracheal deviation. He was able to speak clearly. Heart sounds were normal (S1, S2, and no murmurs) and no evidence of previous surgeries was found. The rest of the physical examination was unremarkable.\nBlood work was normal at the time of presentation (CBC, calcium, phosphate, magnesium, sodium, chloride, bicarbonate, anion gap, AST/ALT/ALP, and albumin) except for slight elevations of WBC (14.0 × 109 cells/L), bilirubin (28 μmol/L), and amylase (185 U/L). Lactate was tested six hours later, revealing an elevated level of 4.1 mmol/L. Chest X-ray was suggestive of mediastinal air () and revealed a left-sided pleural effusion. There was no evidence of foreign objects in the esophagus or free air in the abdomen. A computed tomography (CT) scan of the chest revealed a rupture in the distal esophagus with oral contrast leaking from the rupture, a pneumomediastinum, and left-sided pleural effusions ().\nTreatment began with cessation of oral intake, administration of IV fluids, morphine, and intravenous broad-spectrum antibiotics, and repeat blood work. As the patient was clinically well and did not require emergent surgery, he was admitted under the Thoracic Surgery Team and transferred to a step-down unit. Esophageal gastroscopy was performed revealing a mucosal tear at 40 cm into the esophagus, extending just to the gastroesophageal junction. An esophageal stent was positioned to cover the perforation. Video-Assisted Thoracoscopic Surgery (VATS) drainage of the pleural space was conducted with samples taken for culture. Intercostal nerve blocks were placed and a right-angle chest tube was inserted on the left side.\nAfter 5 days, he developed a fever with increasing chest pain and leukocytosis whilst still on antibiotics. CT scan of the chest showed a mediastinal abscess and right pleural collection. He underwent VATS drainage of the abscess and decortication of the right pleural space. After three weeks, his esophageal stent was removed and the esophageal tear was observed to have healed nicely.",
+  "stored_relevant_entities": "{'age': [25.0, 'years'], 'Hypertension history': False, 'Transient Ischemic Attacks History': False, 'Electrocardiogram Test': 'Normal', 'Diabetes mellitus': False, 'smoking': False, 'parent or sibling with Cardiovascular disease before age 65': False, 'atherosclerotic disease': False, 'Suspicion History': 'Slightly suspicious', 'hypercholesterolemia': False, 'obesity': False, 'Initial troponin': 'less than or equal to normal limit'}",
+  "stored_explanation": "The current HEART Score is 0.\nThe value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Based on the HEART Score criteria, 0 points are added for 'history', keeping the current total at 0.\nThe value of 'electrocardiogram' in the patient's note is determined to be 'Normal'. Based on the HEART Score criteria, 0 points are added for 'electrocardiogram', keeping the current total at 0.\nThe patient is 25.0 years old. The patient's age is less than 45 years and so keep the current total at 0.\nThe following risk factor(s) are mentioned in the patient's note, but these risk factors are noted to be absent from the patient: hypertension, hypercholesterolemia, diabetes mellitus, obesity, smoking, family with cvd, atherosclerotic disease. Based on the HEART Score risk factors criteria, 0 risk factors are present and so 0 points are added for the risk factors criteria, keeping the current total at 0.\nThe value of 'initial troponin' in the patient's note is determined to be 'less than or equal to normal limit'. Based on the HEART Score criteria, 0 points are added for 'initial troponin', keeping the current total at 0.\nBased on the patient's data, the HEART Score is 0.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     25,
+     "years"
+    ],
+    "quote": "A 25-year-old previously healthy male"
+   },
+   "Suspicion History": {
+    "value": "Slightly suspicious",
+    "quote": "epigastric pain that started immediately after swallowing a boneless chicken nugget one hour prior to presentation"
+   },
+   "Hypertension history": {
+    "value": false,
+    "quote": "He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux"
+   },
+   "Diabetes mellitus": {
+    "value": false,
+    "quote": "He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux"
+   },
+   "hypercholesterolemia": {
+    "value": false,
+    "quote": "He had no significant past medical history with the exception of 2-3-week duration of mild gastroesophageal reflux"
+   },
+   "atherosclerotic disease": {
+    "value": false,
+    "quote": "previously healthy male"
+   },
+   "Transient Ischemic Attacks History": {
+    "value": false,
+    "quote": "previously healthy male"
+   }
+  },
+  "blind_working": "History: epigastric pain/dyspnea immediately after swallowing food (esophageal rupture), non-cardiac -> slightly suspicious 0; ECG not documented -> normal 0; Age 25 (<45) -> 0; Risk factors: previously healthy, none documented -> 0; Troponin not listed among presentation labs -> <= normal 0. Total 0."
+ },
+ {
+  "calculator_id": "18",
+  "calculator": "HEART Score for Major Cardiac Events",
+  "row": "271",
+  "note_id": "pmc-4244065-1",
+  "stored_answer": "2",
+  "blind_score": 1,
+  "code_on_blind": "1",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Components resolvable via conventions; the only soft point is the family history age-of-onset (see note_issues), treated as not documented -> absent.",
+  "eligibility_note": "Not clinically eligible: Sertoli-Leydig cell tumor/hyperandrogenism case with no chest pain.",
+  "n_field_diffs": 3,
+  "field_diffs": "[{\"field\": \"Electrocardiogram Test\", \"stored\": \"Normal\", \"blind\": null}, {\"field\": \"Initial troponin\", \"stored\": \"less than or equal to normal limit\", \"blind\": null}, {\"field\": \"parent or sibling with Cardiovascular disease before age 65\", \"stored\": true, \"blind\": false}]",
+  "note_issues": "[{\"field\": \"parent or sibling with Cardiovascular disease before age 65\", \"issue\": \"Father has 'cardiovascular disease' but age at onset is not stated; if counted as positive family history, risk factors = 1 -> +1.\", \"alternative_score\": 2}]",
+  "queued": true,
+  "question": "What is the patient's score of the HEART Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "We present the case of a 63-year-old post-menopausal G3P3003 Caucasian female presenting with complaints of progressively increased hair growth, deepening voice, and a receding hairline over the past year. She also complained of some pelvic discomfort that resembled menstrual cramps, but denied overt vaginal bleeding. Her past medical history was significant for osteoporosis diagnosed twelve years prior. She denied any history of ovarian or adrenal disease. She denied any use of medications. The patient’s age of menarche was at 12 years and menopause at the age of 50 years. The patient’s last Pap smear was a year ago which was normal and she also reported no history of abnormal pap smears. The patient reported three normal pregnancies with uneventful cesarean sections and three living healthy children. Surgical history was remarkable for tonsillectomy and rhinoplasty. She was a happily married homemaker and exercised regularly. Interestingly, she noted an increased exercise tolerance and reported that she could easily double her normal biking routine. She also reported an increased libido. She denied tobacco, alcohol, or intravenous drug use. Family history was significant for hypertension in her mother and cardiovascular disease in her father. The subject provided written informed consent for us to use un-identifying photos of her affected areas. Physical exam was notable for marked facial stubble subsequent to shaving (Figure ) and diffuse terminal hair across her chest and abdomen. There was also some regression in the patient’s hairline (Figure ). There was no acanthosis nigricans present. Physical exam also revealed unique changes (Figure ) in 8 of her fingernails (described below), however the toenails were normal. Cliteromegaly measuring 2 cm was observed on pelvic exam. The remainder of the physical exam was otherwise unremarkable. Laboratory studies showed an extremely high total testosterone and androstenedione level at 742 ng/dl (reference range: < 62 ng/dL) and 339.0 ng/dL (20-75 ng/dL) respectively. Serum DHEA sulfate 174.2 mcg/dL (<15 - 157 mcg/dL), TSH 1.6 μIU/mL (0.5 - 4.70 μIU/mL), calcium 9.9 mg/dL (8.8 - 10.3 mg/dL), and parathyroid hormone levels 44.2 pg/ml (11 - 54 pg/ml) were all within normal reference range. The serum estradiol level was slightly elevated at 54 pg/mL (0 to 30 pg/mL; postmenopausal) (Table ). A computed tomography (CT) scan of the abdomen and pelvis showed a 3.5 cm left ovarian mass with normal appearing adrenal glands. This was subsequently confirmed by ultrasound which revealed an enlarged hypoechoic left ovarian mass of 3.6 × 3.5× 3.6 cm, and normal right ovary measuring 1.9 × 2.1 × 1.7 cm. Her uterus was normal in size, measuring 5.8 × 2.6 × 4.8 cm. But, the endometrial lining was heterogeneous and thickened, measuring at 9 mm. Preoperative and intraoperative consultation with our gynecological oncology team was conducted. The patient was referred for surgical removal of the ovarian mass. Laparoscopic bilateral salpingo-oophorectomy, peritoneal washings, and dilation and curettage were performed. At the time of surgery, ovaries, fallopian tubes, and uterine cutterings were sent for intra-operative frozen section pathology consultation. The frozen section of the left ovary revealed features of a “sex cord stromal tumor”. The right ovary was atrophic measuring 1.9 × 2.1 × 1.7 cm. The frozen section analysis of uterine curettings revealed no signs of atypia or malignancy. Lymph node dissection was not warranted based on preoperative and intraoperative evaluation as well as frozen section histological consultation showing a well-contained lesion within the ovary.\nThe final pathology report revealed a left ovarian Sertoli-Leydig cell tumor measuring 2.5× 2.0×1.4 cm. The tumor was composed primarily of Leydig cells, without well-formed Sertoli cell tubules or cord (Figure A). High-power (40×) fields revealed primarily sheets and aggregates of Leydig cells in a dense fibrous stroma (Figure B). Sertoli cells were difficult to identify. Immuno-histochemical stains for Keratin 8/18 or CAM 5.2 staining was mixed, strong to weak (Figure C). Both Keratin AE1/AE3 (Figure D) and Wilms tumor gene(WT-1) stains revealed negative to weak staining of Leydig cells and were positive for those considered as Sertoli cells. Negative staining of all cells for Epithelial Membrane Antigen (EMA) (Figure E) and diffuse, positive staining of all the cells for CD99, Calretinin, and alpha Inhibin, (Figure F) was observed, consistent with the pattern for both Sertoli cells and Leydig cells. Peritoneal washings were negative for tumor cells. The patient had a normal postoperative course and was discharged from the hospital on the first postoperative day in good condition.\nThe patient returned for a series of postoperative follow up visits. The first was one week post-surgery and then every three months for a total of one full year.\nInterestingly, careful exam of this patient pre-operatively revealed unique fingernail changes. The patient stated that she observed these changes months prior to presentation in the clinic. The nails looked mostly flat with significant curved concave spoon shaped ends. This was observed in most (8/10) fingers. The changes were particularly impressive in the index and middle fingers on both hands (Figure ). An extensive review of the literature did not reveal similar findings in SLCT cases reported before nor any other female endocrinopathy. It is possible that previous cases of SLCT-induced hyperandrogenemia may have overlooked these nail findings. The only condition that leads to similar findings is iron-deficiency anemia. Although patient hemoglobin levels were always within the normal reference range, detailed iron-deficiency anemia work up was performed (Table ) and was all within normal limits. Importantly, the fingernail changes started to gradually reverse after the curative surgery and normalization of patient hormonal profile (Table ). The post-surgery reversal of nail changes (Figure ) led us to confidently conclude that the nail signs were secondary to hyperandrogenemia. As this was the first association between fingernail changes and hyperandrogenemia, we propose these changes to be named the “Al-Hendy” nail sign.\nSince androgens mediate all their cellular biological effects through its androgen receptor (AR), a member of the nuclear steroid receptor superfamily [], we assumed that the fingernail area must express AR. We then decided to examine this concept ourselves. After appropriate IRB approval from Meharry Medical College, we collected nail bed tissues from healthy female volunteers and processed them for AR immunohistochemistry as described in Materials and Methods Section.",
+  "stored_relevant_entities": "{'age': [63.0, 'years'], 'Hypertension history': False, 'Transient Ischemic Attacks History': False, 'Diabetes mellitus': False, 'smoking': False, 'parent or sibling with Cardiovascular disease before age 65': True, 'atherosclerotic disease': False, 'Suspicion History': 'Slightly suspicious', 'Electrocardiogram Test': 'Normal', 'hypercholesterolemia': False, 'obesity': False, 'Initial troponin': 'less than or equal to normal limit'}",
+  "stored_explanation": "The current HEART Score is 0.\nThe value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Based on the HEART Score criteria, 0 points are added for 'history', keeping the current total at 0.\nThe value of 'electrocardiogram' in the patient's note is determined to be 'Normal'. Based on the HEART Score criteria, 0 points are added for 'electrocardiogram', keeping the current total at 0.\nThe patient is 63.0 years old. The patient's age is between 45 and 65 years and so we increment the current total by 1, making the current total 0 + 1 = 1.\nThe following risk factor(s) are present based on the patient's note: family with cvd. The following risk factor(s) are mentioned in the patient's note, but these risk factors are noted to be absent from the patient: hypertension, hypercholesterolemia, diabetes mellitus, obesity, smoking, atherosclerotic disease. Based on the HEART Score risk factors criteria, 1 risk factors are present and so 1 point is added for the risk factors criteria, making the current total, 1 + 1 = 2.\nThe value of 'initial troponin' in the patient's note is determined to be 'less than or equal to normal limit'. Based on the HEART Score criteria, 0 points are added for 'initial troponin', keeping the current total at 2.\nBased on the patient's data, the HEART Score is 2.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     63,
+     "years"
+    ],
+    "quote": "a 63-year-old post-menopausal G3P3003 Caucasian female"
+   },
+   "smoking": {
+    "value": false,
+    "quote": "She denied tobacco, alcohol, or intravenous drug use."
+   },
+   "parent or sibling with Cardiovascular disease before age 65": {
+    "value": false,
+    "quote": "Family history was significant for hypertension in her mother and cardiovascular disease in her father."
+   },
+   "Suspicion History": {
+    "value": "Slightly suspicious",
+    "quote": "presenting with complaints of progressively increased hair growth, deepening voice, and a receding hairline"
+   }
+  },
+  "blind_working": "History: no cardiac symptoms (virilization, pelvic discomfort) -> slightly suspicious 0; ECG not documented -> normal 0; Age 63 (45-64) -> 1; Risk factors: non-smoker, PMH only osteoporosis, no meds; father's cardiovascular disease has no age of onset so the '<65' family-history criterion is not established -> 0; Troponin not documented -> 0. Total 1."
+ },
+ {
+  "calculator_id": "48",
+  "calculator": "PERC Rule for Pulmonary Embolism",
+  "row": "579",
+  "note_id": "pmc-8223855-1",
+  "stored_answer": "4",
+  "blind_score": 4,
+  "code_on_blind": "4",
+  "completeness": "COMPLETE",
+  "completeness_reason": "SpO2 is only reported on 50% supplemental O2 (PERC wants room air), but 88% on supplemental oxygen implies room-air saturation is also <95%, so the criterion is met regardless; score is not guesswork.",
+  "eligibility_note": "Dyspnea with hemoptysis and shock (pheochromocytoma crisis/AAA); PE was a reasonable differential, PERC applicable in form though patient is not low-risk.",
+  "n_field_diffs": 1,
+  "field_diffs": "[{\"field\": \"Heart Rate or Pulse\", \"stored\": [107.0, \"beats per minute\"], \"blind\": [107, \"beats/min\"]}]",
+  "note_issues": "[{\"field\": \"O₂ saturation percentage\", \"issue\": \"Saturation measured on 50% face-mask oxygen, not room air. Direction is unambiguous (room air would be <=88%), so criterion counted met; a strict reader excluding non-room-air values would score 3.\", \"alternative_score\": 3}]",
+  "queued": true,
+  "question": "What are the number of criteria met for the PERC Rule for Pulmonary Embolism (PE)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 65-year-old man was taken to our emergency department, complaining of sudden dyspnea and hemoptysis for half a day. There was no obvious cause for the patient to have dyspnea, coughing, or coughing up to approximately 100 mL of fresh blood.\nThe patient had four episodes of similar symptoms in the past 10 years. The first three episodes had dyspnea accompanied by hypertension, without hemoptysis, and only the symptoms were treated; the cause had not been identified. Dyspnea, hemoptysis, and hypotension occurred 5 years ago. He was hospitalized at our hospital, and a left adrenal mass and an abdominal aortic aneurysm (AAA) were found. An abdominal computed tomography (CT) scan showed a left adrenal mass measuring 3.2 cm × 3.6 cm and an AAA with a maximum diameter of 5.3 cm. Surgical treatment was not performed because the patient worried about the risks of surgery.\nThe patient was healthy.\nThe patient had a disease-free personal and family history.\nOn physical examination, the patient was dyspneic, in distress, and sweating profusely. His blood pressure was 87/50 mmHg, heart rate was 107 beats/min, respiratory rate was 35 breaths/min, body temperature was 36 °C, and oxyhemoglobin saturation was 88% while breathing a 50% oxygen concentration with a face mask.\nInitial laboratory tests demonstrated leukocytosis (25.73 × 109/L, with 93.6% neutrophils) and significantly increased serum procalcitonin at 58.4 ng/mL (normal value: < 0.05 ng/mL). Blood gas analysis revealed lactate 11.0 mmol/L, pH 7.31, PaO2 72.1 mmHg, PaCO2 32.3 mmHg, and HCO3– 18.9 mmol/L while breathing 100% oxygen concentration with noninvasive positive pressure ventilation (NIPPV). His liver and renal function was also abnormal (alanine transaminase 145 U/L, glutamic-oxaloacetic transaminase 156 U/L, and creatinine 126 µmol/L), and D-dimer was 28.85 mg/L (normal value: ≤ 0.55 mg/L). Electrocardiogram showed sinus tachycardia and ST segment depression in the V2-V6 leads.\nThe patient’s chest X-ray manifestations were characterized by multiple plaques in both lungs, chest CT scans showed little ground glass shadow under the pleura of both lungs (Figure ), and abdominal CT scans showed a left adrenal mass measuring 4.4 cm × 4.3 cm and an AAA with a maximum diameter of 7.3 cm (Figure ). Echocardiography showed enlargement of the left atrium, aortic sinus, and ascending aorta. Systolic left ventricular function was impaired (ejection fraction 55%), but there was no pulmonary hypertension and no sign of diastolic dysfunction (left ventricular end diastolic diameter 55 mm).",
+  "stored_relevant_entities": "{'age': [65.0, 'years'], 'Previously Documented Pulmonary Embolism': False, 'Heart Rate or Pulse': [107.0, 'beats per minute'], 'Hemoptysis': True, 'O₂ saturation percentage': [88.0, '%'], 'Recent surgery or trauma': False, 'Previously documented Deep Vein Thrombosis': False}",
+  "stored_explanation": "The current count of PERC criteria met is 0.\nThe patient is 65.0 years old. The patient's age is greater than or equal to 50 years, and so we increment the perc critieria met by 1, making the current total 0 + 1 = 1.\nThe patient's heart rate is 107.0 beats per minute. The patient's heart rate is greater than or equal to 100 beats per minute, and so we increment the perc critieria met by 1, making the current total 1 + 1 = 2.\nThe saturated oxygen percentage in the room is 88.0 percent. The saturated oxygen is less than 95%, and so we increment the perc critieria met by 1, making the current total 2 + 1 = 3.\nThe patient note does not report a status on 'unilateral leg swelling'. Hence, we assume it to be absent, and so we do not increment the criteria count. The current total remains at 3.\nThe patient note reports 'hemoptysis' to be present for the patient and so we increment the criteria count by 1, making the current total 3 + 1  =  4.\nThe patient note reports 'recent surgery or trauma' to be absent in the patient and so we do not increment the criteria count. The current total remains at 4.\nThe patient must be diagnosed with at least one of deep vein thrombosis or pulmonary embolism in the past for a PERC rule criteria to be met. The patient is not reported to have been diagnosed with deep vein thrombosis in the past. The patient is not reported to have been diagnosed with pulmonary embolism in the past. Neither criteria is met and so we do increment the criteria count, keep the current total at 4.\nThe patient note does not report a status on 'hormonal use'. Hence, we assume it to be absent, and so we do not increment the criteria count. The current total remains at 4.\nHence, the number of PERC rule criteria met by the patient is 4.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     65,
+     "years"
+    ],
+    "quote": "A 65-year-old man"
+   },
+   "Heart Rate or Pulse": {
+    "value": [
+     107,
+     "beats/min"
+    ],
+    "quote": "heart rate was 107 beats/min"
+   },
+   "O₂ saturation percentage": {
+    "value": [
+     88,
+     "%"
+    ],
+    "quote": "oxyhemoglobin saturation was 88% while breathing a 50% oxygen concentration with a face mask"
+   },
+   "Hemoptysis": {
+    "value": true,
+    "quote": "complaining of sudden dyspnea and hemoptysis for half a day"
+   },
+   "Recent surgery or trauma": {
+    "value": false,
+    "quote": "Surgical treatment was not performed because the patient worried about the risks of surgery."
+   },
+   "Previously documented Deep Vein Thrombosis": {
+    "value": false,
+    "quote": "The patient had a disease-free personal and family history."
+   },
+   "Previously Documented Pulmonary Embolism": {
+    "value": false,
+    "quote": "The patient had a disease-free personal and family history."
+   }
+  },
+  "blind_working": "Age 65 (>=50) 1; HR 107 (>=100) 1; SpO2 88% on 50% O2 -> room-air SpO2 necessarily <95% -> 1; hemoptysis 1; leg swelling not mentioned 0; no recent surgery/trauma 0; no prior DVT/PE 0; hormone use not mentioned 0. Total 4."
+ },
+ {
+  "calculator_id": "48",
+  "calculator": "PERC Rule for Pulmonary Embolism",
+  "row": "581",
+  "note_id": "pmc-7676805-1",
+  "stored_answer": "1",
+  "blind_score": 1,
+  "code_on_blind": "1",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Vitals on room air at presentation; all criteria determinable.",
+  "eligibility_note": "Facial swelling (later SVC-type picture on chest imaging), not a typical suspected-PE presentation; PERC computable.",
+  "n_field_diffs": 0,
+  "field_diffs": "[]",
+  "note_issues": "[{\"field\": \"Hormone use\", \"issue\": \"Patient received recent prednisone courses; PERC 'hormone use' means estrogenic hormones (OCP/HRT), so not counted. If a corticosteroid were counted as hormone use the score would be 2.\", \"alternative_score\": 2}]",
+  "queued": true,
+  "question": "What are the number of criteria met for the PERC Rule for Pulmonary Embolism (PE)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 54-year-old female with no past medical history presented to the emergency department (ED) of an urban community hospital with persistent facial swelling for more than one month despite five previous ED visits to diagnose and treat her condition. More than a month earlier, she had received a one-week course of clindamycin for a dental abscess, which she took just prior to the onset of facial swelling, redness, and itching. It was thought that these symptoms were due to an allergic reaction to the clindamycin. She was seen in an ED and was given diphenhydramine and prednisone with subjective improvement of the symptoms (follow-up visit one). Since that first ED visit for signs of an allergic reaction, she had four additional visits to different EDs with the same symptoms and was prescribed hydroxyzine during the second visit (follow-up visit two), loratadine during the third visit (follow-up visit three), and additional courses of prednisone in the last two of the five visits (follow-up visits four and five).\nAfter the fifth follow-up visit for symptoms of a presumed allergic reaction, she presented for the same facial swelling this time to our ED. Her facial swelling was worse at night but did not fully resolve during the day. She denied any additional exacerbating or alleviating factors. Of note, the patient denied having a primary care physician or any physician who knew her medical history. At the previous ED visits, she stated that she thought labs had been drawn but was not certain and could not recall the specific dates she had visited each ED. She denied having had any imaging completed during the prior ED visits.\nA review of systems was positive for facial swelling and negative for tongue swelling, oropharyngeal swelling, sore throat, dysphagia, chest discomfort, dyspnea, rash, pruritis, abdominal pain, nausea, vomiting, change in bowel or bladder habits, weight gain or loss, loss of appetite, and extremity swelling. She denied any other medical complaints. She denied any medical or surgical history, tobacco, alcohol, or illicit drug use, and stated that she lived with her husband.\nVital signs were as follows: temperature 98.1 degrees Fahrenheit; blood pressure 111/66 millimeters mercury; heart rate 82 beats per minute, respiratory rate 20 breaths per minute; and oxygen saturation 96% on room air. Physical examination revealed an obese, White female sitting awake and alert in no acute distress with significant diffuse swelling of her face, which was most prominent in the periorbital region without ecchymoses, erythema, or urticaria. Her conjunctivae were without erythema. Her pupils were equal, round, and reactive to light, and the extraocular motions were intact and painless. There were no other abnormal respiratory, cardiovascular, abdominal, or neurologic findings on examination. A complete blood count, basic metabolic panel, and chest radiograph (CXR) were ordered during the initial workup of the patient. Based on CXR findings (), a computed tomography (CT) of the chest was obtained (). The patient had an uneventful stay in the ED.",
+  "stored_relevant_entities": "{'age': [54.0, 'years'], 'Hormone use': False, 'Unilateral Leg Swelling': False, 'Previously Documented Pulmonary Embolism': False, 'Heart Rate or Pulse': [82.0, 'beats per minute'], 'Hemoptysis': False, 'O₂ saturation percentage': [96.0, '%'], 'Recent surgery or trauma': False, 'Previously documented Deep Vein Thrombosis': False}",
+  "stored_explanation": "The current count of PERC criteria met is 0.\nThe patient is 54.0 years old. The patient's age is greater than or equal to 50 years, and so we increment the perc critieria met by 1, making the current total 0 + 1 = 1.\nThe patient's heart rate is 82.0 beats per minute. The patient's heart rate is less than 100 beats per minute, and so we do not increment the criteria count. The current total remains at 1.\nThe saturated oxygen percentage in the room is 96.0 percent. The saturated oxygen is greater than or equal to 95% and so we do not increment the criteria count. The current total remains at 1.\nThe patient note reports 'unilateral leg swelling' to be absent in the patient and so we do not increment the criteria count. The current total remains at 1.\nThe patient note reports 'hemoptysis' to be absent in the patient and so we do not increment the criteria count. The current total remains at 1.\nThe patient note reports 'recent surgery or trauma' to be absent in the patient and so we do not increment the criteria count. The current total remains at 1.\nThe patient must be diagnosed with at least one of deep vein thrombosis or pulmonary embolism in the past for a PERC rule criteria to be met. The patient is not reported to have been diagnosed with deep vein thrombosis in the past. The patient is not reported to have been diagnosed with pulmonary embolism in the past. Neither criteria is met and so we do increment the criteria count, keep the current total at 1.\nThe patient note reports 'hormonal use' to be absent in the patient and so we do not increment the criteria count. The current total remains at 1.\nHence, the number of PERC rule criteria met by the patient is 1.",
+  "blind_fields": {
+   "age": {
+    "value": [
+     54,
+     "years"
+    ],
+    "quote": "A 54-year-old female"
+   },
+   "Heart Rate or Pulse": {
+    "value": [
+     82,
+     "beats per minute"
+    ],
+    "quote": "heart rate 82 beats per minute"
+   },
+   "O₂ saturation percentage": {
+    "value": [
+     96,
+     "%"
+    ],
+    "quote": "oxygen saturation 96% on room air"
+   },
+   "Unilateral Leg Swelling": {
+    "value": false,
+    "quote": "negative for ... extremity swelling"
+   },
+   "Recent surgery or trauma": {
+    "value": false,
+    "quote": "She denied any medical or surgical history"
+   },
+   "Previously documented Deep Vein Thrombosis": {
+    "value": false,
+    "quote": "She denied any medical or surgical history"
+   },
+   "Previously Documented Pulmonary Embolism": {
+    "value": false,
+    "quote": "She denied any medical or surgical history"
+   },
+   "Hormone use": {
+    "value": false,
+    "quote": "additional courses of prednisone in the last two of the five visits"
+   }
+  },
+  "blind_working": "Age 54 (>=50) 1; HR 82 0; SpO2 96% room air 0; extremity swelling denied 0; hemoptysis not mentioned 0; no surgery/trauma 0; no prior DVT/PE 0; hormone use: only prednisone (a glucocorticoid, not estrogen/OCP/HRT) -> 0. Total 1."
+ },
+ {
+  "calculator_id": "51",
+  "calculator": "SIRS Criteria",
+  "row": "598",
+  "note_id": "usmle-9804",
+  "stored_answer": "3",
+  "blind_score": 3,
+  "code_on_blind": "ERROR: KeyError: 'wbc'",
+  "completeness": "INCOMPLETE",
+  "completeness_reason": "No WBC count in the note; the WBC criterion cannot be assessed (a pyelonephritis patient may well have leukocytosis), so 3 vs 4 depends on an unreported value.",
+  "eligibility_note": "Adult (23 y); eligible.",
+  "n_field_diffs": 4,
+  "field_diffs": "[{\"field\": \"Heart Rate or Pulse\", \"stored\": [92.0, \"beats per minute\"], \"blind\": [92, \"/min\"]}, {\"field\": \"Temperature\", \"stored\": [39.0, \"degrees celsius\"], \"blind\": [39.0, \"°C\"]}, {\"field\": \"White blood cell count\", \"stored\": [8500.0, \"mm^3\"], \"blind\": null}, {\"field\": \"respiratory rate\", \"stored\": [25.0, \"breaths per minute\"], \"blind\": [25, \"/min\"]}]",
+  "note_issues": "[{\"field\": \"White blood cell count\", \"issue\": \"WBC absent from note; if leukocytosis were present the score would be 4.\", \"alternative_score\": 4}]",
+  "queued": true,
+  "question": "What are the number of SIRS critiera met by the patient? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A 23-year-old woman presents with fever, chills, nausea, and urinary urgency and frequency. She says that her symptoms began 4 days ago and have progressively worsened. Her past medical history is significant for a 6-month history of recurrent urinary tract infections (UTIs). Her vital signs include: temperature 39.0°C (102.2°F), blood pressure 100/70 mm Hg, pulse 92/min, and respiratory rate 25/min. On physical examination, there is moderate left costovertebral angle tenderness.",
+  "stored_relevant_entities": "{'Temperature': [39.0, 'degrees celsius'], 'Heart Rate or Pulse': [92.0, 'beats per minute'], 'respiratory rate': [25.0, 'breaths per minute'], 'White blood cell count': [8500.0, 'mm^3']}",
+  "stored_explanation": "The current count of SIRS criteria met is 0.\nThe patient's temperature is 39.0 degrees celsius. Because the temperature is greater than 38 degrees celsius, we increment the criteria count by 1 making the current total 0 + 1 = 1.\nThe patient's heart rate is 92.0 beats per minute. Because the heart rate is greater than 90 beats per minute, this meets SIRS criteria and so we increment the criteria count by 1 making the current total 1 + 1 = 2.\nThe patient's concentration of white blood cell is 8500.0 count/mm^3. Because the white blood cell count is between 4000 and 12000 count per mm^3, this does not meet SIRS criteria for white blood cell count, and so the current total remains at 2.\nThe final SIRS criteria is whether the patient has a respiratory rate of more than 20 breaths per minute or if the patient's PaCO₂ partial pressure is less than 32 mm Hg. The patient's respiratory rate is 25.0 breaths per minute, which is greater than 20 breaths per minute. The patient's PaCO₂ partial pressure is not provided and so we assume that the patient's partial pressure is greater than or equal to 32 mm Hg. At least one of the criteria is met, and so we increment the criteria count by 1 giving us a total of 2 + 1 = 3 criteria met.\nHence, the the number of SIRS criteria met by the patient is 3.",
+  "blind_fields": {
+   "Temperature": {
+    "value": [
+     39.0,
+     "°C"
+    ],
+    "quote": "temperature 39.0°C (102.2°F)"
+   },
+   "Heart Rate or Pulse": {
+    "value": [
+     92,
+     "/min"
+    ],
+    "quote": "pulse 92/min"
+   },
+   "respiratory rate": {
+    "value": [
+     25,
+     "/min"
+    ],
+    "quote": "respiratory rate 25/min"
+   }
+  },
+  "blind_working": "Temp 39.0 C (>38) 1; HR 92 (>90) 1; RR 25 (>20) 1; WBC not reported -> treated as normal 0. Total 3."
+ },
+ {
+  "calculator_id": "51",
+  "calculator": "SIRS Criteria",
+  "row": "604",
+  "note_id": "pmc-2769425-1",
+  "stored_answer": "3",
+  "blind_score": 3,
+  "code_on_blind": "ERROR: KeyError: '(unit not written)'",
+  "completeness": "COMPLETE",
+  "completeness_reason": "Arrival vitals given; WBC unit missing but 21.16 can only sensibly be x10^9/L (leukocytosis). Blood tests presumably on arrival.",
+  "eligibility_note": "Adult (52 y) trauma patient; eligible (SIRS is non-specific to infection).",
+  "n_field_diffs": 4,
+  "field_diffs": "[{\"field\": \"Heart Rate or Pulse\", \"stored\": [120.0, \"beats per minute\"], \"blind\": [120, \"bpm\"]}, {\"field\": \"Temperature\", \"stored\": [36.0, \"degrees celsius\"], \"blind\": [36, \"degrees (unit not written)\"]}, {\"field\": \"White blood cell count\", \"stored\": [21160.0, \"µL\"], \"blind\": [21.16, \"(unit not written)\"]}, {\"field\": \"respiratory rate\", \"stored\": [32.0, \"breaths per minute\"], \"blind\": [32, \"breaths per minute (unit not written)\"]}]",
+  "note_issues": "[{\"field\": \"Temperature\", \"issue\": \"Temperature exactly 36 (C implied) sits on the boundary; MDCalc criterion is <36 so not met. If <=36 were counted, score 4.\", \"alternative_score\": 4}, {\"field\": \"White blood cell count\", \"issue\": \"No unit given for 21.16; interpreted as x10^9/L.\", \"alternative_score\": null}]",
+  "queued": true,
+  "question": "What are the number of SIRS critiera met by the patient? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+  "patient_note": "A previously fit and well 52-year-old, Caucasian, British man presented to accident and emergency two days after tripping and falling on to his right side at home. On arrival, patient complained of shortness of breath and right side chest pain. He was found to be in obvious distress, dyspnoeic, restless and haemodynamically unstable with blood pressure of 86/64, respiratory rate 32, saturation 85%, pulse 120 bpm and temperature was 36. He was in pain but airway was maintained. Extensive emphysema from neck to scrotum was noted.\nThe patient was resuscitated in accordance with Advanced Trauma and Life Support (ATLS) guidelines and was given high flow oxygen, intravenous fluids and was attached to a cardiac monitor. Chest examination revealed bilateral reduced air entry and tenderness over the right 5th, 6th and 7th ribs. Trachea was central and normal cardiac sounds were heard. Immediate chest radiograph () showed fracture of right 5th, 6th and 7th ribs but no flail segment and bilateral pneumothoraces which were treated with bilateral chest drains with under water seals. ECG done at the time was normal. Abdomen was soft and non tender with normal bowel sounds.\nBlood tests revealed C reactive protein of 57, and leukocyte count of 21.16 with neutrophilia of 18.95.\nTo assess the full extent of injury, the patient underwent computerised tomography (CT) of chest, abdomen and pelvis which confirmed right sided rib fractures (5th, 6th and 7th) () and right pneumothorax, leading to bronchopleural subcutaneous fistula leading to left pneumothorax (). Emphysema from neck to lower part of scrotum, pneumomediastinum and retropneumoperitoneum () (right retroperitoneal space around ascending colon and right kidney) were also reported.\nThe patient was admitted for supportive care, analgesia and physiotherapy. Pneumothoraces resolved after 5 days and chest drains were removed. By 7th day subcutaneous emphysema had reduced significantly and the patient was discharged home. On subsequent review in clinic all the subcutaneous emphysema had resolved and patient was asymptomatic.",
+  "stored_relevant_entities": "{'Temperature': [36.0, 'degrees celsius'], 'Heart Rate or Pulse': [120.0, 'beats per minute'], 'respiratory rate': [32.0, 'breaths per minute'], 'White blood cell count': [21160.0, 'µL']}",
+  "stored_explanation": "The current count of SIRS criteria met is 0.\nThe patient's temperature is 36.0 degrees celsius. Because the temperature is between 36 and 38 degrees celsius, this does not meet SIRS criteria for temperature, and so the current total remains at 0.\nThe patient's heart rate is 120.0 beats per minute. Because the heart rate is greater than 90 beats per minute, this meets SIRS criteria and so we increment the criteria count by 1 making the current total 0 + 1 = 1.\nThe patient's concentration of white blood cell is 21160.0 count/µL. To convert 21160.0 count/µL of white blood cell to mm^3, multiply by the conversion factor 1.0 µL/mm^3 which will give 21160.0 white blood cell count/µL * 1.0 µL/mm^3 = 21160.0 white blood cell count/mm^3. Because the white blood cell count is greater than 12000 count per mm^3, we increment the criteria count by 1 making the current total 1 + 1 = 2.\nThe final SIRS criteria is whether the patient has a respiratory rate of more than 20 breaths per minute or if the patient's PaCO₂ partial pressure is less than 32 mm Hg. The patient's respiratory rate is 32.0 breaths per minute, which is greater than 20 breaths per minute. The patient's PaCO₂ partial pressure is not provided and so we assume that the patient's partial pressure is greater than or equal to 32 mm Hg. At least one of the criteria is met, and so we increment the criteria count by 1 giving us a total of 2 + 1 = 3 criteria met.\nHence, the the number of SIRS criteria met by the patient is 3.",
+  "blind_fields": {
+   "Temperature": {
+    "value": [
+     36,
+     "degrees (unit not written)"
+    ],
+    "quote": "temperature was 36"
+   },
+   "Heart Rate or Pulse": {
+    "value": [
+     120,
+     "bpm"
+    ],
+    "quote": "pulse 120 bpm"
+   },
+   "respiratory rate": {
+    "value": [
+     32,
+     "breaths per minute (unit not written)"
+    ],
+    "quote": "respiratory rate 32"
+   },
+   "White blood cell count": {
+    "value": [
+     21.16,
+     "(unit not written)"
+    ],
+    "quote": "leukocyte count of 21.16 with neutrophilia of 18.95"
+   }
+  },
+  "blind_working": "Temp 36 (C implied; not <36) 0; HR 120 (>90) 1; RR 32 (>20) 1; WBC 21.16 (x10^9/L implied = 21,160/uL, >12,000) 1. Total 3."
+ }
+]

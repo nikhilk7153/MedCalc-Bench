@@ -1,0 +1,176 @@
+{
+ "calculator_id": "27",
+ "rows": [
+  {
+   "row": "388",
+   "verdict": "CORRECT",
+   "stored_answer": "6",
+   "final_answer": "6",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Male, Hb 14 (0); 'BUN concentration of 18 mg/dL' = 6.4 mmol/L, below the 6.5 mmol/L (18.2 mg/dL) cutoff (0), consistent with 'laboratory tests returned normal'; SBP 103 (+1), HR 110 (+1), 'sudden fainting' (+2), 'ongoing treatment for heart failure' (+2), melena denied = 6. The blind reviewer's rounding concern is not a note problem: the value is explicit and the standard band gives 0.",
+   "confidence": "high"
+  },
+  {
+   "row": "389",
+   "verdict": "CORRECT",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Female, Hb 10.4 (+1), BUN 18 mg/dL (0), SBP 108 (+1), HR 115 (+1); liver disease, fainting, black stools and heart failure all explicitly denied = 3. 'Appears vitally stable' is a wording quirk; the explicit vitals are scored.",
+   "confidence": "high"
+  },
+  {
+   "row": "390",
+   "verdict": "CORRECT",
+   "stored_answer": "1",
+   "final_answer": "1",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Male, Hb 'at 13 g/dL' is >=13 (0), BUN 18 mg/dL (0), SBP 130 (0), HR 88 (0), 'dark, tarry stools' (+1), 'no history of heart failure' = 1. Syncope and hepatic disease are unmentioned and so absent by convention; a peptic ulcer is not hepatic disease.",
+   "confidence": "high"
+  },
+  {
+   "row": "391",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "8",
+   "final_answer": "8",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "mildly elevated blood urea nitrogen levels at 22 mmol/L",
+    "new": "elevated blood urea nitrogen levels at 22 mmol/L"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "The unit is explicit ('22 mmol/L' ≈ 62 mg/dL, which scores +4) and was stored that way. But calling it 'mildly elevated' contradicts the value: it is about 3x the upper limit of normal for urea, and a reader could take it as a unit typo for 22 mg/dL (+2, total 6). The rest of the note neither supports nor rules out a high BUN (liver disease, syncope, normal vitals). The smallest fix that keeps the v1.0 value, unit and answer is to drop 'mildly'. Score: Hb 12 F (0) + BUN +4 + syncope +2 + liver +2 = 8.",
+   "confidence": "medium"
+  },
+  {
+   "row": "392",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Male, Hb 'currently at 10 g/dL' falls in the 10-<12 band (+3); 'BUN ... 25 mg/dL' = 8.9 mmol/L (+3); SBP 'noted to be 100 mm Hg' falls in the 100-109 band (+1); HR 108 (+1); 'under management for heart failure' (+2) = 10. The boundary values are explicit and fall in the stated bands; syncope is unmentioned and so absent.",
+   "confidence": "high"
+  },
+  {
+   "row": "393",
+   "verdict": "CORRECT",
+   "stored_answer": "4",
+   "final_answer": "4",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Male, Hb 14 (0), 'BUN level at 30 mg/dL' = 10.7 mmol/L (+4), SBP 110 is >=110 (0), HR 72 (0); no cardiac failure and no fainting; melena and hepatic disease are unmentioned and so absent = 4.",
+   "confidence": "high"
+  },
+  {
+   "row": "394",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'higher than average BUN level at 28 mmol/L' (≈79 mg/dL, +6) is understated but does not contradict the value. It fits an ED presentation with 'sudden fainting' plus 'dark, tarry stools' and Hb 11. Female Hb 11 (+1), SBP 115 (0), HR 80 (0), melena +1, syncope +2 = 10. There is no basis for treating the unit as a typo.",
+   "confidence": "high"
+  },
+  {
+   "row": "396",
+   "verdict": "CORRECT",
+   "stored_answer": "7",
+   "final_answer": "7",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'BUN level at 20 mmol/L' (≈56 mg/dL, +4) has no contradicting descriptor and is plausible in a patient with liver disease passing 'black, tarry stools'. Male Hb 15 (0), SBP 128 (0), HR 85 (0), melena +1, liver disease +2 = 7. The labs are the presentation labs; syncope and cardiac failure are unmentioned and so absent.",
+   "confidence": "high"
+  },
+  {
+   "row": "397",
+   "verdict": "CORRECT",
+   "stored_answer": "6",
+   "final_answer": "6",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'denied any instances of darkened, coffee-ground-like stools' is an unusual phrasing but still a clear denial of dark stools, so melena is absent. Male Hb 14.5 (0), 'BUN at 33 mg/dL' (+4), SBP 120 (0), HR 78 (0), 'episode of fainting' (+2), heart failure denied = 6.",
+   "confidence": "high"
+  },
+  {
+   "row": "398",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'BUN level of 27 mmol/L' (≈76 mg/dL, +6) has no contradicting descriptor. A high BUN with normal vitals is plausible in an upper GI bleed ('black, tarry stools') in a patient with liver disease. Female Hb 11.5 (+1), SBP 125 (0), HR 90 (0), melena +1, liver +2 = 10.",
+   "confidence": "high"
+  },
+  {
+   "row": "400",
+   "verdict": "CORRECT",
+   "stored_answer": "5",
+   "final_answer": "5",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Female (pronouns); 'low hemoglobin count at 12 g/dL' is at the female lower limit, so it scores 0 under >=12, and the explicit value governs; 'urea nitrogen ... 21 mg/dL' = 7.5 mmol/L (+2); SBP 118 (0); HR 98 is below 100 (0); 'black, tarry stools' (+1); 'recent fainting episode' (+2) = 5. The adjectives 'low' and 'elevated' are loose but not contradictory.",
+   "confidence": "high"
+  },
+  {
+   "row": "401",
+   "verdict": "CORRECT",
+   "stored_answer": "14",
+   "final_answer": "14",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'BUN level at 23 mmol/L, which is higher than the normal range' (≈65 mg/dL, +4) is consistent with its descriptor and with a significant bleed (melena, 'Hb ... 9.5 g/dL', daily aspirin). Female Hb 9.5 (+6), SBP 105 (+1), HR 82 (0), melena +1, heart failure +2 = 14.",
+   "confidence": "high"
+  },
+  {
+   "row": "403",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'BUN of 29 mmol/L' (≈81 mg/dL, +6) matches 'elevated BUN levels should prompt further evaluation'. Male Hb 12.5 (+1); HR 'of 100' is >=100 (+1); SBP 110 (0); 'recent syncopal episode' (+2); melena, liver disease and heart failure all denied = 10.",
+   "confidence": "high"
+  },
+  {
+   "row": "405",
+   "verdict": "CORRECT",
+   "stored_answer": "9",
+   "final_answer": "9",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Blood Urea Nitrogen level at 24 mmol/L' (≈67 mg/dL, +4) is consistent with 'his lab findings are a cause for concern'. Male Hb 10.2 (+3), SBP 130 (0), HR 77 (0), 'managing heart failure' (+2), no fainting and no tarry stools = 9. Hepatic disease is unmentioned and so absent.",
+   "confidence": "high"
+  }
+ ]
+}

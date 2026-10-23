@@ -1,0 +1,149 @@
+{
+ "calculator_id": "25",
+ "calculator_name": "HAS-BLED Score for Major Bleeding Risk",
+ "fields": [
+  {
+   "field": "Liver disease criteria for the HAS-BLED rule",
+   "type": "boolean"
+  },
+  {
+   "field": "age",
+   "type": "number with unit",
+   "typical_units": [
+    "years"
+   ]
+  },
+  {
+   "field": "Renal disease criteria for the HAS-BLED rule",
+   "type": "boolean"
+  },
+  {
+   "field": "Hypertension",
+   "type": "boolean"
+  },
+  {
+   "field": "Number of Alcoholic Drinks Per Week",
+   "type": "number"
+  },
+  {
+   "field": "Stroke",
+   "type": "boolean"
+  },
+  {
+   "field": "Medication usage predisposing to bleeding",
+   "type": "boolean"
+  },
+  {
+   "field": "Prior major bleeding or predisposition to bleeding",
+   "type": "boolean"
+  },
+  {
+   "field": "Labile international normalized ratio",
+   "type": "boolean"
+  }
+ ],
+ "rows": [
+  {
+   "row": "346",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 22-year-old female presents to the hospital with fatigue and recent headaches. She has a documented history of GERD, a kidney transplant, hypertension, evident with several recorded high blood pressure readings in the clinic. Moreover, she suffered a transient ischemic attack of her brain last year. She was solemn when she shared that she tends to drink more than moderately, admitting to a weekly average of 12 alcoholic beverages. In her medical history, there are suggestive signs of hepatic cirrhosis and confirmed renal disease. She denies using any medication known to exacerbate bleeding such as NSAIDs, anticoagulants or antiplatelet agents. Furthermore, there is no clear history of a major bleeding episode or any known coagulation disorders that predispose her to bleeding. The blood investigations, including coagulation studies, show a stable international normalized ratio (INR), and hemoglobin levels within range. The plan is to continue monitoring her closely and to adjust her therapies as needed based on the comprehensive assessment of her case."
+  },
+  {
+   "row": "347",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old male, with no significant medical history, arrives at the clinic for his routine check-up. He's always been vigilant about his health, sharing that his treatments have never included medications known to increase bleeding risk like NSAIDs or anticoagulants. His health history is largely unremarkable, void of any significant incidents like a stroke or major bleeding episodes. His moderate drinking habits have him consuming roughly four alcoholic beverages on a weekly basis. His regular tests convey a consistence in the international normalized ratio (INR) levels without demonstrating a propensity to fluctuate. On evaluation of the hepatic and renal panels from recent labs, all parameters fall within the regular spectrum, demonstrating no abnormalities suggestive of liver or renal disease. Hypertension too seems to be absent from his health portrait, with normal blood pressure measurements documented continuously. The patient's overall health status will continue to be managed with his current lifestyle modifications, and the potential need for future, more targeted interventions will be based on periodic check-ups and evaluations."
+  },
+  {
+   "row": "348",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 57-year-old male who has been experiencing general malaise for the last few weeks presents to the clinic. His medical history is void of any stroke or hypertension incidents. In terms of his alcohol use, he admits to consuming approximately four drinks per week. His medication regimen does not include any medicines with potential bleeding risk. However, earlier lab tests pointed to abnormalities in his liver function (AST and ALT were 4 times the normal value), suggesting liver disease. Likewise, he also has evidence of kidney disease as indicated by his elevated creatinine levels and a decrease in glomerular filtration rate. His past medical records also reflect an event of significant gastrointestinal bleeding, requiring admission. Recent coagulation profiles showed a consistently maintained international normalized ratio (INR), a vital measure of blood clotting. The healthcare team is putting emphasis on monitoring his case comprehensively as the overall findings suggest complexity in his medical condition."
+  },
+  {
+   "row": "349",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 33-year-old male presents for a regular follow-up, already diagnosed with hypertension which is being managed with antihypertensive medication. His medication list also includes a specific anticoagulant recommended following a DVT he experienced post a minor surgical procedure. He reports indulging in about 4 alcoholic drinks per week but does not have any known history of liver disease. Similarly, the renal profile from his last workup did not suggest any kidney diseases. There exists no record of a past stroke event either. The international normalized ratio (INR) that came into assessment during his previous lab tests have demonstrated stability thus far. The team continues to monitor his blood pressure and other vital signs closely in light of the overall evaluation."
+  },
+  {
+   "row": "350",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old gentleman with a complex medical history recently presented to the clinic. He's had a history of stroke and uncontrolled hypertension - although his blood pressure has been consistently well-controlled in recent times. His medication regimen includes anticoagulants, initiated after his stroke. A routine panel of blood tests revealed a fluctuating international normalized ratio (INR) raising some concern. Besides, the patient admits to consuming about 5 alcoholic drinks per week. Despite his advanced age, there's no obvious renal compromise, evidenced by normal creatinine and glomerular filtration rate over time. Similarly, tests related to liver function have consistently returned normal, pointing away from any liver disease. Observations and findings have made his case a focal point of interest for the healthcare team, gearing up for a thorough examination and diligent monitoring."
+  },
+  {
+   "row": "351",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58-year-old male presents to the clinic this week. No past stroke history can be detected in his medical records. He is currently being prescribed aspirin and NSAIDs, following an incident of DVT  he endured following a routine procedure. His alcohol intake can be considered heavy, consuming up to 12 drinks per week. Most recently, his blood pressure readings have tended to be elevated at above 170 mmHg for the systolic pressure. Interesting to note, his INR has remained stable during his multiple lab tests, eliminating any concerns about its lability. He also shows laboratory evidence of chronic kidney disease, necessitating further management. This man's condition mandates comprehensive dynamic monitoring and individualized care planning given the complexity of his medical situation."
+  },
+  {
+   "row": "352",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 67-year-old gentleman finds himself at the health clinic with recurrent bouts of fatigue. His health voyage is blotted with a longstanding diagnosis of hypertension, which despite efforts, seems to be poorly controlled recently. The patient does not take any blood-thinning agents or other medications known to predispose to bleeding. He admits to mild alcohol consumption, quantifying it at about three drinks per week. His medical trajectory also reveals a major bleeding episode that occurred in the past, claiming a substantial amount of hospital time. Simultaneously, liver function tests over the past few months have indicated irreversible, end stage liver fibrosis, necessitating further evaluation and intervention. However, renal pathologies remain absence in his medical dossier as the renal function records show no signs of compromise. His presentation poses several noteworthy elements for his care-continuum, requiring diligent medical management and monitoring."
+  },
+  {
+   "row": "353",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 82-year-old man arrives at the clinic for a regular check-up. His medical history is notably marked by a stroke a few years ago. Despite his age, he maintains strict control over his lifestyle, abstaining completely from alcohol. In recent times, his INR readings have been somewhat variable, demonstrating instances of lability. His blood pressure readings have always been consistently within a normal range, ruling out any active case of uncontrolled hypertension. His history also lacks any recorded episodes of major bleeding, and further probing reveals an absence of any known predisposition to bleeding disorders. His renal panel suggests no discernable renal impairment, with a satisfactory glomerular filtration rate and normal creatinine levels. His late-age and complex health history make for a notable challenge warranting particular attention from the healthcare team."
+  },
+  {
+   "row": "354",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old man finds himself back at the primary care clinic for his routine visit. His well-documented history of uncontrolled hypertension is a notable element in his case file. However, there is no suggestion of a previous stroke episode. He admits to patronizing alcohol, averaging 9 drinks per week. Also noteworthy in his medical history are his liver and renal conditions. On the one hand, he has had numerous hospital admissions over the years with repeated indications of hepatic impairment due to ALD. His renal function has also been a concern, as demonstrated by an elevated creatinine and reduced glomerular filtration rate. Contrarily, when it comes to bleeding risk, he has never been prescribed any medication known to accelerate bleeding. His coagulation profiles are quite stable, demonstrated by a consistently normal international normalized ratio (INR). These medical intricacies necessitate a comprehensive, focused approach to his healthcare management."
+  },
+  {
+   "row": "355",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old gentleman is currently under review. He has a history of suffering a stroke a few years back. Despite his age, the gentleman does not have hypertension and maintains a controlled blood pressure. As for lifestyle habits, he confesses to a modest intake of alcohol, limiting himself to about two drinks per week. His medical regimen includes clopidogrel due to his previous stroke. Unfortunately, due to routine knee surgery two months ago, he suffered significant bleeding that prolonged his hospital stay.  Liver function tests consistently returned within normal parameters, alleviating any fear of liver disease. This unique combination of factors makes for a complicated case requiring further investigation and careful monitoring."
+  },
+  {
+   "row": "356",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 78-year-old man is in the clinic once again for his regular review. His medical history is marked with hypertension, despite active measures, we are seeing a pattern of elevated blood pressure readings consistent with uncontrolled hypertension. However, he does not have a past history of stroke. His blood work frequently demonstrates an unpredictable INR, raising a concern regarding coagulation stability. Contrarily, he has been lucky to have escaped any major bleeding episodes in the past. He has kept his kidney health intact, with a well-preserved glomerular filtration rate and creatinine levels. The patient concedes that he indulges in alcohol, consuming an average of 7 drinks per week. These multifaceted elements in his medical condition warrant ongoing attention and active management."
+  },
+  {
+   "row": "357",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 85-year-old gentleman presented to the clinic with an array of complex medical issues. His past is significantly marked by a stroke incident and a major bleeding episode that required a prolonged period of recovery. He is on antiplatelet medications for secondary prevention of stroke. His test results have indicated renal impairment - a high creatinine level and a low glomerular filtration rate are concerning markers. His liver function tests have consistently returned healthy, denying any history of associated hepatic disease. Regarding lifestyle, he enjoys an occasional cocktail, consuming about four drinks per week on average. As for his blood pressure, it is well-managed and within acceptable limits. This elderly man's assortment of health conditions makes him a noteworthy patient requiring coordinated care and closer monitoring."
+  },
+  {
+   "row": "358",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "62-year-old male presents to our clinic for a routine check-up. His medical case is intricate, starting with a lead point of liver cirrhosis indicated by raised liver enzymes over time. He's had an event of major bleeding that necessitated hospital care. Further complicating factors include his labile INR over successive tests. He has not been on any medications that risk exacerbating bleeding. His alcohol consumption is limited to a single drink per week. In contrast to the aforementioned issues, his case does show some positive signs, one of them of being free from hypertension. His overall healthcare management requires diligent monitoring with a keen focus on various elements of his complex medical history."
+  },
+  {
+   "row": "359",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old man presents to the clinic with concerns about recent headaches and breathlessness. His detailed medical history confirms he had suffered a stroke in the past. Additionally, he has been dealing with hypertension for a while now, unfortunately, recent BP measurements reflect a lack of effective control (164/113). The patient denies alcohol consumption, reporting zero drinks per week. There are no predominant signs of renal impairment in his profile, as witnessed by normal creatinine levels and glomerular filtration rate. Coagulation profiles including INR have consistently been within the normal range without noteworthy fluctuations. The patient's history does not note any significant bleeding episodes, suggesting no predisposition to bleeding. Our team is closely following up on his case, preparing for a thorough evaluation of his condition for most appropriate management."
+  },
+  {
+   "row": "360",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 52-year-old man visits the clinic for follow-up, carrying a substantial medical record. He has been living with hypertension for some years, and has been doing well with controlled blood pressure readings on his antihypertensive medications. Liver function tests have been showing concerning levels, indicating liver cirrhosis. Another significant incident from the past is his major bleeding episode, requiring an inpatient stay and multiple transfusions. On the dietary front, he admits to consuming about 8 alcoholic drinks each week. He states he also regularly takes ibuprofen, generally 1-2 times per day. Regarding his coagulation profile, his International Normalized Ratio has remained within normal range. The patient's detailed assessment and case management concept will be further developed, considering this array of medical history and lifestyle practices."
+  },
+  {
+   "row": "361",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 59-year-old gentleman presents with episodes of dizziness and palpitations. His past medical history is significant for a previous stroke and uncontrolled hypertension (182/111). Blood tests showed a labile INR, with a supra-therapeutic range nearly 80 % of the time. A significant bleeding event that happened following a minor operative procedure is documented and requires careful attention. His lifestyle habits include moderate alcohol consumption, tallying approximately three alcoholic beverages per week. Despite the other complexities, the liver function tests appear normal suggesting no liver disease, and similar is the case with his renal function tests showing no kidney impairment. His case is closely following up considering all the clinically important traits."
+  },
+  {
+   "row": "362",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 61-year-old male patient with a complex medical history comes in for his routine follow-up. He has a history of hypertension but currently his blood pressure profile shows well-controlled readings (118/61). While there's no history of stroke, he had an unfortunate incidence of significant bleeding during a dental extraction. His past lab work identifies the presence of liver disease, with elevated liver function parameters and a diagnosis of liver cirrhosis. Furthermore, his renal profile indicated renal disease with abnormally high levels of creatinine (baseline 3.2 mg/dL) and decreased glomerular filtration rate. He does not regularly take aspirin, NSAIDs, or clopidogrel, and he denies any tobacco or alcohol consumption. Given the complex landscape of his health, his care plan necessitates careful consideration of all health aspects."
+  },
+  {
+   "row": "363",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old gentleman presents to the free clinic. For past medical history, he is known to have experienced a stroke several years ago. Beyond this, he does not have any history of hypertension. He consumes alcohol on a weekly basis, estimating about 10 drinks per week. His treatment plan includes clopidogrel for his stroke. Interestingly, his blood tests have persistently suggested renal disease with evidence of elevated creatinine (baseline ~2.8 mg/dL) and decreased glomerular filtration rate. His INR has remained stable in the consecutive lab tests, ruling out any lability. His medical documentation does not suggest any prior major bleeding instances or known predisposition to bleeding. His health condition undoubtedly makes his case an interesting one for the management team, emphasizing a need for rigorous supervision over his health journey."
+  },
+  {
+   "row": "364",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old gentleman presents with a complex clinical picture. He has a history of poorly controlled hypertension, with his recent primary care visit demonstrating 172/114. His INR results have fluctuated and have been elevated above therapeutic range in more than two-thirds of measurements in the last year. He maintains a strict no-alcohol rule, keeping his weekly alcoholic drink count to zero. He denies use of aspirin, clopidogrel, or NSAIDs. A few years back, unfortunately, he was admitted due to a significant instance of bleeding requiring transfusion. His liver function tests have been normal, excluding any ongoing liver disease. His health status requires vigilant monitoring given the various vital factors involved."
+  },
+  {
+   "row": "365",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 80-year-old male presents with multiple medical issues. His medical history is significant for a stroke that happened 2 years ago. Recently, his liver function tests have repeatedly presented abnormalities, confirming a diagnosis of cirrhosis. As for his lifestyle, he allows himself about four alcoholic drinks each week. His medication list includes daily aspirin given his history of stroke. Despite the potential risk, the patient does not have uncontrolled hypertension; his blood pressure readings have been consistently within normal limits. His kidney functions have consistently proven to be within the normal range as per the panel of renal tests. This gentleman’s case warrants thoughtful handling, and the medical team is required to persistently assess and manage the complex interplay of his medical conditions."
+  }
+ ],
+ "mdcalc_rules": "One point each, 0-9 total: Hypertension (uncontrolled, >160 mmHg systolic); Renal disease (dialysis, transplant, Cr >2.26 mg/dL or >200 umol/L); Liver disease (cirrhosis, or bilirubin >2x normal with AST/ALT/AP >3x normal); Stroke history; Prior major bleeding or predisposition to bleeding; Labile INR (unstable/high INRs, TTR <60%); Age >65; Medication usage predisposing to bleeding (aspirin, clopidogrel, NSAIDs); Alcohol use (>=8 drinks/week). MDCalc gives no definition beyond these descriptors; TIA is not listed under stroke, and anticoagulants are not listed as a drug point.",
+ "mdcalc_source": "https://www.mdcalc.com/calc/807/has-bled-score-major-bleeding-risk"
+}

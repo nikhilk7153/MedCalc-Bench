@@ -1,0 +1,52 @@
+{"Row Number": 3, "all_match": true, "problems": [], "Tokens": 1152}
+{"Row Number": 5, "all_match": true, "problems": [], "Tokens": 816}
+{"Row Number": 2, "all_match": true, "problems": [], "Tokens": 917}
+{"Row Number": 7, "all_match": true, "problems": [], "Tokens": 1374}
+{"Row Number": 4, "all_match": true, "problems": [], "Tokens": 1160}
+{"Row Number": 1, "all_match": true, "problems": [], "Tokens": 1155}
+{"Row Number": 6, "all_match": true, "problems": [], "Tokens": 1182}
+{"Row Number": 13, "all_match": true, "problems": [], "Tokens": 1099}
+{"Row Number": 11, "all_match": true, "problems": [], "Tokens": 1029}
+{"Row Number": 9, "all_match": true, "problems": [], "Tokens": 1057}
+{"Row Number": 12, "all_match": true, "problems": [], "Tokens": 873}
+{"Row Number": 15, "all_match": true, "problems": [], "Tokens": 940}
+{"Row Number": 14, "all_match": true, "problems": [], "Tokens": 1055}
+{"Row Number": 10, "all_match": false, "problems": [{"input": "Sodium", "extracted": "139.0 mmol/L", "note_says": "Sodium was 139 mmol/L on initial ICU laboratory testing after gastric lavage and activated charcoal at the local hospital. No sodium value before any treatment is documented.", "issue": "wrong_time_point"}], "Tokens": 1024}
+{"Row Number": 8, "all_match": false, "problems": [{"input": "Sodium", "extracted": "125.0 mEq/L", "note_says": "Serum sodium was 125 mEq/L on arrival at the receiving hospital, after admission to an outside hospital and while already receiving inotropic agents. No pretreatment sodium at the first admission is documented.", "issue": "wrong_time_point"}, {"input": "Glucose", "extracted": "378.0 mg/dL", "note_says": "Serum glucose was 378 mg/dL on arrival at the receiving hospital, after admission to an outside hospital and while already receiving inotropic agents. No pretreatment glucose at the first admission is documented.", "issue": "wrong_time_point"}], "Tokens": 1362}
+{"Row Number": 18, "all_match": true, "problems": [], "Tokens": 1504}
+{"Row Number": 16, "all_match": true, "problems": [], "Tokens": 1907}
+{"Row Number": 19, "all_match": true, "problems": [], "Tokens": 730}
+{"Row Number": 17, "all_match": false, "problems": [{"input": "Bicarbonate", "extracted": "17 mEq/L", "note_says": "Admission chemistry reports HCO3 of 17 mEq/L but also reports bicarbonate of 35.7 mEq/L; the initial ABG reports HCO3 of 35 mmol/L.", "issue": "conflicting_values_in_note"}], "Tokens": 1689}
+{"Row Number": 24, "all_match": true, "problems": [], "Tokens": 1372}
+{"Row Number": 20, "all_match": true, "problems": [], "Tokens": 1415}
+{"Row Number": 25, "all_match": true, "problems": [], "Tokens": 680}
+{"Row Number": 23, "all_match": true, "problems": [], "Tokens": 1434}
+{"Row Number": 26, "all_match": true, "problems": [], "Tokens": 1239}
+{"Row Number": 21, "all_match": true, "problems": [], "Tokens": 1473}
+{"Row Number": 22, "all_match": true, "problems": [], "Tokens": 1083}
+{"Row Number": 30, "all_match": true, "problems": [], "Tokens": 1641}
+{"Row Number": 27, "all_match": true, "problems": [], "Tokens": 1197}
+{"Row Number": 32, "all_match": true, "problems": [], "Tokens": 588}
+{"Row Number": 28, "all_match": true, "problems": [], "Tokens": 731}
+{"Row Number": 29, "all_match": true, "problems": [], "Tokens": 1390}
+{"Row Number": 33, "all_match": true, "problems": [], "Tokens": 1316}
+{"Row Number": 35, "all_match": true, "problems": [], "Tokens": 930}
+{"Row Number": 38, "all_match": true, "problems": [], "Tokens": 1014}
+{"Row Number": 34, "all_match": true, "problems": [], "Tokens": 1051}
+{"Row Number": 37, "all_match": true, "problems": [], "Tokens": 1287}
+{"Row Number": 36, "all_match": true, "problems": [], "Tokens": 1249}
+{"Row Number": 40, "all_match": true, "problems": [], "Tokens": 1066}
+{"Row Number": 42, "all_match": true, "problems": [], "Tokens": 1318}
+{"Row Number": 43, "all_match": true, "problems": [], "Tokens": 1256}
+{"Row Number": 44, "all_match": true, "problems": [], "Tokens": 1227}
+{"Row Number": 31, "all_match": false, "problems": [{"input": "Chloride", "extracted": "108 mEq/L", "note_says": "Chloride was 108 mEq/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline. No pretreatment chloride is documented.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "15 mmol/L", "note_says": "Bicarbonate was 15 mmol/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline. No pretreatment bicarbonate is documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "139 mEq/L", "note_says": "Sodium was 139 mEq/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline. No pretreatment sodium is documented.", "issue": "wrong_time_point"}], "Tokens": 1494}
+{"Row Number": 41, "all_match": true, "problems": [], "Tokens": 1680}
+{"Row Number": 46, "all_match": true, "problems": [], "Tokens": 1273}
+{"Row Number": 45, "all_match": true, "problems": [], "Tokens": 1394}
+{"Row Number": 39, "all_match": false, "problems": [{"input": "Chloride", "extracted": "100.0 mmol/L", "note_says": "Chloride was 100 mmol/L on the observation-unit admission panel, obtained after albuterol, ipratropium, and prednisone treatment. No pretreatment value is documented.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "18.0 mmol/L", "note_says": "Bicarbonate was 18 mmol/L on the observation-unit admission panel, obtained after albuterol, ipratropium, and prednisone treatment. No pretreatment value is documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "139.0 mmol/L", "note_says": "Sodium was 139 mmol/L on the observation-unit admission panel, obtained after albuterol, ipratropium, and prednisone treatment. No pretreatment value is documented.", "issue": "wrong_time_point"}], "Tokens": 1183}
+{"Row Number": 48, "all_match": true, "problems": [], "Tokens": 911}
+{"Row Number": 47, "all_match": true, "problems": [], "Tokens": 873}
+{"Row Number": 51, "all_match": true, "problems": [], "Tokens": 752}
+{"Row Number": 49, "all_match": true, "problems": [], "Tokens": 1436}
+{"Row Number": 52, "all_match": true, "problems": [], "Tokens": 1612}
+{"Row Number": 50, "all_match": true, "problems": [], "Tokens": 2323}

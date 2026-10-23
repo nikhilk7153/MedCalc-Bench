@@ -1,0 +1,738 @@
+{
+ "calculator_id": "25",
+ "calculator_name": "HAS-BLED Score for Major Bleeding Risk",
+ "mdcalc_source": "https://www.mdcalc.com/calc/807/has-bled-score-major-bleeding-risk",
+ "mdcalc_rules": "One point each, 0-9 total: Hypertension (uncontrolled, >160 mmHg systolic); Renal disease (dialysis, transplant, Cr >2.26 mg/dL or >200 umol/L); Liver disease (cirrhosis, or bilirubin >2x normal with AST/ALT/AP >3x normal); Stroke history; Prior major bleeding or predisposition to bleeding; Labile INR (unstable/high INRs, TTR <60%); Age >65; Medication usage predisposing to bleeding (aspirin, clopidogrel, NSAIDs); Alcohol use (>=8 drinks/week). MDCalc gives no definition beyond these descriptors; TIA is not listed under stroke, and anticoagulants are not listed as a drug point.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "None in scoring logic. The code uses age >65, alcohol >=8 drinks/wk and 1 point per boolean criterion, all matching MDCalc. Minor robustness point: 'alcoholic_drinks' is required (KeyError if absent) while other criteria default to absent. It is also truncated with int(float()). No current row is affected.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Not a code bug: the code scores whatever boolean is stored for 'hypertension'. The stored values still carry v1.0's 'Hypertension history' semantics in some rows, where MDCalc requires uncontrolled HTN (SBP >160). They are reported as INPUT_ERRORs.",
+   "rows_affected": [
+    "349",
+    "350",
+    "360",
+    "362"
+   ]
+  }
+ ],
+ "code_file": "calculator_implementations_verified/has_bled_score.py",
+ "dataset_conventions": [
+  "A criterion the note does not mention is absent/normal; for 'absence' criteria the criterion is met.",
+  "Values are taken at the time point the question names (admission/initial presentation before treatment) unless the question says otherwise.",
+  "GCS: a component documented as not testable gets full points.",
+  "Keep as close to v1.0 as possible; change only genuine mistakes (wrong input vs note, wrong label, unit/typo errors, contradictions). Prefer the smallest fix: correct an input if the note is clear; edit the note minimally if the note itself is ambiguous or contradictory."
+ ],
+ "rows": [
+  {
+   "row": "346",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 22-year-old female presents to the hospital with fatigue and recent headaches. She has a documented history of GERD, a kidney transplant, hypertension, evident with several recorded high blood pressure readings in the clinic. Moreover, she suffered a transient ischemic attack of her brain last year. She was solemn when she shared that she tends to drink more than moderately, admitting to a weekly average of 12 alcoholic beverages. In her medical history, there are suggestive signs of hepatic cirrhosis and confirmed renal disease. She denies using any medication known to exacerbate bleeding such as NSAIDs, anticoagulants or antiplatelet agents. Furthermore, there is no clear history of a major bleeding episode or any known coagulation disorders that predispose her to bleeding. The blood investigations, including coagulation studies, show a stable international normalized ratio (INR), and hemoglobin levels within range. The plan is to continue monitoring her closely and to adjust her therapies as needed based on the comprehensive assessment of her case.",
+   "stored_relevant_entities": "{'Stroke': True, 'Hypertension': True, 'age': [22.0, 'years'], 'Medication usage predisposing to bleeding': False, 'Liver disease criteria for the HAS-BLED rule': True, 'Number of Alcoholic Drinks Per Week': 12, 'Labile international normalized ratio': False, 'Renal disease criteria for the HAS-BLED rule': True, 'Prior major bleeding or predisposition to bleeding': False}",
+   "stored_answer": "5",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 22.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.\nThe patient has 12 drinks a week. Because the patient has at least 8 alcoholic drinks a week, we increment the score by 1, making the current score 0 + 1 = 1.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, stroke history, is reported to be present for the patient note and so we increase the score by 1, making the current score 4 + 1 = 5.\nThe issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nThe issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nHence, the patient's HAS-BLED score is 5.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "4",
+    "details": "Stroke: stored True, should be False. The note describes only a TIA, and MDCalc's item is 'Stroke history'. The one-shot example scores a TIA as stroke=false, so this row is inconsistent with it. Other items: kidney transplant gives renal=1, 12 drinks/wk gives alcohol=1, 'suggestive signs of hepatic cirrhosis' gives liver=1, HTN=1, age 22=0. Secondary ambiguity: HTN is 'several recorded high blood pressure readings' with no SBP >160 given, and cirrhosis is only 'suggestive'. Same inputs and answer as v1.0.",
+    "evidence_quote": "she suffered a transient ischemic attack of her brain last year"
+   },
+   "blind_pass": {
+    "score": 4,
+    "working": "Age>65 0; HTN 1; Renal 1; Liver 1; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 1 = 4",
+    "fields": {
+     "age": {
+      "value": [
+       22,
+       "years"
+      ],
+      "quote": "A 22-year-old female"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "a kidney transplant ... confirmed renal disease"
+     },
+     "Hypertension": {
+      "value": true,
+      "quote": "hypertension, evident with several recorded high blood pressure readings in the clinic"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "she suffered a transient ischemic attack of her brain last year"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 12,
+      "quote": "a weekly average of 12 alcoholic beverages"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "there are suggestive signs of hepatic cirrhosis"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "She denies using any medication known to exacerbate bleeding such as NSAIDs, anticoagulants or antiplatelet agents"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": false,
+      "quote": "no clear history of a major bleeding episode or any known coagulation disorders that predispose her to bleeding"
+     },
+     "Labile international normalized ratio": {
+      "value": false,
+      "quote": "show a stable international normalized ratio (INR)"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Stroke",
+      "issue": "Only a TIA is documented, not a stroke; scored 0. If TIA counted as stroke, +1.",
+      "alternative_score": 5
+     },
+     {
+      "field": "Hypertension",
+      "issue": "Hypertension asserted from 'several recorded high blood pressure readings' without stating it is uncontrolled or giving systolic >160; scored 1. If not counted, -1.",
+      "alternative_score": 3
+     },
+     {
+      "field": "Liver disease criteria for the HAS-BLED rule",
+      "issue": "Only 'suggestive signs of hepatic cirrhosis' with no confirmed diagnosis or bilirubin/enzyme values; scored 1. If not counted, -1.",
+      "alternative_score": 3
+     }
+    ]
+   }
+  },
+  {
+   "row": "348",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 57-year-old male who has been experiencing general malaise for the last few weeks presents to the clinic. His medical history is void of any stroke or hypertension incidents. In terms of his alcohol use, he admits to consuming approximately four drinks per week. His medication regimen does not include any medicines with potential bleeding risk. However, earlier lab tests pointed to abnormalities in his liver function (AST and ALT were 4 times the normal value), suggesting liver disease. Likewise, he also has evidence of kidney disease as indicated by his elevated creatinine levels and a decrease in glomerular filtration rate. His past medical records also reflect an event of significant gastrointestinal bleeding, requiring admission. Recent coagulation profiles showed a consistently maintained international normalized ratio (INR), a vital measure of blood clotting. The healthcare team is putting emphasis on monitoring his case comprehensively as the overall findings suggest complexity in his medical condition.",
+   "stored_relevant_entities": "{'Stroke': False, 'Hypertension': False, 'age': [57.0, 'years'], 'Medication usage predisposing to bleeding': False, 'Liver disease criteria for the HAS-BLED rule': True, 'Number of Alcoholic Drinks Per Week': 4, 'Labile international normalized ratio': False, 'Renal disease criteria for the HAS-BLED rule': True, 'Prior major bleeding or predisposition to bleeding': True}",
+   "stored_answer": "3",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 57.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.\nThe patient has 4 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 0.\nThe issue, hypertension, is reported to be absent for the patient and so we do not change the score, keeping the current score at 0.\nThe issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 0 + 1 = 1.\nThe issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nHence, the patient's HAS-BLED score is 3.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "3 (2 if MDCalc liver definition applied strictly)",
+    "details": "Low severity. MDCalc liver disease = cirrhosis OR bilirubin >2x normal WITH AST/ALT/AP >3x normal. The note gives AST/ALT 4x normal but no bilirubin. The author clearly means liver disease to be present ('suggesting liver disease'), so keeping 3 is reasonable, but a strict reading scores liver=0. Renal disease is also asserted without a Cr value (MDCalc: Cr >2.26 mg/dL, dialysis or transplant). The dataset accepts clinician-stated renal disease here, as in other rows. Prior GI bleed=1. Stored inputs otherwise match. Unchanged from v1.0. Suggested fix: add 'bilirubin >2x normal' and a Cr value to the note.",
+    "evidence_quote": "AST and ALT were 4 times the normal value), suggesting liver disease"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "Age>65 0; HTN 0; Renal 1; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 0; Alcohol>=8 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       57,
+       "years"
+      ],
+      "quote": "A 57-year-old male"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "His medical history is void of any stroke or hypertension incidents"
+     },
+     "Hypertension": {
+      "value": false,
+      "quote": "His medical history is void of any stroke or hypertension incidents"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 4,
+      "quote": "approximately four drinks per week"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "His medication regimen does not include any medicines with potential bleeding risk"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "AST and ALT were 4 times the normal value), suggesting liver disease"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "evidence of kidney disease as indicated by his elevated creatinine levels and a decrease in glomerular filtration rate"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": true,
+      "quote": "an event of significant gastrointestinal bleeding, requiring admission"
+     },
+     "Labile international normalized ratio": {
+      "value": false,
+      "quote": "a consistently maintained international normalized ratio (INR)"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Liver disease criteria for the HAS-BLED rule",
+      "issue": "AST/ALT 4x normal given but no bilirubin and no cirrhosis; MDCalc requires bilirubin >2x normal together with enzymes >3x. Scored 1 per note's assertion; strictly not met, -1.",
+      "alternative_score": 2
+     },
+     {
+      "field": "Renal disease criteria for the HAS-BLED rule",
+      "issue": "Kidney disease asserted from 'elevated creatinine' without a value; cannot confirm Cr >2.26 mg/dL, dialysis or transplant. If not counted, -1.",
+      "alternative_score": 2
+     }
+    ]
+   }
+  },
+  {
+   "row": "349",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 33-year-old male presents for a regular follow-up, already diagnosed with hypertension which is being managed with antihypertensive medication. His medication list also includes a specific anticoagulant recommended following a DVT he experienced post a minor surgical procedure. He reports indulging in about 4 alcoholic drinks per week but does not have any known history of liver disease. Similarly, the renal profile from his last workup did not suggest any kidney diseases. There exists no record of a past stroke event either. The international normalized ratio (INR) that came into assessment during his previous lab tests have demonstrated stability thus far. The team continues to monitor his blood pressure and other vital signs closely in light of the overall evaluation.",
+   "stored_relevant_entities": "{'Stroke': False, 'Hypertension': True, 'age': [33.0, 'years'], 'Medication usage predisposing to bleeding': True, 'Liver disease criteria for the HAS-BLED rule': False, 'Number of Alcoholic Drinks Per Week': 4, 'Labile international normalized ratio': False, 'Renal disease criteria for the HAS-BLED rule': False, 'Prior major bleeding or predisposition to bleeding': False}",
+   "stored_answer": "2",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 33.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.\nThe patient has 4 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 0.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 0 + 1 = 1.\nThe issue, liver disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nHence, the patient's HAS-BLED score is 2.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "0",
+    "details": "(1) Medication usage: stored True, should be False. The only drug named is an anticoagulant. MDCalc's drug item is antiplatelets/NSAIDs ('Aspirin, clopidogrel, NSAIDs'); anticoagulant therapy is the context of HAS-BLED, not a point. (2) Hypertension: stored True, should be False. The note says HTN is 'managed with antihypertensive medication' and gives no reading. MDCalc requires uncontrolled HTN (SBP >160), and the store carries over v1.0's 'Hypertension history' input. Everything else is 0 (age 33, 4 drinks, DVT is not a bleed, stable INR). Answer would be 1 if HTN were judged uncontrolled.",
+    "evidence_quote": "already diagnosed with hypertension which is being managed with antihypertensive medication. His medication list also includes a specific anticoagulant recommended following a DVT"
+   },
+   "blind_pass": {
+    "score": 0,
+    "working": "Age>65 0; HTN 0; Renal 0; Liver 0; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 0 = 0",
+    "fields": {
+     "age": {
+      "value": [
+       33,
+       "years"
+      ],
+      "quote": "A 33-year-old male"
+     },
+     "Hypertension": {
+      "value": false,
+      "quote": "already diagnosed with hypertension which is being managed with antihypertensive medication"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "His medication list also includes a specific anticoagulant recommended following a DVT"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 4,
+      "quote": "about 4 alcoholic drinks per week"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "does not have any known history of liver disease"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "the renal profile from his last workup did not suggest any kidney diseases"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "There exists no record of a past stroke event either"
+     },
+     "Labile international normalized ratio": {
+      "value": false,
+      "quote": "have demonstrated stability thus far"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Hypertension",
+      "issue": "Hypertension history 'managed with antihypertensive medication' with no BP values or statement of control; scored 0 (not shown uncontrolled). If counted, +1.",
+      "alternative_score": 1
+     },
+     {
+      "field": "Medication usage predisposing to bleeding",
+      "issue": "Only an anticoagulant is listed; MDCalc drug point is antiplatelets/NSAIDs, so scored 0. If anticoagulant counted, +1.",
+      "alternative_score": 1
+     }
+    ]
+   }
+  },
+  {
+   "row": "350",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old gentleman with a complex medical history recently presented to the clinic. He's had a history of stroke and uncontrolled hypertension - although his blood pressure has been consistently well-controlled in recent times. His medication regimen includes anticoagulants, initiated after his stroke. A routine panel of blood tests revealed a fluctuating international normalized ratio (INR) raising some concern. Besides, the patient admits to consuming about 5 alcoholic drinks per week. Despite his advanced age, there's no obvious renal compromise, evidenced by normal creatinine and glomerular filtration rate over time. Similarly, tests related to liver function have consistently returned normal, pointing away from any liver disease. Observations and findings have made his case a focal point of interest for the healthcare team, gearing up for a thorough examination and diligent monitoring.",
+   "stored_relevant_entities": "{'Labile international normalized ratio': True, 'Liver disease criteria for the HAS-BLED rule': False, 'Stroke': True, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 5, 'Renal disease criteria for the HAS-BLED rule': False, 'Medication usage predisposing to bleeding': True, 'age': [75.0, 'years'], 'Prior major bleeding or predisposition to bleeding': False}",
+   "stored_answer": "5",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 75.0 years old. Because the patient's age is greater than 65 years, we increment the score by 1, making the current score 0 + 1 = 1.\nThe patient has 5 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 1.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, liver disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, stroke history, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, labile inr, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 4 + 1 = 5.\nHence, the patient's HAS-BLED score is 5.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "3",
+    "details": "(1) Medication usage: stored True, should be False. Anticoagulants alone are not a HAS-BLED drug point (MDCalc: aspirin, clopidogrel, NSAIDs). (2) Hypertension: stored True, should be False. The note says BP is currently consistently well-controlled, and MDCalc requires uncontrolled HTN (SBP >160). The wording conflicts internally ('history of ... uncontrolled hypertension - although ... well-controlled'), so the answer is 4 if the history of uncontrolled HTN is counted. Valid points: stroke=1, labile INR=1, age 75=1. Alcohol 5 <8.",
+    "evidence_quote": "uncontrolled hypertension - although his blood pressure has been consistently well-controlled in recent times. His medication regimen includes anticoagulants"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "Age>65 1; HTN 0; Renal 0; Liver 0; Stroke 1; Bleeding 0; Labile INR 1; Meds 0; Alcohol>=8 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       75,
+       "years"
+      ],
+      "quote": "A 75-year-old gentleman"
+     },
+     "Stroke": {
+      "value": true,
+      "quote": "He's had a history of stroke"
+     },
+     "Hypertension": {
+      "value": false,
+      "quote": "uncontrolled hypertension - although his blood pressure has been consistently well-controlled in recent times"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "His medication regimen includes anticoagulants, initiated after his stroke"
+     },
+     "Labile international normalized ratio": {
+      "value": true,
+      "quote": "a fluctuating international normalized ratio (INR) raising some concern"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 5,
+      "quote": "about 5 alcoholic drinks per week"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "there's no obvious renal compromise, evidenced by normal creatinine and glomerular filtration rate"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "tests related to liver function have consistently returned normal, pointing away from any liver disease"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Hypertension",
+      "issue": "Contradiction: 'uncontrolled hypertension' yet 'blood pressure has been consistently well-controlled in recent times'; scored 0 on current control. If counted as uncontrolled, +1.",
+      "alternative_score": 4
+     },
+     {
+      "field": "Medication usage predisposing to bleeding",
+      "issue": "Only anticoagulants listed (not antiplatelet/NSAID); scored 0. If anticoagulant counted, +1.",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "351",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58-year-old male presents to the clinic this week. No past stroke history can be detected in his medical records. He is currently being prescribed aspirin and NSAIDs, following an incident of DVT  he endured following a routine procedure. His alcohol intake can be considered heavy, consuming up to 12 drinks per week. Most recently, his blood pressure readings have tended to be elevated at above 170 mmHg for the systolic pressure. Interesting to note, his INR has remained stable during his multiple lab tests, eliminating any concerns about its lability. He also shows laboratory evidence of chronic kidney disease, necessitating further management. This man's condition mandates comprehensive dynamic monitoring and individualized care planning given the complexity of his medical situation.",
+   "stored_relevant_entities": "{'Labile international normalized ratio': False, 'Stroke': False, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 12, 'Renal disease criteria for the HAS-BLED rule': True, 'Medication usage predisposing to bleeding': True, 'age': [58.0, 'years'], 'Prior major bleeding or predisposition to bleeding': False, 'Liver disease criteria for the HAS-BLED rule': False}",
+   "stored_answer": "4",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 58.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.\nThe patient has 12 drinks a week. Because the patient has at least 8 alcoholic drinks a week, we increment the score by 1, making the current score 0 + 1 = 1.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, liver disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nHence, the patient's HAS-BLED score is 4.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "4",
+    "details": "SBP >170 gives HTN=1; aspirin+NSAIDs gives meds=1; 12 drinks gives alcohol=1; CKD gives renal=1 (asserted with no Cr value; the dataset accepts it); age 58=0; DVT is not a bleed. Inputs match.",
+    "evidence_quote": "blood pressure readings have tended to be elevated at above 170 mmHg"
+   },
+   "blind_pass": {
+    "score": 4,
+    "working": "Age>65 0; HTN 1; Renal 1; Liver 0; Stroke 0; Bleeding 0; Labile INR 0; Meds 1; Alcohol>=8 1 = 4",
+    "fields": {
+     "age": {
+      "value": [
+       58,
+       "years"
+      ],
+      "quote": "A 58-year-old male"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "No past stroke history can be detected in his medical records"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": true,
+      "quote": "He is currently being prescribed aspirin and NSAIDs"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 12,
+      "quote": "consuming up to 12 drinks per week"
+     },
+     "Hypertension": {
+      "value": true,
+      "quote": "his blood pressure readings have tended to be elevated at above 170 mmHg for the systolic pressure"
+     },
+     "Labile international normalized ratio": {
+      "value": false,
+      "quote": "his INR has remained stable during his multiple lab tests, eliminating any concerns about its lability"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "He also shows laboratory evidence of chronic kidney disease"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Renal disease criteria for the HAS-BLED rule",
+      "issue": "'Laboratory evidence of chronic kidney disease' with no creatinine value, dialysis or transplant; CKD does not necessarily meet Cr >2.26 mg/dL. If not counted, -1.",
+      "alternative_score": 3
+     }
+    ]
+   }
+  },
+  {
+   "row": "352",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 67-year-old gentleman finds himself at the health clinic with recurrent bouts of fatigue. His health voyage is blotted with a longstanding diagnosis of hypertension, which despite efforts, seems to be poorly controlled recently. The patient does not take any blood-thinning agents or other medications known to predispose to bleeding. He admits to mild alcohol consumption, quantifying it at about three drinks per week. His medical trajectory also reveals a major bleeding episode that occurred in the past, claiming a substantial amount of hospital time. Simultaneously, liver function tests over the past few months have indicated irreversible, end stage liver fibrosis, necessitating further evaluation and intervention. However, renal pathologies remain absence in his medical dossier as the renal function records show no signs of compromise. His presentation poses several noteworthy elements for his care-continuum, requiring diligent medical management and monitoring.",
+   "stored_relevant_entities": "{'Liver disease criteria for the HAS-BLED rule': True, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 3, 'Renal disease criteria for the HAS-BLED rule': False, 'Medication usage predisposing to bleeding': False, 'age': [67.0, 'years'], 'Prior major bleeding or predisposition to bleeding': True, 'Stroke': False, 'Labile international normalized ratio': False}",
+   "stored_answer": "4",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 67.0 years old. Because the patient's age is greater than 65 years, we increment the score by 1, making the current score 0 + 1 = 1.\nThe patient has 3 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 1.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 4.\nThe issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 4.\nHence, the patient's HAS-BLED score is 4.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "4",
+    "details": "Age 67=1; poorly controlled HTN=1; prior major bleed=1; end-stage liver fibrosis (cirrhosis)=1; 3 drinks; no meds. Inputs match.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 4,
+    "working": "Age>65 1; HTN 1; Renal 0; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 0; Alcohol>=8 0 = 4",
+    "fields": {
+     "age": {
+      "value": [
+       67,
+       "years"
+      ],
+      "quote": "A 67-year-old gentleman"
+     },
+     "Hypertension": {
+      "value": true,
+      "quote": "a longstanding diagnosis of hypertension, which despite efforts, seems to be poorly controlled recently"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "The patient does not take any blood-thinning agents or other medications known to predispose to bleeding"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 3,
+      "quote": "about three drinks per week"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": true,
+      "quote": "a major bleeding episode that occurred in the past"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "irreversible, end stage liver fibrosis"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "renal pathologies remain absence in his medical dossier as the renal function records show no signs of compromise"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Hypertension",
+      "issue": "'Poorly controlled' stated but no systolic value to confirm >160 mmHg; scored 1. If not counted, -1.",
+      "alternative_score": 3
+     }
+    ]
+   }
+  },
+  {
+   "row": "354",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old man finds himself back at the primary care clinic for his routine visit. His well-documented history of uncontrolled hypertension is a notable element in his case file. However, there is no suggestion of a previous stroke episode. He admits to patronizing alcohol, averaging 9 drinks per week. Also noteworthy in his medical history are his liver and renal conditions. On the one hand, he has had numerous hospital admissions over the years with repeated indications of hepatic impairment due to ALD. His renal function has also been a concern, as demonstrated by an elevated creatinine and reduced glomerular filtration rate. Contrarily, when it comes to bleeding risk, he has never been prescribed any medication known to accelerate bleeding. His coagulation profiles are quite stable, demonstrated by a consistently normal international normalized ratio (INR). These medical intricacies necessitate a comprehensive, focused approach to his healthcare management.",
+   "stored_relevant_entities": "{'Labile international normalized ratio': False, 'Liver disease criteria for the HAS-BLED rule': True, 'Stroke': False, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 9, 'Renal disease criteria for the HAS-BLED rule': True, 'Medication usage predisposing to bleeding': False, 'age': [72.0, 'years'], 'Prior major bleeding or predisposition to bleeding': False}",
+   "stored_answer": "5",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 72.0 years old. Because the patient's age is greater than 65 years, we increment the score by 1, making the current score 0 + 1 = 1.\nThe patient has 9 drinks a week. Because the patient has at least 8 alcoholic drinks a week, we increment the score by 1, making the current score 1 + 1 = 2.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 4 + 1 = 5.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nThe issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nThe issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 5.\nHence, the patient's HAS-BLED score is 5.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "5",
+    "details": "Uncontrolled HTN=1, 9 drinks=1, ALD hepatic impairment=1, renal (elevated Cr, reduced GFR)=1, age 72=1. Liver and renal are stated without MDCalc-level values, but the clinician asserts them. Inputs match.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 5,
+    "working": "Age>65 1; HTN 1; Renal 1; Liver 1; Stroke 0; Bleeding 0; Labile INR 0; Meds 0; Alcohol>=8 1 = 5",
+    "fields": {
+     "age": {
+      "value": [
+       72,
+       "years"
+      ],
+      "quote": "A 72-year-old man"
+     },
+     "Hypertension": {
+      "value": true,
+      "quote": "His well-documented history of uncontrolled hypertension"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "there is no suggestion of a previous stroke episode"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 9,
+      "quote": "averaging 9 drinks per week"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "repeated indications of hepatic impairment due to ALD"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "demonstrated by an elevated creatinine and reduced glomerular filtration rate"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "he has never been prescribed any medication known to accelerate bleeding"
+     },
+     "Labile international normalized ratio": {
+      "value": false,
+      "quote": "a consistently normal international normalized ratio (INR)"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Liver disease criteria for the HAS-BLED rule",
+      "issue": "'Hepatic impairment due to ALD' with no cirrhosis and no bilirubin/enzyme values; MDCalc criteria not demonstrated. If not counted, -1.",
+      "alternative_score": 4
+     },
+     {
+      "field": "Renal disease criteria for the HAS-BLED rule",
+      "issue": "'Elevated creatinine' without a value; cannot confirm Cr >2.26 mg/dL. If not counted, -1.",
+      "alternative_score": 4
+     },
+     {
+      "field": "Hypertension",
+      "issue": "'History of uncontrolled hypertension' with no current systolic value to confirm >160 mmHg; scored 1. If not counted, -1.",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "356",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 78-year-old man is in the clinic once again for his regular review. His medical history is marked with hypertension, despite active measures, we are seeing a pattern of elevated blood pressure readings consistent with uncontrolled hypertension. However, he does not have a past history of stroke. His blood work frequently demonstrates an unpredictable INR, raising a concern regarding coagulation stability. Contrarily, he has been lucky to have escaped any major bleeding episodes in the past. He has kept his kidney health intact, with a well-preserved glomerular filtration rate and creatinine levels. The patient concedes that he indulges in alcohol, consuming an average of 7 drinks per week. These multifaceted elements in his medical condition warrant ongoing attention and active management.",
+   "stored_relevant_entities": "{'Labile international normalized ratio': True, 'Stroke': False, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 7, 'Renal disease criteria for the HAS-BLED rule': False, 'age': [78.0, 'years'], 'Prior major bleeding or predisposition to bleeding': False, 'Liver disease criteria for the HAS-BLED rule': False, 'Medication usage predisposing to bleeding': False}",
+   "stored_answer": "3",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 78.0 years old. Because the patient's age is greater than 65 years, we increment the score by 1, making the current score 0 + 1 = 1.\nThe patient has 7 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 1.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, liver disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.\nThe issue, labile inr, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nHence, the patient's HAS-BLED score is 3.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "3",
+    "details": "Age 78=1, uncontrolled HTN=1, labile INR=1; 7 drinks <8; no stroke or bleed. Inputs match.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "Age>65 1; HTN 1; Renal 0; Liver 0; Stroke 0; Bleeding 0; Labile INR 1; Meds 0; Alcohol>=8 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       78,
+       "years"
+      ],
+      "quote": "A 78-year-old man"
+     },
+     "Hypertension": {
+      "value": true,
+      "quote": "a pattern of elevated blood pressure readings consistent with uncontrolled hypertension"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "he does not have a past history of stroke"
+     },
+     "Labile international normalized ratio": {
+      "value": true,
+      "quote": "His blood work frequently demonstrates an unpredictable INR"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": false,
+      "quote": "he has been lucky to have escaped any major bleeding episodes in the past"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "with a well-preserved glomerular filtration rate and creatinine levels"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 7,
+      "quote": "consuming an average of 7 drinks per week"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Hypertension",
+      "issue": "Uncontrolled hypertension stated but no systolic value to confirm >160 mmHg; scored 1. If not counted, -1.",
+      "alternative_score": 2
+     }
+    ]
+   }
+  },
+  {
+   "row": "357",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 85-year-old gentleman presented to the clinic with an array of complex medical issues. His past is significantly marked by a stroke incident and a major bleeding episode that required a prolonged period of recovery. He is on antiplatelet medications for secondary prevention of stroke. His test results have indicated renal impairment - a high creatinine level and a low glomerular filtration rate are concerning markers. His liver function tests have consistently returned healthy, denying any history of associated hepatic disease. Regarding lifestyle, he enjoys an occasional cocktail, consuming about four drinks per week on average. As for his blood pressure, it is well-managed and within acceptable limits. This elderly man's assortment of health conditions makes him a noteworthy patient requiring coordinated care and closer monitoring.",
+   "stored_relevant_entities": "{'Liver disease criteria for the HAS-BLED rule': False, 'Stroke': True, 'Hypertension': False, 'Number of Alcoholic Drinks Per Week': 4, 'Renal disease criteria for the HAS-BLED rule': True, 'Medication usage predisposing to bleeding': True, 'age': [85.0, 'years'], 'Prior major bleeding or predisposition to bleeding': True, 'Labile international normalized ratio': False}",
+   "stored_answer": "5",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 85.0 years old. Because the patient's age is greater than 65 years, we increment the score by 1, making the current score 0 + 1 = 1.\nThe patient has 4 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 1.\nThe issue, hypertension, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, liver disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.\nThe issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, stroke history, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 4.\nThe issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 4 + 1 = 5.\nHence, the patient's HAS-BLED score is 5.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "5",
+    "details": "Age 85=1, stroke=1, major bleed=1, antiplatelets=1, renal impairment=1 (no Cr value; the dataset accepts it); BP well-managed, so 0. Inputs match.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 5,
+    "working": "Age>65 1; HTN 0; Renal 1; Liver 0; Stroke 1; Bleeding 1; Labile INR 0; Meds 1; Alcohol>=8 0 = 5",
+    "fields": {
+     "age": {
+      "value": [
+       85,
+       "years"
+      ],
+      "quote": "An 85-year-old gentleman"
+     },
+     "Stroke": {
+      "value": true,
+      "quote": "His past is significantly marked by a stroke incident"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": true,
+      "quote": "a major bleeding episode that required a prolonged period of recovery"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": true,
+      "quote": "He is on antiplatelet medications for secondary prevention of stroke"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "renal impairment - a high creatinine level and a low glomerular filtration rate"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": false,
+      "quote": "His liver function tests have consistently returned healthy, denying any history of associated hepatic disease"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 4,
+      "quote": "about four drinks per week on average"
+     },
+     "Hypertension": {
+      "value": false,
+      "quote": "it is well-managed and within acceptable limits"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Renal disease criteria for the HAS-BLED rule",
+      "issue": "'High creatinine' without a value; cannot confirm Cr >2.26 mg/dL, dialysis or transplant. If not counted, -1.",
+      "alternative_score": 4
+     }
+    ]
+   }
+  },
+  {
+   "row": "360",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 52-year-old man visits the clinic for follow-up, carrying a substantial medical record. He has been living with hypertension for some years, and has been doing well with controlled blood pressure readings on his antihypertensive medications. Liver function tests have been showing concerning levels, indicating liver cirrhosis. Another significant incident from the past is his major bleeding episode, requiring an inpatient stay and multiple transfusions. On the dietary front, he admits to consuming about 8 alcoholic drinks each week. He states he also regularly takes ibuprofen, generally 1-2 times per day. Regarding his coagulation profile, his International Normalized Ratio has remained within normal range. The patient's detailed assessment and case management concept will be further developed, considering this array of medical history and lifestyle practices.",
+   "stored_relevant_entities": "{'Labile international normalized ratio': False, 'Liver disease criteria for the HAS-BLED rule': True, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 8, 'Medication usage predisposing to bleeding': True, 'age': [52.0, 'years'], 'Prior major bleeding or predisposition to bleeding': True, 'Renal disease criteria for the HAS-BLED rule': False, 'Stroke': False}",
+   "stored_answer": "5",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 52.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.\nThe patient has 8 drinks a week. Because the patient has at least 8 alcoholic drinks a week, we increment the score by 1, making the current score 0 + 1 = 1.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 4.\nThe issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 4 + 1 = 5.\nHence, the patient's HAS-BLED score is 5.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "4",
+    "details": "Hypertension: stored True, should be False. BP is explicitly controlled, and MDCalc counts only uncontrolled HTN (SBP >160). This True is a v1.0 'Hypertension history' value carried over. Valid points: cirrhosis=1, major bleed=1, 8 drinks/wk (>=8)=1, ibuprofen=1.",
+    "evidence_quote": "has been doing well with controlled blood pressure readings on his antihypertensive medications"
+   },
+   "blind_pass": {
+    "score": 4,
+    "working": "Age>65 0; HTN 0; Renal 0; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 1; Alcohol>=8 1 = 4",
+    "fields": {
+     "age": {
+      "value": [
+       52,
+       "years"
+      ],
+      "quote": "A 52-year-old man"
+     },
+     "Hypertension": {
+      "value": false,
+      "quote": "has been doing well with controlled blood pressure readings on his antihypertensive medications"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "Liver function tests have been showing concerning levels, indicating liver cirrhosis"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": true,
+      "quote": "his major bleeding episode, requiring an inpatient stay and multiple transfusions"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 8,
+      "quote": "about 8 alcoholic drinks each week"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": true,
+      "quote": "regularly takes ibuprofen, generally 1-2 times per day"
+     },
+     "Labile international normalized ratio": {
+      "value": false,
+      "quote": "his International Normalized Ratio has remained within normal range"
+     }
+    },
+    "note_issues": []
+   }
+  },
+  {
+   "row": "362",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's HAS-BLED score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 61-year-old male patient with a complex medical history comes in for his routine follow-up. He has a history of hypertension but currently his blood pressure profile shows well-controlled readings (118/61). While there's no history of stroke, he had an unfortunate incidence of significant bleeding during a dental extraction. His past lab work identifies the presence of liver disease, with elevated liver function parameters and a diagnosis of liver cirrhosis. Furthermore, his renal profile indicated renal disease with abnormally high levels of creatinine (baseline 3.2 mg/dL) and decreased glomerular filtration rate. He does not regularly take aspirin, NSAIDs, or clopidogrel, and he denies any tobacco or alcohol consumption. Given the complex landscape of his health, his care plan necessitates careful consideration of all health aspects.",
+   "stored_relevant_entities": "{'Liver disease criteria for the HAS-BLED rule': True, 'Stroke': False, 'Hypertension': True, 'Number of Alcoholic Drinks Per Week': 0, 'Renal disease criteria for the HAS-BLED rule': True, 'Medication usage predisposing to bleeding': False, 'age': [61.0, 'years'], 'Prior major bleeding or predisposition to bleeding': True, 'Labile international normalized ratio': False}",
+   "stored_answer": "4",
+   "stored_explanation": "The current HAS-BLED score is 0.\nThe patient is 61.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.\nThe patient has 0 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 0.\nThe issue, hypertension, is reported to be present for the patient note and so we increase the score by 1, making the current score 0 + 1 = 1.\nThe issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.\nThe issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.\nThe issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.\nThe issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.\nThe issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 4.\nThe issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 4.\nHence, the patient's HAS-BLED score is 4.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "3",
+    "details": "Hypertension: stored True, should be False. BP is well-controlled at 118/61, and MDCalc requires uncontrolled HTN (SBP >160). This True is a v1.0 'Hypertension history' value carried over. Valid points: significant bleed=1, cirrhosis=1, Cr 3.2 >2.26 gives renal=1. Age 61; no alcohol or meds.",
+    "evidence_quote": "He has a history of hypertension but currently his blood pressure profile shows well-controlled readings (118/61)"
+   },
+   "blind_pass": {
+    "score": 3,
+    "working": "Age>65 0; HTN 0; Renal 1; Liver 1; Stroke 0; Bleeding 1; Labile INR 0; Meds 0; Alcohol>=8 0 = 3",
+    "fields": {
+     "age": {
+      "value": [
+       61,
+       "years"
+      ],
+      "quote": "A 61-year-old male patient"
+     },
+     "Hypertension": {
+      "value": false,
+      "quote": "currently his blood pressure profile shows well-controlled readings (118/61)"
+     },
+     "Stroke": {
+      "value": false,
+      "quote": "there's no history of stroke"
+     },
+     "Prior major bleeding or predisposition to bleeding": {
+      "value": true,
+      "quote": "an unfortunate incidence of significant bleeding during a dental extraction"
+     },
+     "Liver disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "elevated liver function parameters and a diagnosis of liver cirrhosis"
+     },
+     "Renal disease criteria for the HAS-BLED rule": {
+      "value": true,
+      "quote": "abnormally high levels of creatinine (baseline 3.2 mg/dL)"
+     },
+     "Medication usage predisposing to bleeding": {
+      "value": false,
+      "quote": "He does not regularly take aspirin, NSAIDs, or clopidogrel"
+     },
+     "Number of Alcoholic Drinks Per Week": {
+      "value": 0,
+      "quote": "he denies any tobacco or alcohol consumption"
+     }
+    },
+    "note_issues": []
+   }
+  }
+ ]
+}

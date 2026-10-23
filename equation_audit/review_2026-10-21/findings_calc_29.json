@@ -1,0 +1,193 @@
+{
+ "calculator_id": "29",
+ "mdcalc_source": "https://www.mdcalc.com/calc/33/psi-port-score-pneumonia-severity-index-cap",
+ "mdcalc_rules": "Points = age in years; female -10; nursing home +10; neoplastic disease +30; liver disease +20; CHF +10; cerebrovascular disease +10; renal disease +10; altered mental status +20; RR >=30 +20; SBP <90 +20; temp <35C or >39.9C (Step-1 text says >=40C) +15; pulse >=125 +10; pH <7.35 +30; BUN >=30 mg/dL (>=11 mmol/L) +20; Na <130 mmol/L +20; glucose >=250 mg/dL (>=14 mmol/L) +10; Hct <30% +10; PaO2 <60 mmHg (<8 kPa) +10; pleural effusion +10. Classes: <=70, 71-90, 91-130, >130. MDCalc page lists PaO2 only (no SaO2 <90% option, which Fine 1997 includes) and gives no definitions for comorbidities.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "No issue affecting scoring: all thresholds/points match MDCalc (temp uses >39.9 like MDCalc's input table; HR>=125, RR>=30, SBP<90, pH<7.35, BUN>=30 mg/dL, Na<130, glucose>=250 mg/dL, Hct<30, PaO2<60 mmHg/<8 kPa). Code reproduces every stored answer from stored inputs.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Glucose/BUN in mmol/L are converted with the molar mass (250 mg/dL = 13.88 mmol/L; 30 mg/dL BUN = 10.71 mmol/L), but MDCalc's SI cutoffs are >=14 mmol/L and >=11 mmol/L. This only matters for glucose 13.88-13.99 or BUN 10.71-10.99 mmol/L. No row falls in these ranges (one-shot glucose 13.21 mmol/L is below both).",
+   "rows_affected": []
+  },
+  {
+   "issue": "Oxygen criterion accepts PaO2 only (mm Hg/kPa); no SpO2/SaO2 <90% path (Fine 1997) and code crashes if partial_pressure_oxygen is missing. Every row has a PaO2.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Vitals and labs (HR, temp, pH, RR, SBP, BUN, Na, glucose, Hct) have no absent-equals-normal default; a missing key raises KeyError. All rows store every one of them.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "829",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "160",
+   "mdcalc_answer": "160 if AMS counted (intended reading); 140 if not",
+   "details": "Altered mental status is described as a past episode the patient reports, during a 'routine physical examination', so it is unclear whether AMS is present at presentation. The stored AMS=True gives 160: 25 + AMS 20 + T 34C 15 + RR 32 20 + glucose 15 mmol/L (270 mg/dL) 10 + BUN 33.21 20 + Na 123 20 + pH 7.17 30. With AMS=False the score is 140. All other inputs match the note. Suggest a minimal note edit, e.g. 'is confused on exam'.",
+   "evidence_quote": "presents at the clinic for a routine physical examination. The patient describes a recent episode of fever and altered mental state."
+  },
+  {
+   "row": "830",
+   "status": "OK",
+   "stored_answer": "174",
+   "mdcalc_answer": "174",
+   "details": "64M: renal +10, liver +20, disorientation/AMS +20, RR 34 +20, glucose 251.12 mg/dL (>=250) +10, Na 128.43 +20, pleural effusion +10; SBP 94, T 38, HR 94, BUN 26.75, pH 7.60, PaO2 75 score 0. 64+110=174.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "831",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "202",
+   "mdcalc_answer": "202 if AMS absent (stored reading); 222 if confusion counted",
+   "details": "The presenting complaint is confusion over the past week, but the note then says there is 'no change in her mental status at present'. That phrase can be read as either back to baseline or unchanged (still confused). Stored AMS=False gives 202: 77-10 + CKD 10 + CVA 10 + T 42 15 + HR 130 10 + RR 34 20 + SBP 87 20 + Na 117 20 + glucose 250.21 10 + BUN 36.75 20. Counting AMS gives 222. Suggest a clearer statement, e.g. 'she is currently alert and oriented'.",
+   "evidence_quote": "visits the outpatient clinic today for increased fatigue and confusion over the past week. She is not a nursing home resident and has no change in her mental status at present."
+  },
+  {
+   "row": "832",
+   "status": "OK",
+   "stored_answer": "173",
+   "mdcalc_answer": "173",
+   "details": "73F: AMS +20, HR 130 +10, RR 31 +20, Hct 28 +10, glucose 17 mmol/L (306 mg/dL) +10, Na 127 +20, PaO2 59 +10, effusion +10; pH 7.81, BUN 28.43, T 36, SBP 140 score 0. 73-10+110=173.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "833",
+   "status": "OK",
+   "stored_answer": "112",
+   "mdcalc_answer": "112",
+   "details": "72F: stroke +10, CHF +10, pH 7.2 +30; alert, all vitals/labs normal; renal/liver 'unclear' and CXR not reviewed treated as absent; nursing home not mentioned. 72-10+50=112.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "834",
+   "status": "OK",
+   "stored_answer": "158",
+   "mdcalc_answer": "158",
+   "details": "78M living independently: AMS +20, renal +10, neoplasia under treatment +30, BUN 30 (>=30) +20; T 99.5F=37.5C, pH 7.35 (not <7.35), glucose 7.2 mmol/L, PaO2 70, no effusion; CHF/CVD unascertained = absent. 78+80=158.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "835",
+   "status": "OK",
+   "stored_answer": "98",
+   "mdcalc_answer": "98",
+   "details": "68F nursing home +10, liver disease +20, effusion +10; vitals/labs all in normal PSI range (Na 132, pH 7.48, PaO2 92). 68-10+40=98.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "836",
+   "status": "OK",
+   "stored_answer": "170",
+   "mdcalc_answer": "170",
+   "details": "80M: AMS +20, CHF +10, neoplastic +30, pH 7.28 +30; PaO2 60 is not <60; T 100.2F=37.9C; effusion not mentioned = absent. 80+90=170.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "837",
+   "status": "OK",
+   "stored_answer": "85",
+   "mdcalc_answer": "85",
+   "details": "75F: prior stroke +10, pleural effusion +10; all else normal. 75-10+20=85.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "838",
+   "status": "OK",
+   "stored_answer": "157",
+   "mdcalc_answer": "157",
+   "details": "67M nursing home +10, confusion +20, renal +10, liver +20, pH 7.32 +30; BUN 28, Na 134 score 0. 67+90=157.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "839",
+   "status": "OK",
+   "stored_answer": "90",
+   "mdcalc_answer": "90",
+   "details": "70F: CHF (recent HF admission) +10, CVA +10, effusion +10; rest normal. 70-10+30=90.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "840",
+   "status": "OK",
+   "stored_answer": "126",
+   "mdcalc_answer": "126",
+   "details": "76M nursing home +10, renal +10, neoplastic under treatment +30; no cognitive impairment; PaO2 68, other values normal. 76+50=126.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "841",
+   "status": "OK",
+   "stored_answer": "98",
+   "mdcalc_answer": "98",
+   "details": "68F nursing home +10, AMS +20, effusion +10; rest normal. 68-10+40=98.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "842",
+   "status": "OK",
+   "stored_answer": "130",
+   "mdcalc_answer": "130",
+   "details": "80M: CKD +10, CVA +10, CHF +10, BUN 30 +20; T 38.2, HR 110 score 0; lives at home. 80+50=130.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "843",
+   "status": "OK",
+   "stored_answer": "94",
+   "mdcalc_answer": "94",
+   "details": "74F: liver disease +20, effusion +10; mental status undisturbed; HR 115 (<125). 74-10+30=94.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "844",
+   "status": "OK",
+   "stored_answer": "189",
+   "mdcalc_answer": "189",
+   "details": "79M: renal +10, active neoplasm +30, confusion/A&Ox2 +20, BUN 35 +20, pH 7.34 +30 (note calls it 'within normal limits' but 7.34 <7.35 scores). 79+110=189.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "845",
+   "status": "OK",
+   "stored_answer": "95",
+   "mdcalc_answer": "95",
+   "details": "75F nursing home +10, CHF +10, effusion +10; alert; glucose 180, BUN 27 score 0. 75-10+30=95.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "846",
+   "status": "OK",
+   "stored_answer": "101",
+   "mdcalc_answer": "101",
+   "details": "71M: CKD +10, stroke +10, CHF +10; no AMS; Na 133, HR 105 score 0; prior CXR without abnormalities = no effusion. 71+30=101.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "847",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "97",
+   "mdcalc_answer": "97 under MDCalc's wording ('history of neoplastic disease'); 67 under the Fine 1997 definition (cancer active or diagnosed within 1 year)",
+   "details": "Neoplastic disease=True rests on 'prior breast cancer', with no date or activity status. The MDCalc page says only 'history of neoplastic disease', so the stored 97 (77-10+30) agrees with MDCalc. The original PSI definition counts only cancer active at presentation or diagnosed within 1 year; a remote, treated breast cancer would not count, which gives 67. Low severity; suggest stating timing/active status in the note.",
+   "evidence_quote": "Her medical history is significant for prior breast cancer"
+  },
+  {
+   "row": "848",
+   "status": "INPUT_ERROR",
+   "stored_answer": "113",
+   "mdcalc_answer": "133",
+   "details": "Liver disease history is stored as False, but the note documents MASH (metabolic dysfunction-associated steatohepatitis), which is a chronic liver disease. The note lists it on purpose next to the stroke. Correct value: Liver disease history = True (+20). Score: 73 + CVA 10 + liver 20 + AMS (confusion, A&Ox2) 20 + effusion 10 = 133. All other inputs are correct.",
+   "evidence_quote": "The patient's medical history is indicative of both a prior stroke and MASH"
+  },
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "207",
+   "mdcalc_answer": "207",
+   "details": "72F: -10 female, nursing home +10, CHF +10, stroke +10, AMS (responds only to pain) +20, HR 128 +10, T 40.1 +15, pH 7.28 +30, SBP 75 +20, Hct 28 +10, PaO2 56 +10. RR 25, BUN 26.75, Na 135 and glucose 13.21 mmol/L (238 mg/dL, also <14 mmol/L) score 0, and there is no effusion. Total 72+135=207.",
+   "evidence_quote": ""
+  }
+ ]
+}

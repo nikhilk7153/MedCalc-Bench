@@ -1,0 +1,1 @@
+{"lab": {"average": 19.82, "std": 0.02}, "risk": {"average": 16.67, "std": 0.02}, "physical": {"average": 36.67, "std": 0.03}, "severity": {"average": 18.75, "std": 0.04}, "diagnosis": {"average": 23.33, "std": 0.05}, "date": {"average": 10.0, "std": 0.04}, "dosage": {"average": 5.0, "std": 0.03}, "overall": {"average": 21.95, "std": 0.01}}

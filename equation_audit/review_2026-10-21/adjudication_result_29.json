@@ -1,0 +1,274 @@
+{
+ "calculator_id": "29",
+ "rows": [
+  {
+   "row": "829",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "160",
+   "final_answer": "160",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "The patient describes a recent episode of fever and altered mental state.",
+    "new": "The patient describes a recent episode of fever and has an altered mental state on examination."
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "At a 'routine physical examination' the patient only 'describes a recent episode of fever and altered mental state', so AMS at presentation is unclear (AMS absent would give 140). The note's other findings are acute (RR 32, T 34 C, pH 7.17, Na 123), so the intended reading is AMS present; the edit makes it current. All other stored inputs match the note: 25 + AMS 20 + T 15 + RR 20 + glucose 15 mmol/L 10 + BUN 20 + Na 20 + pH 30 = 160.",
+   "confidence": "medium"
+  },
+  {
+   "row": "831",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "202",
+   "final_answer": "202",
+   "corrected_relevant_entities": {
+    "Hematocrit": [
+     37.0,
+     "%"
+    ],
+    "Glucose": [
+     250.21,
+     "mg/dL"
+    ],
+    "Partial pressure of oxygen": [
+     87.0,
+     "mm Hg"
+    ],
+    "Congestive Heart Failure": false,
+    "Renal disease history": true,
+    "Cerebrovascular disease history": true,
+    "Liver disease history": false,
+    "Neoplastic disease": false,
+    "pH": 7.39,
+    "Blood Urea Nitrogen (BUN)": [
+     36.75,
+     "mg/dL"
+    ],
+    "age": [
+     77.0,
+     "years"
+    ],
+    "Altered mental status": false,
+    "Temperature": [
+     40.2,
+     "degrees celsius"
+    ],
+    "Sodium": [
+     117.0,
+     "mmol/L"
+    ],
+    "Heart Rate or Pulse": [
+     130.0,
+     "beats per minute"
+    ],
+    "Pleural effusion on x-ray": false,
+    "sex": "Female",
+    "Systolic Blood Pressure": [
+     87.0,
+     "mm Hg"
+    ],
+    "respiratory rate": [
+     34.0,
+     "breaths per minute"
+    ],
+    "Nursing home resident": false
+   },
+   "note_edit": {
+    "old": "has no change in her mental status at present. Physical exam notes a temperature of 42 degrees celsius",
+    "new": "is alert and oriented at present. Physical exam notes a temperature of 40.2 degrees celsius"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "The patient comes in for 'confusion over the past week' but 'has no change in her mental status at present'. This can be read as normal now or as still confused (222). The stored AMS=False is a reasonable intent, so the edit states it plainly. '42 degrees celsius' at an outpatient visit is implausible and looks like a typo; changing it to 40.2 keeps the +15 (>39.9) and the stored answer of 202, with Temperature updated to 40.2 in the entities.",
+   "confidence": "medium"
+  },
+  {
+   "row": "833",
+   "verdict": "CORRECT",
+   "stored_answer": "112",
+   "final_answer": "112",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'History of stroke and congestive heart failure' (+10 +10). 'Alert and responsive'. pH 7.2 (+30) despite the 'mild acidemia' wording; the value still scores the same. 'Unclear' kidney/liver history and the unreviewed CXR count as absent by convention. 72-10+50=112.",
+   "confidence": "high"
+  },
+  {
+   "row": "834",
+   "verdict": "CORRECT",
+   "stored_answer": "158",
+   "final_answer": "158",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Presents to the emergency department with an altered mental status' (+20), 'renal disease' (+10), 'currently under treatment for neoplasia' (+30), BUN 30 (>=30 per MDCalc, +20). pH 7.35 is not <7.35. Unascertained cardiovascular history counts as absent. 78+80=158.",
+   "confidence": "high"
+  },
+  {
+   "row": "836",
+   "verdict": "CORRECT",
+   "stored_answer": "170",
+   "final_answer": "170",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Presents 'with fever and an altered mental status' (+20), CHF (+10), 'currently under treatment for neoplastic disease' (+30), pH 7.28 (+30). PaO2 60 is not <60. Liver/CVD history 'could not be obtained' and the missing CXR count as absent. 80+90=170.",
+   "confidence": "high"
+  },
+  {
+   "row": "838",
+   "verdict": "CORRECT",
+   "stored_answer": "157",
+   "final_answer": "157",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "He 'is brought to the ER due to recent episodes of confusion', so confusion is the presenting complaint and AMS at presentation (+20) is the natural reading. Also nursing home +10, 'chronic renal disease' +10, 'liver illness' +20, pH 7.32 +30. 67+90=157.",
+   "confidence": "medium"
+  },
+  {
+   "row": "840",
+   "verdict": "CORRECT",
+   "stored_answer": "126",
+   "final_answer": "126",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Nursing home resident (+10), 'history of renal disease' (+10), 'undergoing treatment for neoplastic disease' (+30), 'no signs of cognitive impairment'. All vitals and labs score 0, and the absent CXR counts as no effusion. 76+50=126.",
+   "confidence": "high"
+  },
+  {
+   "row": "842",
+   "verdict": "CORRECT",
+   "stored_answer": "130",
+   "final_answer": "130",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "CKD +10, 'previous cerebrovascular accident' +10, CHF +10, 'Blood Urea Nitrogen value at 30 mg/dL' (MDCalc >=30, +20). 'Lives at home with his son'. Mental status and CXR are not mentioned, so absent. 80+50=130.",
+   "confidence": "high"
+  },
+  {
+   "row": "843",
+   "verdict": "CORRECT",
+   "stored_answer": "94",
+   "final_answer": "94",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Known history of liver disease' (+20). 'Mental status appears undisturbed'. 'Recent chest X-ray demonstrates presence of pleural effusion' (+10). HR 115 <125. The odd label 'upper normal limit at 136' does not change the score. 74-10+30=94.",
+   "confidence": "high"
+  },
+  {
+   "row": "844",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "189",
+   "final_answer": "189",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "Arterial blood gas results show a pH of 7.34 and a PaO2 of 75 mm Hg, which are within normal limits.",
+    "new": "Arterial blood gas results show a pH of 7.34 and a PaO2 of 75 mm Hg."
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "The note calls 'a pH of 7.34 ... within normal limits', but 7.34 <7.35 scores +30 (stored). The label contradicts the value and could lead a reader to 159, so the label is removed. Other inputs are right: confusion with 'A&Ox2' +20, renal +10, 'active neoplastic condition' +30, BUN 35 +20. 79+110=189.",
+   "confidence": "medium"
+  },
+  {
+   "row": "846",
+   "verdict": "CORRECT",
+   "stored_answer": "101",
+   "final_answer": "101",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "CKD +10, 'prior stroke in 2018' +10, 'active diagnosis of congestive heart failure' +10. 'No sign of altered mental status today'. Living situation 'not recorded' and the prior CXR 'without any abnormalities' count as absent. 'Vital signs are within normal limits' with HR 105 is a harmless wording quirk. 71+30=101.",
+   "confidence": "high"
+  },
+  {
+   "row": "847",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "97",
+   "final_answer": "97",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "significant for prior breast cancer",
+    "new": "significant for active breast cancer"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "'Prior breast cancer' has no date or activity status. MDCalc's 'history of neoplastic disease' counts it (stored 97). Fine 1997 counts only active cancer or cancer diagnosed within 1 year, which gives 67, and the blind reviewer scored 67. Making the cancer active keeps the stored answer under both readings: 77-10+30=97.",
+   "confidence": "medium"
+  },
+  {
+   "row": "848",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "113",
+   "final_answer": "133",
+   "corrected_relevant_entities": {
+    "Heart Rate or Pulse": [
+     90.0,
+     "beats per minute"
+    ],
+    "pH": 7.48,
+    "Altered mental status": true,
+    "Systolic Blood Pressure": [
+     120.0,
+     "mm Hg"
+    ],
+    "Blood Urea Nitrogen (BUN)": [
+     24.0,
+     "mg/dL"
+    ],
+    "Renal disease history": false,
+    "Pleural effusion on x-ray": true,
+    "Cerebrovascular disease history": true,
+    "Neoplastic disease": false,
+    "Sodium": [
+     137.0,
+     "mEq/L"
+    ],
+    "Liver disease history": true,
+    "Congestive Heart Failure": false,
+    "Partial pressure of oxygen": [
+     72.0,
+     "mm Hg"
+    ],
+    "age": [
+     73.0,
+     "years"
+    ],
+    "respiratory rate": [
+     20.0,
+     "breaths per minute"
+    ],
+    "sex": "Male",
+    "Hematocrit": [
+     39.0,
+     "%"
+    ],
+    "Glucose": [
+     115.0,
+     "mg/dL"
+    ],
+    "Temperature": [
+     36.3,
+     "degrees celsius"
+    ]
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The note says 'medical history is indicative of both a prior stroke and MASH'. MASH (metabolic dysfunction-associated steatohepatitis) is chronic liver disease, but Liver disease history is stored as False. With +20: 73 + CVA 10 + liver 20 + AMS ('recent episodes of confusion', 'A&Ox2') 20 + effusion 10 = 133.",
+   "confidence": "high"
+  }
+ ]
+}

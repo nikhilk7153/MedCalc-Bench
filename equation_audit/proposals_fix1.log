@@ -1,0 +1,9 @@
+135 rows from todo_rows.csv
+proposals_fix1.jsonl: 0 cached, 135 to run
+  50/135
+  100/135
+Note Problem
+none                      69
+missing_required_input    44
+unit_typo                 20
+contradiction              2

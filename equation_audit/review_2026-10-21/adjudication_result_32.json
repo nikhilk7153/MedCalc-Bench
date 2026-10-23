@@ -1,0 +1,261 @@
+{
+ "calculator_id": "32",
+ "rows": [
+  {
+   "row": "428",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "6",
+   "final_answer": "6",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "chronic kidney disease (CKD), chronic bronchitis",
+    "new": "chronic kidney disease (CKD) with a baseline creatinine of 3.4 mg/dL, chronic bronchitis"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 60 (+2), CHF (+1), 'chronic bronchitis' (+1), 'diabetes mellitus controlled with diet and exercise' (0; the neuropathy is not attributed to diabetes). Stored moderate-severe CKD (+2) rests only on 'chronic kidney disease (CKD)', 'worsening CKD' and 'spare the patient's remaining renal function'. There is no creatinine, dialysis, transplant or uremia, so MDCalc's criterion can't be checked. The context supports the intended +2, so a minimal edit adds a qualifying creatinine (without it the score is 4).",
+   "confidence": "medium"
+  },
+  {
+   "row": "429",
+   "verdict": "CORRECT",
+   "stored_answer": "15",
+   "final_answer": "15",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 75 (+3), 'metastatic prostate cancer to the L4-L5 vertebrae' (+6), SLE (+1), Alzheimer's (+1), MI (+1), HFrEF on furosemide (+1), 'cilostazol due leg cramping' = claudication/PVD (+1). Hepatitis B since 2014 'well controlled' is ongoing chronic hepatitis, so mild liver disease (+1). Creatinine <1.0 means no CKD.",
+   "confidence": "high"
+  },
+  {
+   "row": "430",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "He was diagnosed with marfan syndrome when he was 19 years old.",
+    "new": "He was diagnosed with systemic lupus erythematosus when he was 19 years old."
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 58 (+1) and T2DM on metformin = uncomplicated (+1) are right. CAD s/p CABG with no stated MI means MI is absent by convention. CTD (+1) comes only from 'He was diagnosed with marfan syndrome'. Marfan is a heritable connective tissue disorder, not a Charlson rheumatologic CTD (SLE, PMR, MCTD, RA, polymyositis), so it scores 0. The author clearly intended a CTD point, so the minimal fix names a Charlson CTD; the alternative is an input fix to CTD=False, giving 2.",
+   "confidence": "medium"
+  },
+  {
+   "row": "431",
+   "verdict": "CORRECT",
+   "stored_answer": "9",
+   "final_answer": "9",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 55 (+1), 'type 2 diabetes which resulted in CKD' = end-organ damage (+2), 'on biweekly dialysis' = moderate-severe CKD (+2), emphysema (+1), 'pulmonary edema due to heart failure' on diuretics (+1). The gastric neuroendocrine tumors (WHO grade 2) are malignant solid tumors with no metastasis stated, so localized (+2).",
+   "confidence": "high"
+  },
+  {
+   "row": "433",
+   "verdict": "CORRECT",
+   "stored_answer": "14",
+   "final_answer": "14",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 72 (+3), 'malignant neoplasm' on chemotherapy with no metastasis stated = localized by convention (+2), cerebral ischemia/old CVA (+1), 'persistent paralysis on the left side' = hemiplegia (+2), CHF (+1), 'mild liver disease' (+1), 'establishing diabetic nephropathy' (+2). 'moderate renal insufficiency' with 'Dialysis has been mentioned' uses Charlson's 'moderate renal disease' label (+2). The reviewers' quibbles over severity labels the note states explicitly don't need action.",
+   "confidence": "medium"
+  },
+  {
+   "row": "434",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "12",
+   "final_answer": "12",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "imaging has shown prominent changes consistent with long term liver damage",
+    "new": "imaging has shown prominent changes consistent with cirrhosis with portal hypertension"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "All items but the liver are clear: age 68 (+2), lymphoma (+2), MI (+1), PAD stented (+1), peptic ulcer (+1), dementia (+1), COPD (+1), lifestyle-controlled DM (0). Liver is stored as moderate to severe (+3), but the note says only 'chronic liver disease ... prominent changes consistent with long term liver damage'. With no cirrhosis with portal hypertension, MDCalc would score that as mild (+1), giving 10. The intended severe disease is plausible, so a minimal edit makes it explicit.",
+   "confidence": "medium"
+  },
+  {
+   "row": "435",
+   "verdict": "CORRECT",
+   "stored_answer": "16",
+   "final_answer": "16",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 80 (+4), 'solid tumor 5 years ago ... in remission' = localized (+2; MDCalc has no time window), 'diagnosis of HIV/AIDS' (+6), CVA (+1), 'hints of dementia' with memory lapses and disorientation (+1, as the author intended), COPD (+1), T2DM on 'oral hypoglycemics' = uncomplicated (+1). MI, CHF, TIA, hemiplegia, PUD, CKD and liver disease are all denied.",
+   "confidence": "medium"
+  },
+  {
+   "row": "436",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "suggest a presenting sign of congestive heart failure, for which further investigation is planned in the line of diuretic therapy",
+    "new": "are signs of his congestive heart failure, for which he is on diuretic therapy"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 55 (+1), CLL (+2), CKD 'with substantial dialysis supplementation' (+2), 'undifferentiated connective tissue disease' (+1, a rheumatologic CTD), COPD (+1), PVD (+1), diet-controlled DM (0), 'indicating mild liver disease' (+1). CHF (+1) is only suspected: 'suggest a presenting sign of congestive heart failure, for which further investigation is planned'. That is not an established comorbidity, and without it the score is 9. A minimal edit makes the intended CHF definite.",
+   "confidence": "medium"
+  },
+  {
+   "row": "437",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "declining glomerular filtration rate",
+    "new": "declining glomerular filtration rate (serum creatinine 3.4 mg/dL)"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 60 (+2), COPD (+1), TIA (+1), PAD (+1), diabetic nephropathy = end-organ damage (+2), peptic ulcer (+1), 'chronic liver disease of moderate severity' (+3). Moderate-severe CKD (+2) is stored, but the note gives only 'increasing proteinuria and declining glomerular filtration rate', with no creatinine, dialysis or GFR value, so MDCalc's criterion is unverifiable (11 without it). A minimal edit adds a qualifying creatinine so the note matches the intended 13.",
+   "confidence": "medium"
+  },
+  {
+   "row": "438",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 65 (+2), MI (+1), 'heart failure management' (+1), 'diabetes ... significant end-organ damage' (+2), 'stage III colon cancer' = regional, not distant, so localized (+2), CVA with full recovery (+1), 'connective tissue disease' (+1), 'relatively stable moderate to severe disease' of the liver (+3). The note states each category explicitly.",
+   "confidence": "high"
+  },
+  {
+   "row": "439",
+   "verdict": "CORRECT",
+   "stored_answer": "11",
+   "final_answer": "11",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 75 (+3), CHF (+1), COPD (+1), PAD by ABI (+1), peptic ulcer (+1), DM 'on oral hypoglycemia, with no signs of end-organ damage' (+1), 'cognitive issues indicative of early dementia' (+1), 'left-sided weakness due to damage from a central nervous system pathology' = hemiplegia (+2). No stroke is named, so CVA is absent by convention.",
+   "confidence": "medium"
+  },
+  {
+   "row": "440",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "17",
+   "final_answer": "17",
+   "corrected_relevant_entities": {
+    "Lymphoma": false,
+    "Congestive Heart Failure": false,
+    "AIDS": true,
+    "Moderate to severe Chronic Kidney Disease": false,
+    "Diabetes mellitus": "end-organ damage",
+    "Liver disease severity": "mild",
+    "Dementia": false,
+    "Transient Ischemic Attacks History": true,
+    "Peptic ulcer disease": true,
+    "Peripheral vascular disease": false,
+    "Cerebrovascular Accident": false,
+    "Chronic Pulmonary Disease": false,
+    "age": [
+     85.0,
+     "years"
+    ],
+    "Myocardial infarction": false,
+    "Leukemia": true,
+    "Hemiplegia": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The note mentions only 'a transient ischemic attack that left him with no residual neurological deficits' and no stroke, so stored 'Cerebrovascular Accident': True is wrong and should be False. The score doesn't change because CVA/TIA share one point: age 85 (+4), TIA (+1), leukemia (+2), AIDS (+6), PUD (+1), 'proliferative diabetic retinopathy' (+2), 'chronic hepatitis' = mild (+1) = 17.",
+   "confidence": "high"
+  },
+  {
+   "row": "443",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 88 (+4), COPD (+1), prior MI (+1), 'uncontrolled diabetes has resulted in chronic kidney disease' (+2), 'creatinine of 3.5 mg/dL' (+2), polymyalgia rheumatica = CTD (+1), 'Mild liver disease' (+1, as stated), dementia (+1).",
+   "confidence": "high"
+  },
+  {
+   "row": "444",
+   "verdict": "CORRECT",
+   "stored_answer": "16",
+   "final_answer": "16",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 90 (+4), DM 'complicated by chronic kidney disease' (+2), 'creatinine of 4.0 mg/dL' (+2), lung cancer in remission = localized (+2), CLL (+2), TIA (+1). 'moderate liver disease' names Charlson's 'moderate or severe' category (+3), and the note states the severity explicitly, consistent with how the set reads stated severity labels.",
+   "confidence": "medium"
+  },
+  {
+   "row": "445",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 82 (+4), lymphoma in remission (+2), dementia (+1), COPD (+1), PUD on PPI (+1), 'hemiplegia' (+2), PAD (+1). 'well-controlled diabetes' has no diet-only statement, so it is uncomplicated (+1). CVA/TIA, CHF, MI, CKD, liver disease, leukemia and solid tumor are all denied.",
+   "confidence": "high"
+  },
+  {
+   "row": "446",
+   "verdict": "CORRECT",
+   "stored_answer": "9",
+   "final_answer": "9",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 79 (+3), heart attack (+1), 'diabetes is notable for significant renal failure' = end-organ damage (+2), TIA (+1). CKD (+2) is supported by 'significant renal failure' and 'significant decreases in kidney function, leading to a diagnosis of chronic kidney disease'. 'Renal failure' is explicit severity language for moderate-severe renal disease.",
+   "confidence": "medium"
+  },
+  {
+   "row": "447",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "15",
+   "final_answer": "14",
+   "corrected_relevant_entities": {
+    "Congestive Heart Failure": true,
+    "AIDS": false,
+    "Diabetes mellitus": "none or diet-controlled",
+    "Liver disease severity": "moderate to severe",
+    "Dementia": true,
+    "Transient Ischemic Attacks History": false,
+    "Connective tissue disease": true,
+    "Peptic ulcer disease": false,
+    "Solid tumor": "localized",
+    "Cerebrovascular Accident": true,
+    "Chronic Pulmonary Disease": false,
+    "age": [
+     76.0,
+     "years"
+    ],
+    "Leukemia": true
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The note says 'type II diabetes mellitus uncomplicated with diet management and regular exercise'. MDCalc scores diet-controlled diabetes as 'None or diet-controlled' (0), so stored 'uncomplicated' (+1) is wrong; the note's word 'uncomplicated' only means no end-organ damage. Other items are right: age 76 (+3), hepatoblastoma in remission = localized (+2), leukemia (+2), CHF (+1), dementia (+1), 'severe liver disease' (+3), CVA (+1), CTD (+1). Total 14.",
+   "confidence": "high"
+  }
+ ]
+}

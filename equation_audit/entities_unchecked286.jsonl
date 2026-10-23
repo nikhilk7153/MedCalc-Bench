@@ -1,0 +1,286 @@
+{"Row Number": 22, "all_match": true, "problems": [], "Tokens": 937}
+{"Row Number": 21, "all_match": true, "problems": [], "Tokens": 1128}
+{"Row Number": 26, "all_match": true, "problems": [], "Tokens": 862}
+{"Row Number": 24, "all_match": true, "problems": [], "Tokens": 454}
+{"Row Number": 9, "all_match": true, "problems": [], "Tokens": 1740}
+{"Row Number": 8, "all_match": true, "problems": [], "Tokens": 1755}
+{"Row Number": 33, "all_match": true, "problems": [], "Tokens": 944}
+{"Row Number": 27, "all_match": true, "problems": [], "Tokens": 553}
+{"Row Number": 30, "all_match": true, "problems": [], "Tokens": 949}
+{"Row Number": 16, "all_match": true, "problems": [], "Tokens": 1379}
+{"Row Number": 28, "all_match": true, "problems": [], "Tokens": 1160}
+{"Row Number": 37, "all_match": true, "problems": [], "Tokens": 1240}
+{"Row Number": 13, "all_match": true, "problems": [], "Tokens": 1197}
+{"Row Number": 32, "all_match": true, "problems": [], "Tokens": 1423}
+{"Row Number": 65, "all_match": true, "problems": [], "Tokens": 1842}
+{"Row Number": 38, "all_match": true, "problems": [], "Tokens": 1079}
+{"Row Number": 82, "all_match": true, "problems": [], "Tokens": 2466}
+{"Row Number": 72, "all_match": true, "problems": [], "Tokens": 1319}
+{"Row Number": 77, "all_match": true, "problems": [], "Tokens": 1009}
+{"Row Number": 106, "all_match": true, "problems": [], "Tokens": 1026}
+{"Row Number": 110, "all_match": true, "problems": [], "Tokens": 667}
+{"Row Number": 86, "all_match": true, "problems": [], "Tokens": 892}
+{"Row Number": 97, "all_match": true, "problems": [], "Tokens": 1291}
+{"Row Number": 113, "all_match": true, "problems": [], "Tokens": 1639}
+{"Row Number": 81, "all_match": false, "problems": [{"input": "weight", "extracted": [10.2, "kg"], "note_says": "Weight 10.2 kg is documented in the patient's 18-month-old description, after cataract extraction at 2 months; no pretreatment admission weight is given.", "issue": "wrong_time_point"}, {"input": "height", "extracted": [83.8, "cm"], "note_says": "Length 83.8 cm is documented in the patient's 18-month-old description, after cataract extraction at 2 months; no pretreatment admission height is given.", "issue": "wrong_time_point"}], "Tokens": 795}
+{"Row Number": 116, "all_match": true, "problems": [], "Tokens": 935}
+{"Row Number": 127, "all_match": true, "problems": [], "Tokens": 1248}
+{"Row Number": 123, "all_match": true, "problems": [], "Tokens": 1191}
+{"Row Number": 118, "all_match": true, "problems": [], "Tokens": 1327}
+{"Row Number": 130, "all_match": true, "problems": [], "Tokens": 1354}
+{"Row Number": 134, "all_match": true, "problems": [], "Tokens": 1120}
+{"Row Number": 149, "all_match": true, "problems": [], "Tokens": 770}
+{"Row Number": 115, "all_match": false, "problems": [{"input": "Calcium", "extracted": "8.76 mg/dL", "note_says": "Calcium 8.76 mg/dL is reported during the subsequent thyroid nodule/endocrine workup, not among the laboratory values documented on admission.", "issue": "wrong_time_point"}], "Tokens": 2131}
+{"Row Number": 143, "all_match": true, "problems": [], "Tokens": 1376}
+{"Row Number": 152, "all_match": true, "problems": [], "Tokens": 1156}
+{"Row Number": 112, "all_match": false, "problems": [{"input": "Albumin", "extracted": "3.4 g/dL", "note_says": "Serum albumin was 3.4 g/dL after 3 days of netilmicin and ceftriaxone, when carpopedal spasms developed. No pretreatment admission albumin is documented.", "issue": "wrong_time_point"}, {"input": "Calcium", "extracted": "7.2 mg/dL", "note_says": "Serum calcium was 7.2 mg/dL after 3 days of netilmicin and ceftriaxone, when carpopedal spasms developed. No pretreatment admission calcium is documented.", "issue": "wrong_time_point"}], "Tokens": 1011}
+{"Row Number": 159, "all_match": true, "problems": [], "Tokens": 1218}
+{"Row Number": 111, "all_match": false, "problems": [{"input": "Calcium", "extracted": "7.0 mg/dL", "note_says": "Calcium 7 mg/dL was measured at NICU admission on postnatal day 20. The first hospital admission was on day 6, when electrolytes were described as normal without a specific calcium value.", "issue": "wrong_time_point"}, {"input": "Albumin", "extracted": "1.8 g/dL", "note_says": "Albumin 1.8 g/dL was measured at NICU admission on postnatal day 20. No albumin value is documented for the first hospital admission on day 6.", "issue": "wrong_time_point"}], "Tokens": 1766}
+{"Row Number": 161, "all_match": false, "problems": [{"input": "weight", "extracted": "absent", "note_says": "The patient's weight was 54 kg at initial admission.", "issue": "omitted"}], "Tokens": 1539}
+{"Row Number": 176, "all_match": false, "problems": [{"input": "weight", "extracted": "absent", "note_says": "Her weight was 87 kg at the initial presentation, before treatment.", "issue": "omitted"}], "Tokens": 1320}
+{"Row Number": 225, "all_match": true, "problems": [], "Tokens": 1049}
+{"Row Number": 223, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note describes urinary retention, constipation, and dry mouth after a new depression medication, but does not document a suspected DVT or an alternative diagnosis assessed as equally or more likely than DVT.", "issue": "not_in_note"}], "Tokens": 783}
+{"Row Number": 226, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note documents abdominal pain, rash, and suspected disseminated viral infection, but no suspected DVT or alternative diagnosis assessed as equally or more likely to explain DVT-like symptoms at admission.", "issue": "not_in_note"}], "Tokens": 1979}
+{"Row Number": 221, "all_match": false, "problems": [{"input": "Bedridden recently >3 days", "extracted": "true", "note_says": "The note does not document that the patient was bedridden for more than 3 days before admission.", "issue": "not_in_note"}, {"input": "Major surgery within 12 weeks", "extracted": "true", "note_says": "No major surgery within 12 weeks before admission is documented. The PCI procedures occurred after admission, and CABG was not performed.", "issue": "not_in_note"}], "Tokens": 2266}
+{"Row Number": 142, "all_match": false, "problems": [{"input": "Race", "extracted": "absent", "note_says": "The patient is an Indian man (non-Black).", "issue": "omitted"}], "Tokens": 1175}
+{"Row Number": 222, "all_match": false, "problems": [{"input": "Paralysis, paresis, or recent plaster immobilization of the lower extremity", "extracted": "True", "note_says": "Left-sided hemiparesis developed six days after the initial hospital admission, after treatment had begun; it was not present at first admission.", "issue": "wrong_time_point"}, {"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note does not document an alternative diagnosis assessed as equally or more likely than DVT.", "issue": "not_in_note"}], "Tokens": 1639}
+{"Row Number": 229, "all_match": true, "problems": [], "Tokens": 1745}
+{"Row Number": 172, "all_match": false, "problems": [{"input": "height", "extracted": [157.5, "cm"], "note_says": "Height was 157.5 cm at the last examination, at age 15 years; no height at first hospital admission before treatment is documented.", "issue": "wrong_time_point"}, {"input": "weight", "extracted": null, "note_says": "Weight of 53.7 kg is documented at the last examination, at age 15 years, but is omitted from the extraction. No weight at first hospital admission before treatment is identified.", "issue": "omitted"}], "Tokens": 1083}
+{"Row Number": 227, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note describes a perianal cyst, but no suspected DVT, leg symptoms, or alternative diagnosis explaining DVT-like symptoms.", "issue": "not_in_note"}, {"input": "Active cancer", "extracted": "True", "note_says": "Only a previous basal cell carcinoma is documented. Active cancer, ongoing or recent cancer treatment, and palliation are not documented.", "issue": "not_in_note"}], "Tokens": 1061}
+{"Row Number": 228, "all_match": true, "problems": [], "Tokens": 1442}
+{"Row Number": 234, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "No suspected DVT or alternative diagnosis explaining DVT-like symptoms is documented at admission.", "issue": "not_in_note"}], "Tokens": 1188}
+{"Row Number": 231, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "No alternative diagnosis explaining suspected DVT symptoms is documented at admission. The catheter displacement occurred later during the hospital stay and is unrelated to DVT symptoms.", "issue": "not_in_note"}], "Tokens": 1097}
+{"Row Number": 235, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note documents traumatic penile and scrotal skin avulsion, but no suspected DVT, leg symptoms, or alternative diagnosis considered as likely as or more likely than DVT.", "issue": "not_in_note"}], "Tokens": 896}
+{"Row Number": 233, "all_match": true, "problems": [], "Tokens": 903}
+{"Row Number": 236, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "No suspected DVT, DVT-like symptoms, or alternative diagnosis explaining such symptoms is documented at admission.", "issue": "not_in_note"}, {"input": "Paralysis, paresis, or recent plaster immobilization of the lower extremity", "extracted": "True", "note_says": "No paralysis, paresis, or recent plaster immobilization of a lower extremity is documented.", "issue": "not_in_note"}], "Tokens": 1309}
+{"Row Number": 230, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "At initial admission, the patient had chest pain and a benign physical examination. No alternative diagnosis to DVT was documented as equally or more likely.", "issue": "not_in_note"}], "Tokens": 1489}
+{"Row Number": 238, "all_match": true, "problems": [], "Tokens": 1394}
+{"Row Number": 263, "all_match": false, "problems": [{"input": "Suspicion History", "extracted": "Slightly suspicious", "note_says": "No chest pain history or assessment of suspicion for acute coronary syndrome is documented.", "issue": "not_in_note"}, {"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "No electrocardiogram result is documented.", "issue": "not_in_note"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No troponin measurement is documented.", "issue": "not_in_note"}], "Tokens": 816}
+{"Row Number": 240, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note documents lymphadenopathy and Castleman disease, but no suspected DVT, leg symptoms, or alternative diagnosis explaining DVT-like symptoms.", "issue": "not_in_note"}], "Tokens": 1966}
+{"Row Number": 237, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": true, "note_says": "No suspected DVT, leg symptoms, or alternative diagnosis explaining DVT-like symptoms is documented. The skull lesion does not establish this criterion.", "issue": "not_in_note"}, {"input": "Active cancer", "extracted": true, "note_says": "No active cancer is documented at initial admission. The skull lesion was subsequently diagnosed as a WHO Grade I meningioma, not a documented malignancy.", "issue": "not_in_note"}], "Tokens": 1193}
+{"Row Number": 268, "all_match": false, "problems": [{"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No cardiac biomarkers were acquired during the initial illness, and no troponin result is documented.", "issue": "not_in_note"}], "Tokens": 1110}
+{"Row Number": 270, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "No ECG result is documented. Normal heart sounds do not establish a normal ECG.", "issue": "not_in_note"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No initial troponin result is documented; troponin is not included among the reported blood tests.", "issue": "not_in_note"}], "Tokens": 1338}
+{"Row Number": 267, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "No electrocardiogram result is documented.", "issue": "not_in_note"}, {"input": "Suspicion History", "extracted": "Slightly suspicious", "note_says": "No presenting chest-pain history or assessment of suspicion for acute coronary syndrome is documented.", "issue": "not_in_note"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No troponin measurement is documented.", "issue": "not_in_note"}], "Tokens": 1360}
+{"Row Number": 278, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "The initial ECG showed supraventricular tachycardia at presentation; sinus rhythm was restored only after intravenous adenosine.", "issue": "wrong_value"}], "Tokens": 908}
+{"Row Number": 265, "all_match": false, "problems": [{"input": "Hypertension history", "extracted": true, "note_says": "No history of systemic hypertension is documented. Pulmonary and portal hypertension are described, but these do not establish systemic hypertension.", "issue": "not_in_note"}, {"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "No electrocardiogram result is documented.", "issue": "not_in_note"}, {"input": "hypercholesterolemia", "extracted": true, "note_says": "Atorvastatin is listed as a home medication, but hypercholesterolemia is not documented.", "issue": "not_in_note"}, {"input": "Diabetes mellitus", "extracted": true, "note_says": "Metformin is listed as a home medication, but diabetes mellitus is not documented.", "issue": "not_in_note"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "No initial troponin value or result is documented.", "issue": "not_in_note"}], "Tokens": 1950}
+{"Row Number": 277, "all_match": false, "problems": [{"input": "Electrocardiogram Test", "extracted": "Normal", "note_says": "No initial ECG result is documented. Holter monitoring showed frequent ventricular premature complexes while lying down.", "issue": "not_in_note"}, {"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "Laboratory tests were described as normal, but troponin testing and an initial troponin result are not specifically documented.", "issue": "not_in_note"}], "Tokens": 901}
+{"Row Number": 279, "all_match": false, "problems": [{"input": "Initial troponin", "extracted": "less than or equal to normal limit", "note_says": "The note states there was no biochemical abnormality and that magnesium and potassium were normal, but does not specifically document an initial troponin result.", "issue": "not_in_note"}], "Tokens": 1224}
+{"Row Number": 284, "all_match": false, "problems": [{"input": "Platelet count", "extracted": "244000.0 \u00b5L", "note_says": "244,000/\u00b5L on the day of admission", "issue": "wrong_unit"}], "Tokens": 2495}
+{"Row Number": 302, "all_match": false, "problems": [{"input": "Temperature", "extracted": "38.4 degrees celsius", "note_says": "At admission, body temperature was 37.6 \u00b0C (ear temperature). The 38.4 \u00b0C temperature was documented at symptom onset before admission.", "issue": "wrong_time_point"}], "Tokens": 1754}
+{"Row Number": 296, "all_match": true, "problems": [], "Tokens": 1970}
+{"Row Number": 239, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "H7N9 infection with severe pneumonia and associated complications is documented, but no suspected DVT, leg symptoms, or alternative diagnosis judged as likely as DVT is documented.", "issue": "not_in_note"}], "Tokens": 1205}
+{"Row Number": 307, "all_match": true, "problems": [], "Tokens": 1474}
+{"Row Number": 300, "all_match": true, "problems": [], "Tokens": 2302}
+{"Row Number": 299, "all_match": true, "problems": [], "Tokens": 1363}
+{"Row Number": 325, "all_match": true, "problems": [], "Tokens": 1049}
+{"Row Number": 321, "all_match": true, "problems": [], "Tokens": 1243}
+{"Row Number": 326, "all_match": true, "problems": [], "Tokens": 902}
+{"Row Number": 311, "all_match": false, "problems": [{"input": "Temperature", "extracted": "39.0 degrees celsius", "note_says": "A temperature of 39\u00b0C was documented at the primary care visit 2 days before hospital presentation. Fever persisted, but no temperature measurement was documented at initial hospital presentation.", "issue": "wrong_time_point"}], "Tokens": 933}
+{"Row Number": 289, "all_match": false, "problems": [{"input": "age", "extracted": "50 years", "note_says": "The patient was 50 at the initial clinic visit in late 2010. The first documented hospital admission occurred three months after the 2013 biopsy; his exact age at admission is not stated.", "issue": "wrong_time_point"}, {"input": "Alanine aminotransferase", "extracted": "91 U/L", "note_says": "ALT was 167 U/L at hospital admission. The 91 U/L value was from the earlier clinic evaluation.", "issue": "wrong_time_point"}, {"input": "Aspartate aminotransferase", "extracted": "96 U/L", "note_says": "AST was 221 U/L at hospital admission. The 96 U/L value was from the earlier clinic evaluation.", "issue": "wrong_time_point"}, {"input": "Platelet count", "extracted": "186000/\u00b5L", "note_says": "Platelets were 186000/\u00b5L at the initial clinic evaluation. No platelet count is documented for the later hospital admission.", "issue": "wrong_time_point"}], "Tokens": 1757}
+{"Row Number": 332, "all_match": true, "problems": [], "Tokens": 1208}
+{"Row Number": 328, "all_match": true, "problems": [], "Tokens": 1470}
+{"Row Number": 322, "all_match": false, "problems": [{"input": "weight", "extracted": "7.9 kg", "note_says": "Weight was 7.9 kg on transfer for ECMO support, four weeks after first presentation and after antibiotics and other treatments. Weight at the first hospital admission before treatment is not documented.", "issue": "wrong_time_point"}], "Tokens": 2444}
+{"Row Number": 318, "all_match": false, "problems": [{"input": "Tender/swollen anterior cervical lymph nodes", "extracted": "true", "note_says": "Admission examination describes right laterocervical lymph nodes as nontender, fixed, and painful. Anterior cervical involvement is not documented.", "issue": "not_in_note"}], "Tokens": 1234}
+{"Row Number": 327, "all_match": true, "problems": [], "Tokens": 1280}
+{"Row Number": 334, "all_match": true, "problems": [], "Tokens": 1366}
+{"Row Number": 340, "all_match": true, "problems": [], "Tokens": 1212}
+{"Row Number": 366, "all_match": true, "problems": [], "Tokens": 722}
+{"Row Number": 369, "all_match": true, "problems": [], "Tokens": 1175}
+{"Row Number": 373, "all_match": true, "problems": [], "Tokens": 1157}
+{"Row Number": 374, "all_match": true, "problems": [], "Tokens": 1146}
+{"Row Number": 372, "all_match": true, "problems": [], "Tokens": 697}
+{"Row Number": 382, "all_match": true, "problems": [], "Tokens": 1592}
+{"Row Number": 381, "all_match": true, "problems": [], "Tokens": 675}
+{"Row Number": 408, "all_match": true, "problems": [], "Tokens": 712}
+{"Row Number": 304, "all_match": false, "problems": [{"input": "Temperature", "extracted": "37.0 degrees celsius", "note_says": "37.0\u00b0C was recorded at the clinic on day two, after antibiotics had been prescribed on day one. No temperature is documented at the first hospital visit on day five.", "issue": "wrong_time_point"}, {"input": "Tender/swollen anterior cervical lymph nodes", "extracted": "True", "note_says": "Two inflamed lymph nodes below the jaw were documented at the day-two clinic examination, after antibiotics had begun, and confirmed on day four. No lymph-node examination is documented at the first hospital visit.", "issue": "wrong_time_point"}, {"input": "Exudate or swelling on tonsils", "extracted": "True", "note_says": "Tonsillar white spots were reported on day one, with a membrane documented on day two and persistent white spots on day four. No tonsillar examination is documented at the first hospital visit on day five, which occurred after antibiotic treatment.", "issue": "wrong_time_point"}], "Tokens": 1189}
+{"Row Number": 413, "all_match": true, "problems": [], "Tokens": 1423}
+{"Row Number": 384, "all_match": true, "problems": [], "Tokens": 1014}
+{"Row Number": 422, "all_match": true, "problems": [], "Tokens": 626}
+{"Row Number": 420, "all_match": true, "problems": [], "Tokens": 1570}
+{"Row Number": 410, "all_match": true, "problems": [], "Tokens": 1827}
+{"Row Number": 424, "all_match": true, "problems": [], "Tokens": 1197}
+{"Row Number": 427, "all_match": true, "problems": [], "Tokens": 1029}
+{"Row Number": 453, "all_match": true, "problems": [], "Tokens": 858}
+{"Row Number": 379, "all_match": false, "problems": [{"input": "Glucose", "extracted": "250 mg/dL", "note_says": "Random blood sugar was 250 mg/dL at referral, four days after the initial fever-hospital admission and after treatment had begun. No pretreatment admission glucose value is provided.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "136 mmol/L", "note_says": "Sodium was 136 mmol/L at referral, four days after the initial fever-hospital admission and after treatment had begun. No pretreatment admission sodium value is provided.", "issue": "wrong_time_point"}], "Tokens": 1607}
+{"Row Number": 423, "all_match": true, "problems": [], "Tokens": 1454}
+{"Row Number": 470, "all_match": true, "problems": [], "Tokens": 1382}
+{"Row Number": 456, "all_match": true, "problems": [], "Tokens": 701}
+{"Row Number": 466, "all_match": false, "problems": [{"input": "Absence of cough or coryza", "extracted": "True", "note_says": "The note does not document whether cough or coryza was present or absent at admission.", "issue": "not_in_note"}], "Tokens": 1185}
+{"Row Number": 469, "all_match": true, "problems": [], "Tokens": 1459}
+{"Row Number": 471, "all_match": true, "problems": [], "Tokens": 1393}
+{"Row Number": 476, "all_match": true, "problems": [], "Tokens": 1694}
+{"Row Number": 477, "all_match": true, "problems": [], "Tokens": 1977}
+{"Row Number": 473, "all_match": false, "problems": [{"input": "Sodium", "extracted": "130.0 mEq/L", "note_says": "Sodium was 130 mEq/L at ICU transfer on the third day of hospitalization, after total parenteral nutrition. No sodium value is documented for initial hospital admission before treatment.", "issue": "wrong_time_point"}], "Tokens": 1075}
+{"Row Number": 492, "all_match": true, "problems": [], "Tokens": 1114}
+{"Row Number": 480, "all_match": true, "problems": [], "Tokens": 2256}
+{"Row Number": 450, "all_match": false, "problems": [{"input": "Symptom onset <=3 days", "extracted": "missing", "note_says": "Mouth and throat burning began immediately after ingestion approximately 90 minutes before arrival.", "issue": "omitted"}, {"input": "Absence of cough or coryza", "extracted": "true", "note_says": "Neither cough nor coryza is specifically documented as absent; the note only states that he otherwise denied other complaints.", "issue": "not_in_note"}], "Tokens": 1264}
+{"Row Number": 494, "all_match": true, "problems": [], "Tokens": 857}
+{"Row Number": 475, "all_match": false, "problems": [{"input": "weight", "extracted": "16.0 kg", "note_says": "Weight was 16 kg two weeks after admission, following a 10-kg decrease from baseline, implying an initial baseline weight of 26 kg.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "127.0 mmol/L", "note_says": "Serum electrolytes were normal at first admission; sodium of 127 mmol/L was measured two weeks later during the diabetic ketoacidosis presentation.", "issue": "wrong_time_point"}], "Tokens": 1325}
+{"Row Number": 498, "all_match": true, "problems": [], "Tokens": 1719}
+{"Row Number": 500, "all_match": true, "problems": [], "Tokens": 1799}
+{"Row Number": 495, "all_match": true, "problems": [], "Tokens": 847}
+{"Row Number": 501, "all_match": true, "problems": [], "Tokens": 1224}
+{"Row Number": 502, "all_match": true, "problems": [], "Tokens": 1240}
+{"Row Number": 503, "all_match": true, "problems": [], "Tokens": 1764}
+{"Row Number": 506, "all_match": true, "problems": [], "Tokens": 714}
+{"Row Number": 505, "all_match": true, "problems": [], "Tokens": 1855}
+{"Row Number": 507, "all_match": true, "problems": [], "Tokens": 742}
+{"Row Number": 513, "all_match": true, "problems": [], "Tokens": 1494}
+{"Row Number": 516, "all_match": true, "problems": [], "Tokens": 1468}
+{"Row Number": 493, "all_match": true, "problems": [], "Tokens": 1407}
+{"Row Number": 525, "all_match": true, "problems": [], "Tokens": 1315}
+{"Row Number": 526, "all_match": true, "problems": [], "Tokens": 1112}
+{"Row Number": 517, "all_match": true, "problems": [], "Tokens": 1425}
+{"Row Number": 528, "all_match": true, "problems": [], "Tokens": 1053}
+{"Row Number": 529, "all_match": true, "problems": [], "Tokens": 638}
+{"Row Number": 530, "all_match": true, "problems": [], "Tokens": 1333}
+{"Row Number": 532, "all_match": true, "problems": [], "Tokens": 1629}
+{"Row Number": 533, "all_match": true, "problems": [], "Tokens": 754}
+{"Row Number": 534, "all_match": true, "problems": [], "Tokens": 1614}
+{"Row Number": 540, "all_match": true, "problems": [], "Tokens": 767}
+{"Row Number": 539, "all_match": true, "problems": [], "Tokens": 715}
+{"Row Number": 512, "all_match": false, "problems": [{"input": "creatinine", "extracted": "0.65 mg/dL", "note_says": "Creatinine 0.65 mg/dL was documented during the workup of polyuria on hospital day eight, not at initial admission before treatment.", "issue": "wrong_time_point"}, {"input": "Urine sodium", "extracted": "179 mmol/L", "note_says": "Urine sodium increased from 23 to 179 mmol/L with polyuria on hospital day eight; 179 mmol/L is not a pretreatment admission value.", "issue": "wrong_time_point"}, {"input": "Urine creatinine", "extracted": "37 mg/dL", "note_says": "Urine creatinine 37 mg/dL was documented during the workup of polyuria on hospital day eight, not at initial admission before treatment.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "134 mmol/L", "note_says": "Serum sodium 134 mmol/L was documented during the workup of polyuria on hospital day eight, not at initial admission before treatment.", "issue": "wrong_time_point"}], "Tokens": 1305}
+{"Row Number": 537, "all_match": true, "problems": [], "Tokens": 1629}
+{"Row Number": 543, "all_match": true, "problems": [], "Tokens": 950}
+{"Row Number": 542, "all_match": true, "problems": [], "Tokens": 1316}
+{"Row Number": 547, "all_match": true, "problems": [], "Tokens": 1232}
+{"Row Number": 548, "all_match": true, "problems": [], "Tokens": 1567}
+{"Row Number": 551, "all_match": true, "problems": [], "Tokens": 707}
+{"Row Number": 546, "all_match": true, "problems": [], "Tokens": 1158}
+{"Row Number": 549, "all_match": true, "problems": [], "Tokens": 1449}
+{"Row Number": 572, "all_match": true, "problems": [], "Tokens": 625}
+{"Row Number": 544, "all_match": true, "problems": [], "Tokens": 1409}
+{"Row Number": 571, "all_match": true, "problems": [], "Tokens": 876}
+{"Row Number": 575, "all_match": true, "problems": [], "Tokens": 1673}
+{"Row Number": 578, "all_match": true, "problems": [], "Tokens": 1661}
+{"Row Number": 581, "all_match": true, "problems": [], "Tokens": 1124}
+{"Row Number": 584, "all_match": true, "problems": [], "Tokens": 1212}
+{"Row Number": 574, "all_match": true, "problems": [], "Tokens": 1167}
+{"Row Number": 583, "all_match": true, "problems": [], "Tokens": 1115}
+{"Row Number": 598, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": "8500.0 mm^3", "note_says": "No white blood cell count is documented.", "issue": "not_in_note"}], "Tokens": 554}
+{"Row Number": 579, "all_match": false, "problems": [{"input": "O\u2082 saturation percentage", "extracted": "88.0%", "note_says": "Oxyhemoglobin saturation was 88% while receiving 50% oxygen through a face mask; no pretreatment saturation is documented.", "issue": "wrong_time_point"}], "Tokens": 1207}
+{"Row Number": 594, "all_match": true, "problems": [], "Tokens": 1221}
+{"Row Number": 604, "all_match": true, "problems": [], "Tokens": 917}
+{"Row Number": 704, "all_match": true, "problems": [], "Tokens": 1352}
+{"Row Number": 695, "all_match": true, "problems": [], "Tokens": 931}
+{"Row Number": 705, "all_match": true, "problems": [], "Tokens": 998}
+{"Row Number": 599, "all_match": false, "problems": [{"input": "White blood cell count", "extracted": "13700.0 per L", "note_says": "13.7 \u00d7 10^4/L (137000 per L) on initial laboratory evaluation.", "issue": "wrong_value"}], "Tokens": 810}
+{"Row Number": 707, "all_match": true, "problems": [], "Tokens": 1036}
+{"Row Number": 605, "all_match": true, "problems": [], "Tokens": 1806}
+{"Row Number": 690, "all_match": false, "problems": [{"input": "height", "extracted": "164.0 cm", "note_says": "Height was 164 cm at the latest evaluation at age 29; height at first hospital admission before treatment is not documented.", "issue": "wrong_time_point"}, {"input": "weight", "extracted": "85.0 kg", "note_says": "Weight was 85 kg at the latest evaluation at age 29; weight at first hospital admission before treatment is not documented.", "issue": "wrong_time_point"}], "Tokens": 1762}
+{"Row Number": 710, "all_match": true, "problems": [], "Tokens": 1134}
+{"Row Number": 717, "all_match": true, "problems": [], "Tokens": 1304}
+{"Row Number": 714, "all_match": true, "problems": [], "Tokens": 1326}
+{"Row Number": 725, "all_match": true, "problems": [], "Tokens": 1478}
+{"Row Number": 726, "all_match": true, "problems": [], "Tokens": 659}
+{"Row Number": 721, "all_match": true, "problems": [], "Tokens": 1009}
+{"Row Number": 732, "all_match": true, "problems": [], "Tokens": 1156}
+{"Row Number": 731, "all_match": true, "problems": [], "Tokens": 959}
+{"Row Number": 733, "all_match": true, "problems": [], "Tokens": 972}
+{"Row Number": 730, "all_match": true, "problems": [], "Tokens": 1282}
+{"Row Number": 735, "all_match": true, "problems": [], "Tokens": 1211}
+{"Row Number": 738, "all_match": true, "problems": [], "Tokens": 669}
+{"Row Number": 741, "all_match": true, "problems": [], "Tokens": 1424}
+{"Row Number": 745, "all_match": true, "problems": [], "Tokens": 817}
+{"Row Number": 743, "all_match": true, "problems": [], "Tokens": 1788}
+{"Row Number": 746, "all_match": true, "problems": [], "Tokens": 1652}
+{"Row Number": 751, "all_match": true, "problems": [], "Tokens": 1151}
+{"Row Number": 750, "all_match": true, "problems": [], "Tokens": 1379}
+{"Row Number": 713, "all_match": false, "problems": [{"input": "weight", "extracted": "56.8 kg", "note_says": "Weight is documented as 56.8 kg alongside the July 2018 clinical assessment, after multiple treatments; no weight is identified for the initial pretreatment admission in July 2016.", "issue": "wrong_time_point"}, {"input": "height", "extracted": "160.0 cm", "note_says": "Height is documented as 160 cm alongside the July 2018 clinical assessment, not specifically at the initial pretreatment admission in July 2016.", "issue": "wrong_time_point"}], "Tokens": 1319}
+{"Row Number": 760, "all_match": true, "problems": [], "Tokens": 1184}
+{"Row Number": 753, "all_match": true, "problems": [], "Tokens": 1191}
+{"Row Number": 744, "all_match": false, "problems": [{"input": "Sodium", "extracted": "148.0 mEq/L", "note_says": "Sodium 148 mEq/L is from the second set of laboratory data after ICU admission, not documented at first hospital admission prior to treatment.", "issue": "wrong_time_point"}, {"input": "Chloride", "extracted": "108.0 mEq/L", "note_says": "Chloride 108 mEq/L is from the second set of laboratory data after ICU admission, not documented at first hospital admission prior to treatment.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "6.0 mEq/L", "note_says": "Carbon dioxide 6 mEq/L is from the second set of laboratory data after ICU admission, not documented at first hospital admission prior to treatment.", "issue": "wrong_time_point"}], "Tokens": 1074}
+{"Row Number": 761, "all_match": true, "problems": [], "Tokens": 1094}
+{"Row Number": 748, "all_match": false, "problems": [{"input": "Bicarbonate", "extracted": "22.0 mEq/L", "note_says": "Initial bicarbonate at the local hospital before treatment was 29 mEq/L; 22 mEq/L was measured later upon transfer to Children's Hospital.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "134.0 mEq/L", "note_says": "Initial sodium at the local hospital before treatment was 141 mEq/L; 134 mEq/L was measured later upon transfer to Children's Hospital.", "issue": "wrong_time_point"}], "Tokens": 1560}
+{"Row Number": 765, "all_match": true, "problems": [], "Tokens": 1341}
+{"Row Number": 763, "all_match": true, "problems": [], "Tokens": 1578}
+{"Row Number": 770, "all_match": true, "problems": [], "Tokens": 1648}
+{"Row Number": 766, "all_match": true, "problems": [], "Tokens": 1420}
+{"Row Number": 764, "all_match": true, "problems": [], "Tokens": 1146}
+{"Row Number": 772, "all_match": true, "problems": [], "Tokens": 1493}
+{"Row Number": 755, "all_match": true, "problems": [], "Tokens": 1062}
+{"Row Number": 769, "all_match": true, "problems": [], "Tokens": 879}
+{"Row Number": 780, "all_match": true, "problems": [], "Tokens": 1070}
+{"Row Number": 790, "all_match": true, "problems": [], "Tokens": 1701}
+{"Row Number": 791, "all_match": true, "problems": [], "Tokens": 1251}
+{"Row Number": 767, "all_match": false, "problems": [{"input": "Chloride", "extracted": "101.0 mEq/L", "note_says": "Chloride 101 mEq/L was measured during an outpatient evaluation 10 days before admission, not at first hospital admission.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "25.0 mEq/L", "note_says": "Bicarbonate 25 mEq/L was measured during an outpatient evaluation 10 days before admission, not at first hospital admission.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "138.0 mEq/L", "note_says": "Sodium 138 mEq/L was measured during an outpatient evaluation 10 days before admission, not at first hospital admission.", "issue": "wrong_time_point"}], "Tokens": 1853}
+{"Row Number": 786, "all_match": true, "problems": [], "Tokens": 1281}
+{"Row Number": 798, "all_match": true, "problems": [], "Tokens": 1123}
+{"Row Number": 804, "all_match": true, "problems": [], "Tokens": 1605}
+{"Row Number": 806, "all_match": true, "problems": [], "Tokens": 990}
+{"Row Number": 805, "all_match": true, "problems": [], "Tokens": 1234}
+{"Row Number": 807, "all_match": true, "problems": [], "Tokens": 1620}
+{"Row Number": 796, "all_match": true, "problems": [], "Tokens": 1739}
+{"Row Number": 800, "all_match": true, "problems": [], "Tokens": 1646}
+{"Row Number": 809, "all_match": true, "problems": [], "Tokens": 1119}
+{"Row Number": 810, "all_match": true, "problems": [], "Tokens": 682}
+{"Row Number": 814, "all_match": true, "problems": [], "Tokens": 1148}
+{"Row Number": 812, "all_match": true, "problems": [], "Tokens": 578}
+{"Row Number": 818, "all_match": true, "problems": [], "Tokens": 1300}
+{"Row Number": 816, "all_match": true, "problems": [], "Tokens": 1379}
+{"Row Number": 811, "all_match": true, "problems": [], "Tokens": 1158}
+{"Row Number": 815, "all_match": true, "problems": [], "Tokens": 863}
+{"Row Number": 819, "all_match": true, "problems": [], "Tokens": 1209}
+{"Row Number": 813, "all_match": true, "problems": [], "Tokens": 1069}
+{"Row Number": 822, "all_match": true, "problems": [], "Tokens": 805}
+{"Row Number": 826, "all_match": true, "problems": [], "Tokens": 1735}
+{"Row Number": 823, "all_match": true, "problems": [], "Tokens": 2391}
+{"Row Number": 820, "all_match": true, "problems": [], "Tokens": 1398}
+{"Row Number": 828, "all_match": true, "problems": [], "Tokens": 2257}
+{"Row Number": 835, "all_match": true, "problems": [], "Tokens": 864}
+{"Row Number": 833, "all_match": true, "problems": [], "Tokens": 840}
+{"Row Number": 838, "all_match": true, "problems": [], "Tokens": 844}
+{"Row Number": 841, "all_match": true, "problems": [], "Tokens": 842}
+{"Row Number": 844, "all_match": true, "problems": [], "Tokens": 861}
+{"Row Number": 837, "all_match": true, "problems": [], "Tokens": 878}
+{"Row Number": 840, "all_match": true, "problems": [], "Tokens": 837}
+{"Row Number": 843, "all_match": true, "problems": [], "Tokens": 844}
+{"Row Number": 851, "all_match": true, "problems": [], "Tokens": 543}
+{"Row Number": 850, "all_match": true, "problems": [], "Tokens": 535}
+{"Row Number": 852, "all_match": true, "problems": [], "Tokens": 471}
+{"Row Number": 853, "all_match": true, "problems": [], "Tokens": 555}
+{"Row Number": 854, "all_match": true, "problems": [], "Tokens": 553}
+{"Row Number": 859, "all_match": true, "problems": [], "Tokens": 516}
+{"Row Number": 856, "all_match": true, "problems": [], "Tokens": 545}
+{"Row Number": 855, "all_match": true, "problems": [], "Tokens": 553}
+{"Row Number": 860, "all_match": true, "problems": [], "Tokens": 542}
+{"Row Number": 865, "all_match": true, "problems": [], "Tokens": 578}
+{"Row Number": 862, "all_match": false, "problems": [{"input": "Best motor response", "extracted": "extension to pain", "note_says": "Abnormal extension in response to pain was observed during splinting of the right arm, not before treatment. No pretreatment motor response is documented.", "issue": "wrong_time_point"}], "Tokens": 610}
+{"Row Number": 867, "all_match": true, "problems": [], "Tokens": 557}
+{"Row Number": 866, "all_match": true, "problems": [], "Tokens": 547}
+{"Row Number": 868, "all_match": true, "problems": [], "Tokens": 595}
+{"Row Number": 864, "all_match": false, "problems": [{"input": "Best motor response", "extracted": "flexion to pain", "note_says": "Decorticate posture with abnormal flexion to painful stimuli was documented after intubation; no pretreatment motor response is documented.", "issue": "wrong_time_point"}, {"input": "Best verbal response", "extracted": "not testable", "note_says": "Verbal responsiveness could not be tested due to intubation. This describes the post-treatment state, not the requested admission state before treatment.", "issue": "wrong_time_point"}], "Tokens": 711}
+{"Row Number": 870, "all_match": true, "problems": [], "Tokens": 900}
+{"Row Number": 874, "all_match": true, "problems": [], "Tokens": 941}
+{"Row Number": 857, "all_match": false, "problems": [{"input": "Best motor response", "extracted": "no motor response", "note_says": "No purposeful limb movement was elicited in the emergency department after CPR and intubation had begun; no pretreatment motor assessment is documented.", "issue": "wrong_time_point"}, {"input": "Best eye response", "extracted": "no eye opening", "note_says": "No eye opening was documented in the emergency department after CPR and intubation had begun, not before treatment.", "issue": "wrong_time_point"}, {"input": "Best verbal response", "extracted": "not testable", "note_says": "Verbal responsiveness could not be evaluated because the patient had already been intubated; pretreatment verbal responsiveness is not documented.", "issue": "wrong_time_point"}], "Tokens": 874}
+{"Row Number": 893, "all_match": true, "problems": [], "Tokens": 878}
+{"Row Number": 891, "all_match": true, "problems": [], "Tokens": 849}
+{"Row Number": 842, "all_match": false, "problems": [{"input": "Heart Rate or Pulse", "extracted": [110.0, "beats per minute"], "note_says": "110 beats per minute at a routine clinic check-up; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "pH", "extracted": 7.46, "note_says": "7.46 during the clinic encounter; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Systolic Blood Pressure", "extracted": [120.0, "mm Hg"], "note_says": "120/80 mm Hg at the clinic check-up; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Blood Urea Nitrogen (BUN)", "extracted": [30.0, "mg/dL"], "note_says": "30 mg/dL during the clinic encounter; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": [139.0, "mEq/L"], "note_says": "139 mEq/L during the clinic encounter; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Partial pressure of oxygen", "extracted": [90.0, "mm Hg"], "note_says": "PaO2 of 90 mm Hg during the clinic encounter; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "respiratory rate", "extracted": [20.0, "breaths per minute"], "note_says": "20 breaths per minute at the clinic check-up; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Hematocrit", "extracted": [41.0, "%"], "note_says": "41% during the clinic encounter; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Glucose", "extracted": [105.0, "mg/dL"], "note_says": "105 mg/dL during the clinic encounter; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Temperature", "extracted": [38.2, "degrees celsius"], "note_says": "38.2 degrees Celsius at the clinic check-up; no pretreatment hospital-admission value is documented.", "issue": "wrong_time_point"}], "Tokens": 1578}
+{"Row Number": 839, "all_match": false, "problems": [{"input": "Heart Rate or Pulse", "extracted": [80.0, "beats per minute"], "note_says": "80 beats per minute at the outpatient follow-up after discharge; no pretreatment admission value is documented.", "issue": "wrong_time_point"}, {"input": "pH", "extracted": 7.36, "note_says": "pH 7.36 is reported in the follow-up encounter, not at admission before treatment.", "issue": "wrong_time_point"}, {"input": "Systolic Blood Pressure", "extracted": [140.0, "mm Hg"], "note_says": "Blood pressure is 140/85 mm Hg at follow-up; no pretreatment admission value is documented.", "issue": "wrong_time_point"}, {"input": "Blood Urea Nitrogen (BUN)", "extracted": [26.0, "mg/dL"], "note_says": "BUN 26 mg/dL is reported in the follow-up encounter, not at admission before treatment.", "issue": "wrong_time_point"}, {"input": "Pleural effusion on x-ray", "extracted": true, "note_says": "Pleural effusion is documented on the chest X-ray in the follow-up encounter; its presence at pretreatment admission is not documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": [135.0, "mEq/L"], "note_says": "Sodium 135 mEq/L is reported in the follow-up encounter, not at admission before treatment.", "issue": "wrong_time_point"}, {"input": "Partial pressure of oxygen", "extracted": [77.0, "mm Hg"], "note_says": "PaO2 77 mm Hg is reported in the follow-up encounter, not at admission before treatment.", "issue": "wrong_time_point"}, {"input": "respiratory rate", "extracted": [19.0, "breaths per minute"], "note_says": "Respiratory rate is 19 breaths per minute at follow-up; no pretreatment admission value is documented.", "issue": "wrong_time_point"}, {"input": "Hematocrit", "extracted": [44.0, "%"], "note_says": "Hematocrit 44% is reported in the follow-up encounter, not at admission before treatment.", "issue": "wrong_time_point"}, {"input": "Glucose", "extracted": [4.8, "mmol/L"], "note_says": "Glucose 4.8 mmol/L is reported in the follow-up encounter, not at admission before treatment.", "issue": "wrong_time_point"}, {"input": "Temperature", "extracted": [36.8, "degrees celsius"], "note_says": "Temperature is 36.8 degrees Celsius at follow-up; no pretreatment admission value is documented.", "issue": "wrong_time_point"}], "Tokens": 1618}
+{"Row Number": 896, "all_match": true, "problems": [], "Tokens": 939}
+{"Row Number": 897, "all_match": true, "problems": [], "Tokens": 928}
+{"Row Number": 899, "all_match": false, "problems": [{"input": "Diastolic Blood Pressure", "extracted": "82.0 mm Hg", "note_says": "70 mm Hg (blood pressure 91/70 mm Hg)", "issue": "wrong_value"}], "Tokens": 886}
+{"Row Number": 898, "all_match": true, "problems": [], "Tokens": 889}
+{"Row Number": 845, "all_match": false, "problems": [{"input": "Heart Rate or Pulse", "extracted": "82 beats per minute", "note_says": "82 beats per minute at today's routine outpatient check; no initial hospital-admission measurement is documented.", "issue": "wrong_time_point"}, {"input": "pH", "extracted": "7.4", "note_says": "7.40 during the outpatient encounter, not a documented pretreatment hospital admission.", "issue": "wrong_time_point"}, {"input": "Altered mental status", "extracted": "false", "note_says": "Mentally alert at today's outpatient examination; mental status at initial hospital admission is not documented.", "issue": "wrong_time_point"}, {"input": "Systolic Blood Pressure", "extracted": "128 mm Hg", "note_says": "128/80 mm Hg at today's outpatient examination, not a documented pretreatment hospital admission.", "issue": "wrong_time_point"}, {"input": "Blood Urea Nitrogen (BUN)", "extracted": "27 mg/dL", "note_says": "27 mg/dL during the outpatient encounter; no initial hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Pleural effusion on x-ray", "extracted": "true", "note_says": "Pleural effusion on chest X-rays from the outpatient encounter; no initial hospital-admission imaging is documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "139 mEq/L", "note_says": "139 mEq/L during the outpatient encounter; no initial hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Partial pressure of oxygen", "extracted": "80 mm Hg", "note_says": "PaO2 of 80 mm Hg during the outpatient encounter; no initial hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "respiratory rate", "extracted": "22 breaths per minute", "note_says": "22 breaths per minute at today's outpatient examination, not a documented pretreatment hospital admission.", "issue": "wrong_time_point"}, {"input": "Hematocrit", "extracted": "39%", "note_says": "39% during the outpatient encounter; no initial hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Glucose", "extracted": "180 mg/dL", "note_says": "180 mg/dL during the outpatient encounter; no initial hospital-admission value is documented.", "issue": "wrong_time_point"}, {"input": "Temperature", "extracted": "36.5 degrees celsius", "note_says": "36.5 degrees Celsius at today's outpatient examination, not a documented pretreatment hospital admission.", "issue": "wrong_time_point"}], "Tokens": 1695}
+{"Row Number": 895, "all_match": true, "problems": [], "Tokens": 977}
+{"Row Number": 900, "all_match": false, "problems": [{"input": "Systolic Blood Pressure", "extracted": "92.0 mm Hg", "note_says": "93 mm Hg (blood pressure 93/62 mm Hg)", "issue": "wrong_value"}, {"input": "Diastolic Blood Pressure", "extracted": "78.0 mm Hg", "note_says": "62 mm Hg (blood pressure 93/62 mm Hg)", "issue": "wrong_value"}], "Tokens": 960}
+{"Row Number": 901, "all_match": false, "problems": [{"input": "Diastolic Blood Pressure", "extracted": "77.0 mm Hg", "note_says": "59 mm Hg", "issue": "wrong_value"}], "Tokens": 918}
+{"Row Number": 904, "all_match": true, "problems": [], "Tokens": 916}
+{"Row Number": 907, "all_match": true, "problems": [], "Tokens": 943}
+{"Row Number": 902, "all_match": false, "problems": [{"input": "Diastolic Blood Pressure", "extracted": "78.0 mm Hg", "note_says": "Low blood pressure is documented, but no numerical diastolic blood pressure is provided.", "issue": "not_in_note"}], "Tokens": 873}
+{"Row Number": 905, "all_match": true, "problems": [], "Tokens": 946}
+{"Row Number": 906, "all_match": false, "problems": [{"input": "Systolic Blood Pressure", "extracted": "130.0 mm Hg", "note_says": "Most recent BP was 85/45; systolic pressure is 85 mm Hg.", "issue": "wrong_value"}, {"input": "Diastolic Blood Pressure", "extracted": "75.0 mm Hg", "note_says": "Most recent BP was 85/45; diastolic pressure is 45 mm Hg.", "issue": "wrong_value"}], "Tokens": 1010}
+{"Row Number": 909, "all_match": true, "problems": [], "Tokens": 1229}
+{"Row Number": 908, "all_match": true, "problems": [], "Tokens": 974}
+{"Row Number": 910, "all_match": true, "problems": [], "Tokens": 1136}
+{"Row Number": 913, "all_match": true, "problems": [], "Tokens": 1090}
+{"Row Number": 903, "all_match": true, "problems": [], "Tokens": 1012}
+{"Row Number": 915, "all_match": true, "problems": [], "Tokens": 986}
+{"Row Number": 916, "all_match": true, "problems": [], "Tokens": 985}
+{"Row Number": 917, "all_match": true, "problems": [], "Tokens": 956}
+{"Row Number": 920, "all_match": true, "problems": [], "Tokens": 980}
+{"Row Number": 923, "all_match": true, "problems": [], "Tokens": 989}
+{"Row Number": 928, "all_match": true, "problems": [], "Tokens": 999}
+{"Row Number": 914, "all_match": false, "problems": [{"input": "Surgery Type", "extracted": "none", "note_says": "A minimally invasive abdominal operation using small incisions was completed a couple of weeks ago and was described as a significant procedure.", "issue": "wrong_value"}], "Tokens": 1660}
+{"Row Number": 925, "all_match": true, "problems": [], "Tokens": 1047}
+{"Row Number": 919, "all_match": false, "problems": [{"input": "Hip, pelvis, or leg fracture in the last month", "extracted": "True", "note_says": "The patient is attending follow-up after a leg fracture, but the date of the fracture is not specified.", "issue": "not_in_note"}], "Tokens": 1119}

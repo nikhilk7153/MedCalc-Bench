@@ -1,0 +1,265 @@
+{
+ "calculator_id": "43",
+ "rows": [
+  {
+   "row": "889",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "11",
+   "final_answer": "14",
+   "corrected_relevant_entities": {
+    "On mechanical ventilation": true,
+    "Hypotension": true,
+    "Glasgow Coma Score": 9.0,
+    "creatinine": [
+     121.32,
+     "µmol/L"
+    ],
+    "Bilirubin": [
+     88.41,
+     "µmol/L"
+    ],
+    "Platelet count": [
+     140400.0,
+     "µL"
+    ],
+    "Continuous positive airway pressure": false,
+    "Systolic Blood Pressure": [
+     63,
+     "mm Hg"
+    ],
+    "Diastolic Blood Pressure": [
+     41,
+     "mm Hg"
+    ],
+    "PaO2": [
+     76.0,
+     "mm Hg"
+    ],
+    "FiO2": [
+     60.0,
+     "%"
+    ],
+    "Urine Output": [
+     0,
+     "mL/day"
+    ]
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Note states \"The patient has no urine output noted, raising concerns for renal or urinary complications\"; the 'raising concerns' clause signals anuria, and the dataset's SOFA one-shot treats \"He has no urine output at present\" as 0 mL/day. Urine Output was omitted from inputs, so renal scored only from Cr 121.32 umol/L (1.37 mg/dL, +1) instead of UO <200 mL/day (+4). Other components verified: P/F 126.7 ventilated +3, MAP 48.3 no pressors +1, GCS 9 +3, bili 5.17 mg/dL +2, plt 140.4k +1; code returns 14.",
+   "confidence": "high"
+  },
+  {
+   "row": "890",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "10",
+   "final_answer": "14",
+   "corrected_relevant_entities": {
+    "norEPINEPHrine": [
+     0.1,
+     "mcg/kg/min"
+    ],
+    "On mechanical ventilation": false,
+    "EPINEPHrine": [
+     0.1,
+     "mcg/kg/min"
+    ],
+    "DOPamine": [
+     6.32,
+     "mcg/kg/min"
+    ],
+    "Hypotension": true,
+    "Glasgow Coma Score": 10.0,
+    "creatinine": [
+     92.12,
+     "µmol/L"
+    ],
+    "Bilirubin": [
+     1.57,
+     "mg/dL"
+    ],
+    "Platelet count": [
+     88400.0,
+     "µL"
+    ],
+    "Continuous positive airway pressure": true,
+    "PaO2": [
+     90.0,
+     "mm Hg"
+    ],
+    "FiO2": [
+     41.0,
+     "%"
+    ],
+    "Urine Output": [
+     0,
+     "mL/day"
+    ]
+   },
+   "note_edit": {
+    "old": "a total bilirubin level of 1.57 mg/L",
+    "new": "a total bilirubin level of 1.57 mg/dL"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Bilirubin is written \"1.57 mg/L\" (=0.157 mg/dL, 0 pts) while the patient has \"jaundice\" and \"scleral icterus\" and the stored input already uses 1.57 mg/dL (+1): a unit typo, fixed in the note. Separately, \"Notably, there is no urine output recorded\" follows the same template as the one-shot (\"no urine output\" -> 0 mL/day) and the note goes on to discuss \"renal dysfunction\", so Urine Output [0,'mL/day'] must be added (renal +4 instead of 0 from Cr 1.04 mg/dL). Totals: P/F 219.5 on CPAP +2, dopamine 6.32/epi 0.1/norepi 0.1 +3, GCS 10 +2, bili +1, plt 88.4k +2, renal +4 = 14 (code confirms). Optional second clarifying edit if desired: \"there is no urine output recorded\" -> \"the patient is anuric, with no urine output recorded\".",
+   "confidence": "medium"
+  },
+  {
+   "row": "891",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Note says \"the patient currently is not presenting signs of hypotension\" but is on \"EPINEPHrine of 0.33 mcg/kg/min and DOPamine of 9.1 mcg/kg/min\"; SOFA cardiovascular is set by the vasopressor tier (epi >0.1 -> +4), and the code does exactly that. P/F 164 not ventilated +2, GCS 15 0, bili 7.43 +3, plt 75.3k +2, Cr 2.56 +2 = 13. The blind reviewer's alternative (CV gated on hypotension) is not MDCalc behavior.",
+   "confidence": "high"
+  },
+  {
+   "row": "892",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "No ventilation or CPAP is mentioned (\"Her FiO₂ was recorded at 71%\"), so per convention it is absent: P/F 122.5 not ventilated +2. \"normotensive and has not required vasopressors\" 0, GCS 8 +3, bili 3.32 +2, plt 87k +2, \"urine output of only 132 mL/day\" +4 = 13.",
+   "confidence": "high"
+  },
+  {
+   "row": "893",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "7",
+   "final_answer": "7",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "Thrombocytopenia is also present with a platelet count of 150000 µL.",
+    "new": "His platelet count is 150000/µL."
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "\"Thrombocytopenia is also present with a platelet count of 150000 µL\" contradicts itself: 150,000 is the boundary that scores 0 on SOFA (>=150) and is not thrombocytopenia, and the unit lacks '/'. The stored value and score (coag 0) follow the number; a minimal edit removes the label so the note cannot be read as <150k (+1, total 8). Rest verified: P/F 113 ventilated +3, no BP/pressors 0, GCS 13 +1, bili 3 +2, Cr 1.5 +1 (UO 600) = 7.",
+   "confidence": "medium"
+  },
+  {
+   "row": "895",
+   "verdict": "CORRECT",
+   "stored_answer": "9",
+   "final_answer": "9",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Note says \"she does not require mechanical ventilation\" and CPAP is never mentioned, so per convention CPAP is absent: P/F 166.7 +2. Norepi 0.06/epi 0.07 +3, GCS 11 +2, bili 1.8 +1, plt 180k 0, Cr 120 umol/L (1.36 mg/dL) +1 = 9.",
+   "confidence": "high"
+  },
+  {
+   "row": "897",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "11",
+   "final_answer": "12",
+   "corrected_relevant_entities": {
+    "Urine Output": [
+     900,
+     "mL/day"
+    ],
+    "Bilirubin": [
+     2.8,
+     "mg/dL"
+    ],
+    "creatinine": [
+     2.1,
+     "mg/dL"
+    ],
+    "Platelet count": [
+     150000.0,
+     "µL"
+    ],
+    "Diastolic Blood Pressure": [
+     60.0,
+     "mm Hg"
+    ],
+    "Glasgow Coma Score": 10.0,
+    "PaO2": [
+     80.0,
+     "mm Hg"
+    ],
+    "FiO2": [
+     50.0,
+     "%"
+    ],
+    "Systolic Blood Pressure": [
+     83.0,
+     "mm Hg"
+    ],
+    "On mechanical ventilation": false,
+    "Continuous positive airway pressure": true,
+    "DOBUTamine": [
+     2,
+     "mcg/kg/min"
+    ],
+    "DOPamine": [
+     6,
+     "mcg/kg/min"
+    ]
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Note explicitly states \"The patient is receiving a continuous positive airway pressure (CPAP) therapy, with a FiO₂ set at 50%, maintaining a PaO₂ of 80 mm Hg\", but CPAP was omitted from inputs (defaulted to False). P/F 160 on CPAP scores +3 (not +2). \"blood pressure was stable\" at 83/60 is irrelevant since dopamine 6 (>5) sets CV +3; GCS 10 +2, bili 2.8 +2, plt 150k 0, Cr 2.1 +2 -> 12 (code confirms).",
+   "confidence": "high"
+  },
+  {
+   "row": "900",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "\"He was not on mechanical ventilation\"; CPAP not mentioned so absent by convention: P/F 136 +2. Dobutamine 5, norepi 0.07, epi 0.06 -> +3; GCS 13 +1; bili 2.3 +2; \"lower than average, recorded at 160,000/µL\" scores 0 (wording quirk only, not called thrombocytopenia); Cr 2.4 +2 = 10.",
+   "confidence": "high"
+  },
+  {
+   "row": "901",
+   "verdict": "CORRECT",
+   "stored_answer": "8",
+   "final_answer": "8",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "\"He is not on mechanical ventilation\"; CPAP unmentioned -> absent: P/F 136 +2. \"EPINEPHrine infusions at rates of 0.04 mcg/kg/min\" +3; GCS 11 +2; bili 1.8 +1; plt 170k 0; Cr 1.1 0 (UO 850) = 8.",
+   "confidence": "high"
+  },
+  {
+   "row": "903",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "\"Hemodynamically, she has been stable\" (115/62) but on \"DOPamine running at 3.2 mcg/kg/min and norEPINEPHrine at 0.05 mcg/kg/min\"; vasopressors set CV +3 per MDCalc. \"She did not require mechanical ventilation\" and no CPAP -> P/F 136 +2; GCS 12 +2; bili 2.5 +2; plt 175k 0; Cr 1.8 +1 = 10.",
+   "confidence": "high"
+  },
+  {
+   "row": "906",
+   "verdict": "CORRECT",
+   "stored_answer": "9",
+   "final_answer": "9",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "\"not on mechanical ventilation\", CPAP unmentioned -> P/F 140.7 +2. Norepi 0.04/epi 0.02 +3 (BP 75/45 superseded by pressors); GCS 11 +2; bili 1.6 +1; plt 165k 0; Cr 130 umol/L (1.47 mg/dL) +1 = 9. Missing BP units are harmless.",
+   "confidence": "high"
+  }
+ ]
+}

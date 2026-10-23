@@ -1,0 +1,223 @@
+Row Number,Calculator ID,Note ID,Calculator Name,explanation,raw_answer
+21,3,pmc-6426590-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 32 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 42.0 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Serum Creatinine from µmol to mg. The mass of Serum Creatinine is 42.0 µmol. To convert 42.0 µmol of Serum Creatinine to mol, multiply by the conversion factor 1e-06, giving us 42.0 µmol Serum Creatinine * 1e-06 mol/µmol = 4.2e-05 mol Serum Creatinine. To convert from mol Serum Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 4.2e-05 mol Serum Creatinine * 113.12 g/mol = 0.004751 g Serum Creatinine. To convert 0.004751 g of Serum Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.004751 g Serum Creatinine * 1000.0 mg/g = 4.751 mg Serum Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 4.751 mg Serum Creatinine/10.0 dL = 0.4751 mg Serum Creatinine/dL. The concentration value of 42.0 µmol Serum Creatinine/L converts to 0.4751 mg Serum Creatinine/dL. Because the patient's gender is female and the creatinine concentration is less than or equal to 0.7 mg/dL, A = 0.7 and B = -0.241.
+Plugging in these values, we get 142 * (0.4751/0.7)**-0.241 * 0.9938**32 * 1.012 = 129.30045.
+Hence, the GFR value is 129.30045 ml/min/1.73 m².",
+22,3,pmc-4421172-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 57 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 366.0 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Serum Creatinine from µmol to mg. The mass of Serum Creatinine is 366.0 µmol. To convert 366.0 µmol of Serum Creatinine to mol, multiply by the conversion factor 1e-06, giving us 366.0 µmol Serum Creatinine * 1e-06 mol/µmol = 0.000366 mol Serum Creatinine. To convert from mol Serum Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.000366 mol Serum Creatinine * 113.12 g/mol = 0.041402 g Serum Creatinine. To convert 0.041402 g of Serum Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.041402 g Serum Creatinine * 1000.0 mg/g = 41.402 mg Serum Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 41.402 mg Serum Creatinine/10.0 dL = 4.1402 mg Serum Creatinine/dL. The concentration value of 366.0 µmol Serum Creatinine/L converts to 4.1402 mg Serum Creatinine/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (4.1402/0.7)**-1.2 * 0.9938**57 * 1.012 = 11.94548.
+Hence, the GFR value is 11.94548 ml/min/1.73 m².",
+23,3,pmc-6605692-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 61 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 676.0 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Serum Creatinine from µmol to mg. The mass of Serum Creatinine is 676.0 µmol. To convert 676.0 µmol of Serum Creatinine to mol, multiply by the conversion factor 1e-06, giving us 676.0 µmol Serum Creatinine * 1e-06 mol/µmol = 0.000676 mol Serum Creatinine. To convert from mol Serum Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.000676 mol Serum Creatinine * 113.12 g/mol = 0.076469 g Serum Creatinine. To convert 0.076469 g of Serum Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.076469 g Serum Creatinine * 1000.0 mg/g = 76.469 mg Serum Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 76.469 mg Serum Creatinine/10.0 dL = 7.6469 mg Serum Creatinine/dL. The concentration value of 676.0 µmol Serum Creatinine/L converts to 7.6469 mg Serum Creatinine/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (7.6469/0.9)**-1.2 * 0.9938**61 * 1.0 = 7.45479.
+Hence, the GFR value is 7.45479 ml/min/1.73 m².",
+24,3,usmle-10682,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 30 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 0.9 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (0.9/0.7)**-1.2 * 0.9938**30 * 1.012 = 88.19933.
+Hence, the GFR value is 88.19933 ml/min/1.73 m².",
+25,3,pmc-8173432-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 22 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 141.4 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Serum Creatinine from µmol to mg. The mass of Serum Creatinine is 141.4 µmol. To convert 141.4 µmol of Serum Creatinine to mol, multiply by the conversion factor 1e-06, giving us 141.4 µmol Serum Creatinine * 1e-06 mol/µmol = 0.0001414 mol Serum Creatinine. To convert from mol Serum Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.0001414 mol Serum Creatinine * 113.12 g/mol = 0.015995 g Serum Creatinine. To convert 0.015995 g of Serum Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.015995 g Serum Creatinine * 1000.0 mg/g = 15.995 mg Serum Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 15.995 mg Serum Creatinine/10.0 dL = 1.5995 mg Serum Creatinine/dL. The concentration value of 141.4 µmol Serum Creatinine/L converts to 1.5995 mg Serum Creatinine/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (1.5995/0.7)**-1.2 * 0.9938**22 * 1.012 = 46.49254.
+Hence, the GFR value is 46.49254 ml/min/1.73 m².",
+26,3,pmc-8712236-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 71 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 0.76 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (0.76/0.7)**-1.2 * 0.9938**71 * 1.012 = 83.72182.
+Hence, the GFR value is 83.72182 ml/min/1.73 m².",
+27,3,usmle-11198,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 27 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 1.78 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (1.78/0.7)**-1.2 * 0.9938**27 * 1.012 = 39.64198.
+Hence, the GFR value is 39.64198 ml/min/1.73 m².",
+28,3,pmc-6892572-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 29 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 1.7 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (1.7/0.7)**-1.2 * 0.9938**29 * 1.012 = 41.37315.
+Hence, the GFR value is 41.37315 ml/min/1.73 m².",
+29,3,pmc-3927191-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 28 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 3.0 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (3.0/0.9)**-1.2 * 0.9938**28 * 1.0 = 28.13233.
+Hence, the GFR value is 28.13233 ml/min/1.73 m².",
+30,3,pmc-2275218-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 35 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 7.0 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (7.0/0.7)**-1.2 * 0.9938**35 * 1.012 = 7.29346.
+Hence, the GFR value is 7.29346 ml/min/1.73 m².",
+31,3,pmc-8521725-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 51 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 1.33 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (1.33/0.7)**-1.2 * 0.9938**51 * 1.012 = 48.44101.
+Hence, the GFR value is 48.44101 ml/min/1.73 m².",
+32,3,pmc-7983145-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 38 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 8.9 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (8.9/0.7)**-1.2 * 0.9938**38 * 1.012 = 5.36637.
+Hence, the GFR value is 5.36637 ml/min/1.73 m².",
+33,3,pmc-8346262-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 65 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 1.4 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (1.4/0.9)**-1.2 * 0.9938**65 * 1.0 = 55.77765.
+Hence, the GFR value is 55.77765 ml/min/1.73 m².",
+34,3,usmle-4906,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 58 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 3.1 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (3.1/0.9)**-1.2 * 0.9938**58 * 1.0 = 22.44331.
+Hence, the GFR value is 22.44331 ml/min/1.73 m².",
+35,3,usmle-5468,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 33 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.
+The concentration of Serum Creatinine is 1.1 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than 0.7 mg/dL, A = 0.7 and B = -1.2.
+Plugging in these values, we get 142 * (1.1/0.7)**-1.2 * 0.9938**33 * 1.012 = 68.04278.
+Hence, the GFR value is 68.04278 ml/min/1.73 m².",
+36,3,pmc-6919406-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 70 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 134.0 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Serum Creatinine from µmol to mg. The mass of Serum Creatinine is 134.0 µmol. To convert 134.0 µmol of Serum Creatinine to mol, multiply by the conversion factor 1e-06, giving us 134.0 µmol Serum Creatinine * 1e-06 mol/µmol = 0.000134 mol Serum Creatinine. To convert from mol Serum Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.000134 mol Serum Creatinine * 113.12 g/mol = 0.015158 g Serum Creatinine. To convert 0.015158 g of Serum Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.015158 g Serum Creatinine * 1000.0 mg/g = 15.158 mg Serum Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 15.158 mg Serum Creatinine/10.0 dL = 1.5158 mg Serum Creatinine/dL. The concentration value of 134.0 µmol Serum Creatinine/L converts to 1.5158 mg Serum Creatinine/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (1.5158/0.9)**-1.2 * 0.9938**70 * 1.0 = 49.1517.
+Hence, the GFR value is 49.1517 ml/min/1.73 m².",
+37,3,pmc-4448053-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 75 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 1.62 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (1.62/0.9)**-1.2 * 0.9938**75 * 1.0 = 43.99322.
+Hence, the GFR value is 43.99322 ml/min/1.73 m².",
+38,3,pmc-7425612-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 78 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 2.31 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (2.31/0.9)**-1.2 * 0.9938**78 * 1.0 = 28.20762.
+Hence, the GFR value is 28.20762 ml/min/1.73 m².",
+39,3,pmc-5394405-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 18 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 3.0 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (3.0/0.9)**-1.2 * 0.9938**18 * 1.0 = 29.93751.
+Hence, the GFR value is 29.93751 ml/min/1.73 m².",
+40,3,pmc-7523830-1,CKD-EPI Equations for Glomerular Filtration Rate,"The formula for computing GFR is 142 x (Scr/A)**B x 0.9938**age x (gender_coefficient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coefficient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.
+The patient is 64 years old. The patient's gender is Male, and so the patient's gender coefficient is 1.0.
+The concentration of Serum Creatinine is 1.84 mg/dL. Because the patient's gender is male and the creatinine concentration is greater than 0.9 mg/dL, A = 0.9 and B = -1.2.
+Plugging in these values, we get 142 * (1.84/0.9)**-1.2 * 0.9938**64 * 1.0 = 40.43277.
+Hence, the GFR value is 40.43277 ml/min/1.73 m².",
+240,16,pmc-7111022-1,Wells' Criteria for DVT,"The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so total remains at 0.
+The issue,'bedridden recently >3 days,' is missing from the patient note and so the value is assumed to be absent from the patient. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.
+The issue,'calf swelling >3 cm compared to the other leg,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.
+The issue,'collateral (nonvaricose) superficial veins present,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.
+The issue,'entire leg swollen,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.
+From the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.
+The issue,'pitting edema, confined to symptomatic leg,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.
+From the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.
+The issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.
+From the patient's note, the criterion, 'alternative diagnosis to DVT as likely or more likely,' is present. Hence, we decrease the score by 2 and so total is 0 - 2 = -2.
+The Well's DVT score for the patient is -2.", ###STEP 1: Patient has 0 points because the patient has no history of DVT or pulmonary embolism. ###STEP 2: Patient has 1 point because the surgery type is a vascular anastomosis. ###STEP 3: Patient has 1 point because the patient has a history of cancer. ###STEP 4: Patient has 1 point because the patient has been confined to a bed for >3 days. ###STEP 5: Patient has 1 point because the patient has a score of 4 or 5 on the Charlson comorbidity index. ###STEP 6: Patient has 1 point because the patient has a history of major surgery in the past 3 months. ###STEP 7: Patient has 1 point because the patient has a score of 3 or more on the MELD score. ###STEP 8: Patient has 1 point because the patient has a history of stroke. ###STEP 9: Patient has 1 point because the patient has a history of heart failure. ###STEP 10: Patient has 1 point because the patient has a history of varicose veins. ###STEP 11: Patient has 1 point because the patient has a history of immobilization >3 days. ###STEP 12: Patient has 1 point because the patient has a history of surgery in the past 4 weeks. ###STEP 13: Patient has 1 point because the patient has a history of trauma in the past 4 weeks. ###STEP 14: Patient has 1 point because the patient has a history of pregnancy in the past 4 weeks. ###STEP 15: Patient has 1 point because the patient has a history of intravenous drug use in the past 4 weeks. ###STEP 16: Patient has 1 point because the patient has a history of a known DVT or PE. ###STEP 17: Patient has 1 point because the patient has a history of a malignancy in the past 6 months. ###STEP 18: Patient has 1 point because the patient has a history of a neurologic disease in the past 4 weeks. ###STEP 19: Patient has 1 point because the patient has a history of a cardiac disease in the past 4 weeks. ###STEP 20: Patient has 1 point because the patient has a history of a respiratory disease in the past 4 weeks. ###STEP 21: Patient has 1 point because the patient has a history of a sepsis in the past 4 weeks. ###STEP 22: Patient has 1 point because the patient has a history of a surgery in the past 3 months. ###STEP 23: Patient has 1 point because the patient has a history of a trauma in the past 3 months. ###STEP 24: Patient has 1 point because the patient has a history of a chronic leg injury in the past 4 weeks. ###STEP 25: Patient has 1 point because the patient has a history of a family member with a DVT or PE. ###STEP 26: Patient has 1 point because the patient has a history of a hypercoagulable state. ###STEP 27: Patient has 1 point because the patient has a history of a long-distance travel >3 hours in the past 4 weeks. ###STEP 28: Patient has 1 point because the patient has a history of a varicose vein. ###STEP 29: Patient has 1 point because the patient has a history of a malignancy in the past 6 months. ###STEP 30: Patient has 1 point because the patient has a history of a cardiac disease in the past 4 weeks. ###STEP 31: Patient has 1 point because the patient has a history of a respiratory disease in the past 4 weeks. ###STEP 32: Patient has 1 point because the patient has a history of a sepsis in the past 4 weeks. ###STEP 33: Patient has 1 point because the patient has a history of a surgery in the past 3 months. ###STEP 34: Patient has 1 point because the patient has a history of a trauma in the past 3 months. ###STEP 35: Patient has 1 point because the patient has a history of a chronic leg injury in the past 4 weeks. ###STEP 36: Patient has 1 point because the patient has a history of a family member with a DVT or PE. ###STEP 37: Patient has 1 point because the patient has a history of a hypercoagulable state. ###STEP 38: Patient has 1 point because the patient has a history of a long-distance travel >3 hours in the past 4 weeks. ###STEP 39: Patient has 1 point because the patient has a history of a varicose vein. ###STEP 40: Patient has 1 point because the patient has a history of a malignancy in the past 6 months. ###STEP 41: Patient has 1 point because the patient has a history of a cardiac disease in the past 4 weeks. ###STEP 42: Patient has 1 point because the patient has a history of a respiratory disease in the past 4 weeks. ###STEP 43: Patient has 1 point because the patient has a history of a sepsis in the past 4 weeks. ###STEP 44: Patient has 1 point because the patient has a history of a surgery in the past 3 months. ###STEP 45: Patient has 1 point because the patient has a history of a trauma in the past 3 months. ###STEP 46: Patient has 1 point because the patient has a history of a chronic leg injury in the past 4 weeks. ###STEP 47: Patient has 1 point because the patient has a history of a family member with a DVT or PE. ###STEP 48: Patient has 1 point because the patient has a history of a
+241,17,2,Revised Cardiac Risk Index for Pre-Operative Risk,"The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+The concentration of Pre-Operative Creatinine is 2.1 mg/dL. The patient's pre-operative creatinine is greater than 2 mg/dL, so we increment the score by one and the current total will be 3 + 1 = 4.
+
+The cardiac risk index score is 4.",
+304,20,pmc-8169128-1,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The current Centor score is 0.
+The patient is 29.0 years old. Because the age is in between 15 and 44 years, the score does not change, keeping the score at 0.
+The patient's temperature is 37.0 degrees celsius. The patient's temperature is less than or equal to 38 degrees Celsius, and so we do not make any changes to the score, keeping the score at 0.
+The patient note reports an absence of cough and so we add 1 point to the score, making the current score 0 + 1 = 1.
+The patient note reports 'tender/swollen anterior cervical lymph nodes' as present for the patient. Hence, we increase the score by 1, making the current score 1 + 1 = 2.
+The patient note reports 'exudate or swelling on tonsils' as present for the patient. Hence, we increase the score by 1, making the current score 2 + 1 = 3.
+Hence, the Centor score for the patient is 3.",
+318,20,pmc-5745701-1,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The current Centor score is 0.
+The patient is 66.0 years old. Because the age is greater than 44 years, we decrease the score by one point, making the score 0 - 1 = -1.
+The patient's temperature is 37.5 degrees celsius. The patient's temperature is less than or equal to 38 degrees Celsius, and so we do not make any changes to the score, keeping the score at -1.
+The patient note reports an absence of cough and so we add 1 point to the score, making the current score -1 + 1 = 0.
+The patient note reports 'tender/swollen anterior cervical lymph nodes' as present for the patient. Hence, we increase the score by 1, making the current score 0 + 1 = 1.
+The patient note reports 'exudate or swelling on tonsils' as absent for the patient. Hence, we do not change the score, keeping the current score at 1.
+Hence, the Centor score for the patient is 1.",
+350,25,6,HAS-BLED Score for Major Bleeding Risk,"The current HAS-BLED score is 0.
+The patient is 75.0 years old. Because the patient's age is greater than 65 years, we increment the score by 1, making the current score 0 + 1 = 1.
+The patient has 5 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 1.
+The issue, hypertension, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.
+The issue, liver disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.
+The issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.
+The issue, stroke history, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.
+The issue, prior bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.
+The issue, labile inr, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.
+The issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.
+Hence, the patient's HAS-BLED score is 4.",
+360,25,16,HAS-BLED Score for Major Bleeding Risk,"The current HAS-BLED score is 0.
+The patient is 52.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.
+The patient has 8 drinks a week. Because the patient has at least 8 alcoholic drinks a week, we increment the score by 1, making the current score 0 + 1 = 1.
+The issue, hypertension, is reported to be absent for the patient and so we do not change the score, keeping the current score at 1.
+The issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.
+The issue, renal disease, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.
+The issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.
+The issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.
+The issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.
+The issue, medications for bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 3 + 1 = 4.
+Hence, the patient's HAS-BLED score is 4.",
+362,25,18,HAS-BLED Score for Major Bleeding Risk,"The current HAS-BLED score is 0.
+The patient is 61.0 years old. Because the patient's age is less than 66 years, we don't change the score, keeping the current score at 0.
+The patient has 0 drinks a week. Because the patient has less than 8 alcoholic drinks a week, we don't change the score, keeping the current score at 0.
+The issue, hypertension, is reported to be absent for the patient and so we do not change the score, keeping the current score at 0.
+The issue, liver disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 0 + 1 = 1.
+The issue, renal disease, is reported to be present for the patient note and so we increase the score by 1, making the current score 1 + 1 = 2.
+The issue, stroke history, is reported to be absent for the patient and so we do not change the score, keeping the current score at 2.
+The issue, prior bleeding, is reported to be present for the patient note and so we increase the score by 1, making the current score 2 + 1 = 3.
+The issue, labile inr, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.
+The issue, medications for bleeding, is reported to be absent for the patient and so we do not change the score, keeping the current score at 3.
+Hence, the patient's HAS-BLED score is 3.",
+447,32,21,Charlson Comorbidity Index (CCI),"The current CCI is value is 0.
+The patient is 76.0 years old. Because the patient's age is between 70 and 79, we add 3 points to the score, making the current total = 0 + 3 = 3.
+The issue, 'Myocardial infarction,' is not mentioned in the patient note and so we assume it to be absent for the patient. We do not add any points to the score, keeping the current total at 3.
+ The issue,'Congestive heart failure,' is present for the patient and so we add 1 point to the score, making the current total 3 + 1 = 4.
+The issue, 'Peripheral vascular disease,' is not mentioned in the patient note and so we assume it to be absent for the patient. We do not add any points to the score, keeping the current total at 4.
+At least one of transient ischemic attack or cerebral vascular accident must be present in the patient for a point to be added to the current total.
+Transient ischemic attacks is determined to be absent for the patient.
+Cerebral vascular accident is determined to be present for the patient.
+Because at least one of the issues is determined to be present for the patient, we add 1 point to the score, making the current total 4 + 1 = 5.
+ The issue,'Connective tissue diease,' is present for the patient and so we add 1 point to the score, making the current total 5 + 1 = 6.
+ The issue,'Dementia,' is present for the patient and so we add 1 point to the score, making the current total 6 + 1 = 7.
+The issue, 'Chronic obstructive pulmonary disease,' is determined to be absent for the patient and so we do not add any points to the score, keeping the current total at 7.
+The issue, 'Hemiplegia,' is not mentioned in the patient note and so we assume it to be absent for the patient. We do not add any points to the score, keeping the current total at 7.
+The issue, 'Peptic ulcer disease,' is determined to be absent for the patient and so we do not add any points to the score, keeping the current total at 7.
+The patient's liver disease is determined to be 'moderate to severe' and so we add 3 points to the score, making the current total 7 + 3 = 10.
+The patient's diabetes mellitus is determined to be 'none or diet-controlled' and so we add 0 point to the score, keeping the current total at 10.
+The issue, 'Moderate to severe chronic kidney disease,' is not mentioned in the patient note and so we assume it to be absent for the patient. We do not add any points to the score, keeping the current total at 10.
+The patient's solid tumor is determined to be 'localized' and so we add 2 points to the score, making the current total 10 + 2 = 12.
+The issue, 'Leukemia,' is determined to be present for the patient and so we add 2 points to the score, making the current total 12 + 2 = 14.
+The issue, 'Lymphoma,' is not mentioned in the patient note and so we assume it to be absent for the patient. We do not add any points to the score, keeping the current total at 14.
+The issue, 'AIDS,' is determined to be absent for the patient and so we do not add any points to the score, keeping the current total at 14.
+The patient's CCI score is 14 points.",
+452,33,pmc-3326926-1,FeverPAIN Score for Strep Pharyngitis,"The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.
+Whether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 0 + 1 =  1.
+The patient is reported to not have a symptom onset ≤3 days and so we do not increment the score, keeping the current total at 1.
+The patient is reported to not have purulent tonsils and so we do not increment the score, keeping the current total at 1.
+The patient is reported to not have severe tonsil inflammation and so we do not increment the score, keeping the current total at 1.
+The patient's FeverPain score is 1 points.",
+461,33,pmc-8454594-1,FeverPAIN Score for Strep Pharyngitis,"The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we increment the score by 1, making the current total 0 + 1 = 1.
+The patient is determined to have a cough or corzyea at the time of admission. Because of this, we do not add any points to the current total, keeping the current total at 1.
+The patient is reported to have a symptom onset ≤3 days and so we increment the score by 1, making the current total 1 + 1 = 2.
+The patient is reported to not have purulent tonsils and so we do not increment the score, keeping the current total at 2.
+The patient is reported to not have severe tonsil inflammation and so we do not increment the score, keeping the current total at 2.
+The patient's FeverPain score is 2 points.",
+465,33,pmc-8091626-1,FeverPAIN Score for Strep Pharyngitis,"The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so we assume that it is absent for the patient. Because of this, we do not increment the score, keeping the current total at 0.
+Whether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 0 + 1 =  1.
+The patient is reported to not have a symptom onset ≤3 days and so we do not increment the score, keeping the current total at 1.
+The patient is reported to not have purulent tonsils and so we do not increment the score, keeping the current total at 1.
+The patient is reported to not have severe tonsil inflammation and so we do not increment the score, keeping the current total at 1.
+The patient's FeverPain score is 1 points.",
+500,39,pmc-2657771-1,Anion Gap,"The formula for computing a patient's anion gap is: sodium (mEq/L) - (chloride (mEq/L)+ bicarbonate (mEq/L)).
+The concentration of sodium is 143.0 mEq/L. 
+The concentration of chloride is 109.0 mEq/L. 
+The concentration of bicarbonate is 26.0 mEq/L. 
+Plugging in these values into the anion gap formula gives us 143.0 mEq/L - (109.0 mEq/L + 26.0 mEq/L) = 8.0 mEq/L. Hence, The patient's anion gap is 8.0 mEq/L.",
+849,21,1,Glasgow Coma Score (GCS),"For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.
+The current glasgow coma score is 0.
+Based on the patient note, the best eye response for the patient is 'eye opening to pain', and so we add 2 points making the current total 0 + 2 = 2.
+Based on the patient note, the best verbal response for the patient is 'confused', and so we add 4 points making the current total 2 + 4 = 6.
+Based on the patient note, the best motor response for the patient is 'withdrawal from pain', and so we add 4 points making the current total 6 + 4 = 10.
+Hence, the patient's glasgow coma score is 10.",

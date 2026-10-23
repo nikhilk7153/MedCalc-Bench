@@ -1,0 +1,14 @@
+{"Row Number": 748, "all_match": true, "problems": [], "Tokens": 1449}
+{"Row Number": 302, "all_match": true, "problems": [], "Tokens": 1697}
+{"Row Number": 237, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note describes a skull mass, but no suspected DVT, leg symptoms, or alternative diagnosis explaining DVT-like symptoms.", "issue": "not_in_note"}], "Tokens": 1022}
+{"Row Number": 899, "all_match": true, "problems": [], "Tokens": 884}
+{"Row Number": 516, "all_match": true, "problems": [], "Tokens": 1454}
+{"Row Number": 227, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "The note describes a perianal cyst but does not document suspected DVT, leg symptoms, or an alternative diagnosis explaining symptoms suggestive of DVT at admission.", "issue": "not_in_note"}], "Tokens": 1015}
+{"Row Number": 902, "all_match": true, "problems": [], "Tokens": 815}
+{"Row Number": 900, "all_match": true, "problems": [], "Tokens": 962}
+{"Row Number": 901, "all_match": true, "problems": [], "Tokens": 906}
+{"Row Number": 221, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "Subacute anterior STEMI is diagnosed, but no suspected DVT, leg symptoms, or alternative diagnosis explaining DVT-like findings is documented.", "issue": "not_in_note"}], "Tokens": 2345}
+{"Row Number": 222, "all_match": false, "problems": [{"input": "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely", "extracted": "True", "note_says": "At the first hospital admission, fever, headache, and bloody purulent stools were documented. No alternative diagnosis was documented as equally or more likely than DVT.", "issue": "not_in_note"}], "Tokens": 1734}
+{"Row Number": 906, "all_match": true, "problems": [], "Tokens": 905}
+{"Row Number": 913, "all_match": true, "problems": [], "Tokens": 1099}
+{"Row Number": 910, "all_match": false, "problems": [{"input": "Major Surgery in the last month", "extracted": "False", "note_says": "The patient is admitted following a scheduled right total knee replacement, with a postoperative incision documented.", "issue": "omitted"}], "Tokens": 1303}

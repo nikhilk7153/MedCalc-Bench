@@ -1,0 +1,20 @@
+{"Row Number": 8, "all_match": true, "problems": [], "Tokens": 1372}
+{"Row Number": 4, "all_match": true, "problems": [], "Tokens": 1415}
+{"Row Number": 2, "all_match": true, "problems": [], "Tokens": 730}
+{"Row Number": 6, "all_match": true, "problems": [], "Tokens": 1083}
+{"Row Number": 3, "all_match": true, "problems": [], "Tokens": 1278}
+{"Row Number": 7, "all_match": true, "problems": [], "Tokens": 1434}
+{"Row Number": 5, "all_match": true, "problems": [], "Tokens": 1473}
+{"Row Number": 9, "all_match": true, "problems": [], "Tokens": 879}
+{"Row Number": 10, "all_match": true, "problems": [], "Tokens": 1300}
+{"Row Number": 12, "all_match": true, "problems": [], "Tokens": 1294}
+{"Row Number": 14, "all_match": true, "problems": [], "Tokens": 911}
+{"Row Number": 15, "all_match": true, "problems": [], "Tokens": 1436}
+{"Row Number": 13, "all_match": true, "problems": [], "Tokens": 873}
+{"Row Number": 11, "all_match": true, "problems": [], "Tokens": 1402}
+{"Row Number": 1, "all_match": false, "problems": [{"input": "Bicarbonate", "extracted": "32 mmol/L", "note_says": "Admission chemistry reports HCO3 of 32 mEq/L, but the same admission laboratory description also reports bicarbonate of 35.7 mEq/L.", "issue": "conflicting_values_in_note"}], "Tokens": 1755}
+{"Row Number": 16, "all_match": true, "problems": [], "Tokens": 1610}
+{"Row Number": 17, "all_match": true, "problems": [], "Tokens": 1369}
+{"Row Number": 18, "all_match": true, "problems": [], "Tokens": 2323}
+{"Row Number": 19, "all_match": true, "problems": [], "Tokens": 752}
+{"Row Number": 20, "all_match": true, "problems": [], "Tokens": 1658}

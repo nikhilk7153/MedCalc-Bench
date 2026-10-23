@@ -1,0 +1,200 @@
+{
+    "3_pmc-6426590-1": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-4421172-1": {
+        "analysis": "The prediction does not provide any calculation or rationale, hence it is impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-6605692-1": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_usmle-10682": {
+        "analysis": "The prediction does not provide any rationale or answer, hence it's impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-8173432-1": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-8712236-1": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_usmle-11198": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-6892572-1": {
+        "analysis": "The prediction does not provide any calculation or answer, making it impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-3927191-1": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-2275218-1": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-8521725-1": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify a specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-7983145-1": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify the specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-8346262-1": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_usmle-4906": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify a specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_usmle-5468": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify a specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-6919406-1": {
+        "analysis": "The prediction does not provide any rationale or answer, hence it is impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-4448053-1": {
+        "analysis": "The prediction does not provide any step-by-step thinking or an answer, making it impossible to identify the specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-7425612-1": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-5394405-1": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "3_pmc-7523830-1": {
+        "analysis": "The prediction does not provide any calculation or answer, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "16_pmc-7111022-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "17_2": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "20_pmc-8169128-1": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "20_pmc-5745701-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "25_6": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "25_16": {
+        "analysis": "The prediction does not provide any information about the calculation or the parameters used. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "25_18": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "32_21": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "33_pmc-3326926-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the parameters used. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "33_pmc-8454594-1": {
+        "analysis": "The prediction does not provide any information or calculation, making it impossible to identify the type of error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-8091626-1": {
+        "analysis": "The prediction does not provide any information or calculation, making it impossible to identify any specific errors.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "39_pmc-2657771-1": {
+        "analysis": "The prediction does not provide any calculation or answer, making it impossible to identify any specific error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "21_1": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to determine the error type.",
+        "error_type": []
+    }
+}

@@ -1,0 +1,5 @@
+39 non-template rows from acag_train_cand.csv to check
+entities_acagtr.jsonl: 0 cached, 39 to run
+Entities Match
+True     34
+False     5

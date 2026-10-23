@@ -1,0 +1,7 @@
+50 rows from calib_gold.csv to check
+final_calib_b_verify.jsonl: 0 cached, 50 to run
+  50/50
+Verdict
+correct      23
+incorrect    22
+ambiguous     5

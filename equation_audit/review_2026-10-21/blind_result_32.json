@@ -1,0 +1,1493 @@
+{
+ "calculator_id": "32",
+ "rows": [
+  {
+   "row": "428",
+   "fields": {
+    "age": {
+     "value": [
+      60,
+      "years"
+     ],
+     "quote": "A 60-year-old male patient"
+    },
+    "Diabetes mellitus": {
+     "value": "none or diet-controlled",
+     "quote": "diabetes mellitus controlled with diet and exercise"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "chronic kidney disease (CKD)"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "chronic bronchitis"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "congestive heart failure"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "Patient has no neurologic deficits."
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "He scored 30/30 on his MMS."
+    },
+    "Cerebrovascular Accident": {
+     "value": false,
+     "quote": "He has no history of stroke or other vascular disease."
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "no history of stroke or other vascular disease"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "no history of stroke or other vascular disease"
+    },
+    "Solid tumor": {
+     "value": "none",
+     "quote": "He never had any malignancy in the past."
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "He never had any malignancy in the past."
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "He never had any malignancy in the past."
+    }
+   },
+   "score": 4,
+   "score_working": "age 60 +2; CHF +1; chronic bronchitis +1; DM diet 0; CKD (no severity) 0 = 4",
+   "note_issues": [
+    {
+     "field": "Moderate to severe Chronic Kidney Disease",
+     "issue": "CKD (and 'worsening CKD', concern for 'remaining renal function') stated with no creatinine, dialysis or stage; severity unknown. If moderate-severe, +2.",
+     "alternative_score": 6
+    },
+    {
+     "field": "Diabetes mellitus",
+     "issue": "Diet-controlled DM but peripheral neuropathy listed (possible diabetic end-organ damage); if counted as end-organ damage +2.",
+     "alternative_score": 6
+    }
+   ]
+  },
+  {
+   "row": "429",
+   "fields": {
+    "age": {
+     "value": [
+      75,
+      "years"
+     ],
+     "quote": "A 75-year-old male"
+    },
+    "Solid tumor": {
+     "value": "metastatic",
+     "quote": "metastatic prostate cancer to the L4-L5 vertebrae"
+    },
+    "Connective tissue disease": {
+     "value": true,
+     "quote": "SLE"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "Alzheimer's"
+    },
+    "Myocardial infarction": {
+     "value": true,
+     "quote": "He suffered from a myocardial infarction in 2012"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "furosemide 20 mg for HFrEF"
+    },
+    "Liver disease severity": {
+     "value": "mild",
+     "quote": "hepatitis B infection 2014 but it has been well controlled"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "cilostazol due leg cramping that occurs when he goes for long walks"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "Denies any ... neurological deficits"
+    },
+    "Cerebrovascular Accident": {
+     "value": false,
+     "quote": "to decrease his risk of any stroke"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "His creatinine has also remained below 1.0"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "He denies any abdominal pain and has never been on PPI in the past."
+    }
+   },
+   "score": 15,
+   "score_working": "age 75 +3; metastatic tumor +6; SLE +1; dementia +1; MI +1; CHF +1; chronic hep B mild liver +1; PVD (claudication) +1 = 15",
+   "note_issues": [
+    {
+     "field": "Liver disease severity",
+     "issue": "Hepatitis B 'infection 2014 ... well controlled with symptom support' - unclear whether chronic hepatitis (mild liver disease) or resolved acute infection. If none, -1.",
+     "alternative_score": 14
+    },
+    {
+     "field": "Cerebrovascular Accident",
+     "issue": "Stroke not explicitly denied, only implied by prevention statement; no change if absent.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "430",
+   "fields": {
+    "age": {
+     "value": [
+      58,
+      "years"
+     ],
+     "quote": "A 58-year-old Arab man"
+    },
+    "Diabetes mellitus": {
+     "value": "uncomplicated",
+     "quote": "well-controlled type 2 diabetes mellitus ... metformin"
+    },
+    "Solid tumor": {
+     "value": "none",
+     "quote": "Patient has no history of cancer"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "no history of cancer"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "no history of cancer"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "no history of ... neurological deficits"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "no history of ... immunodeficiencies"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "no history of ... COPD"
+    },
+    "Connective tissue disease": {
+     "value": false,
+     "quote": "He was diagnosed with marfan syndrome when he was 19 years old."
+    }
+   },
+   "score": 2,
+   "score_working": "age 58 +1; DM on metformin uncomplicated +1; Marfan not Charlson CTD 0 = 2",
+   "note_issues": [
+    {
+     "field": "Connective tissue disease",
+     "issue": "Marfan syndrome is a heritable connective tissue disorder, not a rheumatologic CTD in Charlson; if counted as CTD +1.",
+     "alternative_score": 3
+    },
+    {
+     "field": "Myocardial infarction",
+     "issue": "CAD s/p CABG with no statement of prior MI; if an MI is assumed +1.",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "431",
+   "fields": {
+    "age": {
+     "value": [
+      55,
+      "years"
+     ],
+     "quote": "A 55 years old male patient"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "type 2 diabetes which resulted in CKD"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "emphysema"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "on diuretics pulmonary edema due to heart failure"
+    },
+    "Liver disease severity": {
+     "value": "none",
+     "quote": "Patient has no history of liver disease."
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "Both lesions were reported as neuroendocrine tumor ... (WHO grade 2)"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "He has no neurological deficits on physical exams."
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "They have never had any vascular disease in the past."
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "Due to his diabetes causing kidney dysfunction he is on biweekly dialysis."
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "He does not have any history of non-solid cancers."
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "He does not have any history of non-solid cancers."
+    }
+   },
+   "score": 9,
+   "score_working": "age 55 +1; DM end-organ +2; emphysema +1; CHF +1; localized solid tumor (gastric NET) +2; dialysis CKD +2; liver 0 = 9",
+   "note_issues": [
+    {
+     "field": "Solid tumor",
+     "issue": "Small (4-5 mm) WHO grade 2 gastric neuroendocrine tumors; whether these count as a localized solid tumor is debatable. If none, -2.",
+     "alternative_score": 7
+    }
+   ]
+  },
+  {
+   "row": "432",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old male"
+    },
+    "Solid tumor": {
+     "value": "metastatic",
+     "quote": "metastatic prostate cancer diagnosed a year ago"
+    },
+    "Lymphoma": {
+     "value": true,
+     "quote": "history of Hodgkin's lymphoma"
+    },
+    "Leukemia": {
+     "value": true,
+     "quote": "chronic lymphocytic leukemia CLL, which is currently in remission"
+    },
+    "Connective tissue disease": {
+     "value": true,
+     "quote": "systemic lupus erythematosus SLE"
+    },
+    "Peptic ulcer disease": {
+     "value": true,
+     "quote": "on PPI therapy for his duodenal ulcer"
+    },
+    "Liver disease severity": {
+     "value": "moderate to severe",
+     "quote": "propranolol for significant esophageal varices due to cirrhosis secondary to alcoholism"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "diuretic therapy for his HFpEF"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "denies any history of paralysis"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "denies any history of ... respiratory disease"
+    },
+    "Cerebrovascular Accident": {
+     "value": false,
+     "quote": "denies any history of ... stroke"
+    },
+    "Diabetes mellitus": {
+     "value": "none or diet-controlled",
+     "quote": "His A1C has never been elevated in the past."
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "history of RLE claudication and was found to have an ABI of 0.7"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "His kidney function is within normal limits."
+    }
+   },
+   "score": 20,
+   "score_working": "age 72 +3; metastatic +6; lymphoma +2; leukemia +2; SLE +1; PUD +1; cirrhosis w/ varices +3; CHF +1; PVD +1 = 20",
+   "note_issues": []
+  },
+  {
+   "row": "433",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old male"
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "history of malignant neoplasm for which he had been receiving chemotherapeutic treatments"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": true,
+     "quote": "implicated mini bouts of cerebral ischemia"
+    },
+    "Hemiplegia": {
+     "value": true,
+     "quote": "persistent paralysis on the left side of his body"
+    },
+    "Cerebrovascular Accident": {
+     "value": true,
+     "quote": "diagnosed as an old cerebrovascular event"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "moderate renal insufficiency ... Dialysis has been mentioned"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "long-standing history of CHF"
+    },
+    "Liver disease severity": {
+     "value": "mild",
+     "quote": "mild elevations indicating mild liver disease"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "denies any history of human immunodeficiency virus exposure"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "establishing diabetic nephropathy"
+    },
+    "Myocardial infarction": {
+     "value": false,
+     "quote": "he denies ever having a myocardial infarction"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "spirometry results indicate good lung function"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "no vascular incidents except in his neurological territory"
+    },
+    "Connective tissue disease": {
+     "value": false,
+     "quote": "no complaints relating to joint or muscle pain, indicative of a connective tissue disease"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "There is also no mention of leukemia"
+    }
+   },
+   "score": 14,
+   "score_working": "age 72 +3; solid tumor (assumed localized) +2; CVA/TIA +1; hemiplegia +2; CKD +2; CHF +1; mild liver +1; DM end-organ +2 = 14",
+   "note_issues": [
+    {
+     "field": "Solid tumor",
+     "issue": "'Malignant neoplasm' on chemotherapy with no site, type or stage; could be metastatic (+6, score 18) or a hematologic malignancy (lymphoma +2, same score).",
+     "alternative_score": 18
+    },
+    {
+     "field": "Moderate to severe Chronic Kidney Disease",
+     "issue": "'Moderate renal insufficiency' with dialysis only discussed, no creatinine; may not meet Cr>3/dialysis criterion. If false, -2.",
+     "alternative_score": 12
+    },
+    {
+     "field": "Liver disease severity",
+     "issue": "'Mild liver disease' based only on mild LFT elevations with unremarkable imaging; no chronic hepatitis/cirrhosis documented. If none, -1.",
+     "alternative_score": 13
+    }
+   ]
+  },
+  {
+   "row": "434",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "A 68-year-old male patient"
+    },
+    "Lymphoma": {
+     "value": true,
+     "quote": "his diagnosis of lymphoma for which he has completed therapy with remission status"
+    },
+    "Myocardial infarction": {
+     "value": true,
+     "quote": "a myocardial infarction event occurring two years back"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "with no known congestive heart failure"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "history of peripheral arterial disease for which he has undergone stenting"
+    },
+    "Peptic ulcer disease": {
+     "value": true,
+     "quote": "found to have a peptic ulcer on his last upper gastrointestinal endoscopy"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "diagnosed with mild dementia"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "Exam shows no signs of hemiplegia"
+    },
+    "Diabetes mellitus": {
+     "value": "none or diet-controlled",
+     "quote": "well controlled through lifestyle adjustments without the use of medications"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "denies having a history of transient ischemic attacks"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "PFTs indicates the existence of chronic obstructive pulmonary disease"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "no evidence of advanced kidney disease"
+    },
+    "Liver disease severity": {
+     "value": "mild",
+     "quote": "chronic liver disease and imaging has shown prominent changes consistent with long term liver damage"
+    }
+   },
+   "score": 10,
+   "score_working": "age 68 +2; lymphoma +2; MI +1; PVD +1; PUD +1; dementia +1; COPD +1; mild liver +1; DM diet 0 = 10",
+   "note_issues": [
+    {
+     "field": "Liver disease severity",
+     "issue": "Chronic liver disease with 'long term liver damage' on imaging - possibly cirrhosis; no portal hypertension mentioned. If moderate-severe, +2.",
+     "alternative_score": 12
+    }
+   ]
+  },
+  {
+   "row": "435",
+   "fields": {
+    "age": {
+     "value": [
+      80,
+      "years"
+     ],
+     "quote": "An 80-year-old gentleman"
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "diagnosed with a solid tumor 5 years ago, which was successfully treated and is currently in remission"
+    },
+    "AIDS": {
+     "value": true,
+     "quote": "living with a diagnosis of HIV/AIDS for over two decades"
+    },
+    "Cerebrovascular Accident": {
+     "value": true,
+     "quote": "an incident of cerebrovascular accident about a year ago"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "cognitive assessment reveals hints of dementia"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "He denies having any heart-related disorders"
+    },
+    "Myocardial infarction": {
+     "value": false,
+     "quote": "He denies having any heart-related disorders"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "He doesn't recall any episodes of transient ischemic attacks"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "nor does he have any history related to hemiplegia"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "His health status regarding gastric ulcers has been unremarkable"
+    },
+    "Diabetes mellitus": {
+     "value": "uncomplicated",
+     "quote": "light regimen of oral hypoglycemics"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "no history of chronic kidney disease on record"
+    },
+    "Liver disease severity": {
+     "value": "none",
+     "quote": "no signs of liver disease"
+    }
+   },
+   "score": 16,
+   "score_working": "age 80 +4; localized tumor +2; AIDS +6; CVA +1; dementia +1; COPD +1; DM uncomplicated +1 = 16",
+   "note_issues": [
+    {
+     "field": "Dementia",
+     "issue": "Only 'hints of dementia' - not a firm diagnosis. If false, -1.",
+     "alternative_score": 15
+    },
+    {
+     "field": "AIDS",
+     "issue": "'HIV/AIDS' with undetectable viral load and stable CD4; whether AIDS-defining criteria were ever met is unclear. If HIV only, -6.",
+     "alternative_score": 10
+    },
+    {
+     "field": "Solid tumor",
+     "issue": "Solid tumor treated 5 years ago and in remission; some apply a 5-year window. If none, -2.",
+     "alternative_score": 14
+    }
+   ]
+  },
+  {
+   "row": "436",
+   "fields": {
+    "age": {
+     "value": [
+      55,
+      "years"
+     ],
+     "quote": "A 55-year-old male"
+    },
+    "Leukemia": {
+     "value": true,
+     "quote": "having overcome chronic lymphocytic leukemia"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "chronic kidney disease ... with substantial dialysis supplementation"
+    },
+    "Connective tissue disease": {
+     "value": true,
+     "quote": "undifferentiated connective tissue disease"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "peripheral vascular disease"
+    },
+    "Diabetes mellitus": {
+     "value": "none or diet-controlled",
+     "quote": "diet-controlled diabetes without any end-organ damage"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "suggest a presenting sign of congestive heart failure"
+    },
+    "Liver disease severity": {
+     "value": "mild",
+     "quote": "indicating mild liver disease"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "Without any history suggestive of aids"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "or peptic ulcer disease"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "denies any focal neurological deficits"
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "or cognitive changes"
+    }
+   },
+   "score": 10,
+   "score_working": "age 55 +1; leukemia +2; dialysis CKD +2; CTD +1; COPD +1; PVD +1; CHF +1; mild liver +1; DM diet 0 = 10",
+   "note_issues": [
+    {
+     "field": "Congestive Heart Failure",
+     "issue": "CHF only suspected ('suggest a presenting sign... further investigation is planned'); not a confirmed diagnosis. If false, -1.",
+     "alternative_score": 9
+    },
+    {
+     "field": "Connective tissue disease",
+     "issue": "Undifferentiated CTD is not among the listed Charlson rheumatologic conditions. If excluded, -1.",
+     "alternative_score": 9
+    },
+    {
+     "field": "Liver disease severity",
+     "issue": "'Mild liver disease' from mild LFT abnormalities attributed to paracetamol; no chronic hepatitis/cirrhosis. If none, -1.",
+     "alternative_score": 9
+    }
+   ]
+  },
+  {
+   "row": "437",
+   "fields": {
+    "age": {
+     "value": [
+      60,
+      "years"
+     ],
+     "quote": "A 60-year-old gentleman"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "long-term COPD"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": true,
+     "quote": "multiple transient ischemic attacks"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "no residual neurological deficits are appreciated"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "peripheral arterial disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no history of heart failure"
+    },
+    "Myocardial infarction": {
+     "value": false,
+     "quote": "no history of heart failure and myocardial infarction"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "due to nephropathy, indicated by increasing proteinuria and declining glomerular filtration rate"
+    },
+    "Peptic ulcer disease": {
+     "value": true,
+     "quote": "A recent peptic ulcer diagnosis"
+    },
+    "Liver disease severity": {
+     "value": "moderate to severe",
+     "quote": "chronic liver disease of moderate severity"
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "no issues with memory or cognitive function"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "He denies any HIV exposure"
+    },
+    "Solid tumor": {
+     "value": "none",
+     "quote": "doesn't suggest any solid tumor"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "lymphoma"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "leukemia"
+    },
+    "Connective tissue disease": {
+     "value": false,
+     "quote": "connective tissue ailments"
+    }
+   },
+   "score": 11,
+   "score_working": "age 60 +2; COPD +1; TIA +1; PVD +1; DM end-organ +2; PUD +1; moderate liver +3 = 11",
+   "note_issues": [
+    {
+     "field": "Liver disease severity",
+     "issue": "'Moderate severity' chronic liver disease with no cirrhosis/portal hypertension described; by MDCalc definition could be mild. If mild, -2.",
+     "alternative_score": 9
+    },
+    {
+     "field": "Moderate to severe Chronic Kidney Disease",
+     "issue": "Declining GFR from nephropathy without creatinine/dialysis; CKD field left unscored. If moderate-severe, +2.",
+     "alternative_score": 13
+    }
+   ]
+  },
+  {
+   "row": "438",
+   "fields": {
+    "age": {
+     "value": [
+      65,
+      "years"
+     ],
+     "quote": "A 65-year-old gentleman"
+    },
+    "Myocardial infarction": {
+     "value": true,
+     "quote": "a significant episode of myocardial infarction a year ago"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "rendered him to heart failure management"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "led to significant end-organ damage despite medication adherence"
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "stage III colon cancer"
+    },
+    "Cerebrovascular Accident": {
+     "value": true,
+     "quote": "he experienced a cerebrovascular accident"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "full recovery with no residual impairments"
+    },
+    "Connective tissue disease": {
+     "value": true,
+     "quote": "his connective tissue disease which currently is in a stable state"
+    },
+    "Liver disease severity": {
+     "value": "moderate to severe",
+     "quote": "relatively stable moderate to severe disease"
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "no memory issues in his daily routine which may suggest dementia"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "no symptomatic chronic obstructive pulmonary disease"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "Renal function declines are not seen"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "no personal history of HIV/AIDS"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "lymphoma"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "leukemia"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "peptic ulcer"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "peripheral vascular disease"
+    }
+   },
+   "score": 13,
+   "score_working": "age 65 +2; MI +1; CHF +1; DM end-organ +2; localized tumor +2; CVA +1; CTD +1; mod-severe liver +3 = 13",
+   "note_issues": [
+    {
+     "field": "Connective tissue disease",
+     "issue": "Connective tissue disease type unspecified; may not be a Charlson rheumatologic CTD. If excluded, -1.",
+     "alternative_score": 12
+    },
+    {
+     "field": "Liver disease severity",
+     "issue": "'Moderate to severe' liver disease based on LFTs only; no cirrhosis/portal hypertension documented. If mild, -2.",
+     "alternative_score": 11
+    },
+    {
+     "field": "Diabetes mellitus",
+     "issue": "'End-organ damage' stated without naming the organ involvement, but renal decline denied; still scored +2.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "439",
+   "fields": {
+    "age": {
+     "value": [
+      75,
+      "years"
+     ],
+     "quote": "A 75-year-old gentleman"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "extensively managed congestive heart failure"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "history of managing COPD"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "diagnosed with peripheral arterial disease, confirmed by abnormal ankle-brachial indices"
+    },
+    "Peptic ulcer disease": {
+     "value": true,
+     "quote": "endoscopy revealing a peptic ulcer"
+    },
+    "Diabetes mellitus": {
+     "value": "uncomplicated",
+     "quote": "well controlled on oral hypoglycemia, with no signs of end-organ damage"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "cognitive issues indicative of early dementia"
+    },
+    "Hemiplegia": {
+     "value": true,
+     "quote": "left-sided weakness due to damage from a central nervous system pathology"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "he is negative for HIV/AIDS"
+    },
+    "Liver disease severity": {
+     "value": "none",
+     "quote": "liver function tests have been normal consistently"
+    }
+   },
+   "score": 11,
+   "score_working": "age 75 +3; CHF +1; COPD +1; PVD +1; PUD +1; DM uncomplicated +1; dementia +1; hemiplegia +2 = 11",
+   "note_issues": [
+    {
+     "field": "Dementia",
+     "issue": "Dementia under evaluation ('indicative of early dementia'), not diagnosed. If false, -1.",
+     "alternative_score": 10
+    },
+    {
+     "field": "Hemiplegia",
+     "issue": "'Left-sided weakness' (hemiparesis) rather than explicit hemiplegia. If false, -2.",
+     "alternative_score": 9
+    },
+    {
+     "field": "Cerebrovascular Accident",
+     "issue": "Unspecified 'central nervous system pathology' causing hemiparesis - possibly a stroke but not stated. If CVA, +1.",
+     "alternative_score": 12
+    }
+   ]
+  },
+  {
+   "row": "440",
+   "fields": {
+    "age": {
+     "value": [
+      85,
+      "years"
+     ],
+     "quote": "An 85-year-old gentleman"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": true,
+     "quote": "a transient ischemic attack"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "left him with no residual neurological deficits"
+    },
+    "Leukemia": {
+     "value": true,
+     "quote": "past diagnosis of leukemia, now in remission"
+    },
+    "AIDS": {
+     "value": true,
+     "quote": "AIDS, for which he is currently on antiretroviral therapy"
+    },
+    "Peptic ulcer disease": {
+     "value": true,
+     "quote": "peptic ulcer disease managed with a proton pump inhibitor"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "proliferative diabetic retinopathy"
+    },
+    "Liver disease severity": {
+     "value": "mild",
+     "quote": "He has chronic hepatitis."
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "no cognitive disorders"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no history of heart failure"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "Peripheral vascular disease has been ruled out"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "no record of COPD"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "chronic kidney disease"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "or lymphatic cancer"
+    }
+   },
+   "score": 17,
+   "score_working": "age 85 +4; TIA +1; leukemia +2; AIDS +6; PUD +1; DM end-organ +2; mild liver +1 = 17",
+   "note_issues": []
+  },
+  {
+   "row": "441",
+   "fields": {
+    "age": {
+     "value": [
+      78,
+      "years"
+     ],
+     "quote": "A 78-year-old gentleman"
+    },
+    "Myocardial infarction": {
+     "value": true,
+     "quote": "he had a myocardial infarction a few years back"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no sequelae of congestive heart failure"
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "prostate cancer, for which he underwent successful treatment, and is now in remission"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "diagnosed as dementia"
+    },
+    "Liver disease severity": {
+     "value": "moderate to severe",
+     "quote": "cirrhotic changes with portal hypertension but no episodes of variceal bleeding"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "His creatinine is 3.5 mg/dL."
+    },
+    "Diabetes mellitus": {
+     "value": "none or diet-controlled",
+     "quote": "now controlled with diet"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "no significant evidence of lymphoma"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "AIDS"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "transient ischemic attacks"
+    },
+    "Connective tissue disease": {
+     "value": false,
+     "quote": "connective tissue disease"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "peptic ulcer disease"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "peripheral vascular disease"
+    },
+    "Cerebrovascular Accident": {
+     "value": false,
+     "quote": "cerebrovascular accident"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "or leukemia"
+    }
+   },
+   "score": 13,
+   "score_working": "age 78 +3; MI +1; localized tumor +2; COPD +1; dementia +1; cirrhosis w/ portal HTN +3; Cr 3.5 CKD +2 = 13",
+   "note_issues": []
+  },
+  {
+   "row": "442",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old patient"
+    },
+    "Lymphoma": {
+     "value": true,
+     "quote": "currently undergoing treatment for lymphoma"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": true,
+     "quote": "He suffered a transient ischemic attack"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "without any neurological deficit"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "peripheral vascular disease for which he takes clopidogrel"
+    },
+    "Diabetes mellitus": {
+     "value": "uncomplicated",
+     "quote": "well controlled without complications on metformin"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "does not have congestive heart failure"
+    },
+    "Liver disease severity": {
+     "value": "none",
+     "quote": "liver disease"
+    },
+    "Solid tumor": {
+     "value": "none",
+     "quote": "history of a solid tumor"
+    },
+    "Connective tissue disease": {
+     "value": false,
+     "quote": "connective tissue disease"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "or peptic ulcer disease"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "He does not have kidney disease."
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "no memory issues that would raise concerns about dementia"
+    }
+   },
+   "score": 9,
+   "score_working": "age 70 +3; lymphoma +2; TIA +1; PVD +1; DM uncomplicated +1; COPD +1 = 9",
+   "note_issues": []
+  },
+  {
+   "row": "443",
+   "fields": {
+    "age": {
+     "value": [
+      88,
+      "years"
+     ],
+     "quote": "An 88-year-old patient"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "chronic obstructive pulmonary disease"
+    },
+    "Myocardial infarction": {
+     "value": true,
+     "quote": "had a previous myocardial infarction"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "has no signs of heart failure currently"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "uncontrolled diabetes has resulted in chronic kidney disease"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "creatinine of 3.5 mg/dL"
+    },
+    "Connective tissue disease": {
+     "value": true,
+     "quote": "polymyalgia rheumatica"
+    },
+    "Liver disease severity": {
+     "value": "mild",
+     "quote": "Mild liver disease was earlier observed on liver function tests"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "led to a diagnosis of dementia"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "denies having ever suffered from transient ischemic attacks"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "his neurological examination unremarkable"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "does not have a history of peptic ulcer disease"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "peripheral vascular disease"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "lymphoma"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "leukemia"
+    },
+    "Solid tumor": {
+     "value": "none",
+     "quote": "or any solid tumors"
+    }
+   },
+   "score": 13,
+   "score_working": "age 88 +4; COPD +1; MI +1; DM end-organ +2; CKD Cr 3.5 +2; PMR CTD +1; mild liver +1; dementia +1 = 13",
+   "note_issues": [
+    {
+     "field": "Liver disease severity",
+     "issue": "'Mild liver disease' based only on LFTs; no chronic hepatitis or cirrhosis documented. If none, -1.",
+     "alternative_score": 12
+    }
+   ]
+  },
+  {
+   "row": "444",
+   "fields": {
+    "age": {
+     "value": [
+      90,
+      "years"
+     ],
+     "quote": "A 90-year-old gentleman"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "uncontrolled type II diabetes now complicated by chronic kidney disease"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "creatinine of 4.0 mg/dL"
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "lung cancer, which is currently in remission after chemotherapy and radiation"
+    },
+    "Leukemia": {
+     "value": true,
+     "quote": "undergoing chemotherapy for chronic lymphocytic leukemia"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": true,
+     "quote": "He has suffered transient ischemic attacks in the past"
+    },
+    "Liver disease severity": {
+     "value": "moderate to severe",
+     "quote": "moderate liver disease without clinical manifestations"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "He does not have heart failure"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "or chronic obstructive pulmonary disease"
+    },
+    "Dementia": {
+     "value": false,
+     "quote": "no cognitive changes or memory deficits suggestive of dementia"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "no signs of hemiplegia"
+    },
+    "Myocardial infarction": {
+     "value": false,
+     "quote": "does not demonstrate any myocardial infarction"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "negative for peptic ulcer disease"
+    },
+    "Lymphoma": {
+     "value": false,
+     "quote": "No record of lymphoma"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "AIDS"
+    },
+    "Connective tissue disease": {
+     "value": false,
+     "quote": "connective tissue disease"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "or peripheral vascular disease"
+    }
+   },
+   "score": 16,
+   "score_working": "age 90 +4; DM end-organ +2; CKD +2; localized tumor +2; leukemia +2; TIA +1; moderate liver +3 = 16",
+   "note_issues": [
+    {
+     "field": "Liver disease severity",
+     "issue": "'Moderate liver disease' on labs 'without clinical manifestations' - no cirrhosis/portal hypertension, so by MDCalc definition may be mild. If mild, -2.",
+     "alternative_score": 14
+    }
+   ]
+  },
+  {
+   "row": "445",
+   "fields": {
+    "age": {
+     "value": [
+      82,
+      "years"
+     ],
+     "quote": "An 82-year-old individual"
+    },
+    "Lymphoma": {
+     "value": true,
+     "quote": "A survivor of lymphoma, his remission status"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "a diagnosis of dementia"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": true,
+     "quote": "diagnosis of chronic obstructive pulmonary disease"
+    },
+    "Peptic ulcer disease": {
+     "value": true,
+     "quote": "confirms a history of peptic ulcer disease"
+    },
+    "Hemiplegia": {
+     "value": true,
+     "quote": "hemiplegia, which has limited his mobility"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "no reported history of transient ischemic attacks"
+    },
+    "Cerebrovascular Accident": {
+     "value": false,
+     "quote": "or cerebrovascular accidents"
+    },
+    "Diabetes mellitus": {
+     "value": "uncomplicated",
+     "quote": "his well-controlled diabetes"
+    },
+    "Peripheral vascular disease": {
+     "value": true,
+     "quote": "a noted history of peripheral artery disease"
+    },
+    "Liver disease severity": {
+     "value": "none",
+     "quote": "indicating an absence of liver disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no complications from congestive heart failure"
+    },
+    "Myocardial infarction": {
+     "value": false,
+     "quote": "no record of myocardial infraction"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "no record of moderate or severe chronic kidney disease"
+    },
+    "Leukemia": {
+     "value": false,
+     "quote": "absence of leukemia"
+    },
+    "Solid tumor": {
+     "value": "none",
+     "quote": "or a solid tumor"
+    }
+   },
+   "score": 13,
+   "score_working": "age 82 +4; lymphoma +2; dementia +1; COPD +1; PUD +1; hemiplegia +2; DM uncomplicated +1; PVD +1 = 13",
+   "note_issues": [
+    {
+     "field": "Diabetes mellitus",
+     "issue": "'Well-controlled diabetes' with treatment unspecified; if diet-controlled, -1.",
+     "alternative_score": 12
+    }
+   ]
+  },
+  {
+   "row": "446",
+   "fields": {
+    "age": {
+     "value": [
+      79,
+      "years"
+     ],
+     "quote": "A 79-year-old gentleman"
+    },
+    "Myocardial infarction": {
+     "value": true,
+     "quote": "he was diagnosed with a heart attack"
+    },
+    "Diabetes mellitus": {
+     "value": "end-organ damage",
+     "quote": "His diabetes is notable for significant renal failure"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": true,
+     "quote": "confirms a past episode of a transient ischemic attack"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "no lasting neurological repercussions were observed"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": true,
+     "quote": "significant decreases in kidney function, leading to a diagnosis of chronic kidney disease"
+    }
+   },
+   "score": 9,
+   "score_working": "age 79 +3; MI +1; DM end-organ +2; TIA +1; CKD (significant renal failure) +2 = 9",
+   "note_issues": [
+    {
+     "field": "Moderate to severe Chronic Kidney Disease",
+     "issue": "CKD stated as 'significant' renal failure but no creatinine, dialysis or stage given; may not meet moderate-severe criterion. If false, -2.",
+     "alternative_score": 7
+    }
+   ]
+  },
+  {
+   "row": "447",
+   "fields": {
+    "age": {
+     "value": [
+      76,
+      "years"
+     ],
+     "quote": "A 76-year-old gentleman"
+    },
+    "Solid tumor": {
+     "value": "localized",
+     "quote": "hepatoblastoma ... he has been in remission"
+    },
+    "Leukemia": {
+     "value": true,
+     "quote": "Leukemia ... which he's managing with the appropriate therapy"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "congestive heart failure"
+    },
+    "Diabetes mellitus": {
+     "value": "none or diet-controlled",
+     "quote": "type II diabetes mellitus uncomplicated with diet management and regular exercise"
+    },
+    "Dementia": {
+     "value": true,
+     "quote": "led to a diagnosis of dementia"
+    },
+    "Liver disease severity": {
+     "value": "moderate to severe",
+     "quote": "signs and symptoms suggestive of severe liver disease"
+    },
+    "Cerebrovascular Accident": {
+     "value": true,
+     "quote": "Status post cerebral vascular accident"
+    },
+    "Hemiplegia": {
+     "value": false,
+     "quote": "didn't suffer any significant residual deficits"
+    },
+    "Transient Ischemic Attacks History": {
+     "value": false,
+     "quote": "denies having transient ischemic attacks"
+    },
+    "Connective tissue disease": {
+     "value": true,
+     "quote": "a diagnosis of connective tissue disease"
+    },
+    "Moderate to severe Chronic Kidney Disease": {
+     "value": false,
+     "quote": "no signs of chronic kidney disease"
+    },
+    "AIDS": {
+     "value": false,
+     "quote": "AIDS"
+    },
+    "Peripheral vascular disease": {
+     "value": false,
+     "quote": "any peripheral vascular disease"
+    },
+    "Peptic ulcer disease": {
+     "value": false,
+     "quote": "peptic ulcer disease"
+    },
+    "Chronic Pulmonary Disease": {
+     "value": false,
+     "quote": "or chronic obstructive pulmonary disease"
+    }
+   },
+   "score": 14,
+   "score_working": "age 76 +3; localized tumor +2; leukemia +2; CHF +1; DM diet 0; dementia +1; severe liver +3; CVA +1; CTD +1 = 14",
+   "note_issues": [
+    {
+     "field": "Diabetes mellitus",
+     "issue": "Note says 'uncomplicated' but diet-managed; MDCalc diet-controlled = 0. If scored as uncomplicated, +1.",
+     "alternative_score": 15
+    },
+    {
+     "field": "Liver disease severity",
+     "issue": "Only 'suggestive of severe liver disease', no cirrhosis/portal hypertension documented. If mild, -2.",
+     "alternative_score": 12
+    },
+    {
+     "field": "Connective tissue disease",
+     "issue": "Connective tissue disease type unspecified ('autoimmune'). If excluded, -1.",
+     "alternative_score": 13
+    }
+   ]
+  }
+ ]
+}

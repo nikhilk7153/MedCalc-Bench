@@ -1,0 +1,1740 @@
+{
+ "calculator_id": "43",
+ "rows": [
+  {
+   "row": "889",
+   "fields": {
+    "Systolic Blood Pressure": {
+     "value": [
+      63,
+      "mm Hg"
+     ],
+     "quote": "a BP of 63/41"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      41,
+      "mm Hg"
+     ],
+     "quote": "a BP of 63/41"
+    },
+    "Glasgow Coma Score": {
+     "value": 9,
+     "quote": "GCS: eye response to pain, inappropriate word use, withdrawls from pain (E2+V3+M4=9)"
+    },
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "He is currently on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      60,
+      "%"
+     ],
+     "quote": "fraction of inspired oxygen (FiO₂) set at 60 %"
+    },
+    "Continuous positive airway pressure": {
+     "value": false,
+     "quote": "is not on continuous positive airway pressure"
+    },
+    "creatinine": {
+     "value": [
+      121.32,
+      "µmol/L"
+     ],
+     "quote": "creatinine level of 121.32 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      88.41,
+      "µmol/L"
+     ],
+     "quote": "bilirubin level is elevated at 88.41 µmol/L"
+    },
+    "Platelet count": {
+     "value": [
+      140400,
+      "per microliter"
+     ],
+     "quote": "platelet count stands at 140,400 per microliter"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) measured at 76 mm Hg"
+    },
+    "Urine Output": {
+     "value": [
+      0,
+      "mL/day"
+     ],
+     "quote": "The patient has no urine output noted"
+    }
+   },
+   "score": 14,
+   "score_working": "Resp P/F 76/0.60=127 ventilated +3; Coag 140.4k +1; Liver 88.41 µmol/L (5.2 mg/dL) +2; CV no pressors, MAP 48 +1; CNS GCS 9 +3; Renal Cr 121.32 µmol/L (1.37 mg/dL) +1 vs UO 0 mL/day +4 -> +4; total 14",
+   "note_issues": [
+    {
+     "field": "Urine Output",
+     "issue": "'no urine output noted' is ambiguous: anuria (UO 0 -> renal 4) vs urine output simply not documented (renal by creatinine only = 1).",
+     "alternative_score": 11
+    },
+    {
+     "field": "Hypotension",
+     "issue": "Hypotension not stated explicitly; BP 63/41 (MAP 48) with no vasopressors mentioned. Scored MAP<70 = +1; vasopressor status unstated.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "890",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 10,
+     "quote": "Glasgow Coma Scale score of 10"
+    },
+    "creatinine": {
+     "value": [
+      92.12,
+      "µmol/L"
+     ],
+     "quote": "serum creatinine level of 92.12 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      1.57,
+      "mg/L"
+     ],
+     "quote": "total bilirubin level of 1.57 mg/L"
+    },
+    "Platelet count": {
+     "value": [
+      88400,
+      "/µL"
+     ],
+     "quote": "platelet count is decreased at 88400/µL"
+    },
+    "Hypotension": {
+     "value": true,
+     "quote": "There are signs of overt hypotension"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.1,
+      "mcg/kg/min"
+     ],
+     "quote": "norepi and epi infusions at 0.1 mcg/kg/min each"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.1,
+      "mcg/kg/min"
+     ],
+     "quote": "norepi and epi infusions at 0.1 mcg/kg/min each"
+    },
+    "DOPamine": {
+     "value": [
+      6.32,
+      "mcg/kg/min"
+     ],
+     "quote": "dopamine infusion at 6.32 mcg/kg/min"
+    },
+    "FiO2": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "receiving 41 % FiO₂"
+    },
+    "Continuous positive airway pressure": {
+     "value": true,
+     "quote": "with continuous positive airway pressure"
+    },
+    "PaO2": {
+     "value": [
+      90,
+      "mm Hg"
+     ],
+     "quote": "partial pressure of oxygen is recorded to be 90 mm Hg"
+    },
+    "Urine Output": {
+     "value": [
+      0,
+      "mL/day"
+     ],
+     "quote": "there is no urine output recorded"
+    }
+   },
+   "score": 13,
+   "score_working": "Resp P/F 90/0.41=220 +2 (CPAP); Coag 88.4k +2; Liver 1.57 mg/L = 0.157 mg/dL +0; CV dopamine 6.32 >5 / epi 0.1 / norepi 0.1 +3; CNS GCS 10 +2; Renal Cr 92.12 µmol/L (1.04 mg/dL) +0 vs UO 0 +4 -> +4; total 13",
+   "note_issues": [
+    {
+     "field": "Bilirubin",
+     "issue": "Unit 'mg/L' is likely a typo for mg/dL (patient has jaundice/scleral icterus; 0.157 mg/dL would be normal). If 1.57 mg/dL, liver +1.",
+     "alternative_score": 14
+    },
+    {
+     "field": "Urine Output",
+     "issue": "'no urine output recorded' is ambiguous: anuria (renal 4) vs not documented (renal by creatinine 1.04 mg/dL = 0).",
+     "alternative_score": 9
+    },
+    {
+     "field": "Note",
+     "issue": "Note text says 'mild renal impairment' but creatinine 1.04 mg/dL is normal; no BP values given (CV scored from vasopressors).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "891",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 15,
+     "quote": "Glasgow Coma Score of 15"
+    },
+    "Bilirubin": {
+     "value": [
+      7.43,
+      "mg/dL"
+     ],
+     "quote": "elevated bilirubin levels of 7.43 mg/dL"
+    },
+    "creatinine": {
+     "value": [
+      2.56,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 2.56 mg/dL"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.33,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine of 0.33 mcg/kg/min"
+    },
+    "DOPamine": {
+     "value": [
+      9.1,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine of 9.1 mcg/kg/min"
+    },
+    "Hypotension": {
+     "value": false,
+     "quote": "the patient currently is not presenting signs of hypotension"
+    },
+    "On mechanical ventilation": {
+     "value": false,
+     "quote": "not currently on mechanical ventilation or continuous positive airway pressure"
+    },
+    "Continuous positive airway pressure": {
+     "value": false,
+     "quote": "not currently on mechanical ventilation or continuous positive airway pressure"
+    },
+    "FiO2": {
+     "value": [
+      53,
+      "%"
+     ],
+     "quote": "fraction of inspired oxygen (FiO₂) at 53%"
+    },
+    "PaO2": {
+     "value": [
+      87,
+      "mm Hg"
+     ],
+     "quote": "partial pressure of oxygen (PaO₂) of 87 mm Hg"
+    },
+    "Platelet count": {
+     "value": [
+      75300,
+      "/µL"
+     ],
+     "quote": "platelet count of 75,300/µL"
+    }
+   },
+   "score": 13,
+   "score_working": "Resp P/F 87/0.53=164 not ventilated +2; Coag 75.3k +2; Liver 7.43 +3; CV epi 0.33 >0.1 +4; CNS GCS 15 +0; Renal Cr 2.56 +2 (UO not given); total 13",
+   "note_issues": [
+    {
+     "field": "Hypotension",
+     "issue": "Hypotension flagged false while on high-dose epinephrine and dopamine (vasopressors maintain BP). SOFA scores by vasopressor tier (+4); if a calculator gates CV on the hypotension flag, CV = 0.",
+     "alternative_score": 9
+    },
+    {
+     "field": "Urine Output",
+     "issue": "Urine output not given; renal scored from creatinine only.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "892",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 8,
+     "quote": "her Glasgow Coma Score was 8/15"
+    },
+    "Hypotension": {
+     "value": false,
+     "quote": "She has been normotensive and has not required vasopressors"
+    },
+    "DOPamine": {
+     "value": [
+      0,
+      "mcg/kg/min"
+     ],
+     "quote": "has not required vasopressors"
+    },
+    "DOBUTamine": {
+     "value": [
+      0,
+      "mcg/kg/min"
+     ],
+     "quote": "has not required vasopressors"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0,
+      "mcg/kg/min"
+     ],
+     "quote": "has not required vasopressors"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0,
+      "mcg/kg/min"
+     ],
+     "quote": "has not required vasopressors"
+    },
+    "FiO2": {
+     "value": [
+      71,
+      "%"
+     ],
+     "quote": "Her FiO₂ was recorded at 71%"
+    },
+    "PaO2": {
+     "value": [
+      87,
+      "mm Hg"
+     ],
+     "quote": "with a PaO₂ of 87 mm Hg"
+    },
+    "Urine Output": {
+     "value": [
+      132,
+      "mL/day"
+     ],
+     "quote": "limited urine output of only 132 mL/day"
+    },
+    "Bilirubin": {
+     "value": [
+      3.32,
+      "mg/dL"
+     ],
+     "quote": "elevated bilirubin level of 3.32 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      87000,
+      "/μL"
+     ],
+     "quote": "Her platelet count is 87,000/μL"
+    }
+   },
+   "score": 13,
+   "score_working": "Resp P/F 87/0.71=123, ventilation not stated -> treated as not ventilated +2; Coag 87k +2; Liver 3.32 +2; CV normotensive no pressors 0; CNS GCS 8 +3; Renal UO 132 mL/day <200 +4 (creatinine not given; on CVVHD); total 13",
+   "note_issues": [
+    {
+     "field": "On mechanical ventilation",
+     "issue": "Mechanical ventilation / CPAP status not stated; FiO2 71% suggests possible support. If ventilated or on CPAP, P/F 123 -> resp +3.",
+     "alternative_score": 14
+    },
+    {
+     "field": "creatinine",
+     "issue": "Creatinine not reported (patient on CVVHD); renal scored from urine output (+4), which is already maximal.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "893",
+   "fields": {
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "He is placed on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      60,
+      "%"
+     ],
+     "quote": "fraction of inspired oxygen (FiO₂) of 60%"
+    },
+    "PaO2": {
+     "value": [
+      68,
+      "mm Hg"
+     ],
+     "quote": "partial pressure of oxygen (PaO₂) of 68 mm Hg"
+    },
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Glasgow Coma Score being recorded as 13/15"
+    },
+    "creatinine": {
+     "value": [
+      1.5,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.5 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      3,
+      "mg/dL"
+     ],
+     "quote": "bilirubin at 3 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      150000,
+      "µL"
+     ],
+     "quote": "Thrombocytopenia is also present with a platelet count of 150000 µL"
+    },
+    "Urine Output": {
+     "value": [
+      600,
+      "mL/day"
+     ],
+     "quote": "recorded at 600 mL/day"
+    }
+   },
+   "score": 7,
+   "score_working": "Resp P/F 68/0.60=113 ventilated +3; Coag 150k +0; Liver 3 +2; CV no BP/pressors given 0; CNS GCS 13 +1; Renal Cr 1.5 +1, UO 600 none -> +1; total 7",
+   "note_issues": [
+    {
+     "field": "Platelet count",
+     "issue": "Called 'thrombocytopenia' but 150,000 is the boundary that scores 0 (unit also written 'µL' rather than '/µL'). If intended <150k, coag +1.",
+     "alternative_score": 8
+    },
+    {
+     "field": "Cardiovascular",
+     "issue": "No blood pressure, hypotension or vasopressor information given; CV scored 0 by default.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "894",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 9,
+     "quote": "Glasgow Coma Score of nine"
+    },
+    "Hypotension": {
+     "value": true,
+     "quote": "Hemodynamic stability is maintained because of the patient's low blood pressure"
+    },
+    "Continuous positive airway pressure": {
+     "value": true,
+     "quote": "currently on continuous positive airway pressure"
+    },
+    "FiO2": {
+     "value": [
+      50,
+      "%"
+     ],
+     "quote": "fraction of inspired oxygen (FiO₂) of 50%"
+    },
+    "PaO2": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 80 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      2,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine of 2 mcg/kg/min"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.07,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine at a rate of 0.07 mcg/kg/min"
+    },
+    "DOBUTamine": {
+     "value": [
+      5,
+      "mcg/kg/min"
+     ],
+     "quote": "DOBUTamine running at 5 mcg/kg/min"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.08,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine at 0.08 mcg/kg/min"
+    },
+    "Urine Output": {
+     "value": [
+      700,
+      "mL/day"
+     ],
+     "quote": "urine output has been adequate at around 700 mL/day"
+    },
+    "creatinine": {
+     "value": [
+      150,
+      "µmol/L"
+     ],
+     "quote": "serum creatinine of 150 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      2.5,
+      "mg/dL"
+     ],
+     "quote": "bilirubin at 2.5 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      200000,
+      "/µL"
+     ],
+     "quote": "platelet counts measures 200,000/µL"
+    }
+   },
+   "score": 12,
+   "score_working": "Resp P/F 80/0.50=160 on CPAP +3; Coag 200k 0; Liver 2.5 +2; CV norepi 0.07/epi 0.08 <=0.1 +3; CNS GCS 9 +3; Renal Cr 150 µmol/L (1.70 mg/dL) +1, UO 700 none -> +1; total 12",
+   "note_issues": [
+    {
+     "field": "Hypotension",
+     "issue": "Illogical phrase 'Hemodynamic stability is maintained because of the patient's low blood pressure'; interpreted as hypotension on vasopressors. No BP values. No score change since pressors determine CV.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "895",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 11,
+     "quote": "Glasgow Coma Score measuring 11"
+    },
+    "Hypotension": {
+     "value": true,
+     "quote": "her blood pressure considerably lower than what is usual"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.06,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine prescribed at 0.06 mcg/kg/min"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.07,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine at 0.07 mcg/kg/min"
+    },
+    "On mechanical ventilation": {
+     "value": false,
+     "quote": "she does not require mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      45,
+      "%"
+     ],
+     "quote": "(FiO₂) is maintained at 45 %"
+    },
+    "PaO2": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) at 75 mm Hg"
+    },
+    "creatinine": {
+     "value": [
+      120,
+      "µmol/L"
+     ],
+     "quote": "serum creatinine level of 120 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "slightly elevated at 1.8 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      180000,
+      "/µL"
+     ],
+     "quote": "reading as 180,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      600,
+      "mL/day"
+     ],
+     "quote": "maintained at nearly 600 mL/day"
+    }
+   },
+   "score": 9,
+   "score_working": "Resp P/F 75/0.45=167 not ventilated +2; Coag 180k 0; Liver 1.8 +1; CV norepi 0.06/epi 0.07 +3; CNS GCS 11 +2; Renal Cr 120 µmol/L (1.36 mg/dL) +1, UO 600 none -> +1; total 9",
+   "note_issues": [
+    {
+     "field": "Continuous positive airway pressure",
+     "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 167 -> resp +3.",
+     "alternative_score": 10
+    }
+   ]
+  },
+  {
+   "row": "896",
+   "fields": {
+    "creatinine": {
+     "value": [
+      1.2,
+      "mg/dL"
+     ],
+     "quote": "creatinine levels of 1.2 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      2.2,
+      "mg/dL"
+     ],
+     "quote": "bilirubin of 2.2 mg/dL"
+    },
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "A Glasgow Coma Scale of 12"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "readings around 130/85 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      85,
+      "mm Hg"
+     ],
+     "quote": "readings around 130/85 mm Hg"
+    },
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "he was started on managed mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      55,
+      "%"
+     ],
+     "quote": "(FiO₂) became stabilized at 55 %"
+    },
+    "PaO2": {
+     "value": [
+      70,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 70 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      4,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine ran at 4 mcg/kg/min"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.08,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine at the slightly higher rate of 0.08 mcg/kg/min"
+    },
+    "Platelet count": {
+     "value": [
+      170000,
+      "/µL"
+     ],
+     "quote": "170,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      800,
+      "mL/day"
+     ],
+     "quote": "urine output documented at 800 mL/day"
+    }
+   },
+   "score": 11,
+   "score_working": "Resp P/F 70/0.55=127 ventilated +3; Coag 170k 0; Liver 2.2 +2; CV norepi 0.08 <=0.1 +3; CNS GCS 12 +2; Renal Cr 1.2 +1, UO 800 none -> +1; total 11",
+   "note_issues": []
+  },
+  {
+   "row": "897",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 10,
+     "quote": "Glasgow Coma Score was recorded to be 10"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      83,
+      "mm Hg"
+     ],
+     "quote": "systolic of 83 and diastolic of 60 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      60,
+      "mm Hg"
+     ],
+     "quote": "systolic of 83 and diastolic of 60 mm Hg"
+    },
+    "creatinine": {
+     "value": [
+      2.1,
+      "mg/dL"
+     ],
+     "quote": "creatinine of 2.1 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      2.8,
+      "mg/dL"
+     ],
+     "quote": "bilirubin of 2.8 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      150000,
+      "/µL"
+     ],
+     "quote": "platelet count was 150,000/µL"
+    },
+    "Continuous positive airway pressure": {
+     "value": true,
+     "quote": "receiving a continuous positive airway pressure (CPAP) therapy"
+    },
+    "FiO2": {
+     "value": [
+      50,
+      "%"
+     ],
+     "quote": "FiO₂ set at 50%"
+    },
+    "PaO2": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "PaO₂ of 80 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      6,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine and DOBUTamine at 6 mcg/kg/min and 2 mcg/kg/min"
+    },
+    "DOBUTamine": {
+     "value": [
+      2,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine and DOBUTamine at 6 mcg/kg/min and 2 mcg/kg/min"
+    },
+    "Urine Output": {
+     "value": [
+      900,
+      "mL/day"
+     ],
+     "quote": "urine output of 900 mL/day"
+    }
+   },
+   "score": 12,
+   "score_working": "Resp P/F 80/0.50=160 on CPAP +3; Coag 150k 0; Liver 2.8 +2; CV dopamine 6 >5 +3; CNS GCS 10 +2; Renal Cr 2.1 +2, UO 900 none -> +2; total 12",
+   "note_issues": [
+    {
+     "field": "Systolic Blood Pressure",
+     "issue": "BP described as 'stable' but 83/60 gives MAP 67.7 (<70); no score change because vasopressors set CV.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "898",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 10,
+     "quote": "Glasgow Coma Scale score of 10"
+    },
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "He is presently on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      54,
+      "%"
+     ],
+     "quote": "FiO₂ at 54 %"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "PaO₂ of 76 mm Hg"
+    },
+    "DOBUTamine": {
+     "value": [
+      1,
+      "mcg/kg/min"
+     ],
+     "quote": "DOBUTamine at 1 mcg/kg/min"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "recorded at 120 mm Hg and 75 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "recorded at 120 mm Hg and 75 mm Hg"
+    },
+    "creatinine": {
+     "value": [
+      1.4,
+      "mg/dL"
+     ],
+     "quote": "creatinine measurement at 1.4 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      2.3,
+      "mg/dL"
+     ],
+     "quote": "bilirubin level stood at 2.3 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      175000,
+      "/µL"
+     ],
+     "quote": "platelet count is 175,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      850,
+      "mL/day"
+     ],
+     "quote": "urine output was 850 mL/day"
+    }
+   },
+   "score": 10,
+   "score_working": "Resp P/F 76/0.54=141 ventilated +3; Coag 175k 0; Liver 2.3 +2; CV dobutamine any dose +2; CNS GCS 10 +2; Renal Cr 1.4 +1, UO 850 none -> +1; total 10",
+   "note_issues": []
+  },
+  {
+   "row": "899",
+   "fields": {
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "promptly put on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      51,
+      "%"
+     ],
+     "quote": "51 % FiO₂"
+    },
+    "PaO2": {
+     "value": [
+      74,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) registered at 74 mm Hg"
+    },
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "Glasgow Coma Score of 12"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      91,
+      "mm Hg"
+     ],
+     "quote": "blood pressure was 91/70 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      70,
+      "mm Hg"
+     ],
+     "quote": "blood pressure was 91/70 mm Hg"
+    },
+    "DOBUTamine": {
+     "value": [
+      3,
+      "mcg/kg/min"
+     ],
+     "quote": "DOBUTamine at 3 mcg/kg/min"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.03,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine at 0.03 mcg/kg/min"
+    },
+    "creatinine": {
+     "value": [
+      1.6,
+      "mg/dL"
+     ],
+     "quote": "creatinine levels slightly elevated at 1.6 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      1.9,
+      "mg/dL"
+     ],
+     "quote": "bilirubin level of 1.9 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      165000,
+      "/µL"
+     ],
+     "quote": "platelet count was found to be 165,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      950,
+      "mL/day"
+     ],
+     "quote": "Her daily urine output of 950 mL"
+    }
+   },
+   "score": 10,
+   "score_working": "Resp P/F 74/0.51=145 ventilated +3; Coag 165k 0; Liver 1.9 +1; CV epi 0.03 <=0.1 +3; CNS GCS 12 +2; Renal Cr 1.6 +1, UO 950 none -> +1; total 10",
+   "note_issues": []
+  },
+  {
+   "row": "900",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "the Glasgow Coma Scale score was 13"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      93,
+      "mm Hg"
+     ],
+     "quote": "blood pressure was 93/62 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      62,
+      "mm Hg"
+     ],
+     "quote": "blood pressure was 93/62 mm Hg"
+    },
+    "On mechanical ventilation": {
+     "value": false,
+     "quote": "He was not on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      55,
+      "%"
+     ],
+     "quote": "FiO₂ was maintained at 55 %"
+    },
+    "PaO2": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) at 75 mm Hg"
+    },
+    "DOBUTamine": {
+     "value": [
+      5,
+      "mcg/kg/min"
+     ],
+     "quote": "DOBUTamine running at 5 mcg/kg/min"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.07,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine coupled with EPINEPHrine at 0.07 mcg/kg/min and 0.06 mcg/kg/min respectively"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.06,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine coupled with EPINEPHrine at 0.07 mcg/kg/min and 0.06 mcg/kg/min respectively"
+    },
+    "creatinine": {
+     "value": [
+      2.4,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 2.4 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      2.3,
+      "mg/dL"
+     ],
+     "quote": "at 2.3 mg/dL, his bilirubin level"
+    },
+    "Platelet count": {
+     "value": [
+      160000,
+      "/µL"
+     ],
+     "quote": "recorded at 160,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      900,
+      "mL/day"
+     ],
+     "quote": "urine output was found to be 900 mL/day"
+    }
+   },
+   "score": 10,
+   "score_working": "Resp P/F 75/0.55=136 not ventilated +2; Coag 160k 0; Liver 2.3 +2; CV norepi 0.07/epi 0.06 +3; CNS GCS 13 +1; Renal Cr 2.4 +2, UO 900 none -> +2; total 10",
+   "note_issues": [
+    {
+     "field": "Continuous positive airway pressure",
+     "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 136 -> resp +3.",
+     "alternative_score": 11
+    }
+   ]
+  },
+  {
+   "row": "901",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 11,
+     "quote": "Glasgow Coma Score of 11"
+    },
+    "Hypotension": {
+     "value": true,
+     "quote": "blood pressure readings have recorded lower values than normal"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      87,
+      "mm Hg"
+     ],
+     "quote": "systolic and diastolic measures at 87 and 59 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      59,
+      "mm Hg"
+     ],
+     "quote": "systolic and diastolic measures at 87 and 59 mm Hg"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.04,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine infusions at rates of 0.04 mcg/kg/min"
+    },
+    "FiO2": {
+     "value": [
+      53,
+      "%"
+     ],
+     "quote": "FiO₂ is maintained at 53 %"
+    },
+    "PaO2": {
+     "value": [
+      72,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 72 mm Hg"
+    },
+    "On mechanical ventilation": {
+     "value": false,
+     "quote": "He is not on mechanical ventilation"
+    },
+    "creatinine": {
+     "value": [
+      1.1,
+      "mg/dL"
+     ],
+     "quote": "His creatinine is 1.1 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "bilirubin is 1.8 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      170000,
+      "/µL"
+     ],
+     "quote": "platelet count is 170,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      850,
+      "mL/day"
+     ],
+     "quote": "urine output recorded 850 mL/day"
+    }
+   },
+   "score": 8,
+   "score_working": "Resp P/F 72/0.53=136 not ventilated +2; Coag 170k 0; Liver 1.8 +1; CV epi 0.04 <=0.1 +3; CNS GCS 11 +2; Renal Cr 1.1 0, UO 850 none -> 0; total 8",
+   "note_issues": [
+    {
+     "field": "Continuous positive airway pressure",
+     "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 136 -> resp +3.",
+     "alternative_score": 9
+    }
+   ]
+  },
+  {
+   "row": "902",
+   "fields": {
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "He was promptly placed on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      52,
+      "%"
+     ],
+     "quote": "FiO₂ was recorded at 52%"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "PaO₂ of 76 mm Hg"
+    },
+    "Hypotension": {
+     "value": true,
+     "quote": "In response to his low blood pressure readings"
+    },
+    "DOBUTamine": {
+     "value": [
+      2,
+      "mcg/kg/min"
+     ],
+     "quote": "DOBUTamine at 2 mcg/kg/min"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.04,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine at 0.04 mcg/kg/min"
+    },
+    "Glasgow Coma Score": {
+     "value": 14,
+     "quote": "Glasgow Coma Score was 14"
+    },
+    "creatinine": {
+     "value": [
+      1.7,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.7 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      2.1,
+      "mg/dL"
+     ],
+     "quote": "bilirubin levels of 2.1 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      160000,
+      "/µL"
+     ],
+     "quote": "platelet count was found to be 160,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      950,
+      "mL/day"
+     ],
+     "quote": "urine output was documented adequately at 950 mL/day"
+    }
+   },
+   "score": 10,
+   "score_working": "Resp P/F 76/0.52=146 ventilated +3; Coag 160k 0; Liver 2.1 +2; CV epi 0.04 <=0.1 +3; CNS GCS 14 +1; Renal Cr 1.7 +1, UO 950 none -> +1; total 10",
+   "note_issues": []
+  },
+  {
+   "row": "903",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "Glasgow Coma Score has been observed at 12"
+    },
+    "On mechanical ventilation": {
+     "value": false,
+     "quote": "She did not require mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      55,
+      "%"
+     ],
+     "quote": "manageable at 55% FiO₂"
+    },
+    "PaO2": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 75 mm Hg"
+    },
+    "Hypotension": {
+     "value": false,
+     "quote": "Hemodynamically, she has been stable throughout the day"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      115,
+      "mm Hg"
+     ],
+     "quote": "systolic and diastolic blood pressure documented as 115 and 62 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      62,
+      "mm Hg"
+     ],
+     "quote": "systolic and diastolic blood pressure documented as 115 and 62 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      3.2,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine running at 3.2 mcg/kg/min"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.05,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine at 0.05 mcg/kg/min"
+    },
+    "Bilirubin": {
+     "value": [
+      2.5,
+      "mg/dL"
+     ],
+     "quote": "elevated bilirubin of 2.5 mg/dL"
+    },
+    "creatinine": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "increased creatinine levels of 1.8 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      175000,
+      "/µL"
+     ],
+     "quote": "normal range as 175,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      920,
+      "mL/day"
+     ],
+     "quote": "recorded at 920 mL/day"
+    }
+   },
+   "score": 10,
+   "score_working": "Resp P/F 75/0.55=136 not ventilated +2; Coag 175k 0; Liver 2.5 +2; CV norepi 0.05 <=0.1 +3; CNS GCS 12 +2; Renal Cr 1.8 +1, UO 920 none -> +1; total 10",
+   "note_issues": [
+    {
+     "field": "Continuous positive airway pressure",
+     "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 136 -> resp +3.",
+     "alternative_score": 11
+    },
+    {
+     "field": "Hypotension",
+     "issue": "Described as hemodynamically stable (BP 115/62, MAP 80) yet on dopamine and norepinephrine. SOFA scores the vasopressor tier (+3); if a calculator gates CV on a hypotension flag, CV = 0.",
+     "alternative_score": 7
+    }
+   ]
+  },
+  {
+   "row": "904",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Current GCS of 13"
+    },
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "He necessitated mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      53,
+      "%"
+     ],
+     "quote": "FiO₂ was at 53 %"
+    },
+    "PaO2": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "PaO₂ values were noted at 75 mm Hg"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "systolic and diastolic blood pressure readings of 120 and 80 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "systolic and diastolic blood pressure readings of 120 and 80 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      3.6,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine at 3.6 mcg/kg/min"
+    },
+    "creatinine": {
+     "value": [
+      160,
+      "µmol/L"
+     ],
+     "quote": "creatinine level of 160 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      2.4,
+      "mg/dL"
+     ],
+     "quote": "bilirubin concentration at 2.4 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      175000,
+      "/µL"
+     ],
+     "quote": "standard range of 175,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      875,
+      "mL/day"
+     ],
+     "quote": "daily urine output was recorded as an acceptable 875 mL/day"
+    }
+   },
+   "score": 9,
+   "score_working": "Resp P/F 75/0.53=142 ventilated +3; Coag 175k 0; Liver 2.4 +2; CV dopamine 3.6 <=5 +2; CNS GCS 13 +1; Renal Cr 160 µmol/L (1.81 mg/dL) +1, UO 875 none -> +1; total 9",
+   "note_issues": []
+  },
+  {
+   "row": "905",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 13,
+     "quote": "Glasgow Coma Score recently read as 13"
+    },
+    "Continuous positive airway pressure": {
+     "value": true,
+     "quote": "She is currently on CPAP"
+    },
+    "FiO2": {
+     "value": [
+      54,
+      "%"
+     ],
+     "quote": "(FiO₂) set at 54%"
+    },
+    "PaO2": {
+     "value": [
+      77,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) at 77 mm Hg"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "her blood pressure remained stable, at 120 and 80 mm Hg"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "her blood pressure remained stable, at 120 and 80 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      4,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine and DOBUTamine at 4 mcg/kg/min and 3.5 mcg/kg/min, respectively"
+    },
+    "DOBUTamine": {
+     "value": [
+      3.5,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine and DOBUTamine at 4 mcg/kg/min and 3.5 mcg/kg/min, respectively"
+    },
+    "creatinine": {
+     "value": [
+      1.9,
+      "mg/dL"
+     ],
+     "quote": "slightly elevated creatinine of 1.9 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      1.7,
+      "mg/dL"
+     ],
+     "quote": "bilirubin levels at 1.7 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      180000,
+      "/µL"
+     ],
+     "quote": "total 180,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      925,
+      "mL/day"
+     ],
+     "quote": "documented at 925 mL/day"
+    }
+   },
+   "score": 8,
+   "score_working": "Resp P/F 77/0.54=143 on CPAP +3; Coag 180k 0; Liver 1.7 +1; CV dopamine 4 <=5 / dobutamine +2; CNS GCS 13 +1; Renal Cr 1.9 +1, UO 925 none -> +1; total 8",
+   "note_issues": []
+  },
+  {
+   "row": "906",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 11,
+     "quote": "Glasgow Coma Score currently reading as 11"
+    },
+    "On mechanical ventilation": {
+     "value": false,
+     "quote": "While he’s not on mechanical ventilation"
+    },
+    "FiO2": {
+     "value": [
+      54,
+      "%"
+     ],
+     "quote": "(FiO₂) is 54%"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) of 76 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      3.4,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine is flowing at 3.4 mcg/kg/min"
+    },
+    "DOBUTamine": {
+     "value": [
+      3,
+      "mcg/kg/min"
+     ],
+     "quote": "DOBUTamine at 3 mcg/kg/min"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.04,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine at 0.04 mcg/kg/min"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.02,
+      "mcg/kg/min"
+     ],
+     "quote": "EPINEPHrine at 0.02 mcg/kg/min"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "Recorded BP was 75/45"
+    },
+    "Diastolic Blood Pressure": {
+     "value": [
+      45,
+      "mm Hg"
+     ],
+     "quote": "Recorded BP was 75/45"
+    },
+    "creatinine": {
+     "value": [
+      130,
+      "µmol/L"
+     ],
+     "quote": "creatinine level of 130 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      1.6,
+      "mg/dL"
+     ],
+     "quote": "bilirubin level of 1.6 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      165000,
+      "/µL"
+     ],
+     "quote": "platelet count of 165,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      910,
+      "mL/day"
+     ],
+     "quote": "urine output is documented at 910 mL/day"
+    }
+   },
+   "score": 9,
+   "score_working": "Resp P/F 76/0.54=141 not ventilated +2; Coag 165k 0; Liver 1.6 +1; CV norepi 0.04/epi 0.02 <=0.1 +3; CNS GCS 11 +2; Renal Cr 130 µmol/L (1.47 mg/dL) +1, UO 910 none -> +1; total 9",
+   "note_issues": [
+    {
+     "field": "Continuous positive airway pressure",
+     "issue": "CPAP status not stated (only mechanical ventilation denied). If on CPAP, P/F 141 -> resp +3.",
+     "alternative_score": 10
+    },
+    {
+     "field": "BP units",
+     "issue": "BP 75/45 given without units (assumed mm Hg); no score change.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "907",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "Glasgow Coma Score was calculated as 12"
+    },
+    "Continuous positive airway pressure": {
+     "value": true,
+     "quote": "She has been granted continuous positive airway pressure"
+    },
+    "FiO2": {
+     "value": [
+      55,
+      "%"
+     ],
+     "quote": "(FiO₂) is maintained at 55%"
+    },
+    "PaO2": {
+     "value": [
+      78,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) at 78 mm Hg"
+    },
+    "DOPamine": {
+     "value": [
+      3.8,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine and DOBUTamine at 3.8 mcg/kg/min and 4.5 mcg/kg/min respectively"
+    },
+    "DOBUTamine": {
+     "value": [
+      4.5,
+      "mcg/kg/min"
+     ],
+     "quote": "DOPamine and DOBUTamine at 3.8 mcg/kg/min and 4.5 mcg/kg/min respectively"
+    },
+    "creatinine": {
+     "value": [
+      1.7,
+      "mg/dL"
+     ],
+     "quote": "creatinine measure stands at 1.7 mg/dL"
+    },
+    "Bilirubin": {
+     "value": [
+      2,
+      "mg/dL"
+     ],
+     "quote": "bilirubin reading of 2 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      170000,
+      "/µL"
+     ],
+     "quote": "platelet count of 170,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      890,
+      "mL/day"
+     ],
+     "quote": "An output of 890 mL/day of urine"
+    }
+   },
+   "score": 10,
+   "score_working": "Resp P/F 78/0.55=142 on CPAP +3; Coag 170k 0; Liver 2.0 +2; CV dopamine 3.8 <=5 / dobutamine +2; CNS GCS 12 +2; Renal Cr 1.7 +1, UO 890 none -> +1; total 10",
+   "note_issues": []
+  },
+  {
+   "row": "908",
+   "fields": {
+    "Glasgow Coma Score": {
+     "value": 12,
+     "quote": "Glasgow Coma Score is listed as 12"
+    },
+    "On mechanical ventilation": {
+     "value": true,
+     "quote": "The patient is mechanically ventilated"
+    },
+    "FiO2": {
+     "value": [
+      52,
+      "%"
+     ],
+     "quote": "FiO₂ of 52 %"
+    },
+    "PaO2": {
+     "value": [
+      76,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) at 76 mm Hg"
+    },
+    "norEPINEPHrine": {
+     "value": [
+      0.03,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine along with EPINEPHrine controlled at the rate of 0.03 mcg/kg/min and 0.02 mcg/kg/min respectively"
+    },
+    "EPINEPHrine": {
+     "value": [
+      0.02,
+      "mcg/kg/min"
+     ],
+     "quote": "norEPINEPHrine along with EPINEPHrine controlled at the rate of 0.03 mcg/kg/min and 0.02 mcg/kg/min respectively"
+    },
+    "creatinine": {
+     "value": [
+      140,
+      "µmol/L"
+     ],
+     "quote": "serum creatinine level of 140 µmol/L"
+    },
+    "Bilirubin": {
+     "value": [
+      2.2,
+      "mg/dL"
+     ],
+     "quote": "total bilirubin level scaled at 2.2 mg/dL"
+    },
+    "Platelet count": {
+     "value": [
+      165000,
+      "/µL"
+     ],
+     "quote": "normalcy at 165,000/µL"
+    },
+    "Urine Output": {
+     "value": [
+      880,
+      "mL/day"
+     ],
+     "quote": "close to 880 mL/day"
+    }
+   },
+   "score": 11,
+   "score_working": "Resp P/F 76/0.52=146 ventilated +3; Coag 165k 0; Liver 2.2 +2; CV norepi 0.03/epi 0.02 <=0.1 +3; CNS GCS 12 +2; Renal Cr 140 µmol/L (1.58 mg/dL) +1, UO 880 none -> +1; total 11",
+   "note_issues": []
+  }
+ ]
+}

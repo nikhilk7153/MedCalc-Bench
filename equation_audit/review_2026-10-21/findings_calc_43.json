@@ -1,0 +1,189 @@
+{
+ "calculator_id": "43",
+ "mdcalc_source": "https://www.mdcalc.com/calc/691/sequential-organ-failure-assessment-sofa-score (platelet, GCS, bilirubin, cardiovascular, renal bands fetched directly; the PaO2/FiO2 point table did not render in the fetch, so respiratory bands are the standard MDCalc/Vincent 1996 ones)",
+ "mdcalc_rules": "Use worst value over 24 h. Resp PaO2/FiO2: >=400 0; 300-399 +1; 200-299 +2; <=199 and not mechanically ventilated (CPAP counts as ventilated) +2; 100-199 ventilated +3; <100 ventilated +4. Platelets x10^3/uL: >=150 0; 100-149 +1; 50-99 +2; 20-49 +3; <20 +4. GCS: 15 0; 13-14 +1; 10-12 +2; 6-9 +3; <6 +4. Bilirubin mg/dL (umol/L): <1.2 (<20) 0; 1.2-1.9 (20-32) +1; 2.0-5.9 (33-101) +2; 6.0-11.9 (102-204) +3; >=12 (>204) +4. CV (mcg/kg/min): no hypotension 0; MAP <70 +1; dopamine <=5 or any dobutamine +2; dopamine >5 or epi <=0.1 or norepi <=0.1 +3; dopamine >15 or epi >0.1 or norepi >0.1 +4. Renal creatinine mg/dL (umol/L): <1.2 (<110) 0; 1.2-1.9 (110-170) +1; 2.0-3.4 (171-299) +2; 3.5-4.9 (300-440) or UO <500 mL/day +3; >=5.0 (>440) or UO <200 mL/day +4.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "No substantive scoring difference found. Respiratory, CV (pressor hierarchy evaluated before MAP; MAP=(SBP+2*DBP)/3 <70 -> 1; hypotension flag used only when BP absent), GCS, platelets, bilirubin and renal (max of creatinine and urine output) bands and boundaries match MDCalc. CPAP is treated the same as mechanical ventilation, as on MDCalc. Code reproduces all 20 stored answers from the stored inputs.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Minor: SI values are converted to mg/dL (creatinine MW 113.12, bilirubin MW 584.66) and scored on mg/dL cut-offs, whereas MDCalc prints rounded umol/L bands. Values in the gaps (creatinine 106-109, 171-176, 300-308 umol/L; bilirubin 20.5-20.9, 33-34 umol/L etc.) could score one point differently. No test row or the one-shot falls in a gap (creatinine 92.12, 120, 121.32, 130, 140, 150, 160 umol/L; bilirubin 88.41 umol/L).",
+   "rows_affected": []
+  },
+  {
+   "issue": "Cosmetic: the not-ventilated <200 branch checks a misspelled key 'mechanical_ventillation'; because cpap/mechanical_ventilation are always defaulted beforehand, the logic still evaluates correctly. Vasopressor units are not checked (all inputs are mcg/kg/min).",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "Resp: 87/0.53=164, not ventilated -> 2; CV: BP 62/42 MAP 48.7, no pressors -> 1; GCS not given (A&Ox4) -> 15 -> 0; bili 2.43 -> 2; plt 157k -> 0; renal: Cr 3.12 (2) but no urine output (0 mL/day <200) -> 4. Total 9.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "889",
+   "status": "INPUT_ERROR",
+   "stored_answer": "11",
+   "mdcalc_answer": "14",
+   "details": "Urine Output omitted from inputs. Note states the patient is anuric; per the one-shot convention ('no urine output' -> 0 mL/day) renal scores 4 (urine <200 mL/day), not 1 from Cr 121.32 umol/L (1.37 mg/dL). Key 'Urine Output': stored (absent) -> correct [0, 'mL/day']. Other components correct: resp 76/0.60=126.7 ventilated -> 3; MAP 48.3 no pressors -> 1; GCS E2 V3 M4 = 9 -> 3; bili 88.41 umol/L = 5.17 mg/dL -> 2; plt 140.4k -> 1. Total 3+1+3+2+1+4 = 14. Code reproduces 14 with urine_output=[0,'mL/day'].",
+   "evidence_quote": "The patient has no urine output noted, raising concerns for renal or urinary complications."
+  },
+  {
+   "row": "890",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "10",
+   "mdcalc_answer": "14 (most likely intent: anuria, bilirubin 1.57 mg/dL); 10 if urine output is read as 'not documented'",
+   "details": "Two issues. (1) Bilirubin unit: note says '1.57 mg/L' (= 0.157 mg/dL, 0 pts) but the stored input silently uses 1.57 mg/dL (1 pt); with jaundice and scleral icterus, mg/dL is clearly intended, so the note has a unit typo. (2) Urine output: 'no urine output recorded' reads as anuria (same wording style as the one-shot, which scores 0 mL/day -> 4 renal points) but could also mean 'not documented'; the inputs omit Urine Output, so renal = 0 from Cr 92.12 umol/L (1.04 mg/dL). Other components: CPAP, 90/0.41=219.5 -> 2; dopamine 6.32 (>5), norepi 0.1, epi 0.1 (<=0.1) -> 3; GCS 10 -> 2; plt 88.4k -> 2. Totals: stored reading 2+3+2+1+2+0=10; anuric reading 14; literal mg/L reading 13 (anuric) or 9. Recommend fixing note to 'mg/dL' and making urine output unambiguous (or adding Urine Output [0,'mL/day'] -> 14).",
+   "evidence_quote": "a total bilirubin level of 1.57 mg/L ... Notably, there is no urine output recorded."
+  },
+  {
+   "row": "891",
+   "status": "OK",
+   "stored_answer": "13",
+   "mdcalc_answer": "13",
+   "details": "Resp 87/0.53=164 not ventilated -> 2; epi 0.33 (>0.1) -> 4 (dopamine 9.1 alone would be 3); GCS 15 -> 0; bili 7.43 -> 3; plt 75.3k -> 2; Cr 2.56 -> 2. Total 13.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "892",
+   "status": "OK",
+   "stored_answer": "13",
+   "mdcalc_answer": "13",
+   "details": "Resp 87/0.71=122.5, ventilation not mentioned -> not ventilated -> 2; normotensive, no pressors -> 0; GCS 8 -> 3; bili 3.32 -> 2; plt 87k -> 2; urine 132 mL/day -> 4 (no creatinine given). Total 13.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "893",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "Resp 68/0.60=113.3 ventilated -> 3; no BP/pressors -> 0; GCS 13 -> 1; bili 3 -> 2; plt 150,000 -> 0 (note calls it 'thrombocytopenia' but value is exactly 150k, which scores 0; wording only); Cr 1.5 -> 1, urine 600. Total 7.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "894",
+   "status": "OK",
+   "stored_answer": "12",
+   "mdcalc_answer": "12",
+   "details": "Resp CPAP 80/0.50=160 -> 3; pressors dopamine 2, dobutamine 5, norepi 0.07, epi 0.08 -> 3; GCS 9 -> 3; bili 2.5 -> 2; plt 200k -> 0; Cr 150 umol/L (1.70 mg/dL; also 110-170 umol band on MDCalc) -> 1, urine 700. Total 12. (Odd phrase 'Hemodynamic stability is maintained because of the patient's low blood pressure' has no scoring effect.)",
+   "evidence_quote": ""
+  },
+  {
+   "row": "895",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "Resp 75/0.45=166.7 not ventilated -> 2; norepi 0.06, epi 0.07 -> 3; GCS 11 -> 2; bili 1.8 -> 1; plt 180k -> 0; Cr 120 umol/L (1.36 mg/dL) -> 1, urine 600. Total 9.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "896",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "Resp 70/0.55=127.3 ventilated -> 3; dopamine 4 + norepi 0.08 -> 3 (BP 130/85 irrelevant); GCS 12 -> 2; bili 2.2 -> 2; plt 170k -> 0; Cr 1.2 (exact boundary, 1.2-1.9 band) -> 1, urine 800. Total 11.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "897",
+   "status": "INPUT_ERROR",
+   "stored_answer": "11",
+   "mdcalc_answer": "12",
+   "details": "'Continuous positive airway pressure' omitted from inputs (code defaults it to False). Note explicitly says the patient is on CPAP; MDCalc's ventilation toggle includes CPAP, so PaO2/FiO2 = 80/0.50 = 160 (<200) on CPAP scores 3, not 2. Key 'Continuous positive airway pressure': stored (absent -> False) -> correct True. Other components: dopamine 6 (>5) + dobutamine 2 -> 3 (BP 83/60 MAP 67.7 superseded by pressors); GCS 10 -> 2; bili 2.8 -> 2; plt 150k -> 0; Cr 2.1 -> 2, urine 900. Total 3+3+2+2+0+2 = 12. Code reproduces 12 with cpap=True.",
+   "evidence_quote": "The patient is receiving a continuous positive airway pressure (CPAP) therapy, with a FiO₂ set at 50%, maintaining a PaO₂ of 80 mm Hg."
+  },
+  {
+   "row": "898",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Resp 76/0.54=140.7 ventilated -> 3; dobutamine 1 -> 2 (BP 120/75); GCS 10 -> 2; bili 2.3 -> 2; plt 175k -> 0; Cr 1.4 -> 1, urine 850. Total 10.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "899",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Resp 74/0.51=145.1 ventilated -> 3; dobutamine 3 + epi 0.03 -> 3; GCS 12 -> 2; bili 1.9 -> 1; plt 165k -> 0; Cr 1.6 -> 1, urine 950. Total 10. Stored 'Hypotension': True is not stated (BP 91/70, MAP 77) but has no effect because vasopressors determine the CV score.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "900",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Resp 75/0.55=136.4 not ventilated -> 2; dobutamine 5, norepi 0.07, epi 0.06 -> 3; GCS 13 -> 1; bili 2.3 -> 2; plt 160k -> 0; Cr 2.4 -> 2, urine 900. Total 10.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "901",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Resp 72/0.53=135.8 not ventilated -> 2; epi 0.04 -> 3 (BP 87/59); GCS 11 -> 2; bili 1.8 -> 1; plt 170k -> 0; Cr 1.1 -> 0, urine 850. Total 8.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "902",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Resp 76/0.52=146.2 ventilated -> 3; dobutamine 2 + epi 0.04 -> 3; GCS 14 -> 1; bili 2.1 -> 2; plt 160k -> 0; Cr 1.7 -> 1, urine 950. Total 10.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "903",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Resp 75/0.55=136.4 not ventilated -> 2; dopamine 3.2 + norepi 0.05 -> 3 (BP 115/62); GCS 12 -> 2; bili 2.5 -> 2; plt 175k -> 0; Cr 1.8 -> 1, urine 920. Total 10.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "904",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "Resp 75/0.53=141.5 ventilated -> 3; dopamine 3.6 (<=5) -> 2; GCS 13 -> 1; bili 2.4 -> 2; plt 175k -> 0; Cr 160 umol/L (1.81 mg/dL; 110-170 umol band) -> 1, urine 875. Total 9.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "905",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Resp CPAP 77/0.54=142.6 -> 3; dopamine 4 + dobutamine 3.5 -> 2; GCS 13 -> 1; bili 1.7 -> 1; plt 180k -> 0; Cr 1.9 -> 1, urine 925. Total 8.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "906",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "Resp 76/0.54=140.7 not ventilated -> 2; dopamine 3.4, dobutamine 3, norepi 0.04, epi 0.02 -> 3; GCS 11 -> 2; bili 1.6 -> 1; plt 165k -> 0; Cr 130 umol/L (1.47 mg/dL) -> 1, urine 910. Total 9.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "907",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Resp CPAP 78/0.55=141.8 -> 3; dopamine 3.8 + dobutamine 4.5 -> 2; GCS 12 -> 2; bili 2.0 (exact boundary, 2.0-5.9 band) -> 2; plt 170k -> 0; Cr 1.7 -> 1, urine 890. Total 10.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "908",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "Resp 76/0.52=146.2 ventilated -> 3; norepi 0.03 + epi 0.02 -> 3; GCS 12 -> 2; bili 2.2 -> 2; plt 165k -> 0; Cr 140 umol/L (1.58 mg/dL) -> 1, urine 880. Total 11.",
+   "evidence_quote": ""
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+8 non-template rows from cand_18_740.csv to check
+entities_c18740.jsonl: 0 cached, 8 to run
+Entities Match
+True     6
+False    2
