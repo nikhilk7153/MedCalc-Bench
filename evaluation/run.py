@@ -220,7 +220,14 @@ def truncate(tokenizer, text, n):
     return tokenizer.decode(tokenizer.encode(text, add_special_tokens=False)[:n])
 
 
-def build_messages(row, prompt_style, model_name, tokenizer, one_shot_json):
+def prompt_length(tokenizer, messages):
+    return len(tokenizer.encode(tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True), add_special_tokens=False))
+
+
+def build_messages(row, prompt_style, model_name, tokenizer, one_shot_json, fit_reserve=None):
+    """Default: the original truncation (PMC-LLaMA note 256 tokens; one-shot example 256 tokens for PMC-LLaMA, 512 for
+    Meditron). With fit_reserve, PMC-LLaMA keeps as much of the note as fits while leaving fit_reserve tokens of its
+    context for the answer, and Meditron's one-shot example is trimmed further only when it would leave less than that."""
     name = model_name.lower()
     if "meditron" in name:
         zero_shot_fn, direct_answer_fn, one_shot_fn = zero_shot_meditron, direct_answer_meditron, one_shot_meditron
@@ -237,33 +244,51 @@ def build_messages(row, prompt_style, model_name, tokenizer, one_shot_json):
     if isinstance(time_point, str) and time_point.strip():
         question = question.rstrip() + " " + time_point.strip()
 
-    if "pmc_llama" in name:
-        patient_note = truncate(tokenizer, patient_note, 256)
-    if prompt_style == "zero_shot":
-        system, user = zero_shot_fn(patient_note, question)
-    elif prompt_style == "one_shot":
-        example = copy.deepcopy(one_shot_json[calculator_id])
-        if "meditron" in name:
-            example["Patient Note"] = truncate(tokenizer, example["Patient Note"], 512)
-            example["Response"]["step_by_step_thinking"] = truncate(tokenizer, example["Response"]["step_by_step_thinking"], 512)
-        elif "pmc_llama" in name:
-            example["Patient Note"] = truncate(tokenizer, example["Patient Note"], 256)
-            example["Response"]["step_by_step_thinking"] = truncate(tokenizer, example["Response"]["step_by_step_thinking"], 256)
-        system, user = one_shot_fn(patient_note, question, one_shot_example_question(calculator_id, question), example["Patient Note"], {"step_by_step_thinking": example["Response"]["step_by_step_thinking"], "answer": example["Response"]["answer"]})
-    elif prompt_style == "direct_answer":
-        system, user = direct_answer_fn(patient_note, question)
-    else:
-        raise ValueError(f"Unknown prompt style: {prompt_style}")
+    example_tokens = 512 if "meditron" in name else 256 if "pmc_llama" in name else None
 
-    messages = [
-        {"role": "system", "content": system},
-        {"role": "user", "content": user}
-    ]
+    def assemble(note, example_tokens):
+        if prompt_style == "zero_shot":
+            system, user = zero_shot_fn(note, question)
+        elif prompt_style == "one_shot":
+            example = copy.deepcopy(one_shot_json[calculator_id])
+            if example_tokens is not None:
+                example["Patient Note"] = truncate(tokenizer, example["Patient Note"], example_tokens)
+                example["Response"]["step_by_step_thinking"] = truncate(tokenizer, example["Response"]["step_by_step_thinking"], example_tokens)
+            system, user = one_shot_fn(note, question, one_shot_example_question(calculator_id, question), example["Patient Note"], {"step_by_step_thinking": example["Response"]["step_by_step_thinking"], "answer": example["Response"]["answer"]})
+        elif prompt_style == "direct_answer":
+            system, user = direct_answer_fn(note, question)
+        else:
+            raise ValueError(f"Unknown prompt style: {prompt_style}")
+        return [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user}
+        ]
+
+    if fit_reserve is None or not ("pmc_llama" in name or "meditron" in name):
+        if "pmc_llama" in name:
+            patient_note = truncate(tokenizer, patient_note, 256)
+        return patient_note, assemble(patient_note, example_tokens)
+
+    budget = max_length_for(model_name) - fit_reserve
+    if "pmc_llama" in name:
+        note_tokens = tokenizer.encode(patient_note, add_special_tokens=False)
+        room = budget - prompt_length(tokenizer, assemble("", example_tokens))
+        while len(note_tokens) > room:  # cut only when the whole note does not fit
+            patient_note = tokenizer.decode(note_tokens[:max(room, 0)])
+            if room <= 0 or prompt_length(tokenizer, assemble(patient_note, example_tokens)) <= budget:
+                break
+            room -= 8
+    messages = assemble(patient_note, example_tokens)
+    while prompt_style == "one_shot" and example_tokens > 0 and prompt_length(tokenizer, messages) > budget:
+        example_tokens -= 32
+        messages = assemble(patient_note, max(example_tokens, 0))
     return patient_note, messages
 
 
-def score(row, patient_note, answer, prompt_style):
+def score(row, patient_note, answer, prompt_style, messages=None, prompt=None):
+    """messages: the chat messages sent; prompt: the templated text the open models received (vLLM only)."""
     calculator_id = str(row["Calculator ID"])
+    time_point = row.get("Time Point Instruction")
     outputs = {
         "Row Number": int(row["Row Number"]),
         "Calculator Name": row["Calculator Name"],
@@ -272,6 +297,7 @@ def score(row, patient_note, answer, prompt_style):
         "Note ID": str(row["Note ID"]),
         "Patient Note": patient_note,
         "Question": row["Question"],
+        "Time Point Instruction": time_point.strip() if isinstance(time_point, str) else "",
         "Ground Truth Answer": row["Ground Truth Answer"],
         "Ground Truth Explanation": row["Ground Truth Explanation"],
         "LLM Raw Output": answer,
@@ -288,6 +314,10 @@ def score(row, patient_note, answer, prompt_style):
         outputs["Result"] = "Incorrect"
     if prompt_style == "direct_answer":
         outputs["LLM Explanation"] = "N/A"
+    if messages is not None:
+        outputs["Prompt Messages"] = messages
+    if prompt is not None:
+        outputs["Prompt"] = prompt
     return outputs
 
 
@@ -310,13 +340,13 @@ def run_vllm(args, model_name, df, one_shot_json, output_paths):
     for prompt_style in prompt_styles:
         for index in range(len(df)):
             row = df.iloc[index]
-            patient_note, messages = build_messages(row, prompt_style, model_name, tokenizer, one_shot_json)
+            patient_note, messages = build_messages(row, prompt_style, model_name, tokenizer, one_shot_json, args.fit_context)
             prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             ids = tokenizer.encode(prompt, add_special_tokens=False)
             # llm_inference.py: max_length=min(max_length, len(encode(prompt, add_special_tokens=True)) + 4096)
             total = min(max_length, len(tokenizer.encode(prompt, add_special_tokens=True)) + 4096)
             jobs.append({"prompt_style": prompt_style, "row": row, "patient_note": patient_note, "ids": ids,
-                         "max_tokens": total - len(ids)})
+                         "max_tokens": total - len(ids), "messages": messages, "prompt": prompt})
 
     too_long = [j for j in jobs if j["max_tokens"] < 1]
     if too_long:
@@ -346,7 +376,7 @@ def run_vllm(args, model_name, df, one_shot_json, output_paths):
         with open(os.path.join("outputs", output_paths[prompt_style]), "w") as f:
             for j in jobs:
                 if j["prompt_style"] == prompt_style:
-                    f.write(json.dumps({**score(j["row"], j["patient_note"], j["answer"], prompt_style), **j["finish"]}) + "\n")
+                    f.write(json.dumps({**score(j["row"], j["patient_note"], j["answer"], prompt_style, j["messages"], j["prompt"]), **j["finish"]}) + "\n")
     return prompt_styles
 
 
@@ -369,7 +399,7 @@ def run_openai(args, model_name, df, one_shot_json, output_paths):
     def call(row, prompt_style):
         patient_note, messages = build_messages(row, prompt_style, model_name, None, one_shot_json)
         response = client.chat.completions.create(model=api_model, messages=messages, temperature=0)
-        outputs = score(row, patient_note, re.sub(r"\s+", " ", response.choices[0].message.content), prompt_style)
+        outputs = score(row, patient_note, re.sub(r"\s+", " ", response.choices[0].message.content), prompt_style, messages)
         outputs["LLM Model Version"] = response.model
         return outputs
 
@@ -413,6 +443,7 @@ if __name__ == "__main__":
     parser.add_argument('--tp', type=int, default=1, help='vLLM tensor parallel size (number of GPUs)')
     parser.add_argument('--workers', type=int, default=16, help='Parallel OpenAI requests')
     parser.add_argument('--limit', type=int, default=None, help='Only run the first N rows (for a test)')
+    parser.add_argument('--fit_context', type=int, default=None, help='PMC-LLaMA / Meditron only: instead of the fixed truncation, keep as much of the note as fits while leaving this many tokens for the answer')
     args = parser.parse_args()
 
     model_name = args.model

@@ -1,9 +1,9 @@
 Group,Path,Status,Description,Files,Size (MB),md5 (files),Exists
-1 Data,dataset/test_data_10_22.csv,CURRENT (used by all final runs),"Final test set, 1,048 rows / 55 calculators / 768 with a Time Point Instruction. Only change after the runs: PERC wording 'do increment' -> 'do not increment' in 19 explanations (no answers changed).",1,4.07,b8942c0cf68c5c6e8ed2f52d02938729,True
-1 Data,dataset/test_data_10_22_corrected.csv,CURRENT (corrected copy),"test_data_10_22.csv + 13 label fixes (rows 240,241,304,318,350,360,362,447,452,461,465,500,849) + CKD-EPI explanation wording. Not used for the main runs.",1,4.06,18dffe88f06dfb51a780337490b28fab,True
-1 Data,final_files_2026-10-16/one_shot_10_17_2026.json,CURRENT (used by all final runs),"One-shot examples, 55 calculators (CSV twin: one_shot_10_17_2026.csv).",1,0.22,b3ddc1c7f7fc62d21f2fbff0b8c80480,True
-1 Data,final_files_2026-10-16/one_shot_10_17_2026_corrected.json,CURRENT (corrected copy),"Same, with only the CKD-EPI (calculator 3) explanation regenerated after the wording fix (CSV twin: one_shot_10_17_2026_corrected.csv).",1,0.22,ededd6264b1d449805069e8a0af7e9f5,True
-1 Data,dataset/test_data_10_22_astra.csv,EXPERIMENTAL (unreviewed astra corrections),"test_data_10_22_corrected.csv + all pending gpt-6-astra corrections that match current rows (45 rows changed: 26 answers, 6 notes). For measuring their effect only.",1,4.06,129cbc704efa7850951042b065d6aaef,True
+1 Data,dataset/test_data_10_22.csv,CURRENT (used by all final runs),"Final test set, 1,048 rows / 55 calculators / 768 with a Time Point Instruction. Only change after the runs: PERC wording 'do increment' -> 'do not increment' in 19 explanations (no answers changed).",1,4.07,d880d87f79156aafc902ba657d9dae27,True
+1 Data,dataset/test_data_10_22_corrected.csv,CURRENT (corrected copy),"test_data_10_22.csv + 13 label fixes (rows 240,241,304,318,350,360,362,447,452,461,465,500,849) + CKD-EPI explanation wording. Not used for the main runs.",1,4.07,394de441595e8561667cf12ad8532189,True
+1 Data,final_files_2026-10-16/one_shot_10_17_2026.json,CURRENT (used by all final runs),"One-shot examples, 55 calculators (CSV twin: one_shot_10_17_2026.csv).",1,0.22,769a266c921fd4da4e4e171a3945f811,True
+1 Data,final_files_2026-10-16/one_shot_10_17_2026_corrected.json,CURRENT (corrected copy),"Same, with only the CKD-EPI (calculator 3) explanation regenerated after the wording fix (CSV twin: one_shot_10_17_2026_corrected.csv).",1,0.22,63c12391ea4f399ac1a75ff6e9fe596d,True
+1 Data,dataset/test_data_10_22_astra.csv,EXPERIMENTAL (unreviewed astra corrections),"test_data_10_22_corrected.csv + all pending gpt-6-astra corrections that match current rows (45 rows changed: 26 answers, 6 notes). For measuring their effect only.",1,4.07,1861a450a8698b426502fce8a671ad93,True
 1 Data,dataset/test_data.csv,REFERENCE,"MedCalc-Bench v1.0 test set (1,047 rows), the paper's original.",1,4.0,eea024104d7af7694fc43ce003952154,True
 1 Data,dataset/test_data_1_17_2025.csv,REFERENCE,January 2025 version (source of the 1/17 handwritten notes).,1,4.38,d0464a74351ddd0fd4e5922d63a6f34f,True
 1 Data,dataset/test_data_10_22_2026.csv,OTHER VERSION (not used for runs),A second '10/22' build from the 10/20 pipeline; not the file the runs used.,1,4.07,81d3b60c9012d354b386918a75743e8e,True
@@ -13,12 +13,13 @@ Group,Path,Status,Description,Files,Size (MB),md5 (files),Exists
 2 Review,equation_audit/astra_rule_based_corrections.csv,REFERENCE,"gpt-6-astra review: 104 rule-based corrections (88 input, 16 note edits) with status.",1,0.04,656a3ef43be76eaeb62766385362ea24,True
 2 Review,equation_audit/overrides/pending_physician_review/,PENDING,"Machine-readable astra corrections set aside for physician review (89 entity overrides, 15 note edits).",4,0.04,,True
 2 Review,dataset/CHANGELOG.md,REFERENCE,"Changelog of the 10/14-10/20 corrected-dataset pipeline (conventions, blood-gas rule, astra status).",1,0.01,66057a3f1fe8d37d1b0d039273520f36,True
-3 Code,evaluation/run.py,CURRENT,"Main runner (vLLM for open models, OpenAI SDK 2.x for GPT), direct/zero-shot/one-shot.",1,0.03,5f7e8a9d5b4f3b95ebeae90fe27fdac4,True
+3 Code,evaluation/run.py,CURRENT,"Main runner (vLLM for open models, OpenAI SDK 2.x for GPT), direct/zero-shot/one-shot. Optional --fit_context (default behaviour unchanged). Since 2026-10-24 also saves Time Point Instruction and the prompt per row.",1,0.03,8192b62bac5fcc27defcd366e3342fbc,True
 3 Code,evaluation/evaluate.py,CURRENT,Scoring (check_correctness).,1,0.0,b2f3e1ad90b2bffc5808f72ba247783a,True
 3 Code,evaluation/code_exec_timed.py,CURRENT,Code-augmented runner (paper's openai==0.28.0; run with .venv_openai028).,1,0.01,e7da8218d1d4961ee95aea0f88721f75,True
 3 Code,evaluation/error_analysis_batch.py,CURRENT,"Error analysis via the OpenAI Batch API (paper's prompt, gpt-4, temperature 0).",1,0.0,73dce14b27b91b8d59412e40ad186255,True
 3 Code,evaluation/check_inputs.py,CURRENT,Pre-flight input check.,1,0.0,640fc1e52db156d103c6f2fb715cef7b,True
 3 Code,evaluation/table_stats.py,CURRENT,Accuracy by category.,1,0.0,770944a624f7f617b31ed9c53bb3673c,True
+3 Code,evaluation/attribute_analysis.py,CURRENT,"Accuracy vs. number of attributes (paper Appendix E.1, Figures 2-3): attributes per calculator from name_to_python.json, second-degree fit per model; zero-shot by default.",1,0.01,9b7a5cddde2732ab995ce8d9229ec123,True
 3 Code,calculator_implementations_verified/,CURRENT,"Calculator code that generates labels (Serum Osm, PERC wording and CKD-EPI wording fixed).",127,0.53,,True
 3 Code,.venv_openai028/,CURRENT,Python env with openai==0.28.0 for code-augmented runs.,4585,106.42,,True
 3 Code,session_archive_2026-10-22/regen_labels.py,CURRENT,Regenerates labels/explanations from Relevant Entities with the verified code (dry run unless --write).,1,0.0,6a71aa617d8a4f08f4c1037fc10cb661,True
@@ -27,13 +28,23 @@ Group,Path,Status,Description,Files,Size (MB),md5 (files),Exists
 4 Results,final_runs/test_data_10_22_corrected/,CURRENT (re-scored),"All 26 runs (24 main + 2 code-augmented), original model answers re-scored against test_data_10_22_corrected.csv (13 fixes).",52,144.12,,True
 4 Results,extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/,CURRENT (separate re-run),"All 8 models re-run on the 13 corrected + 20 CKD-EPI rows with the corrected one-shot; per-model folders, error_analysis/, MANIFEST.md.",105,11.61,,True
 4 Results,extra_runs/astra_corrections_rerun_2026-10-22/,EXPERIMENTAL (separate re-run),"All 8 models (+ code-augmented) on the 45 astra-corrected rows; per-model folders, error_analysis/, astra_changes_applied.csv, MANIFEST.md.",107,20.54,,True
+4 Results,extra_runs/mdrd_sodium_wording_rerun_2026-10-22/,"CURRENT (separate re-run, other session)","MDRD + Sodium Correction rows (40) re-run with the reworded questions: 8 models zero/one-shot, GPT code-augmented, error analysis, MANIFEST.md.",87,10.24,,True
+4 Results,final_runs/test_data_10_22_reworded/,"CURRENT (merged, other session)",Main runs with the 40 reworded MDRD/Sodium rows merged in; zero/one-shot + code-augmented; merged error analysis; MANIFEST.md.,71,144.86,,True
+4 Results,extra_runs/sofa_oneshot_rerun_2026-10-23/,"CURRENT (separate re-run, other session)","20 SOFA rows, one-shot, corrected SOFA example (answer 7): GPT-3.5 only (via gpt-3.5-turbo-16k alias). GPT-4 retired, not run.",8,4.5,,True
+4 Results,extra_runs/oss_rerun_2026-10-24/,CURRENT (separate re-run),"Six open models: sofa_oneshot/ (20 SOFA rows, one-shot, corrected example) and ldl_friedewald/ (20 LDL rows x 3 styles, Friedewald question), each with outputs/ results/ logs/; MANIFEST.md. GPT models retired, not run; no error analysis yet.",70,7.9,,True
+4 Results,extra_runs/pmc_llama_fit_context_2026-10-24/,CURRENT (separate re-run),"PMC-LLaMA, all 1,048 rows x 3 styles, with run.py --fit_context 512 (note kept whole when it fits) instead of the fixed 256-token cut. Accuracy essentially unchanged; MANIFEST.md.",11,17.76,,True
+4 Results,final_runs/test_data_10_22_with_prompts/,CURRENT (audit copy),The 24 main-run outputs with Time Point Instruction and the reconstructed prompts added; all original fields unchanged; MANIFEST.md.,25,301.88,,True
+4 Results,extra_runs/time_point_replay_check_2026-10-24/,AUDIT,"Llama3-8B replay of the final run with and without the time-point instruction: replay reproduces the original outputs, the control does not; MANIFEST.md.",9,33.24,,True
+4 Results,extra_runs/gpt-4o-2024-08-06_benchmark_2026-10-24/,CURRENT (extra model),GPT-4o (2024-08-06) on the as-run test set: direct/zero-shot/one-shot + code-augmented; MANIFEST.md.,15,46.0,,True
+4 Results,extra_runs/question_clarifications_rerun_2026-10-22/,UNUSED SKELETON,"Inputs only, from an interrupted step; nothing was run. Safe to delete.",7,4.58,,True
 4 Results,extra_runs/corrected_rows_rerun_2026-10-22/,SUPERSEDED,Earlier GPT-only re-run of 11 rows (see its README).,22,0.67,,True
+4 Results,evaluation/attribute_analysis_10_22/,CURRENT (Appendix E.1 figures),"Zero-shot accuracy vs. number of attributes for the 24 main runs: equation- and rule-based figures, points CSV, fit coefficients. Replaces the paper's Figures 2-3, which were inconsistent with Table 2.",4,0.29,,True
 5 Error analysis,evaluation/error_analysis_10_22/,CURRENT (main),"12,079 wrong zero/one-shot answers from the 16 main runs, classified (16 *.error_type.json); references: test_data_10_22.csv explanations.",35,70.57,,True
 5 Error analysis,extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/error_analysis/,CURRENT (re-run),457 wrong answers from the re-run; references: corrected explanations.,34,2.44,,True
 5 Error analysis,extra_runs/astra_corrections_rerun_2026-10-22/error_analysis/,EXPERIMENTAL (astra re-run),630 wrong answers from the astra re-run; references: astra-dataset explanations.,34,6.9,,True
 5 Error analysis,evaluation/error_analysis_1k/,SUPERSEDED,"1,000-request trial.",6,6.4,,True
-6 Backups,gpu_backup_2026-10-22/,BACKUP,Full copy of the GPU instance's /workspace/medcalc and helper files (checksum-verified; no model weights).,373,385.16,,True
-6 Backups,session_archive_2026-10-22/,BACKUP,"Working files: dataset backups before every edit (incl. test_data_10_22.before_perc_wording.csv), audit inputs, scripts.",205,671.84,,True
+6 Backups,gpu_backup_2026-10-22/,BACKUP,Full copy of the GPU instance's /workspace/medcalc and helper files (checksum-verified; no model weights).,541,688.99,,True
+6 Backups,session_archive_2026-10-22/,BACKUP,"Working files: dataset backups before every edit (incl. test_data_10_22.before_perc_wording.csv), audit inputs, scripts.",274,713.4,,True
 7 Old runs,evaluation/outputs/test_data_final/,SUPERSEDED,"First open-model run (double BOS, PMC stop token).",28,125.56,,True
 7 Old runs,evaluation/outputs/test_data_final_r2/,SUPERSEDED,"Second run, one-shot with criteria lists.",23,117.6,,True
 7 Old runs,evaluation/outputs/test_data_final_r2_nocrit/,SUPERSEDED,"Second run, one-shot without criteria lists.",7,42.25,,True

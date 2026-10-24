@@ -11,7 +11,7 @@ def compute_sodium_correction_hyperglycemia_explanation(input_variables):
 
     corrected_sodium = round_number(sodium + 0.024 * (glucose - 100))
 
-    explanation = "The formula for Sodium Correction for Hyperglycemia based on Hiller, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\n"
+    explanation = "The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\n"
 
     explanation += sodium_explanation + "\n"
     explanation += glucose_explanation + "\n"

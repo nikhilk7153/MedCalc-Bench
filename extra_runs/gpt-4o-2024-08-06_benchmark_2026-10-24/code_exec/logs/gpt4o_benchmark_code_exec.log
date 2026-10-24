@@ -1,0 +1,5 @@
+gpt-4o-2024-08-06: 0 rows already done, 1048 to run
+gpt-4o-2024-08-06: 1048 rows in 227s wall clock (3.8 min, 16 workers)
+per row: median 3s, max 39s; rounds median 2
+correct 757/1048; API errors 0
+{"lab": {"average": 78.66, "std": 0.02}, "risk": {"average": 58.33, "std": 0.03}, "physical": {"average": 84.17, "std": 0.02}, "severity": {"average": 75.0, "std": 0.05}, "diagnosis": {"average": 51.67, "std": 0.06}, "date": {"average": 76.67, "std": 0.05}, "dosage": {"average": 50.0, "std": 0.08}, "overall": {"average": 72.23, "std": 0.01}}

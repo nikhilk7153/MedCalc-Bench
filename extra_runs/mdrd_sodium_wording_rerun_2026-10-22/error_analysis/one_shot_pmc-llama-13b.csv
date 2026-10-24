@@ -1,0 +1,166 @@
+Row Number,Calculator ID,Note ID,Calculator Name,explanation,raw_answer
+141,9,pmc-6007257-1,MDRD GFR Equation,"The patient is 55 years old. The concentration of Creatinine is 2.25 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 2.25^(-1.154) * 55^(-0.203) * 1 * 0.742=22.5803.
+Hence, the patient's GFR is 22.5803 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 55 years old. The concentration of Creatinine is 2.25 mg/dL. The patient is Black, so the race coefficient is 1.212. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 2.25^(-1.154) * 55^(-0.203) * 1.212 * 1 * 0.742=36.95439.\nHence, the patient's GFR is 36.95439 mL/min/1.73m\u00b2.""}"
+142,9,pmc-3764696-1,MDRD GFR Equation,"The patient is 60 years old. The concentration of Creatinine is 1.9 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.9^(-1.154) * 60^(-0.203) * 1 * 1=36.34057.
+Hence, the patient's GFR is 36.34057 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 60 years old. The concentration of Creatinine is 1.9 mg/dL. \nThe race of the patient is not provided, so the default value of the race coefficient is 1.0.\nThe patient is not female, so the gender coefficient is not applicable.\nThe patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 1.9^(-1.154) * 60^(-0.203) * 1 * 1=124.7555. Hence, the patient's GFR is 124.7555 mL/min/1.73m\u00b2.""}"
+143,9,pmc-4065736-1,MDRD GFR Equation,"The patient is 27 years old. The concentration of Creatinine is 14.6 mg/dL. 
+The patient is Black, so the race coefficient is 1.212.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 14.6^(-1.154) * 27^(-0.203) * 1.212 * 0.742=3.65355.
+Hence, the patient's GFR is 3.65355 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 27 years old. The concentration of Creatinine is 14.6 mg/dL. The race of the patient is not provided, so the default value of the race coefficient is 1.0. The patient is not on HAART, so the race coefficient of 1.0 is used. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 14.6^(-1.154) * 27^(-0.203) * 1 = 10.96555. Hence, the patient's GFR is 10.96555 mL/min/1.73m\u00b2.""}"
+144,9,pmc-6902272-1,MDRD GFR Equation,"The patient is 73 years old. The concentration of Creatinine is 1.4 mg/dL. 
+The patient is not Black, so the race coefficient is defaulted to 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.4^(-1.154) * 73^(-0.203) * 1 * 1=49.67659.
+Hence, the patient's GFR is 49.67659 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 73 years old. The serum creatinine is 1.4 mg/dL. The patient is Caucasian, so the race coefficient is 1.0. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 1.4^(-1.154) * 73^(-0.203) * 1 * 1=44.6455. Hence, the patient's GFR is 44.6455 mL/min/1.73m\u00b2.""}"
+145,9,pmc-6485150-1,MDRD GFR Equation,"The patient is 94 years old. The concentration of Creatinine is 1.14 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.14^(-1.154) * 94^(-0.203) * 1 * 0.742=44.38424.
+Hence, the patient's GFR is 44.38424 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 94 years old. The concentration of BUN is 23.8 mg/dL. The concentration of creatinine is 1.14 mg/dL. The patient's race is not provided, so the default value of the race coefficient is 1.0. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 1.14^(-1.154) * 94^(-0.203) * 1 * 1=13.945. Hence, the patient's GFR is 13.945 mL/min/1.73m\u00b2.""}"
+146,9,pmc-4381148-1,MDRD GFR Equation,"The patient is 65 years old. The concentration of Creatinine is 6.6 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 6.6^(-1.154) * 65^(-0.203) * 1 * 0.742=6.30474.
+Hence, the patient's GFR is 6.30474 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 65 years old. The concentration of Creatinine is 6.6 mg/dL. The patient's race is not provided, so the default value of the race coefficient is 1.0. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 6.6^(-1.154) * 65^(-0.203) * 1 * 1=104.555. Hence, the patient's GFR is 104.555 mL/min/1.73m\u00b2.""}"
+147,9,pmc-6691829-1,MDRD GFR Equation,"The patient is 70 years old. The concentration of Creatinine is 555.8 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Creatinine from µmol to mg. The mass of Creatinine is 555.8 µmol. To convert 555.8 µmol of Creatinine to mol, multiply by the conversion factor 1e-06, giving us 555.8 µmol Creatinine * 1e-06 mol/µmol = 0.0005558 mol Creatinine. To convert from mol Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.0005558 mol Creatinine * 113.12 g/mol = 0.062872 g Creatinine. To convert 0.062872 g of Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.062872 g Creatinine * 1000.0 mg/g = 62.872 mg Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 62.872 mg Creatinine/10.0 dL = 6.2872 mg Creatinine/dL. The concentration value of 555.8 µmol Creatinine/L converts to 6.2872 mg Creatinine/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 6.2872^(-1.154) * 70^(-0.203) * 1 * 1=8.85245.
+Hence, the patient's GFR is 8.85245 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 70 years old. The serum creatinine level is 200 μmol/L. The patient is Black, so the race coefficient is 1.212. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 200^(-1.154) * 70^(-0.203) * 1.212 * 1 = 36.95439 mL/min/1.73m\u00b2. Hence, the patient's GFR is 36.95439 mL/min/1.73m\u00b2.""}"
+148,9,pmc-1847820-1,MDRD GFR Equation,"The patient is 40 years old. The concentration of Creatinine is 10.0 mg/dL. 
+The patient is not Black, so the race coefficient is defaulted to 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 10.0^(-1.154) * 40^(-0.203) * 1 * 0.742=4.30749.
+Hence, the patient's GFR is 4.30749 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 40 years old. The serum creatinine concentration is 10 mg/dL. The race of the patient is not provided, so the default value of the race coefficient is 1.0. The patient is Caucasian, so the race coefficient is 1.0. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 10^(-1.154) * 40^(-0.203) * 1 * 1=14.46545.\nHence, the patient's GFR is 14.46545 mL/min/1.73m\u00b2.""}"
+149,9,pmc-5451771-1,MDRD GFR Equation,"The patient is 22 years old. The concentration of Creatinine is 12.9 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 12.9^(-1.154) * 22^(-0.203) * 1 * 0.742=3.62501.
+Hence, the patient's GFR is 3.62501 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 22 years old. The concentration of Creatinine is 12.9 mg/dL. The race of the patient is not provided, so the default value of the race coefficient is 1.0. The patient is female, so the gender coefficient is 0.742. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 12.9^(-1.154) * 22^(-0.203) * 1 * 0.742=1.84565.\nHence, the patient's GFR is 1.84565 mL/min/1.73m\u00b2.""}"
+150,9,pmc-6454930-1,MDRD GFR Equation,"The patient is 66 years old. The concentration of Creatinine is 16.4 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 16.4^(-1.154) * 66^(-0.203) * 1 * 1=2.96306.
+Hence, the patient's GFR is 2.96306 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 66 years old. The concentration of Creatinine is 16.4 mg/dL. \nThe race of the patient is not provided, so the default value of the race coefficient is 1.0.\nThe patient is on CAPD, so the gender coefficient is 0.742. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 16.4^(-1.154) * 66^(-0.203) * 1 * 0.742=1.64556. Hence, the patient's GFR is 1.64556 mL/min/1.73m\u00b2.""}"
+151,9,pmc-4652317-1,MDRD GFR Equation,"The patient is 24 years old. The concentration of Creatinine is 16.5 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 16.5^(-1.154) * 24^(-0.203) * 1 * 1=3.61309.
+Hence, the patient's GFR is 3.61309 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 24 years old. The concentration of BUN is 165 mg/dL and serum creatinine is 16.5 mg/dL. The patient is male, so the gender coefficient is 1.0. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 16.5^(-1.154) * 24^(-0.203) * 1 * 1=149.45. Hence, the patient's GFR is 149.45 mL/min/1.73m\u00b2.""}"
+152,9,pmc-6122666-1,MDRD GFR Equation,"The patient is 49 years old. The concentration of Creatinine is 1.22 mg/dL. 
+The patient is Black, so the race coefficient is 1.212.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.22^(-1.154) * 49^(-0.203) * 1.212 * 0.742=56.7774.
+Hence, the patient's GFR is 56.7774 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 49 years old. The concentration of Creatinine is 1.2 mg/dL. The patient is Black, so the race coefficient is 1.212. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 1.2^(-1.154) * 49^(-0.203) * 1.212 * 1 = 104.5656. Hence, the patient's GFR is 104.5656 mL/min/1.73m\u00b2.""}"
+153,9,pmc-7787914-1,MDRD GFR Equation,"The patient is 78 years old. The concentration of Creatinine is 1.74 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.74^(-1.154) * 78^(-0.203) * 1 * 1=38.13722.
+Hence, the patient's GFR is 38.13722 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 78 years old. The concentration of Creatinine is 1.74 mg/dL. The patient is Black, so the race coefficient is 1.212. The patient’s estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 1.74^(-1.154) * 78^(-0.203) * 1.212=39.854. Hence, the patient's GFR is 39.854 mL/min/1.73m\u00b2.""}"
+154,9,pmc-3104662-1,MDRD GFR Equation,"The patient is 97 years old. The concentration of Creatinine is 1.34 mg/dL. 
+The patient is not Black, so the race coefficient is defaulted to 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.34^(-1.154) * 97^(-0.203) * 1 * 1=49.32243.
+Hence, the patient's GFR is 49.32243 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 97 years old. The serum creatinine is 1.4 mg/dL. The patient is Hispanic, so the race coefficient is 1.212. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 1.4^(-1.154) * 97^(-0.203) * 1.212=44.55555. Hence, the patient's GFR is 44.55555 mL/min/1.73m\u00b2.""}"
+155,9,pmc-3841498-1,MDRD GFR Equation,"The patient is 17 years old. The concentration of Creatinine is 7.2 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 7.2^(-1.154) * 17^(-0.203) * 1 * 0.742=7.48685.
+Hence, the patient's GFR is 7.48685 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 17 years old. The concentration of Creatinine is 1.36 mg/dL. \nThe race of the patient is not provided, so the default value of the race coefficient is 1.0.\nThe patient is female, so the gender coefficient is 0.742.\nThe patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 1.36^(-1.154) * 17^(-0.203) * 1 * 0.742=10.54555.\nHence, the patient's GFR is 10.54555 mL/min/1.73m\u00b2.""}"
+156,9,usmle-3514,MDRD GFR Equation,"The patient is 48 years old. The concentration of Creatinine is 2.4 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 2.4^(-1.154) * 48^(-0.203) * 1 * 0.742=21.54697.
+Hence, the patient's GFR is 21.54697 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 48 years old. The serum creatinine concentration is 2.4 mg/dL. The race of the patient is not provided, so the default value of the race coefficient is 1.0. The patient is female, so the gender coefficient is 0.742. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 2.4^(-1.154) * 48^(-0.203) * 1 * 0.742=34.4554. Hence, the patient's GFR is 34.4554 mL/min/1.73m\u00b2.""}"
+157,9,pmc-5971350-1,MDRD GFR Equation,"The patient is 63 years old. The concentration of Creatinine is 7.7 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 7.7^(-1.154) * 63^(-0.203) * 1 * 0.742=5.31087.
+Hence, the patient's GFR is 5.31087 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 63 years old. The serum creatinine concentration is 2.3 mg/dL. The patient's race is not provided, so the default value of the race coefficient is 1.0. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 2.3^(-1.154) * 63^(-0.203) * 1 * 1= 39.9568. Hence, the patient's GFR is 39.9568 mL/min/1.73m\u00b2.""}"
+158,9,usmle-3704,MDRD GFR Equation,"The patient is 55 years old. The concentration of Creatinine is 3.1 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 3.1^(-1.154) * 55^(-0.203) * 1 * 0.742=15.59972.
+Hence, the patient's GFR is 15.59972 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 55 years old. The hemoglobin is 9.2 g/dL. The mean corpuscular volume is 88 μm3. The reticulocyte count is 0.6 %. The serum ferritin is 145 ng/mL. The serum creatinine is 3.1 mg/dL. The serum calcium is 8.8 mg/dL. The patient's estimated GFR is calculated using the MDRD equation as: GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL. Plugging in these values will give us: 175 * 3.1^(-1.154) * 55^(-0.203) * 1 * 1=49.6455. Hence, the patient's GFR is 49.6455 mL/min/1.73m\u00b2.""}"
+159,9,pmc-8022897-1,MDRD GFR Equation,"The patient is 66 years old. The concentration of Creatinine is 5.0 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 5.0^(-1.154) * 66^(-0.203) * 1 * 0.742=8.65891.
+Hence, the patient's GFR is 8.65891 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 66 years old. The concentration of Calcium is 23.1 mg/dL. The race of the patient is not provided, so the default value of the race coefficient is 1.0.\nThe patient is female, so the gender coefficient is 0.742.\nThe patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 5^(-1.154) * 66^(-0.203) * 1 * 0.742=10.95556. Hence, the patient's GFR is 10.95556 mL/min/1.73m\u00b2.""}"
+160,9,pmc-8432418-1,MDRD GFR Equation,"The patient is 52 years old. The concentration of Creatinine is 10.01 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 10.01^(-1.154) * 52^(-0.203) * 1 * 1=5.49779.
+Hence, the patient's GFR is 5.49779 mL/min/1.73m²."," {""step_by_step_thinking"": ""The patient is 52 years old. The serum creatinine concentration is 2.2 mg/dL. The patient is Black, so the race coefficient is 1.212. The patient's estimated GFR is calculated using the MDRD equation as:\nGFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.\nPlugging in these values will give us: 175 * 2.2^(-1.154) * 52^(-0.203) * 1.212 * 1 = 24.84555. Hence, the patient's GFR is 24.84555 mL/min/1.73m\u00b2.""}"
+367,26,pmc-7232043-1,Sodium Correction for Hyperglycemia,"The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.
+The concentration of sodium is 107.0 mEq/L. 
+The concentration of glucose is 169.0 mg/dL. 
+Plugging in these values into the formula gives us 107.0 mEq/L + 0.024 * (169.0 - 100) = 108.656 mEq/L.
+Hence, the patient's corrected concentration of sodium is 108.656 mEq/L."," {""step_by_step_thinking"": ""The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\nThe concentration of sodium is 132.0 mEq/L. \nThe concentration of glucose is 1000 mg/dL. \nPlugging in these values into the formula gives us 132.0 mEq/L + 0.024 * (1000 - 100) = 138.0 mEq/L.\nHence, the patient's corrected concentration of sodium is 138.0 mEq/L."", ""answer"": 138.0}"
+368,26,usmle-5686,Sodium Correction for Hyperglycemia,"The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.
+The concentration of sodium is 116.0 mEq/L. 
+The concentration of glucose is 1010.0 mg/dL. 
+Plugging in these values into the formula gives us 116.0 mEq/L + 0.024 * (1010.0 - 100) = 137.84 mEq/L.
+Hence, the patient's corrected concentration of sodium is 137.84 mEq/L."," {""step_by_step_thinking"": ""The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\nThe concentration of sodium is 116.0 mEq/L. \nThe concentration of glucose is 1010 mg/dL. \nPlugging in these values into the formula gives us 116.0 mEq/L + 0.024 * (1010 - 100) = 120.8 mEq/L.\nHence, the patient's corrected concentration of sodium is 120.8 mEq/L."", ""answer"": 120.8}"
+371,26,pmc-6029742-1,Sodium Correction for Hyperglycemia,"The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.
+The concentration of sodium is 128.0 mEq/L. 
+The concentration of glucose is 836.0 mg/dL. 
+Plugging in these values into the formula gives us 128.0 mEq/L + 0.024 * (836.0 - 100) = 145.664 mEq/L.
+Hence, the patient's corrected concentration of sodium is 145.664 mEq/L."," {""step_by_step_thinking"": ""The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\nThe concentration of sodium is 132.0 mEq/L. \nThe concentration of glucose is 836 mg/dL. Plugging in these values into the formula gives us 132.0 mEq/L + 0.024 * (836 - 100) = 138.0 mEq/L.\nHence, the patient's corrected concentration of sodium is 138.0 mEq/L."", ""answer"": 138.0}"
+378,26,pmc-7410512-1,Sodium Correction for Hyperglycemia,"The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.
+The concentration of sodium is 104.0 mmol/L. We need to convert the concentration to mEq/L. Let's first convert the mass of sodium from mmol to mEq. The mass of sodium is 104.0 mmol. The compound, sodium, has a valence of 1, and so multiply the valence by the value of mmol to get, 104.0 mmol * 1 mEq/mmol = 104.0 mEq sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 104.0 mmol sodium/L converts to 104.0 mEq sodium/L. 
+The concentration of glucose is 165.0 mg/dL. 
+Plugging in these values into the formula gives us 104.0 mEq/L + 0.024 * (165.0 - 100) = 105.56 mEq/L.
+Hence, the patient's corrected concentration of sodium is 105.56 mEq/L."," {""step_by_step_thinking"": ""The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\nThe concentration of sodium is 134.0 mEq/L. \nThe concentration of glucose is 1000 mg/dL. \nPlugging in these values into the formula gives us 134.0 mEq/L + 0.024 * (1000 - 100) = 138.0 mEq/L.\nHence, the patient's corrected concentration of sodium is 138.0 mEq/L."", ""answer"": 138.0}"
+385,26,pmc-6559115-1,Sodium Correction for Hyperglycemia,"The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.
+The concentration of sodium is 137.0 mmol/L. We need to convert the concentration to mEq/L. Let's first convert the mass of sodium from mmol to mEq. The mass of sodium is 137.0 mmol. The compound, sodium, has a valence of 1, and so multiply the valence by the value of mmol to get, 137.0 mmol * 1 mEq/mmol = 137.0 mEq sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 137.0 mmol sodium/L converts to 137.0 mEq sodium/L. 
+The concentration of glucose is 490.0 mg/dL. 
+Plugging in these values into the formula gives us 137.0 mEq/L + 0.024 * (490.0 - 100) = 146.36 mEq/L.
+Hence, the patient's corrected concentration of sodium is 146.36 mEq/L."," {""step_by_step_thinking"": ""The formula for Sodium Correction for Hyperglycemia based on Hillier, 1999 is Measured sodium + 0.024 * (Serum glucose - 100), where Measured Sodium is the sodium concentration in mEq/L and the Serum glucose is the concentration of glucose in mg/dL.\nThe concentration of sodium is 132.0 mEq/L. \nThe concentration of glucose is 490 mg/dL. \nPlugging in these values into the formula gives us 132.0 mEq/L + 0.024 * (490 - 100) = 138.0 mEq/L.\nHence, the patient's corrected concentration of sodium is 138.0 mEq/L."", ""answer"": 138.0}"

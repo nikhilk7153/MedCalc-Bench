@@ -1,0 +1,220 @@
+{
+    "9_pmc-6007257-1": {
+        "analysis": "The prediction used a different formula for the MDRD GFR equation, with different exponents for the creatinine and age parameters. Additionally, the prediction incorrectly assumed the patient's race as Black and applied a race coefficient, which was not provided in the ground-truth. The gender coefficient used in the prediction was also different from the ground-truth.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-3764696-1": {
+        "analysis": "The prediction incorrectly applied a race coefficient of 1.212, while the ground-truth explanation stated that the race of the patient was not provided and hence a default value of 1.0 should be used. This led to a different result in the calculation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "9_pmc-4065736-1": {
+        "analysis": "The assistant used a different formula for the MDRD GFR equation, and also incorrectly adjusted the serum creatinine level with the race coefficient before using it in the equation. The correct approach is to use the unadjusted creatinine level in the equation, and then multiply the result by the race coefficient. The assistant also used incorrect coefficients for age and gender in the equation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-6902272-1": {
+        "analysis": "The prediction used a different formula for the MDRD equation, dividing the creatinine and age by constants that are not present in the ground truth explanation. The prediction also used a different normal creatinine level than the one provided in the patient's data.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-6485150-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the arithmetic calculation was incorrect, leading to a different result than the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-4381148-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the arithmetic was performed incorrectly, leading to a different result.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6691829-1": {
+        "analysis": "The assistant used the wrong formula for calculating GFR, using the CKD-EPI equation instead of the MDRD equation. The assistant also incorrectly converted the creatinine concentration from \u00b5mol/L to mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-1847820-1": {
+        "analysis": "The prediction incorrectly stated that the gender coefficient should not be applied because the patient is female. However, the ground truth explanation clearly states that the gender coefficient should be applied if the patient is female. The prediction also performed the arithmetic incorrectly, resulting in a different GFR value.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_pmc-5451771-1": {
+        "analysis": "The prediction used a different formula for the MDRD equation, and also incorrectly converted the creatinine value. The race coefficient was also incorrectly used as 1.212, despite the race not being provided.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "9_pmc-6454930-1": {
+        "analysis": "The prediction used a different formula than the ground-truth. The ground-truth used the MDRD equation with a coefficient of 175, while the prediction used a coefficient of 186.3. This indicates that the wrong calculator/rules were used in the prediction.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-4652317-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6122666-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, and also extracted different parameters than the ground-truth. The gender coefficient was not used in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-7787914-1": {
+        "analysis": "The assistant used the correct formula and extracted the correct parameters. However, the assistant made an error in converting the creatinine level from mg/dL to \u00b5mol/L, which is not necessary in the MDRD equation. This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-3104662-1": {
+        "analysis": "The assistant incorrectly converted the creatinine level from mg/dL to mmol/L, which is not necessary as the MDRD equation uses the creatinine level in mg/dL. This led to a significantly lower GFR calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-3841498-1": {
+        "analysis": "The prediction used the wrong gender coefficient for the MDRD equation. The correct gender coefficient for females is 0.742, not 0.792. This led to an incorrect GFR calculation.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_usmle-3514": {
+        "analysis": "The prediction used a different formula for the GFR calculation, and also used different coefficients for age and gender. The prediction also incorrectly adjusted the creatinine level for gender and race, which is not part of the MDRD equation. The arithmetic was performed correctly, but the initial parameters and formula were incorrect.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-5971350-1": {
+        "analysis": "The prediction used a wrong conversion for the creatinine level from mg/dL to mMol/L, which is not required in the MDRD equation. The MDRD equation uses the creatinine level in mg/dL directly. This led to a different GFR result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_usmle-3704": {
+        "analysis": "The prediction used a different formula for the GFR calculation, and also used a different age coefficient and gender coefficient. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the prediction used GFR = 186.3 * (Serum Creatinine)^(-1.154) * (Age)^(-0.299) * (0.732 if Female, 1 if Male) * (1.212 if Black, 1 if not). The correct age coefficient is -0.203, but the prediction used -0.299. The correct gender coefficient for females is 0.742, but the prediction used 0.732.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-8022897-1": {
+        "analysis": "The prediction used a different formula to calculate the GFR, and also included parameters that were not mentioned in the ground-truth explanation, such as the patient's height and ideal body weight. The prediction also incorrectly assumed the patient's race.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-8432418-1": {
+        "analysis": "The prediction incorrectly converted the creatinine level from mg/dL to mg/dL, which is unnecessary and incorrect. The prediction also calculated the GFR incorrectly.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "26_pmc-7232043-1": {
+        "analysis": "The prediction used a different sodium concentration than the ground-truth. The ground-truth sodium concentration was 107.0 mEq/L, but the prediction used 142.3 mEq/L. The correct formula was used, and the arithmetic was performed correctly, but the wrong parameters were extracted.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "26_usmle-5686": {
+        "analysis": "The assistant used a different formula to calculate the corrected sodium concentration. Instead of using the Sodium Correction for Hyperglycemia formula based on Hillier, 1999, the assistant calculated the plasma osmolality and serum osmolality, and then used these values in a different sodium correction equation. This resulted in a different answer than the ground truth.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_pmc-5389145-1": {
+        "analysis": "The prediction used a different formula for Sodium Correction for Hyperglycemia, and also converted the glucose level to a different unit than the ground-truth. The prediction also did not convert the sodium concentration to mEq/L.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-6029742-1": {
+        "analysis": "The prediction used a different formula for Sodium Correction for Hyperglycemia, which includes parameters not mentioned in the ground-truth explanation. The prediction also used a different method to calculate serum osmolality, which is not required in the ground-truth explanation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-3797951-1": {
+        "analysis": "The assistant used a wrong formula for Sodium Correction for Hyperglycemia. The correct formula is Measured sodium + 0.024 * (Serum glucose - 100), but the assistant used Corrected sodium = Plasma sodium + (Plasma sodium x 0.024 x [Glucose - 100] / 100). Also, the assistant incorrectly converted the glucose concentration to mmol/L, which is not required in the correct formula.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-5788815-1": {
+        "analysis": "The assistant extracted the correct parameters but used the wrong rules for the calculation. It incorrectly converted the serum glucose level to mEq/L and used this value in the sodium correction equation, which led to a wrong result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-7455384-1": {
+        "analysis": "The assistant extracted the correct parameters but made an error in converting the glucose concentration from mg/dL to mmol/L. This conversion was not necessary and led to an incorrect calculation in the sodium correction formula.",
+        "error_type": [
+            "B",
+            "A"
+        ]
+    },
+    "26_pmc-6549199-1": {
+        "analysis": "The assistant used a different formula than the one provided in the ground-truth explanation. The assistant also converted the glucose level to a different unit (mmol/L) instead of using the provided unit (mg/dL).",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-7410512-1": {
+        "analysis": "The prediction used a different formula for Sodium Correction for Hyperglycemia, and also extracted different parameters than the ground-truth. The prediction used serum osmolality and a different glucose level, while the ground-truth used measured sodium and serum glucose. The prediction also used a different conversion factor for glucose.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-2803813-1": {
+        "analysis": "The prediction used a different formula to calculate the corrected sodium concentration. Instead of using the formula from Hillier, 1999, which is Measured sodium + 0.024 * (Serum glucose - 100), the prediction used a formula that involves serum osmolality. Additionally, the prediction used a different value for the measured sodium concentration (135 mEq/L instead of 136 mEq/L).",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_usmle-5250": {
+        "analysis": "The assistant used a completely different formula to calculate the corrected sodium concentration. The assistant also extracted different parameters than the ground-truth, such as Cl- and Hct, which were not mentioned in the ground-truth explanation. The assistant also performed the arithmetic incorrectly, as the final answer is significantly higher than the ground-truth answer.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "26_pmc-6142732-1": {
+        "analysis": "The prediction incorrectly calculated the conversion of glucose from mmol/L to mg/dL, and incorrectly applied the correction factor in the formula.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    }
+}

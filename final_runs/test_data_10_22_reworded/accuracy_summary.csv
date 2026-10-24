@@ -1,0 +1,19 @@
+Model,Setting,Rows,Rows replaced,Main accuracy,Merged accuracy,MDRD main,MDRD merged,Sodium main,Sodium merged
+gpt-3.5-turbo-0125,zero_shot,1048,40,30.44,30.15,15.0,15.0,90.0,75.0
+gpt-4,zero_shot,1048,40,45.04,44.75,5.0,0.0,100.0,90.0
+PMC_LLaMA_13B,zero_shot,1048,40,0.1,0.1,0.0,0.0,0.0,0.0
+meditron-70b,zero_shot,1048,40,0.19,0.19,0.0,0.0,0.0,0.0
+Meta-Llama-3-70B-Instruct,zero_shot,1048,40,40.84,41.32,5.0,0.0,70.0,100.0
+Meta-Llama-3-8B-Instruct,zero_shot,1048,40,16.6,16.98,0.0,0.0,50.0,70.0
+Mistral-7B-Instruct-v0.2,zero_shot,1048,40,12.31,12.4,0.0,0.0,35.0,40.0
+Mixtral-8x7B-Instruct-v0.1,zero_shot,1048,40,23.57,23.57,10.0,5.0,50.0,55.0
+gpt-3.5-turbo-0125,one_shot,1048,40,41.89,41.7,10.0,0.0,100.0,100.0
+gpt-4,one_shot,1048,40,62.02,61.93,20.0,15.0,90.0,90.0
+PMC_LLaMA_13B,one_shot,1048,40,10.97,10.97,0.0,0.0,75.0,75.0
+meditron-70b,one_shot,1048,40,26.62,26.62,5.0,5.0,80.0,80.0
+Meta-Llama-3-70B-Instruct,one_shot,1048,40,45.52,45.42,5.0,0.0,100.0,100.0
+Meta-Llama-3-8B-Instruct,one_shot,1048,40,32.63,32.44,10.0,5.0,80.0,75.0
+Mistral-7B-Instruct-v0.2,one_shot,1048,40,22.14,22.04,5.0,5.0,75.0,70.0
+Mixtral-8x7B-Instruct-v0.1,one_shot,1048,40,36.55,36.55,0.0,0.0,85.0,85.0
+gpt-3.5-turbo-0125,code_augmented,1048,40,42.27,43.32,20.0,65.0,85.0,95.0
+gpt-4-0613,code_augmented,1048,40,62.02,62.02,95.0,100.0,100.0,95.0

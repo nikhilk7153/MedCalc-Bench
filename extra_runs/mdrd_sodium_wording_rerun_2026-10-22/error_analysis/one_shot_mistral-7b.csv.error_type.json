@@ -1,0 +1,157 @@
+{
+    "9_pmc-6007257-1": {
+        "analysis": "The prediction used the correct formula and parameters, but the final result is different from the ground truth. This suggests that the arithmetic was performed incorrectly.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-3764696-1": {
+        "analysis": "The prediction extracted different parameters than the ground-truth. The race and gender coefficients used in the prediction are different from the ground-truth. Also, the creatinine concentration unit in the prediction is mg%, while in the ground-truth it is mg/dL.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "9_pmc-4065736-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for calculating GFR. However, the final calculated GFR value is incorrect when compared to the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6485150-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the final calculated value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-4381148-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for GFR calculation. However, the final calculated GFR value is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6691829-1": {
+        "analysis": "The prediction incorrectly used the creatinine concentration in \u03bcmol/L instead of converting it to mg/dL. The gender coefficient used was also incorrect. The correct gender coefficient for males is 1, not 0.742.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-1847820-1": {
+        "analysis": "The prediction used the wrong gender coefficient for the calculation. The correct gender coefficient for a female is 0.742, but the prediction used 0.732. This led to a different final GFR value.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-5451771-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for the calculation. However, the final GFR value calculated is different from the ground truth.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-6454930-1": {
+        "analysis": "The prediction used a different gender coefficient than the ground truth. The ground truth used a gender coefficient of 1 for males, while the prediction used a gender coefficient of 0.931 for males.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "9_pmc-4652317-1": {
+        "analysis": "The prediction used a wrong gender coefficient for the male patient, which should be 1 instead of 0.931. Also, the prediction incorrectly considered the patient's bilateral nephrectomy 4 months after admission, which is irrelevant to the calculation at the time of admission.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-6122666-1": {
+        "analysis": "The prediction used the correct formula and parameters, but the final result is incorrect. The arithmetic was performed incorrectly.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-7787914-1": {
+        "analysis": "The prediction used the wrong gender coefficient. The patient is male, so the gender coefficient should be 1, but the prediction used 0.742.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-3104662-1": {
+        "analysis": "The prediction used different parameters than the ground-truth. The race and gender coefficients used in the prediction are different from the ground-truth. The patient's race is not Black, so the race coefficient should be 1.0, not 1.212. The patient is male, so the gender coefficient should be 1, not 0.928.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "9_pmc-3841498-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula for the calculation. However, the final result does not match the ground truth, indicating an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_usmle-3514": {
+        "analysis": "The prediction used a different gender coefficient than the ground truth. The ground truth used a gender coefficient of 0.742 for females, while the prediction used a gender coefficient of 0.85. This led to a different final GFR calculation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "9_pmc-5971350-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for GFR calculation. However, the final calculated GFR value is different from the ground truth. This suggests an arithmetic error.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_usmle-3704": {
+        "analysis": "The prediction used a different gender coefficient than the ground truth. The ground truth used a gender coefficient of 0.742 for females, while the prediction used a gender coefficient of 0.804. This led to a different result in the calculation of the patient's GFR.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-8022897-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct MDRD equation for GFR calculation. However, the final calculated GFR value is different from the ground truth. This suggests an arithmetic error in the calculation.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "9_pmc-8432418-1": {
+        "analysis": "The prediction did not extract the correct parameters from the ground-truth explanation, and therefore did not perform the calculation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "26_pmc-7232043-1": {
+        "analysis": "The assistant correctly identified the formula and parameters for Sodium Correction for Hyperglycemia. However, the arithmetic calculation was performed incorrectly, leading to a different result.",
+        "error_type": [
+            "C"
+        ]
+    },
+    "26_usmle-5686": {
+        "analysis": "The assistant correctly identified the formula and parameters for Sodium Correction for Hyperglycemia. However, the final calculated value is incorrect. The correct value should be 137.84 mEq/L, but the assistant calculated it as 121.2 mEq/L.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "26_pmc-5389145-1": {
+        "analysis": "The assistant incorrectly converted the glucose level from mg/dL to mg/L and used this incorrect value in the formula. The assistant also incorrectly converted the final result from mmol/L to mEq/L.",
+        "error_type": [
+            "B",
+            "C"
+        ]
+    },
+    "26_pmc-6029742-1": {
+        "analysis": "The prediction used a different sodium concentration than the ground-truth. The arithmetic was performed correctly based on the parameters used in the prediction.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "26_pmc-5788815-1": {
+        "analysis": "The prediction did not extract the provided parameters correctly, hence it was unable to perform the calculation.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "26_pmc-7410512-1": {
+        "analysis": "The prediction correctly identified the formula for Sodium Correction for Hyperglycemia and extracted the correct parameters. However, the arithmetic was performed incorrectly, leading to a different result.",
+        "error_type": [
+            "C"
+        ]
+    }
+}

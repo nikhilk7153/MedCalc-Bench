@@ -19,4 +19,28 @@ with its status (CURRENT / EXPERIMENTAL / SUPERSEDED / REFERENCE). Items marked 
   - `extra_runs/astra_corrections_rerun_2026-10-22/` holds the re-run on those 45 rows.
 - Review list: `dataset/label_corrections_review_10_22.csv`.
 
+## Later wording changes and re-runs (each in its own folder, not merged into the main results)
+- **Question and explanation wording:** MDRD (race coefficient), Sodium Correction (0.024 factor) and LDL (Friedewald)
+  questions, and the "Hillier" spelling, are updated in the datasets.
+  - `extra_runs/mdrd_sodium_wording_rerun_2026-10-22/` holds the MDRD/Sodium re-run.
+  - `final_runs/test_data_10_22_reworded/` holds the main runs with those 40 rows merged in.
+- **SOFA one-shot example:** corrected in the one-shot files (answer 9 -> 7).
+  - `extra_runs/sofa_oneshot_rerun_2026-10-23/` has GPT-3.5 only.
+  - `extra_runs/oss_rerun_2026-10-24/` has the six open models for SOFA and for the Friedewald LDL question.
+  - The GPT-4 / GPT-3.5 0125 snapshots are retired, so they could not be re-run.
+- **PMC-LLaMA longer context:** `extra_runs/pmc_llama_fit_context_2026-10-24/` (`run.py --fit_context`).
+- **Audit copies:** `final_runs/test_data_10_22_with_prompts/` (main outputs plus the exact prompts) and
+  `extra_runs/time_point_replay_check_2026-10-24/`.
+- **Extra model:** GPT-4o (2024-08-06), all settings plus code-augmented, in
+  `extra_runs/gpt-4o-2024-08-06_benchmark_2026-10-24/`.
+
+## Appendix E.1 (accuracy vs. number of attributes)
+- **Script:** `evaluation/attribute_analysis.py`.
+  - Each calculator's attribute count comes from `calculator_implementations_verified/name_to_python.json`.
+  - Accuracy at each count is fitted with a second-degree polynomial per model.
+- **Figures:** the zero-shot equation- and rule-based figures are in `evaluation/attribute_analysis_10_22/`, with the
+  plotted points and fit coefficients. They replace the paper's Figures 2-3, whose values did not agree with Table 2.
+- **Model files:** `session_archive_2026-10-22/model_verification_2026-10-24.jsonl` records SHA-256 checks of all
+  open-model weights against Hugging Face.
+
 Each `extra_runs/` folder has a `MANIFEST.md` with exact inputs, code checksums, model versions and settings.
