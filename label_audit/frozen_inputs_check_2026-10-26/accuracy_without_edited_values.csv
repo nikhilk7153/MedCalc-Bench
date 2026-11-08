@@ -1,0 +1,27 @@
+Run,Rows,Accuracy,Without 9 edited-value rows,Change,Correct on the 9
+OpenAI_gpt-3.5-turbo-0125_direct_answer,1048,22.52,22.62,0.1,1
+OpenAI_gpt-3.5-turbo-0125_one_shot,1048,42.27,42.54,0.27,1
+OpenAI_gpt-3.5-turbo-0125_zero_shot,1048,30.63,30.7,0.07,2
+OpenAI_gpt-4_direct_answer,1048,25.19,25.41,0.22,0
+OpenAI_gpt-4_one_shot,1048,62.69,63.04,0.35,2
+OpenAI_gpt-4_zero_shot,1048,45.23,45.43,0.2,2
+axiong_PMC_LLaMA_13B_direct_answer,1048,0.0,0.0,0.0,0
+axiong_PMC_LLaMA_13B_one_shot,1048,11.16,11.26,0.1,0
+axiong_PMC_LLaMA_13B_zero_shot,1048,0.1,0.1,0.0,0
+code_exec_gpt-3.5-turbo-0125,1048,42.18,42.06,-0.12,5
+code_exec_gpt-4-0613,1048,62.12,61.98,-0.14,7
+epfl-llm_meditron-70b_direct_answer,1048,6.3,6.35,0.05,0
+epfl-llm_meditron-70b_one_shot,1048,26.53,26.66,0.13,1
+epfl-llm_meditron-70b_zero_shot,1048,0.19,0.19,0.0,0
+meta-llama_Meta-Llama-3-70B-Instruct_direct_answer,1048,22.61,22.81,0.2,0
+meta-llama_Meta-Llama-3-70B-Instruct_one_shot,1048,45.71,46.1,0.4,0
+meta-llama_Meta-Llama-3-70B-Instruct_zero_shot,1048,41.13,41.19,0.07,3
+meta-llama_Meta-Llama-3-8B-Instruct_direct_answer,1048,12.5,12.42,-0.08,2
+meta-llama_Meta-Llama-3-8B-Instruct_one_shot,1048,32.54,32.72,0.19,1
+meta-llama_Meta-Llama-3-8B-Instruct_zero_shot,1048,16.41,16.46,0.05,1
+mistralai_Mistral-7B-Instruct-v0.2_direct_answer,1048,10.21,10.3,0.09,0
+mistralai_Mistral-7B-Instruct-v0.2_one_shot,1048,21.95,22.14,0.19,0
+mistralai_Mistral-7B-Instruct-v0.2_zero_shot,1048,12.21,12.32,0.11,0
+mistralai_Mixtral-8x7B-Instruct-v0.1_direct_answer,1048,14.98,15.11,0.13,0
+mistralai_Mixtral-8x7B-Instruct-v0.1_one_shot,1048,36.83,37.15,0.32,0
+mistralai_Mixtral-8x7B-Instruct-v0.1_zero_shot,1048,24.05,24.16,0.11,1

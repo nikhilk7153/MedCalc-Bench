@@ -1,0 +1,27 @@
+run,current,+6 fixes,"+fixes, ambiguous excluded","+fixes, any defensible answer"
+OpenAI_gpt-3.5-turbo-0125_direct_answer,22.52,22.61,22.65,23.0
+OpenAI_gpt-3.5-turbo-0125_one_shot,42.27,42.37,42.79,42.65
+OpenAI_gpt-3.5-turbo-0125_zero_shot,30.63,30.63,30.78,31.11
+OpenAI_gpt-4_direct_answer,25.19,25.29,25.36,25.48
+OpenAI_gpt-4_one_shot,62.69,62.5,63.02,62.79
+OpenAI_gpt-4_zero_shot,45.23,45.23,45.3,45.61
+axiong_PMC_LLaMA_13B_direct_answer,0.0,0.0,0.0,0.0
+axiong_PMC_LLaMA_13B_one_shot,11.16,11.16,11.33,11.26
+axiong_PMC_LLaMA_13B_zero_shot,0.1,0.1,0.1,0.1
+code_exec_gpt-3.5-turbo-0125,42.18,42.18,42.59,42.37
+code_exec_gpt-4-0613,62.12,62.12,62.54,62.6
+epfl-llm_meditron-70b_direct_answer,6.3,6.39,6.29,6.58
+epfl-llm_meditron-70b_one_shot,26.53,26.62,26.82,26.62
+epfl-llm_meditron-70b_zero_shot,0.19,0.19,0.19,0.29
+meta-llama_Meta-Llama-3-70B-Instruct_direct_answer,22.61,22.81,22.65,23.0
+meta-llama_Meta-Llama-3-70B-Instruct_one_shot,45.71,45.61,45.79,45.9
+meta-llama_Meta-Llama-3-70B-Instruct_zero_shot,41.13,41.03,41.63,41.22
+meta-llama_Meta-Llama-3-8B-Instruct_direct_answer,12.5,12.5,12.39,12.6
+meta-llama_Meta-Llama-3-8B-Instruct_one_shot,32.54,32.44,32.72,32.44
+meta-llama_Meta-Llama-3-8B-Instruct_zero_shot,16.41,16.32,16.46,16.51
+mistralai_Mistral-7B-Instruct-v0.2_direct_answer,10.21,10.21,10.26,10.59
+mistralai_Mistral-7B-Instruct-v0.2_one_shot,21.95,22.04,21.88,22.14
+mistralai_Mistral-7B-Instruct-v0.2_zero_shot,12.21,12.12,12.0,12.12
+mistralai_Mixtral-8x7B-Instruct-v0.1_direct_answer,14.98,15.08,15.1,15.46
+mistralai_Mixtral-8x7B-Instruct-v0.1_one_shot,36.83,36.74,37.17,36.83
+mistralai_Mixtral-8x7B-Instruct-v0.1_zero_shot,24.05,23.85,23.81,24.14

@@ -1,0 +1,159 @@
+Row Number,Calculator,Change,direct_answer,zero_shot,one_shot,code_exec,Missing,Decision
+21,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+22,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+23,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+24,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+25,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+26,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+27,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+28,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+29,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+30,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+31,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+32,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+33,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+34,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+35,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+36,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+37,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+38,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+39,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+40,CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI one-shot example wording,n/a,n/a,8/8,n/a,,Include
+41,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+43,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+49,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+128,Wells' Criteria for Pulmonary Embolism,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+131,Wells' Criteria for Pulmonary Embolism,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+136,Wells' Criteria for Pulmonary Embolism,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+141,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+142,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+143,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+144,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+145,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+146,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+147,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+148,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+149,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+150,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+151,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+152,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+153,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+154,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+155,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+156,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+157,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+158,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+159,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+160,MDRD GFR Equation,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+222,Wells' Criteria for DVT,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+224,Wells' Criteria for DVT,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+240,Wells' Criteria for DVT,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+241,Revised Cardiac Risk Index for Pre-Operative Risk,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+271,HEART Score for Major Cardiac Events,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+274,HEART Score for Major Cardiac Events,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+301,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+304,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+313,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+315,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+318,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+320,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+350,HAS-BLED Score for Major Bleeding Risk,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+360,HAS-BLED Score for Major Bleeding Risk,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+362,HAS-BLED Score for Major Bleeding Risk,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+366,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+367,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+368,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+369,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+370,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+371,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+372,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+373,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+374,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+375,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+376,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+377,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+378,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+379,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+380,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+381,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+382,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+383,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+384,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+385,Sodium Correction for Hyperglycemia,MDRD / Sodium question wording,0/8,8/8,8/8,2/2,"direct_answer: meditron-70b, PMC_LLaMA_13B, Llama-3-70B, Llama-3-8B, Mixtral-8x7B, Mistral-7B, GPT-3.5, GPT-4","Include (direct answer: old wording, footnote or leave out)"
+447,Charlson Comorbidity Index (CCI),Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+448,FeverPAIN Score for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+451,FeverPAIN Score for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+452,FeverPAIN Score for Strep Pharyngitis,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+458,FeverPAIN Score for Strep Pharyngitis,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+461,FeverPAIN Score for Strep Pharyngitis,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+465,FeverPAIN Score for Strep Pharyngitis,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+500,Anion Gap,Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+513,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+514,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+515,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+516,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+517,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+518,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+519,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+520,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+521,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+522,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+523,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+524,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+525,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+526,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+527,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+528,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+529,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+530,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+531,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+532,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),LDL Friedewald question wording,6/8,6/8,6/8,0/2,"direct_answer: GPT-3.5, GPT-4; zero_shot: GPT-3.5, GPT-4; one_shot: GPT-3.5, GPT-4; code_exec: not run",Leave out (GPT not run); changelog
+552,CURB-65 Score for Pneumonia Severity,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+834,PSI Score: Pneumonia Severity Index for CAP,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+836,PSI Score: Pneumonia Severity Index for CAP,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+846,PSI Score: Pneumonia Severity Index for CAP,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+847,PSI Score: Pneumonia Severity Index for CAP,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+848,PSI Score: Pneumonia Severity Index for CAP,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+849,Glasgow Coma Score (GCS),Label fix (prompt unchanged),8/8,8/8,8/8,2/2,,Include
+861,Glasgow Coma Score (GCS),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+869,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+870,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+871,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+872,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+877,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+879,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+881,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+882,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+884,APACHE II Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+889,Sequential Organ Failure Assessment (SOFA) Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+889,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+890,Sequential Organ Failure Assessment (SOFA) Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+890,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+891,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+892,Sequential Organ Failure Assessment (SOFA) Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+892,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+893,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+894,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+895,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+896,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+897,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+898,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+899,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+900,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+901,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+902,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+903,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+904,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+905,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+906,Sequential Organ Failure Assessment (SOFA) Score,Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+906,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+907,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+908,Sequential Organ Failure Assessment (SOFA) Score,Corrected SOFA one-shot example,n/a,n/a,7/8,n/a,one_shot: GPT-4,Leave out (GPT-4 not run); changelog
+909,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+911,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+913,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+914,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+918,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+921,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+922,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review
+926,Caprini Score for Venous Thromboembolism (2005),Astra corrections (unreviewed),8/8,8/8,8/8,2/2,,Pending physician review

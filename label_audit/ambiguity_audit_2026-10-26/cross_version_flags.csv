@@ -1,0 +1,123 @@
+Row Number,Calculator ID,Calculator Name,Category,Note ID,Version,Our Label,Alternative Label,Inputs Read Differently
+45,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-6959961-2,1_17,5,3,Stroke: True -> False | Thromboembolism history: True -> False
+45,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-6959961-2,v1.0,5,3,Stroke: True -> False | Thromboembolism history: True -> False
+46,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3317869-1,1_17,4,6,Thromboembolism history: None -> True
+46,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3317869-1,v1.0,4,6,Thromboembolism history: None -> True
+47,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3888688-1,1_17,1,2,Hypertension history: None -> True
+47,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3888688-1,v1.0,1,2,Hypertension history: None -> True
+51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3318870-1,1_17,1,3,Vascular disease history: False -> True | Diabetes history: False -> True
+51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3318870-1,1_31,1,2,Vascular disease history: False -> True
+51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-3318870-1,v1.0,1,3,Vascular disease history: False -> True | Diabetes history: False -> True
+60,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-4464016-1,1_17,6,4,Stroke: True -> False
+60,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,pmc-4464016-1,v1.0,6,4,Stroke: True -> False
+121,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8230162-2,1_31,1.5,6.0,Pulmonary Embolism is #1 diagnosis OR equally likely: False -> True | Immobilization for at least 3 days: None -> True
+122,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8494530-1,1_17,4.5,6.0,Previously Documented Pulmonary Embolism: None -> True
+122,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8494530-1,v1.0,4.5,6.0,Previously Documented Pulmonary Embolism: None -> True
+124,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8647083-1,1_17,4.5,6.0,Previously documented Deep Vein Thrombosis: False -> True
+124,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8647083-1,1_31,4.5,6.0,Previously documented Deep Vein Thrombosis: False -> True
+124,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8647083-1,v1.0,4.5,6.0,Previously documented Deep Vein Thrombosis: False -> True
+131,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8294994-1,1_17,5.5,2.5,Pulmonary Embolism is #1 diagnosis OR equally likely: True -> False
+131,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8294994-1,1_31,5.5,2.5,Pulmonary Embolism is #1 diagnosis OR equally likely: True -> False
+131,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8294994-1,v1.0,5.5,2.5,Pulmonary Embolism is #1 diagnosis OR equally likely: True -> False
+137,8,Wells' Criteria for Pulmonary Embolism,risk,usmle-9051,1_17,0.0,1.5,Surgery in the previous 4 weeks: None -> True
+137,8,Wells' Criteria for Pulmonary Embolism,risk,usmle-9051,v1.0,0.0,1.5,Surgery in the previous 4 weeks: None -> True
+139,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8209631-1,1_17,0,1.5,Surgery in the previous 4 weeks: False -> True
+139,8,Wells' Criteria for Pulmonary Embolism,risk,pmc-8209631-1,v1.0,0,1.5,Surgery in the previous 4 weeks: False -> True
+204,15,Child-Pugh Score for Cirrhosis Mortality,severity,5,1_17,10,9,Encephalopathy: No Encephalopathy -> Grade 0
+204,15,Child-Pugh Score for Cirrhosis Mortality,severity,5,v1.0,10,9,Encephalopathy: No Encephalopathy -> Grade 0
+221,16,Wells' Criteria for DVT,risk,pmc-5295552-1,1_17,-2,-1,Major surgery within 12 weeks: False -> True
+221,16,Wells' Criteria for DVT,risk,pmc-5295552-1,1_31,-2,-1,Major surgery within 12 weeks: False -> True | Bedridden recently >3 days: False -> True
+221,16,Wells' Criteria for DVT,risk,pmc-5295552-1,v1.0,-2,-1,Major surgery within 12 weeks: False -> True
+222,16,Wells' Criteria for DVT,risk,pmc-6959932-1,1_31,-1,1,Bedridden recently >3 days: False -> True | Collateral (nonvaricose) superficial veins present: False -> True
+224,16,Wells' Criteria for DVT,risk,pmc-4341247-1,1_17,-2,-1,Localized tenderness along the deep venous system: None -> True
+224,16,Wells' Criteria for DVT,risk,pmc-4341247-1,1_31,-2,-1,Bedridden recently >3 days: False -> True
+224,16,Wells' Criteria for DVT,risk,pmc-4341247-1,v1.0,-2,-1,Localized tenderness along the deep venous system: None -> True
+227,16,Wells' Criteria for DVT,risk,pmc-7059892-1,1_17,-2,-1,Active cancer: False -> True
+227,16,Wells' Criteria for DVT,risk,pmc-7059892-1,v1.0,-2,-1,Active cancer: False -> True
+230,16,Wells' Criteria for DVT,risk,pmc-3876687-1,1_17,-2,-1,Active cancer: False -> True
+230,16,Wells' Criteria for DVT,risk,pmc-3876687-1,1_31,-2,-1,Major surgery within 12 weeks: False -> True
+230,16,Wells' Criteria for DVT,risk,pmc-3876687-1,v1.0,-2,-1,Active cancer: False -> True
+231,16,Wells' Criteria for DVT,risk,pmc-2488320-1,1_31,-1,2,Alternative diagnosis to Deep Vein Thrombosis as likely or more likely: True -> False | Bedridden recently >3 days: False -> True | Major surgery within 12 weeks: False -> True
+234,16,Wells' Criteria for DVT,risk,pmc-4918891-1,1_31,-2,1,Alternative diagnosis to Deep Vein Thrombosis as likely or more likely: True -> False | Major surgery within 12 weeks: False -> True
+236,16,Wells' Criteria for DVT,risk,pmc-8383636-1,1_17,0,-1,"Alternative diagnosis to Deep Vein Thrombosis as likely or more likely: False -> True | Paralysis, paresis, or recent plaster immobilization of the lower extremity: None -> True"
+236,16,Wells' Criteria for DVT,risk,pmc-8383636-1,1_31,0,1,Major surgery within 12 weeks: False -> True
+236,16,Wells' Criteria for DVT,risk,pmc-8383636-1,v1.0,0,-1,"Alternative diagnosis to Deep Vein Thrombosis as likely or more likely: False -> True | Paralysis, paresis, or recent plaster immobilization of the lower extremity: None -> True"
+237,16,Wells' Criteria for DVT,risk,pmc-3127500-1,1_17,-2,-1,Active cancer: False -> True
+237,16,Wells' Criteria for DVT,risk,pmc-3127500-1,1_31,-2,0,Active cancer: False -> True | Major surgery within 12 weeks: False -> True
+237,16,Wells' Criteria for DVT,risk,pmc-3127500-1,v1.0,-2,-1,Active cancer: False -> True
+238,16,Wells' Criteria for DVT,risk,pmc-4320908-1,1_17,-2,1,"Active cancer: False -> True | Localized tenderness along the deep venous system: False -> True | Paralysis, paresis, or recent plaster immobilization of the lower extremity: False -> True"
+238,16,Wells' Criteria for DVT,risk,pmc-4320908-1,v1.0,-2,1,"Active cancer: False -> True | Localized tenderness along the deep venous system: False -> True | Paralysis, paresis, or recent plaster immobilization of the lower extremity: False -> True"
+239,16,Wells' Criteria for DVT,risk,pmc-4882526-1,1_31,-2,-1,Bedridden recently >3 days: False -> True
+240,16,Wells' Criteria for DVT,risk,pmc-7111022-1,1_31,-2,-1,Active cancer: False -> True
+241,17,Revised Cardiac Risk Index for Pre-Operative Risk,risk,2,1_17,4,3,Congestive Heart Failure criteria for the Cardiac Risk Index rule: True -> False
+261,18,HEART Score for Major Cardiac Events,risk,pmc-3466862-1,1_17,3,2,Suspicion History: Highly suspicious -> Slightly suspicious | parent or sibling with Cardiovascular disease before age 65: False -> True | Initial troponin: None -> less than or equal to normal limit
+261,18,HEART Score for Major Cardiac Events,risk,pmc-3466862-1,v1.0,3,2,Suspicion History: Highly suspicious -> Slightly suspicious | parent or sibling with Cardiovascular disease before age 65: False -> True | Initial troponin: None -> less than or equal to normal limit
+262,18,HEART Score for Major Cardiac Events,risk,pmc-8509094-1,1_31,5,6,Suspicion History: Slightly suspicious -> Moderately suspicious
+265,18,HEART Score for Major Cardiac Events,risk,pmc-7752799-1,1_17,4,3,Electrocardiogram Test: None -> Normal | Suspicion History: Moderately suspicious -> Slightly suspicious | obesity: True -> False | Initial troponin: None -> less than or equal to normal limit
+265,18,HEART Score for Major Cardiac Events,risk,pmc-7752799-1,v1.0,4,3,Electrocardiogram Test: None -> Normal | Suspicion History: Moderately suspicious -> Slightly suspicious | obesity: True -> False | Initial troponin: None -> less than or equal to normal limit
+266,18,HEART Score for Major Cardiac Events,risk,pmc-6276522-1,1_17,10,5,atherosclerotic disease: True -> False | Suspicion History: Highly suspicious -> Slightly suspicious | Electrocardiogram Test: Significant ST deviation -> Normal
+266,18,HEART Score for Major Cardiac Events,risk,pmc-6276522-1,v1.0,10,5,atherosclerotic disease: True -> False | Suspicion History: Highly suspicious -> Slightly suspicious | Electrocardiogram Test: Significant ST deviation -> Normal
+267,18,HEART Score for Major Cardiac Events,risk,pmc-5741599-1,1_31,1,2,Suspicion History: Slightly suspicious -> Moderately suspicious
+268,18,HEART Score for Major Cardiac Events,risk,pmc-8161714-1,1_31,2,3,Electrocardiogram Test: Normal -> Non-specific repolarization disturbance | Initial troponin: None -> less than or equal to normal limit
+269,18,HEART Score for Major Cardiac Events,risk,pmc-8053007-1,1_17,6,5,Initial troponin: between the normal limit or up to three times the normal limit -> less than or equal to normal limit | Electrocardiogram Test: None -> Normal
+269,18,HEART Score for Major Cardiac Events,risk,pmc-8053007-1,v1.0,6,5,Initial troponin: between the normal limit or up to three times the normal limit -> less than or equal to normal limit | Electrocardiogram Test: None -> Normal
+274,18,HEART Score for Major Cardiac Events,risk,pmc-7290110-1,1_31,3,4,Electrocardiogram Test: None -> Non-specific repolarization disturbance
+275,18,HEART Score for Major Cardiac Events,risk,pmc-7780869-1,1_17,5,4,Suspicion History: Moderately suspicious -> Slightly suspicious
+275,18,HEART Score for Major Cardiac Events,risk,pmc-7780869-1,1_31,5,6,Suspicion History: Moderately suspicious -> Highly suspicious
+275,18,HEART Score for Major Cardiac Events,risk,pmc-7780869-1,v1.0,5,4,Suspicion History: Moderately suspicious -> Slightly suspicious
+276,18,HEART Score for Major Cardiac Events,risk,pmc-4793133-1,1_17,6,7,Suspicion History: Moderately suspicious -> Highly suspicious
+276,18,HEART Score for Major Cardiac Events,risk,pmc-4793133-1,1_31,6,7,Suspicion History: Moderately suspicious -> Highly suspicious
+276,18,HEART Score for Major Cardiac Events,risk,pmc-4793133-1,v1.0,6,7,Suspicion History: Moderately suspicious -> Highly suspicious
+278,18,HEART Score for Major Cardiac Events,risk,pmc-2783103-1,1_17,2,1,Suspicion History: Moderately suspicious -> Slightly suspicious
+278,18,HEART Score for Major Cardiac Events,risk,pmc-2783103-1,v1.0,2,1,Suspicion History: Moderately suspicious -> Slightly suspicious
+280,18,HEART Score for Major Cardiac Events,risk,usmle-353,1_31,4,5,Suspicion History: Moderately suspicious -> Highly suspicious
+301,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,usmle-12605,1_31,1,2,Tender/swollen anterior cervical lymph nodes: False -> True
+301,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,usmle-12605,v1.0,1,2,Cough Absent: None -> True | Tender/swollen anterior cervical lymph nodes: False -> True
+304,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,pmc-8169128-1,v1.0,3,2,Cough Absent: True -> False
+305,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,usmle-12316,1_17,3,4,Exudate or swelling on tonsils: None -> True
+306,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,usmle-8066,1_17,3,2,Tender/swollen anterior cervical lymph nodes: True -> False | Cough Absent: None -> True
+310,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,pmc-4327960-1,1_31,3,2,Tender/swollen anterior cervical lymph nodes: True -> False
+315,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,usmle-4768,v1.0,2,3,Tender/swollen anterior cervical lymph nodes: False -> True
+317,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,usmle-8175,1_31,4,3,Tender/swollen anterior cervical lymph nodes: True -> False
+318,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,pmc-5745701-1,v1.0,1,0,Cough Absent: True -> False
+320,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,pmc-8240916-1,v1.0,0,1,Tender/swollen anterior cervical lymph nodes: False -> True
+342,23,MELD Na (UNOS/OPTN),lab,pmc-3094288-1,v1.0,11,7.0,"creatinine: [1.6, 'mg/dL'] -> [1.0, 'mg/dL']"
+350,25,HAS-BLED Score for Major Bleeding Risk,risk,6,1_17,4,5,Hypertension: False -> True
+350,25,HAS-BLED Score for Major Bleeding Risk,risk,6,v1.0,4,5,Hypertension: False -> True
+360,25,HAS-BLED Score for Major Bleeding Risk,risk,16,1_17,4,5,Hypertension: False -> True
+360,25,HAS-BLED Score for Major Bleeding Risk,risk,16,v1.0,4,5,Hypertension: False -> True
+362,25,HAS-BLED Score for Major Bleeding Risk,risk,18,1_17,3,4,Hypertension: False -> True
+362,25,HAS-BLED Score for Major Bleeding Risk,risk,18,v1.0,3,4,Hypertension: False -> True
+430,32,Charlson Comorbidity Index (CCI),risk,4,v1.0,3,4,Transient Ischemic Attacks History: False -> True
+432,32,Charlson Comorbidity Index (CCI),risk,6,v1.0,20,18,Liver disease severity: moderate to severe -> Moderate
+436,32,Charlson Comorbidity Index (CCI),risk,10,1_17,10,9,"age: [55.0, 'years'] -> [60.0, 'years'] | Leukemia: True -> False"
+446,32,Charlson Comorbidity Index (CCI),risk,20,v1.0,9,11,Liver disease severity: none -> Severe | Peripheral vascular disease: False -> True
+447,32,Charlson Comorbidity Index (CCI),risk,21,1_17,14,15,Diabetes mellitus: none or diet-controlled -> uncomplicated
+449,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,usmle-6072,v1.0,2,3,Symptom onset <=3 days: False -> True
+452,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-3326926-1,v1.0,1,2,Purulent tonsils: False -> True
+453,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-5661752-1,1_31,3,4,Severe tonsil inflammation: False -> True
+454,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-7219994-1,1_31,3,5,Purulent tonsils: False -> True | Severe tonsil inflammation: False -> True
+454,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-7219994-1,v1.0,3,5,Purulent tonsils: False -> True | Severe tonsil inflammation: False -> True
+455,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,usmle-1376,v1.0,2,5,Purulent tonsils: False -> True | Symptom onset <=3 days: False -> True | Severe tonsil inflammation: False -> True
+458,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,usmle-7961,v1.0,4,3,Purulent tonsils: True -> False
+461,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-8454594-1,v1.0,2,3,Severe tonsil inflammation: False -> True
+462,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-7979303-1,v1.0,4,3,Absence of cough or coryza: True -> False
+464,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,usmle-6762,v1.0,3,4,Symptom onset <=3 days: False -> True
+465,33,FeverPAIN Score for Strep Pharyngitis,diagnosis,pmc-8091626-1,v1.0,1,2,Purulent tonsils: False -> True
+554,46,Framingham Risk Score for Hard Coronary Heart Disease,lab,pmc-8279282-1,v1.0,6.732,8.491,Blood pressure being treated with medicines: False -> True
+561,46,Framingham Risk Score for Hard Coronary Heart Disease,lab,pmc-6530099-1,v1.0,5.197,6.569,Blood pressure being treated with medicines: False -> True
+562,46,Framingham Risk Score for Hard Coronary Heart Disease,lab,pmc-4429202-1,1_17,3.647,9.351,Smoker: False -> True
+562,46,Framingham Risk Score for Hard Coronary Heart Disease,lab,pmc-4429202-1,1_31,3.647,9.351,Smoker: False -> True
+563,46,Framingham Risk Score for Hard Coronary Heart Disease,lab,pmc-4114920-1,1_17,0.276,1.937,Smoker: False -> True | Blood pressure being treated with medicines: False -> True
+563,46,Framingham Risk Score for Hard Coronary Heart Disease,lab,pmc-4114920-1,1_31,0.276,1.937,Smoker: False -> True | Blood pressure being treated with medicines: False -> True
+593,51,SIRS Criteria,diagnosis,pmc-6171780-1,v1.0,0,1,"White blood cell count: [9440000000.0, 'L'] -> [9440.0, 'L']"
+782,65,Albumin Corrected Anion Gap,lab,pmc-3190515-1,1_17,8.5,2.5,"Bicarbonate: [29.0, 'mEq/L'] -> [34.0, 'mEq/L'] | Sodium: [140.0, 'mEq/L'] -> [139.0, 'mEq/L']"
+782,65,Albumin Corrected Anion Gap,lab,pmc-3190515-1,v1.0,8.5,6.5,"Chloride: [104.0, 'mEq/L'] -> [100.0, 'mEq/L'] | Bicarbonate: [29.0, 'mEq/L'] -> [34.0, 'mEq/L'] | Sodium: [140.0, 'mEq/L'] -> [139.0, 'mEq/L']"
+849,21,Glasgow Coma Score (GCS),severity,1,1_17,10,9,Best verbal response: confused -> inappropriate words
+849,21,Glasgow Coma Score (GCS),severity,1,v1.0,10,9,Best verbal response: confused -> inappropriate words
+909,36,Caprini Score for Venous Thromboembolism (2005),risk,1,v1.0,26,28,Major Surgery in the last month: False -> True | Mobility: on bed rest -> confined to bed >72 hours
+912,36,Caprini Score for Venous Thromboembolism (2005),risk,4,v1.0,21,27,Congestive Heart Failure in the last month: False -> True | Acute spinal cord injury causing paralysis in the last month: False -> True
+915,36,Caprini Score for Venous Thromboembolism (2005),risk,7,v1.0,21,22,Major Surgery in the last month: False -> True
+918,36,Caprini Score for Venous Thromboembolism (2005),risk,10,v1.0,14,15,Major Surgery in the last month: False -> True
+920,36,Caprini Score for Venous Thromboembolism (2005),risk,12,v1.0,18,19,Major Surgery in the last month: False -> True
+924,36,Caprini Score for Venous Thromboembolism (2005),risk,16,v1.0,13,14,Major Surgery in the last month: False -> True

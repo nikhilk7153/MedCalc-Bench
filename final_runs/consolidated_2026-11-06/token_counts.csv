@@ -1,0 +1,25 @@
+Model,Style,Input,Output
+PMC-LLaMA,direct_answer,353509,1048
+PMC-LLaMA,zero_shot,447181,159571
+PMC-LLaMA,one_shot,1058026,368443
+\textsc{MediTron},direct_answer,926148,15319
+\textsc{MediTron},zero_shot,1080604,26513
+\textsc{MediTron},one_shot,1818918,482679
+Mistral,direct_answer,811033,208320
+Mistral,zero_shot,904725,324796
+Mistral,one_shot,2130555,349585
+Mixtral,direct_answer,811033,59417
+Mixtral,zero_shot,904725,265047
+Mixtral,one_shot,2130555,370518
+Llama 3-8B,direct_answer,690962,9406
+Llama 3-8B,zero_shot,742674,274789
+Llama 3-8B,one_shot,1758057,364833
+Llama 3-70B,direct_answer,690962,8482
+Llama 3-70B,zero_shot,742674,240438
+Llama 3-70B,one_shot,1758057,352564
+GPT-3.5,direct_answer,687267,7643
+GPT-3.5,zero_shot,738979,171091
+GPT-3.5,one_shot,1755439,333225
+GPT-4,direct_answer,687267,8406
+GPT-4,zero_shot,738979,251681
+GPT-4,one_shot,1755439,346110

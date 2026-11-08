@@ -89,7 +89,7 @@
         "explanation function": "mrdr_gfr_explanation",
         "calculator name": "MDRD GFR Equation",
         "type": "lab test",
-        "question": "Using the MDRD GFR Equation, what is the patient's Glomerular Filtration Rate (GFR) in terms of mL/min/1.73 m²? If the patient is black, please use the MDRD GFR Equation for blacks."
+        "question": "Using the MDRD GFR Equation, what is the patient's Glomerular Filtration Rate (GFR) in terms of mL/min/1.73 m²? If the patient is Black, apply the race coefficient of 1.212; otherwise, use a race coefficient of 1."
     },
     "10": {
         "sex": "sex",
@@ -267,7 +267,7 @@
         "explanation function": "compute_sodium_correction_hyperglycemia_explanation",
         "calculator name": "Sodium Correction for Hyperglycemia",
         "type": "lab test",
-        "question": "What is the patient's corrected sodium concentration for hyperglycemia in terms of mEq/L? Use the sodium correction equation based on the one derived in Hillier, 1999."
+        "question": "What is the patient's corrected sodium concentration for hyperglycemia in terms of mEq/L? Use the sodium correction equation based on the one derived in Hillier, 1999, with a correction factor of 0.024."
     },
     "27": {
         "Heart Rate or Pulse": "heart_rate",
@@ -495,9 +495,9 @@
         "Triglycerides": "triglycerides",
         "file path": "ldl_calculated.py",
         "explanation function": "compute_ldl_explanation",
-        "calculator name": "LDL Calculated",
+        "calculator name": "Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C)",
         "type": "lab test",
-        "question": "What is the patient's LDL cholestrol concentration? Please outuput your answer in terms of mg/dL."
+        "question": "Using the Friedewald equation, what is the patient's LDL cholesterol concentration? Please output your answer in terms of mg/dL."
     },
     "45": {
         "age": "age",

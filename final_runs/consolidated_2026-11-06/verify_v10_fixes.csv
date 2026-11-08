@@ -1,0 +1,28 @@
+Set,Check,Rows,Disagree,Not checked (units),Examples
+test,formula 13,20,0,0.0,
+test,formula 46,16,0,0.0,
+test,formula 44,20,0,0.0,
+test,formula 7,20,0,0.0,
+test,formula 23,5,0,0.0,
+test,formula 3,20,0,0.0,
+test,MME fentanyl dosed in mg,20,0,,
+test,steroid converted to itself,20,0,,
+test,osmolality: urea in mg/dL taken as BUN,20,0,,
+train,formula 13,80,0,0.0,
+train,formula 46,0,0,0.0,
+train,formula 44,45,0,0.0,
+train,formula 7,191,0,1.0,
+train,formula 23,0,0,0.0,
+train,formula 3,493,1,2.0,"469 (label 0.10711, formula 0.1)"
+train,MME fentanyl dosed in mg,80,0,,
+train,steroid converted to itself,77,2,,9556; 9629
+train,osmolality: urea in mg/dL taken as BUN,346,56,,5631; 5639; 5641; 5642; 5643; 5646
+one-shot,formula 13,1,0,0.0,
+one-shot,formula 46,1,0,0.0,
+one-shot,formula 44,1,0,0.0,
+one-shot,formula 7,1,0,0.0,
+one-shot,formula 23,1,0,0.0,
+one-shot,formula 3,1,0,0.0,
+one-shot,MME fentanyl dosed in mg,1,0,,
+one-shot,steroid converted to itself,1,0,,
+one-shot,osmolality: urea in mg/dL taken as BUN,1,0,,
