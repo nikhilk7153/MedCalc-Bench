@@ -14,7 +14,7 @@ against the corrected labels, and the three paper tables built from them. Source
 | `make_stats_table.py` | `tables/dataset_statistics_table.tex` (dataset statistics table) |
 | `make_code_table.py` | `outputs/code_exec_*.jsonl` (GPT-3.5 / GPT-4 code prompt, spliced the same way) and `tables/code_interpreter_table.tex` |
 | `make_train_table.py` | `tables/train_table.tex` (Appendix C training-set table, from `dataset/train_data_10_22.csv`) and the numbers for the C.1 text |
-| `accuracy_vs_param_count/run.sh` | Appendix E.1 figures (accuracy vs. number of parameters, zero-shot; equation and rule) from `outputs/`, with `evaluation/attribute_analysis.py` unchanged; points and fit coefficients as CSV in the same folder |
+| `accuracy_vs_param_count/run.sh` | Appendix E.1 figures (accuracy vs. number of parameters, zero-shot; equation and rule) from `outputs/`, with `evaluation/attribute_analysis.py`; points and fit coefficients as CSV in the same folder |
 | `count_admission_extraction_errors.py` | How many equation-based calculators had v1.0 input extractions wrong for the admission (pre-treatment) time point, at three levels of confirmation, and how each row was fixed; writes `admission_input_extraction_rows.csv` |
 | `count_v10_equation_errors.py` | Every v1.0 equation-based row followed into the revised set: kept, inputs wrong, formula wrong or replaced, with the reason; writes `v10_equation_rows.csv` |
 | `verify_v10_fixes.py` | Checks that v1.0's equation-based errors are fixed in the test set, training set and one-shot examples (independent formula recomputation for Due Date, Framingham, LDL, Calcium, MELD Na, CKD-EPI; fentanyl-in-mg and steroid-to-itself templates; urea taken as BUN); writes `verify_v10_fixes.csv` |
@@ -58,3 +58,22 @@ re-scoring reproduces the stored verdict on unchanged labels (0 differences).
   tiktoken over the raw output for GPT. Rebuilt main-run prompts equal those in `../test_data_10_22_with_prompts/`.
 - **Dataset statistics:** lengths in GPT-4 tokens (tiktoken `cl100k_base`); attributes = number of Relevant Entities.
   On v1.0 `test_data.csv` this reproduces the published attribute columns exactly and nearly all lengths.
+
+## Paper map (arXiv 2406.12036v4 = `../../2406.12036v4.pdf`)
+| Paper item | Script | Status |
+|---|---|---|
+| Figure 1: example instances | none (drawing: `../../instance_illustration/`) | CHA2DS2-VASc example shows answer 7; its note (row 44) is labelled 4 in v1.0 and now. Albumin-corrected AG example (row 769, 19.25) still correct |
+| Table 1: dataset statistics | `make_stats_table.py` | done |
+| Table 2: main accuracy | `consolidate.py` -> `make_main_results_table.py` | done |
+| Table 3: error-type examples | none (quotes from the 2024 GPT-4 run) | quotes are from the 2024 run, but all three are still errors of their type under the corrected labels (checked 2026-11-13). Wells' DVT (row 233): label -1 unchanged; the table's question needs the current wording ("score of Wells' criteria"). PERC (row 569): label 3 -> 4 because the note now says the hernia repair was "3 weeks ago" (was "in the past", inside the quote's [...]); the prior-PE miss still holds. LDL (row 524): unchanged, 128 vs the model's 142 |
+| Table 4: error types | `consolidate_errors.py` -> `make_error_table.py` | done |
+| Table 5: dataset comparison | none (literature) | unaffected |
+| Table 6: Open-Patients | `check_open_patients_table.py` | verified, unchanged |
+| Tables 7-8 | do not appear in the PDF (numbering skips) | - |
+| Table 9: calculator list | none saved (checked ad hoc, 2026-11-07) | needs a script; MAP 3->2, BMI 3->2, Due Date 1->2 |
+| Tables 10-12: tokens (B.3) | `make_token_tables.py` | done |
+| Table 13: training set (C.1) | `make_train_table.py` | done; training-set open items pending |
+| Table 14: fine-tuning (C.3) | `../../sft_rerun_2026-10-27/` (`build_sft_data.py`, `score_sft.py`) | not run (needs 4xA100) |
+| Table 15: code interpreter (D.1) | `make_code_table.py` | done |
+| Figures 2-3 (E.1) | `accuracy_vs_param_count/run.sh` -> `evaluation/attribute_analysis.py` | fixed 2026-11-13: parameters the calculator code never reads are not counted (IBW weight, RCRI age, APACHE II MAP), the `"Question"` key is not a parameter, MME rows use their own number of inputs |
+| Sec. 4.2 text: 89% classifier accuracy on 200 errors | `evaluation/sample_judge_agreement.py` | sample drawn (from `evaluation/error_analysis_10_22`, not the consolidated errors); no human labels yet |

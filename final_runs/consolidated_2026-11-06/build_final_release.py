@@ -7,7 +7,7 @@ Copies only (no recomputation, no model calls); source folders are not modified.
 - dataset/one_shot_examples.json: final_files_2026-10-16/one_shot_10_17_2026_corrected.json (differs from the main run's
   file only in the CKD-EPI example wording, which the CKD-EPI one-shot re-run used).
 - dataset/train_data.csv: dataset/train_data_10_22.csv (open items listed in the release README).
-- outputs/, error_analysis/, tables/: from this folder.
+- outputs/, error_analysis/, tables/, figures/ (Appendix E.1): from this folder.
 Writes MANIFEST.csv (rows and sha256 per file)."""
 import hashlib, json, os, shutil, sys
 import pandas as pd
@@ -30,6 +30,9 @@ COPIES = {
 for f in sorted(os.listdir(f"{HERE}/outputs")):
     if f.endswith(".jsonl"):
         COPIES[f"outputs/{f}"] = f"final_runs/consolidated_2026-11-06/outputs/{f}"
+for f in sorted(os.listdir(f"{HERE}/accuracy_vs_param_count")):
+    if f.endswith((".png", ".csv")):
+        COPIES[f"figures/{f}"] = f"final_runs/consolidated_2026-11-06/accuracy_vs_param_count/{f}"
 for f in sorted(os.listdir(f"{HERE}/tables")):
     COPIES[f"tables/{f}"] = f"final_runs/consolidated_2026-11-06/tables/{f}"
 

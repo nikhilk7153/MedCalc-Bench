@@ -34,6 +34,9 @@ Which run each row comes from:
   - Excluded: 266. That is 124 label-fix answers classified against the old explanation, 30 newly wrong ones, and 112 empty or blocked classifications.
 - `error_type_summary.csv`, `error_type_table_values.csv`: per model and style, each error counted once as its earliest type (A > B > C > D).
 
+## figures/
+Appendix E.1 Figures 2 and 3 (accuracy vs. number of parameters, zero-shot), their points and fit coefficients.
+
 ## tables/
 LaTeX for the main results, error types, dataset statistics, code interpreter, token counts (B.3) and training set (C).
 

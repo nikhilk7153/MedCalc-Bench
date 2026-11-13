@@ -2,8 +2,10 @@
 Accuracy vs. number of attributes (paper Appendix E.1, Figures 2 and 3).
 
 The number of attributes of a calculator is the number of its attributes in calculator_implementations_verified/
-name_to_python.json (its entries other than file path, explanation function, calculator name, type and question), and
-each row gets the count of its calculator. For each model, the accuracy at each attribute count is the share of rows with that
+name_to_python.json (its entries other than file path, explanation function, calculator name, type and question, and
+other than the entries in UNUSED, which the calculator code never reads), and each row gets the count of its
+calculator. MME has no fixed inputs, so its rows get their own number of Relevant Entities (dose and doses per day for
+each opioid). For each model, the accuracy at each attribute count is the share of rows with that
 count answered correctly; a second-degree polynomial is fitted to these points (np.polyfit) and drawn over the observed
 range, one figure for equation-based (lab, physical, date, dosage) and one for rule-based (risk, severity, diagnosis)
 calculators.
@@ -40,7 +42,21 @@ TYPES = {
     "rule": ("Rule-Based", ["risk", "severity", "diagnosis"]),
 }
 SETTINGS = ["direct_answer", "zero_shot", "one_shot"]
-NOT_ATTRIBUTES = {"file path", "explanation function", "calculator name", "type", "question"}
+NOT_ATTRIBUTES = {"file path", "explanation function", "calculator name", "type", "question", "Question"}  # MME's entry has both spellings
+# entries listed in name_to_python.json that the calculator code never reads (checked 2026-11-13)
+UNUSED = {10: {"weight"},                   # Ideal Body Weight: Devine formula uses sex and height only
+          17: {"age"},                      # Revised Cardiac Risk Index: six criteria, age is not one
+          28: {"Mean arterial pressure"}}   # APACHE II: MAP is computed from systolic and diastolic pressure
+# MME has no fixed inputs (a dose and doses per day for each opioid the patient takes): count the row's Relevant Entities
+PER_ROW = {49}
+
+
+def count_entities(s):
+    import ast
+    try:
+        return len(json.loads(s))
+    except Exception:
+        return len(ast.literal_eval(s))
 
 
 def load_results(path):
@@ -93,8 +109,11 @@ if __name__ == "__main__":
 
     data = pd.read_csv(args.data).set_index("Row Number")
     calculators = json.load(open(args.calculators))
-    attributes = {int(calc_id): len(set(calc) - NOT_ATTRIBUTES) for calc_id, calc in calculators.items()}
+    attributes = {int(calc_id): len(set(calc) - NOT_ATTRIBUTES - UNUSED.get(int(calc_id), set()))
+                  for calc_id, calc in calculators.items()}
     n_attributes = data["Calculator ID"].map(attributes)
+    per_row = data["Calculator ID"].isin(PER_ROW)
+    n_attributes[per_row] = data.loc[per_row, "Relevant Entities"].map(count_entities)
     if n_attributes.isna().any():
         raise SystemExit(f"calculators missing from {args.calculators}: {sorted(data['Calculator ID'][n_attributes.isna()].unique())}")
     os.makedirs(args.out_dir, exist_ok=True)
