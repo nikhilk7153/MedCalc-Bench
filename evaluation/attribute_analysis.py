@@ -1,23 +1,20 @@
 """
-Accuracy vs. number of attributes (paper Appendix E.1, Figures 2 and 3).
+Accuracy vs. number of parameters (paper Appendix E.1, Figures 2 and 3).
 
-The number of attributes of a calculator is the number of its attributes in calculator_implementations_verified/
-name_to_python.json (its entries other than file path, explanation function, calculator name, type and question, and
-other than the entries in UNUSED, which the calculator code never reads), and each row gets the count of its
-calculator. MME has no fixed inputs, so its rows get their own number of Relevant Entities (dose and doses per day for
-each opioid). For each model, the accuracy at each attribute count is the share of rows with that
-count answered correctly; a second-degree polynomial is fitted to these points (np.polyfit) and drawn over the observed
-range, one figure for equation-based (lab, physical, date, dosage) and one for rule-based (risk, severity, diagnosis)
-calculators.
+A row's number of parameters is the number of its Relevant Entities (the calculator inputs extracted from its note), as
+for the attribute columns of Table 1. Zero-shot chain-of-thought outputs, as in the paper. For each model, the accuracy
+at each parameter count is the share of rows with that count answered correctly; a second-degree polynomial is fitted
+to these points (np.polyfit) and drawn over the observed range, one figure for equation-based (lab, physical, date,
+dosage) and one for rule-based (risk, severity, diagnosis) calculators.
 
-  python attribute_analysis.py                 (zero-shot, as in the paper's figures)
-  python attribute_analysis.py --setting one_shot
-Writes <out_dir>/accuracy_vs_attributes_<setting>_{equation,rule}.png, the points (attribute count, rows, correct,
-accuracy) to <out_dir>/accuracy_vs_attributes_<setting>.csv and the fitted coefficients to
-<out_dir>/fit_coefficients_<setting>.csv.
+  python attribute_analysis.py
+Writes <out_dir>/accuracy_vs_attributes_zero_shot_{equation,rule}.png, the points (parameter count, rows, correct,
+accuracy) to <out_dir>/accuracy_vs_attributes_zero_shot.csv and the fitted coefficients to
+<out_dir>/fit_coefficients_zero_shot.csv.
 """
 
 import argparse
+import ast
 import json
 import os
 import matplotlib
@@ -41,80 +38,88 @@ TYPES = {
     "equation": ("Equation-Based", ["lab", "physical", "date", "dosage"]),
     "rule": ("Rule-Based", ["risk", "severity", "diagnosis"]),
 }
-SETTINGS = ["direct_answer", "zero_shot", "one_shot"]
-NOT_ATTRIBUTES = {"file path", "explanation function", "calculator name", "type", "question", "Question"}  # MME's entry has both spellings
-# entries listed in name_to_python.json that the calculator code never reads (checked 2026-11-13)
-UNUSED = {10: {"weight"},                   # Ideal Body Weight: Devine formula uses sex and height only
-          17: {"age"},                      # Revised Cardiac Risk Index: six criteria, age is not one
-          28: {"Mean arterial pressure"}}   # APACHE II: MAP is computed from systolic and diastolic pressure
-# MME has no fixed inputs (a dose and doses per day for each opioid the patient takes): count the row's Relevant Entities
-PER_ROW = {49}
 
 
-def count_entities(s):
-    import ast
+def count_parameters(entities):
     try:
-        return len(json.loads(s))
-    except Exception:
-        return len(ast.literal_eval(s))
+        return len(json.loads(entities))
+    except ValueError:
+        return len(ast.literal_eval(entities))
 
 
 def load_results(path):
-    return {int(r["Row Number"]): r["Result"] == "Correct" for r in map(json.loads, open(path))}
+    """Read a model's output file and return, for each row number, whether the model answered correctly."""
+    is_correct = {}
+    with open(path) as f:
+        for line in f:
+            output = json.loads(line)
+            row_number = int(output["Row Number"])
+            is_correct[row_number] = output["Result"] == "Correct"
+    return is_correct
 
 
-def run(setting, args, n_attributes, category):
-    files = {label: os.path.join(args.outputs_dir, f"{stem}_{setting}.jsonl") for label, stem in MODELS.items()}
+def accuracy_by_parameter_count(is_correct, rows, n_parameters):
+    """For each number of parameters: how many rows have it, how many the model got right, and the accuracy."""
+    table = pd.DataFrame({"parameters": n_parameters[rows], "correct": [is_correct[row] for row in rows]})
+    return table.groupby("parameters")["correct"].agg(rows="size", correct="sum", accuracy="mean")
 
-    points, coefficients = [], []
-    for kind, (title, categories) in TYPES.items():
+
+def make_figure(calculator_type, rows, n_parameters, outputs_dir, out_dir):
+    """Draw one figure with a fitted curve per model. Returns the plotted points and the curves' coefficients."""
+    points, curves = [], []
+    plt.figure(figsize=(12, 8))
+
+    for model, file_stem in MODELS.items():
+        is_correct = load_results(os.path.join(outputs_dir, f"{file_stem}_zero_shot.jsonl"))
+        missing = [row for row in rows if row not in is_correct]
+        if missing:
+            raise SystemExit(f"{model}: no result for {len(missing)} rows, e.g. {missing[:5]}")
+
+        accuracy = accuracy_by_parameter_count(is_correct, rows, n_parameters)
+        a, b, c = np.polyfit(accuracy.index, accuracy["accuracy"], 2)  # accuracy ≈ a·x² + b·x + c
+        x = np.linspace(accuracy.index.min(), accuracy.index.max(), 200)
+        plt.plot(x, np.polyval([a, b, c], x), label=model)
+
+        for count, point in accuracy.iterrows():
+            points.append({"Calculator Type": calculator_type, "Model": model, "Attributes": count,
+                           "Rows": int(point["rows"]), "Correct": int(point["correct"]),
+                           "Accuracy": round(point["accuracy"], 4)})
+        curves.append({"Calculator Type": calculator_type, "Model": model, "a (x^2)": a, "b (x)": b, "c": c})
+
+    title = TYPES[calculator_type][0]
+    plt.title(f"Accuracy vs. Number of Parameters for {title} Calculators")
+    plt.xlabel("Number of Parameters")
+    plt.ylabel("Accuracy")
+    plt.legend(loc="upper right")
+    path = os.path.join(out_dir, f"accuracy_vs_attributes_zero_shot_{calculator_type}.png")
+    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.close()
+    print("wrote", path)
+    return points, curves
+
+
+def run(args, n_parameters, category):
+    """Make the equation-based and rule-based figures and save their points and curves as CSV."""
+    all_points, all_curves = [], []
+    for calculator_type, (_, categories) in TYPES.items():
         rows = category[category.isin(categories)].index
-        plt.figure(figsize=(12, 8))
-        for label, path in files.items():
-            correct = load_results(path)
-            missing = set(rows) - set(correct)
-            if missing:
-                raise SystemExit(f"{path}: no result for {len(missing)} rows, e.g. {sorted(missing)[:5]}")
-            df = pd.DataFrame({"n": n_attributes[rows], "correct": [correct[r] for r in rows]})
-            acc = df.groupby("n")["correct"].agg(["size", "sum", "mean"])
-            fit = np.polyfit(acc.index, acc["mean"], 2)
-            x = np.linspace(acc.index.min(), acc.index.max(), 200)
-            plt.plot(x, np.polyval(fit, x), label=label)
-            for n, r in acc.iterrows():
-                points.append({"Setting": setting, "Calculator Type": kind, "Model": label, "Attributes": n,
-                               "Rows": int(r["size"]), "Correct": int(r["sum"]), "Accuracy": round(r["mean"], 4)})
-            coefficients.append({"Setting": setting, "Calculator Type": kind, "Model": label,
-                                 "a (x^2)": fit[0], "b (x)": fit[1], "c": fit[2]})
-        plt.title(f"Accuracy vs. Number of Parameters for {title} Calculators")
-        plt.xlabel("Number of Parameters")
-        plt.ylabel("Accuracy")
-        plt.legend(loc="upper right")
-        out = os.path.join(args.out_dir, f"accuracy_vs_attributes_{setting}_{kind}.png")
-        plt.savefig(out, dpi=150, bbox_inches="tight")
-        plt.close()
-        print("wrote", out)
+        points, curves = make_figure(calculator_type, rows, n_parameters, args.outputs_dir, args.out_dir)
+        all_points += points
+        all_curves += curves
 
-    pd.DataFrame(points).to_csv(os.path.join(args.out_dir, f"accuracy_vs_attributes_{setting}.csv"), index=False)
-    pd.DataFrame(coefficients).to_csv(os.path.join(args.out_dir, f"fit_coefficients_{setting}.csv"), index=False)
+    pd.DataFrame(all_points).to_csv(os.path.join(args.out_dir, "accuracy_vs_attributes_zero_shot.csv"), index=False)
+    pd.DataFrame(all_curves).to_csv(os.path.join(args.out_dir, "fit_coefficients_zero_shot.csv"), index=False)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Accuracy vs. number of attributes (Appendix E.1)")
-    parser.add_argument("--setting", choices=SETTINGS, default="zero_shot")
-    parser.add_argument("--data", default="../dataset/test_data_10_22.csv")
-    parser.add_argument("--outputs_dir", default="../final_runs/test_data_10_22/outputs")
-    parser.add_argument("--calculators", default="../calculator_implementations_verified/name_to_python.json")
-    parser.add_argument("--out_dir", default="attribute_analysis_10_22")
+    parser = argparse.ArgumentParser(description="Accuracy vs. number of parameters (Appendix E.1)")
+    parser.add_argument("--data", default="../dataset/test_data_10_22_corrected.csv",
+                        help="test set whose Relevant Entities the outputs were scored against")
+    parser.add_argument("--outputs_dir", default="../final_runs/consolidated_2026-11-06/outputs")
+    parser.add_argument("--out_dir", default="../final_runs/consolidated_2026-11-06/accuracy_vs_param_count")
     args = parser.parse_args()
 
-    data = pd.read_csv(args.data).set_index("Row Number")
-    calculators = json.load(open(args.calculators))
-    attributes = {int(calc_id): len(set(calc) - NOT_ATTRIBUTES - UNUSED.get(int(calc_id), set()))
-                  for calc_id, calc in calculators.items()}
-    n_attributes = data["Calculator ID"].map(attributes)
-    per_row = data["Calculator ID"].isin(PER_ROW)
-    n_attributes[per_row] = data.loc[per_row, "Relevant Entities"].map(count_entities)
-    if n_attributes.isna().any():
-        raise SystemExit(f"calculators missing from {args.calculators}: {sorted(data['Calculator ID'][n_attributes.isna()].unique())}")
+    data = pd.read_csv(args.data, keep_default_na=False).set_index("Row Number")
+    n_parameters = data["Relevant Entities"].map(count_parameters)
     os.makedirs(args.out_dir, exist_ok=True)
-    run(args.setting, args, n_attributes, data["Category"])
+    run(args, n_parameters, data["Category"])

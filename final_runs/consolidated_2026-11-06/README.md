@@ -26,17 +26,24 @@ against the corrected labels, and the three paper tables built from them. Source
 `make_token_tables.py` rebuilds prompts with it, since `evaluation/run.py` has changed since.
 
 ## Which output is used for each row
-Rule: the run whose prompt matches the test row. Fixed before looking at scores.
-| Rows | Output |
-|---|---|
-| All rows by default | Main run, `final_runs/test_data_10_22/` |
-| CKD-EPI rows 21-40, one-shot | `extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/` (corrected one-shot example wording) |
-| MDRD and Sodium rows 141-160, 366-385, zero- and one-shot | `extra_runs/mdrd_sodium_wording_rerun_2026-10-22/` (reworded questions) |
-| 13 label-fix rows | Main-run answers, re-scored (prompt unchanged) |
+Rule (2026-11-14): the latest run of the row, by timestamp, among the runs all 8 models took part in.
+| Rows | Output | Run time |
+|---|---|---|
+| All rows by default | Main run, `final_runs/test_data_10_22/` | 10-22 04:51-06:06 (code prompt 09:10-09:31) |
+| 13 label-fix rows and CKD-EPI rows 21-40, all styles (code prompt: the 13 label-fix rows) | `extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/` | 10-22 13:53 |
+| MDRD and Sodium rows 141-160, 366-385, zero- and one-shot and code prompt | `extra_runs/mdrd_sodium_wording_rerun_2026-10-22/` (reworded questions) | 10-22 16:51 |
 
-Not used: the Astra corrections (pending physician review), the LDL Friedewald wording and the corrected SOFA one-shot
-example (GPT-4 and/or GPT-3.5 never ran them), and the side experiments in `extra_runs/`.
+Kept on the main run although a later run exists:
+- **Astra rows (45):** re-run 10-22 14:24 on unreviewed corrections; physician review pending.
+- **LDL rows 513-532 (Friedewald question) and the SOFA one-shot rows 889-908 (corrected example):** re-run 10-23/10-24
+  without GPT-4 (and, for LDL, without GPT-3.5), so the models would have answered different prompts.
+- Side experiments (`gpt-4o`, PMC-LLaMA fit-context, time-point replay) and the superseded GPT-only
+  `corrected_rows_rerun_2026-10-22`.
+
 MDRD/Sodium direct-answer cells keep the old question wording (not re-run).
+The re-runs of unchanged prompts (13 label-fix rows; CKD-EPI direct and zero-shot) do not reproduce the main run's
+answers exactly (temperature 0, but neither the OpenAI API nor vLLM is deterministic): overall accuracy moves by at most
+0.39 points (Mixtral zero-shot); GPT-4 one-shot is 62.31% (62.60% with main-run answers on those rows).
 
 Labels: `dataset/test_data_10_22_corrected.csv`. Questions and notes: `dataset/test_data_10_22.csv`.
 `consolidate.py` checks every output's question and note against the row it is scored on (0 mismatches) and that
@@ -46,11 +53,11 @@ re-scoring reproduces the stored verdict on unchanged labels (0 differences).
 - **Accuracy table:** accuracy by category; std = sqrt(acc(1-acc)/n); rounded half up.
 - **Error table:** `gpt-4` classifications of the same outputs (no new classification). Each wrong answer counts once, as its
   earliest type (A > B > C > D). Type share of the errors in parentheses; Error Rate = 1 - accuracy.
-  Excluded and counted: 124 label-fix answers classified against the old explanation, 30 newly wrong ones never
-  classified, 112 empty or blocked classifications (266 of 12,059). The 146 CKD-EPI zero-shot classifications against
-  the pre-wording-fix explanation are kept (logic unchanged).
-- **Code-interpreter table:** main code-prompt run (`evaluation/outputs/test_data_10_22/`) with the reworded MDRD/Sodium
-  rows from their re-run; zero-shot CoT columns are the consolidated zero-shot outputs. GPT-4 row 564 (Framingham)
+  Excluded and counted: 115 of 12,068 wrong answers whose classification is empty or blocked. Every other wrong answer
+  was classified against its current reference explanation (the CKD-EPI re-run was classified with the corrected labels
+  and explanation wording).
+- **Code-interpreter table:** main code-prompt run (`evaluation/outputs/test_data_10_22/`) with the 13 label-fix rows from the
+  CKD-EPI re-run and the reworded MDRD/Sodium rows from their re-run; zero-shot CoT columns are the consolidated zero-shot outputs. GPT-4 row 564 (Framingham)
   exceeded GPT-4's 8,192-token context and is scored Incorrect, as in every version of the run.
 - **Token tables:** every prompt is rebuilt from the test row and one-shot file of the run it came from and counted
   with the model's own tokenizer (open models: the templated prompt, as run.py tokenized it; GPT: tiktoken
@@ -75,5 +82,5 @@ re-scoring reproduces the stored verdict on unchanged labels (0 differences).
 | Table 13: training set (C.1) | `make_train_table.py` | done; training-set open items pending |
 | Table 14: fine-tuning (C.3) | `../../sft_rerun_2026-10-27/` (`build_sft_data.py`, `score_sft.py`) | not run (needs 4xA100) |
 | Table 15: code interpreter (D.1) | `make_code_table.py` | done |
-| Figures 2-3 (E.1) | `accuracy_vs_param_count/run.sh` -> `evaluation/attribute_analysis.py` | fixed 2026-11-13: parameters the calculator code never reads are not counted (IBW weight, RCRI age, APACHE II MAP), the `"Question"` key is not a parameter, MME rows use their own number of inputs |
+| Figures 2-3 (E.1) | `accuracy_vs_param_count/run.sh` -> `evaluation/attribute_analysis.py` | zero-shot; 2026-11-13: a row's parameter count is its number of Relevant Entities, as in Table 1 (was the number of `name_to_python.json` entries, which counted inputs the code never reads and gave MME 1) |
 | Sec. 4.2 text: 89% classifier accuracy on 200 errors | `evaluation/sample_judge_agreement.py` | sample drawn (from `evaluation/error_analysis_10_22`, not the consolidated errors); no human labels yet |

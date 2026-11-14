@@ -1,14 +1,14 @@
 """Error-type table (paper Table 4) from the consolidated outputs and their classifications.
 As in the paper: each wrong answer counts once, as its earliest error type (A > B > C > D); the number is the type's share
 of all notes, the parentheses its share of the errors, and Error Rate = wrong answers / notes. Shares are taken over the
-classified errors (unclassified or out-of-date classifications excluded) and scaled to the full error rate."""
+classified errors (empty or blocked classifications excluded) and scaled to the full error rate."""
 import os
 from decimal import Decimal, ROUND_HALF_UP
 import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 N = 1048
 d = pd.read_csv(f"{HERE}/error_classifications.csv", dtype={"Error Types": str}, keep_default_na=False)
-used = d[(d.Status == "classified") | ((d.Status == "classified against the old explanation") & d["Row Number"].between(21, 40))]
+used = d[d.Status == "classified"]
 NAMES = [("PMC-LLaMA", "PMC-LLaMA-13B"), ("MediTron", r"\textsc{MediTron}-70B"), ("Mistral", "Mistral-7B"), ("Mixtral", "Mixtral-8x7B"),
          ("Llama 3 8B", "Llama 3-8B"), ("Llama 3 70B", "Llama 3-70B"), ("GPT-3.5", "GPT-3.5"), ("GPT-4", "GPT-4")]
 r2 = lambda x: Decimal(str(x)).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)

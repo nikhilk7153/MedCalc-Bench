@@ -1,6 +1,7 @@
 """Code-interpreter table: GPT-3.5 and GPT-4, zero-shot CoT vs code prompt, accuracy by category.
-Splices the code-execution runs by the same rule as consolidate.py (main run; the reworded MDRD/Sodium rows from their
-re-run; label-fix rows re-scored), writes outputs/code_exec_*.jsonl and tables/code_interpreter_table.tex.
+Splices the code-execution runs by the same rule as consolidate.py, the latest run of each row: main run (10-22 09:10-09:31)
+< CKD-EPI re-run (10-22 13:53: the 13 label-fix rows) < MDRD/Sodium re-run (10-22 16:51: reworded rows). Writes
+outputs/code_exec_*.jsonl and tables/code_interpreter_table.tex.
 Zero-shot CoT columns come from outputs/ (run consolidate.py first)."""
 import json, os, re, sys
 from decimal import Decimal, ROUND_HALF_UP
@@ -12,6 +13,7 @@ sys.path.insert(0, f"{ROOT}/evaluation")
 from evaluate import check_correctness
 
 MAIN = f"{ROOT}/evaluation/outputs/test_data_10_22"
+CKDEPI = f"{ROOT}/extra_runs/corrected_rows_ckdepi_rerun_2026-10-22"
 MDRD = f"{ROOT}/extra_runs/mdrd_sodium_wording_rerun_2026-10-22"
 MODELS = [("GPT-3.5-turbo", "gpt-3.5-turbo-0125", "OpenAI_gpt-3.5-turbo-0125"), ("GPT-4", "gpt-4-0613", "OpenAI_gpt-4")]
 MDRD_ROWS = {str(r) for r in list(range(141, 161)) + list(range(366, 386))}
@@ -48,6 +50,9 @@ problems, rescore_diff, acc = [], [], {}
 for label, version, zprefix in MODELS:
     rows = load(f"{MAIN}/code_exec_{version}.jsonl")
     source = {r: "evaluation/outputs/test_data_10_22" for r in rows}
+    rerun = load(f"{CKDEPI}/{version}/outputs/code_exec_{version}.jsonl")
+    for r in rerun:
+        rows[r], source[r] = rerun[r], "corrected_rows_ckdepi_rerun_2026-10-22"
     rerun = load(f"{MDRD}/{version}/outputs/code_exec_{version}.jsonl")
     for r in MDRD_ROWS:
         rows[r], source[r] = rerun[r], "mdrd_sodium_wording_rerun_2026-10-22"

@@ -19,26 +19,26 @@ PMC-LLaMA,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,25,3,pmc-8173432-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,32,3,pmc-7983145-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,A,classified against the old explanation
-PMC-LLaMA,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,37,3,pmc-4448053-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,D,classified against the old explanation
-PMC-LLaMA,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,D,classified against the old explanation
+PMC-LLaMA,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
+PMC-LLaMA,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+PMC-LLaMA,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,32,3,pmc-7983145-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
+PMC-LLaMA,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+PMC-LLaMA,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,41,4,pmc-7196137-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,42,4,pmc-7099753-3,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,43,4,pmc-8136881-1,final_runs/test_data_10_22,A,classified
@@ -238,8 +238,8 @@ PMC-LLaMA,zero_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,AB,classified
-PMC-LLaMA,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-PMC-LLaMA,zero_shot,241,17,2,final_runs/test_data_10_22,A,classified against the old explanation
+PMC-LLaMA,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+PMC-LLaMA,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,242,17,3,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,243,17,4,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,244,17,5,final_runs/test_data_10_22,D,classified
@@ -302,7 +302,7 @@ PMC-LLaMA,zero_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,301,20,usmle-12605,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,303,20,usmle-414,final_runs/test_data_10_22,A,classified
-PMC-LLaMA,zero_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,A,classified against the old explanation
+PMC-LLaMA,zero_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 PMC-LLaMA,zero_shot,305,20,usmle-12316,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,306,20,usmle-8066,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,D,classified
@@ -316,7 +316,7 @@ PMC-LLaMA,zero_shot,314,20,usmle-9610,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,315,20,usmle-4768,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,A,classified against the old explanation
+PMC-LLaMA,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,ABC,classified
@@ -348,7 +348,7 @@ PMC-LLaMA,zero_shot,346,25,2,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,347,25,3,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,348,25,4,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,349,25,5,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,350,25,6,final_runs/test_data_10_22,ABC,classified against the old explanation
+PMC-LLaMA,zero_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 PMC-LLaMA,zero_shot,351,25,7,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,352,25,8,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,353,25,9,final_runs/test_data_10_22,D,classified
@@ -358,9 +358,9 @@ PMC-LLaMA,zero_shot,356,25,12,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,357,25,13,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,358,25,14,final_runs/test_data_10_22,,unclassified (empty or blocked)
 PMC-LLaMA,zero_shot,359,25,15,final_runs/test_data_10_22,ABC,classified
-PMC-LLaMA,zero_shot,360,25,16,final_runs/test_data_10_22,A,classified against the old explanation
+PMC-LLaMA,zero_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,361,25,17,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,362,25,18,final_runs/test_data_10_22,ABC,classified against the old explanation
+PMC-LLaMA,zero_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,363,25,19,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,364,25,20,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,365,25,21,final_runs/test_data_10_22,A,classified
@@ -445,12 +445,12 @@ PMC-LLaMA,zero_shot,443,32,17,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,445,32,19,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,446,32,20,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,447,32,21,final_runs/test_data_10_22,D,classified against the old explanation
+PMC-LLaMA,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,D,classified against the old explanation
+PMC-LLaMA,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 PMC-LLaMA,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,D,classified
@@ -459,11 +459,11 @@ PMC-LLaMA,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,AB,classifie
 PMC-LLaMA,zero_shot,458,33,usmle-7961,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,460,33,usmle-1375,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,D,classified against the old explanation
+PMC-LLaMA,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,464,33,usmle-6762,final_runs/test_data_10_22,A,classified
-PMC-LLaMA,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,A,classified against the old explanation
+PMC-LLaMA,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 PMC-LLaMA,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,D,classified
@@ -498,7 +498,7 @@ PMC-LLaMA,zero_shot,496,39,pmc-4530922-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,497,39,usmle-5230,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,498,39,pmc-4528898-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,499,39,pmc-6191008-1,final_runs/test_data_10_22,D,classified
-PMC-LLaMA,zero_shot,500,39,pmc-2657771-1,final_runs/test_data_10_22,D,classified against the old explanation
+PMC-LLaMA,zero_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 PMC-LLaMA,zero_shot,501,39,pmc-3716036-1,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,zero_shot,502,39,pmc-2672257-1,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,ABC,classified
@@ -847,7 +847,7 @@ PMC-LLaMA,zero_shot,845,29,17,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,846,29,18,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,847,29,19,final_runs/test_data_10_22,D,classified
 PMC-LLaMA,zero_shot,848,29,20,final_runs/test_data_10_22,ABC,classified
-PMC-LLaMA,zero_shot,849,21,1,final_runs/test_data_10_22,A,classified against the old explanation
+PMC-LLaMA,zero_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 PMC-LLaMA,zero_shot,850,21,2,final_runs/test_data_10_22,A,classified
 PMC-LLaMA,zero_shot,851,21,3,final_runs/test_data_10_22,AC,classified
 PMC-LLaMA,zero_shot,852,21,4,final_runs/test_data_10_22,A,classified
@@ -1264,7 +1264,7 @@ PMC-LLaMA,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,one_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,AB,classified
-PMC-LLaMA,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,ABC,classified against the old explanation
+PMC-LLaMA,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 PMC-LLaMA,one_shot,243,17,4,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,244,17,5,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,245,17,6,final_runs/test_data_10_22,AB,classified
@@ -1329,7 +1329,7 @@ PMC-LLaMA,one_shot,314,20,usmle-9610,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,316,20,usmle-4327,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-PMC-LLaMA,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,ABC,classified against the old explanation
+PMC-LLaMA,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 PMC-LLaMA,one_shot,319,20,usmle-262,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
@@ -1356,7 +1356,7 @@ PMC-LLaMA,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,346,25,2,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,347,25,3,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,349,25,5,final_runs/test_data_10_22,BC,classified
-PMC-LLaMA,one_shot,350,25,6,final_runs/test_data_10_22,ABC,classified against the old explanation
+PMC-LLaMA,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 PMC-LLaMA,one_shot,351,25,7,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,352,25,8,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,353,25,9,final_runs/test_data_10_22,AB,classified
@@ -1365,9 +1365,9 @@ PMC-LLaMA,one_shot,355,25,11,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,357,25,13,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,358,25,14,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,359,25,15,final_runs/test_data_10_22,AB,classified
-PMC-LLaMA,one_shot,360,25,16,final_runs/test_data_10_22,AB,classified against the old explanation
+PMC-LLaMA,one_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 PMC-LLaMA,one_shot,361,25,17,final_runs/test_data_10_22,B,classified
-PMC-LLaMA,one_shot,362,25,18,final_runs/test_data_10_22,ABC,classified against the old explanation
+PMC-LLaMA,one_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 PMC-LLaMA,one_shot,363,25,19,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,one_shot,364,25,20,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,365,25,21,final_runs/test_data_10_22,ABC,classified
@@ -1429,7 +1429,7 @@ PMC-LLaMA,one_shot,443,32,17,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,444,32,18,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,one_shot,445,32,19,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,one_shot,446,32,20,final_runs/test_data_10_22,ABC,classified
-PMC-LLaMA,one_shot,447,32,21,final_runs/test_data_10_22,AB,classified against the old explanation
+PMC-LLaMA,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 PMC-LLaMA,one_shot,448,33,usmle-3456,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,449,33,usmle-6072,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,B,classified
@@ -1440,11 +1440,11 @@ PMC-LLaMA,one_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
-PMC-LLaMA,one_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,B,classified against the old explanation
+PMC-LLaMA,one_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 PMC-LLaMA,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,463,33,usmle-965,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,one_shot,464,33,usmle-6762,final_runs/test_data_10_22,AB,classified
-PMC-LLaMA,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,B,classified against the old explanation
+PMC-LLaMA,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 PMC-LLaMA,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 PMC-LLaMA,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,469,38,pmc-3221905-1,final_runs/test_data_10_22,B,classified
@@ -1476,7 +1476,7 @@ PMC-LLaMA,one_shot,496,39,pmc-4530922-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,497,39,usmle-5230,final_runs/test_data_10_22,C,classified
 PMC-LLaMA,one_shot,498,39,pmc-4528898-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,499,39,pmc-6191008-1,final_runs/test_data_10_22,B,classified
-PMC-LLaMA,one_shot,500,39,pmc-2657771-1,final_runs/test_data_10_22,AC,classified against the old explanation
+PMC-LLaMA,one_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 PMC-LLaMA,one_shot,501,39,pmc-3716036-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,502,39,pmc-2672257-1,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,C,classified
@@ -1790,7 +1790,7 @@ PMC-LLaMA,one_shot,845,29,17,final_runs/test_data_10_22,BC,classified
 PMC-LLaMA,one_shot,846,29,18,final_runs/test_data_10_22,ABC,classified
 PMC-LLaMA,one_shot,847,29,19,final_runs/test_data_10_22,AC,classified
 PMC-LLaMA,one_shot,848,29,20,final_runs/test_data_10_22,ABC,classified
-PMC-LLaMA,one_shot,849,21,1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+PMC-LLaMA,one_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 PMC-LLaMA,one_shot,851,21,3,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,852,21,4,final_runs/test_data_10_22,B,classified
 PMC-LLaMA,one_shot,853,21,5,final_runs/test_data_10_22,B,classified
@@ -1995,26 +1995,26 @@ MediTron,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,D,classified
-MediTron,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-MediTron,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,25,3,pmc-8173432-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,32,3,pmc-7983145-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,37,3,pmc-4448053-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,D,classified against the old explanation
-MediTron,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,D,classified against the old explanation
+MediTron,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,32,3,pmc-7983145-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
+MediTron,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 MediTron,zero_shot,41,4,pmc-7196137-1,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,42,4,pmc-7099753-3,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,43,4,pmc-8136881-1,final_runs/test_data_10_22,ABC,classified
@@ -2214,8 +2214,8 @@ MediTron,zero_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
-MediTron,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-MediTron,zero_shot,241,17,2,final_runs/test_data_10_22,D,classified against the old explanation
+MediTron,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,,unclassified (empty or blocked)
+MediTron,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 MediTron,zero_shot,242,17,3,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,243,17,4,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,244,17,5,final_runs/test_data_10_22,ABC,classified
@@ -2278,7 +2278,7 @@ MediTron,zero_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,301,20,usmle-12605,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,303,20,usmle-414,final_runs/test_data_10_22,BC,classified
-MediTron,zero_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,D,classified against the old explanation
+MediTron,zero_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 MediTron,zero_shot,305,20,usmle-12316,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,306,20,usmle-8066,final_runs/test_data_10_22,BC,classified
 MediTron,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,D,classified
@@ -2291,7 +2291,7 @@ MediTron,zero_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,ABC,classifie
 MediTron,zero_shot,314,20,usmle-9610,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,AC,classified
 MediTron,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 MediTron,zero_shot,319,20,usmle-262,final_runs/test_data_10_22,AC,classified
 MediTron,zero_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
@@ -2323,7 +2323,7 @@ MediTron,zero_shot,346,25,2,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,347,25,3,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,348,25,4,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,349,25,5,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,350,25,6,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,,unclassified (empty or blocked)
 MediTron,zero_shot,351,25,7,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,352,25,8,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,353,25,9,final_runs/test_data_10_22,,unclassified (empty or blocked)
@@ -2333,9 +2333,9 @@ MediTron,zero_shot,356,25,12,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,357,25,13,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,358,25,14,final_runs/test_data_10_22,C,classified
 MediTron,zero_shot,359,25,15,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,360,25,16,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 MediTron,zero_shot,361,25,17,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,362,25,18,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 MediTron,zero_shot,363,25,19,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,364,25,20,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,365,25,21,final_runs/test_data_10_22,ABC,classified
@@ -2420,12 +2420,12 @@ MediTron,zero_shot,443,32,17,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,444,32,18,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,445,32,19,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,446,32,20,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,447,32,21,final_runs/test_data_10_22,D,classified against the old explanation
+MediTron,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 MediTron,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,,unclassified (empty or blocked)
 MediTron,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,ABC,classified
@@ -2434,11 +2434,11 @@ MediTron,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,ABC,classifie
 MediTron,zero_shot,458,33,usmle-7961,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,460,33,usmle-1375,final_runs/test_data_10_22,,unclassified (empty or blocked)
-MediTron,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 MediTron,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,BC,classified
 MediTron,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,464,33,usmle-6762,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
+MediTron,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 MediTron,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,D,classified
@@ -2473,7 +2473,7 @@ MediTron,zero_shot,496,39,pmc-4530922-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,497,39,usmle-5230,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,498,39,pmc-4528898-1,final_runs/test_data_10_22,BC,classified
 MediTron,zero_shot,499,39,pmc-6191008-1,final_runs/test_data_10_22,D,classified
-MediTron,zero_shot,500,39,pmc-2657771-1,final_runs/test_data_10_22,D,classified against the old explanation
+MediTron,zero_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,D,classified
 MediTron,zero_shot,501,39,pmc-3716036-1,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,502,39,pmc-2672257-1,final_runs/test_data_10_22,,unclassified (empty or blocked)
 MediTron,zero_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,D,classified
@@ -2822,7 +2822,7 @@ MediTron,zero_shot,845,29,17,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,846,29,18,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,847,29,19,final_runs/test_data_10_22,ABC,classified
 MediTron,zero_shot,848,29,20,final_runs/test_data_10_22,ABC,classified
-MediTron,zero_shot,849,21,1,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,zero_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,,unclassified (empty or blocked)
 MediTron,zero_shot,850,21,2,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,851,21,3,final_runs/test_data_10_22,D,classified
 MediTron,zero_shot,852,21,4,final_runs/test_data_10_22,,unclassified (empty or blocked)
@@ -3190,8 +3190,8 @@ MediTron,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,C,classified
 MediTron,one_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,BC,classified
 MediTron,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,BC,classified
 MediTron,one_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,BC,classified
-MediTron,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
-MediTron,one_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+MediTron,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
+MediTron,one_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 MediTron,one_shot,242,17,3,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,243,17,4,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,244,17,5,final_runs/test_data_10_22,B,classified
@@ -3245,7 +3245,7 @@ MediTron,one_shot,299,19,pmc-4426646-1,final_runs/test_data_10_22,C,classified
 MediTron,one_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,301,20,usmle-12605,final_runs/test_data_10_22,AC,classified
 MediTron,one_shot,303,20,usmle-414,final_runs/test_data_10_22,AB,classified
-MediTron,one_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+MediTron,one_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 MediTron,one_shot,305,20,usmle-12316,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,306,20,usmle-8066,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classified
@@ -3256,7 +3256,7 @@ MediTron,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,315,20,usmle-4768,final_runs/test_data_10_22,ABC,classified
 MediTron,one_shot,316,20,usmle-4327,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-MediTron,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+MediTron,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 MediTron,one_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
@@ -3274,14 +3274,14 @@ MediTron,one_shot,343,23,pmc-3741440-1,final_runs/test_data_10_22,C,classified
 MediTron,one_shot,344,23,pmc-3701851-1,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,C,classified
 MediTron,one_shot,347,25,3,final_runs/test_data_10_22,B,classified
-MediTron,one_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+MediTron,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 MediTron,one_shot,352,25,8,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,355,25,11,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,356,25,12,final_runs/test_data_10_22,A,classified
 MediTron,one_shot,357,25,13,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,358,25,14,final_runs/test_data_10_22,A,classified
-MediTron,one_shot,360,25,16,final_runs/test_data_10_22,A,classified against the old explanation
-MediTron,one_shot,362,25,18,final_runs/test_data_10_22,A,classified against the old explanation
+MediTron,one_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+MediTron,one_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 MediTron,one_shot,363,25,19,final_runs/test_data_10_22,A,classified
 MediTron,one_shot,365,25,21,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,368,26,usmle-5686,mdrd_sodium_wording_rerun_2026-10-22,C,classified
@@ -3337,7 +3337,7 @@ MediTron,one_shot,443,32,17,final_runs/test_data_10_22,BC,classified
 MediTron,one_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
 MediTron,one_shot,445,32,19,final_runs/test_data_10_22,BC,classified
 MediTron,one_shot,446,32,20,final_runs/test_data_10_22,ABC,classified
-MediTron,one_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+MediTron,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 MediTron,one_shot,448,33,usmle-3456,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,449,33,usmle-6072,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,B,classified
@@ -3347,7 +3347,7 @@ MediTron,one_shot,455,33,usmle-1376,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
-MediTron,one_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,B,classified against the old explanation
+MediTron,one_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 MediTron,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,463,33,usmle-965,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,464,33,usmle-6762,final_runs/test_data_10_22,B,classified
@@ -3374,7 +3374,7 @@ MediTron,one_shot,486,38,pmc-3674643-1,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,487,38,pmc-4531576-1,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,497,39,usmle-5230,final_runs/test_data_10_22,C,classified
 MediTron,one_shot,499,39,pmc-6191008-1,final_runs/test_data_10_22,C,classified
-MediTron,one_shot,500,39,pmc-2657771-1,final_runs/test_data_10_22,B,classified against the old explanation
+MediTron,one_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 MediTron,one_shot,501,39,pmc-3716036-1,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,C,classified
 MediTron,one_shot,505,39,pmc-3870642-1,final_runs/test_data_10_22,B,classified
@@ -3629,7 +3629,7 @@ MediTron,one_shot,845,29,17,final_runs/test_data_10_22,AB,classified
 MediTron,one_shot,846,29,18,final_runs/test_data_10_22,BC,classified
 MediTron,one_shot,847,29,19,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,848,29,20,final_runs/test_data_10_22,BC,classified
-MediTron,one_shot,849,21,1,final_runs/test_data_10_22,B,classified against the old explanation
+MediTron,one_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 MediTron,one_shot,850,21,2,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,851,21,3,final_runs/test_data_10_22,B,classified
 MediTron,one_shot,853,21,5,final_runs/test_data_10_22,AC,classified
@@ -3811,22 +3811,24 @@ Mistral,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,ABC,classified
 Mistral,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,AB,classified
-Mistral,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,25,3,pmc-8173432-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-Mistral,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,A,classified against the old explanation
-Mistral,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,A,classified against the old explanation
-Mistral,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-Mistral,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,A,classified against the old explanation
-Mistral,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mistral,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
+Mistral,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
+Mistral,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mistral,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mistral,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mistral,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mistral,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,41,4,pmc-7196137-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,43,4,pmc-8136881-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,44,4,pmc-7294161-1,final_runs/test_data_10_22,ABC,classified
@@ -3992,8 +3994,8 @@ Mistral,zero_shot,235,16,pmc-6940349-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,AB,classified
-Mistral,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mistral,zero_shot,241,17,2,final_runs/test_data_10_22,AB,classified against the old explanation
+Mistral,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,242,17,3,final_runs/test_data_10_22,ABC,classified
 Mistral,zero_shot,243,17,4,final_runs/test_data_10_22,ABC,classified
 Mistral,zero_shot,245,17,6,final_runs/test_data_10_22,AB,classified
@@ -4050,7 +4052,7 @@ Mistral,zero_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,B,classified
 Mistral,zero_shot,301,20,usmle-12605,final_runs/test_data_10_22,BC,classified
 Mistral,zero_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,A,classified
 Mistral,zero_shot,303,20,usmle-414,final_runs/test_data_10_22,BC,classified
-Mistral,zero_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,zero_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mistral,zero_shot,306,20,usmle-8066,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,308,20,usmle-6356,final_runs/test_data_10_22,B,classified
@@ -4060,7 +4062,7 @@ Mistral,zero_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,314,20,usmle-9610,final_runs/test_data_10_22,B,classified
 Mistral,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-Mistral,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mistral,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Mistral,zero_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,AB,classified
@@ -4096,8 +4098,9 @@ Mistral,zero_shot,356,25,12,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,357,25,13,final_runs/test_data_10_22,BC,classified
 Mistral,zero_shot,358,25,14,final_runs/test_data_10_22,BC,classified
 Mistral,zero_shot,359,25,15,final_runs/test_data_10_22,ABC,classified
-Mistral,zero_shot,360,25,16,final_runs/test_data_10_22,A,classified against the old explanation
+Mistral,zero_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Mistral,zero_shot,361,25,17,final_runs/test_data_10_22,B,classified
+Mistral,zero_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,363,25,19,final_runs/test_data_10_22,BC,classified
 Mistral,zero_shot,364,25,20,final_runs/test_data_10_22,B,classified
 Mistral,zero_shot,365,25,21,final_runs/test_data_10_22,AB,classified
@@ -4162,11 +4165,11 @@ Mistral,zero_shot,443,32,17,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
 Mistral,zero_shot,445,32,19,final_runs/test_data_10_22,AC,classified
 Mistral,zero_shot,446,32,20,final_runs/test_data_10_22,ABC,classified
-Mistral,zero_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+Mistral,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,AB,classified
-Mistral,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,A,classified against the old explanation
+Mistral,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Mistral,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,AB,classified
@@ -4175,10 +4178,10 @@ Mistral,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,458,33,usmle-7961,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,460,33,usmle-1375,final_runs/test_data_10_22,A,classified
-Mistral,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mistral,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,B,classified
 Mistral,zero_shot,464,33,usmle-6762,final_runs/test_data_10_22,AB,classified
-Mistral,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,A,classified
@@ -4213,7 +4216,7 @@ Mistral,zero_shot,496,39,pmc-4530922-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,497,39,usmle-5230,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,498,39,pmc-4528898-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,499,39,pmc-6191008-1,final_runs/test_data_10_22,AB,classified
-Mistral,zero_shot,500,39,pmc-2657771-1,final_runs/test_data_10_22,BC,classified against the old explanation
+Mistral,zero_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 Mistral,zero_shot,501,39,pmc-3716036-1,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,502,39,pmc-2672257-1,final_runs/test_data_10_22,A,classified
 Mistral,zero_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,AB,classified
@@ -4525,7 +4528,7 @@ Mistral,zero_shot,845,29,17,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,846,29,18,final_runs/test_data_10_22,A,classified
 Mistral,zero_shot,847,29,19,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,848,29,20,final_runs/test_data_10_22,A,classified
-Mistral,zero_shot,849,21,1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,zero_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,zero_shot,850,21,2,final_runs/test_data_10_22,AB,classified
 Mistral,zero_shot,851,21,3,final_runs/test_data_10_22,BC,classified
 Mistral,zero_shot,852,21,4,final_runs/test_data_10_22,BC,classified
@@ -4891,8 +4894,8 @@ Mistral,one_shot,235,16,pmc-6940349-1,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,B,classified
-Mistral,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,A,classified against the old explanation
-Mistral,one_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+Mistral,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mistral,one_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mistral,one_shot,242,17,3,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,243,17,4,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,244,17,5,final_runs/test_data_10_22,AB,classified
@@ -4939,7 +4942,7 @@ Mistral,one_shot,299,19,pmc-4426646-1,final_runs/test_data_10_22,AC,classified
 Mistral,one_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,C,classified
 Mistral,one_shot,301,20,usmle-12605,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,303,20,usmle-414,final_runs/test_data_10_22,AB,classified
-Mistral,one_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mistral,one_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,one_shot,305,20,usmle-12316,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,306,20,usmle-8066,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,A,classified
@@ -4947,7 +4950,7 @@ Mistral,one_shot,309,20,usmle-4026,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,311,20,pmc-5931247-2,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-Mistral,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,one_shot,319,20,usmle-262,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
 Mistral,one_shot,325,22,pmc-3713679-1,final_runs/test_data_10_22,AB,classified
@@ -4967,14 +4970,14 @@ Mistral,one_shot,344,23,pmc-3701851-1,final_runs/test_data_10_22,AC,classified
 Mistral,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,346,25,2,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,348,25,4,final_runs/test_data_10_22,AB,classified
-Mistral,one_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,one_shot,351,25,7,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,352,25,8,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,354,25,10,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,355,25,11,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,357,25,13,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,358,25,14,final_runs/test_data_10_22,AB,classified
-Mistral,one_shot,360,25,16,final_runs/test_data_10_22,AB,classified against the old explanation
+Mistral,one_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mistral,one_shot,361,25,17,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,363,25,19,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,364,25,20,final_runs/test_data_10_22,AB,classified
@@ -5035,12 +5038,12 @@ Mistral,one_shot,443,32,17,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,445,32,19,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,446,32,20,final_runs/test_data_10_22,AC,classified
-Mistral,one_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+Mistral,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 Mistral,one_shot,448,33,usmle-3456,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,449,33,usmle-6072,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,B,classified
-Mistral,one_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,BC,classified against the old explanation
+Mistral,one_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mistral,one_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,455,33,usmle-1376,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,456,33,pmc-5219707-1,final_runs/test_data_10_22,AB,classified
@@ -5048,9 +5051,9 @@ Mistral,one_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
-Mistral,one_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,one_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mistral,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
-Mistral,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,B,classified against the old explanation
+Mistral,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mistral,one_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 Mistral,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,AB,classified
@@ -5348,7 +5351,7 @@ Mistral,one_shot,845,29,17,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,846,29,18,final_runs/test_data_10_22,AC,classified
 Mistral,one_shot,847,29,19,final_runs/test_data_10_22,A,classified
 Mistral,one_shot,848,29,20,final_runs/test_data_10_22,AB,classified
-Mistral,one_shot,849,21,1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mistral,one_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mistral,one_shot,850,21,2,final_runs/test_data_10_22,ABC,classified
 Mistral,one_shot,851,21,3,final_runs/test_data_10_22,B,classified
 Mistral,one_shot,852,21,4,final_runs/test_data_10_22,AB,classified
@@ -5549,24 +5552,24 @@ Mixtral,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,BC,classified
 Mixtral,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,ABC,classified
 Mixtral,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,ABC,classified
-Mixtral,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-Mixtral,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,25,3,pmc-8173432-1,final_runs/test_data_10_22,ABC,classified against the old explanation
-Mixtral,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,32,3,pmc-7983145-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,A,classified against the old explanation
-Mixtral,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Mixtral,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mixtral,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
+Mixtral,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
+Mixtral,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,32,3,pmc-7983145-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Mixtral,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Mixtral,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,zero_shot,41,4,pmc-7196137-1,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,42,4,pmc-7099753-3,final_runs/test_data_10_22,ABC,classified
 Mixtral,zero_shot,43,4,pmc-8136881-1,final_runs/test_data_10_22,AB,classified
@@ -5691,8 +5694,8 @@ Mixtral,zero_shot,235,16,pmc-6940349-1,final_runs/test_data_10_22,C,classified
 Mixtral,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,D,classified
 Mixtral,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,AB,classified
-Mixtral,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
-Mixtral,zero_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+Mixtral,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
+Mixtral,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 Mixtral,zero_shot,243,17,4,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,244,17,5,final_runs/test_data_10_22,BC,classified
 Mixtral,zero_shot,245,17,6,final_runs/test_data_10_22,ABC,classified
@@ -5741,7 +5744,7 @@ Mixtral,zero_shot,298,19,pmc-8309678-1,final_runs/test_data_10_22,ABC,classified
 Mixtral,zero_shot,299,19,pmc-4426646-1,final_runs/test_data_10_22,C,classified
 Mixtral,zero_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,303,20,usmle-414,final_runs/test_data_10_22,AB,classified
-Mixtral,zero_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mixtral,zero_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 Mixtral,zero_shot,305,20,usmle-12316,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,306,20,usmle-8066,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,B,classified
@@ -5753,7 +5756,7 @@ Mixtral,zero_shot,314,20,usmle-9610,final_runs/test_data_10_22,ABC,classified
 Mixtral,zero_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,A,classified
 Mixtral,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,A,classified
-Mixtral,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,B,classified against the old explanation
+Mixtral,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mixtral,zero_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,323,22,pmc-6176125-1,final_runs/test_data_10_22,AB,classified
@@ -5785,7 +5788,7 @@ Mixtral,zero_shot,353,25,9,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,354,25,10,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,357,25,13,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,359,25,15,final_runs/test_data_10_22,AB,classified
-Mixtral,zero_shot,360,25,16,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mixtral,zero_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 Mixtral,zero_shot,361,25,17,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,363,25,19,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,368,26,usmle-5686,mdrd_sodium_wording_rerun_2026-10-22,AB,classified
@@ -5840,9 +5843,10 @@ Mixtral,zero_shot,443,32,17,final_runs/test_data_10_22,BC,classified
 Mixtral,zero_shot,444,32,18,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,445,32,19,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,446,32,20,final_runs/test_data_10_22,BC,classified
-Mixtral,zero_shot,447,32,21,final_runs/test_data_10_22,BC,classified against the old explanation
+Mixtral,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 Mixtral,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,B,classified
+Mixtral,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,AB,classified
@@ -5851,10 +5855,11 @@ Mixtral,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,458,33,usmle-7961,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,460,33,usmle-1375,final_runs/test_data_10_22,AB,classified
-Mixtral,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,A,classified against the old explanation
+Mixtral,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,BC,classified
 Mixtral,zero_shot,464,33,usmle-6762,final_runs/test_data_10_22,B,classified
+Mixtral,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mixtral,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,AC,classified
@@ -5884,6 +5889,7 @@ Mixtral,zero_shot,492,39,pmc-7544303-1,final_runs/test_data_10_22,C,classified
 Mixtral,zero_shot,493,39,pmc-2875708-1,final_runs/test_data_10_22,A,classified
 Mixtral,zero_shot,495,39,pmc-2733967-2,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,497,39,usmle-5230,final_runs/test_data_10_22,AB,classified
+Mixtral,zero_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 Mixtral,zero_shot,502,39,pmc-2672257-1,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,D,classified
 Mixtral,zero_shot,506,39,usmle-5709,final_runs/test_data_10_22,AB,classified
@@ -6156,6 +6162,7 @@ Mixtral,zero_shot,845,29,17,final_runs/test_data_10_22,AB,classified
 Mixtral,zero_shot,846,29,18,final_runs/test_data_10_22,AC,classified
 Mixtral,zero_shot,847,29,19,final_runs/test_data_10_22,A,classified
 Mixtral,zero_shot,848,29,20,final_runs/test_data_10_22,C,classified
+Mixtral,zero_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mixtral,zero_shot,851,21,3,final_runs/test_data_10_22,B,classified
 Mixtral,zero_shot,852,21,4,final_runs/test_data_10_22,BC,classified
 Mixtral,zero_shot,853,21,5,final_runs/test_data_10_22,C,classified
@@ -6472,7 +6479,7 @@ Mixtral,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,A,classified
-Mixtral,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
+Mixtral,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Mixtral,one_shot,246,17,7,final_runs/test_data_10_22,D,classified
 Mixtral,one_shot,248,17,9,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,249,17,10,final_runs/test_data_10_22,C,classified
@@ -6527,7 +6534,7 @@ Mixtral,one_shot,312,20,usmle-6179,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,314,20,usmle-9610,final_runs/test_data_10_22,A,classified
 Mixtral,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-Mixtral,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mixtral,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,one_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
@@ -6541,7 +6548,7 @@ Mixtral,one_shot,343,23,pmc-3741440-1,final_runs/test_data_10_22,ABC,classified
 Mixtral,one_shot,344,23,pmc-3701851-1,final_runs/test_data_10_22,C,classified
 Mixtral,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,D,classified
 Mixtral,one_shot,349,25,5,final_runs/test_data_10_22,AB,classified
-Mixtral,one_shot,350,25,6,final_runs/test_data_10_22,AB,classified against the old explanation
+Mixtral,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,one_shot,351,25,7,final_runs/test_data_10_22,AC,classified
 Mixtral,one_shot,352,25,8,final_runs/test_data_10_22,ABC,classified
 Mixtral,one_shot,353,25,9,final_runs/test_data_10_22,A,classified
@@ -6549,8 +6556,9 @@ Mixtral,one_shot,354,25,10,final_runs/test_data_10_22,AC,classified
 Mixtral,one_shot,356,25,12,final_runs/test_data_10_22,ABC,classified
 Mixtral,one_shot,357,25,13,final_runs/test_data_10_22,ABC,classified
 Mixtral,one_shot,359,25,15,final_runs/test_data_10_22,AB,classified
+Mixtral,one_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,one_shot,361,25,17,final_runs/test_data_10_22,ABC,classified
-Mixtral,one_shot,362,25,18,final_runs/test_data_10_22,AB,classified against the old explanation
+Mixtral,one_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Mixtral,one_shot,363,25,19,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,364,25,20,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,365,25,21,final_runs/test_data_10_22,ABC,classified
@@ -6603,11 +6611,10 @@ Mixtral,one_shot,443,32,17,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,444,32,18,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,445,32,19,final_runs/test_data_10_22,ABC,classified
 Mixtral,one_shot,446,32,20,final_runs/test_data_10_22,AC,classified
-Mixtral,one_shot,447,32,21,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Mixtral,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 Mixtral,one_shot,448,33,usmle-3456,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,A,classified
 Mixtral,one_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,B,classified
-Mixtral,one_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
 Mixtral,one_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,BC,classified
 Mixtral,one_shot,455,33,usmle-1376,final_runs/test_data_10_22,B,classified
@@ -6615,10 +6622,10 @@ Mixtral,one_shot,456,33,pmc-5219707-1,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,AB,classified
 Mixtral,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
-Mixtral,one_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,B,classified against the old explanation
+Mixtral,one_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Mixtral,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,464,33,usmle-6762,final_runs/test_data_10_22,B,classified
-Mixtral,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Mixtral,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Mixtral,one_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,B,classified
 Mixtral,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,C,classified
@@ -7007,26 +7014,24 @@ Llama 3 8B,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,ABC,classified
-Llama 3 8B,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,25,3,pmc-8173432-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,32,3,pmc-7983145-1,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,37,3,pmc-4448053-1,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,A,classified against the old explanation
-Llama 3 8B,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,AC,classified against the old explanation
+Llama 3 8B,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 8B,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,AC,classified
+Llama 3 8B,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 8B,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 8B,zero_shot,32,3,pmc-7983145-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 8B,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 8B,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 8B,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 8B,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Llama 3 8B,zero_shot,46,4,pmc-3317869-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,47,4,pmc-3888688-1,final_runs/test_data_10_22,C,classified
 Llama 3 8B,zero_shot,48,4,pmc-6939804-1,final_runs/test_data_10_22,AB,classified
@@ -7169,8 +7174,8 @@ Llama 3 8B,zero_shot,235,16,pmc-6940349-1,final_runs/test_data_10_22,B,classifie
 Llama 3 8B,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 8B,zero_shot,241,17,2,final_runs/test_data_10_22,BC,classified against the old explanation
+Llama 3 8B,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+Llama 3 8B,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Llama 3 8B,zero_shot,242,17,3,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,243,17,4,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,245,17,6,final_runs/test_data_10_22,AB,classified
@@ -7222,7 +7227,7 @@ Llama 3 8B,zero_shot,298,19,pmc-8309678-1,final_runs/test_data_10_22,AB,classifi
 Llama 3 8B,zero_shot,299,19,pmc-4426646-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,301,20,usmle-12605,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,B,classified
-Llama 3 8B,zero_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 8B,zero_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 8B,zero_shot,305,20,usmle-12316,final_runs/test_data_10_22,B,classified
 Llama 3 8B,zero_shot,306,20,usmle-8066,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classified
@@ -7235,7 +7240,7 @@ Llama 3 8B,zero_shot,314,20,usmle-9610,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,315,20,usmle-4768,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 8B,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 8B,zero_shot,319,20,usmle-262,final_runs/test_data_10_22,B,classified
 Llama 3 8B,zero_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
 Llama 3 8B,zero_shot,323,22,pmc-6176125-1,final_runs/test_data_10_22,A,classified
@@ -7263,7 +7268,7 @@ Llama 3 8B,zero_shot,354,25,10,final_runs/test_data_10_22,C,classified
 Llama 3 8B,zero_shot,355,25,11,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,357,25,13,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,359,25,15,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,360,25,16,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 8B,zero_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 Llama 3 8B,zero_shot,361,25,17,final_runs/test_data_10_22,B,classified
 Llama 3 8B,zero_shot,363,25,19,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,364,25,20,final_runs/test_data_10_22,AC,classified
@@ -7323,12 +7328,12 @@ Llama 3 8B,zero_shot,443,32,17,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,444,32,18,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,445,32,19,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,446,32,20,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+Llama 3 8B,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 Llama 3 8B,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,A,classified
 Llama 3 8B,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 8B,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 8B,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,A,classified
 Llama 3 8B,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,AB,classified
@@ -7336,11 +7341,11 @@ Llama 3 8B,zero_shot,456,33,pmc-5219707-1,final_runs/test_data_10_22,AB,classifi
 Llama 3 8B,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,460,33,usmle-1375,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 8B,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 8B,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,464,33,usmle-6762,final_runs/test_data_10_22,B,classified
-Llama 3 8B,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 8B,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,AC,classified
@@ -7373,7 +7378,7 @@ Llama 3 8B,zero_shot,496,39,pmc-4530922-1,final_runs/test_data_10_22,A,classifie
 Llama 3 8B,zero_shot,497,39,usmle-5230,final_runs/test_data_10_22,AC,classified
 Llama 3 8B,zero_shot,498,39,pmc-4528898-1,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,499,39,pmc-6191008-1,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,zero_shot,500,39,pmc-2657771-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 8B,zero_shot,500,39,pmc-2657771-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Llama 3 8B,zero_shot,501,39,pmc-3716036-1,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,502,39,pmc-2672257-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,503,39,pmc-8597788-1,final_runs/test_data_10_22,AB,classified
@@ -7677,7 +7682,7 @@ Llama 3 8B,zero_shot,845,29,17,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,zero_shot,846,29,18,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,847,29,19,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,zero_shot,848,29,20,final_runs/test_data_10_22,ABC,classified
-Llama 3 8B,zero_shot,849,21,1,final_runs/test_data_10_22,BC,classified against the old explanation
+Llama 3 8B,zero_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,zero_shot,851,21,3,final_runs/test_data_10_22,B,classified
 Llama 3 8B,zero_shot,852,21,4,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,zero_shot,853,21,5,final_runs/test_data_10_22,C,classified
@@ -8031,8 +8036,8 @@ Llama 3 8B,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,B,classified
-Llama 3 8B,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
-Llama 3 8B,one_shot,241,17,2,final_runs/test_data_10_22,BC,classified against the old explanation
+Llama 3 8B,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+Llama 3 8B,one_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,242,17,3,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,243,17,4,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,245,17,6,final_runs/test_data_10_22,A,classified
@@ -8079,7 +8084,7 @@ Llama 3 8B,one_shot,299,19,pmc-4426646-1,final_runs/test_data_10_22,C,classified
 Llama 3 8B,one_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,C,classified
 Llama 3 8B,one_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,C,classified
 Llama 3 8B,one_shot,303,20,usmle-414,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,one_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,B,classified against the old explanation
+Llama 3 8B,one_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,305,20,usmle-12316,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,306,20,usmle-8066,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classified
@@ -8090,7 +8095,6 @@ Llama 3 8B,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,ABC,classifi
 Llama 3 8B,one_shot,315,20,usmle-4768,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,one_shot,316,20,usmle-4327,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
 Llama 3 8B,one_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,322,22,pmc-7661936-1,final_runs/test_data_10_22,A,classified
@@ -8107,7 +8111,7 @@ Llama 3 8B,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,C,classified
 Llama 3 8B,one_shot,347,25,3,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,348,25,4,final_runs/test_data_10_22,AC,classified
 Llama 3 8B,one_shot,349,25,5,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,one_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 8B,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,351,25,7,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,352,25,8,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,355,25,11,final_runs/test_data_10_22,A,classified
@@ -8115,9 +8119,9 @@ Llama 3 8B,one_shot,356,25,12,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,357,25,13,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,one_shot,358,25,14,final_runs/test_data_10_22,AC,classified
 Llama 3 8B,one_shot,359,25,15,final_runs/test_data_10_22,C,classified
-Llama 3 8B,one_shot,360,25,16,final_runs/test_data_10_22,ABC,classified against the old explanation
+Llama 3 8B,one_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,AC,classified
 Llama 3 8B,one_shot,361,25,17,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,one_shot,362,25,18,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 8B,one_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 8B,one_shot,363,25,19,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,364,25,20,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,365,25,21,final_runs/test_data_10_22,ABC,classified
@@ -8171,19 +8175,19 @@ Llama 3 8B,one_shot,443,32,17,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,one_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,one_shot,445,32,19,final_runs/test_data_10_22,BC,classified
 Llama 3 8B,one_shot,446,32,20,final_runs/test_data_10_22,ABC,classified
-Llama 3 8B,one_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+Llama 3 8B,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 Llama 3 8B,one_shot,448,33,usmle-3456,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,449,33,usmle-6072,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,one_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,B,classified against the old explanation
+Llama 3 8B,one_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
-Llama 3 8B,one_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 8B,one_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,463,33,usmle-965,final_runs/test_data_10_22,B,classified
-Llama 3 8B,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,B,classified against the old explanation
+Llama 3 8B,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,BC,classified
@@ -8415,7 +8419,7 @@ Llama 3 8B,one_shot,844,29,16,final_runs/test_data_10_22,AC,classified
 Llama 3 8B,one_shot,845,29,17,final_runs/test_data_10_22,ABC,classified
 Llama 3 8B,one_shot,847,29,19,final_runs/test_data_10_22,A,classified
 Llama 3 8B,one_shot,848,29,20,final_runs/test_data_10_22,AB,classified
-Llama 3 8B,one_shot,849,21,1,final_runs/test_data_10_22,B,classified against the old explanation
+Llama 3 8B,one_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 8B,one_shot,851,21,3,final_runs/test_data_10_22,AB,classified
 Llama 3 8B,one_shot,852,21,4,final_runs/test_data_10_22,B,classified
 Llama 3 8B,one_shot,856,21,8,final_runs/test_data_10_22,B,classified
@@ -8589,23 +8593,22 @@ Llama 3 70B,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,AC,classified
 Llama 3 70B,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,AB,classified
-Llama 3 70B,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,25,3,pmc-8173432-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,B,classified against the old explanation
-Llama 3 70B,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,AB,classified against the old explanation
-Llama 3 70B,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 70B,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 70B,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 70B,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 70B,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+Llama 3 70B,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+Llama 3 70B,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Llama 3 70B,zero_shot,41,4,pmc-7196137-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,42,4,pmc-7099753-3,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,43,4,pmc-8136881-1,final_runs/test_data_10_22,ABC,classified
@@ -8700,8 +8703,8 @@ Llama 3 70B,zero_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,AB,classif
 Llama 3 70B,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,AC,classified
 Llama 3 70B,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,C,classified
-Llama 3 70B,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
-Llama 3 70B,zero_shot,241,17,2,final_runs/test_data_10_22,BC,classified against the old explanation
+Llama 3 70B,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+Llama 3 70B,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 70B,zero_shot,242,17,3,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,243,17,4,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,244,17,5,final_runs/test_data_10_22,B,classified
@@ -8764,7 +8767,7 @@ Llama 3 70B,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classif
 Llama 3 70B,zero_shot,310,20,pmc-4327960-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,B,classified
-Llama 3 70B,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 70B,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 70B,zero_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,323,22,pmc-6176125-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,324,22,pmc-3237159-1,final_runs/test_data_10_22,A,classified
@@ -8787,13 +8790,13 @@ Llama 3 70B,zero_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,A,classifi
 Llama 3 70B,zero_shot,346,25,2,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,347,25,3,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,349,25,5,final_runs/test_data_10_22,B,classified
-Llama 3 70B,zero_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 70B,zero_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 70B,zero_shot,351,25,7,final_runs/test_data_10_22,C,classified
 Llama 3 70B,zero_shot,354,25,10,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,355,25,11,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,356,25,12,final_runs/test_data_10_22,BC,classified
 Llama 3 70B,zero_shot,361,25,17,final_runs/test_data_10_22,AB,classified
-Llama 3 70B,zero_shot,362,25,18,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 70B,zero_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 70B,zero_shot,365,25,21,final_runs/test_data_10_22,B,classified
 Llama 3 70B,zero_shot,386,27,2,final_runs/test_data_10_22,A,classified
 Llama 3 70B,zero_shot,387,27,3,final_runs/test_data_10_22,C,classified
@@ -8830,12 +8833,12 @@ Llama 3 70B,zero_shot,443,32,17,final_runs/test_data_10_22,BC,classified
 Llama 3 70B,zero_shot,444,32,18,final_runs/test_data_10_22,BC,classified
 Llama 3 70B,zero_shot,445,32,19,final_runs/test_data_10_22,BC,classified
 Llama 3 70B,zero_shot,446,32,20,final_runs/test_data_10_22,BC,classified
-Llama 3 70B,zero_shot,447,32,21,final_runs/test_data_10_22,C,classified against the old explanation
+Llama 3 70B,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 Llama 3 70B,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,AB,classified
-Llama 3 70B,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 70B,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 70B,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,AB,classified
@@ -8845,7 +8848,6 @@ Llama 3 70B,zero_shot,458,33,usmle-7961,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,ABC,classified
 Llama 3 70B,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,A,classified
-Llama 3 70B,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,AB,classified against the old explanation
 Llama 3 70B,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,ABC,classified
 Llama 3 70B,zero_shot,469,38,pmc-3221905-1,final_runs/test_data_10_22,AB,classified
@@ -9302,8 +9304,8 @@ Llama 3 70B,one_shot,232,16,pmc-8168998-1,final_runs/test_data_10_22,B,classifie
 Llama 3 70B,one_shot,234,16,pmc-4918891-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,ABC,classified
 Llama 3 70B,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,B,classified
-Llama 3 70B,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
-Llama 3 70B,one_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+Llama 3 70B,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+Llama 3 70B,one_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 70B,one_shot,243,17,4,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,244,17,5,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,245,17,6,final_runs/test_data_10_22,B,classified
@@ -9360,7 +9362,7 @@ Llama 3 70B,one_shot,312,20,usmle-6179,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,one_shot,314,20,usmle-9610,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,one_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
-Llama 3 70B,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 70B,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 Llama 3 70B,one_shot,319,20,usmle-262,final_runs/test_data_10_22,A,classified
 Llama 3 70B,one_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
@@ -9373,15 +9375,15 @@ Llama 3 70B,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,C,classifie
 Llama 3 70B,one_shot,347,25,3,final_runs/test_data_10_22,A,classified
 Llama 3 70B,one_shot,348,25,4,final_runs/test_data_10_22,A,classified
 Llama 3 70B,one_shot,349,25,5,final_runs/test_data_10_22,AC,classified
-Llama 3 70B,one_shot,350,25,6,final_runs/test_data_10_22,B,classified against the old explanation
+Llama 3 70B,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 70B,one_shot,352,25,8,final_runs/test_data_10_22,A,classified
 Llama 3 70B,one_shot,355,25,11,final_runs/test_data_10_22,A,classified
 Llama 3 70B,one_shot,356,25,12,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,357,25,13,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,358,25,14,final_runs/test_data_10_22,AB,classified
-Llama 3 70B,one_shot,360,25,16,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 70B,one_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 Llama 3 70B,one_shot,361,25,17,final_runs/test_data_10_22,A,classified
-Llama 3 70B,one_shot,362,25,18,final_runs/test_data_10_22,A,classified against the old explanation
+Llama 3 70B,one_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 70B,one_shot,363,25,19,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,one_shot,365,25,21,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,386,27,2,final_runs/test_data_10_22,AB,classified
@@ -9421,17 +9423,17 @@ Llama 3 70B,one_shot,440,32,14,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,441,32,15,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,443,32,17,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
-Llama 3 70B,one_shot,447,32,21,final_runs/test_data_10_22,,not classified (was correct under the old label)
+Llama 3 70B,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 Llama 3 70B,one_shot,448,33,usmle-3456,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,B,classified
-Llama 3 70B,one_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 70B,one_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 Llama 3 70B,one_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,456,33,pmc-5219707-1,final_runs/test_data_10_22,BC,classified
 Llama 3 70B,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,AB,classified
 Llama 3 70B,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,464,33,usmle-6762,final_runs/test_data_10_22,B,classified
-Llama 3 70B,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,AB,classified against the old explanation
+Llama 3 70B,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 Llama 3 70B,one_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,B,classified
 Llama 3 70B,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,BC,classified
@@ -9770,23 +9772,23 @@ GPT-3.5,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,BC,classified
-GPT-3.5,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-3.5,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,C,classified against the old explanation
-GPT-3.5,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-3.5,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-3.5,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,31,3,pmc-8521725-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-3.5,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-3.5,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,37,3,pmc-4448053-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-3.5,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,A,classified against the old explanation
+GPT-3.5,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-3.5,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-3.5,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-3.5,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-3.5,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-3.5,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-3.5,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,zero_shot,42,4,pmc-7099753-3,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,44,4,pmc-7294161-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,46,4,pmc-3317869-1,final_runs/test_data_10_22,AB,classified
@@ -9899,8 +9901,8 @@ GPT-3.5,zero_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,B,classified
-GPT-3.5,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
-GPT-3.5,zero_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-3.5,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+GPT-3.5,zero_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-3.5,zero_shot,243,17,4,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,246,17,7,final_runs/test_data_10_22,C,classified
 GPT-3.5,zero_shot,248,17,9,final_runs/test_data_10_22,B,classified
@@ -9960,7 +9962,7 @@ GPT-3.5,zero_shot,311,20,pmc-5931247-2,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,312,20,usmle-6179,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-GPT-3.5,zero_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+GPT-3.5,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,zero_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,322,22,pmc-7661936-1,final_runs/test_data_10_22,A,classified
 GPT-3.5,zero_shot,323,22,pmc-6176125-1,final_runs/test_data_10_22,A,classified
@@ -9980,13 +9982,14 @@ GPT-3.5,zero_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,A,classified
 GPT-3.5,zero_shot,346,25,2,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,348,25,4,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,349,25,5,final_runs/test_data_10_22,B,classified
-GPT-3.5,zero_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+GPT-3.5,zero_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-3.5,zero_shot,352,25,8,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,354,25,10,final_runs/test_data_10_22,C,classified
 GPT-3.5,zero_shot,357,25,13,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,359,25,15,final_runs/test_data_10_22,AB,classified
-GPT-3.5,zero_shot,360,25,16,final_runs/test_data_10_22,C,classified against the old explanation
+GPT-3.5,zero_shot,360,25,16,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-3.5,zero_shot,361,25,17,final_runs/test_data_10_22,AB,classified
+GPT-3.5,zero_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,zero_shot,363,25,19,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,364,25,20,final_runs/test_data_10_22,C,classified
 GPT-3.5,zero_shot,368,26,usmle-5686,mdrd_sodium_wording_rerun_2026-10-22,AB,classified
@@ -10041,21 +10044,21 @@ GPT-3.5,zero_shot,443,32,17,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,444,32,18,final_runs/test_data_10_22,ABC,classified
 GPT-3.5,zero_shot,445,32,19,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,446,32,20,final_runs/test_data_10_22,BC,classified
-GPT-3.5,zero_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+GPT-3.5,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-3.5,zero_shot,448,33,usmle-3456,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,B,classified
-GPT-3.5,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-3.5,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,458,33,usmle-7961,final_runs/test_data_10_22,B,classified
-GPT-3.5,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+GPT-3.5,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,464,33,usmle-6762,final_runs/test_data_10_22,BC,classified
-GPT-3.5,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,AB,classified against the old explanation
+GPT-3.5,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,BC,classified
 GPT-3.5,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,AB,classified
@@ -10630,8 +10633,8 @@ GPT-3.5,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,B,classified
-GPT-3.5,one_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
-GPT-3.5,one_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-3.5,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+GPT-3.5,one_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-3.5,one_shot,242,17,3,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,247,17,8,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,248,17,9,final_runs/test_data_10_22,AB,classified
@@ -10676,6 +10679,7 @@ GPT-3.5,one_shot,298,19,pmc-8309678-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,one_shot,299,19,pmc-4426646-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,one_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,one_shot,303,20,usmle-414,final_runs/test_data_10_22,AB,classified
+GPT-3.5,one_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-3.5,one_shot,305,20,usmle-12316,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,308,20,usmle-6356,final_runs/test_data_10_22,B,classified
@@ -10687,7 +10691,7 @@ GPT-3.5,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,314,20,usmle-9610,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
-GPT-3.5,one_shot,318,20,pmc-5745701-1,final_runs/test_data_10_22,AB,classified against the old explanation
+GPT-3.5,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-3.5,one_shot,319,20,usmle-262,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
@@ -10700,16 +10704,15 @@ GPT-3.5,one_shot,343,23,pmc-3741440-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,one_shot,344,23,pmc-3701851-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,AC,classified
 GPT-3.5,one_shot,349,25,5,final_runs/test_data_10_22,AB,classified
-GPT-3.5,one_shot,350,25,6,final_runs/test_data_10_22,AB,classified against the old explanation
+GPT-3.5,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,ABC,classified
 GPT-3.5,one_shot,351,25,7,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,352,25,8,final_runs/test_data_10_22,AC,classified
 GPT-3.5,one_shot,354,25,10,final_runs/test_data_10_22,AC,classified
 GPT-3.5,one_shot,355,25,11,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,356,25,12,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,358,25,14,final_runs/test_data_10_22,AB,classified
-GPT-3.5,one_shot,360,25,16,final_runs/test_data_10_22,ABC,classified against the old explanation
 GPT-3.5,one_shot,361,25,17,final_runs/test_data_10_22,ABC,classified
-GPT-3.5,one_shot,362,25,18,final_runs/test_data_10_22,ABC,classified against the old explanation
+GPT-3.5,one_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-3.5,one_shot,363,25,19,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,364,25,20,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,365,25,21,final_runs/test_data_10_22,AB,classified
@@ -10760,7 +10763,7 @@ GPT-3.5,one_shot,458,33,usmle-7961,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
-GPT-3.5,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,AB,classified against the old explanation
+GPT-3.5,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-3.5,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,C,classified
 GPT-3.5,one_shot,469,38,pmc-3221905-1,final_runs/test_data_10_22,C,classified
@@ -10964,7 +10967,7 @@ GPT-3.5,one_shot,844,29,16,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,845,29,17,final_runs/test_data_10_22,AB,classified
 GPT-3.5,one_shot,846,29,18,final_runs/test_data_10_22,A,classified
 GPT-3.5,one_shot,848,29,20,final_runs/test_data_10_22,AB,classified
-GPT-3.5,one_shot,849,21,1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+GPT-3.5,one_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,C,classified
 GPT-3.5,one_shot,852,21,4,final_runs/test_data_10_22,ABC,classified
 GPT-3.5,one_shot,853,21,5,final_runs/test_data_10_22,B,classified
 GPT-3.5,one_shot,860,21,12,final_runs/test_data_10_22,B,classified
@@ -11106,24 +11109,26 @@ GPT-4,zero_shot,17,2,usmle-1896,final_runs/test_data_10_22,A,classified
 GPT-4,zero_shot,18,2,pmc-2813128-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,19,2,pmc-4641361-1,final_runs/test_data_10_22,AC,classified
 GPT-4,zero_shot,20,2,pmc-6713257-1,final_runs/test_data_10_22,BC,classified
-GPT-4,zero_shot,21,3,pmc-6426590-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,22,3,pmc-4421172-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,23,3,pmc-6605692-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,24,3,usmle-10682,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,26,3,pmc-8712236-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,27,3,usmle-11198,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,28,3,pmc-6892572-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,29,3,pmc-3927191-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,30,3,pmc-2275218-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,32,3,pmc-7983145-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,33,3,pmc-8346262-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,34,3,usmle-4906,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,35,3,usmle-5468,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,36,3,pmc-6919406-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,37,3,pmc-4448053-1,final_runs/test_data_10_22,AB,classified against the old explanation
-GPT-4,zero_shot,38,3,pmc-7425612-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,39,3,pmc-5394405-1,final_runs/test_data_10_22,A,classified against the old explanation
-GPT-4,zero_shot,40,3,pmc-7523830-1,final_runs/test_data_10_22,A,classified against the old explanation
+GPT-4,zero_shot,21,3,pmc-6426590-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,22,3,pmc-4421172-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,23,3,pmc-6605692-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,24,3,usmle-10682,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,25,3,pmc-8173432-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-4,zero_shot,26,3,pmc-8712236-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,27,3,usmle-11198,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,28,3,pmc-6892572-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,29,3,pmc-3927191-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,30,3,pmc-2275218-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,31,3,pmc-8521725-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,32,3,pmc-7983145-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-4,zero_shot,33,3,pmc-8346262-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-4,zero_shot,34,3,usmle-4906,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,35,3,usmle-5468,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,36,3,pmc-6919406-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
+GPT-4,zero_shot,37,3,pmc-4448053-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,38,3,pmc-7425612-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,39,3,pmc-5394405-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
+GPT-4,zero_shot,40,3,pmc-7523830-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 GPT-4,zero_shot,41,4,pmc-7196137-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,42,4,pmc-7099753-3,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,43,4,pmc-8136881-1,final_runs/test_data_10_22,AB,classified
@@ -11201,7 +11206,7 @@ GPT-4,zero_shot,235,16,pmc-6940349-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,237,16,pmc-3127500-1,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,239,16,pmc-4882526-1,final_runs/test_data_10_22,B,classified
-GPT-4,zero_shot,240,16,pmc-7111022-1,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,zero_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,zero_shot,243,17,4,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,249,17,10,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,255,17,16,final_runs/test_data_10_22,B,classified
@@ -11244,7 +11249,7 @@ GPT-4,zero_shot,300,19,pmc-8063940-1,final_runs/test_data_10_22,D,classified
 GPT-4,zero_shot,301,20,usmle-12605,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,302,20,pmc-4681016-1,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,303,20,usmle-414,final_runs/test_data_10_22,AB,classified
-GPT-4,zero_shot,304,20,pmc-8169128-1,final_runs/test_data_10_22,,not classified (was correct under the old label)
+GPT-4,zero_shot,304,20,pmc-8169128-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,zero_shot,305,20,usmle-12316,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,306,20,usmle-8066,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,307,20,pmc-7362490-1,final_runs/test_data_10_22,AB,classified
@@ -11252,6 +11257,7 @@ GPT-4,zero_shot,308,20,usmle-6356,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,309,20,usmle-4026,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,316,20,usmle-4327,final_runs/test_data_10_22,BC,classified
+GPT-4,zero_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-4,zero_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,A,classified
 GPT-4,zero_shot,321,22,pmc-6330555-1,final_runs/test_data_10_22,A,classified
 GPT-4,zero_shot,323,22,pmc-6176125-1,final_runs/test_data_10_22,A,classified
@@ -11271,12 +11277,12 @@ GPT-4,zero_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,346,25,2,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,347,25,3,final_runs/test_data_10_22,A,classified
 GPT-4,zero_shot,349,25,5,final_runs/test_data_10_22,B,classified
-GPT-4,zero_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+GPT-4,zero_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-4,zero_shot,351,25,7,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,352,25,8,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,354,25,10,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,361,25,17,final_runs/test_data_10_22,AC,classified
-GPT-4,zero_shot,362,25,18,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,zero_shot,362,25,18,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,zero_shot,369,26,pmc-5389145-1,mdrd_sodium_wording_rerun_2026-10-22,C,classified
 GPT-4,zero_shot,379,26,pmc-2803813-1,mdrd_sodium_wording_rerun_2026-10-22,C,classified
 GPT-4,zero_shot,386,27,2,final_runs/test_data_10_22,AB,classified
@@ -11313,19 +11319,19 @@ GPT-4,zero_shot,442,32,16,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,443,32,17,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,444,32,18,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,446,32,20,final_runs/test_data_10_22,AC,classified
-GPT-4,zero_shot,447,32,21,final_runs/test_data_10_22,C,classified against the old explanation
+GPT-4,zero_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-4,zero_shot,449,33,usmle-6072,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,450,33,pmc-8610453-1,final_runs/test_data_10_22,AB,classified
-GPT-4,zero_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,zero_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,A,classified
 GPT-4,zero_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,455,33,usmle-1376,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,456,33,pmc-5219707-1,final_runs/test_data_10_22,A,classified
 GPT-4,zero_shot,457,33,pmc-8380012-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,B,classified
-GPT-4,zero_shot,461,33,pmc-8454594-1,final_runs/test_data_10_22,AB,classified against the old explanation
+GPT-4,zero_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-4,zero_shot,462,33,pmc-7979303-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,463,33,usmle-965,final_runs/test_data_10_22,AB,classified
-GPT-4,zero_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,zero_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,zero_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,B,classified
 GPT-4,zero_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,C,classified
@@ -11559,7 +11565,7 @@ GPT-4,zero_shot,845,29,17,final_runs/test_data_10_22,BC,classified
 GPT-4,zero_shot,846,29,18,final_runs/test_data_10_22,AB,classified
 GPT-4,zero_shot,847,29,19,final_runs/test_data_10_22,ABC,classified
 GPT-4,zero_shot,848,29,20,final_runs/test_data_10_22,ABC,classified
-GPT-4,zero_shot,849,21,1,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,zero_shot,849,21,1,corrected_rows_ckdepi_rerun_2026-10-22,BC,classified
 GPT-4,zero_shot,855,21,7,final_runs/test_data_10_22,C,classified
 GPT-4,zero_shot,856,21,8,final_runs/test_data_10_22,C,classified
 GPT-4,zero_shot,863,21,15,final_runs/test_data_10_22,B,classified
@@ -11743,7 +11749,8 @@ GPT-4,one_shot,224,16,pmc-4341247-1,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,232,16,pmc-8168998-1,final_runs/test_data_10_22,BC,classified
 GPT-4,one_shot,236,16,pmc-8383636-1,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,238,16,pmc-4320908-1,final_runs/test_data_10_22,B,classified
-GPT-4,one_shot,241,17,2,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,one_shot,240,16,pmc-7111022-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
+GPT-4,one_shot,241,17,2,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,one_shot,248,17,9,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,250,17,11,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,254,17,15,final_runs/test_data_10_22,B,classified
@@ -11790,6 +11797,7 @@ GPT-4,one_shot,313,20,pmc-4307710-1,final_runs/test_data_10_22,A,classified
 GPT-4,one_shot,315,20,usmle-4768,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,316,20,usmle-4327,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,317,20,usmle-8175,final_runs/test_data_10_22,AB,classified
+GPT-4,one_shot,318,20,pmc-5745701-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-4,one_shot,319,20,usmle-262,final_runs/test_data_10_22,A,classified
 GPT-4,one_shot,320,20,pmc-8240916-1,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,341,23,pmc-4528787-1,final_runs/test_data_10_22,B,classified
@@ -11797,7 +11805,7 @@ GPT-4,one_shot,342,23,pmc-3094288-1,final_runs/test_data_10_22,BC,classified
 GPT-4,one_shot,343,23,pmc-3741440-1,final_runs/test_data_10_22,BC,classified
 GPT-4,one_shot,344,23,pmc-3701851-1,final_runs/test_data_10_22,C,classified
 GPT-4,one_shot,345,23,pmc-4528898-1,final_runs/test_data_10_22,C,classified
-GPT-4,one_shot,350,25,6,final_runs/test_data_10_22,,not classified (was correct under the old label)
+GPT-4,one_shot,350,25,6,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,one_shot,376,26,pmc-7455384-1,mdrd_sodium_wording_rerun_2026-10-22,C,classified
 GPT-4,one_shot,384,26,pmc-6142732-1,mdrd_sodium_wording_rerun_2026-10-22,ABC,classified
 GPT-4,one_shot,386,27,2,final_runs/test_data_10_22,AC,classified
@@ -11834,17 +11842,18 @@ GPT-4,one_shot,442,32,16,final_runs/test_data_10_22,AC,classified
 GPT-4,one_shot,443,32,17,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,444,32,18,final_runs/test_data_10_22,BC,classified
 GPT-4,one_shot,446,32,20,final_runs/test_data_10_22,A,classified
-GPT-4,one_shot,447,32,21,final_runs/test_data_10_22,ABC,classified against the old explanation
+GPT-4,one_shot,447,32,21,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-4,one_shot,451,33,pmc-3603656-1,final_runs/test_data_10_22,B,classified
-GPT-4,one_shot,452,33,pmc-3326926-1,final_runs/test_data_10_22,B,classified against the old explanation
+GPT-4,one_shot,452,33,pmc-3326926-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-4,one_shot,453,33,pmc-5661752-1,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,454,33,pmc-7219994-1,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,455,33,usmle-1376,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,456,33,pmc-5219707-1,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,459,33,pmc-3034928-1,final_runs/test_data_10_22,B,classified
 GPT-4,one_shot,460,33,usmle-1375,final_runs/test_data_10_22,BC,classified
+GPT-4,one_shot,461,33,pmc-8454594-1,corrected_rows_ckdepi_rerun_2026-10-22,B,classified
 GPT-4,one_shot,464,33,usmle-6762,final_runs/test_data_10_22,B,classified
-GPT-4,one_shot,465,33,pmc-8091626-1,final_runs/test_data_10_22,BC,classified against the old explanation
+GPT-4,one_shot,465,33,pmc-8091626-1,corrected_rows_ckdepi_rerun_2026-10-22,AB,classified
 GPT-4,one_shot,466,33,pmc-8653919-1,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,467,33,pmc-7463145-1,final_runs/test_data_10_22,AB,classified
 GPT-4,one_shot,468,38,pmc-8531789-1,final_runs/test_data_10_22,C,classified

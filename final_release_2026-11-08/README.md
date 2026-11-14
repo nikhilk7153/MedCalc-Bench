@@ -9,7 +9,7 @@ with its source, row count and SHA-256.
 | File | Contents |
 |---|---|
 | `test_data.csv` | Revised test set: 1,048 rows, 55 calculators. Notes, questions and Time Point Instruction from `dataset/test_data_10_22.csv`; Relevant Entities, labels, limits and explanations from `dataset/test_data_10_22_corrected.csv`. Every table and every output is scored against this file |
-| `one_shot_examples.json` | One-shot examples (55). Same as the main run's file except the CKD-EPI example wording (used by the CKD-EPI one-shot re-run) |
+| `one_shot_examples.json` | One-shot examples (55), as the one-shot outputs saw them: the main run's file with the CKD-EPI example's wording and the Sodium Correction example's "Hillier" spelling fixed (both used by the re-runs spliced in). The corrected SOFA example is not included: GPT-4 never ran it |
 | `train_data.csv` | Training set, 9,871 rows, 40 calculators (open items below) |
 | `CHANGELOG.md` | Dataset change log |
 
@@ -19,19 +19,21 @@ One output per model, prompt style and row (1,048 each), each with a `Source Run
 - `code_exec_gpt-3.5-turbo-0125.jsonl`, `code_exec_gpt-4-0613.jsonl`: code-interpreter prompt.
 - `accuracy_by_category.csv`: the accuracy behind the main table.
 
-Which run each row comes from:
+Each row's output is its latest run (by timestamp) among the runs all 8 models took part in:
 
 | Rows | Output |
 |---|---|
 | Default | Main run, `final_runs/test_data_10_22/` |
-| CKD-EPI rows 21–40, one-shot | `extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/` |
+| 13 label-fix rows and CKD-EPI rows 21–40, all styles | `extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/` |
 | MDRD and Sodium rows 141–160, 366–385, zero-shot, one-shot and code | `extra_runs/mdrd_sodium_wording_rerun_2026-10-22/` |
-| 13 label-fix rows | Main-run answers, re-scored |
+
+Kept on the main run: the 45 Astra rows (pending physician review), and the LDL Friedewald and SOFA one-shot re-runs
+(GPT-4 never ran them).
 
 ## error_analysis/
-- `error_classifications.csv`: every wrong zero- and one-shot answer (12,059), with its `gpt-4` error types and status.
-  - Used: 11,793. That is 11,647 `classified` plus the 146 CKD-EPI zero-shot answers classified against the old explanation wording (logic unchanged).
-  - Excluded: 266. That is 124 label-fix answers classified against the old explanation, 30 newly wrong ones, and 112 empty or blocked classifications.
+- `error_classifications.csv`: every wrong zero- and one-shot answer (12,068), with its `gpt-4` error types and status.
+  - Used: 11,953, each classified against its current reference explanation.
+  - Excluded: 115 whose classification is empty or blocked.
 - `error_type_summary.csv`, `error_type_table_values.csv`: per model and style, each error counted once as its earliest type (A > B > C > D).
 
 ## figures/

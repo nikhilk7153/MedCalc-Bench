@@ -4,8 +4,10 @@ Copies only (no recomputation, no model calls); source folders are not modified.
 - dataset/test_data.csv: the revised test set every table was scored on (make_stats_table.load_release(): notes,
   questions, names and Time Point Instruction of dataset/test_data_10_22.csv; Relevant Entities, labels, limits and
   explanations of dataset/test_data_10_22_corrected.csv). Checked against the consolidated outputs' row numbers.
-- dataset/one_shot_examples.json: final_files_2026-10-16/one_shot_10_17_2026_corrected.json (differs from the main run's
-  file only in the CKD-EPI example wording, which the CKD-EPI one-shot re-run used).
+- dataset/one_shot_examples.json: the one-shot file of the MDRD/Sodium re-run. It differs from the main run's file only in
+  the CKD-EPI example (ID 3, wording) and the Sodium Correction example (ID 26, "Hiller" -> "Hillier"), which is exactly
+  what the spliced one-shot rows saw. Not final_files_2026-10-16/one_shot_10_17_2026_corrected.json: that file also has
+  the corrected SOFA example (ID 43), which GPT-4 never ran and no consolidated output used.
 - dataset/train_data.csv: dataset/train_data_10_22.csv (open items listed in the release README).
 - outputs/, error_analysis/, tables/, figures/ (Appendix E.1): from this folder.
 Writes MANIFEST.csv (rows and sha256 per file)."""
@@ -19,7 +21,7 @@ sys.path.insert(0, HERE)
 from make_stats_table import load_release
 
 COPIES = {
-    "dataset/one_shot_examples.json": "final_files_2026-10-16/one_shot_10_17_2026_corrected.json",
+    "dataset/one_shot_examples.json": "extra_runs/mdrd_sodium_wording_rerun_2026-10-22/input/one_shot_10_17_2026_corrected.json",
     "dataset/train_data.csv": "dataset/train_data_10_22.csv",
     "dataset/CHANGELOG.md": "dataset/CHANGELOG.md",
     "outputs/accuracy_by_category.csv": "final_runs/consolidated_2026-11-06/accuracy_by_category.csv",
