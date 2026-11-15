@@ -9,7 +9,8 @@ Copies only (no recomputation, no model calls); source folders are not modified.
   what the spliced one-shot rows saw. Not final_files_2026-10-16/one_shot_10_17_2026_corrected.json: that file also has
   the corrected SOFA example (ID 43), which GPT-4 never ran and no consolidated output used.
 - dataset/train_data.csv: dataset/train_data_10_22.csv (open items listed in the release README).
-- outputs/, error_analysis/, tables/, figures/ (Appendix E.1): from this folder.
+- calculator_sources.csv (per calculator ID: changes used, outputs by run, later changes not used), outputs/,
+  error_analysis/, tables/, figures/ (Appendix E.1): from this folder.
 Writes MANIFEST.csv (rows and sha256 per file)."""
 import hashlib, json, os, shutil, sys
 import pandas as pd
@@ -25,6 +26,7 @@ COPIES = {
     "dataset/train_data.csv": "dataset/train_data_10_22.csv",
     "dataset/CHANGELOG.md": "dataset/CHANGELOG.md",
     "outputs/accuracy_by_category.csv": "final_runs/consolidated_2026-11-06/accuracy_by_category.csv",
+    "calculator_sources.csv": "final_runs/consolidated_2026-11-06/calculator_sources.csv",
     "error_analysis/error_classifications.csv": "final_runs/consolidated_2026-11-06/error_classifications.csv",
     "error_analysis/error_type_summary.csv": "final_runs/consolidated_2026-11-06/error_type_summary.csv",
     "error_analysis/error_type_table_values.csv": "final_runs/consolidated_2026-11-06/error_type_table_values.csv",

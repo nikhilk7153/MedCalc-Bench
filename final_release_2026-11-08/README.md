@@ -30,6 +30,11 @@ Each row's output is its latest run (by timestamp) among the runs all 8 models t
 Kept on the main run: the 45 Astra rows (pending physician review), and the LDL Friedewald and SOFA one-shot re-runs
 (GPT-4 never ran them).
 
+`calculator_sources.csv` (top level) gives the same per calculator ID: the changes it uses, how many of its outputs
+come from each run, and any later change left out with the reason. 42 of the 55 calculators use their latest change;
+the other 13 have a later change left out: Astra corrections in 12 (SOFA also has its corrected one-shot example) and
+the LDL Friedewald question.
+
 ## error_analysis/
 - `error_classifications.csv`: every wrong zero- and one-shot answer (12,068), with its `gpt-4` error types and status.
   - Used: 11,953, each classified against its current reference explanation.

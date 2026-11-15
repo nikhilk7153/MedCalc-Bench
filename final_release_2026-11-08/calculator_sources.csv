@@ -1,0 +1,56 @@
+Calculator ID,Calculator Name,Rows,"Changes after the main run, used",Outputs by run,Later changes not used
+2,Creatinine Clearance (Cockcroft-Gault Equation),20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+3,CKD-EPI Equations for Glomerular Filtration Rate,20,CKD-EPI one-shot example wording (20 rows),"CKD-EPI / label-fix re-run, 2026-10-22 13:53: 480; main code-prompt run, 2026-10-22 09:10: 40",
+4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (3 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+5,Mean Arterial Pressure (MAP),20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+6,Body Mass Index (BMI),20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+7,Calcium Correction for Hypoalbuminemia,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+8,Wells' Criteria for Pulmonary Embolism,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (3 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+9,MDRD GFR Equation,20,MDRD / Sodium question wording (20 rows),"MDRD / Sodium re-run, 2026-10-22 16:51: 360; main run, 2026-10-22 04:51: 160",
+10,Ideal Body Weight,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+11,QTc Bazett Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+13,Estimated Due Date,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+15,Child-Pugh Score for Cirrhosis Mortality,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+16,Wells' Criteria for DVT,20,Label fix (prompt unchanged) (1 rows),"main run, 2026-10-22 04:51: 456; main code-prompt run, 2026-10-22 09:10: 38; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 26",Astra corrections (unreviewed) (2 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+17,Revised Cardiac Risk Index for Pre-Operative Risk,20,Label fix (prompt unchanged) (1 rows),"main run, 2026-10-22 04:51: 456; main code-prompt run, 2026-10-22 09:10: 38; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 26",
+18,HEART Score for Major Cardiac Events,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (2 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,20,Label fix (prompt unchanged) (2 rows),"main run, 2026-10-22 04:51: 432; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 52; main code-prompt run, 2026-10-22 09:10: 36",Astra corrections (unreviewed) (4 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+21,Glasgow Coma Score (GCS),20,Label fix (prompt unchanged) (1 rows),"main run, 2026-10-22 04:51: 456; main code-prompt run, 2026-10-22 09:10: 38; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 26",Astra corrections (unreviewed) (1 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+22,Maintenance Fluids Calculations,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+23,MELD Na (UNOS/OPTN),5,none,"main run, 2026-10-22 04:51: 120; main code-prompt run, 2026-10-22 09:10: 10",
+24,Steroid Conversion Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+25,HAS-BLED Score for Major Bleeding Risk,20,Label fix (prompt unchanged) (3 rows),"main run, 2026-10-22 04:51: 408; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 78; main code-prompt run, 2026-10-22 09:10: 34",
+26,Sodium Correction for Hyperglycemia,20,MDRD / Sodium question wording (20 rows),"MDRD / Sodium re-run, 2026-10-22 16:51: 360; main run, 2026-10-22 04:51: 160",
+27,Glasgow-Blatchford Bleeding Score (GBS),20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+28,APACHE II Score,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (9 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+29,PSI Score: Pneumonia Severity Index for CAP,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (5 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+30,Serum Osmolality,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),2,none,"main run, 2026-10-22 04:51: 48; main code-prompt run, 2026-10-22 09:10: 4",
+32,Charlson Comorbidity Index (CCI),20,Label fix (prompt unchanged) (1 rows),"main run, 2026-10-22 04:51: 456; main code-prompt run, 2026-10-22 09:10: 38; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 26",
+33,FeverPAIN Score for Strep Pharyngitis,20,Label fix (prompt unchanged) (3 rows),"main run, 2026-10-22 04:51: 408; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 78; main code-prompt run, 2026-10-22 09:10: 34",Astra corrections (unreviewed) (3 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+36,Caprini Score for Venous Thromboembolism (2005),20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (8 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+38,Free Water Deficit,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+39,Anion Gap,20,Label fix (prompt unchanged) (1 rows),"main run, 2026-10-22 04:51: 456; main code-prompt run, 2026-10-22 09:10: 38; CKD-EPI / label-fix re-run, 2026-10-22 13:53: 26",
+40,Fractional Excretion of Sodium (FENa),5,none,"main run, 2026-10-22 04:51: 120; main code-prompt run, 2026-10-22 09:10: 10",
+43,Sequential Organ Failure Assessment (SOFA) Score,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (4 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician; Corrected SOFA one-shot example (20 rows): re-run 2026-10-23/24; GPT-4 never ran it
+44,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",LDL Friedewald question wording (20 rows): re-run 2026-10-24; GPT-3.5 and GPT-4 never ran it
+45,CURB-65 Score for Pneumonia Severity,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",Astra corrections (unreviewed) (1 rows): re-run 2026-10-22 14:24 on corrections not yet reviewed by a physician
+46,Framingham Risk Score for Hard Coronary Heart Disease,16,none,"main run, 2026-10-22 04:51: 384; main code-prompt run, 2026-10-22 09:10: 32",
+48,PERC Rule for Pulmonary Embolism,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+49,Morphine Milligram Equivalents (MME) Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+51,SIRS Criteria,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+56,QTc Fridericia Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+57,QTc Framingham Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+58,QTc Hodges Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+59,QTc Rautaharju Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+60,Body Surface Area Calculator,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+61,Target weight,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+62,Adjusted Body Weight,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+63,Delta Gap,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+64,Delta Ratio,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+65,Albumin Corrected Anion Gap,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+66,Albumin Corrected Delta Gap,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+67,Albumin Corrected Delta Ratio,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+68,Estimated Date of Conception,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",
+69,Estimated Gestational Age,20,none,"main run, 2026-10-22 04:51: 480; main code-prompt run, 2026-10-22 09:10: 40",

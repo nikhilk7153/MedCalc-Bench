@@ -8,6 +8,7 @@ against the corrected labels, and the three paper tables built from them. Source
 |---|---|
 | `run_coverage.py` | `../../equation_audit/rerun_coverage_2026-11-01.csv`: per re-run row, which models ran which styles |
 | `consolidate.py` | `outputs/` (24 files: 8 models x direct / zero-shot / one-shot, 1,048 rows each, with a `Source Run` field) and `accuracy_by_category.csv` |
+| `make_calculator_sources.py` | `calculator_sources.csv`: per calculator ID, the changes made after the main run that it uses, which run each of its outputs comes from, and later changes not used (with the reason) |
 | `consolidate_errors.py` | `error_classifications.csv` (every wrong zero/one-shot answer, its classification and status) and `error_type_summary.csv` |
 | `make_main_results_table.py` | `tables/main_results_table.tex` (main accuracy table) |
 | `make_error_table.py` | `tables/error_analysis_table.tex` (error type table) and `error_type_table_values.csv` |
