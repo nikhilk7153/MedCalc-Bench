@@ -4,7 +4,22 @@ def compute_perc_rule_explanation(input_parameters):
 
     perc_count = 0
 
-    explanation = "The current count of PERC criteria met is 0.\n"
+    explanation = """The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 point
+4. Unilateral leg swelling: No = 0 points, Yes = +1 point
+5. Hemoptysis: No = 0 points, Yes = +1 point
+6. Recent surgery or trauma (within 4 weeks, requiring treatment with general anesthesia): No = 0 points, Yes = +1 point
+7. Prior pulmonary embolism (PE) or deep vein thrombosis (DVT): No = 0 points, Yes = +1 point
+8. Hormone use (oral contraceptives, hormone replacement, or estrogenic hormone use in males or females): No = 0 points, Yes = +1 point
+
+The total number of criteria met is taken by summing the points for each criterion.
+    """
+    
+
+    explanation += "\nThe current count of PERC criteria met is 0.\n"
 
     age_exp, age = age_conversion.age_conversion_explanation(input_parameters["age"])
     heart_rate = input_parameters["heart_rate"][0]
@@ -67,7 +82,7 @@ def compute_perc_rule_explanation(input_parameters):
                 explanation += f"At least one of the criteria is met and so we increment the criteria met by 1, making the current total {perc_count} + 1 = {perc_count + 1}.\n"
                 perc_count += 1
             else:
-                explanation += f"Neither criteria is met and so we do not increment the criteria count, keep the current total at {perc_count}.\n"
+                explanation += f"Neither criteria is met and so we do increment the criteria count, keep the current total at {perc_count}.\n"
             continue
 
         if parameter not in input_parameters:
@@ -78,6 +93,6 @@ def compute_perc_rule_explanation(input_parameters):
             explanation += f"The patient note reports '{parameters[parameter]}' to be present for the patient and so we increment the criteria count by 1, making the current total {perc_count} + 1  =  {perc_count + 1}.\n"
             perc_count += 1
 
-    explanation += f"Hence, the number of PERC rule criteria met by the patient is {perc_count}.\n"
+    explanation += f"Hence, the number of PERC rule criteria met by the patient is {perc_count}."
 
     return {"Explanation": explanation, "Answer": perc_count}

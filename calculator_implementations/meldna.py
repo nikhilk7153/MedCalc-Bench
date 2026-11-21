@@ -8,7 +8,7 @@ def compute_meldna_explanation(input_variables):
 
     explanation = "The formula for computing the MELD Na is to first apply the following equation: MELD(i) = 0.957 x ln(Cr) + 0.378 x ln(bilirubin) + 1.120 x ln(INR) + 0.643.\n"
     explanation += "If the MELD(i) is greater than 11 after rounding to the nearest tenth and multiplying the MELD(i) by 10, we apply the following equation: MELD = MELD(i) + 1.32 x (137 - Na) -  [ 0.033 x MELD(i) x (137 - Na)]. The MELD Na score is capped at 40. "
-    explanation += "The concentration of Na is mEq/L, the concentration of bilirubin is mg/dL, and the concentration of creatinine is mg/dL.\n"
+    explanation += "The concentration of Na is mEq/L, the concentration of bilirubin is mg/dL, and the concentration of creatinine is mg/dL. If the patient's Na concentration is less than 125 mEq/L, we set it to 125 mEq/L and if the patient's the Na concentration is greater 137 mEq/L, we round it to 137 mEq/L.\n"
 
 
     creatinine_exp, creatinine = unit_converter_new.conversion_explanation(input_variables["creatinine"][0], "creatinine", 113.12, None, input_variables["creatinine"][1], "mg/dL")
@@ -76,7 +76,7 @@ def compute_meldna_explanation(input_variables):
         explanation += "\n"
 
     meld_i = 0.957 * math.log(creatinine) + 0.378 * math.log(bilirubin) + 1.120 * math.log(inr) + 0.643
-    meld_i_rounded = round(meld_i)
+    meld_i_rounded = round(meld_i, 1)
     meld_10 = round(meld_i_rounded * 10)
 
     explanation += f"Applying the first equation gives us 0.957 x ln({creatinine}) + 0.378 x ln({bilirubin}) + 1.120 x ln({inr}) + 0.643 = {meld_i}. "
@@ -92,10 +92,10 @@ def compute_meldna_explanation(input_variables):
             explanation += "The maximum the MELD Na score can be is 40, and so the patient's MELD score is 40."
         else:
             meldna = meld
-            explanation += f"The MELD Na score is less than 40, and so we keep the score as it is. The patient's MELDNa score, rounded to the nearest integer, is {round(meldna)} points.\n"
+            explanation += f"The MELD Na score is less than 40, and so we keep the score as it is. The patient's MELDNa score, rounded to the nearest integer, is {round(meldna)} points."
 
     else:
         meldna = meld_10
-        explanation += f"The patient's MELD (i) score is less than 11, and so we do not apply the second equation, making the patient's MELD Na score, {round(meldna)} points.\n"
+        explanation += f"The patient's MELD (i) score is less than 11, and so we do not apply the second equation, making the patient's MELD Na score, {round(meldna)} points."
 
     return {"Explanation": explanation, "Answer": round(meldna)}

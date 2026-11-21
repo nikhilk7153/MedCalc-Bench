@@ -1,3 +1,16 @@
+
+# Updates
+
+Please visit MedCalc-Bench Verified at this url: https://github.com/nikhilk7153/MedCalc-Bench-Verified for the latest changes.
+
+Here is the HuggingFace link: https://huggingface.co/datasets/nsk7153/MedCalc-Bench-Verified
+
+The first version of MedCalc-Bench Verified is an update from v1.2 on this repository.
+
+# Correction to the NeurIPS 2024 paper (2026)
+
+The corrected test set, one-shot examples, model outputs, error analysis and paper tables for the correction of the NeurIPS 2024 paper are in `final_release_2026-11-08/` (see its README). The scripts that build them are in `final_runs/consolidated_2026-11-06/` (see its README), and `dataset/CHANGELOG.md` lists the dataset changes.
+
 # MedCalc-Bench
 
 <br>
@@ -8,18 +21,16 @@
 
 <br>
 
-MedCalc-Bench is the first medical calculation dataset used to benchmark LLMs ability to serve as clinical calculators. Each instance in the dataset consists of a patient note, a question asking to compute a specific clinical value, a final answer value, and a step-by-step solution explaining how the final answer was obtained. Our dataset covers 55 different calculation tasks which are either rule-based calculations or are equation-based calculations. This dataset contains a training dataset of 10,053 instances and a testing dataset of 1,047 instances.
+
+MedCalc-Bench is the first medical calculation dataset used to benchmark LLMs ability to serve as clinical calculators. Each instance in the dataset consists of a patient note, a question asking to compute a specific clinical value, a final answer value, and a step-by-step solution explaining how the final answer was obtained. Our dataset covers 55 different calculation tasks which are either rule-based calculations or are equation-based calculations. This dataset contains a training dataset of 10,543 instances and a testing dataset of 1,100 instances.
  <br>
 
 In all, we hope that our dataset and benchmark serves as a call to improve the computational reasoning skills of LLMs in medical settings. 
 
-Our preprint is available at: https://arxiv.org/abs/2406.12036.
-
 ## MedCalc-Bench Dataset
 
-To download the CSV for the MedCalc-Bench evaluation dataset, please download the file, `test_data.csv` inside the `dataset` folder of this repository. You can also download the test set split from HuggingFace at https://huggingface.co/datasets/ncbi/MedCalc-Bench. 
 
-In addition to the 1,047 evaluation instances, we also provide a training dataset of 10,053 instances which can be used for fine-tuning open-source LLMs (see Section C of the Appendix). The training data can be found in the ```dataset/train_data.csv.zip``` file and can be unzipped to obtain ```train_data.csv```. This training dataset can also be found in the train split of the HuggingFace link. 
+In addition to the 1,100 evaluation instances, we also provide a training dataset of 10,543 instances which can be used for fine-tuning open-source LLMs. The training data can be found in the ```dataset/train_data.csv.zip``` file and can be unzipped to obtain ```train_data.csv```. This training dataset can also be found in the train split of the HuggingFace link. 
 
 Each Instance in the dataset contains the following information: 
 
@@ -29,7 +40,7 @@ Each Instance in the dataset contains the following information:
 - **Category**: Specifies the sub-category of the calculator. For equation-based calculators, the options are lab test, dosage, date, or physical and for rule-based calculators, the options are risk, severity, and diagnosis.
 - **Output Type**: Specifies the format type that the calculator will return. The options are decimal, integer, date (MM/DD/YY), or time in terms of weeks and days (i.e. (17 weeks, 4 days)).
 - **Note ID**: Specifies the ID of the patient note. The ID of the note will either be the ID given by Open-Patients or it will be an integer value if the patient note was handwritten by clinicians or synthesized by a template.
-- **Note Type**: Specifies whether the patient note was synthesized by a clinician (Handwritten), produced from a template (Template), or was extracted from PMC-Patients (extracted).
+- **Note Type**: Specifies whether the patient note was synthesized by a clinician (LLM generated and then edited/approvied by a clinician), produced from a template (Template), or was extracted from PMC-Patients (extracted).
 - **Patient Note**: Specifies the patient note which provides the information needed to compute the final answer.
 - **Question**: Specifies the question that is asked to the model to compute a specific medical value based on a particular calculator.
 - **Relevant Entities**: Provides a dictionary of the parameters and their extracted values based on the patient note.
@@ -85,7 +96,7 @@ Each instance in the jsonl will have the following meta-data associated with the
 }
 ```
 
-Additionally, we provide the mean accuracy and standard deviation percentage for each sub-category in a json titled ```results_<model>_<prompt_style>.json```. The cumulative accuracy and standard deviation among all 1,047 instances can be found under "overall" key of the JSON. This file can be found in the ```results``` folder. 
+Additionally, we provide the mean accuracy and standard deviation percentage for each sub-category in a json titled ```results_<model>_<prompt_style>.json```. The cumulative accuracy and standard deviation among all 1,100 instances can be found under "overall" key of the JSON. This file can be found in the ```results``` folder. 
 
 ## Reproducing Code Interpreter Results
 
@@ -107,16 +118,11 @@ For curating the patient notes in MedCalc-Bench, we only use publicly available 
 
 ## Broader Impacts 
 
-As described in Sec 1, medical calculators are commonly used in the clinical setting. With the rapidly growing interest in using LLMs for domain-specific applications, healthcare practitioners might directly prompt chatbots like ChatGPT to perform medical calculation tasks. However, the capabilities of LLMs in these tasks are currently unknown. Since healthcare is a high-stakes domain and wrong medical calculations can lead to severe consequences, including misdiagnosis, inappropriate treatment plans, and potential harm to patients, it is crucial to thoroughly evaluate the performance of LLMs in
-medical calculations. Surprisingly, the evaluation results on our MedCalc-Bench dataset show that all the studied LLMs struggle in the medical calculation tasks. The most capable model GPT-4 achieves only 50% accuracy with one-shot learning and chain-of-thought prompting. As such, our study indicates that current LLMs are not yet ready to be used for medical calculations. It should be noted that while high scores on MedCalc-Bench do not guarantee excellence in medical calculation tasks, failing in this dataset indicates that the models must not be considered for such purposes at all. In other words, we believe that passing MedCalc-Bench should be a necessary (but not sufficient) condition for a model to be used for medical calculation
+As described in Sec 1, medical calculators are commonly used in the clinical setting. With the rapidly growing interest in using LLMs for domain-specific applications, healthcare practitioners might directly prompt chatbots like ChatGPT to perform medical calculation tasks. However, the capabilities of LLMs in these tasks are currently unknown. Since healthcare is a high-stakes domain and wrong medical calculations can lead to severe consequences, including misdiagnosis, inappropriate treatment plans, and potential harm to patients, it is crucial to thoroughly evaluate the performance of LLMs in medical calculations. It should be noted that while high scores on MedCalc-Bench do not guarantee excellence in medical calculation tasks, failing in this dataset indicates that the models must not be considered for such purposes at all. In other words, we believe that passing MedCalc-Bench should be a necessary (but not sufficient) condition for a model to be used for medical calculation
 
 ## Maintenance and Responsibility 
 
-For any changes to this dataset, (i.e. adding new notes or calculators), we will update the README instructions, test_set.csv, and train_set.csv. We will still keep older versions of these datasets in an `archive/` folder. We will also update train and test sets for HuggingFace as well. 
-
-## Acknowledgement
-
-This research was supported by the NIH Intramural Research Program, National Library of Medicine. Additionally, the contributions made by Soren Dunn were done using the Delta advanced computing and data resource which is supported by the National Science Foundation (award OAC tel:2005572) and the State of Illinois. Delta is a joint effort of the University of Illinois Urbana-Champaign (UIUC) and its National Center for Supercomputing Applications (NCSA).
+For any changes to this dataset, (i.e. adding new notes, calculators, modifying existing ones), we will update the README instructions, test_set.csv, and train_set.csv. We will still keep older versions of these datasets as separate branches and update the versions on Github for new releases. We will also update train and test sets for HuggingFace as well. 
 
 ## Disclaimer
 
