@@ -1,0 +1,141 @@
+Row Number,Calculator ID,Note ID,Calculator Name,explanation,raw_answer
+141,9,pmc-6007257-1,MDRD GFR Equation,"The patient is 55 years old. The concentration of Creatinine is 2.25 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 2.25^(-1.154) * 55^(-0.203) * 1 * 0.742=22.5803.
+Hence, the patient's GFR is 22.5803 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we have: Serum Creatinine (S_Cr) = 2.25 mg/dL, Age = 55 years, and the patient is female. Since there is no mention of the patient being Black, we will use a race coefficient of 1. Now, we can plug in the values into the equation: GFR = 175 × (2.25)^-1.154 × (55)^-0.203 × 0.742 × 1. The calculation yields a GFR of approximately 14.4 mL/min/1.73 m²."", ""answer"": ""14.4 mL/min/1.73 m²""}"
+142,9,pmc-3764696-1,MDRD GFR Equation,"The patient is 60 years old. The concentration of Creatinine is 1.9 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.9^(-1.154) * 60^(-0.203) * 1 * 1=36.34057.
+Hence, the patient's GFR is 36.34057 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (S Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 60-year-old Indian man, so we will use a race coefficient of 1. The patient's serum creatinine (S Cr) level is 1.9 mg%. We can plug in these values into the equation. GFR (mL/min/1.73 m²) = 175 × (1.9)^-1.154 × (60)^-0.203 × 1. The calculation yields a GFR of approximately 38.4 mL/min/1.73 m²."", ""answer"": ""38.4 mL/min/1.73 m²""}"
+143,9,pmc-4065736-1,MDRD GFR Equation,"The patient is 27 years old. The concentration of Creatinine is 14.6 mg/dL. 
+The patient is Black, so the race coefficient is 1.212.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 14.6^(-1.154) * 27^(-0.203) * 1.212 * 0.742=3.65355.
+Hence, the patient's GFR is 3.65355 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know that the patient is a 27-year-old African-American female, and her serum creatinine level at admission was 14.6 mg/dL. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (SCr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). Plugging in the values, we get: GFR = 175 × (14.6)^-1.154 × (27)^-0.203 × 0.742 × 1.212. Calculating the value, we get:"", ""answer"": ""4.3 mL/min/1.73 m²""}"
+144,9,pmc-6902272-1,MDRD GFR Equation,"The patient is 73 years old. The concentration of Creatinine is 1.4 mg/dL. 
+The patient is not Black, so the race coefficient is defaulted to 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.4^(-1.154) * 73^(-0.203) * 1 * 1=49.67659.
+Hence, the patient's GFR is 49.67659 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the necessary values from the patient note. The equation is: GFR (mL/min/1.73 m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 73-year-old Caucasian male, so we will use a race coefficient of 1. The patient's serum creatinine value is 1.4 mg/dL. Now, we can plug in the values: GFR = 175 × (1.4)^-1.154 × (73)^-0.203 × (1)."", ""answer"": ""44.1""}"
+145,9,pmc-6485150-1,MDRD GFR Equation,"The patient is 94 years old. The concentration of Creatinine is 1.14 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.14^(-1.154) * 94^(-0.203) * 1 * 0.742=44.38424.
+Hence, the patient's GFR is 44.38424 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know that the patient is a 94-year-old woman, and her serum creatinine level is 1.14 mg/dl. Since the patient's race is not specified, we will use a race coefficient of 1. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (S Cr)^-1.154 × Age^-0.203 × 0.742 (if female) × Race Coefficient, where S Cr is the serum creatinine level in mg/dl. Plugging in the values, we get: GFR = 175 × (1.14)^-1.154 × 94^-0.203 × 0.742 × 1 = 34.35 mL/min/1.73 m²."", ""answer"": ""34.35 mL/min/1.73 m²""}"
+146,9,pmc-4381148-1,MDRD GFR Equation,"The patient is 65 years old. The concentration of Creatinine is 6.6 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 6.6^(-1.154) * 65^(-0.203) * 1 * 0.742=6.30474.
+Hence, the patient's GFR is 6.30474 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know the patient is a 65-year-old woman with a serum creatinine level of 6.6 mg/dL. However, the patient's race is not specified in the note, so we will assume the race coefficient is 1. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (SCr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black, otherwise 1). Plugging in the values, we get: GFR = 175 × (6.6)^-1.154 × (65)^-0.203 × 0.742 × 1. GFR ≈ 8.1 mL/min/1.73 m²."", ""answer"": ""8.1 mL/min/1.73 m²""}"
+147,9,pmc-6691829-1,MDRD GFR Equation,"The patient is 70 years old. The concentration of Creatinine is 555.8 µmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of Creatinine from µmol to mg. The mass of Creatinine is 555.8 µmol. To convert 555.8 µmol of Creatinine to mol, multiply by the conversion factor 1e-06, giving us 555.8 µmol Creatinine * 1e-06 mol/µmol = 0.0005558 mol Creatinine. To convert from mol Creatinine to grams, multiply by the molar mass 113.12 g/mol, which will give 0.0005558 mol Creatinine * 113.12 g/mol = 0.062872 g Creatinine. To convert 0.062872 g of Creatinine to mg, multiply by the conversion factor 1000.0, giving us 0.062872 g Creatinine * 1000.0 mg/g = 62.872 mg Creatinine. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 62.872 mg Creatinine/10.0 dL = 6.2872 mg Creatinine/dL. The concentration value of 555.8 µmol Creatinine/L converts to 6.2872 mg Creatinine/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 6.2872^(-1.154) * 70^(-0.203) * 1 * 1=8.85245.
+Hence, the patient's GFR is 8.85245 mL/min/1.73m².","Here is the solution: {""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know that the patient is a 70-year-old man, and his serum creatinine level at admission was 555.8 μmol/L. We need to convert the serum creatinine level from μmol/L to mg/dL. 1 μmol/L is equivalent to 0.0113 mg/dL, so 555.8 μmol/L is equivalent to 6.27 mg/dL. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (SCr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). Since the patient is a male and we don't have information about his race, we will assume he is not Black and use a race coefficient of 1. Plugging in the values, we get: GFR = 175 × (6.27)^-1.154 × (70)^-0.203 × 1 × 1."", ""answer"": ""21.4 mL/min/1.73 m²""}"
+148,9,pmc-1847820-1,MDRD GFR Equation,"The patient is 40 years old. The concentration of Creatinine is 10.0 mg/dL. 
+The patient is not Black, so the race coefficient is defaulted to 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 10.0^(-1.154) * 40^(-0.203) * 1 * 0.742=4.30749.
+Hence, the patient's GFR is 4.30749 mL/min/1.73m².","Here is the solution: {""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The equation is: GFR (mL/min/1.73 m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 40-year-old Caucasian woman, so the race coefficient is 1. The serum creatinine concentration (S_Cr) is 10 mg/dL. We can now plug in the values into the equation. GFR = 175 × (10)^-1.154 × (40)^-0.203 × (0.742) × (1)."", ""answer"": ""14.1 mL/min/1.73 m²""}"
+149,9,pmc-5451771-1,MDRD GFR Equation,"The patient is 22 years old. The concentration of Creatinine is 12.9 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 12.9^(-1.154) * 22^(-0.203) * 1 * 0.742=3.62501.
+Hence, the patient's GFR is 3.62501 mL/min/1.73m².","Here is the output: { ""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The patient's serum creatinine level at admission is 12.9 mg/dL. The patient's age is 22 years old, and the patient is female. Since the patient's race is not specified, we will use a race coefficient of 1. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (SCr)^-1.154 × Age^-0.203 × 0.742 (if female) × Race Coefficient, where SCr is the serum creatinine level in mg/dL. Plugging in the values, we get: GFR = 175 × (12.9)^-1.154 × 22^-0.203 × 0.742 × 1. Now, we can calculate the GFR."", ""answer"": ""6.13 mL/min/1.73 m²"" }"
+150,9,pmc-6454930-1,MDRD GFR Equation,"The patient is 66 years old. The concentration of Creatinine is 16.4 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 16.4^(-1.154) * 66^(-0.203) * 1 * 1=2.96306.
+Hence, the patient's GFR is 2.96306 mL/min/1.73m².","Here is the output: { ""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the necessary values from the patient note. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 66-year-old male, so we don't need to apply the female coefficient. We also don't know the patient's race, so we will use a race coefficient of 1. The patient's creatinine level upon presentation was 16.4 mg/dL, which is the value we need for S_Cr. Now we can plug in the values: GFR (mL/min/1.73 m²) = 175 × (16.4)^-1.154 × (66)^-0.203 × 1. Performing the calculation, we get:"", ""answer"": ""4.4"" }"
+151,9,pmc-4652317-1,MDRD GFR Equation,"The patient is 24 years old. The concentration of Creatinine is 16.5 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 16.5^(-1.154) * 24^(-0.203) * 1 * 1=3.61309.
+Hence, the patient's GFR is 3.61309 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine (Cr) level, age, and race. From the patient note, we know that the patient's serum Cr level is 16.5 mg/dl when they were first admitted to the hospital. The patient's age is 24 years old. The patient's race is not explicitly mentioned, so we will assume the race coefficient is 1. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (S Cr)^-1.154 × Age^-0.203 × 0.742 (if female) × Race Coefficient. Since the patient is male, we don't need to consider the female coefficient. Plugging in the values, we get: GFR = 175 × (16.5)^-1.154 × 24^-0.203 × 1."", ""answer"": ""13.4 mL/min/1.73 m²""}"
+152,9,pmc-6122666-1,MDRD GFR Equation,"The patient is 49 years old. The concentration of Creatinine is 1.22 mg/dL. 
+The patient is Black, so the race coefficient is 1.212.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.22^(-1.154) * 49^(-0.203) * 1.212 * 0.742=56.7774.
+Hence, the patient's GFR is 56.7774 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the necessary values from the patient note. The equation is: GFR (mL/min/1.73 m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 49-year-old African-American female, so we will use the race coefficient of 1.212. We also know her creatinine level was elevated at 1.22 mg/dL when she was first admitted to the hospital. Now, we can plug in the values: GFR = 175 × (1.22)^-1.154 × (49)^-0.203 × (0.742) × (1.212)."", ""answer"": ""44.13""}"
+153,9,pmc-7787914-1,MDRD GFR Equation,"The patient is 78 years old. The concentration of Creatinine is 1.74 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.74^(-1.154) * 78^(-0.203) * 1 * 1=38.13722.
+Hence, the patient's GFR is 38.13722 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, and race. From the patient note, we know the patient's serum creatinine level is 1.74 mg/dL, age is 78 years old, and there is no mention of the patient being Black, so we will use a race coefficient of 1. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (SCr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). Since the patient is male, we don't need to apply the female coefficient. Plugging in the values, we get: GFR = 175 × (1.74)^-1.154 × (78)^-0.203 × 1. The calculation yields a GFR of approximately 34.4 mL/min/1.73 m²."", ""answer"": ""34.4 mL/min/1.73 m²""}"
+154,9,pmc-3104662-1,MDRD GFR Equation,"The patient is 97 years old. The concentration of Creatinine is 1.34 mg/dL. 
+The patient is not Black, so the race coefficient is defaulted to 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 1.34^(-1.154) * 97^(-0.203) * 1 * 1=49.32243.
+Hence, the patient's GFR is 49.32243 mL/min/1.73m².","{""step_by_step_thinking"": ""First, we need to identify the necessary values from the patient note to plug into the MDRD GFR Equation. The equation is: GFR (mL/min/1.73m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient's age is 97 years old, and his serum creatinine (S_Cr) is 1.34 mg/dL. The patient is a Hispanic male, so we will use a race coefficient of 1. Next, we can plug in the values: GFR = 175 × (1.34)^-1.154 × (97)^-0.203 × 1. Finally, we can calculate the GFR."", ""answer"": ""24.35""}"
+155,9,pmc-3841498-1,MDRD GFR Equation,"The patient is 17 years old. The concentration of Creatinine is 7.2 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 7.2^(-1.154) * 17^(-0.203) * 1 * 0.742=7.48685.
+Hence, the patient's GFR is 7.48685 mL/min/1.73m².","Here is the output: { ""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (SCr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 17-year-old female, so we will use the female coefficient of 0.742. We also know the patient's serum creatinine (SCr) is 7.2 mg/dl. Since the patient's race is not specified, we will use a race coefficient of 1. Now, we can plug in the values: GFR = 175 × (7.2)^-1.154 × (17)^-0.203 × 0.742 × 1."", ""answer"": ""21.11 mL/min/1.73 m²"" }"
+156,9,usmle-3514,MDRD GFR Equation,"The patient is 48 years old. The concentration of Creatinine is 2.4 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 2.4^(-1.154) * 48^(-0.203) * 1 * 0.742=21.54697.
+Hence, the patient's GFR is 21.54697 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The equation is: GFR (mL/min/1.73 m²) = 175 × (S Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we have: serum creatinine concentration (S Cr) = 2.4 mg/dL, age = 48 years, and the patient is female. Since the patient's race is not specified, we will use a race coefficient of 1. Now, we can plug in the values into the equation: GFR = 175 × (2.4)^-1.154 × (48)^-0.203 × 0.742 × 1. The calculation yields a GFR of approximately 24.4 mL/min/1.73 m²."", ""answer"": ""24.4 mL/min/1.73 m²""}"
+157,9,pmc-5971350-1,MDRD GFR Equation,"The patient is 63 years old. The concentration of Creatinine is 7.7 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 7.7^(-1.154) * 63^(-0.203) * 1 * 0.742=5.31087.
+Hence, the patient's GFR is 5.31087 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to identify the required values from the patient note. The equation is: GFR (mL/min/1.73 m²) = 175 × (S_Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 63-year-old female, and her serum creatinine (S_Cr) is 7.7 mg/dL. Since the patient is not Black, we will use a race coefficient of 1. Now, we can plug in the values: GFR = 175 × (7.7)^-1.154 × (63)^-0.203 × 0.742 × 1. The calculation yields a GFR of approximately 7.4 mL/min/1.73 m²."", ""answer"": ""7.4 mL/min/1.73 m²""}"
+158,9,usmle-3704,MDRD GFR Equation,"The patient is 55 years old. The concentration of Creatinine is 3.1 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 3.1^(-1.154) * 55^(-0.203) * 1 * 0.742=15.59972.
+Hence, the patient's GFR is 15.59972 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we have the serum creatinine level as 3.1 mg/dL, age as 55 years, sex as female, and no information about the race. Assuming the patient is not Black (since it's not mentioned), we will use a race coefficient of 1. The MDRD GFR Equation is: GFR (mL/min/1.73 m²) = 175 × (S Cr)^-1.154 × Age^-0.203 × 0.742 (if female) × 1 (if not Black). Plugging in the values, we get: GFR = 175 × (3.1)^-1.154 × 55^-0.203 × 0.742 × 1. Calculating the value, we get the patient's GFR."", ""answer"": ""21.4 mL/min/1.73 m²""}"
+159,9,pmc-8022897-1,MDRD GFR Equation,"The patient is 66 years old. The concentration of Creatinine is 5.0 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is female, so the gender coefficient is 0.742.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 5.0^(-1.154) * 66^(-0.203) * 1 * 0.742=8.65891.
+Hence, the patient's GFR is 8.65891 mL/min/1.73m².","Here is the output: { ""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to gather the necessary values from the patient note. The equation is: GFR (mL/min/1.73 m²) = 175 × (S Cr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). From the patient note, we know the patient is a 66-year-old woman, so we will use the female coefficient of 0.742. We are not given the patient's race, so we will assume a race coefficient of 1. The patient's serum creatinine (S Cr) level upon admission is 5 mg/dL. Now, we can plug in the values: GFR = 175 × (5)^-1.154 × (66)^-0.203 × 0.742 × 1. The calculation yields a GFR of approximately 14.3 mL/min/1.73 m²."", ""answer"": ""14.3 mL/min/1.73 m²"" }"
+160,9,pmc-8432418-1,MDRD GFR Equation,"The patient is 52 years old. The concentration of Creatinine is 10.01 mg/dL. 
+The race of the patient is not provided, so the default value of the race coefficient is 1.0.
+The patient is male, so the gender coefficient is 1.
+The patient's estimated GFR is calculated using the MDRD equation as:
+GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient. The creatinine concentration is mg/dL.
+Plugging in these values will give us: 175 * 10.01^(-1.154) * 52^(-0.203) * 1 * 1=5.49779.
+Hence, the patient's GFR is 5.49779 mL/min/1.73m².","{""step_by_step_thinking"": ""To calculate the patient's Glomerular Filtration Rate (GFR) using the MDRD GFR Equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know the patient is a 52-year-old man. His serum creatinine level is 10.01mg/dL. We are not explicitly told the patient's race, so we will assume he is not Black and use a race coefficient of 1. The MDRD GFR Equation is: GFR (mL/min/1.73m²) = 175 × (SCr)^-1.154 × (Age)^-0.203 × (0.742 if female) × (1.212 if Black). Plugging in the values, we get: GFR = 175 × (10.01)^-1.154 × (52)^-0.203 × 1. Since the patient is male, we do not use the female coefficient. Since we are assuming the patient is not Black, we do not use the Black coefficient. Calculating the value, we get:"", ""answer"": ""14.4""}"

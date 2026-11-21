@@ -1,0 +1,137 @@
+{
+ "calculator_id": "21",
+ "rows": [
+  {
+   "row": "849",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "9",
+   "final_answer": "10",
+   "corrected_relevant_entities": {
+    "Best eye response": "eye opening to pain",
+    "Best verbal response": "confused",
+    "Best motor response": "withdrawal from pain"
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Asked where she is, she answers with a coherent full sentence, 'I am in the Lego aisle of Target.' That is a conversational but disoriented reply, which is GCS 'confused' (V4). 'Inappropriate words' means isolated or random words with no conversational exchange. E2 ('momentarily open her eyes to sternal rub') and M4 ('move her chest away from the examiner's hand' = withdrawal) are correct, so 2+4+4=10. Both reviewers independently chose V4. v1.0 also stored V3, so if v1.0 fidelity is preferred, the alternative is a note edit that makes the reply random words (answer 9).",
+   "confidence": "medium"
+  },
+  {
+   "row": "850",
+   "verdict": "CORRECT",
+   "stored_answer": "12",
+   "final_answer": "12",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'intermittently opens his eyes in response to verbal commands' = E3, 'disoriented... unable to provide accurate information' = V4, 'He localizes painful stimuli' = M5, so 3+4+5=12. The female/'he' pronoun mismatch does not affect the score. Command-following is not described, and the documented best motor response stands.",
+   "confidence": "high"
+  },
+  {
+   "row": "855",
+   "verdict": "CORRECT",
+   "stored_answer": "12",
+   "final_answer": "12",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'He opens his eyes upon verbal request' explicitly gives E3 (this overrides the general word 'awake'). 'appeared confused when asked about the day of the week' = V4. 'able to specifically locate the sensation and attempted to push the hand away' = M5. 3+4+5=12, matching v1.0 inputs.",
+   "confidence": "high"
+  },
+  {
+   "row": "857",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "3",
+   "final_answer": "7",
+   "corrected_relevant_entities": {
+    "Best motor response": "no motor response",
+    "Best eye response": "no eye opening",
+    "Best verbal response": "not testable"
+   },
+   "note_edit": null,
+   "code_change": "In calculator_implementations_verified/glasgow_coma_score.py change glasgow_dictionary['best_verbal_response']['not testable'] from 4 to 5 (full points, matching the dataset rule and the explanation text 'we assume the patient's verbal response is oriented'). Optionally add 'not testable': 6 to best_motor_response. Without this the corrected inputs score 1 point low.",
+   "options": null,
+   "rationale": "The note explicitly says 'he was intubated on site' and 'His intubation prevented further assessment of verbal responsiveness'. That is MDCalc's verbal NT/intubated case, and v1.0 stored 'not testable'. Under the dataset rule (NT = full points) the score is E1+V5+M1 = 7. The corrected set's change to 'no verbal response' (V1, 3) reverses a correct v1.0 input. The code must score verbal NT as 5, or it outputs 6.",
+   "confidence": "medium"
+  },
+  {
+   "row": "859",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Upon hearing the nurse ask her to open her eyes, she complied' = E3. 'her speech was disoriented' with confusion/delirium = V4. 'She was able to follow simple commands' = M6. 3+4+6=13.",
+   "confidence": "high"
+  },
+  {
+   "row": "861",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "9",
+   "final_answer": "13",
+   "corrected_relevant_entities": {
+    "Best motor response": "obeys commands",
+    "Best eye response": "eye opening to pain",
+    "Best verbal response": "not testable"
+   },
+   "note_edit": null,
+   "code_change": "In calculator_implementations_verified/glasgow_coma_score.py change glasgow_dictionary['best_verbal_response']['not testable'] from 4 to 5 (full points, matching the dataset rule and the explanation text 'we assume the patient's verbal response is oriented'). Optionally add 'not testable': 6 to best_motor_response. Without this the corrected inputs score 1 point low.",
+   "options": null,
+   "rationale": "'does not attempt to verbalize due to the tracheostomy' says the verbal response cannot be tested because of an airway device. MDCalc treats that as verbal NT, not a true V1. Under the dataset rule (NT = full points) the score is E2 ('opens his eyes when pinched') + V5 + M6 ('able to obey commands to grip and release his hand') = 13. The code must score verbal NT as 5, or it outputs 12. v1.0 also stored V1, but that contradicts the dataset NT rule.",
+   "confidence": "medium"
+  },
+  {
+   "row": "863",
+   "verdict": "CORRECT",
+   "stored_answer": "13",
+   "final_answer": "13",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'His eyes were open on arrival' = E4. 'accurately identifying the date, his location, and explaining what had happened' = V5. The only documented motor finding is 'he instinctively pulled his arm away when pressure was applied to his nail bed' = M4, so 13, the same as v1.0 and both reviewers' literal score. A fully oriented patient would very likely obey commands (M6, giving 15), but command-following is not documented. The stored answer follows the note literally.",
+   "confidence": "medium"
+  },
+  {
+   "row": "865",
+   "verdict": "CORRECT",
+   "stored_answer": "8",
+   "final_answer": "8",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'opening her eyes when she was told to' = E3. 'speech was rambling with significant tangents', described as confused and delirious, = V4 (conversational but confused, not isolated words). 'no voluntary movements in her limbs, including to painful stimuli' = M1. 3+4+1=8.",
+   "confidence": "high"
+  },
+  {
+   "row": "866",
+   "verdict": "CORRECT",
+   "stored_answer": "10",
+   "final_answer": "10",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'opened his eyes only in response to sternal rub' = E2. 'kept mumbling nonsensical words' = articulated words without conversation = V3. 'moving his hands towards the site of the pinch' = localizes, M5. 2+3+5=10.",
+   "confidence": "high"
+  },
+  {
+   "row": "868",
+   "verdict": "CORRECT",
+   "stored_answer": "8",
+   "final_answer": "8",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'On hearing his name called out, the patient managed to open his eyes' = E3. 'He did not respond verbally to any inquiry or command' = V1. 'grimacing and attempts to evade the source of the discomfort' = moving away from the stimulus = withdrawal, M4. 3+1+4=8.",
+   "confidence": "high"
+  }
+ ]
+}

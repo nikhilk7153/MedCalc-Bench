@@ -1,0 +1,8 @@
+31 lab/physical one-shot rows to audit
+one_shot_pass1.jsonl: 0 cached, 31 to run
+one_shot_pass2.jsonl: 0 cached, 5 to run
+Verdict
+agrees_with_label    26
+label_wrong           2
+model_wrong           2
+ambiguous             1

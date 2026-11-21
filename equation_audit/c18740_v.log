@@ -1,0 +1,6 @@
+8 rows from cand_18_740.csv to check
+final_c18740_verify.jsonl: 0 cached, 8 to run
+Verdict
+correct      4
+incorrect    2
+ambiguous    2

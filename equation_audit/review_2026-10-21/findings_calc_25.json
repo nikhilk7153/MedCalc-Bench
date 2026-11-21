@@ -1,0 +1,190 @@
+{
+ "calculator_id": "25",
+ "mdcalc_source": "https://www.mdcalc.com/calc/807/has-bled-score-major-bleeding-risk",
+ "mdcalc_rules": "One point each, 0-9 total: Hypertension (uncontrolled, >160 mmHg systolic); Renal disease (dialysis, transplant, Cr >2.26 mg/dL or >200 umol/L); Liver disease (cirrhosis, or bilirubin >2x normal with AST/ALT/AP >3x normal); Stroke history; Prior major bleeding or predisposition to bleeding; Labile INR (unstable/high INRs, TTR <60%); Age >65; Medication usage predisposing to bleeding (aspirin, clopidogrel, NSAIDs); Alcohol use (>=8 drinks/week). MDCalc gives no definition beyond these descriptors; TIA is not listed under stroke, and anticoagulants are not listed as a drug point.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "None in scoring logic. The code uses age >65, alcohol >=8 drinks/wk and 1 point per boolean criterion, all matching MDCalc. Minor robustness point: 'alcoholic_drinks' is required (KeyError if absent) while other criteria default to absent. It is also truncated with int(float()). No current row is affected.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Not a code bug: the code scores whatever boolean is stored for 'hypertension'. The stored values still carry v1.0's 'Hypertension history' semantics in some rows, where MDCalc requires uncontrolled HTN (SBP >160). They are reported as INPUT_ERRORs.",
+   "rows_affected": [
+    "349",
+    "350",
+    "360",
+    "362"
+   ]
+  }
+ ],
+ "items": [
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "1",
+   "mdcalc_answer": "1",
+   "details": "Uncontrolled HTN (SBP 165 >160) =1; age 43; TIA not counted as stroke (MDCalc item is 'Stroke history'); no alcohol, meds, bleeding, labile INR, liver/renal disease. Inputs match.",
+   "evidence_quote": "most recent systolic blood pressure measurement being 165 mmHg despite adherence"
+  },
+  {
+   "row": "346",
+   "status": "INPUT_ERROR",
+   "stored_answer": "5",
+   "mdcalc_answer": "4",
+   "details": "Stroke: stored True, should be False. The note describes only a TIA, and MDCalc's item is 'Stroke history'. The one-shot example scores a TIA as stroke=false, so this row is inconsistent with it. Other items: kidney transplant gives renal=1, 12 drinks/wk gives alcohol=1, 'suggestive signs of hepatic cirrhosis' gives liver=1, HTN=1, age 22=0. Secondary ambiguity: HTN is 'several recorded high blood pressure readings' with no SBP >160 given, and cirrhosis is only 'suggestive'. Same inputs and answer as v1.0.",
+   "evidence_quote": "she suffered a transient ischemic attack of her brain last year"
+  },
+  {
+   "row": "347",
+   "status": "OK",
+   "stored_answer": "1",
+   "mdcalc_answer": "1",
+   "details": "Age 72 >65 =1; all other criteria explicitly absent; 4 drinks/wk <8.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "348",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "3",
+   "mdcalc_answer": "3 (2 if MDCalc liver definition applied strictly)",
+   "details": "Low severity. MDCalc liver disease = cirrhosis OR bilirubin >2x normal WITH AST/ALT/AP >3x normal. The note gives AST/ALT 4x normal but no bilirubin. The author clearly means liver disease to be present ('suggesting liver disease'), so keeping 3 is reasonable, but a strict reading scores liver=0. Renal disease is also asserted without a Cr value (MDCalc: Cr >2.26 mg/dL, dialysis or transplant). The dataset accepts clinician-stated renal disease here, as in other rows. Prior GI bleed=1. Stored inputs otherwise match. Unchanged from v1.0. Suggested fix: add 'bilirubin >2x normal' and a Cr value to the note.",
+   "evidence_quote": "AST and ALT were 4 times the normal value), suggesting liver disease"
+  },
+  {
+   "row": "349",
+   "status": "INPUT_ERROR",
+   "stored_answer": "2",
+   "mdcalc_answer": "0",
+   "details": "(1) Medication usage: stored True, should be False. The only drug named is an anticoagulant. MDCalc's drug item is antiplatelets/NSAIDs ('Aspirin, clopidogrel, NSAIDs'); anticoagulant therapy is the context of HAS-BLED, not a point. (2) Hypertension: stored True, should be False. The note says HTN is 'managed with antihypertensive medication' and gives no reading. MDCalc requires uncontrolled HTN (SBP >160), and the store carries over v1.0's 'Hypertension history' input. Everything else is 0 (age 33, 4 drinks, DVT is not a bleed, stable INR). Answer would be 1 if HTN were judged uncontrolled.",
+   "evidence_quote": "already diagnosed with hypertension which is being managed with antihypertensive medication. His medication list also includes a specific anticoagulant recommended following a DVT"
+  },
+  {
+   "row": "350",
+   "status": "INPUT_ERROR",
+   "stored_answer": "5",
+   "mdcalc_answer": "3",
+   "details": "(1) Medication usage: stored True, should be False. Anticoagulants alone are not a HAS-BLED drug point (MDCalc: aspirin, clopidogrel, NSAIDs). (2) Hypertension: stored True, should be False. The note says BP is currently consistently well-controlled, and MDCalc requires uncontrolled HTN (SBP >160). The wording conflicts internally ('history of ... uncontrolled hypertension - although ... well-controlled'), so the answer is 4 if the history of uncontrolled HTN is counted. Valid points: stroke=1, labile INR=1, age 75=1. Alcohol 5 <8.",
+   "evidence_quote": "uncontrolled hypertension - although his blood pressure has been consistently well-controlled in recent times. His medication regimen includes anticoagulants"
+  },
+  {
+   "row": "351",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "SBP >170 gives HTN=1; aspirin+NSAIDs gives meds=1; 12 drinks gives alcohol=1; CKD gives renal=1 (asserted with no Cr value; the dataset accepts it); age 58=0; DVT is not a bleed. Inputs match.",
+   "evidence_quote": "blood pressure readings have tended to be elevated at above 170 mmHg"
+  },
+  {
+   "row": "352",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "Age 67=1; poorly controlled HTN=1; prior major bleed=1; end-stage liver fibrosis (cirrhosis)=1; 3 drinks; no meds. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "353",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Stroke=1, labile INR=1, age 82=1; HTN, alcohol, bleeding, renal absent; liver not mentioned, so absent. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "354",
+   "status": "OK",
+   "stored_answer": "5",
+   "mdcalc_answer": "5",
+   "details": "Uncontrolled HTN=1, 9 drinks=1, ALD hepatic impairment=1, renal (elevated Cr, reduced GFR)=1, age 72=1. Liver and renal are stated without MDCalc-level values, but the clinician asserts them. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "355",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Age 65 is not >65, so 0 (code uses >65, matching MDCalc). Stroke=1, clopidogrel=1, significant surgical bleed=1. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "356",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Age 78=1, uncontrolled HTN=1, labile INR=1; 7 drinks <8; no stroke or bleed. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "357",
+   "status": "OK",
+   "stored_answer": "5",
+   "mdcalc_answer": "5",
+   "details": "Age 85=1, stroke=1, major bleed=1, antiplatelets=1, renal impairment=1 (no Cr value; the dataset accepts it); BP well-managed, so 0. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "358",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Cirrhosis=1, major bleed=1, labile INR=1; age 62; 1 drink; no HTN. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "359",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Stroke=1, uncontrolled HTN (164 >160)=1, age 70=1. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "360",
+   "status": "INPUT_ERROR",
+   "stored_answer": "5",
+   "mdcalc_answer": "4",
+   "details": "Hypertension: stored True, should be False. BP is explicitly controlled, and MDCalc counts only uncontrolled HTN (SBP >160). This True is a v1.0 'Hypertension history' value carried over. Valid points: cirrhosis=1, major bleed=1, 8 drinks/wk (>=8)=1, ibuprofen=1.",
+   "evidence_quote": "has been doing well with controlled blood pressure readings on his antihypertensive medications"
+  },
+  {
+   "row": "361",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "Stroke=1, uncontrolled HTN 182/111=1, labile INR=1, significant bleed=1; age 59; 3 drinks. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "362",
+   "status": "INPUT_ERROR",
+   "stored_answer": "4",
+   "mdcalc_answer": "3",
+   "details": "Hypertension: stored True, should be False. BP is well-controlled at 118/61, and MDCalc requires uncontrolled HTN (SBP >160). This True is a v1.0 'Hypertension history' value carried over. Valid points: significant bleed=1, cirrhosis=1, Cr 3.2 >2.26 gives renal=1. Age 61; no alcohol or meds.",
+   "evidence_quote": "He has a history of hypertension but currently his blood pressure profile shows well-controlled readings (118/61)"
+  },
+  {
+   "row": "363",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "Age 65 is not >65. Stroke=1, 10 drinks=1, clopidogrel=1, Cr 2.8 >2.26 gives renal=1. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "364",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "HTN 172=1, labile INR=1, age 70=1, transfused bleed=1. Inputs match.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "365",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "Stroke=1, cirrhosis=1, aspirin=1, age 80=1; HTN not uncontrolled. Inputs match.",
+   "evidence_quote": ""
+  }
+ ]
+}

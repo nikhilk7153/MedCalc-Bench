@@ -1,0 +1,230 @@
+v1.0 Row Number,Calculator ID,Calculator Name,Input,Value,Problem
+276,3,CKD-EPI Equations for Glomerular Filtration Rate,creatinine,"[1.05, 'µg/dL']",unit 'µg/dL' does not fit
+288,3,CKD-EPI Equations for Glomerular Filtration Rate,creatinine,"[130.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+1359,5,Mean Arterial Pressure (MAP),Diastolic Blood Pressure,"[8090.0, 'mm hg']",value 8090.0 mm hg outside 10-200
+1359,5,Mean Arterial Pressure (MAP),Systolic Blood Pressure,"[150160.0, 'mm hg']",value 150160.0 mm hg outside 40-300
+2559,6,Body Mass Index (BMI),height,"[1.78, 'cm']",value 1.78 cm outside 30-250 cm
+2605,7,Calcium Correction for Hypoalbuminemia,Albumin,"[2.5, 'mg/dL']",unit 'mg/dL' does not fit
+2626,7,Calcium Correction for Hypoalbuminemia,Albumin,"[4.3, 'mg/dL']",unit 'mg/dL' does not fit
+2699,7,Calcium Correction for Hypoalbuminemia,Albumin,"[3.6, 'mg/dL']",unit 'mg/dL' does not fit
+2707,7,Calcium Correction for Hypoalbuminemia,Albumin,"[3.2, 'mg/dL']",unit 'mg/dL' does not fit
+2848,8,Wells' Criteria for Pulmonary Embolism,Heart Rate or Pulse,"[4050.0, 'beats per minute']",value 4050.0 beats per minute outside 20-300
+3224,9,MDRD GFR Equation,creatinine,"[877.0, 'mol/L']",unit 'mol/L' does not fit
+3763,10,Ideal Body Weight,height,"[160.0, 'm']",value 160.0 m outside 30-250 cm
+3854,10,Ideal Body Weight,height,"[155.0, 'm']",value 155.0 m outside 30-250 cm
+4385,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,"[140000000.0, 'L']",value 140000000.0 L outside 1000-2000000 µL
+4395,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,"[213000000.0, 'L']",value 213000000.0 L outside 1000-2000000 µL
+4400,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,"[294000000.0, 'L']",value 294000000.0 L outside 1000-2000000 µL
+4419,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,"[297000000.0, 'L']",value 297000000.0 L outside 1000-2000000 µL
+4430,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,"[398000000.0, 'L']",value 398000000.0 L outside 1000-2000000 µL
+4452,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,"[109000.0, 'L']",value 109000.0 L outside 1000-2000000 µL
+4682,22,Maintenance Fluids Calculations,weight,"[1.4, 'sds']",value 1.4 sds outside 0.3-400 kg
+4774,22,Maintenance Fluids Calculations,weight,"[150.0, 'g']",value 150.0 g outside 0.3-400 kg
+4855,22,Maintenance Fluids Calculations,weight,"[3300.0, 'kg']",value 3300.0 kg outside 0.3-400 kg
+4978,22,Maintenance Fluids Calculations,weight,"[268.0, 'g']",value 268.0 g outside 0.3-400 kg
+4983,22,Maintenance Fluids Calculations,weight,"[2850.0, 'kg']",value 2850.0 kg outside 0.3-400 kg
+5099,22,Maintenance Fluids Calculations,weight,"[260.0, 'g']",value 260.0 g outside 0.3-400 kg
+5206,22,Maintenance Fluids Calculations,weight,"[270.0, 'g']",value 270.0 g outside 0.3-400 kg
+5499,26,Sodium Correction for Hyperglycemia,Sodium,"[129.0, 'mg/dL']",unit 'mg/dL' does not fit
+5506,26,Sodium Correction for Hyperglycemia,Sodium,"[138.0, 'mEq/dL']",unit 'mEq/dL' does not fit
+5573,26,Sodium Correction for Hyperglycemia,Sodium,"[143.0, 'mmol/mL']",unit 'mmol/mL' does not fit
+5610,26,Sodium Correction for Hyperglycemia,Sodium,"[141.0, 'mg/dL']",unit 'mg/dL' does not fit
+5737,30,Serum Osmolality,Sodium,"[141.0, 'mEq/dL']",unit 'mEq/dL' does not fit
+5773,30,Serum Osmolality,Sodium,"[140.0, 'mg/dL']",unit 'mg/dL' does not fit
+5814,30,Serum Osmolality,Sodium,"[129.0, 'mg/dL']",unit 'mg/dL' does not fit
+5966,30,Serum Osmolality,Sodium,"[140.0, 'mEq/dL']",unit 'mEq/dL' does not fit
+6084,38,Free Water Deficit,weight,"[3035.0, 'lbs']",value 3035.0 lbs outside 0.3-400 kg
+6187,38,Free Water Deficit,Sodium,"[99.0, 'mEq/L']",value 99.0 mEq/L outside 100-200
+6258,38,Free Water Deficit,Sodium,"[44.0, 'mmol/L']",value 44.0 mmol/L outside 100-200
+6333,39,Anion Gap,Bicarbonate,"[2028.0, 'mmol/L']",value 2028.0 mmol/L outside 1-60
+6337,39,Anion Gap,Sodium,"[137.0, 'mg/dL']",unit 'mg/dL' does not fit
+6346,39,Anion Gap,Sodium,"[136.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+6348,39,Anion Gap,Sodium,"[137.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+6348,39,Anion Gap,Chloride,"[105.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+6348,39,Anion Gap,Bicarbonate,"[22.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+6379,39,Anion Gap,Chloride,"[117.0, 'mg/dL']",unit 'mg/dL' does not fit
+6383,39,Anion Gap,Chloride,"[102.0, 'mEq/dL']",unit 'mEq/dL' does not fit
+6383,39,Anion Gap,Bicarbonate,"[19.0, 'mEq/dL']",unit 'mEq/dL' does not fit
+6383,39,Anion Gap,Sodium,"[132.0, 'mEq/dL']",unit 'mEq/dL' does not fit
+6407,39,Anion Gap,Chloride,"[167.0, 'mEq/L']",value 167.0 mEq/L outside 60-150
+6407,39,Anion Gap,Sodium,"[203.0, 'mEq/L']",value 203.0 mEq/L outside 100-200
+6788,48,PERC Rule for Pulmonary Embolism,Heart Rate or Pulse,"[110120.0, 'beats per minute']",value 110120.0 beats per minute outside 20-300
+6803,48,PERC Rule for Pulmonary Embolism,Heart Rate or Pulse,"[7590.0, 'beats per minute']",value 7590.0 beats per minute outside 20-300
+6804,51,SIRS Criteria,White blood cell count,"[15760.0, 'mL']",unit 'mL' does not fit
+6805,51,SIRS Criteria,White blood cell count,"[10500.0, 'm^3']",unit 'm^3' does not fit
+6806,51,SIRS Criteria,White blood cell count,"[13200.0, 'L']",value 13200.0 L outside 100-500000 µL
+6807,51,SIRS Criteria,White blood cell count,"[10300.0, 'm^3']",unit 'm^3' does not fit
+6808,51,SIRS Criteria,White blood cell count,"[13100.0, 'm^3']",unit 'm^3' does not fit
+6810,51,SIRS Criteria,White blood cell count,"[8600.0, 'm^3']",unit 'm^3' does not fit
+6813,51,SIRS Criteria,White blood cell count,"[19500.0, 'L']",value 19500.0 L outside 100-500000 µL
+6814,51,SIRS Criteria,White blood cell count,"[9600.0, 'm^3']",unit 'm^3' does not fit
+6815,51,SIRS Criteria,White blood cell count,"[18000.0, 'm^3']",unit 'm^3' does not fit
+6822,51,SIRS Criteria,White blood cell count,"[14.2, 'µL']",value 14.2 µL outside 100-500000 µL
+6825,51,SIRS Criteria,White blood cell count,"[18000.0, 'm^3']",unit 'm^3' does not fit
+6829,51,SIRS Criteria,White blood cell count,"[14800.0, 'm^3']",unit 'm^3' does not fit
+6830,51,SIRS Criteria,White blood cell count,"[16.7, 'm^3']",unit 'm^3' does not fit
+6831,51,SIRS Criteria,White blood cell count,"[3930.0, 'm^3']",unit 'm^3' does not fit
+6833,51,SIRS Criteria,White blood cell count,"[9800.0, 'L']",value 9800.0 L outside 100-500000 µL
+6837,51,SIRS Criteria,White blood cell count,"[12000.0, 'm^3']",unit 'm^3' does not fit
+6839,51,SIRS Criteria,White blood cell count,"[8500.0, 'm^3']",unit 'm^3' does not fit
+6840,51,SIRS Criteria,White blood cell count,"[3000.0, 'm^3']",unit 'm^3' does not fit
+6842,51,SIRS Criteria,White blood cell count,"[12.7, 'µL']",value 12.7 µL outside 100-500000 µL
+6843,51,SIRS Criteria,White blood cell count,"[3000.0, 'm^3']",unit 'm^3' does not fit
+6844,51,SIRS Criteria,White blood cell count,"[6970.0, 'm^3']",unit 'm^3' does not fit
+6848,51,SIRS Criteria,White blood cell count,"[11800.0, 'L']",value 11800.0 L outside 100-500000 µL
+6851,51,SIRS Criteria,White blood cell count,"[5800.0, 'm^3']",unit 'm^3' does not fit
+6852,51,SIRS Criteria,White blood cell count,"[9.8, 'L']",value 9.8 L outside 100-500000 µL
+6853,51,SIRS Criteria,White blood cell count,"[6.3, 'L']",value 6.3 L outside 100-500000 µL
+6854,51,SIRS Criteria,White blood cell count,"[12970.0, 'm^3']",unit 'm^3' does not fit
+6856,51,SIRS Criteria,White blood cell count,"[18300.0, 'm^3']",unit 'm^3' does not fit
+6857,51,SIRS Criteria,White blood cell count,"[3800.0, 'm^3']",unit 'm^3' does not fit
+6858,51,SIRS Criteria,White blood cell count,"[16000.0, 'm^3']",unit 'm^3' does not fit
+6861,51,SIRS Criteria,White blood cell count,"[14000.0, 'mL']",unit 'mL' does not fit
+6866,51,SIRS Criteria,White blood cell count,"[6.96, 'µL']",value 6.96 µL outside 100-500000 µL
+6868,51,SIRS Criteria,White blood cell count,"[23.35, 'L']",value 23.35 L outside 100-500000 µL
+6871,51,SIRS Criteria,White blood cell count,"[9500.0, 'm^3']",unit 'm^3' does not fit
+6873,51,SIRS Criteria,White blood cell count,"[11.6, 'µL']",value 11.6 µL outside 100-500000 µL
+6874,51,SIRS Criteria,White blood cell count,"[3100.0, 'm^3']",unit 'm^3' does not fit
+6875,51,SIRS Criteria,White blood cell count,"[3.8, 'L']",value 3.8 L outside 100-500000 µL
+6876,51,SIRS Criteria,White blood cell count,"[8300.0, 'm^3']",unit 'm^3' does not fit
+6879,51,SIRS Criteria,Temperature,"[98.0, 'degrees celsius']",value 98.0 degrees celsius outside 25-45 degrees celsius
+6879,51,SIRS Criteria,White blood cell count,"[19000.0, 'L']",value 19000.0 L outside 100-500000 µL
+6880,51,SIRS Criteria,White blood cell count,"[2.0, 'µL']",value 2.0 µL outside 100-500000 µL
+6881,51,SIRS Criteria,White blood cell count,"[10600.0, 'm^3']",unit 'm^3' does not fit
+6887,51,SIRS Criteria,White blood cell count,"[26.2, 'dL']",unit 'dL' does not fit
+6888,51,SIRS Criteria,White blood cell count,"[16500.0, 'L']",value 16500.0 L outside 100-500000 µL
+6891,51,SIRS Criteria,White blood cell count,"[33000.0, 'm^3']",unit 'm^3' does not fit
+6895,51,SIRS Criteria,White blood cell count,"[12400.0, 'm^3']",unit 'm^3' does not fit
+6901,51,SIRS Criteria,White blood cell count,"[15.0, 'µL']",value 15.0 µL outside 100-500000 µL
+6903,51,SIRS Criteria,White blood cell count,"[14500.0, 'm^3']",unit 'm^3' does not fit
+6908,51,SIRS Criteria,White blood cell count,"[24.5, 'µL']",value 24.5 µL outside 100-500000 µL
+6911,51,SIRS Criteria,White blood cell count,"[30000.0, 'm^3']",unit 'm^3' does not fit
+6912,51,SIRS Criteria,White blood cell count,"[7500.0, 'm^3']",unit 'm^3' does not fit
+6916,51,SIRS Criteria,White blood cell count,"[4500.0, 'm^3']",unit 'm^3' does not fit
+6918,51,SIRS Criteria,White blood cell count,"[15900.0, 'm^3']",unit 'm^3' does not fit
+6922,51,SIRS Criteria,White blood cell count,"[13500.0, 'm^3']",unit 'm^3' does not fit
+6924,51,SIRS Criteria,White blood cell count,"[18500.0, 'm^3']",unit 'm^3' does not fit
+6925,51,SIRS Criteria,White blood cell count,"[16000.0, 'm^3']",unit 'm^3' does not fit
+6930,51,SIRS Criteria,White blood cell count,"[11300.0, 'm^3']",unit 'm^3' does not fit
+6931,51,SIRS Criteria,White blood cell count,"[4200.0, 'm^3']",unit 'm^3' does not fit
+6932,51,SIRS Criteria,White blood cell count,"[6800.0, 'm^3']",unit 'm^3' does not fit
+6934,51,SIRS Criteria,White blood cell count,"[3100.0, 'm^3']",unit 'm^3' does not fit
+6936,51,SIRS Criteria,White blood cell count,"[10800.0, 'm^3']",unit 'm^3' does not fit
+6938,51,SIRS Criteria,White blood cell count,"[860.0, 'm^3']",unit 'm^3' does not fit
+6939,51,SIRS Criteria,White blood cell count,"[17.7, 'µL']",value 17.7 µL outside 100-500000 µL
+6943,51,SIRS Criteria,White blood cell count,"[5600.0, 'm^3']",unit 'm^3' does not fit
+6945,51,SIRS Criteria,White blood cell count,"[4000.0, 'm^3']",unit 'm^3' does not fit
+6948,51,SIRS Criteria,Heart Rate or Pulse,"[15.0, 'beats per minute']",value 15.0 beats per minute outside 20-300
+6949,51,SIRS Criteria,White blood cell count,"[11.1, 'L']",value 11.1 L outside 100-500000 µL
+6950,51,SIRS Criteria,White blood cell count,"[10000.0, 'L']",value 10000.0 L outside 100-500000 µL
+6954,51,SIRS Criteria,White blood cell count,"[12.08, 'L']",value 12.08 L outside 100-500000 µL
+6955,51,SIRS Criteria,White blood cell count,"[10700.0, 'm^3']",unit 'm^3' does not fit
+6957,51,SIRS Criteria,White blood cell count,"[20.0, 'µL']",value 20.0 µL outside 100-500000 µL
+6958,51,SIRS Criteria,White blood cell count,"[12200.0, 'm^3']",unit 'm^3' does not fit
+6959,51,SIRS Criteria,White blood cell count,"[27000.0, 'm^3']",unit 'm^3' does not fit
+6965,51,SIRS Criteria,White blood cell count,"[1900.0, 'mL']",unit 'mL' does not fit
+6968,51,SIRS Criteria,White blood cell count,"[13900.0, 'm^3']",unit 'm^3' does not fit
+6970,51,SIRS Criteria,White blood cell count,"[6200.0, 'm^3']",unit 'm^3' does not fit
+6972,51,SIRS Criteria,White blood cell count,"[4700.0, 'mL']",unit 'mL' does not fit
+6973,51,SIRS Criteria,White blood cell count,"[1.1, 'L']",value 1.1 L outside 100-500000 µL
+6975,51,SIRS Criteria,White blood cell count,"[30500.0, 'm^3']",unit 'm^3' does not fit
+6976,51,SIRS Criteria,White blood cell count,"[16200.0, 'm^3']",unit 'm^3' does not fit
+6977,51,SIRS Criteria,White blood cell count,"[13700.0, 'm^3']",unit 'm^3' does not fit
+6979,51,SIRS Criteria,White blood cell count,"[7900.0, 'm^3']",unit 'm^3' does not fit
+6981,51,SIRS Criteria,White blood cell count,"[4860.0, 'm^3']",unit 'm^3' does not fit
+6982,51,SIRS Criteria,White blood cell count,"[8940.0, 'm^3']",unit 'm^3' does not fit
+6983,51,SIRS Criteria,White blood cell count,"[11400.0, 'm^3']",unit 'm^3' does not fit
+6984,51,SIRS Criteria,White blood cell count,"[9300.0, 'm^3']",unit 'm^3' does not fit
+6988,51,SIRS Criteria,White blood cell count,"[14000.0, 'm^3']",unit 'm^3' does not fit
+6990,51,SIRS Criteria,White blood cell count,"[5500.0, 'm^3']",unit 'm^3' does not fit
+6992,51,SIRS Criteria,White blood cell count,"[9550.0, 'm^3']",unit 'm^3' does not fit
+6993,51,SIRS Criteria,White blood cell count,"[17000.0, 'm^3']",unit 'm^3' does not fit
+6995,51,SIRS Criteria,White blood cell count,"[11.2, 'L']",value 11.2 L outside 100-500000 µL
+6999,51,SIRS Criteria,White blood cell count,"[5700.0, 'm^3']",unit 'm^3' does not fit
+7005,51,SIRS Criteria,White blood cell count,"[14000.0, 'm^3']",unit 'm^3' does not fit
+7006,51,SIRS Criteria,White blood cell count,"[9700.0, 'm^3']",unit 'm^3' does not fit
+7007,51,SIRS Criteria,White blood cell count,"[16300.0, 'm^3']",unit 'm^3' does not fit
+7009,51,SIRS Criteria,White blood cell count,"[13700.0, 'm^3']",unit 'm^3' does not fit
+7010,51,SIRS Criteria,White blood cell count,"[12500.0, 'm^3']",unit 'm^3' does not fit
+7011,51,SIRS Criteria,White blood cell count,"[15500.0, 'm^3']",unit 'm^3' does not fit
+7013,51,SIRS Criteria,White blood cell count,"[19000.0, 'm^3']",unit 'm^3' does not fit
+7014,51,SIRS Criteria,White blood cell count,"[5400.0, 'm^3']",unit 'm^3' does not fit
+7015,51,SIRS Criteria,White blood cell count,"[80000.0, 'm^3']",unit 'm^3' does not fit
+7017,51,SIRS Criteria,White blood cell count,"[5000.0, 'm^3']",unit 'm^3' does not fit
+7019,51,SIRS Criteria,White blood cell count,"[12440000.0, 'µL']",value 12440000.0 µL outside 100-500000 µL
+7021,51,SIRS Criteria,White blood cell count,"[11200.0, 'm^3']",unit 'm^3' does not fit
+7024,51,SIRS Criteria,White blood cell count,"[107700.0, 'm^3']",unit 'm^3' does not fit
+7025,51,SIRS Criteria,White blood cell count,"[4700.0, 'm^3']",unit 'm^3' does not fit
+7027,51,SIRS Criteria,White blood cell count,"[6.4, 'L']",value 6.4 L outside 100-500000 µL
+7029,51,SIRS Criteria,White blood cell count,"[6000.0, 'L']",value 6000.0 L outside 100-500000 µL
+7031,51,SIRS Criteria,White blood cell count,"[80.0, 'm^3']",unit 'm^3' does not fit
+7034,51,SIRS Criteria,White blood cell count,"[12760.0, 'm^3']",unit 'm^3' does not fit
+7035,51,SIRS Criteria,White blood cell count,"[79500.0, 'm^3']",unit 'm^3' does not fit
+7664,60,Body Surface Area Calculator,height,"[148.0, 'm']",value 148.0 m outside 30-250 cm
+8070,60,Body Surface Area Calculator,height,"[1.67, 'cm']",value 1.67 cm outside 30-250 cm
+8370,62,Adjusted Body Weight,height,"[148.0, 'm']",value 148.0 m outside 30-250 cm
+8416,62,Adjusted Body Weight,height,"[155.0, 'm']",value 155.0 m outside 30-250 cm
+8913,63,Delta Gap,Bicarbonate,"[25.0, 'mg/dL']",unit 'mg/dL' does not fit
+8917,63,Delta Gap,Bicarbonate,"[11.3, 'µmol/L']",unit 'µmol/L' does not fit
+8952,63,Delta Gap,Sodium,"[39.0, 'mmol/L']",value 39.0 mmol/L outside 100-200
+8959,63,Delta Gap,Sodium,"[137.0, 'mg/dL']",unit 'mg/dL' does not fit
+8977,63,Delta Gap,Bicarbonate,"[49.0, 'mg/dL']",unit 'mg/dL' does not fit
+9001,63,Delta Gap,Sodium,"[137.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+9001,63,Delta Gap,Chloride,"[105.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+9001,63,Delta Gap,Bicarbonate,"[22.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+9021,63,Delta Gap,Sodium,"[136.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+9125,63,Delta Gap,Bicarbonate,"[4.3, 'mEq/dL']",unit 'mEq/dL' does not fit
+9166,63,Delta Gap,Sodium,"[150.0, 'mg/dL']",unit 'mg/dL' does not fit
+9171,63,Delta Gap,Chloride,"[10.0, 'mmol/L']",value 10.0 mmol/L outside 60-150
+9233,64,Delta Ratio,Sodium,"[136.0, 'mmol/dL']",unit 'mmol/dL' does not fit
+9333,64,Delta Ratio,Bicarbonate,"[4.3, 'mEq/dL']",unit 'mEq/dL' does not fit
+9367,64,Delta Ratio,Sodium,"[96.0, 'mmol/L']",value 96.0 mmol/L outside 100-200
+9381,64,Delta Ratio,Chloride,"[52.0, 'mmol/L']",value 52.0 mmol/L outside 60-150
+9381,64,Delta Ratio,Bicarbonate,"[72.2, 'mmol/L']",value 72.2 mmol/L outside 1-60
+9389,64,Delta Ratio,Bicarbonate,"[316.2, 'mmol/L']",value 316.2 mmol/L outside 1-60
+9421,64,Delta Ratio,Chloride,"[89.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9421,64,Delta Ratio,Bicarbonate,"[15.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9421,64,Delta Ratio,Sodium,"[124.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9483,65,Albumin Corrected Anion Gap,Sodium,"[137.0, 'mg/dL']",unit 'mg/dL' does not fit
+9493,65,Albumin Corrected Anion Gap,Chloride,"[89.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9493,65,Albumin Corrected Anion Gap,Bicarbonate,"[15.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9493,65,Albumin Corrected Anion Gap,Sodium,"[124.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9524,65,Albumin Corrected Anion Gap,Albumin,"[2.5, 'mg/dL']",unit 'mg/dL' does not fit
+9542,65,Albumin Corrected Anion Gap,Albumin,"[5.0, 'mg/dL']",unit 'mg/dL' does not fit
+9560,66,Albumin Corrected Delta Gap,Chloride,"[89.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9560,66,Albumin Corrected Delta Gap,Bicarbonate,"[15.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9560,66,Albumin Corrected Delta Gap,Sodium,"[124.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9565,66,Albumin Corrected Delta Gap,Albumin,"[5.0, 'mg/dL']",unit 'mg/dL' does not fit
+9580,66,Albumin Corrected Delta Gap,Chloride,"[54.0, 'mEq/L']",value 54.0 mEq/L outside 60-150
+9586,66,Albumin Corrected Delta Gap,Albumin,"[2.5, 'mg/dL']",unit 'mg/dL' does not fit
+9607,67,Albumin Corrected Delta Ratio,Albumin,"[3.2, 'mg/dL']",unit 'mg/dL' does not fit
+9613,67,Albumin Corrected Delta Ratio,Chloride,"[154.0, 'mEq/L']",value 154.0 mEq/L outside 60-150
+9625,67,Albumin Corrected Delta Ratio,Chloride,"[89.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9625,67,Albumin Corrected Delta Ratio,Bicarbonate,"[15.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9625,67,Albumin Corrected Delta Ratio,Sodium,"[124.0, 'mEq/mL']",unit 'mEq/mL' does not fit
+9649,67,Albumin Corrected Delta Ratio,Albumin,"[2.5, 'mg/dL']",unit 'mg/dL' does not fit
+9814,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[70, 'mg']",unit 'mg' does not fit
+9817,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[10, 'mg']",unit 'mg' does not fit
+9818,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[40, 'mg']",unit 'mg' does not fit
+9821,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[70, 'mg']",unit 'mg' does not fit
+9824,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[60, 'mg']",unit 'mg' does not fit
+9829,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[40, 'mg']",unit 'mg' does not fit
+9830,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[50, 'mg']",unit 'mg' does not fit
+9832,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[20, 'mg']",unit 'mg' does not fit
+9833,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[10, 'mg']",unit 'mg' does not fit
+9842,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[50, 'mg']",unit 'mg' does not fit
+9843,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[30, 'mg']",unit 'mg' does not fit
+9851,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[30, 'mg']",unit 'mg' does not fit
+9852,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[40, 'mg']",unit 'mg' does not fit
+9853,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[70, 'mg']",unit 'mg' does not fit
+9855,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[70, 'mg']",unit 'mg' does not fit
+9859,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[20, 'mg']",unit 'mg' does not fit
+9869,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[70, 'mg']",unit 'mg' does not fit
+9871,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[20, 'mg']",unit 'mg' does not fit
+9873,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[60, 'mg']",unit 'mg' does not fit
+9874,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[20, 'mg']",unit 'mg' does not fit
+9878,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[40, 'mg']",unit 'mg' does not fit
+9882,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[10, 'mg']",unit 'mg' does not fit
+9885,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[60, 'mg']",unit 'mg' does not fit
+9887,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[20, 'mg']",unit 'mg' does not fit
+9889,49,Morphine Milligram Equivalents (MME) Calculator,FentANYL patch Dose,"[20, 'mg']",unit 'mg' does not fit

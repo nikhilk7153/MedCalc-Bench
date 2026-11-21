@@ -1,0 +1,265 @@
+Row Number,v1.0 Row Number,Calculator ID,Calculator Name,Action,Reason,Verified Row Number,Old Note ID,New Note ID,Old Ground Truth Answer,New Ground Truth Answer,Audit Flag
+3,3,2,Creatinine Clearance (Cockcroft-Gault Equation),Replaced with new Verified note (checked),"Creatinine Clearance: only a baseline creatinine, no admission value",15,pmc-6482549-1,pmc-4886302-1,25.017,31.84454,Both
+11,11,2,Creatinine Clearance (Cockcroft-Gault Equation),Replaced with new Verified note (same calculator),Resolved: row removed or replaced,11,pmc-6331344-1,pmc-7737526-1,12.949,10.01786,Model only
+15,15,2,Creatinine Clearance (Cockcroft-Gault Equation),Replaced with new Verified note (same calculator),Resolved: row removed or replaced,13,pmc-7819202-1,usmle-3434,37.663,86.89835,Both
+18,18,2,Creatinine Clearance (Cockcroft-Gault Equation),Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 18,sheet-18,pmc-5411661-1,pmc-2813128-1,6.075,33.03435,Clean
+23,23,3,CKD-EPI Equations for Glomerular Filtration Rate,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,21,pmc-8520182-1,pmc-6605692-1,83.072,7.45479,Both
+25,25,3,CKD-EPI Equations for Glomerular Filtration Rate,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,22,pmc-3857264-1,pmc-8173432-1,80.852,46.49254,Both
+29,29,3,CKD-EPI Equations for Glomerular Filtration Rate,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 29,sheet-29,pmc-6988719-1,pmc-3927191-1,4.904,28.13233,Clean
+30,30,3,CKD-EPI Equations for Glomerular Filtration Rate,Replaced with new Verified note (checked),CKD-EPI: patient on maintenance hemodialysis; replaced with the v1.1/Verified note for this row (user decision 2026-10-17),30,pmc-7405101-3,pmc-2275218-1,8.471,7.29346,Clean
+31,31,3,CKD-EPI Equations for Glomerular Filtration Rate,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,23,pmc-5624663-1,pmc-8521725-1,71.367,48.44101,Model only
+42,42,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,42,pmc-7099753-3,pmc-7099753-3,3,5,Clean
+43,43,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,43,pmc-8136881-1,pmc-8136881-1,8,6,Clean
+45,45,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,45,pmc-6959961-2,pmc-6959961-2,3,5,Clean
+46,46,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,46,pmc-3317869-1,pmc-3317869-1,6,4,Clean
+47,47,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,47,pmc-3888688-1,pmc-3888688-1,2,1,Clean
+48,48,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,48,pmc-6939804-1,pmc-6939804-1,4,3,Clean
+51,51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,51,pmc-3318870-1,pmc-3318870-1,3,1,Clean
+60,60,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,60,pmc-4464016-1,pmc-4464016-1,4,6,Clean
+103,103,7,Calcium Correction for Hypoalbuminemia,Replaced with Verified version of same note,Resolved: note edited,103,pmc-8173516-2,pmc-8173516-2,8.66,8.66,Both
+107,107,7,Calcium Correction for Hypoalbuminemia,Replaced with Verified version of same note,Resolved: note edited,107,pmc-6460971-1,pmc-6460971-1,8.94,8.94,Model only
+114,114,7,Calcium Correction for Hypoalbuminemia,Replaced with Verified version of same note,Resolved: label corrected to our value,114,pmc-5051225-2,pmc-5051225-2,8.96,10.0181,Both
+117,117,7,Calcium Correction for Hypoalbuminemia,Replaced with Verified version of same note,Resolved: label corrected to our value,117,pmc-5051225-1,pmc-5051225-1,12.72,11.141,Both
+119,119,7,Calcium Correction for Hypoalbuminemia,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,110,pmc-7425623-1,pmc-7279913-1,9.66,9.16,Manual only
+120,,7,Calcium Correction for Hypoalbuminemia,Added new Verified note (calculator top-up),v1.0 has 19 rows,111,,pmc-8293858-1,,9.8,
+122,121,8,Wells' Criteria for Pulmonary Embolism,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,122,pmc-8494530-1,pmc-8494530-1,6,4.5,Clean
+124,123,8,Wells' Criteria for Pulmonary Embolism,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,124,pmc-8647083-1,pmc-8647083-1,6,4.5,Clean
+131,130,8,Wells' Criteria for Pulmonary Embolism,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,131,pmc-8294994-1,pmc-8294994-1,2.5,5.5,Clean
+133,132,8,Wells' Criteria for Pulmonary Embolism,Replaced with new Verified note (checked),Wells' PE: cancer treatment timing relative to admission not documented,127,pmc-2803837-1,pmc-8443390-1,1,4.5,Clean
+137,136,8,Wells' Criteria for Pulmonary Embolism,Replaced with new Verified note (checked),Wells' PE: no pre-treatment heart rate; surgery happened after admission,130,usmle-9051,pmc-5295575-1,1.5,0,Clean
+138,137,8,Wells' Criteria for Pulmonary Embolism,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,138,pmc-6020350-1,pmc-6020350-1,1.5,0,Clean
+139,138,8,Wells' Criteria for Pulmonary Embolism,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,139,pmc-8209631-1,pmc-8209631-1,1.5,0,Clean
+141,140,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,141,pmc-5141308-1,pmc-6007257-1,38.256,22.5803,Both
+144,143,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,142,pmc-4393486-1,pmc-6902272-1,39.086,49.67659,Both
+147,146,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,143,pmc-4494093-1,pmc-6691829-1,40.402,8.85245,Both
+148,147,9,MDRD GFR Equation,Replaced with Verified version of same note,Resolved: note edited,148,pmc-1847820-1,pmc-1847820-1,4.307,4.30749,Both
+151,150,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,144,pmc-8425126-1,pmc-4652317-1,69.658,3.61309,Model only
+153,152,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,147,pmc-6009022-1,pmc-7787914-1,3.685,38.13722,Both
+154,153,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,149,pmc-4756134-1,pmc-3104662-1,66.08,49.32243,Both
+160,159,9,MDRD GFR Equation,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,151,pmc-4227449-1,pmc-8432418-1,5.978,5.49779,Model only
+192,191,11,QTc Bazett Calculator,Replaced (duplicate of one-shot example),Same note as the one-shot example for this calculator,192,12,12,452.863,540.48209,Clean
+232,231,16,Wells' Criteria for DVT,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,232,pmc-8168998-1,pmc-8168998-1,-2,3,Clean
+241,240,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,2,2,2,3,Clean
+242,241,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,3,3,2,3,Clean
+243,242,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,4,4,2,3,Clean
+244,243,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,5,5,2,3,Clean
+245,244,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,6,6,2,2,Clean
+246,245,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,7,7,2,3,Clean
+247,246,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,8,8,1,2,Clean
+248,247,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,9,9,2,2,Clean
+249,248,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,10,10,2,2,Clean
+250,249,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,11,11,2,3,Clean
+251,250,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,12,12,2,3,Clean
+252,251,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,13,13,1,2,Clean
+253,252,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,14,14,2,2,Clean
+254,253,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,15,15,1,2,Clean
+255,254,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,16,16,3,3,Clean
+256,255,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,17,17,2,3,Clean
+257,256,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,18,18,1,2,Clean
+258,257,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,19,19,2,2,Clean
+259,258,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,20,20,2,2,Clean
+260,259,17,Revised Cardiac Risk Index for Pre-Operative Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,21,21,3,5,Clean
+269,268,18,HEART Score for Major Cardiac Events,Replaced with new Verified note (checked),HEART: troponin 0.44 ng/mL given without a reference limit,261,pmc-8053007-1,pmc-7966959-1,5,4,Clean
+272,271,18,HEART Score for Major Cardiac Events,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,272,pmc-7305571-1,pmc-7305571-1,3,6,Clean
+273,272,18,HEART Score for Major Cardiac Events,Replaced with new Verified note (checked),HEART: ECG only in an unavailable figure,263,usmle-9492,pmc-7997683-3,1,5,Clean
+275,274,18,HEART Score for Major Cardiac Events,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,275,pmc-7780869-1,pmc-7780869-1,4,5,Clean
+276,275,18,HEART Score for Major Cardiac Events,Replaced with new Verified note (checked),HEART: initial troponin inconclusive,266,pmc-4793133-1,pmc-6415980-1,7,7,Clean
+285,284,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,284,pmc-4721898-2,pmc-3813587-1,37492.904,6.21522,Manual only
+288,287,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Replaced with Verified version of same note,Resolved: note edited,288,pmc-7184854-1,pmc-7184854-1,3.886,3.88593,Manual only
+290,289,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Replaced with Verified version of same note,Resolved: note edited,290,pmc-5066381-2,pmc-5066381-2,6.659,6.65888,Both
+292,291,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,285,pmc-5569276-1,pmc-6244097-1,0.169,1.71194,Both
+303,302,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,303,usmle-414,usmle-414,3,4,Clean
+305,304,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,305,usmle-12316,usmle-12316,3,3,Clean
+306,305,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,306,usmle-8066,usmle-8066,2,3,Clean
+308,307,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,308,usmle-6356,usmle-6356,2,2,Clean
+309,308,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,309,usmle-4026,usmle-4026,3,4,Clean
+310,309,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,310,pmc-4327960-1,pmc-4327960-1,2,3,Clean
+312,311,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,312,usmle-6179,usmle-6179,2,3,Clean
+313,312,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,313,pmc-4307710-1,pmc-4307710-1,1,2,Clean
+314,313,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,314,usmle-9610,usmle-9610,0,1,Clean
+316,315,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,316,usmle-4327,usmle-4327,2,3,Clean
+317,316,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,317,usmle-8175,usmle-8175,3,4,Clean
+323,322,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,321,usmle-8221,pmc-6176125-1,9.2,92.3,Both
+324,323,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,322,pmc-7769218-1,pmc-3237159-1,60,104.0,Both
+329,328,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,323,pmc-6378717-1,pmc-6445561-1,4.4,86.0,Manual only
+331,330,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,324,pmc-4184697-1,pmc-8138236-1,16,94.7,Both
+333,332,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,325,pmc-3893835-1,pmc-4383127-1,28,85.0,Both
+335,334,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,326,pmc-5970484-1,pmc-4578041-3,78.1,44.0,Both
+338,337,22,Maintenance Fluids Calculations,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,327,pmc-6497486-1,pmc-6384032-1,47.216,81.0,Both
+341,340,23,MELD Na (UNOS/OPTN),Replaced with Verified version of same note,Resolved: label corrected to our value,341,pmc-4528787-1,pmc-4528787-1,20,18.0,Remove calculator (bad equation)
+342,341,23,MELD Na (UNOS/OPTN),Replaced with Verified version of same note,Resolved: label corrected to our value,342,pmc-3094288-1,pmc-3094288-1,10,11.0,Remove calculator (bad equation)
+343,342,23,MELD Na (UNOS/OPTN),Replaced with Verified version of same note,Resolved: label corrected to our value,343,pmc-3741440-1,pmc-3741440-1,30,26.0,Remove calculator (bad equation)
+344,343,23,MELD Na (UNOS/OPTN),Replaced with Verified version of same note,Resolved: label corrected to our value,344,pmc-3701851-1,pmc-3701851-1,20,23.0,Remove calculator (bad equation)
+345,344,23,MELD Na (UNOS/OPTN),Replaced with Verified version of same note,Resolved: label corrected to our value,345,pmc-4528898-1,pmc-4528898-1,22,24.0,Remove calculator (bad equation)
+349,348,25,HAS-BLED Score for Major Bleeding Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,5,5,3,2,Clean
+351,350,25,HAS-BLED Score for Major Bleeding Risk,Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,7,7,5,4,Clean
+367,366,26,Sodium Correction for Hyperglycemia,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,381,usmle-1945,pmc-7232043-1,133.28,108.656,Manual only
+368,367,26,Sodium Correction for Hyperglycemia,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,383,usmle-5686,usmle-5686,137.84,137.84,Model only
+375,374,26,Sodium Correction for Hyperglycemia,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 375,sheet-375,pmc-7797408-1,pmc-6311974-1,139.392,131.56,Manual only
+376,375,26,Sodium Correction for Hyperglycemia,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,384,pmc-6287356-1,pmc-7455384-1,154.36,137.248,Model only
+383,382,26,Sodium Correction for Hyperglycemia,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 383,sheet-383,pmc-7544303-1,pmc-2943705-1,142.896,134.4,Manual only
+406,405,30,Serum Osmolality,Replaced with new Verified note (checked),Serum Osmolality: only a glucose-corrected sodium is given,432,pmc-3127313-1,pmc-3950226-1,272.317,367.35714,Manual only
+409,408,30,Serum Osmolality,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,424,pmc-3354470-1,pmc-4901012-1,283.151,304.13889,Manual only
+415,414,30,Serum Osmolality,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,425,pmc-6057019-1,pmc-7544303-1,303.028,311.51722,Manual only
+417,416,30,Serum Osmolality,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,428,pmc-5369300-1,pmc-7294477-1,290.206,316.92031,Manual only
+418,417,30,Serum Osmolality,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,430,pmc-6526544-1,pmc-5292295-1,309.278,279.79365,Both
+419,418,30,Serum Osmolality,Replaced with Verified version of same note,Resolved: note edited,434,pmc-4663776-1,pmc-4663776-1,304.921,293.13492,Manual only
+426,425,31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),Replaced with new Verified note (checked),HOMA-IR: Verified has no Extracted HOMA-IR note left; use the v1.0 train case pmc-3114100-1 (insulin 21 pmol/L as written; v1.0 had 756) (user decision 2026-10-17),extra-1,pmc-4864000-2,pmc-3114100-1,13.481,181.627,Both
+427,426,31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 427,sheet-427,pmc-6128601-1,pmc-6128601-1,1.956,1.95556,Clean
+428,427,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,2,2,7,7,Clean
+429,428,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,3,3,10,10,Clean
+430,429,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,4,4,4,4,Clean
+431,430,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,5,5,7,7,Clean
+432,431,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,6,6,14,14,Clean
+433,432,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,7,7,12,12,Clean
+434,433,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,8,8,11,11,Clean
+435,434,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,9,9,15,15,Clean
+436,435,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,10,10,11,11,Clean
+437,436,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,11,11,10,11,Clean
+438,437,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,12,12,9,9,Clean
+439,438,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,13,13,11,11,Clean
+440,439,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,14,14,16,16,Clean
+441,440,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,15,15,11,11,Clean
+442,441,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,16,16,9,10,Clean
+443,442,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,17,17,12,13,Clean
+444,443,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,18,18,12,12,Clean
+445,444,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,19,19,13,14,Clean
+446,445,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,20,20,10,10,Clean
+447,446,32,Charlson Comorbidity Index (CCI),Note and inputs from test_data_1_17_2025 (same note),Corrected version of the handwritten note,,21,21,11,12,Clean
+448,447,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,481,usmle-3456,usmle-3456,3,4,Clean
+449,448,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,482,usmle-6072,usmle-6072,1,2,Clean
+451,450,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,484,pmc-3603656-1,pmc-3603656-1,3,4,Clean
+454,453,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,487,pmc-7219994-1,pmc-7219994-1,3,3,Clean
+455,454,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,488,usmle-1376,usmle-1376,3,2,Clean
+457,456,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,490,pmc-8380012-1,pmc-8380012-1,1,2,Clean
+458,457,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,491,usmle-7961,usmle-7961,2,4,Clean
+460,459,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,493,usmle-1375,usmle-1375,2,3,Clean
+462,461,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,495,pmc-7979303-1,pmc-7979303-1,3,4,Clean
+463,462,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,496,usmle-965,usmle-965,1,2,Clean
+464,463,33,FeverPAIN Score for Strep Pharyngitis,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,497,usmle-6762,usmle-6762,1,3,Clean
+472,471,38,Free Water Deficit,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 472,sheet-472,pmc-8059042-1,pmc-8059042-1,-0.763,-0.76286,Clean
+474,473,38,Free Water Deficit,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,502,pmc-5910524-1,pmc-7050167-1,-0.0943,-1.02857,Both
+482,481,38,Free Water Deficit,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,503,pmc-8315083-1,pmc-6834714-1,-0.549,0.42857,Both
+483,482,38,Free Water Deficit,Replaced with new Verified note (checked),Free Water Deficit: no pre-treatment sodium,508,usmle-5862,pmc-6321693-1,0.032,0.53357,Both
+484,483,38,Free Water Deficit,Replaced with Verified version of same note,Resolved: label corrected to our value,517,pmc-7405338-1,pmc-7405338-1,0.506,0.45429,Model only
+486,485,38,Free Water Deficit,Replaced with Verified version of same note,Resolved: note edited,519,pmc-3674643-1,pmc-3674643-1,-1.3,-1.30179,Both
+487,486,38,Free Water Deficit,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,507,usmle-1760,pmc-4531576-1,-1.07,2.14286,Both
+490,489,39,Anion Gap,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,523,pmc-3477656-1,pmc-5051109-1,18,14.0,Both
+494,493,39,Anion Gap,Replaced with new Verified note (checked),"Anion Gap: electrolyte input taken from a blood gas, no serum value in the note",527,pmc-3950226-1,pmc-7683122-1,20.5,16.0,Clean
+496,495,39,Anion Gap,Replaced with Verified version of same note,Resolved: label corrected to our value,529,pmc-4530922-1,pmc-4530922-1,18.5,14.0,Model only
+500,499,39,Anion Gap,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 500,sheet-500,pmc-2657771-1,pmc-2657771-1,14,14,Clean
+504,503,39,Anion Gap,Replaced with Verified version of same note,Resolved: note edited,537,pmc-6031073-1,pmc-6031073-1,29,30.0,Manual only
+508,507,40,Fractional Excretion of Sodium (FENa),Replaced with new Verified note (same calculator),Resolved: row removed or replaced,561,pmc-8088595-1,pmc-4440465-1,0.247,2.69633,Both
+510,509,40,Fractional Excretion of Sodium (FENa),Replaced with Verified version of same note,Resolved: missing inputs added and relabelled,563,pmc-7327389-1,pmc-7327389-1,4.164,0.27093,Both
+514,513,44,LDL Calculated,Replaced with Verified version of same note,Resolved: label corrected to our value,582,pmc-8523937-1,pmc-8523937-1,137.38,125.0588,Both
+515,514,44,LDL Calculated,Replaced with Verified version of same note,Resolved: note edited,583,pmc-3438267-1,pmc-3438267-1,153.6,153.6,Model only
+518,517,44,LDL Calculated,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 518,sheet-518,pmc-4534995-1,pmc-4534995-1,171.2,171.2,Clean
+520,519,44,LDL Calculated,Replaced with Verified version of same note,Resolved: note edited,588,pmc-3158562-1,pmc-3158562-1,119,119.0,Model only
+521,520,44,LDL Calculated,Replaced with Verified version of same note,Resolved: note edited,589,pmc-2803825-1,pmc-2803825-1,169.2,169.2,Model only
+522,521,44,LDL Calculated,Replaced with Verified version of same note,Resolved: label corrected to our value,590,pmc-4296242-1,pmc-4296242-1,109.12,92.2464,Both
+523,522,44,LDL Calculated,Replaced with Verified version of same note,Resolved: note edited,591,pmc-3992346-1,pmc-3992346-1,159.4,159.4,Model only
+527,526,44,LDL Calculated,Replaced with Verified version of same note,Resolved: note edited,595,pmc-4621682-1,pmc-4621682-1,136.8,136.8,Model only
+528,527,44,LDL Calculated,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 528,sheet-528,pmc-2767135-1,pmc-2767135-1,82.8,82.8,Clean
+529,528,44,LDL Calculated,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 529,sheet-529,pmc-3800306-1,pmc-3800306-1,89,89,Clean
+531,530,44,LDL Calculated,Replaced with Verified version of same note,Resolved: note edited,599,pmc-3744738-1,pmc-3744738-1,91.4,91.4,Model only
+532,531,44,LDL Calculated,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 532,sheet-532,pmc-2770547-1,pmc-2770547-1,83,83,Clean
+550,549,45,CURB-65 Score for Pneumonia Severity,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,558,usmle-8555,usmle-8555,2,2,Clean
+553,552,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,601,pmc-7871576-1,pmc-7871576-1,0,29.023,Remove calculator (bad equation)
+554,553,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,602,pmc-8279282-1,pmc-8279282-1,0,6.732,Remove calculator (bad equation)
+555,554,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,603,pmc-8583680-1,pmc-8583680-1,0,0.896,Remove calculator (bad equation)
+556,555,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,604,pmc-3651988-1,pmc-3651988-1,0,0.668,Remove calculator (bad equation)
+557,556,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,605,pmc-3313753-1,pmc-3313753-1,0.1,10.402,Remove calculator (bad equation)
+558,557,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,606,pmc-7717085-1,pmc-7717085-1,1,24.904,Remove calculator (bad equation)
+559,558,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,607,usmle-1128,usmle-1128,0.1,6.017,Remove calculator (bad equation)
+560,559,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,608,pmc-6118291-1,pmc-6118291-1,1,61.022,Remove calculator (bad equation)
+561,560,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,609,pmc-6530099-1,pmc-6530099-1,0,5.197,Remove calculator (bad equation)
+562,561,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: missing inputs added and relabelled,610,pmc-4429202-1,pmc-4429202-1,0,3.647,Remove calculator (bad equation)
+563,562,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: missing inputs added and relabelled,611,pmc-4114920-1,pmc-4114920-1,0,0.276,Remove calculator (bad equation)
+564,563,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,612,usmle-1989,usmle-1989,0.9,25.274,Remove calculator (bad equation)
+565,564,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: label corrected to our value,613,pmc-7887157-1,pmc-7887157-1,0,6.625,Remove calculator (bad equation)
+566,565,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: missing inputs added and relabelled,614,pmc-4709961-1,pmc-4709961-1,0,0.904,Remove calculator (bad equation)
+567,566,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with Verified version of same note,Resolved: missing inputs added and relabelled,615,pmc-2813536-1,pmc-2813536-1,0,10.975,Remove calculator (bad equation)
+568,567,46,Framingham Risk Score for Hard Coronary Heart Disease,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,616,pmc-2769292-1,pmc-2902014-3,0,16.526,Remove calculator (bad equation)
+569,568,48,PERC Rule for Pulmonary Embolism,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,621,pmc-7315174-1,pmc-7315174-1,3,4,Clean
+570,569,48,PERC Rule for Pulmonary Embolism,Replaced with new Verified note (checked),PERC: heart rate only after treatment,622,pmc-7343298-3,pmc-2840956-1,1,0,Clean
+573,572,48,PERC Rule for Pulmonary Embolism,Replaced with new Verified note (checked),PERC: oxygen saturation only on supplemental oxygen,624,pmc-4614570-1,usmle-5182,1,3,Clean
+576,575,48,PERC Rule for Pulmonary Embolism,Replaced with new Verified note (checked),PERC: oxygen saturation only on supplemental oxygen,627,pmc-8088400-1,pmc-7061779-1,1,1,Clean
+586,585,48,PERC Rule for Pulmonary Embolism,Replaced with new Verified note (checked),PERC: oxygen saturation only on supplemental oxygen,633,pmc-3883470-1,pmc-6283766-1,3,0,Clean
+589,588,51,SIRS Criteria,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,641,pmc-6935617-1,pmc-6935617-1,2,1,Clean
+592,591,51,SIRS Criteria,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,644,pmc-5578525-1,pmc-5578525-1,2,1,Clean
+593,592,51,SIRS Criteria,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,645,pmc-6171780-1,pmc-6171780-1,2,0,Clean
+596,595,51,SIRS Criteria,Replaced with new Verified note (same calculator),SIRS: 14-year-old scored with adult thresholds,646,pmc-3484318-2,pmc-6029742-1,3,2,Clean
+597,596,51,SIRS Criteria,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,649,pmc-4499596-1,pmc-4499596-1,2,1,Clean
+600,599,51,SIRS Criteria,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,652,trec-cds-2016-23,trec-cds-2016-23,2,0,Clean
+601,600,51,SIRS Criteria,Replaced with new Verified note (same calculator),SIRS: young child scored with adult thresholds,648,pmc-7568833-1,pmc-7189307-1,3,3,Clean
+602,601,51,SIRS Criteria,Replaced with new Verified note (same calculator),SIRS: young child scored with adult thresholds,650,pmc-4429388-1,pmc-3048475-1,3,3,Clean
+603,602,51,SIRS Criteria,Replaced with new Verified note (same calculator),"SIRS: WBC is ascitic fluid, not blood",651,pmc-6440265-1,pmc-5500273-1,4,2,Clean
+606,605,51,SIRS Criteria,Replaced with new Verified note (same calculator),SIRS: young child scored with adult thresholds,653,pmc-8008694-1,pmc-5997433-1,3,3,Clean
+607,606,51,SIRS Criteria,Replaced with Verified version of same note,Rule-based note with 1:1 Verified match and a different answer,659,pmc-7652029-1,pmc-7652029-1,2,1,Clean
+608,607,51,SIRS Criteria,Replaced with new Verified note (same calculator),SIRS: WBC and vital signs from encounters 27 days apart,654,pmc-7788814-1,pmc-1780062-1,2,2,Clean
+637,636,57,QTc Framingham Calculator,Replaced (duplicate of one-shot example),Same note as the one-shot example for this calculator,689,9,9,377.74,457.66718,Clean
+706,705,60,Body Surface Area Calculator,Replaced with new Verified note (same calculator),Still open,744,usmle-8635,pmc-8453642-1,1.844,2.00305,Manual only
+718,717,62,Adjusted Body Weight,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,762,pmc-8641749-1,pmc-2732131-1,49.669,58.62918,Model only
+723,722,62,Adjusted Body Weight,Replaced with new Verified note (same calculator),Still open,765,usmle-7046,pmc-3995698-1,85.795,52.41895,Manual only
+729,728,63,Delta Gap,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 729,sheet-729,pmc-4614622-1,pmc-4614622-1,14.4,14.4,Clean
+739,738,63,Delta Gap,Replaced with new Verified note (checked),Delta Gap: electrolytes only after treatment,782,pmc-8387066-1,usmle-5483,13,4.0,Clean
+740,739,63,Delta Gap,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 740,sheet-740,pmc-8182158-1,pmc-6644245-1,2.1,11,Clean
+749,748,64,Delta Ratio,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 749,sheet-749,pmc-5622898-1,pmc-5458028-1,1.238,0.94737,Manual only
+750,749,64,Delta Ratio,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 750,sheet-750,pmc-8627704-1,pmc-8627704-1,0.881,0.88095,Clean
+752,751,64,Delta Ratio,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,802,pmc-7713822-1,pmc-4897681-1,0.479,0.875,Manual only
+754,753,64,Delta Ratio,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,803,pmc-2481241-1,usmle-5215,12.833,1.42857,Manual only
+756,755,64,Delta Ratio,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 756,sheet-756,pmc-3094288-1,pmc-6462314-1,-2,0.42714,Model only
+758,757,64,Delta Ratio,Replaced with Verified version of same note,Resolved: note edited,810,pmc-4942506-1,pmc-4942506-1,0.612,0.61165,Model only
+759,758,64,Delta Ratio,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,805,pmc-8361506-1,pmc-4620268-2,0.5,1.13333,Model only
+761,760,64,Delta Ratio,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 761,sheet-761,pmc-3354932-1,pmc-3354932-1,-0.261,-0.2605,Clean
+762,761,64,Delta Ratio,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,806,pmc-3544065-1,pmc-3544066-1,-0.37,0.88235,Model only
+769,768,65,Albumin Corrected Anion Gap,Replaced with new Verified note (checked),Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 768 (its edit: bicarbonate listed with the serum panel),extra-2,pmc-3950226-1,pmc-3950226-1,19.25,19.25,Clean
+771,770,65,Albumin Corrected Anion Gap,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,822,pmc-8310435-1,pmc-4525392-1,25.5,3.0,Manual only
+773,772,65,Albumin Corrected Anion Gap,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,823,pmc-5458028-1,pmc-5458001-1,-2.75,15.0,Both
+774,773,65,Albumin Corrected Anion Gap,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,825,pmc-5719915-1,pmc-5586928-1,29.4,26.5,Both
+779,778,65,Albumin Corrected Anion Gap,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 779,sheet-779,pmc-6363666-1,pmc-6363666-1,26.25,26.25,Clean
+780,779,65,Albumin Corrected Anion Gap,Replaced with new Verified note (checked),Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 779,extra-3,pmc-4411570-1,pmc-3544066-1,6.05,31,Clean
+781,780,65,Albumin Corrected Anion Gap,Replaced with new Verified note (same calculator),"Changed, but new label questionable",826,pmc-5885426-1,pmc-6197016-1,9.692,20.75,Both
+782,781,65,Albumin Corrected Anion Gap,Replaced with Verified version of same note,Resolved: label corrected to our value,834,pmc-3190515-1,pmc-3190515-1,6.5,8.5,Both
+786,785,65,Albumin Corrected Anion Gap,Replaced with new Verified note (checked),"Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 785 (same note, edited: serum bicarbonate 18.4, albumin g/dL)",extra-4,pmc-4047698-1,pmc-4047698-1,43.475,25.35,Clean
+793,792,66,Albumin Corrected Delta Gap,Replaced with new Verified note (checked),Albumin Corrected Delta Gap: admission albumin not reported,845,pmc-6506427-1,usmle-7444,10.5,5.5,Clean
+795,794,66,Albumin Corrected Delta Gap,Replaced with Verified version of same note,Resolved: label corrected to our value,847,pmc-2481241-1,pmc-2481241-1,-76,1.0,Manual only
+798,797,66,Albumin Corrected Delta Gap,Replaced with new Verified note (checked),Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 797,extra-5,pmc-3354932-1,pmc-5906769-1,-2.35,-3.75,Clean
+803,802,66,Albumin Corrected Delta Gap,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,842,pmc-8430448-1,pmc-6197016-1,3.375,8.75,Manual only
+809,808,67,Albumin Corrected Delta Ratio,Replaced with new Verified note (checked),User edit from the review sheet (2026-10-20): row 809,sheet-809,pmc-3354932-1,pmc-8092952-1,-0.197,0.947,Clean
+811,810,67,Albumin Corrected Delta Ratio,Replaced with new Verified note (checked),Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 810,extra-7,pmc-4241748-1,pmc-6467431-1,43.5,1.083,Clean
+812,811,67,Albumin Corrected Delta Ratio,Replaced with new Verified note (checked),Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 811,extra-8,usmle-2638,pmc-3544066-1,1.048,1.118,Clean
+821,820,67,Albumin Corrected Delta Ratio,Replaced with new Verified note (same calculator),Resolved: row removed or replaced,861,pmc-7263001-1,pmc-4417668-1,-5.5,0.7,Both
+825,824,67,Albumin Corrected Delta Ratio,Replaced with new Verified note (same calculator),Still open,862,usmle-8171,usmle-9759,5.495,-2.5,Manual only
+827,826,67,Albumin Corrected Delta Ratio,Replaced with Verified version of same note,Resolved: note edited,879,pmc-4530922-1,pmc-4530922-1,0.952,0.91667,Manual only
+914,913,36,Caprini Score for Venous Thromboembolism (2005),Replaced (duplicate of one-shot example),Same note as the one-shot example for this calculator,966,6,6,1,8,Clean
+951,950,24,Steroid Conversion Calculator,Replaced with Verified version of same note,Steroid converted to itself,1003,3,3,9.599,5.10782,Clean
+952,951,24,Steroid Conversion Calculator,Replaced with Verified version of same note,Steroid converted to itself,1004,4,4,6.86,44.49288,Clean
+955,954,24,Steroid Conversion Calculator,Replaced with Verified version of same note,Steroid converted to itself,1007,7,7,4.88,4.4025,Clean
+989,988,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1041,1,1,35.2,149.0,Clean
+990,989,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1042,2,2,467.2,335.2,Clean
+992,991,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1044,4,4,451.8,282.0,Clean
+995,994,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1047,7,7,535.5,473.0,Clean
+999,998,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1051,11,11,376,94.0,Clean
+1000,999,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1052,12,12,1512,230.0,Clean
+1001,1000,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1053,13,13,898,31.8,Clean
+1005,1004,49,Morphine Milligram Equivalents (MME) Calculator,Replaced with Verified version of same note,MME: fentanyl dosed in mg,1057,17,17,362,94.0,Clean
+1009,1008,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1061,1,1,12/31/2009,01/26/2006,Clean
+1010,1009,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1062,2,2,11/25/2013,07/01/2011,Clean
+1011,1010,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1063,3,3,01/01/2010,04/25/2003,Clean
+1012,1011,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1064,4,4,05/06/2013,01/18/2017,Clean
+1013,1012,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1065,5,5,12/13/2023,09/04/2017,Clean
+1014,1013,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1066,6,6,10/24/2018,06/08/2007,Clean
+1015,1014,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1067,7,7,09/24/2000,07/01/2003,Clean
+1016,1015,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1068,8,8,05/10/2013,07/28/2017,Clean
+1017,1016,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1069,9,9,10/25/2020,12/02/2009,Clean
+1018,1017,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1070,10,10,09/05/2014,11/17/2006,Clean
+1019,1018,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1071,11,11,10/10/2015,09/29/2023,Clean
+1020,1019,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1072,12,12,11/24/2002,10/20/2015,Clean
+1022,1021,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1074,14,14,02/22/2024,06/09/2010,Clean
+1023,1022,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1075,15,15,06/09/2007,08/17/2013,Clean
+1024,1023,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1076,16,16,03/16/2000,05/27/2007,Clean
+1025,1024,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1077,17,17,09/11/2019,09/19/2013,Clean
+1026,1025,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1078,18,18,09/12/2013,05/12/2020,Clean
+1027,1026,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1079,19,19,11/06/2006,10/21/2011,Clean
+1028,1027,68,Estimated of Conception,Replaced with Verified version of same note,Flagged in v1.0; Verified version checked correct,1080,20,20,08/22/2012,06/28/2017,Clean

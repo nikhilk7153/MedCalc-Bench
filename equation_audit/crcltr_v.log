@@ -1,0 +1,6 @@
+12 rows from crcl_train_cand.csv to check
+final_crcltr_verify.jsonl: 0 cached, 12 to run
+Verdict
+correct      9
+incorrect    2
+ambiguous    1

@@ -1,0 +1,8 @@
+{"Row Number": 2, "all_match": true, "problems": [], "Tokens": 815}
+{"Row Number": 8, "all_match": true, "problems": [], "Tokens": 588}
+{"Row Number": 4, "all_match": true, "problems": [], "Tokens": 701}
+{"Row Number": 6, "all_match": true, "problems": [], "Tokens": 1641}
+{"Row Number": 5, "all_match": true, "problems": [], "Tokens": 1390}
+{"Row Number": 3, "all_match": true, "problems": [], "Tokens": 1197}
+{"Row Number": 7, "all_match": false, "problems": [{"input": "Chloride", "extracted": "108 mEq/L", "note_says": "Chloride was 108 mEq/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline, vasopressors, and calcium gluconate. No pretreatment chloride is documented.", "issue": "wrong_time_point"}, {"input": "Bicarbonate", "extracted": "15 mmol/L", "note_says": "Bicarbonate was 15 mmol/L upon arrival at the receiving facility, after treatment at the local hospital. No pretreatment bicarbonate is documented.", "issue": "wrong_time_point"}, {"input": "Sodium", "extracted": "139 mEq/L", "note_says": "Sodium was 139 mEq/L upon arrival at the receiving facility, after treatment at the local hospital including 4 L of normal saline. No pretreatment sodium is documented.", "issue": "wrong_time_point"}], "Tokens": 1444}
+{"Row Number": 1, "all_match": false, "problems": [{"input": "creatinine", "extracted": "85.0 \u00b5mol/L", "note_says": "85 \u00b5mol/L is the patient's baseline serum creatinine, not a documented pretreatment value at admission with AKI. Admission serum creatinine is not provided.", "issue": "wrong_time_point"}], "Tokens": 1203}

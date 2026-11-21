@@ -1,0 +1,1806 @@
+{
+ "calculator_id": "29",
+ "calculator_name": "PSI Score: Pneumonia Severity Index for CAP",
+ "mdcalc_source": "https://www.mdcalc.com/calc/33/psi-port-score-pneumonia-severity-index-cap",
+ "mdcalc_rules": "Points = age in years; female -10; nursing home +10; neoplastic disease +30; liver disease +20; CHF +10; cerebrovascular disease +10; renal disease +10; altered mental status +20; RR >=30 +20; SBP <90 +20; temp <35C or >39.9C (Step-1 text says >=40C) +15; pulse >=125 +10; pH <7.35 +30; BUN >=30 mg/dL (>=11 mmol/L) +20; Na <130 mmol/L +20; glucose >=250 mg/dL (>=14 mmol/L) +10; Hct <30% +10; PaO2 <60 mmHg (<8 kPa) +10; pleural effusion +10. Classes: <=70, 71-90, 91-130, >130. MDCalc page lists PaO2 only (no SaO2 <90% option, which Fine 1997 includes) and gives no definitions for comorbidities.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "No issue affecting scoring: all thresholds/points match MDCalc (temp uses >39.9 like MDCalc's input table; HR>=125, RR>=30, SBP<90, pH<7.35, BUN>=30 mg/dL, Na<130, glucose>=250 mg/dL, Hct<30, PaO2<60 mmHg/<8 kPa). Code reproduces every stored answer from stored inputs.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Glucose/BUN in mmol/L are converted with the molar mass (250 mg/dL = 13.88 mmol/L; 30 mg/dL BUN = 10.71 mmol/L), but MDCalc's SI cutoffs are >=14 mmol/L and >=11 mmol/L. This only matters for glucose 13.88-13.99 or BUN 10.71-10.99 mmol/L. No row falls in these ranges (one-shot glucose 13.21 mmol/L is below both).",
+   "rows_affected": []
+  },
+  {
+   "issue": "Oxygen criterion accepts PaO2 only (mm Hg/kPa); no SpO2/SaO2 <90% path (Fine 1997) and code crashes if partial_pressure_oxygen is missing. Every row has a PaO2.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Vitals and labs (HR, temp, pH, RR, SBP, BUN, Na, glucose, Hct) have no absent-equals-normal default; a missing key raises KeyError. All rows store every one of them.",
+   "rows_affected": []
+  }
+ ],
+ "code_file": "calculator_implementations_verified/psi_score.py",
+ "dataset_conventions": [
+  "A criterion the note does not mention is absent/normal; for 'absence' criteria the criterion is met.",
+  "Values are taken at the time point the question names (admission/initial presentation before treatment) unless the question says otherwise.",
+  "GCS: a component documented as not testable gets full points.",
+  "Keep as close to v1.0 as possible; change only genuine mistakes (wrong input vs note, wrong label, unit/typo errors, contradictions). Prefer the smallest fix: correct an input if the note is clear; edit the note minimally if the note itself is ambiguous or contradictory."
+ ],
+ "rows": [
+  {
+   "row": "829",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 25-year-old male patient presents at the clinic for a routine physical examination. The patient describes a recent episode of fever and altered mental state. He denies any past history of heart disease, renal disease, cerebrovascular disease, liver disease, or cancer. The patient is currently unemployed and lives alone. Upon physical examination, the patient has a measured body temperature of 34 degrees celsius, a heart rate of 101 beats per minute, and a respiratory rate of 32 breaths per minute. His blood pressure measures at 123/85 mm Hg. Laboratory findings show a hematocrit level of 35, a blood glucose level of 15 mmol/L, and a BUN of 33.21 mg/dL. His sodium level is moderately low at 123 mmol/L. Arterial blood gas results show a PaO2 of 67 mm Hg and a slightly acidotic pH of 7.17. The patient's chest X-ray shows no signs of pleural effusion.",
+   "stored_relevant_entities": "{'Hematocrit': [35.0, '%'], 'Glucose': [15.0, 'mmol/L'], 'Partial pressure of oxygen': [67.0, 'mm Hg'], 'Congestive Heart Failure': False, 'Renal disease history': False, 'Cerebrovascular disease history': False, 'Liver disease history': False, 'Neoplastic disease': False, 'pH': 7.17, 'Blood Urea Nitrogen (BUN)': [33.21, 'mg/dL'], 'age': [25.0, 'years'], 'Altered mental status': True, 'Temperature': [34.0, 'degrees celsius'], 'Sodium': [123.0, 'mmol/L'], 'Heart Rate or Pulse': [101.0, 'beats per minute'], 'Pleural effusion on x-ray': False, 'sex': 'Male', 'Systolic Blood Pressure': [123.0, 'mm Hg'], 'respiratory rate': [32.0, 'breaths per minute'], 'Nursing home resident': False}",
+   "stored_answer": "160",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 25.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 25.0 = 25.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 25.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 25.0.\nNeoplastic disease is determined to be false for the patient and so we do not add any points to the current total keeping it at 25.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 25.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 25.0.\nCerebrovascular disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 25.0.\nRenal Disease History is determined to be false for the patient and so we do not add any points to the current total keeping it at 25.0.\nAltered Mental Status is determined to be present for the patient and so we add 20 points to the score, making the current total 25.0 + 20 = 45.0.\nPleural effusion on x-ray is determined to be false for the patient and so we do not add any points to the current total keeping it at 45.0.\nThe patient's pulse is 101.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 45.0.\nThe patient's temperature is 34.0 degrees celsius. The patient's temperature is less than 35 degrees celsius, and so we add 15 points to the score, making the current total 45.0 + 15 = 60.0.\nThe patient's pH is 7.17. The patient's pH is less than 7.35, and so we add 30 points to the score, making the current total 60.0 + 30 = 90.0.\nThe patient's respiratory rate is 32.0 breaths per minute. The patient's respiratory rate is greater than or equal to 30 breaths per minute and so we add 20 points to the score, making current total 90.0 + 20 = 110.0.\nThe patient's systolic blood pressure is 123.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 110.0.\nThe concentration of BUN is 33.21 mg/dL. The patient's BUN is greater than or equal to 30 mg/dL, and so we add 20 points to the score, making current total 110.0 + 20 = 130.0.\nThe concentration of sodium is 123.0 mmol/L. The patient's sodium is less than 130 mmol/L, and so we add 20 points to the score, making the current total 130.0 + 20 = 150.0.\nThe concentration of glucose is 15.0 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 15.0 mmol. To convert 15.0 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 15.0 mmol glucose * 0.001 mol/mmol = 0.015 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.015 mol glucose * 180.16 g/mol = 2.7024 g glucose. To convert 2.7024 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 2.7024 g glucose * 1000.0 mg/g = 2702.4 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 2702.4 mg glucose/10.0 dL = 270.24 mg glucose/dL. The concentration value of 15.0 mmol glucose/L converts to 270.24 mg glucose/dL. The patient's glucose concentration is greater than 250 mg/dL, and so we add 10 points to the score, making the current total 150.0 + 10 = 160.0.\nThe patient's hematocrit is 35.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 160.0.\nThe patient's partial pressure of oxygen is 67.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 160.0.\nThe patient's PSI score is 160.0.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "160 if AMS counted (intended reading); 140 if not",
+    "details": "Altered mental status is described as a past episode the patient reports, during a 'routine physical examination', so it is unclear whether AMS is present at presentation. The stored AMS=True gives 160: 25 + AMS 20 + T 34C 15 + RR 32 20 + glucose 15 mmol/L (270 mg/dL) 10 + BUN 33.21 20 + Na 123 20 + pH 7.17 30. With AMS=False the score is 140. All other inputs match the note. Suggest a minimal note edit, e.g. 'is confused on exam'.",
+    "evidence_quote": "presents at the clinic for a routine physical examination. The patient describes a recent episode of fever and altered mental state."
+   },
+   "blind_pass": {
+    "score": 160,
+    "working": "age 25; AMS +20; temp 34C +15; RR 32 +20; glucose 15 mmol/L (>=14) +10; BUN 33.21 +20; Na 123 +20; pH 7.17 +30 = 160",
+    "fields": {
+     "age": {
+      "value": [
+       25,
+       "years"
+      ],
+      "quote": "A 25-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "25-year-old male"
+     },
+     "Altered mental status": {
+      "value": true,
+      "quote": "recent episode of fever and altered mental state"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "denies any past history of heart disease"
+     },
+     "Renal disease history": {
+      "value": false,
+      "quote": "denies any past history of ... renal disease"
+     },
+     "Cerebrovascular disease history": {
+      "value": false,
+      "quote": "denies ... cerebrovascular disease"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "denies ... liver disease"
+     },
+     "Neoplastic disease": {
+      "value": false,
+      "quote": "denies ... or cancer"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "lives alone"
+     },
+     "Temperature": {
+      "value": [
+       34,
+       "degrees celsius"
+      ],
+      "quote": "body temperature of 34 degrees celsius"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       101,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 101 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       32,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 32 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       123,
+       "mm Hg"
+      ],
+      "quote": "blood pressure measures at 123/85 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       35,
+       "%"
+      ],
+      "quote": "hematocrit level of 35"
+     },
+     "Glucose": {
+      "value": [
+       15,
+       "mmol/L"
+      ],
+      "quote": "blood glucose level of 15 mmol/L"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       33.21,
+       "mg/dL"
+      ],
+      "quote": "BUN of 33.21 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       123,
+       "mmol/L"
+      ],
+      "quote": "sodium level is moderately low at 123 mmol/L"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       67,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 67 mm Hg"
+     },
+     "pH": {
+      "value": 7.17,
+      "quote": "slightly acidotic pH of 7.17"
+     },
+     "Pleural effusion on x-ray": {
+      "value": false,
+      "quote": "chest X-ray shows no signs of pleural effusion"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Altered mental status",
+      "issue": "'Recent episode' of altered mental state described at a routine clinic physical; unclear whether AMS is present at presentation. If not counted: -20.",
+      "alternative_score": 140
+     },
+     {
+      "field": "Congestive Heart Failure",
+      "issue": "Only 'heart disease' denied, read as CHF absent; no score change.",
+      "alternative_score": null
+     },
+     {
+      "field": "Hematocrit",
+      "issue": "Hematocrit given without unit (35); % assumed; no score change.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "831",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 77-year-old female patient with a past medical history significant for chronic kidney disease and previous cerebrovascular accident, with otherwise no history of liver disease, neoplastic disease, or congestive heart failure visits the outpatient clinic today for increased fatigue and confusion over the past week. She is not a nursing home resident and has no change in her mental status at present. Physical exam notes a temperature of 42 degrees celsius, a heart rate of 130 beats per minute, a respiratory rate of 34 breaths per minute, and a blood pressure reading of 87/70 mm Hg. Lab studies reveal a hematocrit of 37, a sodium level of 117 mmol/L and an elevated random blood glucose of 250.21 mg/dL. Her blood urea nitrogen (BUN) level is significantly high at 36.75 mg/dL. An arterial blood gas analysis shows a PaO2 of 87 mm Hg and a normal pH at 7.39. A chest X-ray shows no signs of any pleural effusion.",
+   "stored_relevant_entities": "{'Hematocrit': [37.0, '%'], 'Glucose': [250.21, 'mg/dL'], 'Partial pressure of oxygen': [87.0, 'mm Hg'], 'Congestive Heart Failure': False, 'Renal disease history': True, 'Cerebrovascular disease history': True, 'Liver disease history': False, 'Neoplastic disease': False, 'pH': 7.39, 'Blood Urea Nitrogen (BUN)': [36.75, 'mg/dL'], 'age': [77.0, 'years'], 'Altered mental status': False, 'Temperature': [42.0, 'degrees celsius'], 'Sodium': [117.0, 'mmol/L'], 'Heart Rate or Pulse': [130.0, 'beats per minute'], 'Pleural effusion on x-ray': False, 'sex': 'Female', 'Systolic Blood Pressure': [87.0, 'mm Hg'], 'respiratory rate': [34.0, 'breaths per minute'], 'Nursing home resident': False}",
+   "stored_answer": "202",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 77.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 77.0 = 77.0.\nBecause the patient is female, we subtract 10 points from the current total, making the current total 77.0 - 10 = 67.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 67.0.\nNeoplastic disease is determined to be false for the patient and so we do not add any points to the current total keeping it at 67.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 67.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 67.0.\nCerebrovascular disease history is determined to be present for the patient and so we add 10 points to the score, making the current total 67.0 + 10 = 77.0.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 77.0 + 10 = 87.0.\nAltered Mental Status is determined to be false for the patient and so we do not add any points to the current total keeping it at 87.0.\nPleural effusion on x-ray is determined to be false for the patient and so we do not add any points to the current total keeping it at 87.0.\nThe patient's pulse is 130.0 beats per minute. The pulse is greater or equal to than 125 beats per minute, and so we add 10 points to the score, making the current total 87.0 + 10 = 97.0.\nThe patient's temperature is 42.0 degrees celsius. The patient's temperature is greater than 39.9 degrees celsius and so we add 15 points to the score, making the current total 97.0 + 15 = 112.0.\nThe patient's pH is 7.39. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 112.0.\nThe patient's respiratory rate is 34.0 breaths per minute. The patient's respiratory rate is greater than or equal to 30 breaths per minute and so we add 20 points to the score, making current total 112.0 + 20 = 132.0.\nThe patient's systolic blood pressure is 87.0 mm Hg. The patient's systolic blood pressure is less than 90 mm Hg and so we add 20 points to the score, making current total 132.0 + 20 = 152.0.\nThe concentration of BUN is 36.75 mg/dL. The patient's BUN is greater than or equal to 30 mg/dL, and so we add 20 points to the score, making current total 152.0 + 20 = 172.0.\nThe concentration of sodium is 117.0 mmol/L. The patient's sodium is less than 130 mmol/L, and so we add 20 points to the score, making the current total 172.0 + 20 = 192.0.\nThe concentration of glucose is 250.21 mg/dL. The patient's glucose concentration is greater than 250 mg/dL, and so we add 10 points to the score, making the current total 192.0 + 10 = 202.0.\nThe patient's hematocrit is 37.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 202.0.\nThe patient's partial pressure of oxygen is 87.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 202.0.\nThe patient's PSI score is 202.0.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "202 if AMS absent (stored reading); 222 if confusion counted",
+    "details": "The presenting complaint is confusion over the past week, but the note then says there is 'no change in her mental status at present'. That phrase can be read as either back to baseline or unchanged (still confused). Stored AMS=False gives 202: 77-10 + CKD 10 + CVA 10 + T 42 15 + HR 130 10 + RR 34 20 + SBP 87 20 + Na 117 20 + glucose 250.21 10 + BUN 36.75 20. Counting AMS gives 222. Suggest a clearer statement, e.g. 'she is currently alert and oriented'.",
+    "evidence_quote": "visits the outpatient clinic today for increased fatigue and confusion over the past week. She is not a nursing home resident and has no change in her mental status at present."
+   },
+   "blind_pass": {
+    "score": 202,
+    "working": "age 77; female -10; renal +10; cerebrovascular +10; temp 42C +15; HR 130 +10; RR 34 +20; SBP 87 +20; Na 117 +20; glucose 250.21 +10; BUN 36.75 +20 = 202",
+    "fields": {
+     "age": {
+      "value": [
+       77,
+       "years"
+      ],
+      "quote": "A 77-year-old female"
+     },
+     "sex": {
+      "value": "Female",
+      "quote": "77-year-old female"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "chronic kidney disease"
+     },
+     "Cerebrovascular disease history": {
+      "value": true,
+      "quote": "previous cerebrovascular accident"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "no history of liver disease"
+     },
+     "Neoplastic disease": {
+      "value": false,
+      "quote": "no history of ... neoplastic disease"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "no history of ... congestive heart failure"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "She is not a nursing home resident"
+     },
+     "Altered mental status": {
+      "value": false,
+      "quote": "has no change in her mental status at present"
+     },
+     "Temperature": {
+      "value": [
+       42,
+       "degrees celsius"
+      ],
+      "quote": "temperature of 42 degrees celsius"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       130,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 130 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       34,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 34 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       87,
+       "mm Hg"
+      ],
+      "quote": "blood pressure reading of 87/70 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       37,
+       "%"
+      ],
+      "quote": "hematocrit of 37"
+     },
+     "Sodium": {
+      "value": [
+       117,
+       "mmol/L"
+      ],
+      "quote": "sodium level of 117 mmol/L"
+     },
+     "Glucose": {
+      "value": [
+       250.21,
+       "mg/dL"
+      ],
+      "quote": "random blood glucose of 250.21 mg/dL"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       36.75,
+       "mg/dL"
+      ],
+      "quote": "BUN) level is significantly high at 36.75 mg/dL"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       87,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 87 mm Hg"
+     },
+     "pH": {
+      "value": 7.39,
+      "quote": "normal pH at 7.39"
+     },
+     "Pleural effusion on x-ray": {
+      "value": false,
+      "quote": "chest X-ray shows no signs of any pleural effusion"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Altered mental status",
+      "issue": "Note reports 'confusion over the past week' yet 'no change in her mental status at present'; scored as absent. If confusion counted: +20.",
+      "alternative_score": 222
+     },
+     {
+      "field": "Temperature",
+      "issue": "Temperature of 42 C in an outpatient clinic visit for fatigue is clinically implausible (possible typo); if it were not >39.9 C: -15.",
+      "alternative_score": 187
+     }
+    ]
+   }
+  },
+  {
+   "row": "833",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old female patient with a past medical history of stroke and congestive heart failure, is brought to the emergency department unclear of any kidney or liver diseases previously. She is alert and responsive, with an afebrile body temperature of 37.6 degrees celsius. Her vital signs include a heart rate of 85 beats per minute, a respiratory rate of 20 breaths per minute, and a blood pressure of 125/85 mm Hg. Laboratory studies report a hematocrit level of 39 % an average glucose level of 122 mg/dL, and a blood urea nitrogen (BUN) level of 22 mg/dL. Her sodium level is normal at 138 mEq/L. Analysis of arterial blood gas showed pH to be 7.2 indicating mild acidemia and the partial pressure of oxygen (PaO₂) is 75 mm Hg. The patient's chest X-ray could not be reviewed during the examination.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [85.0, 'beats per minute'], 'pH': 7.2, 'Altered mental status': False, 'Systolic Blood Pressure': [125.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [22.0, 'mg/dL'], 'Renal disease history': False, 'Cerebrovascular disease history': True, 'Sodium': [138.0, 'mEq/L'], 'Liver disease history': False, 'Congestive Heart Failure': True, 'Partial pressure of oxygen': [75.0, 'mm Hg'], 'age': [72.0, 'years'], 'respiratory rate': [20.0, 'breaths per minute'], 'sex': 'Female', 'Hematocrit': [39.0, '%'], 'Glucose': [122.0, 'mg/dL'], 'Temperature': [37.6, 'degrees celsius']}",
+   "stored_answer": "112",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 72.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 72.0 = 72.0.\nBecause the patient is female, we subtract 10 points from the current total, making the current total 72.0 - 10 = 62.0.\nWhether patient is a nursing home resident is not reported. Hence, we assume this to be false and so not add any points to the current total keeping it at 62.0.\nNeoplastic disease is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 62.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 62.0.\nCHF History is determined to be present for the patient and so we add 10 points to the score, making the current total 62.0 + 10 = 72.0.\nCerebrovascular disease history is determined to be present for the patient and so we add 10 points to the score, making the current total 72.0 + 10 = 82.0.\nRenal Disease History is determined to be false for the patient and so we do not add any points to the current total keeping it at 82.0.\nAltered Mental Status is determined to be false for the patient and so we do not add any points to the current total keeping it at 82.0.\nPleural effusion on x-ray is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 82.0.\nThe patient's pulse is 85.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 82.0.\nThe patient's temperature is 37.6 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 82.0.\nThe patient's pH is 7.2. The patient's pH is less than 7.35, and so we add 30 points to the score, making the current total 82.0 + 30 = 112.0.\nThe patient's respiratory rate is 20.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 112.0.\nThe patient's systolic blood pressure is 125.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 112.0.\nThe concentration of BUN is 22.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 112.0.\nThe concentration of sodium is 138.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 138.0 mEq. To convert from 138.0 mEq to mmol, convert from mEq to mmol. The compound 138.0 has a valence of 1, and so divide the valence by the value of mEq to get, 138.0 mEq/(1 mEq/mmol) = 138.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 138.0 mEq sodium/L converts to 138.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 112.0.\nThe concentration of glucose is 122.0 mg/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 112.0.\nThe patient's hematocrit is 39.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 112.0.\nThe patient's partial pressure of oxygen is 75.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 112.0.\nThe patient's PSI score is 112.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "112",
+    "details": "72F: stroke +10, CHF +10, pH 7.2 +30; alert, all vitals/labs normal; renal/liver 'unclear' and CXR not reviewed treated as absent; nursing home not mentioned. 72-10+50=112.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 112,
+    "working": "age 72; female -10; cerebrovascular +10; CHF +10; pH 7.2 +30 = 112",
+    "fields": {
+     "age": {
+      "value": [
+       72,
+       "years"
+      ],
+      "quote": "A 72-year-old female"
+     },
+     "sex": {
+      "value": "Female",
+      "quote": "72-year-old female"
+     },
+     "Cerebrovascular disease history": {
+      "value": true,
+      "quote": "past medical history of stroke"
+     },
+     "Congestive Heart Failure": {
+      "value": true,
+      "quote": "and congestive heart failure"
+     },
+     "Altered mental status": {
+      "value": false,
+      "quote": "She is alert and responsive"
+     },
+     "Temperature": {
+      "value": [
+       37.6,
+       "degrees celsius"
+      ],
+      "quote": "afebrile body temperature of 37.6 degrees celsius"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       85,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 85 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       20,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 20 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       125,
+       "mm Hg"
+      ],
+      "quote": "blood pressure of 125/85 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       39,
+       "%"
+      ],
+      "quote": "hematocrit level of 39 %"
+     },
+     "Glucose": {
+      "value": [
+       122,
+       "mg/dL"
+      ],
+      "quote": "average glucose level of 122 mg/dL"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       22,
+       "mg/dL"
+      ],
+      "quote": "(BUN) level of 22 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       138,
+       "mEq/L"
+      ],
+      "quote": "sodium level is normal at 138 mEq/L"
+     },
+     "pH": {
+      "value": 7.2,
+      "quote": "pH to be 7.2 indicating mild acidemia"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "(PaO₂) is 75 mm Hg"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Renal disease history",
+      "issue": "Kidney disease history 'unclear'; omitted (scored absent). If present: +10.",
+      "alternative_score": 122
+     },
+     {
+      "field": "Liver disease history",
+      "issue": "Liver disease history 'unclear'; omitted (scored absent). If present: +20.",
+      "alternative_score": 132
+     },
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "Chest X-ray could not be reviewed; effusion unknown, scored absent. If present: +10.",
+      "alternative_score": 122
+     },
+     {
+      "field": "pH",
+      "issue": "pH 7.2 described as 'mild acidemia' (it is substantial); value used as written, no score change.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "834",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 78-year-old male who lives independently, presents to the emergency department with an altered mental status. His past medical history includes renal disease and he is currently under treatment for neoplasia. He doesn’t have a history of any liver disease. On examination, the patient is found with a temperature of 99.5 degrees Fahrenheit, heart rate of 85 beats per minute, respiratory rate of 24 breaths per minute, and blood pressure of 115/75 mm Hg. Laboratory tests report a hematocrit of 33%, a glucose level of 7.2 mmol/L, and a blood urea nitrogen level of 30 mg/dl. His sodium level is within the normal range at 140 mEq/L. Arterial Blood Gas shows a pH of 7.35 and PaO2 of 70 mm Hg. The chest X-ray does not denote any pleural effusion. His cardiovascular history could not be ascertained during medical inquiries.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [85.0, 'beats per minute'], 'pH': 7.35, 'Altered mental status': True, 'Systolic Blood Pressure': [115, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [30, 'mg/dL'], 'Renal disease history': True, 'Sodium': [140.0, 'mEq/L'], 'Liver disease history': False, 'Partial pressure of oxygen': [70.0, 'mm Hg'], 'age': [78, 'years'], 'respiratory rate': [24, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [33, '%'], 'Glucose': [7.2, 'mmol/L'], 'Temperature': [99.5, 'degrees fahrenheit'], 'Pleural effusion on x-ray': False, 'Neoplastic disease': True}",
+   "stored_answer": "158",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 78 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 78 = 78.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 78.\nWhether patient is a nursing home resident is not reported. Hence, we assume this to be false and so not add any points to the current total keeping it at 78.\nNeoplastic disease is determined to be present for the patient and so we add 30 points to the score, making the current total 78 + 30 = 108.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 108.\nCHF History is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 108.\nCerebrovascular disease history is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 108.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 108 + 10 = 118.\nAltered Mental Status is determined to be present for the patient and so we add 20 points to the score, making the current total 118 + 20 = 138.\nPleural effusion on x-ray is determined to be false for the patient and so we do not add any points to the current total keeping it at 138.\nThe patient's pulse is 85.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 138.\nThe patient's temperature is 99.5 degrees fahrenheit. To convert to degrees celsius, apply the formula 5/9 * [temperature (degrees fahrenheit) - 32]. This means that the patient's temperature is 5/9 * 67.5 = 37.5 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 138.\nThe patient's pH is 7.35. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 138.\nThe patient's respiratory rate is 24 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 138.\nThe patient's systolic blood pressure is 115 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 138.\nThe concentration of BUN is 30 mg/dL. The patient's BUN is greater than or equal to 30 mg/dL, and so we add 20 points to the score, making current total 138 + 20 = 158.\nThe concentration of sodium is 140.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 140.0 mEq. To convert from 140.0 mEq to mmol, convert from mEq to mmol. The compound 140.0 has a valence of 1, and so divide the valence by the value of mEq to get, 140.0 mEq/(1 mEq/mmol) = 140.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 140.0 mEq sodium/L converts to 140.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 158.\nThe concentration of glucose is 7.2 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 7.2 mmol. To convert 7.2 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 7.2 mmol glucose * 0.001 mol/mmol = 0.0072 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.0072 mol glucose * 180.16 g/mol = 1.29715 g glucose. To convert 1.29715 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 1.29715 g glucose * 1000.0 mg/g = 1297.15 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 1297.15 mg glucose/10.0 dL = 129.715 mg glucose/dL. The concentration value of 7.2 mmol glucose/L converts to 129.715 mg glucose/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 158.\nThe patient's hematocrit is 33 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 158.\nThe patient's partial pressure of oxygen is 70.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 158.\nThe patient's PSI score is 158.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "158",
+    "details": "78M living independently: AMS +20, renal +10, neoplasia under treatment +30, BUN 30 (>=30) +20; T 99.5F=37.5C, pH 7.35 (not <7.35), glucose 7.2 mmol/L, PaO2 70, no effusion; CHF/CVD unascertained = absent. 78+80=158.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 158,
+    "working": "age 78; AMS +20; renal +10; neoplastic +30; BUN 30 (>=30) +20; pH 7.35 not <7.35 +0 = 158",
+    "fields": {
+     "age": {
+      "value": [
+       78,
+       "years"
+      ],
+      "quote": "A 78-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "78-year-old male"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "who lives independently"
+     },
+     "Altered mental status": {
+      "value": true,
+      "quote": "presents to the emergency department with an altered mental status"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "past medical history includes renal disease"
+     },
+     "Neoplastic disease": {
+      "value": true,
+      "quote": "currently under treatment for neoplasia"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "doesn't have a history of any liver disease"
+     },
+     "Temperature": {
+      "value": [
+       99.5,
+       "degrees fahrenheit"
+      ],
+      "quote": "temperature of 99.5 degrees Fahrenheit"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       85,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 85 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       24,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 24 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       115,
+       "mm Hg"
+      ],
+      "quote": "blood pressure of 115/75 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       33,
+       "%"
+      ],
+      "quote": "hematocrit of 33%"
+     },
+     "Glucose": {
+      "value": [
+       7.2,
+       "mmol/L"
+      ],
+      "quote": "glucose level of 7.2 mmol/L"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       30,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen level of 30 mg/dl"
+     },
+     "Sodium": {
+      "value": [
+       140,
+       "mEq/L"
+      ],
+      "quote": "sodium level is within the normal range at 140 mEq/L"
+     },
+     "pH": {
+      "value": 7.35,
+      "quote": "pH of 7.35"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       70,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 70 mm Hg"
+     },
+     "Pleural effusion on x-ray": {
+      "value": false,
+      "quote": "chest X-ray does not denote any pleural effusion"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Congestive Heart Failure",
+      "issue": "'Cardiovascular history could not be ascertained'; CHF (and arguably cerebrovascular disease) unknown, scored absent. CHF present: +10; both: +20.",
+      "alternative_score": 168
+     },
+     {
+      "field": "Blood Urea Nitrogen (BUN)",
+      "issue": "BUN exactly 30 mg/dL sits on the >=30 threshold (counted); a strict >30 reading would give -20.",
+      "alternative_score": 138
+     }
+    ]
+   }
+  },
+  {
+   "row": "836",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 80-year-old male patient, not a nursing home resident, presents to the emergency department with fever and an altered mental status. He has a documented history of congestive heart failure and is currently under treatment for neoplastic disease. His past medical conditions do not list renal disease. His present vital signs include a body temperature of 100.2 degrees Fahrenheit, heart rate of 90 beats per minute, respiratory rate of 18 breaths per minute, and blood pressure of 140/85 mm Hg. Results from his initial laboratory evaluations include a hematocrit of 38 % and a glucose level of 6.0 mmol/L. His blood urea nitrogen level is found to be 18 mg/dL while his sodium level is within normal limits at 135 mEq/L. His arterial blood gas reveals a PaO2 of 60 mm Hg and pH of 7.28. His history pertaining to liver disease or cerebrovascular disease could not be obtained at the time of presentation.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [90.0, 'beats per minute'], 'pH': 7.28, 'Altered mental status': True, 'Systolic Blood Pressure': [140.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [18.0, 'mg/dL'], 'Renal disease history': False, 'Neoplastic disease': True, 'Sodium': [135.0, 'mEq/L'], 'Congestive Heart Failure': True, 'Nursing home resident': False, 'Partial pressure of oxygen': [60.0, 'mm Hg'], 'age': [80.0, 'years'], 'respiratory rate': [18.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [38.0, '%'], 'Glucose': [6.0, 'mmol/L'], 'Temperature': [100.2, 'degrees fahrenheit']}",
+   "stored_answer": "170",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 80.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 80.0 = 80.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 80.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 80.0.\nNeoplastic disease is determined to be present for the patient and so we add 30 points to the score, making the current total 80.0 + 30 = 110.0.\nLiver disease history is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 110.0.\nCHF History is determined to be present for the patient and so we add 10 points to the score, making the current total 110.0 + 10 = 120.0.\nCerebrovascular disease history is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 120.0.\nRenal Disease History is determined to be false for the patient and so we do not add any points to the current total keeping it at 120.0.\nAltered Mental Status is determined to be present for the patient and so we add 20 points to the score, making the current total 120.0 + 20 = 140.0.\nPleural effusion on x-ray is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 140.0.\nThe patient's pulse is 90.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 140.0.\nThe patient's temperature is 100.2 degrees fahrenheit. To convert to degrees celsius, apply the formula 5/9 * [temperature (degrees fahrenheit) - 32]. This means that the patient's temperature is 5/9 * 68.2 = 37.88889 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 140.0.\nThe patient's pH is 7.28. The patient's pH is less than 7.35, and so we add 30 points to the score, making the current total 140.0 + 30 = 170.0.\nThe patient's respiratory rate is 18.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 170.0.\nThe patient's systolic blood pressure is 140.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 170.0.\nThe concentration of BUN is 18.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 170.0.\nThe concentration of sodium is 135.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 135.0 mEq. To convert from 135.0 mEq to mmol, convert from mEq to mmol. The compound 135.0 has a valence of 1, and so divide the valence by the value of mEq to get, 135.0 mEq/(1 mEq/mmol) = 135.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 135.0 mEq sodium/L converts to 135.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 170.0.\nThe concentration of glucose is 6.0 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 6.0 mmol. To convert 6.0 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 6.0 mmol glucose * 0.001 mol/mmol = 0.006 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.006 mol glucose * 180.16 g/mol = 1.08096 g glucose. To convert 1.08096 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 1.08096 g glucose * 1000.0 mg/g = 1080.96 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 1080.96 mg glucose/10.0 dL = 108.096 mg glucose/dL. The concentration value of 6.0 mmol glucose/L converts to 108.096 mg glucose/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 170.0.\nThe patient's hematocrit is 38.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 170.0.\nThe patient's partial pressure of oxygen is 60.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 170.0.\nThe patient's PSI score is 170.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "170",
+    "details": "80M: AMS +20, CHF +10, neoplastic +30, pH 7.28 +30; PaO2 60 is not <60; T 100.2F=37.9C; effusion not mentioned = absent. 80+90=170.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 170,
+    "working": "age 80; AMS +20; CHF +10; neoplastic +30; pH 7.28 +30; PaO2 60 not <60 +0 = 170",
+    "fields": {
+     "age": {
+      "value": [
+       80,
+       "years"
+      ],
+      "quote": "An 80-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "80-year-old male"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "not a nursing home resident"
+     },
+     "Altered mental status": {
+      "value": true,
+      "quote": "presents ... with fever and an altered mental status"
+     },
+     "Congestive Heart Failure": {
+      "value": true,
+      "quote": "documented history of congestive heart failure"
+     },
+     "Neoplastic disease": {
+      "value": true,
+      "quote": "currently under treatment for neoplastic disease"
+     },
+     "Renal disease history": {
+      "value": false,
+      "quote": "do not list renal disease"
+     },
+     "Temperature": {
+      "value": [
+       100.2,
+       "degrees fahrenheit"
+      ],
+      "quote": "body temperature of 100.2 degrees Fahrenheit"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       90,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 90 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       18,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 18 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       140,
+       "mm Hg"
+      ],
+      "quote": "blood pressure of 140/85 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       38,
+       "%"
+      ],
+      "quote": "hematocrit of 38 %"
+     },
+     "Glucose": {
+      "value": [
+       6.0,
+       "mmol/L"
+      ],
+      "quote": "glucose level of 6.0 mmol/L"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       18,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen level is found to be 18 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       135,
+       "mEq/L"
+      ],
+      "quote": "sodium level is within normal limits at 135 mEq/L"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       60,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 60 mm Hg"
+     },
+     "pH": {
+      "value": 7.28,
+      "quote": "pH of 7.28"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Liver disease history",
+      "issue": "Liver disease history could not be obtained; scored absent. If present: +20.",
+      "alternative_score": 190
+     },
+     {
+      "field": "Cerebrovascular disease history",
+      "issue": "Cerebrovascular history could not be obtained; scored absent. If present: +10.",
+      "alternative_score": 180
+     },
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "No chest X-ray reported; effusion unknown, scored absent. If present: +10.",
+      "alternative_score": 180
+     },
+     {
+      "field": "Partial pressure of oxygen",
+      "issue": "PaO2 exactly 60 mm Hg is at the <60 threshold (not counted).",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "838",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 67-year-old male residing in a nursing home is brought to the ER due to recent episodes of confusion. His past medical history is significant for chronic renal disease and liver illness. The patient doesn't have any known history of congestive heart failure. His vitals on admission show a blood pressure of 130/90 mm Hg, a heart rate of 100 beats per minute, respiratory rate at a steady 24 breaths per minute, and a body temperature holding at a normal 98.6 degrees Fahrenheit. Laboratory findings indicate a hematocrit level of 37 %, sodium concentration at 134 mEq/L, blood urea nitrogen level elevated at 28 mg/dL, and a glucose level at 150 mg/dL. An arterial blood gas shows a slightly decreased pH of 7.32 and a PaO2 of 88 mm Hg. Chest X-ray findings are notable for the absence of pleural effusion.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [100.0, 'beats per minute'], 'pH': 7.32, 'Altered mental status': True, 'Systolic Blood Pressure': [130.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [28.0, 'mg/dL'], 'Renal disease history': True, 'Pleural effusion on x-ray': False, 'Sodium': [134.0, 'mEq/L'], 'Liver disease history': True, 'Congestive Heart Failure': False, 'Nursing home resident': True, 'Partial pressure of oxygen': [88.0, 'mm Hg'], 'age': [67.0, 'years'], 'respiratory rate': [24.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [37.0, '%'], 'Glucose': [150.0, 'mg/dL'], 'Temperature': [98.6, 'degrees fahrenheit']}",
+   "stored_answer": "157",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 67.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 67.0 = 67.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 67.0.\nThe patient is reported to be a nursing home resident and so we add 10 points to the score, making the current total 67.0 + 10 = 77.0.\nNeoplastic disease is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 77.0.\nLiver disease history is determined to be present for the patient and so we add 20 points to the score, making the current total 77.0 + 20 = 97.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 97.0.\nCerebrovascular disease history is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 97.0.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 97.0 + 10 = 107.0.\nAltered Mental Status is determined to be present for the patient and so we add 20 points to the score, making the current total 107.0 + 20 = 127.0.\nPleural effusion on x-ray is determined to be false for the patient and so we do not add any points to the current total keeping it at 127.0.\nThe patient's pulse is 100.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 127.0.\nThe patient's temperature is 98.6 degrees fahrenheit. To convert to degrees celsius, apply the formula 5/9 * [temperature (degrees fahrenheit) - 32]. This means that the patient's temperature is 5/9 * 66.6 = 37.0 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 127.0.\nThe patient's pH is 7.32. The patient's pH is less than 7.35, and so we add 30 points to the score, making the current total 127.0 + 30 = 157.0.\nThe patient's respiratory rate is 24.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 157.0.\nThe patient's systolic blood pressure is 130.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 157.0.\nThe concentration of BUN is 28.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 157.0.\nThe concentration of sodium is 134.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 134.0 mEq. To convert from 134.0 mEq to mmol, convert from mEq to mmol. The compound 134.0 has a valence of 1, and so divide the valence by the value of mEq to get, 134.0 mEq/(1 mEq/mmol) = 134.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 134.0 mEq sodium/L converts to 134.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 157.0.\nThe concentration of glucose is 150.0 mg/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 157.0.\nThe patient's hematocrit is 37.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 157.0.\nThe patient's partial pressure of oxygen is 88.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 157.0.\nThe patient's PSI score is 157.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "157",
+    "details": "67M nursing home +10, confusion +20, renal +10, liver +20, pH 7.32 +30; BUN 28, Na 134 score 0. 67+90=157.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 157,
+    "working": "age 67; nursing home +10; AMS +20; renal +10; liver +20; pH 7.32 +30 = 157",
+    "fields": {
+     "age": {
+      "value": [
+       67,
+       "years"
+      ],
+      "quote": "A 67-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "67-year-old male"
+     },
+     "Nursing home resident": {
+      "value": true,
+      "quote": "residing in a nursing home"
+     },
+     "Altered mental status": {
+      "value": true,
+      "quote": "brought to the ER due to recent episodes of confusion"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "chronic renal disease"
+     },
+     "Liver disease history": {
+      "value": true,
+      "quote": "and liver illness"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "doesn't have any known history of congestive heart failure"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       130,
+       "mm Hg"
+      ],
+      "quote": "blood pressure of 130/90 mm Hg"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       100,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 100 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       24,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate at a steady 24 breaths per minute"
+     },
+     "Temperature": {
+      "value": [
+       98.6,
+       "degrees fahrenheit"
+      ],
+      "quote": "body temperature holding at a normal 98.6 degrees Fahrenheit"
+     },
+     "Hematocrit": {
+      "value": [
+       37,
+       "%"
+      ],
+      "quote": "hematocrit level of 37 %"
+     },
+     "Sodium": {
+      "value": [
+       134,
+       "mEq/L"
+      ],
+      "quote": "sodium concentration at 134 mEq/L"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       28,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen level elevated at 28 mg/dL"
+     },
+     "Glucose": {
+      "value": [
+       150,
+       "mg/dL"
+      ],
+      "quote": "glucose level at 150 mg/dL"
+     },
+     "pH": {
+      "value": 7.32,
+      "quote": "slightly decreased pH of 7.32"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       88,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 88 mm Hg"
+     },
+     "Pleural effusion on x-ray": {
+      "value": false,
+      "quote": "absence of pleural effusion"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Altered mental status",
+      "issue": "'Recent episodes of confusion' prompted the ER visit, but mental status on exam is not documented; if not present at presentation: -20.",
+      "alternative_score": 137
+     }
+    ]
+   }
+  },
+  {
+   "row": "840",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 76-year-old male resident of a nursing home is noted to have increased fatigue and change of appetite. He has a history of renal disease, is undergoing treatment for neoplastic disease, but exhibits no signs of cognitive impairment. His medical record doesn't highlight any history of heart disease or stroke. Temperature readings show a stable 98.4 degrees Fahrenheit. His heart rate is at 92 beats per minute, respiratory rate is 21 breaths per minute, and his blood pressure is found to be 150/90 mm Hg. Laboratory tests reveal a hematocrit level of 36 %, a glucose level of 120 mg/dL, and a blood urea nitrogen level of 23 mg/dL. Sodium readings are robust coming in at 143 mEq/L. Arterial blood gas analysis presents with a pH value of 7.44, and a PaO2 of 68 mm Hg.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [92.0, 'beats per minute'], 'pH': 7.44, 'Altered mental status': False, 'Systolic Blood Pressure': [150.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [23.0, 'mg/dL'], 'Renal disease history': True, 'Cerebrovascular disease history': False, 'Neoplastic disease': True, 'Sodium': [143.0, 'mEq/L'], 'Congestive Heart Failure': False, 'Nursing home resident': True, 'Partial pressure of oxygen': [68.0, 'mm Hg'], 'age': [76.0, 'years'], 'respiratory rate': [21.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [36.0, '%'], 'Glucose': [120.0, 'mg/dL'], 'Temperature': [98.4, 'degrees fahrenheit']}",
+   "stored_answer": "126",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 76.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 76.0 = 76.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 76.0.\nThe patient is reported to be a nursing home resident and so we add 10 points to the score, making the current total 76.0 + 10 = 86.0.\nNeoplastic disease is determined to be present for the patient and so we add 30 points to the score, making the current total 86.0 + 30 = 116.0.\nLiver disease history is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 116.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 116.0.\nCerebrovascular disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 116.0.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 116.0 + 10 = 126.0.\nAltered Mental Status is determined to be false for the patient and so we do not add any points to the current total keeping it at 126.0.\nPleural effusion on x-ray is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 126.0.\nThe patient's pulse is 92.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 126.0.\nThe patient's temperature is 98.4 degrees fahrenheit. To convert to degrees celsius, apply the formula 5/9 * [temperature (degrees fahrenheit) - 32]. This means that the patient's temperature is 5/9 * 66.4 = 36.88889 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 126.0.\nThe patient's pH is 7.44. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 126.0.\nThe patient's respiratory rate is 21.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 126.0.\nThe patient's systolic blood pressure is 150.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 126.0.\nThe concentration of BUN is 23.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 126.0.\nThe concentration of sodium is 143.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 143.0 mEq. To convert from 143.0 mEq to mmol, convert from mEq to mmol. The compound 143.0 has a valence of 1, and so divide the valence by the value of mEq to get, 143.0 mEq/(1 mEq/mmol) = 143.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 143.0 mEq sodium/L converts to 143.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 126.0.\nThe concentration of glucose is 120.0 mg/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 126.0.\nThe patient's hematocrit is 36.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 126.0.\nThe patient's partial pressure of oxygen is 68.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 126.0.\nThe patient's PSI score is 126.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "126",
+    "details": "76M nursing home +10, renal +10, neoplastic under treatment +30; no cognitive impairment; PaO2 68, other values normal. 76+50=126.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 126,
+    "working": "age 76; nursing home +10; renal +10; neoplastic +30 = 126",
+    "fields": {
+     "age": {
+      "value": [
+       76,
+       "years"
+      ],
+      "quote": "A 76-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "76-year-old male"
+     },
+     "Nursing home resident": {
+      "value": true,
+      "quote": "resident of a nursing home"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "history of renal disease"
+     },
+     "Neoplastic disease": {
+      "value": true,
+      "quote": "undergoing treatment for neoplastic disease"
+     },
+     "Altered mental status": {
+      "value": false,
+      "quote": "exhibits no signs of cognitive impairment"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "doesn't highlight any history of heart disease"
+     },
+     "Cerebrovascular disease history": {
+      "value": false,
+      "quote": "or stroke"
+     },
+     "Temperature": {
+      "value": [
+       98.4,
+       "degrees fahrenheit"
+      ],
+      "quote": "stable 98.4 degrees Fahrenheit"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       92,
+       "beats per minute"
+      ],
+      "quote": "heart rate is at 92 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       21,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate is 21 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       150,
+       "mm Hg"
+      ],
+      "quote": "blood pressure is found to be 150/90 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       36,
+       "%"
+      ],
+      "quote": "hematocrit level of 36 %"
+     },
+     "Glucose": {
+      "value": [
+       120,
+       "mg/dL"
+      ],
+      "quote": "glucose level of 120 mg/dL"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       23,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen level of 23 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       143,
+       "mEq/L"
+      ],
+      "quote": "Sodium readings are robust coming in at 143 mEq/L"
+     },
+     "pH": {
+      "value": 7.44,
+      "quote": "pH value of 7.44"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       68,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 68 mm Hg"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "No chest X-ray reported; effusion unknown, scored absent. If present: +10.",
+      "alternative_score": 136
+     }
+    ]
+   }
+  },
+  {
+   "row": "842",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 80-year-old male presents to the clinic for his regular health check-up. His past history is significant for chronic kidney disease and a previous cerebrovascular accident. The patient also has a history of congestive heart failure but no known neoplastic conditions or liver illness. On examination, he is stable with a heart rate of 110 beats per minute, respiratory rate of 20 breaths per minute, a blood pressure of 120/80 mm Hg, and a temperature of 38.2 degrees celsius. Lab studies show a hematocrit level of 41 %, Blood Urea Nitrogen value at 30 mg/dL, a glucose of 105 mg/dL, and sodium level at 139 mEq/L. An arterial blood gas analysis delivers a result of a pH at 7.46 and a PaO2 of 90 mm Hg. He currently lives at home with his son.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [110.0, 'beats per minute'], 'pH': 7.46, 'Systolic Blood Pressure': [120.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [30.0, 'mg/dL'], 'Renal disease history': True, 'Cerebrovascular disease history': True, 'Neoplastic disease': False, 'Sodium': [139.0, 'mEq/L'], 'Liver disease history': False, 'Congestive Heart Failure': True, 'Nursing home resident': False, 'Partial pressure of oxygen': [90.0, 'mm Hg'], 'age': [80.0, 'years'], 'respiratory rate': [20.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [41.0, '%'], 'Glucose': [105.0, 'mg/dL'], 'Temperature': [38.2, 'degrees celsius']}",
+   "stored_answer": "130",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 80.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 80.0 = 80.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 80.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 80.0.\nNeoplastic disease is determined to be false for the patient and so we do not add any points to the current total keeping it at 80.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 80.0.\nCHF History is determined to be present for the patient and so we add 10 points to the score, making the current total 80.0 + 10 = 90.0.\nCerebrovascular disease history is determined to be present for the patient and so we add 10 points to the score, making the current total 90.0 + 10 = 100.0.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 100.0 + 10 = 110.0.\nAltered Mental Status is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 110.0.\nPleural effusion on x-ray is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 110.0.\nThe patient's pulse is 110.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 110.0.\nThe patient's temperature is 38.2 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 110.0.\nThe patient's pH is 7.46. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 110.0.\nThe patient's respiratory rate is 20.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 110.0.\nThe patient's systolic blood pressure is 120.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 110.0.\nThe concentration of BUN is 30.0 mg/dL. The patient's BUN is greater than or equal to 30 mg/dL, and so we add 20 points to the score, making current total 110.0 + 20 = 130.0.\nThe concentration of sodium is 139.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 139.0 mEq. To convert from 139.0 mEq to mmol, convert from mEq to mmol. The compound 139.0 has a valence of 1, and so divide the valence by the value of mEq to get, 139.0 mEq/(1 mEq/mmol) = 139.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 139.0 mEq sodium/L converts to 139.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 130.0.\nThe concentration of glucose is 105.0 mg/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 130.0.\nThe patient's hematocrit is 41.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 130.0.\nThe patient's partial pressure of oxygen is 90.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 130.0.\nThe patient's PSI score is 130.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "130",
+    "details": "80M: CKD +10, CVA +10, CHF +10, BUN 30 +20; T 38.2, HR 110 score 0; lives at home. 80+50=130.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 130,
+    "working": "age 80; renal +10; cerebrovascular +10; CHF +10; BUN 30 (>=30) +20 = 130",
+    "fields": {
+     "age": {
+      "value": [
+       80,
+       "years"
+      ],
+      "quote": "An 80-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "80-year-old male"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "chronic kidney disease"
+     },
+     "Cerebrovascular disease history": {
+      "value": true,
+      "quote": "previous cerebrovascular accident"
+     },
+     "Congestive Heart Failure": {
+      "value": true,
+      "quote": "history of congestive heart failure"
+     },
+     "Neoplastic disease": {
+      "value": false,
+      "quote": "no known neoplastic conditions"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "or liver illness"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       110,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 110 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       20,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 20 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       120,
+       "mm Hg"
+      ],
+      "quote": "blood pressure of 120/80 mm Hg"
+     },
+     "Temperature": {
+      "value": [
+       38.2,
+       "degrees celsius"
+      ],
+      "quote": "temperature of 38.2 degrees celsius"
+     },
+     "Hematocrit": {
+      "value": [
+       41,
+       "%"
+      ],
+      "quote": "hematocrit level of 41 %"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       30,
+       "mg/dL"
+      ],
+      "quote": "Blood Urea Nitrogen value at 30 mg/dL"
+     },
+     "Glucose": {
+      "value": [
+       105,
+       "mg/dL"
+      ],
+      "quote": "glucose of 105 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       139,
+       "mEq/L"
+      ],
+      "quote": "sodium level at 139 mEq/L"
+     },
+     "pH": {
+      "value": 7.46,
+      "quote": "pH at 7.46"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       90,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 90 mm Hg"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "He currently lives at home with his son"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Blood Urea Nitrogen (BUN)",
+      "issue": "BUN exactly 30 mg/dL at the >=30 threshold (counted); strict >30 reading gives -20.",
+      "alternative_score": 110
+     },
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "No chest X-ray or mental status reported; scored absent. Effusion present: +10.",
+      "alternative_score": 140
+     }
+    ]
+   }
+  },
+  {
+   "row": "843",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 74-year-old woman living independently visits the clinic reporting malaise and weakness. She has a known history of liver disease. She denies any past heart failure or prior strokes. At present, her mental status appears undisturbed. Today's exam measures her body temperature at 99.5 degrees Fahrenheit, and vitals recorded an elevated heart rate at 115 beats per minute, a respiratory rate of 18 breaths per minute, and slightly lower blood pressure at 110/75 mm Hg. Laboratory studies reveal a hematocrit of 37 %, blood urea nitrogen at 28 mg/dL, glucose at 6.4 mmol/L, and sodium at the upper normal limit at 136 mEq/L. Results from arterial blood gas reports a pH of 7.42 and a PaO2 at 84 mm Hg, suggesting good oxygen levels. A recent chest X-ray demonstrates presence of pleural effusion.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [115.0, 'beats per minute'], 'pH': 7.42, 'Altered mental status': False, 'Systolic Blood Pressure': [110.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [28.0, 'mg/dL'], 'Pleural effusion on x-ray': True, 'Cerebrovascular disease history': False, 'Sodium': [136.0, 'mEq/L'], 'Liver disease history': True, 'Congestive Heart Failure': False, 'Nursing home resident': False, 'Partial pressure of oxygen': [84.0, 'mm Hg'], 'age': [74.0, 'years'], 'respiratory rate': [18.0, 'breaths per minute'], 'sex': 'Female', 'Hematocrit': [37.0, '%'], 'Glucose': [6.4, 'mmol/L'], 'Temperature': [99.5, 'degrees fahrenheit']}",
+   "stored_answer": "94",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 74.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 74.0 = 74.0.\nBecause the patient is female, we subtract 10 points from the current total, making the current total 74.0 - 10 = 64.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 64.0.\nNeoplastic disease is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 64.0.\nLiver disease history is determined to be present for the patient and so we add 20 points to the score, making the current total 64.0 + 20 = 84.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 84.0.\nCerebrovascular disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 84.0.\nRenal Disease History is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 84.0.\nAltered Mental Status is determined to be false for the patient and so we do not add any points to the current total keeping it at 84.0.\nPleural effusion on x-ray is determined to be present for the patient and so we add 10 points to the score, making the current total 84.0 + 10 = 94.0.\nThe patient's pulse is 115.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 94.0.\nThe patient's temperature is 99.5 degrees fahrenheit. To convert to degrees celsius, apply the formula 5/9 * [temperature (degrees fahrenheit) - 32]. This means that the patient's temperature is 5/9 * 67.5 = 37.5 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 94.0.\nThe patient's pH is 7.42. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 94.0.\nThe patient's respiratory rate is 18.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 94.0.\nThe patient's systolic blood pressure is 110.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 94.0.\nThe concentration of BUN is 28.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 94.0.\nThe concentration of sodium is 136.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 136.0 mEq. To convert from 136.0 mEq to mmol, convert from mEq to mmol. The compound 136.0 has a valence of 1, and so divide the valence by the value of mEq to get, 136.0 mEq/(1 mEq/mmol) = 136.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 136.0 mEq sodium/L converts to 136.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 94.0.\nThe concentration of glucose is 6.4 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 6.4 mmol. To convert 6.4 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 6.4 mmol glucose * 0.001 mol/mmol = 0.0064 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.0064 mol glucose * 180.16 g/mol = 1.15302 g glucose. To convert 1.15302 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 1.15302 g glucose * 1000.0 mg/g = 1153.02 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 1153.02 mg glucose/10.0 dL = 115.302 mg glucose/dL. The concentration value of 6.4 mmol glucose/L converts to 115.302 mg glucose/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 94.0.\nThe patient's hematocrit is 37.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 94.0.\nThe patient's partial pressure of oxygen is 84.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 94.0.\nThe patient's PSI score is 94.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "94",
+    "details": "74F: liver disease +20, effusion +10; mental status undisturbed; HR 115 (<125). 74-10+30=94.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 94,
+    "working": "age 74; female -10; liver +20; effusion +10 = 94",
+    "fields": {
+     "age": {
+      "value": [
+       74,
+       "years"
+      ],
+      "quote": "A 74-year-old woman"
+     },
+     "sex": {
+      "value": "Female",
+      "quote": "74-year-old woman"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "living independently"
+     },
+     "Liver disease history": {
+      "value": true,
+      "quote": "known history of liver disease"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "denies any past heart failure"
+     },
+     "Cerebrovascular disease history": {
+      "value": false,
+      "quote": "or prior strokes"
+     },
+     "Altered mental status": {
+      "value": false,
+      "quote": "her mental status appears undisturbed"
+     },
+     "Temperature": {
+      "value": [
+       99.5,
+       "degrees fahrenheit"
+      ],
+      "quote": "body temperature at 99.5 degrees Fahrenheit"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       115,
+       "beats per minute"
+      ],
+      "quote": "elevated heart rate at 115 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       18,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 18 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       110,
+       "mm Hg"
+      ],
+      "quote": "blood pressure at 110/75 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       37,
+       "%"
+      ],
+      "quote": "hematocrit of 37 %"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       28,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen at 28 mg/dL"
+     },
+     "Glucose": {
+      "value": [
+       6.4,
+       "mmol/L"
+      ],
+      "quote": "glucose at 6.4 mmol/L"
+     },
+     "Sodium": {
+      "value": [
+       136,
+       "mEq/L"
+      ],
+      "quote": "sodium at the upper normal limit at 136 mEq/L"
+     },
+     "pH": {
+      "value": 7.42,
+      "quote": "pH of 7.42"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       84,
+       "mm Hg"
+      ],
+      "quote": "PaO2 at 84 mm Hg"
+     },
+     "Pleural effusion on x-ray": {
+      "value": true,
+      "quote": "chest X-ray demonstrates presence of pleural effusion"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "Effusion is on a 'recent' chest X-ray, not explicitly one taken at this presentation; if excluded: -10.",
+      "alternative_score": 84
+     }
+    ]
+   }
+  },
+  {
+   "row": "844",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 79-year-old male who lives independently at home comes to the clinic accompanied by his daughter, who noticed her dad showing signs of confusion in recent days. His medical history includes renal disease and an active neoplastic condition, but no records of cerebrovascular disease, congestive heart failure or liver disease. On physical examination, he is A&Ox2 (but not to year or situation), his body temperature registers at 37.0 degrees celsius, his heart rate is measured at 95 beats per minute, the respiratory rate is regular at 24 breaths per minute, and his blood pressure is noted to be 115/70 mm Hg. Laboratory findings indicate a hematocrit level of 36 %, a slightly elevated blood urea nitrogen concentration of 35 mg/dL, and a glucose level of 8.0 mmol/L. Sodium level in his blood is found to be 141 mEq/L. Arterial blood gas results show a pH of 7.34 and a PaO2 of 75 mm Hg, which are within normal limits.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [95.0, 'beats per minute'], 'pH': 7.34, 'Altered mental status': True, 'Systolic Blood Pressure': [115.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [35.0, 'mg/dL'], 'Renal disease history': True, 'Cerebrovascular disease history': False, 'Neoplastic disease': True, 'Sodium': [141.0, 'mEq/L'], 'Nursing home resident': False, 'Partial pressure of oxygen': [75.0, 'mm Hg'], 'age': [79.0, 'years'], 'respiratory rate': [24.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [36.0, '%'], 'Glucose': [8.0, 'mmol/L'], 'Temperature': [37.0, 'degrees celsius']}",
+   "stored_answer": "189",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 79.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 79.0 = 79.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 79.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 79.0.\nNeoplastic disease is determined to be present for the patient and so we add 30 points to the score, making the current total 79.0 + 30 = 109.0.\nLiver disease history is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 109.0.\nCHF History is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 109.0.\nCerebrovascular disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 109.0.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 109.0 + 10 = 119.0.\nAltered Mental Status is determined to be present for the patient and so we add 20 points to the score, making the current total 119.0 + 20 = 139.0.\nPleural effusion on x-ray is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 139.0.\nThe patient's pulse is 95.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 139.0.\nThe patient's temperature is 37.0 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 139.0.\nThe patient's pH is 7.34. The patient's pH is less than 7.35, and so we add 30 points to the score, making the current total 139.0 + 30 = 169.0.\nThe patient's respiratory rate is 24.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 169.0.\nThe patient's systolic blood pressure is 115.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 169.0.\nThe concentration of BUN is 35.0 mg/dL. The patient's BUN is greater than or equal to 30 mg/dL, and so we add 20 points to the score, making current total 169.0 + 20 = 189.0.\nThe concentration of sodium is 141.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 141.0 mEq. To convert from 141.0 mEq to mmol, convert from mEq to mmol. The compound 141.0 has a valence of 1, and so divide the valence by the value of mEq to get, 141.0 mEq/(1 mEq/mmol) = 141.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 141.0 mEq sodium/L converts to 141.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 189.0.\nThe concentration of glucose is 8.0 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 8.0 mmol. To convert 8.0 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 8.0 mmol glucose * 0.001 mol/mmol = 0.008 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.008 mol glucose * 180.16 g/mol = 1.44128 g glucose. To convert 1.44128 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 1.44128 g glucose * 1000.0 mg/g = 1441.28 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 1441.28 mg glucose/10.0 dL = 144.128 mg glucose/dL. The concentration value of 8.0 mmol glucose/L converts to 144.128 mg glucose/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 189.0.\nThe patient's hematocrit is 36.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 189.0.\nThe patient's partial pressure of oxygen is 75.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 189.0.\nThe patient's PSI score is 189.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "189",
+    "details": "79M: renal +10, active neoplasm +30, confusion/A&Ox2 +20, BUN 35 +20, pH 7.34 +30 (note calls it 'within normal limits' but 7.34 <7.35 scores). 79+110=189.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 189,
+    "working": "age 79; AMS +20; renal +10; neoplastic +30; BUN 35 +20; pH 7.34 +30 = 189",
+    "fields": {
+     "age": {
+      "value": [
+       79,
+       "years"
+      ],
+      "quote": "A 79-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "79-year-old male"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "lives independently at home"
+     },
+     "Altered mental status": {
+      "value": true,
+      "quote": "he is A&Ox2 (but not to year or situation)"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "medical history includes renal disease"
+     },
+     "Neoplastic disease": {
+      "value": true,
+      "quote": "an active neoplastic condition"
+     },
+     "Cerebrovascular disease history": {
+      "value": false,
+      "quote": "no records of cerebrovascular disease"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "congestive heart failure"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "or liver disease"
+     },
+     "Temperature": {
+      "value": [
+       37.0,
+       "degrees celsius"
+      ],
+      "quote": "body temperature registers at 37.0 degrees celsius"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       95,
+       "beats per minute"
+      ],
+      "quote": "heart rate is measured at 95 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       24,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate is regular at 24 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       115,
+       "mm Hg"
+      ],
+      "quote": "blood pressure is noted to be 115/70 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       36,
+       "%"
+      ],
+      "quote": "hematocrit level of 36 %"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       35,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen concentration of 35 mg/dL"
+     },
+     "Glucose": {
+      "value": [
+       8.0,
+       "mmol/L"
+      ],
+      "quote": "glucose level of 8.0 mmol/L"
+     },
+     "Sodium": {
+      "value": [
+       141,
+       "mEq/L"
+      ],
+      "quote": "Sodium level in his blood is found to be 141 mEq/L"
+     },
+     "pH": {
+      "value": 7.34,
+      "quote": "pH of 7.34"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 75 mm Hg"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "pH",
+      "issue": "pH 7.34 described as 'within normal limits' but is <7.35 (scored +30). If treated as normal: -30.",
+      "alternative_score": 159
+     },
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "No chest X-ray reported; effusion unknown, scored absent. If present: +10.",
+      "alternative_score": 199
+     }
+    ]
+   }
+  },
+  {
+   "row": "846",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 71-year-old male visited the clinic today for a routine follow-up. His medical records indicate a history of chronic kidney disease, a prior stroke in 2018, and an active diagnosis of congestive heart failure. His living situation is not recorded, and he exhibits no sign of altered mental status today. His vital signs are within normal limits with a body temperature of 37.8 degrees celsius, heart rate of 105 beats per minute, a steady respiratory rate of 19 breaths per minute, and blood pressure reading at 140/80 mm Hg, efficient for a patient his age. From his recent diagnostics, lab results reveal a hematocrit level of 45 %, a glucose level of 7.2 mmol/L, and a blood urea nitrogen concentration of 22 mg/dL. Sodium level is slightly low at 133 mEq/L. An arterial blood gas analysis was conducted revealing a pH of 7.37 and PaO2 of 75 mm Hg. His chest x-ray from the previous consultation was without any abnormalities. He has no past history of liver disease or neoplastic diseases.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [105.0, 'beats per minute'], 'pH': 7.37, 'Altered mental status': False, 'Systolic Blood Pressure': [140.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [22.0, 'mg/dL'], 'Renal disease history': True, 'Pleural effusion on x-ray': False, 'Cerebrovascular disease history': True, 'Neoplastic disease': False, 'Sodium': [133.0, 'mEq/L'], 'Liver disease history': False, 'Congestive Heart Failure': True, 'Partial pressure of oxygen': [75.0, 'mm Hg'], 'age': [71.0, 'years'], 'respiratory rate': [19.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [45.0, '%'], 'Glucose': [7.2, 'mmol/L'], 'Temperature': [37.8, 'degrees celsius']}",
+   "stored_answer": "101",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 71.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 71.0 = 71.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 71.0.\nWhether patient is a nursing home resident is not reported. Hence, we assume this to be false and so not add any points to the current total keeping it at 71.0.\nNeoplastic disease is determined to be false for the patient and so we do not add any points to the current total keeping it at 71.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 71.0.\nCHF History is determined to be present for the patient and so we add 10 points to the score, making the current total 71.0 + 10 = 81.0.\nCerebrovascular disease history is determined to be present for the patient and so we add 10 points to the score, making the current total 81.0 + 10 = 91.0.\nRenal Disease History is determined to be present for the patient and so we add 10 points to the score, making the current total 91.0 + 10 = 101.0.\nAltered Mental Status is determined to be false for the patient and so we do not add any points to the current total keeping it at 101.0.\nPleural effusion on x-ray is determined to be false for the patient and so we do not add any points to the current total keeping it at 101.0.\nThe patient's pulse is 105.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 101.0.\nThe patient's temperature is 37.8 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 101.0.\nThe patient's pH is 7.37. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 101.0.\nThe patient's respiratory rate is 19.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 101.0.\nThe patient's systolic blood pressure is 140.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 101.0.\nThe concentration of BUN is 22.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 101.0.\nThe concentration of sodium is 133.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 133.0 mEq. To convert from 133.0 mEq to mmol, convert from mEq to mmol. The compound 133.0 has a valence of 1, and so divide the valence by the value of mEq to get, 133.0 mEq/(1 mEq/mmol) = 133.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 133.0 mEq sodium/L converts to 133.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 101.0.\nThe concentration of glucose is 7.2 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 7.2 mmol. To convert 7.2 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 7.2 mmol glucose * 0.001 mol/mmol = 0.0072 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.0072 mol glucose * 180.16 g/mol = 1.29715 g glucose. To convert 1.29715 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 1.29715 g glucose * 1000.0 mg/g = 1297.15 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 1297.15 mg glucose/10.0 dL = 129.715 mg glucose/dL. The concentration value of 7.2 mmol glucose/L converts to 129.715 mg glucose/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 101.0.\nThe patient's hematocrit is 45.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 101.0.\nThe patient's partial pressure of oxygen is 75.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 101.0.\nThe patient's PSI score is 101.0.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "101",
+    "details": "71M: CKD +10, stroke +10, CHF +10; no AMS; Na 133, HR 105 score 0; prior CXR without abnormalities = no effusion. 71+30=101.",
+    "evidence_quote": ""
+   },
+   "blind_pass": {
+    "score": 101,
+    "working": "age 71; renal +10; cerebrovascular +10; CHF +10 = 101",
+    "fields": {
+     "age": {
+      "value": [
+       71,
+       "years"
+      ],
+      "quote": "A 71-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "71-year-old male"
+     },
+     "Renal disease history": {
+      "value": true,
+      "quote": "history of chronic kidney disease"
+     },
+     "Cerebrovascular disease history": {
+      "value": true,
+      "quote": "a prior stroke in 2018"
+     },
+     "Congestive Heart Failure": {
+      "value": true,
+      "quote": "an active diagnosis of congestive heart failure"
+     },
+     "Altered mental status": {
+      "value": false,
+      "quote": "exhibits no sign of altered mental status today"
+     },
+     "Temperature": {
+      "value": [
+       37.8,
+       "degrees celsius"
+      ],
+      "quote": "body temperature of 37.8 degrees celsius"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       105,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 105 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       19,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 19 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       140,
+       "mm Hg"
+      ],
+      "quote": "blood pressure reading at 140/80 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       45,
+       "%"
+      ],
+      "quote": "hematocrit level of 45 %"
+     },
+     "Glucose": {
+      "value": [
+       7.2,
+       "mmol/L"
+      ],
+      "quote": "glucose level of 7.2 mmol/L"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       22,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen concentration of 22 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       133,
+       "mEq/L"
+      ],
+      "quote": "Sodium level is slightly low at 133 mEq/L"
+     },
+     "pH": {
+      "value": 7.37,
+      "quote": "pH of 7.37"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       75,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 75 mm Hg"
+     },
+     "Pleural effusion on x-ray": {
+      "value": false,
+      "quote": "chest x-ray from the previous consultation was without any abnormalities"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "no past history of liver disease"
+     },
+     "Neoplastic disease": {
+      "value": false,
+      "quote": "or neoplastic diseases"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Nursing home resident",
+      "issue": "Living situation 'not recorded'; scored not nursing home. If nursing home: +10.",
+      "alternative_score": 111
+     },
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "Only a chest X-ray from a previous consultation is reported (no current film); effusion at presentation unknown. If present: +10.",
+      "alternative_score": 111
+     }
+    ]
+   }
+  },
+  {
+   "row": "847",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 77-year-old female patient, living in her own home, visits the primary care clinic for her regular check-up. Today, she appears alert and well-oriented. Her medical history is significant for prior breast cancer, but there is no record of liver, renal or cerebrovascular diseases, or congestive heart failure. Today's vital signs find her with a temperature at 98.6 degrees Fahrenheit, heart rate counted at 78 beats per minute, a breathing rate of 18 breaths per minute, and a blood pressure level of 135/85 mm Hg. The hematocrit is at 42 % and a blood glucose level of 6.9 mmol/L from lab results. Her blood urea nitrogen (BUN) value is 20 mg/dL and sodium is within the normal range at 140 mEq/L. An arterial blood gas analysis returns normal with a pH of 7.45 and a PaO2 of 78 mm Hg. The patient's most recent chest X-ray does not seem to be available at this visit.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [78.0, 'beats per minute'], 'pH': 7.45, 'Altered mental status': False, 'Systolic Blood Pressure': [135.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [20.0, 'mg/dL'], 'Renal disease history': False, 'Cerebrovascular disease history': False, 'Neoplastic disease': True, 'Sodium': [140.0, 'mEq/L'], 'Liver disease history': False, 'Congestive Heart Failure': False, 'Nursing home resident': False, 'Partial pressure of oxygen': [78.0, 'mm Hg'], 'age': [77.0, 'years'], 'respiratory rate': [18.0, 'breaths per minute'], 'sex': 'Female', 'Hematocrit': [42.0, '%'], 'Glucose': [6.9, 'mmol/L'], 'Temperature': [98.6, 'degrees fahrenheit']}",
+   "stored_answer": "97",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 77.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 77.0 = 77.0.\nBecause the patient is female, we subtract 10 points from the current total, making the current total 77.0 - 10 = 67.0.\nThe patient is not a nursing home resident and so we do not add any points to the current total keeping it at 67.0.\nNeoplastic disease is determined to be present for the patient and so we add 30 points to the score, making the current total 67.0 + 30 = 97.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 97.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 97.0.\nCerebrovascular disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 97.0.\nRenal Disease History is determined to be false for the patient and so we do not add any points to the current total keeping it at 97.0.\nAltered Mental Status is determined to be false for the patient and so we do not add any points to the current total keeping it at 97.0.\nPleural effusion on x-ray is not reported for the patient and so we assume it to be false. Hence, we do not add any points to the current total keeping it at 97.0.\nThe patient's pulse is 78.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 97.0.\nThe patient's temperature is 98.6 degrees fahrenheit. To convert to degrees celsius, apply the formula 5/9 * [temperature (degrees fahrenheit) - 32]. This means that the patient's temperature is 5/9 * 66.6 = 37.0 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 97.0.\nThe patient's pH is 7.45. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 97.0.\nThe patient's respiratory rate is 18.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 97.0.\nThe patient's systolic blood pressure is 135.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 97.0.\nThe concentration of BUN is 20.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 97.0.\nThe concentration of sodium is 140.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 140.0 mEq. To convert from 140.0 mEq to mmol, convert from mEq to mmol. The compound 140.0 has a valence of 1, and so divide the valence by the value of mEq to get, 140.0 mEq/(1 mEq/mmol) = 140.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 140.0 mEq sodium/L converts to 140.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 97.0.\nThe concentration of glucose is 6.9 mmol/L. We need to convert the concentration to mg/dL. Let's first convert the mass of glucose from mmol to mg. The mass of glucose is 6.9 mmol. To convert 6.9 mmol of glucose to mol, multiply by the conversion factor 0.001, giving us 6.9 mmol glucose * 0.001 mol/mmol = 0.0069 mol glucose. To convert from mol glucose to grams, multiply by the molar mass 180.16 g/mol, which will give 0.0069 mol glucose * 180.16 g/mol = 1.2431 g glucose. To convert 1.2431 g of glucose to mg, multiply by the conversion factor 1000.0, giving us 1.2431 g glucose * 1000.0 mg/g = 1243.1 mg glucose. The current volume unit is L and the target volume unit is dL. The conversion factor is 10.0 dL for every unit of L. Our next step will be to divide the mass by the volume conversion factor of 10.0 to get the final concentration in terms of mg/dL. This will result to 1243.1 mg glucose/10.0 dL = 124.31 mg glucose/dL. The concentration value of 6.9 mmol glucose/L converts to 124.31 mg glucose/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 97.0.\nThe patient's hematocrit is 42.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 97.0.\nThe patient's partial pressure of oxygen is 78.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 97.0.\nThe patient's PSI score is 97.0.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "97 under MDCalc's wording ('history of neoplastic disease'); 67 under the Fine 1997 definition (cancer active or diagnosed within 1 year)",
+    "details": "Neoplastic disease=True rests on 'prior breast cancer', with no date or activity status. The MDCalc page says only 'history of neoplastic disease', so the stored 97 (77-10+30) agrees with MDCalc. The original PSI definition counts only cancer active at presentation or diagnosed within 1 year; a remote, treated breast cancer would not count, which gives 67. Low severity; suggest stating timing/active status in the note.",
+    "evidence_quote": "Her medical history is significant for prior breast cancer"
+   },
+   "blind_pass": {
+    "score": 67,
+    "working": "age 77; female -10; prior (non-active) breast cancer +0 = 67",
+    "fields": {
+     "age": {
+      "value": [
+       77,
+       "years"
+      ],
+      "quote": "A 77-year-old female"
+     },
+     "sex": {
+      "value": "Female",
+      "quote": "77-year-old female"
+     },
+     "Nursing home resident": {
+      "value": false,
+      "quote": "living in her own home"
+     },
+     "Altered mental status": {
+      "value": false,
+      "quote": "she appears alert and well-oriented"
+     },
+     "Neoplastic disease": {
+      "value": false,
+      "quote": "significant for prior breast cancer"
+     },
+     "Liver disease history": {
+      "value": false,
+      "quote": "no record of liver"
+     },
+     "Renal disease history": {
+      "value": false,
+      "quote": "renal"
+     },
+     "Cerebrovascular disease history": {
+      "value": false,
+      "quote": "or cerebrovascular diseases"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "or congestive heart failure"
+     },
+     "Temperature": {
+      "value": [
+       98.6,
+       "degrees fahrenheit"
+      ],
+      "quote": "temperature at 98.6 degrees Fahrenheit"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       78,
+       "beats per minute"
+      ],
+      "quote": "heart rate counted at 78 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       18,
+       "breaths per minute"
+      ],
+      "quote": "breathing rate of 18 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       135,
+       "mm Hg"
+      ],
+      "quote": "blood pressure level of 135/85 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       42,
+       "%"
+      ],
+      "quote": "hematocrit is at 42 %"
+     },
+     "Glucose": {
+      "value": [
+       6.9,
+       "mmol/L"
+      ],
+      "quote": "blood glucose level of 6.9 mmol/L"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       20,
+       "mg/dL"
+      ],
+      "quote": "(BUN) value is 20 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       140,
+       "mEq/L"
+      ],
+      "quote": "sodium is within the normal range at 140 mEq/L"
+     },
+     "pH": {
+      "value": 7.45,
+      "quote": "pH of 7.45"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       78,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 78 mm Hg"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Neoplastic disease",
+      "issue": "'Prior breast cancer' with no date or activity stated; Fine 1997 counts only active or diagnosed within the past year, so scored absent. If counted: +30.",
+      "alternative_score": 97
+     },
+     {
+      "field": "Pleural effusion on x-ray",
+      "issue": "Chest X-ray not available; effusion unknown, scored absent. If present: +10.",
+      "alternative_score": 77
+     }
+    ]
+   }
+  },
+  {
+   "row": "848",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Pneumonia Severity Index (PSI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 73-year-old male patient presents to the clinic with family reporting recent episodes of confusion. The patient's medical history is indicative of both a prior stroke and MASH, however, there's no mention of renal or neoplastic disease, and the patient has no reported heart failure. Today, he appears stable with a body temperature of 36.3 degrees celsius, a heart rate of 90 beats per minute, a respiratory rate of 20 breaths per minute, and a blood pressure of 120/80 mm Hg. Mental status on physical exam reveals only A&Ox2. His laboratory results included a hematocrit level of 39 %, blood urea nitrogen level of 24 mg/dL, a glucose value of 115 mg/dL, and the patient's sodium level is at 137 mEq/L. The arterial blood gas analysis presents a pH of 7.48 and a PaO2 of 72 mm Hg. His recent chest X-ray was marked by the presence of pleural effusion. His residency status is not clearly mentioned in the patient's current records.",
+   "stored_relevant_entities": "{'Heart Rate or Pulse': [90.0, 'beats per minute'], 'pH': 7.48, 'Altered mental status': True, 'Systolic Blood Pressure': [120.0, 'mm Hg'], 'Blood Urea Nitrogen (BUN)': [24.0, 'mg/dL'], 'Renal disease history': False, 'Pleural effusion on x-ray': True, 'Cerebrovascular disease history': True, 'Neoplastic disease': False, 'Sodium': [137.0, 'mEq/L'], 'Liver disease history': False, 'Congestive Heart Failure': False, 'Partial pressure of oxygen': [72.0, 'mm Hg'], 'age': [73.0, 'years'], 'respiratory rate': [20.0, 'breaths per minute'], 'sex': 'Male', 'Hematocrit': [39.0, '%'], 'Glucose': [115.0, 'mg/dL'], 'Temperature': [36.3, 'degrees celsius']}",
+   "stored_answer": "113",
+   "stored_explanation": "The current PSI score is 0.\nThe patient is 73.0 years old. We add the the number of years of age of the patient to the psi score, making the current total 0 + 73.0 = 73.0.\nBecause the patient is male, no adjustments are made to the score, keeping the current total at 73.0.\nWhether patient is a nursing home resident is not reported. Hence, we assume this to be false and so not add any points to the current total keeping it at 73.0.\nNeoplastic disease is determined to be false for the patient and so we do not add any points to the current total keeping it at 73.0.\nLiver disease history is determined to be false for the patient and so we do not add any points to the current total keeping it at 73.0.\nCHF History is determined to be false for the patient and so we do not add any points to the current total keeping it at 73.0.\nCerebrovascular disease history is determined to be present for the patient and so we add 10 points to the score, making the current total 73.0 + 10 = 83.0.\nRenal Disease History is determined to be false for the patient and so we do not add any points to the current total keeping it at 83.0.\nAltered Mental Status is determined to be present for the patient and so we add 20 points to the score, making the current total 83.0 + 20 = 103.0.\nPleural effusion on x-ray is determined to be present for the patient and so we add 10 points to the score, making the current total 103.0 + 10 = 113.0.\nThe patient's pulse is 90.0 beats per minute. The pulse is less than 125 beats per minute and so we do not add any points to the score, keeping it at 113.0.\nThe patient's temperature is 36.3 degrees celsius. The patient's temperature is greater than 35 degrees celsius and the temperature is less than 39.9 degrees celsius, and so we do not add any points to the score, keeping the total at 113.0.\nThe patient's pH is 7.48. The patient's pH is greater than or equal to 7.35, and so we do not add any points to the score, keeping the current total at 113.0.\nThe patient's respiratory rate is 20.0 breaths per minute. The patient's respiratory rate is less than 30 breaths per minute and so we do not add any points to the score, keeping the total score at 113.0.\nThe patient's systolic blood pressure is 120.0 mm Hg. The patient's systolic blood pressure is greater than or equal to 90 mm Hg and so we do not add any points to the score, keeping the total at 113.0.\nThe concentration of BUN is 24.0 mg/dL. The patient's BUN is less than 30 mg/dL, and so we do not add any points to the score, keeping the total at 113.0.\nThe concentration of sodium is 137.0 mEq/L. We need to convert the concentration to mmol/L. Let's first convert the mass of sodium from mEq to mmol. The mass of sodium is 137.0 mEq. To convert from 137.0 mEq to mmol, convert from mEq to mmol. The compound 137.0 has a valence of 1, and so divide the valence by the value of mEq to get, 137.0 mEq/(1 mEq/mmol) = 137.0 mmol sodium. The volume units is L so no volume conversion is needed. Hence, the concentration value of 137.0 mEq sodium/L converts to 137.0 mmol sodium/L. The patient's sodium is greater than or equal to 130 mmol/L, and so we do not add any points to the score, keeping the total at 113.0.\nThe concentration of glucose is 115.0 mg/dL. The patient's glucose concentration is less than or equal to than 250 mg/dL, and so we not add any points to the current total, keeping it at 113.0.\nThe patient's hematocrit is 39.0 %. The patient's hematocrit is greater than or equal to 30%, and so we not add any points to the current total, keeping it at 113.0.\nThe patient's partial pressure of oxygen is 72.0 mm Hg. The patient's partial pressure of oxygen is greater than or equal to 60 mm Hg, and so we not add any points to the current total, keeping it at 113.0.\nThe patient's PSI score is 113.0.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "133",
+    "details": "Liver disease history is stored as False, but the note documents MASH (metabolic dysfunction-associated steatohepatitis), which is a chronic liver disease. The note lists it on purpose next to the stroke. Correct value: Liver disease history = True (+20). Score: 73 + CVA 10 + liver 20 + AMS (confusion, A&Ox2) 20 + effusion 10 = 133. All other inputs are correct.",
+    "evidence_quote": "The patient's medical history is indicative of both a prior stroke and MASH"
+   },
+   "blind_pass": {
+    "score": 133,
+    "working": "age 73; AMS +20; cerebrovascular +10; liver (MASH) +20; effusion +10 = 133",
+    "fields": {
+     "age": {
+      "value": [
+       73,
+       "years"
+      ],
+      "quote": "A 73-year-old male"
+     },
+     "sex": {
+      "value": "Male",
+      "quote": "73-year-old male"
+     },
+     "Altered mental status": {
+      "value": true,
+      "quote": "Mental status on physical exam reveals only A&Ox2"
+     },
+     "Cerebrovascular disease history": {
+      "value": true,
+      "quote": "a prior stroke"
+     },
+     "Liver disease history": {
+      "value": true,
+      "quote": "and MASH"
+     },
+     "Congestive Heart Failure": {
+      "value": false,
+      "quote": "the patient has no reported heart failure"
+     },
+     "Temperature": {
+      "value": [
+       36.3,
+       "degrees celsius"
+      ],
+      "quote": "body temperature of 36.3 degrees celsius"
+     },
+     "Heart Rate or Pulse": {
+      "value": [
+       90,
+       "beats per minute"
+      ],
+      "quote": "heart rate of 90 beats per minute"
+     },
+     "respiratory rate": {
+      "value": [
+       20,
+       "breaths per minute"
+      ],
+      "quote": "respiratory rate of 20 breaths per minute"
+     },
+     "Systolic Blood Pressure": {
+      "value": [
+       120,
+       "mm Hg"
+      ],
+      "quote": "blood pressure of 120/80 mm Hg"
+     },
+     "Hematocrit": {
+      "value": [
+       39,
+       "%"
+      ],
+      "quote": "hematocrit level of 39 %"
+     },
+     "Blood Urea Nitrogen (BUN)": {
+      "value": [
+       24,
+       "mg/dL"
+      ],
+      "quote": "blood urea nitrogen level of 24 mg/dL"
+     },
+     "Glucose": {
+      "value": [
+       115,
+       "mg/dL"
+      ],
+      "quote": "glucose value of 115 mg/dL"
+     },
+     "Sodium": {
+      "value": [
+       137,
+       "mEq/L"
+      ],
+      "quote": "sodium level is at 137 mEq/L"
+     },
+     "pH": {
+      "value": 7.48,
+      "quote": "pH of 7.48"
+     },
+     "Partial pressure of oxygen": {
+      "value": [
+       72,
+       "mm Hg"
+      ],
+      "quote": "PaO2 of 72 mm Hg"
+     },
+     "Pleural effusion on x-ray": {
+      "value": true,
+      "quote": "recent chest X-ray was marked by the presence of pleural effusion"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Nursing home resident",
+      "issue": "Residency status 'not clearly mentioned'; scored not nursing home. If nursing home: +10.",
+      "alternative_score": 143
+     },
+     {
+      "field": "Renal disease history",
+      "issue": "'No mention' of renal or neoplastic disease (not an explicit denial); omitted and scored absent.",
+      "alternative_score": null
+     }
+    ]
+   }
+  }
+ ]
+}

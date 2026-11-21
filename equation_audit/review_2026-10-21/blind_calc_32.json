@@ -1,0 +1,200 @@
+{
+ "calculator_id": "32",
+ "calculator_name": "Charlson Comorbidity Index (CCI)",
+ "fields": [
+  {
+   "field": "age",
+   "type": "number with unit",
+   "typical_units": [
+    "years"
+   ]
+  },
+  {
+   "field": "Myocardial infarction",
+   "type": "boolean"
+  },
+  {
+   "field": "Congestive Heart Failure",
+   "type": "boolean"
+  },
+  {
+   "field": "Peripheral vascular disease",
+   "type": "boolean"
+  },
+  {
+   "field": "Cerebrovascular Accident",
+   "type": "boolean"
+  },
+  {
+   "field": "Transient Ischemic Attacks History",
+   "type": "boolean"
+  },
+  {
+   "field": "Dementia",
+   "type": "boolean"
+  },
+  {
+   "field": "Chronic Pulmonary Disease",
+   "type": "boolean"
+  },
+  {
+   "field": "Connective tissue disease",
+   "type": "boolean"
+  },
+  {
+   "field": "Peptic ulcer disease",
+   "type": "boolean"
+  },
+  {
+   "field": "Liver disease severity",
+   "type": "category",
+   "allowed_values": [
+    "mild",
+    "moderate to severe",
+    "none"
+   ]
+  },
+  {
+   "field": "Diabetes mellitus",
+   "type": "category",
+   "allowed_values": [
+    "end-organ damage",
+    "none or diet-controlled",
+    "uncomplicated"
+   ]
+  },
+  {
+   "field": "Hemiplegia",
+   "type": "boolean"
+  },
+  {
+   "field": "Moderate to severe Chronic Kidney Disease",
+   "type": "boolean"
+  },
+  {
+   "field": "Solid tumor",
+   "type": "category",
+   "allowed_values": [
+    "localized",
+    "metastatic",
+    "none"
+   ]
+  },
+  {
+   "field": "Leukemia",
+   "type": "boolean"
+  },
+  {
+   "field": "Lymphoma",
+   "type": "boolean"
+  },
+  {
+   "field": "AIDS",
+   "type": "boolean"
+  }
+ ],
+ "rows": [
+  {
+   "row": "428",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 60-year-old male patient presented with eschar of the anterior right lower leg measuring 22 x 14 cm (). There were no signs of systemic illness. He had multiple comorbidities including diabetes mellitus controlled with diet and exercise, peripheral neuropathy, chronic kidney disease (CKD), chronic bronchitis, and congestive heart failure. He reported incurring a small skin tear secondary to a fall 2 months prior. However, the wound had acutely worsened after being discharged from an outside hospital 4 days prior. The primary reason for admission had been confusion and generalized weakness attributed to pneumonia and worsening CKD. However, he also received intravenous vancomycin and cefepime due to concern for cellulitis. At admission, tibia/fibula radiographs showed soft tissue irregularity consistent with superficial ulceration and no features of osteomyelitis. Intravenous doxycycline was initiated for empiric coverage. Surgical debridement on the 2nd day of admission (DOA), revealed frank purulence beneath the eschar with necrotic tissue throughout the entire anterior compartment down to tibial periosteum (). At this time, preliminary culture results revealed light growth of fungus, yeast, and coagulase negative staphylococcus. Intravenous fluconazole was added to the patient's medication regimen until further speciation results became available. On DOA 6, final culture results identified the fungus as Rhizopus. On DOA 7, preliminary pathology found marked necrosis and invasive fungal infection with hyphae; thus, the antifungal was changed to micafungin. On DOA 8, final pathology revealed features suggestive of mucormycosis including numerous irregularly shaped hyphae, scattered necrotic-appearing vessels, diffuse Periodic acid-Schiff staining, and poor Grocott-Gomori's methenamine silver staining. However, micafungin was maintained in effort to spare the patient's remaining renal function as there was no fungal growth on repeat cultures. After consultation with dermatology and nephrology, it was ultimately decided that the benefits outweighed the risks. Thus, the antifungal regimen was changed to liposomal amphotericin B (LAmB) on DOA 10. Despite continued aggressive debridement, LAmB, and the addition of isavuconazole, repeat pathology on DOA 21 and 27 both showed invasive mucormycosis throughout the soft tissue. Due to continued positive margins after serial debridement, worsening appearance, and after consultation with the mycology division at the National Institutes of Health, a knee disarticulation was performed on DOA 39. Pathology was negative for fungal elements indicating clean margins. There was no evidence of osteomyelitis on the patella. After stabilization of medical complications, he was discharged to acute rehabilitation 12 weeks after admission with 4 weeks of oral posaconazole remaining to complete a 10-week course. Patient has no neurologic deficits. He scored 30/30 on his MMS. He has no history of stroke or other vascular disease. He never had any malignancy in the past."
+  },
+  {
+   "row": "429",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old male presents to the clinic for a routine follow-up. He has a PMHx of metastatic prostate cancer to the L4-L5 vertebrae on palliative treatment, SLE, and Alzheimer's. He suffered from a myocardial infarction in 2012 and underwent a CABG procedure in 2015. He is currently on furosemide 20 mg for HFrEF. He has had a hepatitis B infection 2014 but it has been well controlled with symptom support. He also is on cilostazol due leg cramping that occurs when he goes for long walks. Denies any SOB, hematuria, or neurological deficits. Despite his high risk, he has remained on anticoagulation therapy for aspirin to decrease his risk of any stroke or other embolic occlusive disease. This has been successful. His creatinine has also remained below 1.0 and is being monitored by a nephrologist for any symptom of pathology. He denies any abdominal pain and has never been on PPI in the past. His current vital signs are stable, and his physical examination is unremarkable for any acute changes."
+  },
+  {
+   "row": "430",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58-year-old Arab man was referred to our electrophysiology clinic with monthly episodes of presyncope for the last 3 months. Despite two episodes of presyncope per year for 3 years, he had not sought medical advice. He has a past medical history significant for coronary artery disease status post coronary artery bypass surgery (CABG), well-controlled type 2 diabetes mellitus, dyslipidemia, and class III obesity (body mass index 41) with a neck circumference of 45cm and modified Mallampati score of 4. Patient has no history of cancer, neurological deficits, immunodeficiencies, or COPD. He was diagnosed with marfan syndrome when he was 19 years old. After his CABG, aspirin, atorvastatin, and metformin were restarted, with the addition of metoprolol tartrate 25mg twice daily. More frequent episodes of presyncope occurred. An electrocardiogram revealed normal sinus rhythm with normal PR, QRS and QTc intervals. Transthoracic echocardiography demonstrated a normal left ventricular systolic function and 24-hour ambulatory Holter monitoring recorded multiple sinus pauses occurring from 11:22 p.m. until 11:46 a.m. with a maximum pause of 22 seconds occurring at 11:45:33 a.m. (see Figure ). During this observation, there were no episodes of presyncope. He was admitted to our hospital for further workup. Despite discontinuation of metoprolol for 1 week, his telemetry revealed multiple episodes of sinus pause, observed during daytime sleepiness or snoring episodes. Obstructive sleep apnea (OSA) was suspected and a sleep study demonstrated both central and OSA: Epworth score 7, sleep latency of 17 minutes, Apnea-Hypopnea Index (AHI) of 98/hour, arousal index of 49/hour and lowest oxygen saturation at 78 % on room air. Overnight CPAP was started and the telemetry showed sinus bradycardia with a minimum heart rate of 30 beats per minute with infrequent pauses of less than 3 seconds. However he refused to continue to use the CPAP upon discharge. In addition, he was offered a pacemaker and he refused. A trial of theophylline 200mg twice daily was initiated and he was discharged from our hospital and encouraged to initiate a weight reduction program. At follow up, he had no further episode of presyncope with infrequent short or no pauses at therapeutic theophylline levels. A follow-up sleep study revealed improvement in the central element of his sleep apnea, however, his AHI did not significantly improve; such results are expected with theophylline therapy."
+  },
+  {
+   "row": "431",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 55 years old male patient with BMI 46 kg/m2 was scheduled for bariatric surgery. He had type 2 diabetes which resulted in CKD, hypertension, emphysema and dyslipidemia as comorbid problems. Patient is also on diuretics pulmonary edema due to heart failure. Patient has no history of liver disease. Upper GI endoscopy, which is a part of our preoperative workup, was performed in this patient as in all patients. Endoscopy revealed 2 separate 4-5 mm nodular lesions in gastric corpus and antrum localization (). Biopsies were taken from two lesions separately. Other stomach areas were in normal appearance. Both lesions were reported as neuroendocrine tumor. Immunohistochemically; chromogranin A and synaptophysin was reported positive. KI proliferation index was reported as 4 %. Both tumors were reported as having similar characteristics (WHO grade 2). On biopsy specimens taken from stomach corpus, inactive chronic gastritis and incomplete type focal intestinal metaplasia in the environment was detected. The patient's serum gastrin level was checked and it was detected as high (gastrin level 660). It was decided that Laparoscopic sleeve gastrectomy (LSG) would be performed on the patient because both lesion areas would remain in the extracted part of the stomach. The patient underwent a sleeve gastrectomy. In addition, intraoperative endoscopy was performed to ensure complete removal of the lesions. When the extracted specimen was opened, both lesions were removed at a distance from the stapler line. There were no complications. Histological examination of the gastric specimen revealed no residual tumor. The rate of excess body weight loss ( %EWL) was determined 55 % in the 6th month and 71 % in the 12th month. Endoscopic follow-up was planned in addition to the controls within the framework of our follow-up program after the operation. He has no neurological deficits on physical exams. They have never had any vascular disease in the past. Due to his diabetes causing kidney dysfunction he is on biweekly dialysis. He does not have any history of non-solid cancers. "
+  },
+  {
+   "row": "432",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old male with a complex medical history presents to the clinic for follow-up. He has a significant history of metastatic prostate cancer diagnosed a year ago and has been undergoing treatment. Additionally, he has a history of Hodgkin's lymphoma, which was treated successfully five years ago, and chronic lymphocytic leukemia CLL, which is currently in remission. He also has systemic lupus erythematosus SLE, which has been managed with cyclophosphamide therapy. He is currently on PPI therapy for his duodenal ulcer. He is on propranolol for significant esophageal varices due to cirrhosis secondary to alcoholism. He is on diuretic therapy for his HFpEF. The patient denies any history of paralysis,  respiratory disease, or stroke. His A1C has never been elevated in the past. He did have a history of RLE claudication and was found to have an ABI of 0.7. He was started on exercise therapy and cilostazol. His kidney function is within normal limits. During the physical examination, the patient appears well, and his vital signs are stable. His abdominal examination reveals no abnormalities, and his cardiac and respiratory examinations are unremarkable. His current management includes regular monitoring and treatment adjustments as necessary."
+  },
+  {
+   "row": "433",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 72-year-old male presents for a routine follow-up of his health conditions. He has been battling with a history of malignant neoplasm for which he had been receiving chemotherapeutic treatments. Significant in his medical history, is experiencing multiple non-injurious falls which specialists investigated and implicated mini bouts of cerebral ischemia in the etiology. Unrelated, yet quite impactful to his daily life, is the persistent paralysis on the left side of his body from what was diagnosed as an old cerebrovascular event. On a similar note, he has moderate renal insufficiency, which necessitates regular nephrology follow-ups. Dialysis has been mentioned but he has not been keen on it. He has a long-standing history of CHF, which has been relatively stable under optimal treatment regimen. His liver function tests have shown mild elevations indicating mild liver disease, however, liver scans have been unremarkable. He denies any history of human immunodeficiency virus exposure. He has a long-standing history of type II diabetes mellitus, his recent labs indicated renal impairment, establishing diabetic nephropathy. On questioning, he denies ever having a myocardial infarction. He claims he used to smoke heavily before his malignancy diagnosis; however, spirometry results indicate good lung function. His vascular health appears to be satisfactory with no vascular incidents except in his neurological territory. He has no complaints relating to joint or muscle pain, indicative of a connective tissue disease. There is also no mention of leukemia in his medical chronicles."
+  },
+  {
+   "row": "434",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 68-year-old male patient presents to the hospital. He comes with a various set of health challenges. Of note, is his diagnosis of lymphoma for which he has completed therapy with remission status. The patient has a significant cardiac history with a myocardial infarction event occurring two years back with no known congestive heart failure. He also has a reported history of peripheral arterial disease for which he has undergone stenting. Of further note is that this patient was found to have a peptic ulcer on his last upper gastrointestinal endoscopy performed due to epigastric discomfort. Some cognitive issues are present as well, the patient has been diagnosed with mild dementia and reports some memory lapses and ease of disorientation. Exam shows no signs of hemiplegia, and his diabetes has been well controlled through lifestyle adjustments without the use of medications.The patient denies having a history of transient ischemic attacks. However, his PFTs  indicates the existence of chronic obstructive pulmonary disease, and he admits to struggles with exercise and significant smoking history. There's no evidence of advanced kidney disease both in his labs and clinical exam. His liver profile indicates the presence of chronic liver disease and imaging has shown prominent changes consistent with long term liver damage. Despite medical complexity, the patient maintains a good spirit and actively participates in care management."
+  },
+  {
+   "row": "435",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 80-year-old gentleman returns to the clinic for his regular follow-up review. His complicated medical history has been highlighted by several issues. He was diagnosed with a solid tumor 5 years ago, which was successfully treated and is currently in remission. He has been living with a diagnosis of HIV/AIDS for over two decades. He has been compliant with his antiretroviral medications, and his recent labs have shown undetectable viral load and stable CD4 counts. His past medical history also includes an incident of cerebrovascular accident about a year ago. Although he has made significant recovery, cognitive assessment reveals hints of dementia, based on noticeable memory lapses and occasional disorientation reported by his caregivers. He denies having any heart-related disorders, and his cardiac function has been steady over the years with no signs of dysfunction. His pulmonary history is significant for chronic obstructive pulmonary disease, an unwanted souvenir from his smoking habits in his younger days. He doesn't recall any episodes of transient ischemic attacks nor does he have any history related to hemiplegia. His health status regarding gastric ulcers has been unremarkable, with his last endoscopy, 18 months ago, showing no significant findings. With a known diagnosis of type II diabetes mellitus, he maintains a well-controlled blood glucose level with a light regimen of oral hypoglycemics. He has no history of chronic kidney disease on record, and despite his HIV status, his most recent labs demonstrate well-preserved renal function. Evaluation of his liver profile indicates no signs of liver disease. He believes in the importance of regular monitoring, and he commonly adheres to his outpatient appointments."
+  },
+  {
+   "row": "436",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 55-year-old male presents to the clinic for routine follow-up. He shares a significant medical history, having overcome chronic lymphocytic leukemia after an intensive regimen of chemotherapy. His medical review reveals an ongoing battle with chronic kidney disease, for which he follows a strict diet therapy and pharmacological management, with substantial dialysis supplementation. He struggles with undifferentiated connective tissue disease, which impacts his day to day life. Co-existing comorbidities include chronic obstructive pulmonary disease, for which he utilizes inhaled corticosteroids, an ongoing issue due to his resistance to quit smoking in spite of encouragement from the healthcare team. He also has peripheral vascular disease, mostly managed by prophylactic measures, and diet-controlled diabetes without any end-organ damage. Increasing dyspnoea on exertion and peripheral edema suggest a presenting sign of congestive heart failure, for which further investigation is planned in the line of diuretic therapy. Assessment of liver function tests reveals mild abnormalities, indicating mild liver disease which the patient attributes to long-term use of paracetamol for pain relief related to his connective tissue disease. Without any history suggestive of aids or peptic ulcer disease, the patient denies any focal neurological deficits or cognitive changes. His main concern during the discussion revolves around disease progression and the potential implications on his work life. He is reassured of the management plan and the regular monitoring to adapt to ongoing health changes."
+  },
+  {
+   "row": "437",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 60-year-old gentleman is seen for a follow-up in the clinic. He is a known patient with a significantly compromised pulmonary function due to long-term COPD. Despite being on bronchodilators and inhalational steroids, he has frequent bouts of wheezing. Significant in his medical history is the onset of multiple transient ischemic attacks, however, no residual neurological deficits are appreciated. His vascular history is complicated by peripheral arterial disease, for which he is on medication and advised regular foot care. He has no history of heart failure and myocardial infarction. He is a known patient of diabetes, but lately, his control has been challenging due to nephropathy, indicated by increasing proteinuria and declining glomerular filtration rate. A recent peptic ulcer diagnosis was made during his endoscopy, for which PPI and treatment for 'H. pylori' were prescribed. He manifests symptoms of liver dysfunction with ongoing investigations pointing towards chronic liver disease of moderate severity. Thus far, he has no issues with memory or cognitive function. He denies any HIV exposure, moreover, his clinical history doesn't suggest any solid tumor, lymphoma, leukemia, and connective tissue ailments. Continuation of current treatment and addressing the need for diabetes management and gastroprotection were underlined during his visit. He was also advised lifestyle modifications, regular medical reviews, and tests to monitor progression or regression of his myriad health conditions."
+  },
+  {
+   "row": "438",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old gentleman comes to the clinic for his regular follow-up. His medical history includes a significant episode of myocardial infarction a year ago, which rendered him to heart failure management. Thankfully, he has adhered well to his medical regimen and lifestyle modifications, presenting to the clinic with minimal symptoms of heart dysfunction. His diabetes is unique as it has led to significant end-organ damage despite medication adherence. He was diagnosed with stage III colon cancer, which required surgical intervention followed by chemotherapy, and reports regular follow-ups with oncology. In between managing his heart and cancer, he experienced a cerebrovascular accident, however, he showed full recovery with no residual impairments. His management involves a multi-specialty approach given his connective tissue disease which currently is in a stable state. He has also been dealing with a liver disease, diagnosed and followed with ongoing liver function tests which show a relatively stable moderate to severe disease. He reassures of no memory issues in his daily routine which may suggest dementia. His lungs are generally clear and show no symptomatic chronic obstructive pulmonary disease. Despite all his health issues, he maintains a positive outlook on his road to recovery. Renal function declines are not seen in this patient. There is no personal history of HIV/AIDS, lymphoma, leukemia, peptic ulcer, and peripheral vascular disease. As a part of ongoing care, he is advised to continue his current medications and scheduled for regular follow up and tests."
+  },
+  {
+   "row": "439",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 75-year-old gentleman attends the clinic for a regular follow-up visit. He has extensively managed congestive heart failure with optimized medication regimen and shows stable symptoms. Of interest is his history of managing COPD, which currently appears under control with his inhaled medications. A few months back, he was diagnosed with peripheral arterial disease, confirmed by abnormal ankle-brachial indices; though revascularization was discussed, the patient has chosen medication and lifestyle modification. Gastric complaints led him to undergo an endoscopy revealing a peptic ulcer. Despite his age, diabetes is well controlled on oral hypoglycemia, with no signs of end-organ damage observed so far. A neurologist is currently evaluating him for cognitive issues indicative of early dementia, which has been a concern for his family due to recent memory lapses. The patient also has a history of left-sided weakness due to damage from a central nervous system pathology, which physically restricts his active movement. Notably, he is negative for HIV/AIDS and liver function tests have been normal consistently. Follow-ups and further care management are discussed and agreed upon. His positivity is encouraging and duly noted in his patient journey."
+  },
+  {
+   "row": "440",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 85-year-old gentleman arrives at the clinic for his appointment. He has a complex medical history which includes a transient ischemic attack that left him with no residual neurological deficits. His medical records also indicate a past diagnosis of leukemia, now in remission, and AIDS, for which he is currently on antiretroviral therapy. He has peptic ulcer disease managed with a proton pump inhibitor as well as proliferative diabetic retinopathy for which he has had panretinal photocoagulation in both eyes. He has chronic hepatitis. The patient exhibits no cognitive disorders, and there's no history of heart failure. Peripheral vascular disease has been ruled out through vascular studies. There's no record of COPD, chronic kidney disease, or lymphatic cancer. The patient reports that he maintains a strict medication regimen and has prioritized lifestyle modifications. He is actively involved in his own care, asking questions, seeking clarity, showing compliance, and providing consent for his ongoing management plan."
+  },
+  {
+   "row": "441",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 78-year-old gentleman presents for a routine follow-up with the following complex medical history. Remarkably, he had a myocardial infarction a few years back but currently exhibits no sequelae of congestive heart failure. He also carried a diagnosis of prostate cancer, for which he underwent successful treatment, and is now in remission. His chronic obstructive pulmonary disease affects his daily routine, and despite adhering to bronchodilator use, his condition shows minimal signs of improvement. He has demonstrated noticeable cognitive decline which has been diagnosed as dementia. He has had ultrasound evidence of cirrhotic changes with portal hypertension but no episodes of variceal bleeding. His creatinine is 3.5 mg/dL. His blood glucose has been elevated in the past but is now controlled with diet. Clinical discussion reveals no significant evidence of lymphoma, AIDS, transient ischemic attacks, connective tissue disease, peptic ulcer disease, peripheral vascular disease, cerebrovascular accident, or leukemia. He remains committed to the guidance delivered by his healthcare providers and shows significant compliance in managing his profile of comorbidities."
+  },
+  {
+   "row": "442",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old patient presents to the clinic and has the following medical history. He is currently undergoing treatment for lymphoma. He suffered a transient ischemic attack some years back, leaving him without any neurological deficit. He has peripheral vascular disease for which he takes clopidogrel. He has type II diabetes mellitus which is well controlled without complications on metformin. He has chronic obstructive pulmonary disease for which he is on bronchodilator treatment. The patient does not have congestive heart failure, liver disease, history of a solid tumor, connective tissue disease, or peptic ulcer disease. He does not have kidney disease. The patient has no memory issues that would raise concerns about dementia."
+  },
+  {
+   "row": "443",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 88-year-old patient presents to the clinic for his routine visit. He has chronic obstructive pulmonary disease due to a long-standing history of smoking and had a previous myocardial infarction though has no signs of heart failure currently. The patient's uncontrolled diabetes has resulted in chronic kidney disease with a creatinine of 3.5 mg/dL. He has polymyalgia rheumatica for which at times he has been on prednisone. Mild liver disease was earlier observed on liver function tests, but it has shown no signs of progression. Intermittent periods of memory lapse and confusion had been noted, and further evaluation led to a diagnosis of dementia. The patient denies having ever suffered from transient ischemic attacks and his neurological examination unremarkable. He does not have a history of peptic ulcer disease, peripheral vascular disease, lymphoma, leukemia, or any solid tumors."
+  },
+  {
+   "row": "444",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 90-year-old gentleman presents to the clinic with the following medical history. He has uncontrolled type II diabetes now complicated by chronic kidney disease with a creatinine of 4.0 mg/dL. The patient had lung cancer, which is currently in remission after chemotherapy and radiation. He is now undergoing chemotherapy for chronic lymphocytic leukemia. He has suffered transient ischemic attacks in the past but managed to avoid lasting neurological consequences. The patient's labs indicate moderate liver disease without clinical manifestations. He does not have heart failure or chronic obstructive pulmonary disease. There are no cognitive changes or memory deficits suggestive of dementia. Upon examination, no signs of hemiplegia are noted. His cardiac history does not demonstrate any myocardial infarction and gastroscopy results are negative for peptic ulcer disease. No record of lymphoma, AIDS, connective tissue disease, or peripheral vascular disease is found in his past medical records."
+  },
+  {
+   "row": "445",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An 82-year-old individual presents to the clinic; a man with significant life battles etched into his medical history. A survivor of lymphoma, his remission status is a testament to his resilience. His health panorama also includes a diagnosis of dementia, which has slowly affected his cognitive abilities over time, rendering him dependent on his relatives for activities of daily living. Symptomatology involving wheezing and dyspnea on minor exertion led to the diagnosis of chronic obstructive pulmonary disease. The patient confirms a history of peptic ulcer disease and reports being complaint with his proton pump inhibitor medication course. One of his significant associated physical challenges pertains to hemiplegia, which has limited his mobility, with no reported history of transient ischemic attacks or cerebrovascular accidents. Furthermore, he is seen for a regular check-up for his well-controlled diabetes. There's also a noted history of peripheral artery disease. Liver function tests consistently return to normal, indicating an absence of liver disease. However, the patient has no complications from congestive heart failure or no record of myocardial infraction, and regular check-ups of his heart function have remained stable. His blood work shows well-preserved renal function, with no record of moderate or severe chronic kidney disease. Rounding out his chart is the absence of leukemia or a solid tumor. Despite a relatively complex health portrait, the patient continues to show excellent adherence to his medication regimens and remains actively involved in managing his health, securing regular follow-ups for close monitoring of his health status."
+  },
+  {
+   "row": "446",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 79-year-old gentleman attends his routine follow-up with a rich medical history. It was a jarring moment when he was diagnosed with a heart attack, prompting changes in his lifestyle and medication regime. His diabetes is notable for significant renal failure with a focus on maintaining his glycemic control through both medical and lifestyle modification. The patient confirms a past episode of a transient ischemic attack; however, no lasting neurological repercussions were observed. His renal panel measurements reveal significant decreases in kidney function, leading to a diagnosis of chronic kidney disease."
+  },
+  {
+   "row": "447",
+   "question": "What is the patient's Charlson Comorbidity Index (CCI)? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 76-year-old gentleman visits the clinic for a follow-up. His impressive journey through life is marked by several health challenges. At the forefront of his medical history is hepatoblastoma that he battled; he has been in remission since the completion of his treatment regimen. Leukemia has also been a significant chapter within his medical narrative, which he's managing with the appropriate therapy. His heart endures the strain of congestive heart failure; ongoing management of this condition has been emphasized by his healthcare team. He has managed to keep his type II diabetes mellitus uncomplicated with diet management and regular exercise. A clinical assessment had led to a diagnosis of dementia, which has progressively been impacting his coping abilities and presenting social challenges for him. He also presented with signs and symptoms suggestive of severe liver disease, contributing to his complicated health status. Status post cerebral vascular accident has been another turning point in his health journey, although he didn’t suffer any significant residual deficits. However, the patient denies having transient ischemic attacks. His experience with autoimmune disorders is punctuated by a diagnosis of connective tissue disease which is being persistently managed. Despite his rich past medical history, he shows no signs of chronic kidney disease, AIDS, any peripheral vascular disease, peptic ulcer disease, or chronic obstructive pulmonary disease. His spirit and engagement towards managing his chronic health conditions have been outstanding, with regular follow-ups and compliance to his multifaceted treatment plan."
+  }
+ ],
+ "mdcalc_rules": "Age <50 0, 50-59 +1, 60-69 +2, 70-79 +3, >=80 +4. MI +1, CHF +1, PVD +1, CVA or TIA +1 (one point for either), dementia +1, chronic pulmonary disease +1, connective tissue disease +1, peptic ulcer disease +1 (treated or bled). Liver: none 0, mild +1 (chronic hepatitis or cirrhosis without portal HTN), moderate-severe +3 (cirrhosis with portal HTN, with or without variceal bleeding). DM: none or diet-controlled 0, uncomplicated +1, end-organ damage +2. Hemiplegia +2. Moderate-severe CKD +2 (Cr >3 mg/dL, dialysis, transplant or uremia). Solid tumor: none 0, localized +2, metastatic +6. Leukemia +2, lymphoma +2, AIDS +6.",
+ "mdcalc_source": "https://www.mdcalc.com/calc/3917/charlson-comorbidity-index-cci"
+}

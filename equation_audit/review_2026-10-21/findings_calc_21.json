@@ -1,0 +1,192 @@
+{
+ "calculator_id": "21",
+ "mdcalc_source": "https://www.mdcalc.com/calc/64/glasgow-coma-scale-score-gcs",
+ "mdcalc_rules": "Eye: spontaneous 4, to verbal command 3, to pain 2, none 1, NT (local injury/edema). Verbal: oriented 5, confused 4, inappropriate words 3, incomprehensible sounds 2, none 1, NT/intubated. Motor: obeys commands 6, localizes pain 5, withdrawal from pain 4, flexion to pain 3, extension to pain 2, none 1, NT (sedation/paralysis). NT options carry no points; MDCalc reports a total only when all three components are testable, otherwise component scores only. Dataset convention: NT component gets full points.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "Verbal 'not testable' is scored 4 in the code, but the dataset convention (and the code's own explanation text, 'we assume the patient's verbal response is oriented') implies full points = 5. MDCalc itself gives no total when any component is NT. No current stored row uses 'not testable', so no stored answer is affected, but the corrected inputs for rows 857 and 861 would be mis-scored (6 and 12 instead of 7 and 13).",
+   "rows_affected": [
+    "857",
+    "861"
+   ]
+  },
+  {
+   "issue": "Motor has no 'not testable' option in the code (MDCalc has one for sedation/paralysis); an NT motor input would raise KeyError. No row currently needs it.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Any unrecognised response string raises KeyError (exact-match dictionary lookup); all stored strings match the dictionary keys.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "one_shot",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "14",
+   "mdcalc_answer": "14 (13 if verbal scored confused)",
+   "details": "E4 (eyes open, tracking without prompting), M5 (sternal rub -> reaches to chest to push hand away = localizes). Verbal stored 'oriented' is supported by the content of his answers (name, year, place), but the note also says he 'appears disoriented', which contradicts oriented (would make it confused, GCS 13). Stored answer is defensible on the literal answers; the contradictory phrase should be removed from the note.",
+   "evidence_quote": "he appears disoriented ... Upon prompting, he is able to mumble his name, the year, and that he is 'in the ER.'"
+  },
+  {
+   "row": "849",
+   "status": "INPUT_ERROR",
+   "stored_answer": "9",
+   "mdcalc_answer": "10",
+   "details": "Best verbal response: stored 'inappropriate words' (3), correct 'confused' (4). She answers the orientation question with a coherent, grammatical sentence that is wrong about place = disoriented but conversational (confused). 'Inappropriate words' means random/exclamatory words without conversational exchange. E2 (eyes open momentarily to sternal rub) and M4 (moves chest away from the hand = withdrawal, not localization) are correct. GCS 2+4+4 = 10. Moderate confidence: the bizarre content makes some raters choose inappropriate words; v1.0 also used 'inappropriate words'.",
+   "evidence_quote": "When asked if she knows where she is, she responds, 'I am in the Lego aisle of Target.'"
+  },
+  {
+   "row": "850",
+   "status": "OK",
+   "stored_answer": "12",
+   "mdcalc_answer": "12",
+   "details": "E3 (opens eyes intermittently to verbal commands), V4 (disoriented, can't give accurate information), M5 (localizes). 3+4+5=12. Pronoun mix-up (female/he) is wording only.",
+   "evidence_quote": "He intermittently opens his eyes in response to verbal commands ... He localizes painful stimuli."
+  },
+  {
+   "row": "851",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "E2 (opens eyes to pain), V2 (groans, no intelligible speech), M4 (withdraws in all extremities). Intubation occurs after the assessment. 2+2+4=8.",
+   "evidence_quote": "She opens her eyes and withdraws in response to painful stimuli in all extremities."
+  },
+  {
+   "row": "852",
+   "status": "OK",
+   "stored_answer": "14",
+   "mdcalc_answer": "14",
+   "details": "E4 (awake, alert), V4 (confused/tangential but coherent), M6 (follows simple commands). 4+4+6=14.",
+   "evidence_quote": "he is awake, alert, and following simple commands. He is confused and tangential"
+  },
+  {
+   "row": "853",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "E2, V2 (grunts/moans, no words), M4 (withdrawal to nail-bed pinch). 2+2+4=8.",
+   "evidence_quote": "a pinch to the nail bed induces a withdrawal response in her extremities. Her speech is incomprehensible."
+  },
+  {
+   "row": "854",
+   "status": "OK",
+   "stored_answer": "15",
+   "mdcalc_answer": "15",
+   "details": "E4, V5 (oriented to situation, place, person), M6 (follows two-step commands). 15.",
+   "evidence_quote": "alert, with eyes open and actively looking around ... is oriented to situation ... he follows two step commands"
+  },
+  {
+   "row": "855",
+   "status": "OK",
+   "stored_answer": "12",
+   "mdcalc_answer": "12",
+   "details": "E3 (opens eyes upon verbal request; 'awake' is not stated as eyes open spontaneously), V4 (confused about day), M5 (locates sternal rub and pushes hand away = localizes). 3+4+5=12.",
+   "evidence_quote": "He opens his eyes upon verbal request ... he was able to specifically locate the sensation and attempted to push the hand away."
+  },
+  {
+   "row": "856",
+   "status": "OK",
+   "stored_answer": "5",
+   "mdcalc_answer": "5",
+   "details": "E2 (eyes slightly opened to sternal rub), V1 (nonverbal), M2 (extension). 2+1+2=5.",
+   "evidence_quote": "When subjected to a sternal rub, his eyes slightly opened and his limbs were noted to hesitatingly reflex into an extension movement."
+  },
+  {
+   "row": "857",
+   "status": "INPUT_ERROR",
+   "stored_answer": "3",
+   "mdcalc_answer": "7 under dataset NT=full-points convention (E1 + V5 + M1); MDCalc itself gives no total, only components E1 V-NT M1 (i.e. '3T'-type reporting). Current code would output 6 because it scores verbal NT as 4.",
+   "details": "Best verbal response: stored 'no verbal response' (1), correct 'not testable' \u2014 the note explicitly says intubation prevented verbal assessment, and MDCalc's verbal NT option is specifically for intubated patients. v1.0 stored 'not testable' for this note; the corrected set changed it. E1 and M1 are correct ('no purposeful movement' is slightly loose wording for M1 but intent is clear). Clinically the patient is in arrest and a total of 7 is counter-intuitive; if the reviewers want 3, the note should drop the intubation/not-assessable sentence.",
+   "evidence_quote": "he was intubated on site by paramedics ... His intubation prevented further assessment of verbal responsiveness."
+  },
+  {
+   "row": "858",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "E2 (eyes open only with intense stimulation), V3 (random, inappropriate words), M3 (abnormal flexion). 2+3+3=8.",
+   "evidence_quote": "his eyes only opened briefly with intense external stimulation ... random, inappropriate words ... abnormal flexion of his upper limbs."
+  },
+  {
+   "row": "859",
+   "status": "OK",
+   "stored_answer": "13",
+   "mdcalc_answer": "13",
+   "details": "E3 (opens eyes when asked), V4 (disoriented to time/place; 'unable to provide coherent responses' is slightly loose but context is a confused/delirious patient), M6 (follows simple commands). 3+4+6=13. Analgesia given after the assessment.",
+   "evidence_quote": "Upon hearing the nurse ask her to open her eyes, she complied. However, her speech was disoriented ... She was able to follow simple commands."
+  },
+  {
+   "row": "860",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "E4 (eyes open spontaneously), V2 (continuous groaning, no intelligible responses), M5 (localizes hand to site of pain). 4+2+5=11.",
+   "evidence_quote": "opening her eyes spontaneously ... kept continuously groaning ... she localized her hand to the site of the pain."
+  },
+  {
+   "row": "861",
+   "status": "INPUT_ERROR",
+   "stored_answer": "9",
+   "mdcalc_answer": "13 under dataset NT=full-points convention (E2 + V5 + M6); MDCalc gives no total (E2 V-NT M6). Current code would output 12 (verbal NT scored 4).",
+   "details": "Best verbal response: stored 'no verbal response' (1), correct 'not testable' \u2014 the note attributes the absent speech to the tracheostomy (airway device), which is MDCalc's NT/intubated situation, not a true V1. E2 (opens eyes when pinched) and M6 (obeys grip/release commands) are correct. Same stored input as v1.0, but it contradicts the dataset convention.",
+   "evidence_quote": "He opens his eyes when pinched but does not attempt to verbalize due to the tracheostomy."
+  },
+  {
+   "row": "862",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "E3 (opens eyes when name called), V3 (disjointed, inappropriate words), M2 (abnormal extension to pain). 3+3+2=8.",
+   "evidence_quote": "When the nurses called out his name, he was able to open his eyes. However his speech was disjointed and included inappropriate words ... abnormal extension in response to painful stimuli."
+  },
+  {
+   "row": "863",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "13",
+   "mdcalc_answer": "13 as literally documented (likely 15 in reality)",
+   "details": "E4 and V5 are correct. Motor is scored withdrawal (4) from nail-bed pressure, but GCS motor is the BEST response and command-following was never tested in a fully alert, oriented patient who explains what happened; reflexive withdrawal during a pain assessment does not establish that M6 is absent. The stored answer follows the literal note, but the note is clinically implausible / incomplete for motor. Suggest the note either state he does not follow commands or document command-following.",
+   "evidence_quote": "he appeared fully aware of his surroundings, accurately identifying the date, his location ... he instinctively pulled his arm away when pressure was applied to his nail bed."
+  },
+  {
+   "row": "864",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "E4 (opens eyes without prompting), V4 (somewhat accurate answers, disoriented), M3 (decorticate abnormal flexion). Intubation occurs after the assessment. 4+4+3=11.",
+   "evidence_quote": "open his eyes without prompting ... often seeming disoriented ... decorticate posture with abnormal flexion."
+  },
+  {
+   "row": "865",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "E3 (opens eyes when told), V4 (rambling, tangential, confused), M1 (no movement including to pain). 3+4+1=8.",
+   "evidence_quote": "no voluntary movements in her limbs, including to painful stimuli ... opening her eyes when she was told to. Her speech was rambling"
+  },
+  {
+   "row": "866",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "E2 (eyes open only to sternal rub), V3 (nonsensical words = articulated words without conversational exchange), M5 (moves hands towards the site of the pinch = localizes). 2+3+5=10.",
+   "evidence_quote": "moving his hands towards the site of the pinch. He opened his eyes only in response to sternal rub ... kept mumbling nonsensical words."
+  },
+  {
+   "row": "867",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "E1 (eyes shut despite sternal rub; no eyelid swelling mentioned so not NT), V2 (incomprehensible, garbled sounds), M6 (lifts arm/moves fingers to command). 1+2+6=9.",
+   "evidence_quote": "Despite repeated prompting and a firm sternal rub, she steadfastly kept her eyes shut ... incomprehensible, garbled sounds."
+  },
+  {
+   "row": "868",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "E3 (opens eyes when name called), V1 (no verbal response), M4 (grimaces and attempts to evade the stimulus = withdrawal, not localization). 3+1+4=8.",
+   "evidence_quote": "On hearing his name called out, the patient managed to open his eyes ... attempts to evade the source of the discomfort. He did not respond verbally"
+  }
+ ]
+}

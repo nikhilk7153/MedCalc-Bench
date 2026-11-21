@@ -1,0 +1,875 @@
+{
+ "calculator_id": "17",
+ "rows": [
+  {
+   "row": "241",
+   "fields": {
+    "age": {
+     "value": [
+      74,
+      "years"
+     ],
+     "quote": "A 74 year old female"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "biopsy of a right sided breast mass"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "well-controlled congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "stable angina presents for evaluation"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "non-insulin-dependent diabetes mellitus"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      2.1,
+      "mg/dL"
+     ],
+     "quote": "creatinine of 2.1 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "ischemic stroke with mild residual aphasia"
+    }
+   },
+   "score": 4,
+   "score_working": "surgery 0 (breast biopsy) + IHD 1 (stable angina, nitroglycerin) + CHF 1 + CVD 1 (stroke) + insulin 0 (metformin) + Cr 2.1>2 1 = 4",
+   "note_issues": []
+  },
+  {
+   "row": "242",
+   "fields": {
+    "age": {
+     "value": [
+      75,
+      "years"
+     ],
+     "quote": "A 75-year-old woman"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "scheduled minor gynecological operation"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "episodes linked to ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "She does not rely on insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.74,
+      "mg/dL"
+     ],
+     "quote": "creatinine level was found to be 1.74 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "transient ischemic attack several months ago"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 0 (minor gynecologic) + IHD 1 + CHF 1 (S3 gallop) + CVD 1 (TIA) + insulin 0 + Cr 1.74 0 = 3",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "'Minor gynecological operation' does not state the approach; if it were intraperitoneal (e.g. laparoscopic/abdominal) it would count",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "243",
+   "fields": {
+    "age": {
+     "value": [
+      67,
+      "years"
+     ],
+     "quote": "A 67 year old female"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "biopsy of a right sided breast mass"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "well-controlled congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "stable angina presents for evaluation"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "non-insulin-dependent diabetes mellitus"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "creatinine of 1.8 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "ischemic stroke with mild residual aphasia"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 0 (breast biopsy) + IHD 1 (stable angina, nitroglycerin) + CHF 1 + CVD 1 (stroke) + insulin 0 (metformin) + Cr 1.8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "244",
+   "fields": {
+    "age": {
+     "value": [
+      77,
+      "years"
+     ],
+     "quote": "A 77 year old male"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "repair of a rhegmatogenous retinal detachment in the left eye"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "heart failure with reduced ejection fraction"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "coronary artery disease with myocardial infarction"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "Medications include lisinopril, furosemide, metoprolol, rivaroxaban, and rosuvastatin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.6,
+      "mg/dL"
+     ],
+     "quote": "creatinine at patient's baseline of 1.6 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "multiple transient ischemic attacks"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 0 (retinal) + IHD 1 (MI) + CHF 1 (HFrEF, orthopnea, bilateral rales) + CVD 1 (TIAs) + insulin 0 (not on med list; no diabetes) + Cr 1.6 0 = 3",
+   "note_issues": [
+    {
+     "field": "sodium (not scored)",
+     "issue": "Unit typo: 'sodium 143 µmol/L' should be mmol/L; no effect on RCRI",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "245",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "A 68-year-old male"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "planned shoulder arthroscopy"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "history of coronary artery disease"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.7,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.7 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": false,
+     "quote": "He denies any history of cerebrovascular events"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 0 (shoulder arthroscopy) + IHD 1 (CAD, CABG) + CHF 1 (S3, crackles, JVD) + CVD 0 + insulin 0 (not mentioned) + Cr 1.7 0 = 2",
+   "note_issues": []
+  },
+  {
+   "row": "246",
+   "fields": {
+    "age": {
+     "value": [
+      81,
+      "years"
+     ],
+     "quote": "An 81-year-old female"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "high-risk abdominal aortic aneurysm repair surgery"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "She has no history of congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": false,
+     "quote": "denies any history of chest pain"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "type 2 diabetes managed with insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.36,
+      "mg/dL"
+     ],
+     "quote": "creatinine level is maintained at a steady-state of 1.36 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "past cerebrovascular accident with residual left-sided weakness"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 1 (AAA repair, suprainguinal vascular) + IHD 0 + CHF 0 + CVD 1 + insulin 1 + Cr 1.36 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "247",
+   "fields": {
+    "age": {
+     "value": [
+      83,
+      "years"
+     ],
+     "quote": "An 83-year-old male"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "minor procedure for the repair of an inguinal hernia"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "history of heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "ischemic heart disease, status post percutaneous coronary intervention"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "he does not require insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.3,
+      "mg/dL"
+     ],
+     "quote": "creatinine level at 1.3 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "a cerebrovascular event from which he has recovered well"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 0 (inguinal hernia) + IHD 1 + CHF 0 (denied) + CVD 1 + insulin 0 + Cr 1.3 0 = 2",
+   "note_issues": []
+  },
+  {
+   "row": "248",
+   "fields": {
+    "age": {
+     "value": [
+      74,
+      "years"
+     ],
+     "quote": "A 74-year-old male"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "diagnosed with congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": false,
+     "quote": "no history of ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "daily medications include insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      140,
+      "µmol/L"
+     ],
+     "quote": "creatinine level of 140 µmol/L"
+    },
+    "History of cerebrovascular disease": {
+     "value": false,
+     "quote": "or cerebrovascular accidents"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery ? (type not stated, scored 0) + IHD 0 + CHF 1 + CVD 0 + insulin 1 + Cr 140 µmol/L (1.58 mg/dL) 0 = 2",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "Surgery type not specified ('a scheduled operation'); scored 0. If elevated-risk, score would be 3",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "249",
+   "fields": {
+    "age": {
+     "value": [
+      56,
+      "years"
+     ],
+     "quote": "A 56-year-old man"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "high-risk surgery involving colonic resection"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "has not reported any cerebrovascular disease or heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "significant for ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "well-managed by oral antihyperglycemics only"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.5,
+      "mg/dL"
+     ],
+     "quote": "serum creatinine level of 1.5 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": false,
+     "quote": "has not reported any cerebrovascular disease"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 1 (colectomy, intraperitoneal) + IHD 1 + CHF 0 + CVD 0 + insulin 0 + Cr 1.5 0 = 2",
+   "note_issues": []
+  },
+  {
+   "row": "250",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old female"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "no known history of congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "ischemic heart disease requiring coronary stents"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "managed with insulin and lifestyle modifications"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.2,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.2 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "previous cerebrovascular accident with complete recovery"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery ? (type not stated, scored 0) + IHD 1 + CHF 0 + CVD 1 + insulin 1 + Cr 1.2 0 = 3",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "Surgery type not specified ('a scheduled operation'); scored 0. If elevated-risk, score would be 4",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "251",
+   "fields": {
+    "age": {
+     "value": [
+      78,
+      "years"
+     ],
+     "quote": "A 78-year-old man"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "high-risk thoracic surgery for a large lung mass"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "significant for congestive heart failure"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "Medication list does not include insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.9,
+      "mg/dL"
+     ],
+     "quote": "creatinine level measured at 1.9 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "experienced a stroke three years prior"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 1 (intrathoracic) + IHD 0 (not mentioned) + CHF 1 (S3) + CVD 1 (stroke) + insulin 0 + Cr 1.9 0 = 3",
+   "note_issues": [
+    {
+     "field": "History of ischemic heart disease",
+     "issue": "Ischemic heart disease not mentioned at all; scored 0. If present, score would be 4",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "252",
+   "fields": {
+    "age": {
+     "value": [
+      64,
+      "years"
+     ],
+     "quote": "A 64-year-old female"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "high-risk orthopedic surgery for revision hip replacement"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "No known history of congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": false,
+     "quote": "or ischemic heart disease is documented"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.5,
+      "mg/dL"
+     ],
+     "quote": "creatinine level is 1.5 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "cerebrovascular accident two years ago"
+    }
+   },
+   "score": 1,
+   "score_working": "surgery 0 (hip revision: not intraperitoneal/intrathoracic/suprainguinal vascular) + IHD 0 + CHF 0 + CVD 1 + insulin 0 (not mentioned) + Cr 1.5 0 = 1",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "Note labels revision hip replacement as 'high-risk orthopedic surgery', but it is not an RCRI elevated-risk procedure; if 'high-risk' were taken literally score would be 2",
+     "alternative_score": 2
+    }
+   ]
+  },
+  {
+   "row": "253",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old gentleman"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "elective hernia repair surgery"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "regular rhythm with no murmurs, gallops, or rubs"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "stable ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "well controlled with insulin therapy"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.4,
+      "mg/dL"
+     ],
+     "quote": "reading of 1.4 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": false,
+     "quote": "No known history of any cerebrovascular events"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 0 (hernia repair) + IHD 1 + CHF 0 (no history mentioned, no S3/crackles/edema) + CVD 0 + insulin 1 + Cr 1.4 0 = 2",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "Hernia type/approach not specified; a ventral/incisional or laparoscopic intraperitoneal repair could count as intraperitoneal, giving 3",
+     "alternative_score": 3
+    }
+   ]
+  },
+  {
+   "row": "254",
+   "fields": {
+    "age": {
+     "value": [
+      80,
+      "years"
+     ],
+     "quote": "An 80-year-old male"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "transurethral resection of the prostate"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "congestive heart failure, which currently causes him dyspnea"
+    },
+    "History of ischemic heart disease": {
+     "value": false,
+     "quote": "absent of ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "he's not been prescribed insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      150,
+      "µmol/L"
+     ],
+     "quote": "creatinine of 150 µmol/L"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "a stroke three years ago"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 0 (TURP) + IHD 0 + CHF 1 (S3) + CVD 1 + insulin 0 + Cr 150 µmol/L (1.70 mg/dL) 0 = 2",
+   "note_issues": []
+  },
+  {
+   "row": "255",
+   "fields": {
+    "age": {
+     "value": [
+      69,
+      "years"
+     ],
+     "quote": "A 69-year-old man"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "lung cancer resection"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "significant for congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "ischemic heart disease that required coronary artery bypass grafting"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.8,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.8 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": false,
+     "quote": "no recorded history of cerebrovascular disease"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 1 (lung resection, intrathoracic) + IHD 1 + CHF 1 + CVD 0 + insulin 0 (not mentioned) + Cr 1.8 0 = 3",
+   "note_issues": []
+  },
+  {
+   "row": "256",
+   "fields": {
+    "age": {
+     "value": [
+      76,
+      "years"
+     ],
+     "quote": "A 76-year-old gentleman"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "elective abdominal aortic aneurysm repair surgery"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "has not experienced any symptoms suggestive of congestive heart failure"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "type 2 diabetes mellitus with insulin therapy"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.9,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.9 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "cerebrovascular accident three years ago"
+    }
+   },
+   "score": 3,
+   "score_working": "surgery 1 (AAA repair) + IHD 0 (not mentioned) + CHF 0 + CVD 1 + insulin 1 + Cr 1.9 0 = 3",
+   "note_issues": [
+    {
+     "field": "History of ischemic heart disease",
+     "issue": "Ischemic heart disease not mentioned at all; scored 0. If present, score would be 4",
+     "alternative_score": 4
+    }
+   ]
+  },
+  {
+   "row": "257",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "A 68-year-old gentleman"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "direct inguinal hernia repair"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "non-ST-segment elevation myocardial infarction five years ago"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": false,
+     "quote": "managed with metformin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.6,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 1.6 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "transient ischemic attack two years ago"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 0 (inguinal hernia) + IHD 1 (NSTEMI) + CHF 0 (not mentioned) + CVD 1 (TIA) + insulin 0 + Cr 1.6 0 = 2",
+   "note_issues": []
+  },
+  {
+   "row": "258",
+   "fields": {
+    "age": {
+     "value": [
+      73,
+      "years"
+     ],
+     "quote": "A 73-year-old man"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "high-risk surgery for carotid artery stenosis"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "diagnosis of congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": false,
+     "quote": "does not have any known history of ischemic heart disease"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      2.0,
+      "mg/dL"
+     ],
+     "quote": "creatinine level of 2.0 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": false,
+     "quote": "nor cerebrovascular accidents"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 1 (carotid surgery read as suprainguinal vascular) + IHD 0 + CHF 1 + CVD 0 + insulin 0 (not mentioned) + Cr 2.0 (not >2) 0 = 2",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "Carotid endarterectomy is anatomically suprainguinal vascular, but many interpretations of RCRI 'suprainguinal vascular' mean aortic/iliac procedures and guidelines class CEA as intermediate risk; if not counted score would be 1",
+     "alternative_score": 1
+    },
+    {
+     "field": "Pre-operative creatinine",
+     "issue": "Creatinine exactly 2.0 mg/dL sits on the >2 threshold; scores 0 under strict '>2'",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "259",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old male"
+    },
+    "Elevated-risk surgery": {
+     "value": false,
+     "quote": "upcoming knee replacement surgery"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": false,
+     "quote": "He denies any history of congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": true,
+     "quote": "significant for ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "type 2 diabetes with insulin therapy"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      1.2,
+      "mg/dL"
+     ],
+     "quote": "serum creatinine level of 1.2 mg/dL"
+    }
+   },
+   "score": 2,
+   "score_working": "surgery 0 (knee replacement) + IHD 1 + CHF 0 + CVD 0 (not mentioned) + insulin 1 + Cr 1.2 0 = 2",
+   "note_issues": []
+  },
+  {
+   "row": "260",
+   "fields": {
+    "age": {
+     "value": [
+      77,
+      "years"
+     ],
+     "quote": "A 77-year-old woman"
+    },
+    "Elevated-risk surgery": {
+     "value": true,
+     "quote": "major high-risk endovascular aneurysm repair"
+    },
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": {
+     "value": true,
+     "quote": "well-managed congestive heart failure"
+    },
+    "History of ischemic heart disease": {
+     "value": false,
+     "quote": "she's not been diagnosed with ischemic heart disease"
+    },
+    "Pre-operative treatment with insulin": {
+     "value": true,
+     "quote": "type 2 diabetes managed with insulin"
+    },
+    "Pre-operative creatinine": {
+     "value": [
+      2.3,
+      "mg/dL"
+     ],
+     "quote": "elevated creatinine of 2.3 mg/dL"
+    },
+    "History of cerebrovascular disease": {
+     "value": true,
+     "quote": "transient ischemic attack four years ago"
+    }
+   },
+   "score": 5,
+   "score_working": "surgery 1 (EVAR, presumed aortic = suprainguinal vascular) + IHD 0 + CHF 1 (history) + CVD 1 (TIA) + insulin 1 + Cr 2.3>2 1 = 5",
+   "note_issues": [
+    {
+     "field": "Elevated-risk surgery",
+     "issue": "Aneurysm location not stated (EVAR is usually aortic); if not aortic/suprainguinal, or if endovascular repair is not counted as open suprainguinal vascular surgery, score would be 4",
+     "alternative_score": 4
+    },
+    {
+     "field": "Congestive Heart Failure criteria for the Cardiac Risk Index rule",
+     "issue": "CHF history present but currently euvolemic with no signs; counted as history per MDCalc. If only current signs counted, score would be 4",
+     "alternative_score": 4
+    }
+   ]
+  }
+ ]
+}

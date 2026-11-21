@@ -1,0 +1,245 @@
+{
+ "calculator_id": "28",
+ "calculator_name": "APACHE II Score",
+ "fields": [
+  {
+   "field": "History of severe organ failure or immunocompromise",
+   "type": "boolean"
+  },
+  {
+   "field": "age",
+   "type": "number with unit",
+   "typical_units": [
+    "years"
+   ]
+  },
+  {
+   "field": "Temperature",
+   "type": "number with unit",
+   "typical_units": [
+    "degrees celsius",
+    "degrees fahrenheit"
+   ]
+  },
+  {
+   "field": "Mean arterial pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "pH",
+   "type": "number"
+  },
+  {
+   "field": "Heart Rate or Pulse",
+   "type": "number with unit",
+   "typical_units": [
+    "beats per minute"
+   ]
+  },
+  {
+   "field": "respiratory rate",
+   "type": "number with unit",
+   "typical_units": [
+    "breaths per minute"
+   ]
+  },
+  {
+   "field": "Sodium",
+   "type": "number with unit",
+   "typical_units": [
+    "mmol/L",
+    "mEq/L"
+   ]
+  },
+  {
+   "field": "Potassium",
+   "type": "number with unit",
+   "typical_units": [
+    "mmol/L",
+    "mEq/L"
+   ]
+  },
+  {
+   "field": "creatinine",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL"
+   ]
+  },
+  {
+   "field": "Acute renal failure",
+   "type": "boolean"
+  },
+  {
+   "field": "Chronic renal failure",
+   "type": "boolean"
+  },
+  {
+   "field": "Hematocrit",
+   "type": "number with unit",
+   "typical_units": [
+    "%"
+   ]
+  },
+  {
+   "field": "White blood cell count",
+   "type": "number with unit",
+   "typical_units": [
+    "mm^3",
+    "µL"
+   ]
+  },
+  {
+   "field": "Glasgow Coma Score",
+   "type": "number"
+  },
+  {
+   "field": "FiO2",
+   "type": "number with unit",
+   "typical_units": [
+    "%"
+   ]
+  },
+  {
+   "field": "PaO2",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "A-a gradient",
+   "type": "number"
+  },
+  {
+   "field": "Diastolic Blood Pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "Systolic Blood Pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "Surgery Type",
+   "type": "category",
+   "allowed_values": [
+    "Elective",
+    "Emergency",
+    "Nonoperative"
+   ]
+  }
+ ],
+ "rows": [
+  {
+   "row": "869",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 43-year-old male with a history of Type 2 Diabetes Mellitus (DM2) and diabetic retinopathy presents with tachycardia to 120 beats per minute and hypothermia (34.9°C). On examination, he appears pale with conjunctival pallor and decreased capillary refill. Blood pressure is 122/81 mmHg, and respiratory rate is 17 breaths per minute. Laboratory results reveal a sodium level of 137.49 mmol/L, potassium level of 5.43 mmol/L, creatinine level of 1.85 mg/dL, and white blood cell count of 9,103/µL. Hematocrit is 35%, and reticulocytes are decreased. Arterial blood gas analysis shows a pH of 7.53 on a FiO₂ of 57%, with an A-a gradient of 375. On physical exam he has eye movements to verbal command (3), is confused (4) and responds to localized pain (5). Decreased sensation is noted bilaterally in the feet extending to the mid-shin. Urine output over the past six hours was 104 mL, suggesting oliguria. "
+  },
+  {
+   "row": "870",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 61-year-old male with a history of chronic kidney disease not requiring dialysis, diabetes, and HLD presents with decreased urine output, mild abdominal tenderness, and suprapubic fullness. His HR is 143, the patient's blood pressure is  125/83 mmHg, RR of 21, and T of 38.3C. Laboratory results reveal a sodium level of 133.28 mmol/L, potassium level of 6.43 mmol/L, creatinine level of 2.57 mg/dL, and white blood cell count of 27,463 count/µL, suggestive of a possible infection or inflammatory process. Hematocrit of 54 % with increased reticulocytes. ABG shows pH of 7.47 a 68 % FiO₂, and an A-a-gradient of 240. On physical examination, the patient is alert and oriented to person, place, time, and situation (AxOx4)."
+  },
+  {
+   "row": "871",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 73-year-old male is admitted to the emergency department following an acute abdominal pain that started suddenly 8 hours ago. He has a known history of hypertension, type 2 diabetes, for which he takes insulin daily, and liver cirrhosis. The patient denies any history of cerebrovascular events or ischemic heart disease. On physical examination, his blood pressure is 138/92 mmHg, heart rate is 107 beats per minute, respiratory rate is 35 breaths per minute, and he is afebrile with a temperature of 37.2°C. Auscultation of the chest reveals no rales, S3 gallop, or signs of congestive heart failure. His Glasgow Coma Scale score is 15, indicating full consciousness. Laboratory results show a creatinine level of 4.58 mg/dL, indicating impaired renal function, and a sodium level of 143.21 mmol/L and a potassium level of 3.68 mmol/L. His fraction of inspired oxygen is 63%. Arterial blood gas analysis reveals a pH of 7.29, a PaO₂ of 78 mm Hg, and an A-a gradient of 331 mm Hg, consistent with significant hypoxemia. Hematocrit is at 41%, and white blood cell count is 15,105 cells/µL. Given his acute presentation, history of diabetes managed with insulin, and laboratory findings, a thorough evaluation including imaging and further laboratory tests is warranted to assess the severity and underlying cause of his symptoms. At present, his management approach does not involve surgical intervention, with close monitoring and reassessment planned."
+  },
+  {
+   "row": "872",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 57-year-old male presents to the emergency department with generalized weakness and difficulty breathing that started two days ago. He has a history of chronic renal failure, managed conservatively, and had a scheduled kidney transplant in the past. He reports feeling more fatigued and short of breath than usual, particularly with mild exertion. His medical history is significant for diabetes mellitus, managed with oral hypoglycemic agents, but no history of cerebrovascular or ischemic heart disease. On examination, his pulse is 73 beats per minute, and he appears slightly dyspneic with a respiratory rate of 27 breaths per minute. Blood pressure is elevated at 132/103 mm Hg. He is afebrile with a temperature of 37.2°C. Laboratory tests reveal a sodium level of 132.39 mmol/L, creatinine of 3.67 mg/dL, potassium of 4.31 mmol/L, and a hematocrit of 32 %. His white blood cell count is 12,476 cells/µL. Arterial blood gas analysis shows a pH of 7.40 and a PaO2 of 57 mm Hg while breathing 32 % oxygen. His Glasgow Coma Scale score is 15, indicating he is fully alert. The patient has no signs of acute renal failure, though his chronic renal condition and current symptoms suggest a need for careful preoperative management. His history of diabetes and chronic renal failure, combined with current vital signs and laboratory findings, place him at an increased risk for postoperative complications. "
+  },
+  {
+   "row": "873",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 52-year-old patient with a known medical history characterized by several organ failures managed with medications presented to the hospital with general malaise and signs of confusion. On examination, the patient had a pulse rate of 90 beats per minute and the blood pressure measurement displayed 120/70 mm Hg. The respiratory rate was 16 breaths per minute, with oxygen saturation stably maintained on 60 % FiO₂. Basal temperature was found to be normal, at 37°C. Initial neurological evaluation revealed a slightly lowered level of consciousness, with a Glasgow Coma Score of 12. Laboratory workup showed a normal creatinine level of 1.2 mg/dL, indicating no recent onset of renal impairment. Complete blood count displayed a white blood cell count of 7000 per microliter, within the reference ranges. Routine electrolyte panel demonstrated sodium and potassium concentrations at 137 and 4.8 mEq/L, respectively. Arterial blood gas analysis revealed a pH of 7.35 with a A-a-gradient of 375. Hematocrit level was observed at a standard 45 %. Owing to the patient's historical pattern of severe organ failure and present immunocompromised state, continued vigilance and monitoring are of paramount importance for any signs of potential complications."
+  },
+  {
+   "row": "874",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A gentleman of 65 years of age, with a long-standing diagnosis of chronic kidney disease, has attended the hospital complaining of severe back pain and fatigue. Initial evaluation revealed an elevated body temperature of 38.5°C, a heart rate of 110 beats per minute, respiratory rate of 20 breaths per minute, and blood pressure recorded at 140/80 mm Hg. He appears somewhat lethargic and responds to verbal commands occasionally, with a Glasgow Coma Score of 14 recorded. Laboratory parameters returned borderline high creatinine levels of 2.0 mg/dL, a clear indication of an acute kidney injury. Additionally, the patient's complete blood count disclosed leukocytosis, with 15000 white blood cells per µL. Electrolyte analysis asserted normal sodium concentration of 140 mEq/L and a slightly elevated potassium level of 5.2 mEq/L. Arterial blood gas showed a slightly reduced pH of 7.30 and a partial pressure of oxygen at 65 mm Hg while on 45% FiO₂. Her hematocrit was somewhat depressed at 39% - a red flag for possible anemia. Given the acute onset of renal dysfunction, aggressive management in a monitored setting is warranted."
+  },
+  {
+   "row": "875",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 58-year-old male with no significant past medical history presents to the emergency department with an episode of mild disorientation and general fatigue. On clinical examination, the patient's temperature is 36.5°C, heart rate is 85 beats per minute, respiratory rate is 18 breaths per minute, and blood pressure is 130/78 mmHg. Neurological assessment reveals mild confusion, resulting in a Glasgow Coma Score of 13. Labs show a creatinine of 1.3 mg/dL, sodium 139 mEq/L, potassium 5.0 mEq/L, and white blood cell count of 8000 count/µL. Hematocrit was measured at 42 %. His arterial blood gas showed a pH of 7.37; the patient was maintaining an A_A_gradient of 425 on 54 % FiO2."
+  },
+  {
+   "row": "876",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 60-year-old male with a history of acute aortic disection which was treated with an emergency surgery in the past, presents to the emergency department with acute symptoms of lethargy and decreased appetite. Physical examination reveals tachycardia to 95 beats per minute, respiratory rate of 19 breaths per minute, blood pressure registering at 135/75 mm Hg and a baseline temperature of 37.2°C. Neurological assessment demonstrates mild confusion, corresponding to a Glasgow Coma Score of 14. Blood tests reveal elevated creatinine levels at 3.8 mg/dL. Metabolic panel showed sodium at 138 and potassium at 4.5 mEq/L. The white blood cell count was 12,000 per µL, triggering concern for a possible infection. Hematocrit was just within normal range at 43%. The patient had an arterial blood gas pH of 7.32 and a A-a-gradient of 364, with a supplementary FiO₂ of 55 %. This patient's acute renal failure symptomatology, alongside the history of severe organ failure and immunocompromised, mandate rigorous monitoring and urgent medical intervention."
+  },
+  {
+   "row": "877",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 67-year-old patient is admitted to the hospital with fever, shortness of breath, and rapid heart rate. Initial examination uncovers a temperature of 38.7 degrees celsius, heart rate of 105 beats per minute, breathing rate at 22 breaths per minute, and a blood pressure of 138/82 mm Hg. The patient's Glasgow Coma Score is assessed at 13. Comprehensive lab testing creatinine at 2.5 mg/dL. The white blood cell count is noted at 10,000 per µL, further raising suspicion for systemic infection. The patient's sodium and potassium levels remain within normal ranges at 142 mEq/L and 4.7 mEq/L, respectively. Arterial blood gas analysis indicates a pH of 7.33 along with an A-a-gradient of 473, while receiving a FiO2 of 50 %. Hematocrit measures 41 %. Given the current symptoms of infection and the possible occurrence of acute renal failure, the patient will likely require prompt antibiotic therapy and renal supportive care."
+  },
+  {
+   "row": "878",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 55-year-old female with no significant past medical history presented to the clinic for a routine check-up. Physical examination findings included a body temperature of 36.8 degrees Celsius, a heart rate of 98 beats per minute, a respiratory rate of 20 breaths per minute, and a blood pressure of 128/76 mm Hg. The patient is alert and responds appropriately to environmental stimuli, with a Glasgow Coma Score measured at 15. Laboratory results revealed an elevated creatinine level of 1.6 mg/dL, consistent with acute renal failure not requiring dialysis. The patient’s pH was within normal limits at 7.41, and their white blood cell count was 9,000 per µL. Electrolyte levels are stable, with sodium at 141 mEq/L and potassium at 4.6 mEq/L. Regarding pulmonary function, the patient is managing an A-a gradient of 430 while on 52% FiO₂, which reflects significant impairment in oxygen exchange. Hematocrit stands at a normal 40%. Given the observed acute renal failure, close monitoring of kidney function and evaluation for underlying causes are recommended. The elevated A-a gradient also warrants further investigation to assess for potential pulmonary or cardiopulmonary issues."
+  },
+  {
+   "row": "879",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 70-year-old male with chronic kidney disease stage II attended the clinic accompanied by family members, citing sporadic moments of agitation and disorientation. The initial evaluation established a high heart rate at 115 beats per minute, a blood pressure of 125/90 mm Hg, and a respiration rate of 18 breaths per minute. His body temperature is registered at 37.4 degrees celsius. Regarding neurological status, the Glasgow Coma Score was tallied at 14, with 1 point for minor confusion. Laboratory studies showed a sodium concentration of 145 mEq/L, potassium at 4.2 mEq/L, and a creatinine level of 2.0 mg/dL. The reported white blood cell count was 11,000 per µL, while the hematocrit was slightly low at 37 %. Arterial blood gas values demonstrated a decreased pH of 7.28, however, the patient was maintaining a PaO2 of 80 mmHg on 40 % FiO2. Due to both the patient's age and the observed clinical abnormalities, comprehensive investigations are warranted to rule out any possible underlying conditions."
+  },
+  {
+   "row": "880",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 63-year-old female presents to herself to the emergency department, due to a high blood pressure, pulse rate, and breathing rate. Upon physical examination, the patient was found to have a normal temperature of 36.6 degrees celsius, a pulse that reads 129 beats per minute, a breathing rate of 32 respirations per minute, and a blood pressure of 150/95 mmHg. The patient’s mental status was determined to be fully alert with a Glasgow Coma Score of 15. Lab studies show a creatinine level at 1.1 mg/dL. The patient's white blood cell count was also documented as within the normal range, at 6500 cells per µL. Sodium is measured at 140 and potassium at 4.4 mEq/L. The patient's FiO2 was reported as 46%. Arterial blood gas analysis demonstrates a pH of 7.36 and the patient has a recorded PaO2 of 74 mmHg. The patient’s hematocrit value is at 38%. "
+  },
+  {
+   "row": "881",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 56-year-old male with chronic kidney disease stage II presents to the clinic for routine follow-up. On physical examination, temperature is documented at 37.1 degrees celsius, heart rate at 92 beats per minute, respiratory rate of 16 breaths per minute, and blood pressure at 122/74 mmHg. Mild confusion was present during assessment, resulting in a Glasgow Coma Score of 13. Laboratory findings include a creatinine level of 1.8 mg/dL and white blood cell count at 7500 cells per µL. Sodium is measured at 135 mEq/L and potassium at 4.6 mEq/L. ABG shows blood pH at 7.34 with an FiO2% of 49% and a partial pressure of PaO2 at 77 mm Hg. The hematocrit level is noted to be slightly reduced to 41 %. The presence of chronic renal failure, despite the patient's current stable state, emphasizes the importance of regular monitoring and management to prevent further health deterioration."
+  },
+  {
+   "row": "882",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 50-year-old individual presents to the emergency department due to fatigue for the past several days. Upon physical examination, the patient's vitals showed a temperature of 37.5 degrees celsius, heart rate at 100 beats per minute, respiratory rate at 18 breaths per minute, and a blood pressure of 124/77 mmHg. Despite reporting feeling fatigued, the patient oriented well and had a full Glasgow Coma Score of 15. Laboratory testing showed a slightly increased creatinine level of 1.4 mg/dL and a white blood cell count within the reference range, at 8,000 per µL. Electrolyte levels showed sodium at 138 mEq/L and potassium at 4.9 mEq/L. Arterial blood gas demonstrated a somewhat lowered pH of 7.32 while maintaining a partial pressure of oxygen of 76 mmHg on a supplemental FiO₂ of 48 %. Hematocrit was in the normal range, measuring at 40 %. Despite no history of severe organ failure or immunocompromise, the current symptoms demand further observation and possible medical intervention to effectively manage the presented fatigue and prevent further complications."
+  },
+  {
+   "row": "883",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 64-year-old individual with no known medical history was brought to the emergency department due to episodes of mild confusion. Vital signs on admission included a heart rate of 96 beats per minute, a respiratory rate of 18 breaths per minute, a blood pressure of 130/80 mm Hg, and a body temperature recorded as 37.0 degrees celsius. The patient's level of consciousness was also evaluated with a resultant Glasgow Coma Score of 14. Laboratory investigations noted a mild elevation in creatinine levels, recorded at 1.4 mg/dL. The patients white blood cell count appeared normal at 7000 per µL. Electrolytes were found to be within normal ranges, with sodium reported at 139 mEq/L and potassium reading 4.5 mEq/L. Analysis of arterial blood gases showed a slightly reduced pH of 7.33, with the patient having an A-a-gradient of 478 on a supplemented FiO₂ of 52 %. Hematocrit measured within the normal range, at 43 %. Given the new onset of confusion in an otherwise healthy patient, further diagnostic evaluations may be essential to determine the underlying cause."
+  },
+  {
+   "row": "884",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "The patient is a 57-year-old individual with a noted history of significant chronic liver failure requiring a scheduled transplant. The individual presented to the emergency unit with complaints of recent onset lethargy and general fatigue. Vital signs showed mild tachycardia with a pulse rate of 102 beats per minute, blood pressure of 120/75 mm Hg, a respiratory rate of 19 breaths per minute, and a body temperature of 36.7 degrees Celsius. The Glasgow Coma Score was calculated to be 13, indicating a mild decrease in overall alertness. Laboratory findings included a slightly elevated creatinine level of 1.3 mg/dL, a white blood cell count of 7800/µL, sodium levels at 142 mEq/L, and potassium concentration within the normal range at 4.7 mEq/L. Arterial blood gas illustrated a pH of 7.31, with the patient maintaining an A-a gradient of 400 on 54% FiO₂. Hematocrit readings were within normal parameters at 41%. Despite no evidence of acute renal failure, the patient's history and new symptomatology necessitate a cautious and well-monitored approach to their care, with further investigations planned to decipher the underlying cause."
+  },
+  {
+   "row": "885",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 59-year-old individual recently visited the office after feeling \"out of sorts\" and generally unwell over the past few days. During examination, the patient displayed a slightly increased heart rate of 104 beats per minute and blood pressure reading of 126/72 mm Hg. The patient's respiratory rate was noted to be 17 breaths per minute, and body temperature was within normal limit at 36.5 degrees celsius. While mildly confused, with a Glasgow Coma Score of 14, the patient was adequately oriented to person, place, and time. Key laboratory findings indicated a creatinine value of 0.7 mg/dL and a white blood cell count of 8800 cells per µL. Electrolyte levels remained within the normal range, with sodium measured at 138 mEq/L and potassium at 4.3 mEq/L. The arterial blood gas determined a pH of 7.33 and showed the patient was maintaining a partial pressure of oxygen (PaO₂) of 76 mm Hg on 43 % FiO₂. The hematocrit was measured at 41 %, falling within the average range. Despite the absence of a significant past medical history, the current symptoms, in combination with the slightly high creatinine values, warrant further evaluation."
+  },
+  {
+   "row": "886",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "The individual under assessment is a 61-year-old patient known to have a longstanding diagnosis of chronic kidney disease. During this particular visit, the patient presented to the emergency department due to increased fatigue and shortness of breath. On initial assessment, certain vitals were noted: body temperature at 37 degrees celsius, heart rate was slightly high at 98 beats per minute, a respiratory rate of 18 breaths per minute, and blood pressure registering at 130/74 mm Hg. Neurological assessment yielded a Glasgow Coma Score of 14, suggesting a slight reduction in consciousness. Laboratory results revealed elevated creatinine at 1.8 mg/dL and a white blood cell count of 8000/µL, suggesting a possible underlying infection. Sodium levels were slightly above the normal range at 141 mEq/L, and potassium levels were near normal at 4.4 mEq/L. Analysis of the arterial blood gas indicated a pH of 7.33 and a A-a-gradient of 445  at a fraction of inspired oxygen (FiO₂) of 53 %. The hematocrit result was within normal limits at 42 %. Based on these findings, the patient's escalating symptoms of fatigue and shortness of breath call for prompt management given the underlying chronic renal condition."
+  },
+  {
+   "row": "887",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "The patient in question is a 68-year-old individual, known to have previously experienced severe liver failure managed with medications. He also had chronic kidney disease stage I. Currently, the individual presented to the outpatient clinic, complaining of increased fatigue. On physical examination, the patient exhibited a body temperature of 37.6 degrees celsius with a heart rate of 89 beats per minute. Blood pressure was measured at 110/72 mm Hg and respiratory rate was recorded as 16 breaths per minute. Neurologic evaluation yielded a perfect Glasgow Coma Score of 15. The laboratory results specified creatinine at 1.3 mg/dL, combined with a white blood cell count of 7000/µL. The sodium level is towards the lower end of normal at 136 mEq/L with potassium within the normal range, documented at 4.2 mEq/L. The patient's arterial blood gas showed a typical pH of 7.4 with a partial pressure of oxygen (PaO₂) being 78 mm Hg on 45 % FiO₂. The hematocrit level was mildly reduced to 38%. Given the patient's history of severe organ failure, the current clinical context and the elevated creatinine levels necessitate further evaluation and careful monitoring."
+  },
+  {
+   "row": "888",
+   "question": "What is the patient's APACHE II score?",
+   "patient_note": "A 64-year-old male presents to the ICU department with complaints of feeling lethargic and general malaise. The patient exhibited a body temperature of 37.1 degrees celsius, heart rate of 93 beats per minute, blood pressure measured to be 115/75 mm Hg, and a respiratory rate of 14 breaths per minute. Neurological examination conducted revealed the patient to have full consciousness with a Glasgow Coma Score at 15. Laboratory results indicated an elevation in creatinine level, documented at 1.4 mg/dL, suggestive of some level of renal impairment, and a white blood cell count of 7300 count/µL. Electrolyte analysis showed sodium level of 138 mEq/L and a potassium level of 4.6 mEq/L. The patient's arterial blood gas analysis showed a pH of 7.34 in conjunction with a patient maintaining a partial pressure of oxygen (PaO₂) of 77 mm Hg on a supplementary FiO₂ of 46%. The hematocrit was slightly below average at 38%. Considering the lab results along with the patient's general feeling of malaise, further diagnostic tests are in order to rule out additional potential underlying pathologies."
+  }
+ ],
+ "mdcalc_rules": "Age <=44:0, 45-54:2, 55-64:3, 65-74:5, >=75:6. Severe organ insufficiency/immunocompromise: nonoperative or emergency postop +5, elective postop +2 (defined by current admission). Temp C: >=41:4, 39-40.9:3, 38.5-38.9:1, 36-38.4:0, 34-35.9:1, 32-33.9:2, 30-31.9:3, <30:4. MAP: >=160:4, 130-159:3, 110-129:2, 70-109:0, 50-69:2, <=49:4. HR: >=180:4, 140-179:3, 110-139:2, 70-109:0, 55-69:2, 40-54:3, <=39:4. RR: >=50:4, 35-49:3, 25-34:1, 12-24:0, 10-11:1, 6-9:2, <=5:4. Oxygenation: FiO2>=50% use A-a gradient >=500:4, 350-499:3, 200-349:2, <200:0; FiO2<50% use PaO2 >70:0, 61-70:1, 55-60:3, <55:4. Arterial pH: >=7.70:4, 7.60-7.69:3, 7.50-7.59:1, 7.33-7.49:0, 7.25-7.32:2, 7.15-7.24:3, <7.15:4. Na: >=180:4, 160-179:3, 155-159:2, 150-154:1, 130-149:0, 120-129:2, 111-119:3, <=110:4. K: >=7:4, 6-6.9:3, 5.5-5.9:1, 3.5-5.4:0, 3-3.4:1, 2.5-2.9:2, <2.5:4. Creatinine mg/dL: >=3.5:4, 2-3.4:3, 1.5-1.9:2, 0.6-1.4:0, <0.6:2; points doubled if acute renal failure (no chronic renal failure input). Hct %: >=60:4, 50-59.9:2, 46-49.9:1, 30-45.9:0, 20-29.9:2, <20:4. WBC x10^9/L: >=40:4, 20-39.9:2, 15-19.9:1, 3-14.9:0, 1-2.9:2, <1:4. GCS: 15 - GCS.",
+ "mdcalc_source": "https://www.mdcalc.com/calc/1868/apache-ii-score (page fetched: input list only - organ failure/immunocompromise Y/N with examples 'Heart Failure Class IV, cirrhosis, chronic lung disease, or dialysis-dependent', creatinine in umol/L, ARF Y/N 'not defined in the original study', FiO2 <50% (or non-intubated) / >=50%; point bands not rendered, so bands taken from Knaus 1985 APACHE II, which MDCalc implements)"
+}

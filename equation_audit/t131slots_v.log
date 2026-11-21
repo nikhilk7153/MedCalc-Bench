@@ -1,0 +1,4 @@
+10 rows from t131_slots.csv to check
+final_t131slots_verify.jsonl: 0 cached, 10 to run
+Verdict
+correct    10

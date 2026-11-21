@@ -1,0 +1,74 @@
+[
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-7903926-1",
+  "replace": [
+   [
+    ", low-density lipoproteins of 103.8 milligrams per deciliter (reference range: <100 milligrams per deciliter)",
+    ""
+   ]
+  ],
+  "reason": "The note stated the measured LDL, which is the answer the LDL Calculated question asks for",
+  "row": "513"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-3221905-1",
+  "replace": [
+   [
+    ", low density lipoprotein-cholesterol <10 mg/dL",
+    ""
+   ]
+  ],
+  "reason": "The note reported a measured LDL (<10 mg/dL) that conflicts with the calculated LDL the question asks for",
+  "row": "516"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-3651988-1",
+  "replace": [
+   [
+    "the low-density lipoprotein cholesterol concentration was 214.4 mg/dl, ",
+    ""
+   ]
+  ],
+  "reason": "The note stated the measured LDL, which is the answer the LDL Calculated question asks for",
+  "row": "517"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-6728653-1",
+  "replace": [
+   [
+    "lipoprotein 49 mg/dL, low-density lipoprotein 63 mg/dL, and",
+    "lipoprotein 49 mg/dL, and"
+   ]
+  ],
+  "reason": "The note stated the measured LDL, which is the answer the LDL Calculated question asks for",
+  "row": "526"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-6150762-1",
+  "replace": [
+   [
+    ", low-density lipoprotein 90 mg/dL",
+    ""
+   ]
+  ],
+  "reason": "The note stated the measured LDL, which is the answer the LDL Calculated question asks for",
+  "row": "530"
+ },
+ {
+  "calculator_id": "65",
+  "note_id": "pmc-6957036-1",
+  "replace": [
+   [
+    " anion gap 25 mEq/L after correcting for albumin (normal: 8-12),",
+    ""
+   ]
+  ],
+  "reason": "The note stated the albumin-corrected anion gap, which is the answer the question asks for",
+  "row": "772"
+ }
+]

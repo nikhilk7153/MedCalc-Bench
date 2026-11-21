@@ -1,0 +1,146 @@
+﻿Row Number,Calculator ID,Calculator Name,Note ID,Note Type,Ground Truth Answer,Lower Limit,Upper Limit,Verdict,Error Type,Corrected Answer,Explanation,Question,Patient Note,Ground Truth Explanation
+1053,49,Morphine Milligram Equivalents (MME) Calculator,13,Template,31.8,30.21,33.39,incorrect,wrong_equation,The tapentadol contribution is 24 MME/day; total MME/day cannot be calculated using the CDC 2022 conversion table alone.,"The doses were extracted correctly: fentanyl buccal 60 µg/day and tapentadol 60 mg/day. CDC 2022 lists a tapentadol factor of 0.4, yielding 24 MME/day, but its fentanyl conversion factor applies only to transdermal fentanyl measured in µg/hour. It does not provide the claimed buccal fentanyl factor of 0.13 MME/µg. Although the benchmark's arithmetic is internally consistent, its total of 31.8 is not supported by the specified CDC conversions.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 30 µg of FentaNYL buccal 2 times a day and 20 mg of Tapentadol 3 times a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of FentaNYL buccal is 30 µg.
+The patient takes 2 doses/day of FentaNYL buccal. This means that the patient takes 30 µg/dose FentaNYL buccal * 2 dose/day = 60 µg/day. To convert to mme/day of FentaNYL buccal, multiply the 60 µg/day by the mme conversion factor, 0.13 mme/µg, giving us 7.8 mme/day. Adding the mme/day of FentaNYL buccal to the total mme/day gives us 0 + 7.8 = 7.8 mme/day.
+The patient's dose of Tapentadol is 20 mg. The patient takes 3 doses/day of Tapentadol. This means that the patient takes 20 mg/dose Tapentadol * 3 dose/day = 60 mg/day. To convert to mme/day of Tapentadol, multiply the 60 mg/day by the mme conversion factor, 0.4 mme/mg, giving us 24.0 mme/day. Adding the mme/day of Tapentadol to the total mme/day gives us 7.8 + 24.0 = 31.8 mme/day.
+The patient's mme/day is 31.8 mme/day."
+1042,49,Morphine Milligram Equivalents (MME) Calculator,2,Template,335.2,318.44,351.96,ambiguous,out_of_domain,"The total cannot be calculated using the CDC 2022 conversion table. Hydromorphone and morphine contribute 330 MME/day, excluding buccal fentanyl.","The daily doses are correctly extracted: fentanyl 40 µg/day, hydromorphone 60 mg/day, and morphine 30 mg/day. The CDC 2022 factors give 60 × 5 + 30 × 1 = 330 MME/day for hydromorphone and morphine. However, that guideline provides a fentanyl conversion factor only for transdermal patches, not buccal fentanyl. The benchmark's buccal factor of 0.13 is not supplied by the specified guideline. Its arithmetic is consistent with that unsupported factor, but the full total cannot be established using the requested standard.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.","A patient takes 20 µg of FentaNYL buccal 2 times a day, 20 mg of HYDROmorphone 3 times a day, and 10 mg of Morphine 3 times a day.","The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of FentaNYL buccal is 20 µg.
+The patient takes 2 doses/day of FentaNYL buccal. This means that the patient takes 20 µg/dose FentaNYL buccal * 2 dose/day = 40 µg/day. To convert to mme/day of FentaNYL buccal, multiply the 40 µg/day by the mme conversion factor, 0.13 mme/µg, giving us 5.2 mme/day. Adding the mme/day of FentaNYL buccal to the total mme/day gives us 0 + 5.2 = 5.2 mme/day.
+The patient's dose of HYDROmorphone is 20 mg. The patient takes 3 doses/day of HYDROmorphone. This means that the patient takes 20 mg/dose HYDROmorphone * 3 dose/day = 60 mg/day. To convert to mme/day of HYDROmorphone, multiply the 60 mg/day by the mme conversion factor, 5 mme/mg, giving us 300 mme/day. Adding the mme/day of HYDROmorphone to the total mme/day gives us 5.2 + 300 = 305.2 mme/day.
+The patient's dose of Morphine is 10 mg. The patient takes 3 doses/day of Morphine. This means that the patient takes 10 mg/dose Morphine * 3 dose/day = 30 mg/day. To convert to mme/day of Morphine, multiply the 30 mg/day by the mme conversion factor, 1 mme/mg, giving us 30 mme/day. Adding the mme/day of Morphine to the total mme/day gives us 305.2 + 30 = 335.2 mme/day.
+The patient's mme/day is 335.2 mme/day."
+1041,49,Morphine Milligram Equivalents (MME) Calculator,1,Template,149.0,141.55,156.45,correct,none,149 MME/day,"The CDC 2022 conversion factors are 4.7 for methadone and 0.4 for tapentadol. Methadone contributes 10 mg/dose × 3 doses/day × 4.7 = 141 MME/day; tapentadol contributes 20 mg/dose × 1 dose/day × 0.4 = 8 MME/day. The total is 149 MME/day, within the accepted range.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 10 mg of Methadone 3 times a day and 20 mg of Tapentadol 1 time a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 10 mg. The patient takes 3 doses/day of Methadone. This means that the patient takes 10 mg/dose Methadone * 3 dose/day = 30 mg/day. To convert to mme/day of Methadone, multiply the 30 mg/day by the mme conversion factor, 4.7 mme/mg, giving us 141.0 mme/day. Adding the mme/day of Methadone to the total mme/day gives us 0 + 141.0 = 141.0 mme/day.
+The patient's dose of Tapentadol is 20 mg. The patient takes 1 doses/day of Tapentadol. This means that the patient takes 20 mg/dose Tapentadol * 1 dose/day = 20 mg/day. To convert to mme/day of Tapentadol, multiply the 20 mg/day by the mme conversion factor, 0.4 mme/mg, giving us 8.0 mme/day. Adding the mme/day of Tapentadol to the total mme/day gives us 141.0 + 8.0 = 149.0 mme/day.
+The patient's mme/day is 149.0 mme/day."
+1044,49,Morphine Milligram Equivalents (MME) Calculator,4,Template,282.0,267.9,296.1,correct,none,282 MME/day,"The note documents methadone 30 mg twice daily, totaling 60 mg/day. The CDC 2022 guideline lists a methadone MME conversion factor of 4.7. Thus, 60 × 4.7 = 282 MME/day, within the accepted range. Although the explanation's unused conversion-table entries include inaccuracies, the methadone factor and calculation are correct.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 30 mg of Methadone 2 times a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 30 mg. The patient takes 2 doses/day of Methadone. This means that the patient takes 30 mg/dose Methadone * 2 dose/day = 60 mg/day. To convert to mme/day of Methadone, multiply the 60 mg/day by the mme conversion factor, 4.7 mme/mg, giving us 282.0 mme/day. Adding the mme/day of Methadone to the total mme/day gives us 0 + 282.0 = 282.0 mme/day.
+The patient's mme/day is 282.0 mme/day."
+1047,49,Morphine Milligram Equivalents (MME) Calculator,7,Template,473.0,449.35,496.65,correct,none,473 MME/day,"The CDC 2022 conversion factors are 4.7 for methadone and 5 for hydromorphone. Methadone contributes 30 mg/dose × 3 doses/day × 4.7 = 423 MME/day. Hydromorphone contributes 10 mg/dose × 1 dose/day × 5 = 50 MME/day. Total = 473 MME/day, which matches the ground truth and falls within the accepted range.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 30 mg of Methadone 3 times a day and 10 mg of HYDROmorphone 1 time a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 30 mg. The patient takes 3 doses/day of Methadone. This means that the patient takes 30 mg/dose Methadone * 3 dose/day = 90 mg/day. To convert to mme/day of Methadone, multiply the 90 mg/day by the mme conversion factor, 4.7 mme/mg, giving us 423.0 mme/day. Adding the mme/day of Methadone to the total mme/day gives us 0 + 423.0 = 423.0 mme/day.
+The patient's dose of HYDROmorphone is 10 mg. The patient takes 1 doses/day of HYDROmorphone. This means that the patient takes 10 mg/dose HYDROmorphone * 1 dose/day = 10 mg/day. To convert to mme/day of HYDROmorphone, multiply the 10 mg/day by the mme conversion factor, 5 mme/mg, giving us 50 mme/day. Adding the mme/day of HYDROmorphone to the total mme/day gives us 423.0 + 50 = 473.0 mme/day.
+The patient's mme/day is 473.0 mme/day."
+1051,49,Morphine Milligram Equivalents (MME) Calculator,11,Template,94.0,89.3,98.7,correct,none,94 MME/day,"The note specifies methadone 20 mg once daily, totaling 20 mg/day. The CDC 2022 conversion factor for methadone is 4.7, so daily MME = 20 × 1 × 4.7 = 94 MME/day, within the accepted range. No unit conversion is needed.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 20 mg of Methadone 1 time a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 20 mg. The patient takes 1 doses/day of Methadone. This means that the patient takes 20 mg/dose Methadone * 1 dose/day = 20 mg/day. To convert to mme/day of Methadone, multiply the 20 mg/day by the mme conversion factor, 4.7 mme/mg, giving us 94.0 mme/day. Adding the mme/day of Methadone to the total mme/day gives us 0 + 94.0 = 94.0 mme/day.
+The patient's mme/day is 94.0 mme/day."
+1052,49,Morphine Milligram Equivalents (MME) Calculator,12,Template,230.0,218.5,241.5,correct,none,230 MME/day,"Using the CDC 2022 conversion factors of 5 for hydromorphone and 1 for morphine: hydromorphone contributes 20 mg × 2/day × 5 = 200 MME/day, and morphine contributes 30 mg × 1/day × 1 = 30 MME/day. The total is 230 MME/day, within the accepted range. The relevant inputs, units, conversion factors, and arithmetic are correct.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 20 mg of HYDROmorphone 2 times a day and 30 mg of Morphine 1 time a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of HYDROmorphone is 20 mg. The patient takes 2 doses/day of HYDROmorphone. This means that the patient takes 20 mg/dose HYDROmorphone * 2 dose/day = 40 mg/day. To convert to mme/day of HYDROmorphone, multiply the 40 mg/day by the mme conversion factor, 5 mme/mg, giving us 200 mme/day. Adding the mme/day of HYDROmorphone to the total mme/day gives us 0 + 200 = 200 mme/day.
+The patient's dose of Morphine is 30 mg. The patient takes 1 doses/day of Morphine. This means that the patient takes 30 mg/dose Morphine * 1 dose/day = 30 mg/day. To convert to mme/day of Morphine, multiply the 30 mg/day by the mme conversion factor, 1 mme/mg, giving us 30 mme/day. Adding the mme/day of Morphine to the total mme/day gives us 200 + 30 = 230 mme/day.
+The patient's mme/day is 230 mme/day."
+1057,49,Morphine Milligram Equivalents (MME) Calculator,17,Template,94.0,89.3,98.7,correct,none,94 MME/day,"Using the CDC 2022 conversion factors, hydrocodone contributes 30 mg/dose × 3 doses/day × 1 = 90 MME/day, and tapentadol contributes 10 mg/dose × 1 dose/day × 0.4 = 4 MME/day. The total is 94 MME/day, within the accepted range. The inputs, applicable conversion factors, units, and arithmetic are correct.","Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",A patient takes 30 mg of HYDROcodone 3 times a day and 10 mg of Tapentadol 1 time a day.,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed below:
+
+1. Codeine: MME conversion factor = 0.15
+2. FentaNYL buccal: MME conversion factor = 0.13
+3. HYDROcodone: MME conversion factor = 1
+4. HYDROmorphone: MME conversion factor = 5
+5. Methadone: MME conversion factor = 4.7
+6. Morphine: MME conversion factor = 1
+7. OxyCODONE: MME conversion factor = 1.5
+8. OxyMORphone: MME conversion factor = 3
+9. Tapentadol: MME conversion factor = 0.4
+10. TraMADol: MME conversion factor = 0.2
+11. Buprenorphine: MME conversion factor = 10
+
+The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of HYDROcodone is 30 mg. The patient takes 3 doses/day of HYDROcodone. This means that the patient takes 30 mg/dose HYDROcodone * 3 dose/day = 90 mg/day. To convert to mme/day of HYDROcodone, multiply the 90 mg/day by the mme conversion factor, 1 mme/mg, giving us 90 mme/day. Adding the mme/day of HYDROcodone to the total mme/day gives us 0 + 90 = 90 mme/day.
+The patient's dose of Tapentadol is 10 mg. The patient takes 1 doses/day of Tapentadol. This means that the patient takes 10 mg/dose Tapentadol * 1 dose/day = 10 mg/day. To convert to mme/day of Tapentadol, multiply the 10 mg/day by the mme conversion factor, 0.4 mme/mg, giving us 4.0 mme/day. Adding the mme/day of Tapentadol to the total mme/day gives us 90 + 4.0 = 94.0 mme/day.
+The patient's mme/day is 94.0 mme/day."

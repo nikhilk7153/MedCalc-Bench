@@ -1,0 +1,153 @@
+Setting,Calculator Type,Model,Attributes,Rows,Correct,Accuracy
+zero_shot,equation,PMC Llama 13b,1,60,0,0.0
+zero_shot,equation,PMC Llama 13b,2,282,0,0.0
+zero_shot,equation,PMC Llama 13b,3,160,0,0.0
+zero_shot,equation,PMC Llama 13b,4,125,0,0.0
+zero_shot,equation,PMC Llama 13b,5,20,0,0.0
+zero_shot,equation,PMC Llama 13b,6,5,0,0.0
+zero_shot,equation,PMC Llama 13b,7,16,0,0.0
+zero_shot,equation,Meditron 70b,1,60,0,0.0
+zero_shot,equation,Meditron 70b,2,282,1,0.0035
+zero_shot,equation,Meditron 70b,3,160,0,0.0
+zero_shot,equation,Meditron 70b,4,125,0,0.0
+zero_shot,equation,Meditron 70b,5,20,0,0.0
+zero_shot,equation,Meditron 70b,6,5,0,0.0
+zero_shot,equation,Meditron 70b,7,16,0,0.0
+zero_shot,equation,Llama3 8b,1,60,9,0.15
+zero_shot,equation,Llama3 8b,2,282,61,0.2163
+zero_shot,equation,Llama3 8b,3,160,31,0.1938
+zero_shot,equation,Llama3 8b,4,125,2,0.016
+zero_shot,equation,Llama3 8b,5,20,1,0.05
+zero_shot,equation,Llama3 8b,6,5,0,0.0
+zero_shot,equation,Llama3 8b,7,16,1,0.0625
+zero_shot,equation,Llama3 70b,1,60,30,0.5
+zero_shot,equation,Llama3 70b,2,282,172,0.6099
+zero_shot,equation,Llama3 70b,3,160,102,0.6375
+zero_shot,equation,Llama3 70b,4,125,18,0.144
+zero_shot,equation,Llama3 70b,5,20,0,0.0
+zero_shot,equation,Llama3 70b,6,5,0,0.0
+zero_shot,equation,Llama3 70b,7,16,2,0.125
+zero_shot,equation,Mistral 7b,1,60,3,0.05
+zero_shot,equation,Mistral 7b,2,282,58,0.2057
+zero_shot,equation,Mistral 7b,3,160,25,0.1562
+zero_shot,equation,Mistral 7b,4,125,1,0.008
+zero_shot,equation,Mistral 7b,5,20,0,0.0
+zero_shot,equation,Mistral 7b,6,5,0,0.0
+zero_shot,equation,Mistral 7b,7,16,1,0.0625
+zero_shot,equation,Mixtral 8x7b,1,60,12,0.2
+zero_shot,equation,Mixtral 8x7b,2,282,105,0.3723
+zero_shot,equation,Mixtral 8x7b,3,160,56,0.35
+zero_shot,equation,Mixtral 8x7b,4,125,9,0.072
+zero_shot,equation,Mixtral 8x7b,5,20,1,0.05
+zero_shot,equation,Mixtral 8x7b,6,5,1,0.2
+zero_shot,equation,Mixtral 8x7b,7,16,1,0.0625
+zero_shot,equation,GPT 4,1,60,34,0.5667
+zero_shot,equation,GPT 4,2,282,202,0.7163
+zero_shot,equation,GPT 4,3,160,85,0.5312
+zero_shot,equation,GPT 4,4,125,16,0.128
+zero_shot,equation,GPT 4,5,20,3,0.15
+zero_shot,equation,GPT 4,6,5,1,0.2
+zero_shot,equation,GPT 4,7,16,0,0.0
+zero_shot,equation,GPT-3.5-turbo,1,60,21,0.35
+zero_shot,equation,GPT-3.5-turbo,2,282,120,0.4255
+zero_shot,equation,GPT-3.5-turbo,3,160,80,0.5
+zero_shot,equation,GPT-3.5-turbo,4,125,16,0.128
+zero_shot,equation,GPT-3.5-turbo,5,20,1,0.05
+zero_shot,equation,GPT-3.5-turbo,6,5,1,0.2
+zero_shot,equation,GPT-3.5-turbo,7,16,0,0.0
+zero_shot,rule,PMC Llama 13b,3,20,0,0.0
+zero_shot,rule,PMC Llama 13b,5,80,0,0.0
+zero_shot,rule,PMC Llama 13b,6,20,0,0.0
+zero_shot,rule,PMC Llama 13b,7,20,0,0.0
+zero_shot,rule,PMC Llama 13b,9,100,0,0.0
+zero_shot,rule,PMC Llama 13b,11,20,0,0.0
+zero_shot,rule,PMC Llama 13b,12,20,0,0.0
+zero_shot,rule,PMC Llama 13b,16,20,0,0.0
+zero_shot,rule,PMC Llama 13b,18,20,0,0.0
+zero_shot,rule,PMC Llama 13b,20,20,0,0.0
+zero_shot,rule,PMC Llama 13b,21,20,1,0.05
+zero_shot,rule,PMC Llama 13b,31,20,0,0.0
+zero_shot,rule,Meditron 70b,3,20,0,0.0
+zero_shot,rule,Meditron 70b,5,80,1,0.0125
+zero_shot,rule,Meditron 70b,6,20,0,0.0
+zero_shot,rule,Meditron 70b,7,20,0,0.0
+zero_shot,rule,Meditron 70b,9,100,0,0.0
+zero_shot,rule,Meditron 70b,11,20,0,0.0
+zero_shot,rule,Meditron 70b,12,20,0,0.0
+zero_shot,rule,Meditron 70b,16,20,0,0.0
+zero_shot,rule,Meditron 70b,18,20,0,0.0
+zero_shot,rule,Meditron 70b,20,20,0,0.0
+zero_shot,rule,Meditron 70b,21,20,0,0.0
+zero_shot,rule,Meditron 70b,31,20,0,0.0
+zero_shot,rule,Llama3 8b,3,20,8,0.4
+zero_shot,rule,Llama3 8b,5,80,15,0.1875
+zero_shot,rule,Llama3 8b,6,20,9,0.45
+zero_shot,rule,Llama3 8b,7,20,5,0.25
+zero_shot,rule,Llama3 8b,9,100,26,0.26
+zero_shot,rule,Llama3 8b,11,20,1,0.05
+zero_shot,rule,Llama3 8b,12,20,4,0.2
+zero_shot,rule,Llama3 8b,16,20,0,0.0
+zero_shot,rule,Llama3 8b,18,20,1,0.05
+zero_shot,rule,Llama3 8b,20,20,0,0.0
+zero_shot,rule,Llama3 8b,21,20,0,0.0
+zero_shot,rule,Llama3 8b,31,20,0,0.0
+zero_shot,rule,Llama3 70b,3,20,12,0.6
+zero_shot,rule,Llama3 70b,5,80,25,0.3125
+zero_shot,rule,Llama3 70b,6,20,10,0.5
+zero_shot,rule,Llama3 70b,7,20,4,0.2
+zero_shot,rule,Llama3 70b,9,100,39,0.39
+zero_shot,rule,Llama3 70b,11,20,5,0.25
+zero_shot,rule,Llama3 70b,12,20,1,0.05
+zero_shot,rule,Llama3 70b,16,20,3,0.15
+zero_shot,rule,Llama3 70b,18,20,3,0.15
+zero_shot,rule,Llama3 70b,20,20,0,0.0
+zero_shot,rule,Llama3 70b,21,20,0,0.0
+zero_shot,rule,Llama3 70b,31,20,2,0.1
+zero_shot,rule,Mistral 7b,3,20,5,0.25
+zero_shot,rule,Mistral 7b,5,80,10,0.125
+zero_shot,rule,Mistral 7b,6,20,7,0.35
+zero_shot,rule,Mistral 7b,7,20,3,0.15
+zero_shot,rule,Mistral 7b,9,100,13,0.13
+zero_shot,rule,Mistral 7b,11,20,1,0.05
+zero_shot,rule,Mistral 7b,12,20,2,0.1
+zero_shot,rule,Mistral 7b,16,20,0,0.0
+zero_shot,rule,Mistral 7b,18,20,0,0.0
+zero_shot,rule,Mistral 7b,20,20,0,0.0
+zero_shot,rule,Mistral 7b,21,20,0,0.0
+zero_shot,rule,Mistral 7b,31,20,0,0.0
+zero_shot,rule,Mixtral 8x7b,3,20,5,0.25
+zero_shot,rule,Mixtral 8x7b,5,80,18,0.225
+zero_shot,rule,Mixtral 8x7b,6,20,6,0.3
+zero_shot,rule,Mixtral 8x7b,7,20,4,0.2
+zero_shot,rule,Mixtral 8x7b,9,100,15,0.15
+zero_shot,rule,Mixtral 8x7b,11,20,1,0.05
+zero_shot,rule,Mixtral 8x7b,12,20,7,0.35
+zero_shot,rule,Mixtral 8x7b,16,20,2,0.1
+zero_shot,rule,Mixtral 8x7b,18,20,0,0.0
+zero_shot,rule,Mixtral 8x7b,20,20,0,0.0
+zero_shot,rule,Mixtral 8x7b,21,20,3,0.15
+zero_shot,rule,Mixtral 8x7b,31,20,1,0.05
+zero_shot,rule,GPT 4,3,20,15,0.75
+zero_shot,rule,GPT 4,5,80,37,0.4625
+zero_shot,rule,GPT 4,6,20,14,0.7
+zero_shot,rule,GPT 4,7,20,14,0.7
+zero_shot,rule,GPT 4,9,100,37,0.37
+zero_shot,rule,GPT 4,11,20,2,0.1
+zero_shot,rule,GPT 4,12,20,4,0.2
+zero_shot,rule,GPT 4,16,20,4,0.2
+zero_shot,rule,GPT 4,18,20,3,0.15
+zero_shot,rule,GPT 4,20,20,1,0.05
+zero_shot,rule,GPT 4,21,20,0,0.0
+zero_shot,rule,GPT 4,31,20,0,0.0
+zero_shot,rule,GPT-3.5-turbo,3,20,6,0.3
+zero_shot,rule,GPT-3.5-turbo,5,80,27,0.3375
+zero_shot,rule,GPT-3.5-turbo,6,20,9,0.45
+zero_shot,rule,GPT-3.5-turbo,7,20,4,0.2
+zero_shot,rule,GPT-3.5-turbo,9,100,26,0.26
+zero_shot,rule,GPT-3.5-turbo,11,20,1,0.05
+zero_shot,rule,GPT-3.5-turbo,12,20,3,0.15
+zero_shot,rule,GPT-3.5-turbo,16,20,4,0.2
+zero_shot,rule,GPT-3.5-turbo,18,20,0,0.0
+zero_shot,rule,GPT-3.5-turbo,20,20,0,0.0
+zero_shot,rule,GPT-3.5-turbo,21,20,0,0.0
+zero_shot,rule,GPT-3.5-turbo,31,20,0,0.0

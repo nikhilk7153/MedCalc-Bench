@@ -1,0 +1,212 @@
+{
+ "calculator_id": "43",
+ "calculator_name": "Sequential Organ Failure Assessment (SOFA) Score",
+ "fields": [
+  {
+   "field": "PaO2",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "FiO2",
+   "type": "number with unit",
+   "typical_units": [
+    "%"
+   ]
+  },
+  {
+   "field": "On mechanical ventilation",
+   "type": "boolean"
+  },
+  {
+   "field": "Continuous positive airway pressure",
+   "type": "boolean"
+  },
+  {
+   "field": "Platelet count",
+   "type": "number with unit",
+   "typical_units": [
+    "µL"
+   ]
+  },
+  {
+   "field": "Glasgow Coma Score",
+   "type": "number"
+  },
+  {
+   "field": "Bilirubin",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL",
+    "µmol/L"
+   ]
+  },
+  {
+   "field": "Hypotension",
+   "type": "boolean"
+  },
+  {
+   "field": "Systolic Blood Pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "Diastolic Blood Pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "DOPamine",
+   "type": "number with unit",
+   "typical_units": [
+    "mcg/kg/min"
+   ]
+  },
+  {
+   "field": "DOBUTamine",
+   "type": "number with unit",
+   "typical_units": [
+    "mcg/kg/min"
+   ]
+  },
+  {
+   "field": "norEPINEPHrine",
+   "type": "number with unit",
+   "typical_units": [
+    "mcg/kg/min"
+   ]
+  },
+  {
+   "field": "EPINEPHrine",
+   "type": "number with unit",
+   "typical_units": [
+    "mcg/kg/min"
+   ]
+  },
+  {
+   "field": "creatinine",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL",
+    "µmol/L"
+   ]
+  },
+  {
+   "field": "Urine Output",
+   "type": "number with unit",
+   "typical_units": [
+    "mL/day"
+   ]
+  }
+ ],
+ "rows": [
+  {
+   "row": "889",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 68-year-old male presents with a significant medical history, a BP of 63/41 and altered mental status (GCS: eye response to pain, inappropriate word use, withdrawls from pain). He is currently on mechanical ventilation with a fraction of inspired oxygen (FiO₂) set at 60 %, and is not on continuous positive airway pressure. His recent laboratory evaluations reveal a creatinine level of 121.32 µmol/L, indicating some degree of renal impairment. Additionally, his bilirubin level is elevated at 88.41 µmol/L, suggestive of possible liver dysfunction. His platelet count stands at 140,400 per microliter. The partial pressure of oxygen (PaO₂) measured at 76 mm Hg indicates compromised oxygenation. The patient has no urine output noted, raising concerns for renal or urinary complications. "
+  },
+  {
+   "row": "890",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 65-year-old male with a history of hypertension and diabetes presents with altered mental status and jaundice. He reports feeling progressively weak over the past week with associated abdominal discomfort and swelling in his lower extremities. On examination, he is lethargic with a Glasgow Coma Scale score of 10, and scleral icterus is noted. His vital signs reveal a heart rate of 90 beats per minute. Laboratory investigations reveal a serum creatinine level of 92.12 µmol/L and a total bilirubin level of 1.57 mg/L, suggesting mild renal impairment and cholestasis, respectively. Additionally, his platelet count is decreased at 88400/µL. There are signs of overt hypotension, and so the patient is receiving norepi and epi infusions at 0.1 mcg/kg/min each, with a concurrent dopamine infusion at 6.32 mcg/kg/min. The patient is currently receiving 41 % FiO₂ with continuous positive airway pressure. His partial pressure of oxygen is recorded to be 90 mm Hg. Notably, there is no urine output recorded. Given the constellation of symptoms and laboratory findings, further investigation into the etiology of his hepatic and renal dysfunction is warranted."
+  },
+  {
+   "row": "891",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 62-year-old male with a history of diabetes has been hospitalized for severe fatigue and weight loss. Despite manifesting a clear and oriented mental status, Glasgow Coma Score of 15, he displays other concerning symptoms. Neurological examination showed no abnormalities; however, lab workup revealed elevated bilirubin levels of 7.43 mg/dL. As well, impaired renal function was evident from a creatinine level of 2.56 mg/dL. Intravenous vasopressors, specifically EPINEPHrine of 0.33 mcg/kg/min and DOPamine of 9.1 mcg/kg/min, were administered to maintain a stable circulatory status, the patient currently is not presenting signs of hypotension, furthermore, the patient is not currently on mechanical ventilation or continuous positive airway pressure, with a fraction of inspired oxygen (FiO₂) at 53% and a measured partial pressure of oxygen (PaO₂) of 87 mm Hg. Thrombocytopenia was noted with a platelet count of 75,300/µL. "
+  },
+  {
+   "row": "892",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 74-year-old female was admitted with multiple organ dysfunction. Despite her being afebrile, the neurology consultants noted a serious decrease in her level of consciousness, and her Glasgow Coma Score was 8/15. She has been normotensive and has not required vasopressors. Her FiO₂ was recorded at 71%, with a PaO₂ of 87 mm Hg. She's been on continuous veno-venous hemodialysis during the previous week with limited urine output of only 132 mL/day. She had significant jaundice with an elevated bilirubin level of 3.32 mg/dL. Her platelet count is 87,000/μL."
+  },
+  {
+   "row": "893",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 56-year-old male with a longstanding pulmonary disorder is admitted to our ICU due to significant dyspnea and low oxygen saturation levels. He is placed on mechanical ventilation with a fraction of inspired oxygen (FiO₂) of 60%, resulting in a partial pressure of oxygen (PaO₂) of 68 mm Hg. His assessment indicates mild cognitive impairment, his Glasgow Coma Score being recorded as 13/15.  Laboratory investigations reveal a mildly elevated creatinine level of 1.5 mg/dL, along with bilirubin at 3 mg/dL. Thrombocytopenia is also present with a platelet count of 150000 µL. Although he is producing somewhat sufficient urine output, recorded at 600 mL/day, symptoms and lab results point to multiple organ dysfunction. Despite the challenging circumstances, the patient continues to show resilience and responsiveness to treatment."
+  },
+  {
+   "row": "894",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 67-year-old female patient was admitted to the ICU due to rapidly decreasing levels of consciousness. Her current status is best reflected by a Glasgow Coma Score of nine, indicative of a severe impairment in her cognitive and physical response. Hemodynamic stability is maintained because of the patient's low blood pressure. Our patient is currently on continuous positive airway pressure, with a fraction of inspired oxygen (FiO₂) of 50%, and a measured partial pressure of oxygen (PaO₂) of 80 mm Hg. Vasopressor therapy has been initiated with DOPamine of 2 mcg/kg/min, norEPINEPHrine at a rate of 0.07 mcg/kg/min, DOBUTamine running at 5 mcg/kg/min, and EPINEPHrine at 0.08 mcg/kg/min to maintain an appropriate systemic circulatory state. Her urine output has been adequate at around 700 mL/day. Lab findings revealed mild renal impairment with a serum creatinine of 150 µmol/L and measure of bilirubin at 2.5 mg/dL, might suggest mild hepatic dysfunction. Her platelet counts measures 200,000/µL, which lies within normal range."
+  },
+  {
+   "row": "895",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "Patient is a 79-year-old woman brought in due to episodes of fainting and general weakness; she has been admitted to the ICU. A rapid decline in her cognitive functioning has been observed with a Glasgow Coma Score measuring 11, indicative of a moderate degree of impairment. Hemodynamic instability noted with her blood pressure considerably lower than what is usual. To maintain an optimal circulatory volume, her therapy includes the following: norEPINEPHrine prescribed at 0.06 mcg/kg/min and a flow of EPINEPHrine at 0.07 mcg/kg/min as well. Clinically, she does not require mechanical ventilation, at present, the fraction of inspired oxygen (FiO₂) is maintained at 45 % with measured partial pressure of oxygen (PaO₂) at 75 mm Hg. Lab reports reveal a serum creatinine level of 120 µmol/L suggestive of possibly compromised renal function; bilirubin count also appears slightly elevated at 1.8 mg/dL indicative of mild hepatic stress. Platelet count lies within a normal range reading as 180,000/µL. Her urine output has been maintained at nearly 600 mL/day."
+  },
+  {
+   "row": "896",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 71-year-old male presented to the emergency room with worsening shortness of breath and was admitted to the ICU. His medical history includes mild hepatic and renal impairments which are continuously monitored. Recent laboratory reports revealed a slight increase in creatinine levels of 1.2 mg/dL and bilirubin of 2.2 mg/dL. A Glasgow Coma Scale of 12 indicated slight cognitive impairment. His blood pressure was tightly controlled with readings around 130/85 mm Hg. With agitated breathing patterns, he was started on managed mechanical ventilation to better control his respiratory distress. After receiving oxygen therapy, his fraction of inspired oxygen (FiO₂) became stabilized at 55 %, this resulted in a partial pressure of oxygen (PaO₂) of 70 mm Hg. Two vasopressor therapies were initiated; DOPamine ran at 4 mcg/kg/min and norEPINEPHrine at the slightly higher rate of 0.08 mcg/kg/min. The platelet count in his blood sample was screened to be 170,000/µL. He had fairly normal urine output documented at 800 mL/day."
+  },
+  {
+   "row": "897",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 78-year-old male was admitted due to diminished mental status over the past 24 hours. His Glasgow Coma Score was recorded to be 10. His blood pressure was stable with a systolic of 83 and diastolic of 60 mm Hg. Laboratory findings from the admission show creatinine of 2.1 mg/dL. His liver function test also showed a slightly elevated bilirubin of 2.8 mg/dL. His platelet count was 150,000/µL. The patient is receiving a continuous positive airway pressure (CPAP) therapy, with a FiO₂ set at 50%, maintaining a PaO₂ of 80 mm Hg. He has two vasopressors running concurrently, DOPamine and DOBUTamine at 6 mcg/kg/min and 2 mcg/kg/min. He had an adequate fluid balance with a urine output of 900 mL/day in the past 24 hours. Due to his significant organ dysfunction, he requires close monitoring in the ICU."
+  },
+  {
+   "row": "898",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 58-year-old male was admitted to the ICU following the deterioration of his conscious state; currently, he is rated with a Glasgow Coma Scale score of 10. He is presently on mechanical ventilation, with FiO₂ at 54 %, and his arterial blood gas shows a PaO₂ of 76 mm Hg. Furthermore, there are ongoing infusions of the vasopressors of DOBUTamine at 1 mcg/kg/min to maintain his hemodynamic stability. His systolic and diastolic blood pressure recorded at 120 mm Hg and 75 mm Hg, respectively. Biochemical findings show creatinine measurement at 1.4 mg/dL, indicating a slight deviation in renal function, while the bilirubin level stood at 2.3 mg/dL. His platelet count is 175,000/µL. Over the past 24-hours, his urine output was 850 mL/day."
+  },
+  {
+   "row": "899",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 70-year-old female was rushed into the ICU due to respiratory distress, following which she was promptly put on mechanical ventilation. Her delivered oxygen fell to 51 % FiO₂; meanwhile, her partial pressure of oxygen (PaO₂) registered at 74 mm Hg. She was conscious but visibly disoriented with a functional Glasgow Coma Score of 12. Her blood pressure was 91/70 mm Hg. Two vasopressors are being administered simultaneously including DOBUTamine at 3 mcg/kg/min, and EPINEPHrine at 0.03 mcg/kg/min. Laboratory evaluations revealed mild renal impairment with creatinine levels slightly elevated at 1.6 mg/dL and a bilirubin level of 1.9 mg/dL. Her platelet count was found to be 165,000/µL. Her daily urine output of 950 mL."
+  },
+  {
+   "row": "900",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 74-year-old gentleman was admitted to the ICU after slight confusion and diminished interaction levels were noted; the Glasgow Coma Scale score was 13, suggesting mild cognitive impairment. His blood pressure was 93/62 mm Hg. He was not on mechanical ventilation but FiO₂ was maintained at 55 % providing him an adequate partial pressure of oxygen (PaO₂) at 75 mm Hg. The doctors have placed him on multiple vasopressors -  DOBUTamine running at 5 mcg/kg/min, and norEPINEPHrine coupled with EPINEPHrine at 0.07 mcg/kg/min and 0.06 mcg/kg/min respectively. Lab reports displayed an elevated creatinine level of 2.4 mg/dL indicating impaired renal function. Also, at 2.3 mg/dL, his bilirubin level has spiked slightly beyond the usual range. His platelet counts were lower than average, recorded at 160,000/µL. He was having adequate fluid balance as his urine output was found to be 900 mL/day."
+  },
+  {
+   "row": "901",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 64-year-old male with a history of chronic renal disease has been admitted with a Glasgow Coma Score of 11, implying a moderate cognitive impairment. His blood pressure readings have recorded lower values than normal, with systolic and diastolic measures at 87 and 59 mm Hg, respectively. For maintaining an optimum circulation, he currently receives EPINEPHrine infusions at rates of 0.04 mcg/kg/min. It was reported that FiO₂ is maintained at 53 %, leading to a partial pressure of oxygen (PaO₂) of 72 mm Hg. He is not on mechanical ventilation. His creatinine is 1.1 mg/dL and bilirubin is 1.8 mg/dL. His platelet count is 170,000/µL. His fluid balance was reported as satisfactory with a urine output recorded 850 mL/day."
+  },
+  {
+   "row": "902",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 72-year-old male patient with a known history of liver and kidney disease was transferred to our ICU due to respiratory distress. He was promptly placed on mechanical ventilation. The providing FiO₂ was recorded at 52%, with a corroborating PaO₂ of 76 mm Hg. In response to his low blood pressure readings, multiple vasopressor infusions were necessitated, which included DOBUTamine at 2 mcg/kg/min and EPINEPHrine at 0.04 mcg/kg/min. Glasgow Coma Score was 14. Lab findings showed a creatinine level of 1.7 mg/dL with bilirubin levels of 2.1 mg/dL. His platelet count was found to be 160,000/µL. His urine output was documented adequately at 950 mL/day."
+  },
+  {
+   "row": "903",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 75-year-old female was admitted to our ICU with respiratory distress and increased confusion. This patient’s Glasgow Coma Score has been observed at 12, suggestive of a minor to moderate cognitive impairment. She did not require mechanical ventilation; instead, her oxygen requirement was manageable at 55% FiO₂ resulting in a measured partial pressure of oxygen (PaO₂) of 75 mm Hg. Hemodynamically, she has been stable throughout the day with a systolic and diastolic blood pressure documented as 115 and 62 mm Hg, respectively. She was given multiple vasopressor treatment regimens which included DOPamine running at 3.2 mcg/kg/min and norEPINEPHrine at 0.05 mcg/kg/min. Lab results revealed elevated bilirubin of 2.5 mg/dL and increased creatinine levels of 1.8 mg/dL, offering insights into potential liver and renal impairments. The platelet count was within a normal range as 175,000/µL. She was maintaining a good urine output, recorded at 920 mL/day. This case calls for a meticulous and steady monitoring of her vitals and organ function while in an ICU setup."
+  },
+  {
+   "row": "904",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "An elderly 76-year-old male with existing renal issues was admitted to the ICU due to reduced responsiveness. Current GCS of 13. He necessitated mechanical ventilation to maintain oxygen saturation. FiO₂ was at 53 %, and PaO₂ values were noted at 75 mm Hg. Alongside, the hemodynamic status was sustained with systolic and diastolic blood pressure readings of 120 and 80 mm Hg, respectively. Therapeutic interventions currently include DOPamine at 3.6 mcg/kg/min. Despite the medications, the blood chemistry showed worrisome values, including a creatinine level of 160 µmol/L and bilirubin concentration at 2.4 mg/dL. Complete blood count highlighted the platelet count, which was within the standard range of 175,000/µL. His daily urine output was recorded as an acceptable 875 mL/day, considering his renal condition. His overall condition necessitates stringent medical monitoring, anticipating potential organ dysfunctions based on his declining pathophysiological responses."
+  },
+  {
+   "row": "905",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 68-year-old female was admitted to the ICU following an episode of respiratory distress. Her medical history is significant for chronic kidney disease. A reduction in her mental status is noted with a Glasgow Coma Score recently read as 13. She is currently on CPAP, with a fraction of inspired oxygen (FiO₂) set at 54%, resulting in a recorded partial pressure of oxygen (PaO₂) at 77 mm Hg. Despite her concerning condition, her blood pressure remained stable, at 120 and 80 mm Hg on multiple vasopressors: DOPamine and DOBUTamine at 4 mcg/kg/min and 3.5 mcg/kg/min, respectively. Serum chemistry reports show a slightly elevated creatinine of 1.9 mg/dL and bilirubin levels at 1.7 mg/dL, possible evidence of mild renal dysfunction and liver abnormalities respectively. Platelets were measured to total 180,000/µL, a typical value. Her urine output represented a somewhat regular fluid balance, documented at 925 mL/day. Continuous monitoring of her organ function and judicious intervention is warranted based on her specific health scenario."
+  },
+  {
+   "row": "906",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 77-year-old male was admitted to the ICU due to an unexpected drop in cognition, with a Glasgow Coma Score currently reading as 11. While he’s not on mechanical ventilation, he doesn’t suffer from respiratory distress; his fraction of inspired oxygen (FiO₂) is 54%, producing a partial pressure of oxygen (PaO₂) of 76 mm Hg. He is on multiple vasopressors; currently, DOPamine is flowing at 3.4 mcg/kg/min, DOBUTamine at 3 mcg/kg/min, norEPINEPHrine at 0.04 mcg/kg/min and EPINEPHrine at 0.02 mcg/kg/min. Recorded BP was 75/45. Blood chemistry revealed a creatinine level of 130 µmol/L and bilirubin level of 1.6 mg/dL – both mildly above the normal range, suggesting a possible renal and liver function disruption. His complete blood counts reported a platelet count of 165,000/µL. His urine output is documented at 910 mL/day, depicting a reasonable fluid balance. This patient requires stringent addressing to the current health conditions and monitoring of organ function while he remains under critical care."
+  },
+  {
+   "row": "907",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 60-year-old lady was taken into the ICU following a sudden decrease in her level of consciousness. Her Glasgow Coma Score was calculated as 12. She has been granted continuous positive airway pressure, and the fraction of inspired oxygen (FiO₂) is maintained at 55%, maintaining her partial pressure of oxygen (PaO₂) at 78 mm Hg. She is currently being subject to several infusions; the vasopressors include DOPamine and DOBUTamine at 3.8 mcg/kg/min and 4.5 mcg/kg/min respectively. The lab analyses paint a picture of mild renal impairment, creatinine measure stands at 1.7 mg/dL, and a bilirubin reading of 2 mg/dL suggesting a possible liver dysfunction. Her complete blood count shows a platelet count of 170,000/µL. An output of 890 mL/day of urine records a reasonable fluid balance. A close monitoring of her conditions is being maintained based on the presented organ function profile."
+  },
+  {
+   "row": "908",
+   "question": "What is the patient's Sequential Organ Failure Assessment (SOFA) Score?",
+   "patient_note": "A 63-year-old man was admitted to the ICU following a sudden drop in consciousness level. Currently, his Glasgow Coma Score is listed as 12. The patient is mechanically ventilated, and oxygen therapy reveals a FiO₂ of 52 % which allows him to maintain a partial pressure of oxygen (PaO₂) at 76 mm Hg. Multiple vasopressors are administered to support hemodynamic stability, these include norEPINEPHrine along with EPINEPHrine controlled at the rate of 0.03 mcg/kg/min and 0.02 mcg/kg/min respectively. Laboratory analysis rendered a serum creatinine level of 140 µmol/L and a total bilirubin level scaled at 2.2 mg/dL, specs that suggest mild renal impairment along with a probable hepatic dysfunction. The reported platelet count suggested normalcy at 165,000/µL of blood. A daily urine output is listed close to 880 mL/day, recording a satisfactory level of fluid balance. Careful monitoring and management are needed to uphold his potential recovery."
+  }
+ ],
+ "mdcalc_rules": "Use worst value over 24 h. Resp PaO2/FiO2: >=400 0; 300-399 +1; 200-299 +2; <=199 and not mechanically ventilated (CPAP counts as ventilated) +2; 100-199 ventilated +3; <100 ventilated +4. Platelets x10^3/uL: >=150 0; 100-149 +1; 50-99 +2; 20-49 +3; <20 +4. GCS: 15 0; 13-14 +1; 10-12 +2; 6-9 +3; <6 +4. Bilirubin mg/dL (umol/L): <1.2 (<20) 0; 1.2-1.9 (20-32) +1; 2.0-5.9 (33-101) +2; 6.0-11.9 (102-204) +3; >=12 (>204) +4. CV (mcg/kg/min): no hypotension 0; MAP <70 +1; dopamine <=5 or any dobutamine +2; dopamine >5 or epi <=0.1 or norepi <=0.1 +3; dopamine >15 or epi >0.1 or norepi >0.1 +4. Renal creatinine mg/dL (umol/L): <1.2 (<110) 0; 1.2-1.9 (110-170) +1; 2.0-3.4 (171-299) +2; 3.5-4.9 (300-440) or UO <500 mL/day +3; >=5.0 (>440) or UO <200 mL/day +4.",
+ "mdcalc_source": "https://www.mdcalc.com/calc/691/sequential-organ-failure-assessment-sofa-score (platelet, GCS, bilirubin, cardiovascular, renal bands fetched directly; the PaO2/FiO2 point table did not render in the fetch, so respiratory bands are the standard MDCalc/Vincent 1996 ones)"
+}

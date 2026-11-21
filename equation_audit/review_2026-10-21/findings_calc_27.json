@@ -1,0 +1,185 @@
+{
+ "calculator_id": "27",
+ "mdcalc_source": "https://www.mdcalc.com/calc/518/glasgow-blatchford-bleeding-score-gbs (page fetched; binary criteria/points confirmed there, but BUN/Hb/SBP band tables were not in the fetched content, so bands taken from standard published GBS (Blatchford 2000) as reproduced by WikEM/Radiopaedia)",
+ "mdcalc_rules": "BUN (urea) mmol/L: <6.5 =0; 6.5-<8 =+2; 8-<10 =+3; 10-25 =+4; >25 =+6 (mg/dL equivalents ~<18.2, 18.2-22.3, 22.4-27.9, 28-70, >70). Hb men: >=13 =0; 12-<13 =+1; 10-<12 =+3; <10 =+6. Hb women: >=12 =0; 10-<12 =+1; <10 =+6. SBP: >=110 =0; 100-109 =+1; 90-99 =+2; <90 =+3. HR >=100 =+1. Melena +1. Syncope +2. Hepatic disease history +2. Cardiac failure +2. Range 0-23.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "Code scores on mg/dL with bands <18.2/18.2-<22.4/22.4-<28/28-70/>70 and converts mmol/L via x2.808 (urea-nitrogen MW 28.08). Equivalent to MDCalc for all values in this set. Only theoretical edge: exactly 25 mmol/L converts to 70.2 mg/dL and would score +6 in code vs +4 under the '10-25 mmol/L' band; no row has 25 mmol/L.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Hemoglobin, SBP, HR and binary criteria thresholds/points match MDCalc exactly; missing binary criteria default to absent, consistent with dataset convention.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "M; Hb 11 (+3); BUN 51 mg/dL (+4); SBP 110 (0); HR 90 (0); melena denied; syncope denied; liver disease (+2); no CF = 9. Inputs match note. (Stored explanation text has a cosmetic slip 'keeping the current score at 7 + 3 = 10' in the SBP line but final total 9 is correct.) Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "history of chronic liver disease ... blood urea nitrogen level of 51 mg/dL and a hemoglobin level of 11 g/dL"
+  },
+  {
+   "row": "386",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "F; Hb 13 (0); BUN 34 mg/dL (+4); SBP 90 (+2); HR 80 (0); melena (+1); no syncope; no liver; heart failure (+2) = 9. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "history of heart failure ... systolic blood pressure was noted to be slightly low at 90 mmHg"
+  },
+  {
+   "row": "387",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "M; Hb 14 (0); BUN 21 mg/dL (+2); SBP 95 (+2); HR 110 (+1); no melena; syncope (+2); liver disease (+2); no CF = 9. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "recent episode of syncope ... 95 mmHg systolic ... 110 beats per minute"
+  },
+  {
+   "row": "388",
+   "status": "OK",
+   "stored_answer": "6",
+   "mdcalc_answer": "6",
+   "details": "M; Hb 14 (0); BUN 18 mg/dL (<18.2, 0); SBP 103 (+1); HR 110 (+1); no melena; syncope (+2); no liver; heart failure (+2) = 6. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "sudden fainting ... ongoing treatment for heart failure ... BUN concentration of 18 mg/dL"
+  },
+  {
+   "row": "389",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "F; Hb 10.4 (+1); BUN 18 mg/dL (0); SBP 108 (+1); HR 115 (+1); all binary criteria denied = 3. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "heart rate reading of 115 ... systolic blood pressure at 108 mmHg ... hemoglobin level of 10.4 g/dL"
+  },
+  {
+   "row": "390",
+   "status": "OK",
+   "stored_answer": "1",
+   "mdcalc_answer": "1",
+   "details": "M; Hb 13 (0); BUN 18 mg/dL (0); SBP 130 (0); HR 88 (0); melena (+1); syncope and liver disease not mentioned -> absent; no CF = 1. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "dark, tarry stools over the last two days"
+  },
+  {
+   "row": "391",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "F; Hb 12 (0 for female); BUN 22 mmol/L (=61.8 mg/dL, +4); SBP 120 (0); HR 96 (0); syncope (+2); liver disease (+2) = 8. Unit explicitly mmol/L; note calls it 'mildly elevated', which is clinically understated but does not change scoring. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "mildly elevated blood urea nitrogen levels at 22 mmol/L"
+  },
+  {
+   "row": "392",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "M; Hb 10 (+3); BUN 25 mg/dL (+3); SBP 100 (+1); HR 108 (+1); no melena; syncope not mentioned; no liver; heart failure (+2) = 10. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "heart rate ... 108 ... systolic blood pressure was noted to be 100 mm Hg ... BUN ... 25 mg/dL ... hemoglobin ... 10 g/dL"
+  },
+  {
+   "row": "393",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "M; Hb 14 (0); BUN 30 mg/dL (+4); SBP 110 (0); HR 72 (0); no binary criteria = 4. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "elevated BUN level at 30 mg/dL"
+  },
+  {
+   "row": "394",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "F; Hb 11 (+1); BUN 28 mmol/L (=78.6 mg/dL, +6); SBP 115 (0); HR 80 (0); melena (+1); syncope (+2); no liver; no CF = 10. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "BUN level at 28 mmol/L along with lower than usual hemoglobin levels at 11 g/dL"
+  },
+  {
+   "row": "395",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "F; Hb 9 (+6); BUN 24 mg/dL (+3); SBP 140 (0); HR 92 (0); heart failure (+2) = 11. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "heart failure was diagnosed earlier this year ... BUN level of 24 mg/dL ... hemoglobin count at 9 g/dL"
+  },
+  {
+   "row": "396",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "M; Hb 15 (0); BUN 20 mmol/L (=56.2 mg/dL, +4); SBP 128 (0); HR 85 (0); melena (+1); liver disease (+2) = 7. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "BUN level at 20 mmol/L and a hemoglobin concentration of 15 g/dL"
+  },
+  {
+   "row": "397",
+   "status": "OK",
+   "stored_answer": "6",
+   "mdcalc_answer": "6",
+   "details": "M; Hb 14.5 (0); BUN 33 mg/dL (+4); SBP 120 (0); HR 78 (0); syncope (+2); melena denied ('coffee-ground-like stools' wording is odd but is a denial of dark stools); no CF = 6. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "denied any instances of darkened, coffee-ground-like stools"
+  },
+  {
+   "row": "398",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "F; Hb 11.5 (+1); BUN 27 mmol/L (=75.8 mg/dL, +6); SBP 125 (0); HR 90 (0); melena (+1); liver disease (+2) = 10. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "Blood Urea Nitrogen (BUN) level of 27 mmol/L ... hemoglobin ... 11.5 g/dL"
+  },
+  {
+   "row": "399",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "M; Hb 16 (0); BUN 30 mg/dL (+4); SBP 135 (0); HR 76 (0); 'black-out' denied -> no syncope; liver (+2); cardiac failure (+2) = 8. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "history of cardiac failure and liver disease ... denied any recent black-out episodes"
+  },
+  {
+   "row": "400",
+   "status": "OK",
+   "stored_answer": "5",
+   "mdcalc_answer": "5",
+   "details": "F; Hb 12 (0 for female); BUN 21 mg/dL (+2); SBP 118 (0); HR 98 (0); melena (+1); syncope (+2); no liver = 5. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "recent fainting episode ... black, tarry stools ... urea nitrogen level ... 21 mg/dL ... hemoglobin count at 12 g/dL"
+  },
+  {
+   "row": "401",
+   "status": "OK",
+   "stored_answer": "14",
+   "mdcalc_answer": "14",
+   "details": "F; Hb 9.5 (+6); BUN 23 mmol/L (=64.6 mg/dL, +4); SBP 105 (+1); HR 82 (0); melena (+1); heart failure (+2) = 14. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "BUN level at 23 mmol/L ... hemoglobin ... 9.5 g/dL"
+  },
+  {
+   "row": "402",
+   "status": "OK",
+   "stored_answer": "5",
+   "mdcalc_answer": "5",
+   "details": "M; Hb 14.2 (0); BUN 26 mg/dL (+3); SBP 112 (0); HR 94 (0); liver disease (+2) = 5. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "known to have chronic liver disease ... BUN level at 26 mg/dL"
+  },
+  {
+   "row": "403",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "M; Hb 12.5 (+1); BUN 29 mmol/L (=81.4 mg/dL, +6); SBP 110 (0); HR 100 (>=100, +1); syncope (+2) = 10. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "heart rate of 100 beats per minute ... BUN of 29 mmol/L and hemoglobin of 12.5 g/dL"
+  },
+  {
+   "row": "404",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "F; Hb 13 (0); BUN 25 mg/dL (+3); SBP 115 (0); HR 86 (0); melena (+1) = 4. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "black, tarry stools ... BUN level at 25 mg/dL"
+  },
+  {
+   "row": "405",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "M; Hb 10.2 (+3); BUN 24 mmol/L (=67.4 mg/dL, +4); SBP 130 (0); HR 77 (0); heart failure (+2) = 9. Stored relevant_entities match the note; code reproduces stored answer.",
+   "evidence_quote": "managing heart failure ... Blood Urea Nitrogen level at 24 mmol/L and a reduced hemoglobin level of 10.2 g/dL"
+  }
+ ]
+}

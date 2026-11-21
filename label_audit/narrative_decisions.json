@@ -1,0 +1,1732 @@
+{
+  "reviewed_calculator_ids": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    36,
+    38,
+    39,
+    40,
+    43,
+    44,
+    45,
+    46,
+    48,
+    49,
+    51,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
+  ],
+  "method": "Individual review of calculator-relevant narrative passages, with full-note follow-up for ambiguous risk factors. This is not a claim of reading every unrelated sentence or clinical expert adjudication.",
+  "overrides": {
+    "3": [
+      "incorrect",
+      "19.795 at the 39 kg/183 µmol/L encounter",
+      "Label combines 50 kg at March 2018 follow-up with 183 µmol/L creatinine during the earlier 39 kg acute illness. No contemporaneous creatinine is supplied for 50 kg."
+    ],
+    "15": [
+      "ambiguous",
+      "",
+      "Creatinine is given as a range, 2.04–2.81 mg/dL. The label chooses the lower endpoint without specifying a measurement or encounter."
+    ],
+    "23": [
+      "incorrect",
+      "88.501 using the final 80.4 µmol/L measurement",
+      "Male CKD-EPI scale must be 0.9, not 0.7. Several earlier creatinine measurements also appear, so the question should identify final follow-up."
+    ],
+    "41": [
+      "incorrect",
+      "2",
+      "Female 1 + diabetes 1. Portal-vein thrombosis is venous thrombosis, not systemic arterial embolism for CHA2DS2-VASc."
+    ],
+    "42": [
+      "ambiguous",
+      "3 before stroke; 5 including presenting ischemic stroke",
+      "Dysarthria, central palsy, Babinski signs and multiple DWI lesions suggest the current stroke is omitted; question does not identify whether pre-event or post-event score is intended."
+    ],
+    "43": [
+      "incorrect",
+      "5 including later heart failure; 4 before it",
+      "DVT/possible PE incorrectly contribute systemic-embolism points, and aortic stenosis/endocarditis is not the vascular-disease criterion. Age 2 + female 1 + hypertension 1 + documented later HF 1."
+    ],
+    "45": [
+      "incorrect",
+      "5",
+      "Prior basal-ganglia infarction is explicitly documented but Stroke is extracted false. Age 2 + hypertension 1 + prior stroke 2."
+    ],
+    "46": [
+      "incorrect",
+      "4",
+      "Female 1 + hypertension 1 + diabetes 1 + coronary disease 1. Local in-situ SN coronary branch thrombosis after PCI is not a history of systemic embolism."
+    ],
+    "47": [
+      "incorrect",
+      "1",
+      "Portal hypertension is misclassified as systemic hypertension. Female sex contributes 1; no qualifying systemic hypertension or other factors are documented."
+    ],
+    "48": [
+      "ambiguous",
+      "4 is explicitly stated but not independently reconstructible",
+      "Note explicitly states CHA2DS2-VASc=4. Narrative supports age 2 and CAD 1 but not extracted CHF; tamponade/cardiac arrest does not establish chronic CHF. Accepting a quoted score is not an independent validation."
+    ],
+    "49": [
+      "incorrect",
+      "5",
+      "Age 2 + female 1 + hypertension 1 + diabetes 1. DVT and PE do not supply the systemic arterial embolism component."
+    ],
+    "51": [
+      "ambiguous",
+      "1–2 depending on diabetes diagnosis",
+      "Aortic dissection is not automatically prior MI/PAD/aortic plaque; glucose intolerance and perioperative insulin do not by themselves establish diabetes. Label 3 relies on unsupported categorical inferences."
+    ],
+    "60": [
+      "ambiguous",
+      "4 before event; 6 including presenting stroke/TIA",
+      "Acute hemiparesis and aphasia treated with IV thrombolysis are ignored in Stroke flag. Question does not specify pre-event scoring; row 44 includes its presenting stroke."
+    ],
+    "103": [
+      "ambiguous",
+      "11.297 if albumin unit is literal; 8.66 if g/dL intended",
+      "Note says albumin 3.3 mg/dL, entities silently change to g/dL. Likely source unit typo; fix note or specify interpretation before adjudicating label."
+    ],
+    "119": [
+      "ambiguous",
+      "13.496 if literal albumin mg/dL; 9.66 if g/dL intended",
+      "Note and reference interval specify albumin in MG/DL but entities use g/dL. Label is only valid after correcting source unit."
+    ],
+    "140": [
+      "ambiguous",
+      "38.256 at discharge; other values at other visits",
+      "Question does not specify time. Label uses discharge creatinine 1.87 despite later normalization and earlier AKI; internally valid at that selected encounter."
+    ],
+    "143": [
+      "ambiguous",
+      "Depends on age at the seven-year follow-up",
+      "Opening age is 66 at transplant; creatinine 1.6 follows obstruction seven years later. Label reuses age 66 rather than potentially 73."
+    ],
+    "146": [
+      "insufficient information",
+      "",
+      "Extracted creatinine 1.7 mg/dL is absent from patient narrative."
+    ],
+    "147": [
+      "ambiguous",
+      "Range, not a single value",
+      "Note gives creatinine 10–15 without a unit; label selects 10 mg/dL without justification."
+    ],
+    "152": [
+      "insufficient information",
+      "",
+      "C-reactive protein 12.35 mg/dL is misclassified as creatinine; no serum creatinine is supplied."
+    ],
+    "153": [
+      "ambiguous",
+      "Depends on age/time selection",
+      "Age 43 is at referral in 2013; creatinine 106 µmol/L is at Jan 2015 follow-up. Question does not identify encounter/updated age."
+    ],
+    "284": [
+      "ambiguous",
+      "",
+      "Platelets are written 119×10^6 in the source, an implausible/possibly truncated unit expression. Label 37492.904 follows extracted 119×10^6/L; 119×10^9/L would give 37.493. Requires source-unit repair, not automatic relabeling."
+    ],
+    "287": [
+      "ambiguous",
+      "",
+      "Platelets are written 283×10^3/dL but entities use /µL. Label assumes a correction of source-unit typo. Literal dL interpretation changes result by 100000."
+    ],
+    "289": [
+      "ambiguous",
+      "",
+      "Note ALT is 238 IU/mL whereas entities use U/L. Label is consistent only if source IU/mL is corrected to IU/L."
+    ],
+    "291": [
+      "insufficient information",
+      "No single supported replacement; specify encounter and supply concurrent inputs",
+      "Label combines pre-biopsy platelets 101000/µL with AST87/ALT104 from four months later. Contemporaneous later platelet count is described only as normal, not quantified."
+    ],
+    "322": [
+      "insufficient information",
+      "",
+      "2.3 kg is an object lifted during an experiment, not patient body weight."
+    ],
+    "323": [
+      "insufficient information",
+      "",
+      "20 kg is weight gained since disease onset, not total body weight."
+    ],
+    "328": [
+      "out of domain",
+      "",
+      "Patient is a three-month-old domestic cat. Label applies the human 4-2-1 maintenance-fluid formula; arithmetic is internally consistent but this is not a human patient benchmark example."
+    ],
+    "330": [
+      "insufficient information",
+      "",
+      "4 kg is weight lost over six months, not patient body weight."
+    ],
+    "332": [
+      "insufficient information",
+      "",
+      "Seven kilos is recent weight loss, not patient body weight."
+    ],
+    "337": [
+      "insufficient information",
+      "",
+      "30 lb is recent weight loss, not patient body weight."
+    ],
+    "334": [
+      "ambiguous",
+      "70 mL/hr at admission; 78.1 at day28 discharge",
+      "Label chooses weight38.1 at discharge rather than30kg on admission without time-specific question."
+    ],
+    "405": [
+      "incorrect",
+      "268.887",
+      "Blood urea 18 mg/dL is extracted as BUN18. Convert urea mg/dL to BUN by 28.014/60.06 before using BUN/2.8."
+    ],
+    "408": [
+      "incorrect",
+      "278.387",
+      "Blood urea25mg/dL is extracted as BUN25; urea and urea nitrogen differ by mass."
+    ],
+    "416": [
+      "incorrect",
+      "285.443",
+      "Serum urea25mg/dL is extracted as BUN25; convert urea mass before dividing by2.8."
+    ],
+    "417": [
+      "incorrect",
+      "293.271",
+      "Serum urea84mg/dL is extracted as BUN84, inflating calculated osmolality."
+    ],
+    "418": [
+      "incorrect",
+      "293.108",
+      "Blood urea62mg/dL is extracted as BUN62, inflating calculated osmolality."
+    ],
+    "414": [
+      "insufficient information",
+      "No single supported replacement; specify encounter and supply concurrent inputs",
+      "Mixes outside-hospital glucose500 with subsequent-hospital glucose569 and corrected sodium133. Osmolality formula needs contemporaneous measured sodium, not a glucose-corrected sodium value; measured sodium unavailable."
+    ],
+    "425": [
+      "insufficient information",
+      "",
+      "Insulin -26 µIU/mL describes a reduction after treatment, not the absolute fasting insulin value26 required by HOMA-IR."
+    ],
+    "374": [
+      "ambiguous",
+      "",
+      "Sodium141 is from lab panel with serum glucose17, but label uses earlier symptomatic glucose33. Hyperglycemia correction is also extrapolated to profound hypoglycemia."
+    ],
+    "366": [
+      "ambiguous",
+      "",
+      "Formula for hyperglycemia correction is applied to glucose70 (hypoglycemia); arithmetic matches stated convention but clinical correction at low glucose is not established."
+    ],
+    "382": [
+      "ambiguous",
+      "",
+      "Hyperglycemia correction formula is extrapolated to glucose2.5mmol/L (hypoglycemia); formula convention needs clarification."
+    ],
+    "473": [
+      "insufficient information",
+      "",
+      "Extracted body weight is actually the amount of recent weight loss; absolute body weight is not supplied."
+    ],
+    "481": [
+      "insufficient information",
+      "",
+      "Extracted body weight is actually the amount of recent weight loss; absolute body weight is not supplied."
+    ],
+    "482": [
+      "insufficient information",
+      "",
+      "Extracted body weight is actually the amount of recent weight loss; absolute body weight is not supplied."
+    ],
+    "486": [
+      "insufficient information",
+      "",
+      "Extracted body weight is actually the amount of recent weight loss; absolute body weight is not supplied."
+    ],
+    "485": [
+      "ambiguous",
+      "",
+      "Note sodium is131mg/dL but entities silently reinterpret it as131mEq/L; likely source-unit typo."
+    ],
+    "507": [
+      "insufficient information",
+      "No single supported replacement; specify encounter and supply concurrent inputs",
+      "Uses admission serum sodium129 with serum creatinine0.6 and urine results from later metabolic-alkalosis workup; contemporaneous serum sodium missing."
+    ],
+    "509": [
+      "ambiguous",
+      "",
+      "Admission serum creatinine/Na are combined with urine measurements obtained after clinical deterioration and dialysis; concurrent serum values are not specified."
+    ],
+    "489": [
+      "ambiguous",
+      "",
+      "Initial sodium/chloride136/101 and bicarbonate24 from outpatient visit are combined with bicarbonate17 during acute gangrenous-bowel admission three months later. Concurrent later sodium/chloride not given."
+    ],
+    "503": [
+      "insufficient information",
+      "AG >29, not exactly29",
+      "Bicarbonate is reported below10mmol/L. Label replaces inequality with10 and presents exact answer."
+    ],
+    "751": [
+      "insufficient information",
+      "No single supported replacement; specify encounter and supply concurrent inputs",
+      "Na161 and bicarbonate14.4 are intraoperative; chloride130 belongs to initial Na157/bicarbonate6.3 panel. Concurrent later chloride not supplied."
+    ],
+    "753": [
+      "ambiguous",
+      "",
+      "Source sodium137mg/dL is followed literally, producing sodium59.591mmol/L and ratio12.833; likely source unit typo. If137mmol/L was intended, ratio0, not12.833."
+    ],
+    "748": [
+      "ambiguous",
+      "1.238 venous; about3.176 arterial",
+      "Note provides venous HCO328.2 and arterial25.7. Question does not specify which specimen; label uses venous."
+    ],
+    "770": [
+      "ambiguous",
+      "",
+      "Malformed bicarbonate HCO3−1 is repeated as the ionic notation before a stated nadir of9 mmol/L. Extracting concentration1 conflicts with nadir9; no defensible concurrent concentration."
+    ],
+    "772": [
+      "insufficient information",
+      "",
+      "Albumin17.1 is actually hemoglobin17.1g/dL. No albumin concentration is supplied."
+    ],
+    "773": [
+      "insufficient information",
+      "No single supported replacement; specify encounter and supply concurrent inputs",
+      "Admission sodium139/chloride102/albumin4 are combined with bicarbonate7.6 from acute renal failure four days after papillectomy. Concurrent electrolytes and albumin unavailable."
+    ],
+    "780": [
+      "incorrect",
+      "7.7 if albumin3.2g/dL intended",
+      "Serum sodium133 is combined with ABG chloride122/bicarbonate11.3 despite same ABG sodium139. Source albumin3.2mg/dL also needs clarification."
+    ],
+    "781": [
+      "ambiguous",
+      "",
+      "Albumin3.4 is admission value but electrolytes139/100/34 are obtained more than a week later after arrest, stroke and surgery; contemporaneous albumin unavailable."
+    ],
+    "794": [
+      "ambiguous",
+      "1 if sodium137mmol/L intended",
+      "Source sodium137mg/dL likely contains a unit typo. Label follows literal sodium mass conversion."
+    ],
+    "802": [
+      "ambiguous",
+      "",
+      "Source lists sodium132mg/dL and chloride96mg/dL; extracted entities silently replace both with mEq/L. Label requires unit repair."
+    ],
+    "820": [
+      "insufficient information",
+      "",
+      "Hemoglobin8g/dL has been extracted as albumin8g/dL. Albumin is not provided."
+    ],
+    "824": [
+      "ambiguous",
+      "1.125 if albumin3.5g/dL intended",
+      "Source gives albumin3.5mg/dL, likely a unit typo. Label5.495 follows literal mass conversion."
+    ],
+    "826": [
+      "ambiguous",
+      "0.917 using serum CO2;0.952 using ABG bicarbonate",
+      "SerumCO218 and ABG bicarbonate13.5 yield different ratios. Question does not identify specimen."
+    ],
+    "705": [
+      "ambiguous",
+      "",
+      "Height155cm conflicts with parenthetical5ft2in (157.48cm). Label chooses metric measurement."
+    ],
+    "722": [
+      "ambiguous",
+      "",
+      "Height180cm conflicts with5ft9in (175.26cm). Label chooses metric measurement."
+    ],
+    "988": [
+      "ambiguous",
+      "",
+      "Note specifies buccal fentanyl in mg but entities change to micrograms, reducing stated dose1000-fold. Buccal formulation conversion also requires a clearly specified convention."
+    ],
+    "989": [
+      "ambiguous",
+      "",
+      "Note specifies buccal fentanyl in mg but entities change to micrograms, reducing stated dose1000-fold. Buccal formulation conversion also requires a clearly specified convention."
+    ],
+    "991": [
+      "ambiguous",
+      "",
+      "Note specifies buccal fentanyl in mg but entities change to micrograms, reducing stated dose1000-fold. Buccal formulation conversion also requires a clearly specified convention. The same note also specifies a fentanyl patch without a micrograms/hour delivery rate."
+    ],
+    "994": [
+      "insufficient information",
+      "",
+      "Fentanyl patch is specified in mg and times/day; MME conversion requires delivery rate in micrograms/hour. Label treats the number as mcg/hour and multiplies by daily frequency."
+    ],
+    "998": [
+      "insufficient information",
+      "",
+      "Fentanyl patch is specified in mg and times/day; MME conversion requires delivery rate in micrograms/hour. Label treats the number as mcg/hour and multiplies by daily frequency."
+    ],
+    "999": [
+      "insufficient information",
+      "",
+      "Fentanyl patch is specified in mg and times/day; MME conversion requires delivery rate in micrograms/hour. Label treats the number as mcg/hour and multiplies by daily frequency."
+    ],
+    "1000": [
+      "insufficient information",
+      "",
+      "Fentanyl patch is specified in mg and times/day; MME conversion requires delivery rate in micrograms/hour. Label treats the number as mcg/hour and multiplies by daily frequency."
+    ],
+    "1004": [
+      "insufficient information",
+      "",
+      "Fentanyl patch is specified in mg and times/day; MME conversion requires delivery rate in micrograms/hour. Label treats the number as mcg/hour and multiplies by daily frequency."
+    ],
+    "1008": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1009": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1010": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1011": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1012": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1013": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1014": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1015": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1016": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1017": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1018": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1019": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1021": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1022": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1023": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1024": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1025": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1026": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "1027": [
+      "ambiguous",
+      "",
+      "Label always uses LMP+14 and ignores stated cycle length. If conception is estimated14days before next menses, date should be LMP+(cycle_length−14); cycle-adjustment convention is unspecified."
+    ],
+    "300": [
+      "incorrect",
+      "0–1",
+      "Painful midline mass moving with tongue protrusion is not an anterior cervical lymph node; absence of cough undocumented."
+    ],
+    "301": [
+      "out of domain",
+      "",
+      "Modified Centor not validated under3years; patient14months. Age adjustment not applicable."
+    ],
+    "304": [
+      "insufficient information",
+      "",
+      "Relevant oropharyngeal finding is in an unavailable FigureA."
+    ],
+    "305": [
+      "ambiguous",
+      "",
+      "Neck bumps are not documented as tender anterior cervical nodes; cough and tonsil examination missing."
+    ],
+    "307": [
+      "ambiguous",
+      "1–2",
+      "Posterior cervical nodes misclassified as tender anterior nodes. Fever1; cough status unavailable. The possible total includes the existing numeric label, so the extraction error alone does not prove that target is wrong."
+    ],
+    "308": [
+      "insufficient information",
+      "",
+      "Oral findings referenced in missing photograph; node site/tenderness and cough unknown."
+    ],
+    "311": [
+      "insufficient information",
+      "",
+      "Missing FigureA and unspecified cervical node site/tenderness prevent exact score."
+    ],
+    "312": [
+      "ambiguous",
+      "",
+      "Tonsillar edema supplies swelling criterion omitted from entities; neck tenderness does not establish lymphadenopathy. Cough status missing."
+    ],
+    "314": [
+      "ambiguous",
+      "1–2",
+      "Posterior cervical node is not anterior criterion; fever100.4F is not >38C. Age1; cough status unknown. The possible total includes the existing numeric label, so the extraction error alone does not prove that target is wrong."
+    ],
+    "316": [
+      "ambiguous",
+      "",
+      "Submandibular nodes not stated tender; cough absent not documented. Exact3 not supported."
+    ],
+    "319": [
+      "ambiguous",
+      "−1 to0",
+      "Allergic neck/chest edema is not swollen anterior cervical lymph nodes. Age−1; cough status unspecified. The possible total includes the existing numeric label, so the extraction error alone does not prove that target is wrong."
+    ],
+    "448": [
+      "insufficient information",
+      "",
+      "Two-week illness falsely marked onset≤3days; relevant examination FigureA absent. Fever may coincidentally yield same target."
+    ],
+    "449": [
+      "out of domain",
+      "",
+      "Caustic peroxide ingestion rather than infectious sore throat; rapid onset criterion also not represented."
+    ],
+    "450": [
+      "ambiguous",
+      "",
+      "No purulence documented; enlarged erythematous tonsils do not establish pus or severe inflammation. Cough history missing."
+    ],
+    "451": [
+      "ambiguous",
+      "",
+      "Purulent tonsils fabricated in arrhythmia note. No cough is documented and could yield1 under a different rationale; infectious sore throat absent."
+    ],
+    "453": [
+      "incorrect",
+      "At least4",
+      "Fever1 + rapidattendance1 + absentcough1 + tonsillarwhiteplaques/pus1. PECARN keys replace fever/cough keys and are ignored."
+    ],
+    "454": [
+      "ambiguous",
+      "2–3",
+      "Explicitly no tonsillar exudate and sore throat4days, yet purulence/onset≤3days extractedtrue. Fever and absencecough omitted; severe inflammation uncertain."
+    ],
+    "455": [
+      "out of domain",
+      "",
+      "Drug-induced dystonia without infectious sore throat."
+    ],
+    "457": [
+      "incorrect",
+      "At least3",
+      "Fever, ≤3dayattendance and tonsils coveredwithpus each1; purulence incorrectlyfalse and fever hidden under PECARN key."
+    ],
+    "459": [
+      "ambiguous",
+      "1–2",
+      "Illness1week rather than≤3days; no pus described. Fever known, coughstatus unknown. PECARN keys cannot substitute FeverPAIN criteria."
+    ],
+    "460": [
+      "incorrect",
+      "1 at described presentation",
+      "Sinusitis and purulent nasal secretions do not establish severe tonsillar inflammation. Illness beganoneweekearlier; fever1."
+    ],
+    "462": [
+      "incorrect",
+      "2",
+      "Fever1 + attendancewithin3days1; onsetthismorning incorrectly markedfalse. Cough/coryza present."
+    ],
+    "463": [
+      "incorrect",
+      "At least2",
+      "Currentfever1 and tonsillarexudate1; symptoms4days, not≤3days. Fever hidden in unrelated PECARNkey."
+    ],
+    "464": [
+      "ambiguous",
+      "0–1",
+      "Ovarianveinthrombosis note has no purulenttonsils. No fever;3monthsymptoms; cough/coryzastatus unknown. The possible total includes the existing numeric label, so the extraction error alone does not prove that target is wrong."
+    ],
+    "465": [
+      "out of domain",
+      "",
+      "Vasculitis/carotidynia rather than infectious sorethroat."
+    ],
+    "466": [
+      "out of domain",
+      "",
+      "Neutropenic leukemia fever rather than infectious sorethroat; absencecough not documented."
+    ],
+    "588": [
+      "incorrect",
+      "1",
+      "Only tachycardia meets criteria; WBC4200 normal."
+    ],
+    "589": [
+      "no error identified",
+      "1",
+      "The numeric label is supported: only pulse 101 meets SIRS criteria. The narrative white count is 9400/mm³, although its extracted unit is incorrectly m³."
+    ],
+    "591": [
+      "incorrect",
+      "1",
+      "Only tachycardia; T37.8,RR18,WBC10780 normal."
+    ],
+    "592": [
+      "incorrect",
+      "0",
+      "T37.39,HR73,RR17,WBC9440 all normal. WBC9.44e9/L incorrectly scaled."
+    ],
+    "593": [
+      "incorrect",
+      "1",
+      "Only WBC830 low; HR87 and RR20 do not meet strict cutoffs."
+    ],
+    "595": [
+      "out of domain",
+      "",
+      "The patient is 14 years old. Adult SIRS thresholds yield 2 if WBC 4.1 means 4100/µL, but pediatric age-specific white-count thresholds differ. This is not a proven incorrect pediatric label."
+    ],
+    "596": [
+      "incorrect",
+      "1",
+      "Only fever; HR68,RR20,PaCO236.3,WBC8000 normal."
+    ],
+    "599": [
+      "incorrect",
+      "0",
+      "T99F,HR70,RR16,WBC7000 meet no criteria."
+    ],
+    "606": [
+      "incorrect",
+      "1",
+      "Only WBC15500 high; HR87,RR16,97.9F normal."
+    ],
+    "600": [
+      "out of domain",
+      "",
+      "Adult heart/respiratory/WBC thresholds applied to a young child; pediatric SIRS requires age-specific thresholds."
+    ],
+    "601": [
+      "out of domain",
+      "",
+      "Adult heart/respiratory/WBC thresholds applied to a young child; pediatric SIRS requires age-specific thresholds."
+    ],
+    "605": [
+      "out of domain",
+      "",
+      "Adult heart/respiratory/WBC thresholds applied to a young child; pediatric SIRS requires age-specific thresholds."
+    ],
+    "602": [
+      "insufficient information",
+      "At least3",
+      "WBC7000 is ascitic fluid count, not blood WBC. Fever, tachycardia and tachypnea already3; serum WBC unknown."
+    ],
+    "598": [
+      "incorrect",
+      "1 with literal/source-corrected WBC",
+      "WBC source13.7×10^4/L is malformed/implausible; either literal low count or likely13700/µL high count meets one criterion. Label2 adds an erroneous HR point."
+    ],
+    "607": [
+      "ambiguous",
+      "",
+      "White count 13200 is from the first hospital; normal vital signs are from transfer 27 days later. No concurrent blood white count is supplied at transfer."
+    ],
+    "549": [
+      "ambiguous",
+      "2 at either listed encounter",
+      "Label uses day4BUN35 with admissionvitals; admissionBUN32 gives same ureapoint so target2 numerically unaffected."
+    ],
+    "551": [
+      "ambiguous",
+      "1",
+      "Urea18mg/dL mislabeled BUN18; converted BUN8.4 stillbelowthreshold, target unaffected."
+    ],
+    "200": [
+      "incorrect",
+      "9",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "201": [
+      "incorrect",
+      "12",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "203": [
+      "incorrect",
+      "10",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "204": [
+      "incorrect",
+      "10",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "205": [
+      "incorrect",
+      "8",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "208": [
+      "incorrect",
+      "8",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "210": [
+      "incorrect",
+      "7",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "212": [
+      "incorrect",
+      "8",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "213": [
+      "incorrect",
+      "10",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "214": [
+      "incorrect",
+      "9",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "216": [
+      "incorrect",
+      "8",
+      "Independent five-component Child-Pugh sum; absent ascites scores1, slight2, moderate3. Dataset silently skips lower-case ascites strings; boundary conventions also affect bilirubin/albumin."
+    ],
+    "202": [
+      "ambiguous",
+      "10–11",
+      "Grade3–4 inferred from orientationto self only; severe vs moderate encephalopathy requires interpretation. Ascites must score2 ratherthan0. Either sum exceeds label9."
+    ],
+    "209": [
+      "incorrect",
+      "11–12",
+      "Moderateascites3+INR2+bilirubin2+encephalopathy2; albumin2.8 boundary2or3 depending convention. Label9 below both."
+    ],
+    "215": [
+      "ambiguous",
+      "9–12",
+      "Disorientation/asterixis alone does not establish Grade3–4; ascites not assessed. Target10 depends on unsupported severity/default assumptions."
+    ],
+    "217": [
+      "incorrect",
+      "At least11",
+      "Moderateascites3+INR2+albumin3+encephalopathy2+bilirubin1(PBCvariant) or2(standard). Label9 below either sum."
+    ],
+    "218": [
+      "ambiguous",
+      "6 cholestatic variant;7 standard",
+      "PSC may use modified bilirubin cutoffs; label6 matches variant but dataset explanation uses standard cutoffs while skipping absent ascites."
+    ],
+    "219": [
+      "ambiguous",
+      "8–11",
+      "Confusion/asterixis/slurredspeech do not establish Grade3–4; ascites unknown. Label9 chooses severeHE and defaultnoascites."
+    ],
+    "341": [
+      "insufficient information",
+      "No single supported replacement; specify encounter and supply concurrent inputs",
+      "Mixes creatinine1 at sixweekfollowup with initialINR0.9,bilirubin1.11,sodium141. No concurrent follow-up liver labs."
+    ],
+    "342": [
+      "incorrect",
+      "26",
+      "Legacy MELD-Na: clamp creatinine to 1–4 mg/dL, bilirubin/INR to at least 1 and sodium to 125–137; round the MELD score after multiplying by 10. Dataset rounds the unscaled score to an integer, yielding an incorrect multiple of 10."
+    ],
+    "344": [
+      "incorrect",
+      "24",
+      "Legacy MELD-Na: clamp creatinine to 1–4 mg/dL, bilirubin/INR to at least 1 and sodium to 125–137; round the MELD score after multiplying by 10. Dataset rounds the unscaled score to an integer, yielding an incorrect multiple of 10. Bilirubin is 1.4, not extracted 1.14; dialysis occurs after admission and does not change the creatinine cap."
+    ],
+    "240": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated. Creatinine 158.21 µmol/L is approximately 1.79 mg/dL, not 2.1; the renal criterion is absent."
+    ],
+    "241": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "242": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "243": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "245": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "246": [
+      "incorrect",
+      "2",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "250": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "253": [
+      "incorrect",
+      "2",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "255": [
+      "incorrect",
+      "3",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "256": [
+      "incorrect",
+      "2",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated."
+    ],
+    "259": [
+      "incorrect",
+      "5",
+      "Documented prior stroke/TIA is omitted by conflicting cerebrovascular entity keys. Count each of the six RCRI criteria once; a history of CHF counts even when compensated. Compensated CHF is also omitted in the extracted entities."
+    ],
+    "247": [
+      "insufficient information",
+      "2–3",
+      "Surgery type unspecified, preventing exact surgery criterion. Row249 also omits prior stroke."
+    ],
+    "249": [
+      "insufficient information",
+      "3–4",
+      "Surgery type unspecified, preventing exact surgery criterion. Row249 also omits prior stroke."
+    ],
+    "251": [
+      "ambiguous",
+      "1",
+      "Hiprevision is not RCRI high-risk intraperitoneal/intrathoracic/suprainguinalvascular surgery. Label1 accidentally swaps omitted stroke for inappropriate surgerypoint."
+    ],
+    "257": [
+      "ambiguous",
+      "2 if carotid procedure excluded",
+      "Creatinine180µmol/L=2.036mg/dL meets>2 threshold despite roundingto2.0. Carotid surgeryclassification needsclarification; label may accidentally swap renal and surgerypoints."
+    ],
+    "389": [
+      "incorrect",
+      "1",
+      "GBS hemoglobin boundary error: male13.0g/dL and female12.0g/dL score0, not1."
+    ],
+    "390": [
+      "incorrect",
+      "8",
+      "GBS hemoglobin boundary error: male13.0g/dL and female12.0g/dL score0, not1."
+    ],
+    "399": [
+      "incorrect",
+      "5",
+      "GBS hemoglobin boundary error: male13.0g/dL and female12.0g/dL score0, not1."
+    ],
+    "553": [
+      "incorrect",
+      "",
+      "Currently off antihypertensives, but treatedBP=true. Equation also has cholesterol-unit/percent errors."
+    ],
+    "560": [
+      "incorrect",
+      "",
+      "Rosuvastatin is a lipid-lowering drug, not evidence of treatedBP. No antihypertensive documented; equation also has unit/percent errors."
+    ],
+    "561": [
+      "insufficient information",
+      "",
+      "LDL107mg/dL misextracted as totalcholesterol107; actual TC missing. Equation also incorrect."
+    ],
+    "562": [
+      "insufficient information",
+      "",
+      "LDL 148 mg/dL is misclassified as total cholesterol. HDL 61 is supplied, but total cholesterol is missing. Post-MI treatment is also mixed with admission blood pressure."
+    ],
+    "565": [
+      "insufficient information",
+      "",
+      "LDL100mg/dL misextracted as HDL100; HDL missing. Also mixes admission lipids with laterSBP90."
+    ],
+    "567": [
+      "incorrect",
+      "",
+      "No pre-event antihypertensive treatment documented; treatedBP=true unsupported. Equationunit/percenterrors alsoapply."
+    ],
+    "569": [
+      "ambiguous",
+      "",
+      "AdmissionSpO294 combinedwith day3HR94; currentstatus andlow-riskpretestassessment unspecified."
+    ],
+    "572": [
+      "ambiguous",
+      "",
+      "SpO296 measuredon nasal cannula/100%oxygen; PERC oxygen criterion requires roomair."
+    ],
+    "575": [
+      "ambiguous",
+      "",
+      "SpO298 measuredon5Loxygen, so roomair criterioncannotbe judged."
+    ],
+    "585": [
+      "ambiguous",
+      "",
+      "Note onlysays oxygen requiredto maintainSpO2above90, notSpO2=90. Oxygencriterion androomairvalue uncertain."
+    ],
+    "348": [
+      "incorrect",
+      "1",
+      "Anticoagulant itself is not antiplatelet/NSAID criterion; controlledhypertension doesnotqualify. Only priorbleed1."
+    ],
+    "349": [
+      "incorrect",
+      "3",
+      "Priorstroke1+labileINR1+age1. CurrentBPcontrolled, and anticoagulant alone isnot drugscriterion."
+    ],
+    "361": [
+      "incorrect",
+      "3",
+      "Cirrhosis1+creatinine3.2renal1+priorbleed1. ControlledBP118/61 doesnotqualify."
+    ],
+    "345": [
+      "ambiguous",
+      "",
+      "No numericSBP>160; suggestivecirrhosis not confirmed and TIA mislabeledstroke."
+    ],
+    "347": [
+      "ambiguous",
+      "",
+      "Renalcreatinine not quantified, and enzymeelevation alone without bilirubin>2×normal or diagnosedcirrhosis doesnotestablish livercriterion."
+    ],
+    "350": [
+      "ambiguous",
+      "",
+      "CKD alone withoutdialysis/transplant/creatinine>2.26mg/dL doesnotestablish renalcriterion."
+    ],
+    "353": [
+      "ambiguous",
+      "",
+      "Elevatedcreatinine/reducedGFR and unspecifiedALD do not establish required renal/liverseverity."
+    ],
+    "356": [
+      "ambiguous",
+      "",
+      "Renal impairment lacks creatinine threshold/dialysis/transplant evidence."
+    ],
+    "359": [
+      "ambiguous",
+      "",
+      "ControlledBP doesnotmeet hypertensioncriterion. Alcohol8drinks liesat disputed>=8 vs>8cutoff; total3–4, not5."
+    ],
+    "121": [
+      "incorrect",
+      "4.5 if PE judged most likely",
+      "Current first PE miscounted as previousPE, adding1.5. AdultWells applicability limitedat14years."
+    ],
+    "123": [
+      "incorrect",
+      "4.5 if currentDVT signs count",
+      "New bilateralDVT/IVC thrombosis miscounted as previousDVT, adding1.5. No priorVTE history identified."
+    ],
+    "127": [
+      "ambiguous",
+      "",
+      "No pre-presentation≥3dayimmobilization documented; hospitalstay isnot automaticallypriorimmobility. Patient15years."
+    ],
+    "132": [
+      "ambiguous",
+      "",
+      "Cancer treatedin2004 but currentencounterdate notprovided; active/palliative status needsfullnoteinterpretation."
+    ],
+    "135": [
+      "ambiguous",
+      "",
+      "HR76 on firstadmission and115 onlaterreadmission; unspecifiedencounter gives0or1.5."
+    ],
+    "136": [
+      "ambiguous",
+      "",
+      "InitialpreoperativeHR98 combinedwith completedhysterectomy laterinnote; target0preop or1.5postop."
+    ],
+    "137": [
+      "ambiguous",
+      "",
+      "PreoperativeHRunder60 combinedwith lateraorticsurgery; target0preop or1.5postop."
+    ],
+    "138": [
+      "ambiguous",
+      "",
+      "Recent surgerycriterion uses valveoperationonhospitalday4, while questiondoesnot identify time."
+    ],
+    "126": [
+      "out of domain",
+      "",
+      "Adult WellsPE criteria applied to child without validation; supplied-input arithmetic matches convention."
+    ],
+    "129": [
+      "out of domain",
+      "",
+      "Adult WellsPE criteria applied to child without validation; supplied-input arithmetic matches convention."
+    ],
+    "220": [
+      "out of domain",
+      "",
+      "Unsupported WellsDVT extraction: PCI/coronaryangiography misclassified as major surgery; CABG explicitlyrefused. No suspected leg DVT assessment is supplied, so a clinically meaningful replacement total cannot be established."
+    ],
+    "221": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "222": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "223": [
+      "incorrect",
+      "−2 at initial presentation",
+      "Arterial thrombosis explains the symptomatic ischemic leg. Pain is not documented tenderness along deep veins; no other positive initial Wells DVT features are described. Later thrombectomies are a different encounter."
+    ],
+    "224": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "225": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "226": [
+      "out of domain",
+      "",
+      "Unsupported WellsDVT extraction: Benign epidermalinclusioncyst and remoteBCC do notestablish activecancer. No suspected leg DVT assessment is supplied, so a clinically meaningful replacement total cannot be established."
+    ],
+    "227": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "228": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "229": [
+      "out of domain",
+      "",
+      "The note concerns angina without a leg DVT assessment. Current gefitinib is cancer treatment, so remission alone does not invalidate the cancer criterion. The unrelated chest diagnosis does not justify the alternative-leg-diagnosis deduction."
+    ],
+    "230": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "231": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "232": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "233": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "234": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "235": [
+      "out of domain",
+      "",
+      "Unsupported WellsDVT extraction: No lower-limbparalysis,paresis orcast documented; cervicalstenosis refers to uterinecervix, notneurologicalparesis. No suspected leg DVT assessment is supplied, so a clinically meaningful replacement total cannot be established."
+    ],
+    "236": [
+      "out of domain",
+      "",
+      "Unsupported WellsDVT extraction: Intraosseousmeningioma isnot automaticallyactive malignantcancer. No suspected leg DVT assessment is supplied, so a clinically meaningful replacement total cannot be established."
+    ],
+    "237": [
+      "incorrect",
+      "−1 at initial presentation",
+      "No neurological deficit is documented; limited hip movement due to pain is not paresis. Trochanteric tenderness is not deep venous tenderness. Active metastatic cancer contributes 1 and the iliopsoas abscess supplies the alternative leg diagnosis (−2)."
+    ],
+    "238": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "239": [
+      "out of domain",
+      "",
+      "No suspected legDVT assessment is described. An unrelated diagnosis is not automatically an alternative explanation for DVT-like leg symptoms; assigning−2 is not supported."
+    ],
+    "260": [
+      "insufficient information",
+      "",
+      "NephewwithvenousVTE isnot parent/siblingprematureatheroscleroticCVD. Troponin/ECGnotdescribed."
+    ],
+    "262": [
+      "insufficient information",
+      "",
+      "No ECG/troponin results supplied."
+    ],
+    "263": [
+      "insufficient information",
+      "",
+      "Troponin0.017 lacksassayuppernormal; atrialfibrillationalone doesnotestablish repolarizationabnormality."
+    ],
+    "264": [
+      "insufficient information",
+      "",
+      "No ECG or troponin result is supplied. Portal and pulmonary hypertension do not establish systemic hypertension; metformin suggests diabetes but cannot supply the missing cardiac tests."
+    ],
+    "266": [
+      "insufficient information",
+      "",
+      "Anesthesiacase without chestpain or ECG/troponinassessment."
+    ],
+    "267": [
+      "insufficient information",
+      "",
+      "No initialtroponin supplied; serialECGschange withoutencounterselection."
+    ],
+    "268": [
+      "insufficient information",
+      "",
+      "Troponin0.44 isnotestablishednormal andECG notprovided; uppernormallimitmissing."
+    ],
+    "269": [
+      "insufficient information",
+      "",
+      "No troponin/ECGprovided; esophagealrupturepresentation."
+    ],
+    "270": [
+      "insufficient information",
+      "",
+      "Virilizationcase with no ECG/troponin; fatherCVDageunknown doesnotestablishprematureCVD."
+    ],
+    "272": [
+      "insufficient information",
+      "",
+      "ECGisreferencedinunavailablepicture andtroponinabsent."
+    ],
+    "275": [
+      "insufficient information",
+      "",
+      "Initialtroponininconclusive, notnormal; laternegative measurement isdifferent."
+    ],
+    "276": [
+      "insufficient information",
+      "",
+      "Pregnantpalpitationscase lacks troponin/ECGinformation."
+    ],
+    "278": [
+      "insufficient information",
+      "",
+      "Troponinnotprovided despite markednormal."
+    ],
+    "279": [
+      "insufficient information",
+      "",
+      "ECGimage/result andtroponinmissing; normalassumed."
+    ],
+    "261": [
+      "ambiguous",
+      "4–6",
+      "Troponin0.481 withULN0.012 is40×normal, scores2 not1. Pleuriticpain isnotautomaticallyhighlysuspicious2; historysubjectivity preventsunique total."
+    ],
+    "265": [
+      "incorrect",
+      "At least7",
+      "STdepression/elevationduring acuteevent omitted asnormal ECG0; age2+risk1+troponin2+ECG2 already7 beforehistory. BaselineECG mixedwithposteventtroponin."
+    ],
+    "271": [
+      "incorrect",
+      "5–6",
+      "STdepression/elevation/Twavechanges are notnormal ECG; significantSTdeviation2 + troponin2 + moderatelysuspicioushistory1 =5."
+    ],
+    "273": [
+      "ambiguous",
+      "",
+      "AF andabnormalRwaveprogression are notnecessarily repolarizationdisturbance; needECGimage."
+    ],
+    "848": [
+      "incorrect",
+      "10 if motorwithdrawal4",
+      "Conversational but disoriented answer supportsV4(confused), notV3. Eye2+verbal4+motor4=10; movingchestaway isnotclearlylocalizing."
+    ],
+    "860": [
+      "invalid numeric target",
+      "E2 VNT M6; no total",
+      "Verbalresponsecannotbeassessed becauseoftracheostomy; donotassignV1."
+    ],
+    "857": [
+      "insufficient information",
+      "No defensible total",
+      "Note describes inabilitytoassess pupils/vision, not explicitlyinabilitytoassess eyeopening. Eyeopeningresponsemissing; NT cannotbeimputednumerically."
+    ],
+    "862": [
+      "insufficient information",
+      "No defensible total",
+      "Note describes inabilitytoassess pupils/vision, not explicitlyinabilitytoassess eyeopening. Eyeopeningresponsemissing; NT cannotbeimputednumerically."
+    ],
+    "890": [
+      "incorrect",
+      "13",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "891": [
+      "incorrect",
+      "13",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points. The note explicitly states no vasopressors; extracted norepinephrine is unsupported."
+    ],
+    "892": [
+      "incorrect",
+      "10",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "893": [
+      "incorrect",
+      "12",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points. The note explicitly reports CPAP; its extracted flag is false."
+    ],
+    "894": [
+      "incorrect",
+      "9",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "895": [
+      "incorrect",
+      "11",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "896": [
+      "incorrect",
+      "12",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "897": [
+      "incorrect",
+      "11",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "898": [
+      "incorrect",
+      "10",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "899": [
+      "incorrect",
+      "10",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "900": [
+      "incorrect",
+      "8",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "901": [
+      "incorrect",
+      "10",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "902": [
+      "incorrect",
+      "10",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "903": [
+      "incorrect",
+      "10",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "904": [
+      "incorrect",
+      "9",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "905": [
+      "incorrect",
+      "9",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "906": [
+      "incorrect",
+      "11",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "907": [
+      "incorrect",
+      "11",
+      "Original SOFA: sum the six organ components. Count the highest documented vasopressor category even with stable BP; CPAP qualifies as respiratory support. Dialysis history alone does not assign renal points."
+    ],
+    "888": [
+      "ambiguous",
+      "11 if urineunrecorded;14 if anuria<200mL/day",
+      "No urineoutputnoted isambiguous between unrecordedoutput andanuria. Hypotension lacksMAP; no vasopressors. Label13 doesnotfollow eitherwithMAP<70 assumed."
+    ],
+    "889": [
+      "insufficient information",
+      "",
+      "PaO290 absent from narrative; bilirubin1.57mg/L silentlychangedto mg/dL. CPAPtrue innotebutfalse inentities. ExactSOFA notsupported."
+    ],
+    "427": [
+      "ambiguous",
+      "4–8",
+      "CKDseverity not quantified; dietcontrolledDMisnotuncomplicatedCCIpoint, neuropathy may qualifyendorgandamage ifdiabetic. Label7 notindependentlyjustified."
+    ],
+    "428": [
+      "incorrect",
+      "15",
+      "Age3+metastaticcancer6+MI1+CHF1+PVD1+SLE1+dementia1+chronichepatitis1."
+    ],
+    "429": [
+      "incorrect",
+      "2",
+      "Presyncope isnotTIA; Marfansyndrome isnotCCI rheumatic/connectivetissuedisease. Age1+treatedDM1; CAD/CABGwithoutMI doesnotgiveMIpoint."
+    ],
+    "430": [
+      "incorrect",
+      "9",
+      "Age1+CHF1+COPD1+dialysisCKD2+diabeticendorgandamage2+localizedcancer2."
+    ],
+    "431": [
+      "incorrect",
+      "At least16",
+      "Age3+metastaticcancer6+CHF1+PVD1+SLE1+ulcer1+portalhypertensivecirrhosis3 already16, without adding separatehematologicmalignancies."
+    ],
+    "432": [
+      "ambiguous",
+      "At least12;13 if mildliverdisease counts",
+      "Age3+CHF1+hemiplegia2+CKD2+DMendorgan2+malignancy2=12. MildLFT elevationsalone do notprovechronicliverdisease. Priorentity-onlyconfirmederror overstated certainty."
+    ],
+    "433": [
+      "ambiguous",
+      "10–12",
+      "DietcontrolledDMexcluded. Chronicliverdamagewithoutportalhypertension doesnotestablish severe3; lymphoma2 assumedrecent. Label11 doesnotfollow documentedcomponentmapping."
+    ],
+    "434": [
+      "ambiguous",
+      "14 if cancerexcluded;16 if within5years",
+      "Remissionat5yearboundary affects solidtumor2or0, nevergeneric1. HIV/AIDS6 age4CVA1dementia1COPD1DM1=14 beforetumor."
+    ],
+    "435": [
+      "incorrect",
+      "At most10 under listedconditions",
+      "DietcontrolledDMmustnotadd1; noendorgandamage. Age1+leukemia2+CKD2+CT1+COPD1+PVD1+suspectedCHF1+mildliver1=10."
+    ],
+    "436": [
+      "ambiguous",
+      "11–13",
+      "Moderateliverbiochemicaldiseasealone doesnotestablish portalhypertensionneededfor3points; diabeticCKDseverity notquantified."
+    ],
+    "437": [
+      "incorrect",
+      "13",
+      "Age2+MI1+CHF1+DMendorgan2+localizedtumor2+CVA1+CT1+moderate/severeliver3."
+    ],
+    "438": [
+      "ambiguous",
+      "10–11",
+      "Dementiaisstillunder evaluation ratherthan confirmeddiagnosis; othercomponentsyield10."
+    ],
+    "439": [
+      "incorrect",
+      "17",
+      "Age4+CVA/TIAcategory1+leukemia2+AIDS6+ulcer1+DMendorgan2+chronichepatitis1."
+    ],
+    "440": [
+      "ambiguous",
+      "11 or13",
+      "Age3+MI1+COPD1+dementia1+portalhypertensiveliver3+CKD2=11; localizedcanceradds2ifwithin5years, dietcontrolledDM0. Cancerrecencyunclear"
+    ],
+    "442": [
+      "incorrect",
+      "13 if statedmildliverdisease accepted",
+      "Age4+COPD1+MI1+DMendorgan2+CKD2+polymyalgia1+dementia1+mildliver1."
+    ],
+    "443": [
+      "ambiguous",
+      "",
+      "Cancerremissiontimingand whethermoderatelivermeansportalhypertensionmissing; cannot certifyentity-onlylowerbound."
+    ],
+    "445": [
+      "incorrect",
+      "9",
+      "Age 3 + MI 1 + diabetic end-organ damage 2 + CKD 2 + TIA 1 = 9. Severe liver disease and peripheral vascular disease are unsupported by the full note."
+    ],
+    "446": [
+      "ambiguous",
+      "",
+      "Connectivetissuediseaseexplicitbutextractedfalse; dietcontrolledDMdoesnotadd1; solidtumorrecencyandliverseveritynotclear."
+    ],
+    "829": [
+      "incorrect",
+      "174.0",
+      "PSI recomputed with actual Celsius temperature. Misspelled celsisus is incorrectly interpreted as Fahrenheit in ground-truth explanation."
+    ],
+    "831": [
+      "incorrect",
+      "173.0",
+      "PSI recomputed with actual Celsius temperature. Misspelled celsisus is incorrectly interpreted as Fahrenheit in ground-truth explanation."
+    ],
+    "830": [
+      "ambiguous",
+      "202 withoutAMS;222 withAMS",
+      "Openingnote reportsconfusion but laterdenies currentmentalstatuschange; target202 depends onchoosingthelatter."
+    ],
+    "832": [
+      "insufficient information",
+      "112 plus unknownfeatures",
+      "ChestXray explicitlyunavailable, and renal/liverhistoryunknown. Missing features assumednegative."
+    ],
+    "833": [
+      "incorrect",
+      "At least158",
+      "Active neoplasia isexplicitlydocumented but omitted30points. HR95 misextracted85 doesnotchange score; CVhistoryunknown."
+    ],
+    "835": [
+      "insufficient information",
+      "At least170",
+      "Liver/cerebrovascularhistory explicitlycouldnotbeobtained; unknownfeatures assumednegative."
+    ],
+    "845": [
+      "insufficient information",
+      "101 or111",
+      "Residencyexplicitlynotrecorded; nursinghomeadds10."
+    ],
+    "846": [
+      "insufficient information",
+      "",
+      "CXR explicitlyunavailable andbreastcancerrecencyunknown; neoplasticdisease requiresactive/recentdiagnosis."
+    ],
+    "847": [
+      "insufficient information",
+      "133 or143 if livercriterionaccepted",
+      "Residencyexplicitlyunknown; nursinghomeadds10. MASHdoesnotbyitselfestablishcirrhosis."
+    ],
+    "868": [
+      "insufficient information",
+      "Not determinable",
+      "The note gives pH 7.29 rather than extracted 7.53 and omits the required alveolar–arterial gradient on FiO2 57%."
+    ],
+    "869": [
+      "insufficient information",
+      "Not determinable",
+      "The alveolar–arterial gradient is absent, blood pressure is malformed (125/8), and acute renal failure is not established."
+    ],
+    "870": [
+      "ambiguous",
+      "Not uniquely determinable",
+      "The gradient is described on room air while FiO2 is 63%; acute renal failure and qualifying chronic organ failure are uncertain."
+    ],
+    "871": [
+      "confirmed incorrect",
+      "14",
+      "Use documented BP 190/103 and GCS deficit 0. Predialysis CKD and a planned transplant do not qualify for chronic health points."
+    ],
+    "872": [
+      "confirmed incorrect",
+      "13",
+      "Age 2 + GCS deficit 3 + oxygen gradient 3 + qualifying chronic health 5."
+    ],
+    "873": [
+      "confirmed incorrect",
+      "19",
+      "Age 5, temperature 1, pulse 2, oxygen 1, pH 2, acute renal failure 6, GCS deficit 1 and white count 1."
+    ],
+    "874": [
+      "ambiguous",
+      "8 if potassium is 5; 12 if literal 139",
+      "The note states potassium 139 mEq/L; extraction substitutes 5 without support. The note needs correction."
+    ],
+    "875": [
+      "confirmed incorrect",
+      "22",
+      "Age 3 + pH 2 + oxygen gradient 3 + acute renal failure 8 + GCS deficit 1 + chronic health 5."
+    ],
+    "876": [
+      "ambiguous",
+      "14–17",
+      "The note describes possible acute renal failure; doubling the creatinine points changes the result from 14 to 17. Neither supports label 35."
+    ],
+    "877": [
+      "confirmed incorrect",
+      "8",
+      "Age 3 + creatinine 2 + oxygen gradient 3; GCS 15 contributes zero."
+    ],
+    "878": [
+      "confirmed incorrect",
+      "13",
+      "Age 5 + pulse 2 + creatinine 3 + pH 2 + GCS deficit 1. Stage II CKD does not qualify for chronic health points."
+    ],
+    "879": [
+      "confirmed incorrect",
+      "3",
+      "Only age contributes 3; GCS 15 contributes zero."
+    ],
+    "880": [
+      "confirmed incorrect",
+      "7",
+      "Age 3 + creatinine 2 + GCS deficit 2; stage II CKD does not qualify for chronic health points."
+    ],
+    "881": [
+      "confirmed incorrect",
+      "4",
+      "Age 2 + pH 2; GCS 15 contributes zero."
+    ],
+    "882": [
+      "confirmed incorrect",
+      "9",
+      "Age 3 + creatinine 2 + oxygen gradient 3 + GCS deficit 1."
+    ],
+    "883": [
+      "confirmed incorrect",
+      "15",
+      "Age 3 + pH 2 + GCS deficit 2 + oxygen gradient 3 + qualifying chronic health 5."
+    ],
+    "884": [
+      "confirmed incorrect",
+      "6",
+      "Age 3 + creatinine 2 + GCS deficit 1."
+    ],
+    "885": [
+      "confirmed incorrect",
+      "9",
+      "Age 3 + creatinine 2 + GCS deficit 1 + oxygen gradient 3; predialysis CKD contributes no chronic health points."
+    ],
+    "886": [
+      "confirmed incorrect",
+      "12",
+      "Age 5 + creatinine 2 + qualifying severe liver failure 5; GCS 15 contributes zero."
+    ],
+    "887": [
+      "confirmed incorrect",
+      "3",
+      "Only age contributes 3; GCS 15 contributes zero."
+    ],
+    "908": [
+      "confirmed incorrect",
+      "At least 18",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "909": [
+      "confirmed incorrect",
+      "At least 24",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "910": [
+      "confirmed incorrect",
+      "At least 13",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "911": [
+      "confirmed incorrect",
+      "At least 18",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points. CHF and paralysis are not established in the note."
+    ],
+    "912": [
+      "confirmed incorrect",
+      "At least 22",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "913": [
+      "confirmed incorrect",
+      "At least 12",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points. Central line placement is not major surgery; no cast is documented."
+    ],
+    "914": [
+      "confirmed incorrect",
+      "At least 19",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "915": [
+      "confirmed incorrect",
+      "At least 18",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "916": [
+      "confirmed incorrect",
+      "At least 9",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "917": [
+      "confirmed incorrect",
+      "At least 12",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "918": [
+      "confirmed incorrect",
+      "At least 22",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "919": [
+      "confirmed incorrect",
+      "At least 16",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "920": [
+      "confirmed incorrect",
+      "At least 13",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points. Family myocardial infarctions do not establish a family history of venous thrombosis."
+    ],
+    "921": [
+      "confirmed incorrect",
+      "At least 14",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points. Minor surgery was months earlier and is omitted."
+    ],
+    "922": [
+      "confirmed incorrect",
+      "At least 12",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "923": [
+      "confirmed incorrect",
+      "At least 13",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "924": [
+      "confirmed incorrect",
+      "At least 13",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "925": [
+      "confirmed incorrect",
+      "At least 13",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points. Arthroplasty was scheduled, not performed, and is omitted."
+    ],
+    "926": [
+      "confirmed incorrect",
+      "At least 12",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points. The note describes minor surgery, not major surgery."
+    ],
+    "927": [
+      "confirmed incorrect",
+      "At least 13",
+      "Documented narrative risk factors alone exceed the label. This conservative Caprini lower bound counts at most one trauma and one thrombophilia category and omits uncertain mobility or overlapping surgery points."
+    ],
+    "340": [
+      "incorrect",
+      "18",
+      "Legacy MELD-Na: clamp creatinine to 1–4 mg/dL, bilirubin/INR to at least 1 and sodium to 125–137; round the MELD score after multiplying by 10. Dataset rounds the unscaled score to an integer, yielding an incorrect multiple of 10."
+    ],
+    "343": [
+      "incorrect",
+      "23",
+      "Legacy MELD-Na: clamp creatinine to 1–4 mg/dL, bilirubin/INR to at least 1 and sodium to 125–137; round the MELD score after multiplying by 10. Dataset rounds the unscaled score to an integer, yielding an incorrect multiple of 10."
+    ]
+  }
+}

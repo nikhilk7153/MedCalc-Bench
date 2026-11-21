@@ -1,0 +1,12 @@
+{"Row Number": 1, "all_match": true, "problems": [], "Tokens": 1419}
+{"Row Number": 5, "all_match": true, "problems": [], "Tokens": 1499}
+{"Row Number": 4, "all_match": true, "problems": [], "Tokens": 2268}
+{"Row Number": 8, "all_match": true, "problems": [], "Tokens": 1969}
+{"Row Number": 3, "all_match": true, "problems": [], "Tokens": 2729}
+{"Row Number": 6, "all_match": true, "problems": [], "Tokens": 1055}
+{"Row Number": 7, "all_match": true, "problems": [], "Tokens": 846}
+{"Row Number": 9, "all_match": true, "problems": [], "Tokens": 1413}
+{"Row Number": 2, "all_match": true, "problems": [], "Tokens": 1227}
+{"Row Number": 11, "all_match": true, "problems": [], "Tokens": 1254}
+{"Row Number": 10, "all_match": true, "problems": [], "Tokens": 1392}
+{"Row Number": 12, "all_match": false, "problems": [{"input": "weight", "extracted": [90.0, "kg"], "note_says": "Weight of 90 kg is documented during the assessment three days after admission; an admission weight is not explicitly provided.", "issue": "wrong_time_point"}, {"input": "creatinine", "extracted": [2.5, "mg/dL"], "note_says": "Serum creatinine of 2.5 mg/dL is documented during the deterioration three days after admission, not at initial admission before treatment.", "issue": "wrong_time_point"}], "Tokens": 1063}

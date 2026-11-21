@@ -1,0 +1,497 @@
+{
+ "914": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "note": [],
+  "old": "33",
+  "new": "32"
+ },
+ "41": {
+  "calc": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "set": {
+   "Thromboembolism history": false
+  },
+  "note": [],
+  "old": "4",
+  "new": "2"
+ },
+ "43": {
+  "calc": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "set": {
+   "Thromboembolism history": false
+  },
+  "note": [],
+  "old": "6",
+  "new": "4"
+ },
+ "49": {
+  "calc": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "set": {
+   "Thromboembolism history": false
+  },
+  "note": [],
+  "old": "7",
+  "new": "5"
+ },
+ "128": {
+  "calc": "Wells' Criteria for Pulmonary Embolism",
+  "set": {
+   "Immobilization for at least 3 days": false
+  },
+  "note": [
+   [
+    "Sodium = 103 mEq/dL",
+    "Sodium = 103 mEq/L"
+   ],
+   [
+    "Potassium = 3.0 mEq/dL",
+    "Potassium = 3.0 mEq/L"
+   ],
+   [
+    "sodium of 111 mEq/dL and potassium of 2.3 mEq/dL",
+    "sodium of 111 mEq/L and potassium of 2.3 mEq/L"
+   ],
+   [
+    "serum sodium of 111 mEq/dL",
+    "serum sodium of 111 mEq/L"
+   ],
+   [
+    "urine sodium of 88 mEq/dL",
+    "urine sodium of 88 mEq/L"
+   ],
+   [
+    "serum cortisol of 15 mg/dL",
+    "serum cortisol of 15 \u00b5g/dL"
+   ]
+  ],
+  "old": "1.5",
+  "new": "1.5"
+ },
+ "131": {
+  "calc": "Wells' Criteria for Pulmonary Embolism",
+  "set": {
+   "Pulmonary Embolism is #1 diagnosis OR equally likely": false
+  },
+  "note": [],
+  "old": "5.5",
+  "new": "2.5"
+ },
+ "136": {
+  "calc": "Wells' Criteria for Pulmonary Embolism",
+  "set": {
+   "Heart Rate or Pulse": [
+    76.0,
+    "beats per minute"
+   ]
+  },
+  "note": [],
+  "old": "1.5",
+  "new": "0"
+ },
+ "222": {
+  "calc": "Wells' Criteria for DVT",
+  "set": {
+   "Paralysis, paresis, or recent plaster immobilization of the lower extremity": false
+  },
+  "note": [],
+  "old": "-1",
+  "new": "-2"
+ },
+ "224": {
+  "calc": "Wells' Criteria for DVT",
+  "set": {
+   "Localized tenderness along the deep venous system": false
+  },
+  "note": [
+   [
+    "Lipid profile showed total cholesterol of 202 gr/dL, TG of 146 gr/dL, HDL-c of 37 gr/dL and LDL-c of 136 gr/dL.",
+    "Lipid profile showed total cholesterol of 202 mg/dL, TG of 146 mg/dL, HDL-c of 37 mg/dL and LDL-c of 136 mg/dL."
+   ]
+  ],
+  "old": "-2",
+  "new": "-2"
+ },
+ "271": {
+  "calc": "HEART Score for Major Cardiac Events",
+  "set": {
+   "parent or sibling with Cardiovascular disease before age 65": false
+  },
+  "note": [],
+  "old": "2",
+  "new": "1"
+ },
+ "274": {
+  "calc": "HEART Score for Major Cardiac Events",
+  "set": {
+   "Electrocardiogram Test": "Normal",
+   "obesity": true
+  },
+  "note": [],
+  "old": "3",
+  "new": "3"
+ },
+ "301": {
+  "calc": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "note": [],
+  "old": "1",
+  "new": "1"
+ },
+ "313": {
+  "calc": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "note": [],
+  "old": "2",
+  "new": "1"
+ },
+ "315": {
+  "calc": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "note": [],
+  "old": "2",
+  "new": "2"
+ },
+ "320": {
+  "calc": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "set": {
+   "Tender/swollen anterior cervical lymph nodes": false,
+   "Cough Absent": true
+  },
+  "note": [],
+  "old": "0",
+  "new": "0"
+ },
+ "448": {
+  "calc": "FeverPAIN Score for Strep Pharyngitis",
+  "set": {
+   "Severe tonsil inflammation": false,
+   "Absence of cough or coryza": true
+  },
+  "note": [],
+  "old": "4",
+  "new": "3"
+ },
+ "451": {
+  "calc": "FeverPAIN Score for Strep Pharyngitis",
+  "set": {
+   "Severe tonsil inflammation": false,
+   "Absence of cough or coryza": true
+  },
+  "note": [],
+  "old": "4",
+  "new": "3"
+ },
+ "458": {
+  "calc": "FeverPAIN Score for Strep Pharyngitis",
+  "set": {
+   "Severe tonsil inflammation": false
+  },
+  "note": [],
+  "old": "4",
+  "new": "3"
+ },
+ "552": {
+  "calc": "CURB-65 Score for Pneumonia Severity",
+  "set": {
+   "Blood Urea Nitrogen (BUN)": [
+    8.4,
+    "mg/dL"
+   ]
+  },
+  "note": [
+   [
+    "creatinine 0.9 gm/dl",
+    "creatinine 0.9 mg/dl"
+   ]
+  ],
+  "old": "1",
+  "new": "1"
+ },
+ "834": {
+  "calc": "PSI Score: Pneumonia Severity Index for CAP",
+  "set": {
+   "Heart Rate or Pulse": [
+    95.0,
+    "beats per minute"
+   ],
+   "Cerebrovascular disease history": false,
+   "Neoplastic disease": true,
+   "Congestive Heart Failure": false,
+   "Nursing home resident": false,
+   "Pleural effusion on x-ray": false
+  },
+  "note": [],
+  "old": "158",
+  "new": "158"
+ },
+ "836": {
+  "calc": "PSI Score: Pneumonia Severity Index for CAP",
+  "set": {
+   "Cerebrovascular disease history": false,
+   "Liver disease history": false,
+   "Pleural effusion on x-ray": false
+  },
+  "note": [],
+  "old": "170.0",
+  "new": "170.0"
+ },
+ "846": {
+  "calc": "PSI Score: Pneumonia Severity Index for CAP",
+  "set": {
+   "Nursing home resident": false
+  },
+  "note": [],
+  "old": "101.0",
+  "new": "101.0"
+ },
+ "847": {
+  "calc": "PSI Score: Pneumonia Severity Index for CAP",
+  "set": {
+   "Neoplastic disease": false,
+   "Pleural effusion on x-ray": false
+  },
+  "note": [],
+  "old": "97.0",
+  "new": "67.0"
+ },
+ "848": {
+  "calc": "PSI Score: Pneumonia Severity Index for CAP",
+  "set": {
+   "Nursing home resident": false
+  },
+  "note": [],
+  "old": "113.0",
+  "new": "113.0"
+ },
+ "861": {
+  "calc": "Glasgow Coma Score (GCS)",
+  "set": {
+   "Best verbal response": "not testable"
+  },
+  "note": [],
+  "old": "9",
+  "new": "12"
+ },
+ "869": {
+  "calc": "APACHE II Score",
+  "set": {
+   "pH": 7.29,
+   "Diastolic Blood Pressure": [
+    84.0,
+    "mm Hg"
+   ]
+  },
+  "note": [],
+  "old": "14",
+  "new": "15"
+ },
+ "870": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Acute renal failure": false
+  },
+  "note": [],
+  "old": "21",
+  "new": "18"
+ },
+ "871": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Acute renal failure": false
+  },
+  "note": [],
+  "old": "26",
+  "new": "22"
+ },
+ "872": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Systolic Blood Pressure": [
+    190.0,
+    "mm Hg"
+   ],
+   "History of severe organ failure or immunocompromise": false,
+   "Surgery Type": "Nonoperative"
+  },
+  "note": [],
+  "old": "15",
+  "new": "14"
+ },
+ "877": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Acute renal failure": false
+  },
+  "note": [],
+  "old": "17",
+  "new": "14"
+ },
+ "879": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Chronic renal failure": false
+  },
+  "note": [],
+  "old": "13",
+  "new": "13"
+ },
+ "881": {
+  "calc": "APACHE II Score",
+  "set": {
+   "History of severe organ failure or immunocompromise": false
+  },
+  "note": [],
+  "old": "7",
+  "new": "7"
+ },
+ "882": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Chronic renal failure": false
+  },
+  "note": [],
+  "old": "4",
+  "new": "4"
+ },
+ "884": {
+  "calc": "APACHE II Score",
+  "set": {
+   "Surgery Type": "Nonoperative"
+  },
+  "note": [],
+  "old": "12",
+  "new": "15"
+ },
+ "892": {
+  "calc": "Sequential Organ Failure Assessment (SOFA) Score",
+  "set": {
+   "norEPINEPHrine": [
+    0,
+    "mcg/kg/min"
+   ]
+  },
+  "note": [],
+  "old": "13",
+  "new": "13"
+ },
+ "906": {
+  "calc": "Sequential Organ Failure Assessment (SOFA) Score",
+  "set": {
+   "Systolic Blood Pressure": [
+    85.0,
+    "mm Hg"
+   ],
+   "Diastolic Blood Pressure": [
+    45.0,
+    "mm Hg"
+   ]
+  },
+  "note": [],
+  "old": "9",
+  "new": "9"
+ },
+ "909": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "note": [],
+  "old": "26",
+  "new": "24"
+ },
+ "911": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Multiple trauma in the last month": false,
+   "Acute Myocardial infarction": false
+  },
+  "note": [],
+  "old": "20",
+  "new": "14"
+ },
+ "913": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Mobility": "confined to bed >72 hours"
+  },
+  "note": [],
+  "old": "23",
+  "new": "24"
+ },
+ "921": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Family history of thrombosis": false,
+   "Major Surgery in the last month": false
+  },
+  "note": [],
+  "old": "27",
+  "new": "23"
+ },
+ "922": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "note": [],
+  "old": "15",
+  "new": "14"
+ },
+ "926": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {
+   "Surgery Type": "none"
+  },
+  "note": [],
+  "old": "16",
+  "new": "11"
+ },
+ "889": {
+  "calc": "Sequential Organ Failure Assessment (SOFA) Score",
+  "set": {},
+  "note": [
+   [
+    "The patient has no urine output noted, raising concerns for renal or urinary complications.",
+    "Urine output has not been recorded."
+   ]
+  ],
+  "old": "11"
+ },
+ "890": {
+  "calc": "Sequential Organ Failure Assessment (SOFA) Score",
+  "set": {},
+  "note": [
+   [
+    "1.57 mg/L",
+    "1.57 mg/dL"
+   ],
+   [
+    "41 % FiO\u2082 with continuous positive airway pressure.",
+    "41 % FiO\u2082 with continuous positive airway pressure, with a PaO\u2082 of 90 mm Hg."
+   ]
+  ],
+  "old": "10"
+ },
+ "918": {
+  "calc": "Caprini Score for Venous Thromboembolism (2005)",
+  "set": {},
+  "note": [
+   [
+    "He has no history of malignant cancer, congenital or acquired thrombophilia, or recent fractures.",
+    "He has no history of malignant cancer, other congenital or acquired thrombophilia, or recent fractures."
+   ]
+  ],
+  "old": "14"
+ }
+}

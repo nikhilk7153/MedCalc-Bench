@@ -1,0 +1,56 @@
+Calculator ID,Calculator Name,Question changed,Step-by-Step Thinking changed,Answer changed,Old Answer,New Answer
+2,Creatinine Clearance (Cockcroft-Gault Equation),True,True,True,67.005,67.00495
+3,CKD-EPI Equations for Glomerular Filtration Rate,True,True,True,40,39.99991
+4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,True,True,False,2,2
+5,Mean Arterial Pressure (MAP),True,True,True,83.333,83.33333
+6,Body Mass Index (BMI),True,True,True,20.529,20.52892
+7,Calcium Correction for Hypoalbuminemia,True,True,False,8.96,8.96
+8,Wells' Criteria for Pulmonary Embolism,True,True,False,1.5,1.5
+9,MDRD GFR Equation,True,True,True,36.954,36.95439
+10,Ideal Body Weight,True,True,True,68.653,68.65362
+11,QTc Bazett Calculator,False,True,True,452.863,452.87563
+15,Child-Pugh Score for Cirrhosis Mortality,True,True,False,6,6
+16,Wells' Criteria for DVT,True,True,False,-1,-1
+17,Revised Cardiac Risk Index for Pre-Operative Risk,True,True,False,3,3
+18,HEART Score for Major Cardiac Events,True,True,False,1,1
+19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,True,True,True,2.029,2.02888
+20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,True,True,False,2,2
+22,Maintenance Fluids Calculations,True,True,False,92,92
+23,MELD Na (UNOS/OPTN),True,True,False,40,40
+25,HAS-BLED Score for Major Bleeding Risk,True,True,False,1,1
+26,Sodium Correction for Hyperglycemia,True,False,False,138,138
+27,Glasgow-Blatchford Bleeding Score (GBS),True,True,False,9,9
+30,Serum Osmolality,True,True,True,294.397,294.39683
+31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),True,False,False,10.66914,10.66914
+32,Charlson Comorbidity Index (CCI),True,True,False,7,7
+33,FeverPAIN Score for Strep Pharyngitis,True,True,False,1,1
+38,Free Water Deficit,True,True,False,-2.1,-2.1
+39,Anion Gap,True,False,False,12,12
+40,Fractional Excretion of Sodium (FENa),True,True,True,0.074,0.074181
+44,LDL Calculated,True,True,False,103,103
+45,CURB-65 Score for Pneumonia Severity,True,True,False,3,3
+46,Framingham Risk Score for Hard Coronary Heart Disease,True,True,False,17.123,17.123
+48,PERC Rule for Pulmonary Embolism,True,True,False,2,2
+51,SIRS Criteria,True,True,False,3,3
+56,QTc Fridericia Calculator,False,True,True,458.435,458.57016
+57,QTc Framingham Calculator,False,True,True,377.74,377.79236
+58,QTc Hodges Calculator,False,True,True,401.768,401.74982
+59,QTc Rautaharju Calculator,False,True,True,344.667,344.66667
+60,Body Surface Area Calculator,True,True,True,2.062,2.06155
+62,Adjusted Body Weight,True,True,True,62.629,62.62918
+63,Delta Gap,True,True,False,0,0
+64,Delta Ratio,True,True,False,0,0
+65,Albumin Corrected Anion Gap,True,False,False,22.5,22.5
+66,Albumin Corrected Delta Gap,True,False,False,3.25,3.25
+67,Albumin Corrected Delta Ratio,True,True,True,-2.33,-2.33333
+29,PSI Score: Pneumonia Severity Index for CAP,True,True,False,207,207
+21,Glasgow Coma Score (GCS),True,True,False,14,14
+28,APACHE II Score,False,True,False,21,21
+43,Sequential Organ Failure Assessment (SOFA) Score,False,True,False,9,9
+36,Caprini Score for Venous Thromboembolism (2005),False,True,False,15,15
+13,Estimated Due Date,False,True,False,12/02/2000,12/02/2000
+24,Steroid Conversion Calculator,False,True,True,2.437,2.46968
+61,Target weight,False,True,True,77.61,77.59262
+49,Morphine Milligram Equivalents (MME) Calculator,False,True,False,82.6,82.6
+68,Estimated Date of Conception,False,True,False,01/21/2017,01/21/2017
+69,Estimated Gestational Age,False,True,False,"['34 weeks', '3 days']","['34 weeks', '3 days']"

@@ -1,0 +1,210 @@
+[
+ {
+  "calculator_id": "8",
+  "note_id": "pmc-8101672-1",
+  "replace": [
+   [
+    "Sodium = 103 mEq/dL",
+    "Sodium = 103 mEq/L"
+   ],
+   [
+    "Potassium = 3.0 mEq/dL",
+    "Potassium = 3.0 mEq/L"
+   ],
+   [
+    "sodium of 111 mEq/dL and potassium of 2.3 mEq/dL",
+    "sodium of 111 mEq/L and potassium of 2.3 mEq/L"
+   ],
+   [
+    "serum sodium of 111 mEq/dL",
+    "serum sodium of 111 mEq/L"
+   ],
+   [
+    "urine sodium of 88 mEq/dL",
+    "urine sodium of 88 mEq/L"
+   ],
+   [
+    "serum cortisol of 15 mg/dL",
+    "serum cortisol of 15 µg/dL"
+   ]
+  ],
+  "reason": "Unit typos: electrolytes in mEq/dL, cortisol in mg/dL",
+  "row": "128"
+ },
+ {
+  "calculator_id": "16",
+  "note_id": "pmc-4341247-1",
+  "replace": [
+   [
+    "Lipid profile showed total cholesterol of 202 gr/dL, TG of 146 gr/dL, HDL-c of 37 gr/dL and LDL-c of 136 gr/dL.",
+    "Lipid profile showed total cholesterol of 202 mg/dL, TG of 146 mg/dL, HDL-c of 37 mg/dL and LDL-c of 136 mg/dL."
+   ]
+  ],
+  "reason": "Unit typo: lipids in gr/dL",
+  "row": "224"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-7887466-1",
+  "replace": [
+   [
+    "hyperhomocysteinemia of 18.9 mmol/L",
+    "hyperhomocysteinemia of 18.9 µmol/L"
+   ]
+  ],
+  "reason": "Unit typo: homocysteine in mmol/L",
+  "row": "354"
+ },
+ {
+  "calculator_id": "25",
+  "note_id": "pmc-7869650-1",
+  "replace": [
+   [
+    "170 mmoL/L",
+    "170 µmol/L"
+   ]
+  ],
+  "reason": "Unit typo: homocysteine in mmoL/L",
+  "row": "360"
+ },
+ {
+  "calculator_id": "27",
+  "note_id": "pmc-7924906-1",
+  "replace": [
+   [
+    "His vital signs were initially normal, however, after an episode",
+    "After an episode"
+   ]
+  ],
+  "reason": "Admission time point ambiguous (\"initially normal\" vitals without values); keeps the documented pre-treatment vitals",
+  "row": "405"
+ },
+ {
+  "calculator_id": "45",
+  "note_id": "pmc-2988179-1",
+  "replace": [
+   [
+    "creatinine 0.9 gm/dl",
+    "creatinine 0.9 mg/dl"
+   ]
+  ],
+  "reason": "Unit typo: creatinine in gm/dl",
+  "row": "552"
+ },
+ {
+  "calculator_id": "21",
+  "note_id": "10",
+  "replace": [
+   [
+    "Pupillary evaluation was not possible",
+    "Eye opening could not be assessed"
+   ]
+  ],
+  "reason": "Note described pupils; the inputs (eye response not testable) refer to eye opening",
+  "row": "858"
+ },
+ {
+  "calculator_id": "21",
+  "note_id": "15",
+  "replace": [
+   [
+    "visual evaluation was not possible",
+    "eye opening could not be assessed"
+   ]
+  ],
+  "reason": "Note described vision; the inputs (eye response not testable) refer to eye opening",
+  "row": "863"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "1",
+  "replace": [
+   [
+    "ABG shows pH of 7.29 a 57 % FiO₂.",
+    "ABG shows pH of 7.29 and an A-a gradient of 375 mm Hg on 57 % FiO₂."
+   ]
+  ],
+  "reason": "A-a gradient (needed at FiO2 >= 50%) missing from the note; v1.0 inputs use 375",
+  "row": "869"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "2",
+  "replace": [
+   [
+    "125/8mmHg",
+    "125/83mmHg"
+   ],
+   [
+    "ABG shows pH of 7.47 a 68 % FiO₂.",
+    "ABG shows pH of 7.47 and an A-a gradient of 240 mm Hg on 68 % FiO₂."
+   ]
+  ],
+  "reason": "Diastolic BP typo (8; v1.0 inputs use 83) and A-a gradient missing (v1.0 inputs use 240)",
+  "row": "870"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "3",
+  "replace": [
+   [
+    "an A-a gradient of 331 mm Hg while on room air",
+    "an A-a gradient of 331 mm Hg"
+   ]
+  ],
+  "reason": "Contradiction: FiO2 63% and \"room air\"",
+  "row": "871"
+ },
+ {
+  "calculator_id": "28",
+  "note_id": "7",
+  "replace": [
+   [
+    "potassium 139 mEq/L",
+    "potassium 5.0 mEq/L"
+   ]
+  ],
+  "reason": "Typo: potassium 139 (same as sodium); v1.0 inputs use 5.0",
+  "row": "875"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "1",
+  "replace": [
+   [
+    "The patient has no urine output noted, raising concerns for renal or urinary complications.",
+    "Urine output has not been recorded."
+   ]
+  ],
+  "reason": "Ambiguous between anuria and unrecorded output; v1.0 inputs do not use urine output",
+  "row": "889"
+ },
+ {
+  "calculator_id": "43",
+  "note_id": "2",
+  "replace": [
+   [
+    "1.57 mg/L",
+    "1.57 mg/dL"
+   ],
+   [
+    "41 % FiO₂ with continuous positive airway pressure.",
+    "41 % FiO₂ with continuous positive airway pressure, with a PaO₂ of 90 mm Hg."
+   ]
+  ],
+  "reason": "Bilirubin unit typo (v1.0 inputs use mg/dL) and PaO2 missing (v1.0 inputs use 90)",
+  "row": "890"
+ },
+ {
+  "calculator_id": "36",
+  "note_id": "10",
+  "replace": [
+   [
+    "He has no history of malignant cancer, congenital or acquired thrombophilia, or recent fractures.",
+    "He has no history of malignant cancer, other congenital or acquired thrombophilia, or recent fractures."
+   ]
+  ],
+  "reason": "Contradiction: positive Factor V Leiden but \"no congenital or acquired thrombophilia\"",
+  "row": "918"
+ }
+]

@@ -7,6 +7,10 @@ Here is the HuggingFace link: https://huggingface.co/datasets/nsk7153/MedCalc-Be
 
 The first version of MedCalc-Bench Verified is an update from v1.2 on this repository.
 
+# Correction to the NeurIPS 2024 paper (2026)
+
+The corrected test set, one-shot examples, model outputs, error analysis and paper tables for the correction of the NeurIPS 2024 paper are in `final_release_2026-11-08/` (see its README). The scripts that build them are in `final_runs/consolidated_2026-11-06/` (see its README), and `dataset/CHANGELOG.md` lists the dataset changes.
+
 # MedCalc-Bench
 
 <br>
@@ -50,7 +54,7 @@ Each Instance in the dataset contains the following information:
 To install all the packages needed for this project, please run the following command: ```conda env create -f environment.yml```. This command will create the ```medcalc-bench``` conda environment. For running OpenAI models, you will need to provide your OpenAI key in this conda environment. You can do this by executing the following command in the ```medcalc-bench``` environment: ```export OPENAI_API_KEY = YOUR_API_KEY```, where YOUR_API_KEY is your OpenAI API key. You will also need to provide your HuggingFace token in this environment by running the following command: ```export HUGGINGFACE_TOKEN=your_hugging_face_token```, where ```your_hugging_face_token``` is your huggingface token. 
 
 
-For reproducing the Table 2 from the paper, first `cd` into the `evaluation` folder. Then, please run the following command: ```python run.py --model <model_name> and --prompt <prompt_style>```.
+For reproducing the Table 2 from the paper, first `cd` into the `evaluation` folder. Then, please run the following command: ```python run.py --model <model_name> --prompt <prompt_style>```. Open-weight models are run with [vLLM](https://github.com/vllm-project/vllm) (`pip install vllm`); use `--tp <number of GPUs>` for models that need more than one GPU. Models named `OpenAI/<model>` are called through the OpenAI API. `--prompt` accepts one or more prompt styles and runs all three by default; `--data` and `--one_shot` select the test set and one-shot examples, and `--tag` names the subfolder of `outputs` the results are written to.
 
 The options for `--model` are below:
 
@@ -67,7 +71,7 @@ The options for `--prompt` are below:
 
 - Direct Answer: direct_answer 
 - Zero Shot Chain of Thought: zero_shot
-- One Shot Chain of Though: one_shot_cot
+- One Shot Chain of Thought: one_shot
 
 From this, you will get one jsonl file outputting the status of every question: Upon executing `run.py`, the results will be saved in a file called ```<model>_<prompt>.jsonl```. This file can be found in the ```outputs``` folder. 
 

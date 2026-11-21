@@ -1,0 +1,7 @@
+92 rows from replacement_candidates.csv to check
+final_replacement_candidates_verify.jsonl: 0 cached, 92 to run
+  50/92
+Verdict
+correct      58
+ambiguous    22
+incorrect    12

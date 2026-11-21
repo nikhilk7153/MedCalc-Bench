@@ -1,0 +1,205 @@
+{
+ "calculator_id": "28",
+ "mdcalc_source": "https://www.mdcalc.com/calc/1868/apache-ii-score (page fetched: input list only - organ failure/immunocompromise Y/N with examples 'Heart Failure Class IV, cirrhosis, chronic lung disease, or dialysis-dependent', creatinine in umol/L, ARF Y/N 'not defined in the original study', FiO2 <50% (or non-intubated) / >=50%; point bands not rendered, so bands taken from Knaus 1985 APACHE II, which MDCalc implements)",
+ "mdcalc_rules": "Age <=44:0, 45-54:2, 55-64:3, 65-74:5, >=75:6. Severe organ insufficiency/immunocompromise: nonoperative or emergency postop +5, elective postop +2 (defined by current admission). Temp C: >=41:4, 39-40.9:3, 38.5-38.9:1, 36-38.4:0, 34-35.9:1, 32-33.9:2, 30-31.9:3, <30:4. MAP: >=160:4, 130-159:3, 110-129:2, 70-109:0, 50-69:2, <=49:4. HR: >=180:4, 140-179:3, 110-139:2, 70-109:0, 55-69:2, 40-54:3, <=39:4. RR: >=50:4, 35-49:3, 25-34:1, 12-24:0, 10-11:1, 6-9:2, <=5:4. Oxygenation: FiO2>=50% use A-a gradient >=500:4, 350-499:3, 200-349:2, <200:0; FiO2<50% use PaO2 >70:0, 61-70:1, 55-60:3, <55:4. Arterial pH: >=7.70:4, 7.60-7.69:3, 7.50-7.59:1, 7.33-7.49:0, 7.25-7.32:2, 7.15-7.24:3, <7.15:4. Na: >=180:4, 160-179:3, 155-159:2, 150-154:1, 130-149:0, 120-129:2, 111-119:3, <=110:4. K: >=7:4, 6-6.9:3, 5.5-5.9:1, 3.5-5.4:0, 3-3.4:1, 2.5-2.9:2, <2.5:4. Creatinine mg/dL: >=3.5:4, 2-3.4:3, 1.5-1.9:2, 0.6-1.4:0, <0.6:2; points doubled if acute renal failure (no chronic renal failure input). Hct %: >=60:4, 50-59.9:2, 46-49.9:1, 30-45.9:0, 20-29.9:2, <20:4. WBC x10^9/L: >=40:4, 20-39.9:2, 15-19.9:1, 3-14.9:0, 1-2.9:2, <1:4. GCS: 15 - GCS.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "PaO2 gap: code uses 61<=PaO2<=70 ->1 and 55<=PaO2<=60 ->3, so a non-integer PaO2 between 60 and 61 falls to the else branch and scores 4 (should be 3 or 1).",
+   "rows_affected": []
+  },
+  {
+   "issue": "A-a gradient gap: 200<=A-a<=349 ->2 and 350<=A-a<=499 ->3, so a non-integer value between 349 and 350 falls to else and scores 0 (should be 2-3). Top band uses >499 (MDCalc/Knaus >=500), equivalent for integers.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Age bands use closed integer ranges (45<=age<=54 etc.), so non-integer ages in (54,55), (64,65), (74,75) match no branch and score 0.",
+   "rows_affected": []
+  },
+  {
+   "issue": "MAP bands written as 129<MAP<=159 etc.; for non-integer MAP in (129,130), (109,110), (69,70), (49,50) the code assigns the higher-risk-side band differently from MDCalc's integer bands. No row has a MAP in these windows (MAPs range 84.7-120.0).",
+   "rows_affected": []
+  },
+  {
+   "issue": "Creatinine: code adds a 'chronic_renal_failure' input that MDCalc does not have. With CRF=True and creatinine <1.5 the CRF branch adds 0 and the no-renal-failure branch is skipped, so creatinine <0.6 scores 0 instead of 2. With ARF=True and creatinine <0.6 the code scores 0 instead of doubled 4 (Knaus doubles the creatinine score). For creatinine >=1.5 the CRF branch gives the same points as no ARF, matching MDCalc. All CRF/ARF rows have creatinine >=1.5.",
+   "rows_affected": []
+  },
+  {
+   "issue": "organ_failure_or_immunocompromise=True with surgery_type missing or unrecognized adds 0 points (MDCalc would require a type; nonoperative default = 5). All rows with organ failure True have a surgery type.",
+   "rows_affected": []
+  },
+  {
+   "issue": "MDCalc takes creatinine in umol/L; code bands in mg/dL. Converted MDCalc umol/L cutpoints can differ by a few hundredths of a mg/dL at band edges (e.g. ~1.47-1.49, ~1.92-1.99, ~3.45-3.49 mg/dL). No row has a creatinine in these windows.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "869",
+   "status": "OK",
+   "stored_answer": "14",
+   "mdcalc_answer": "14",
+   "details": "Age 43:0, T 34.9:1, MAP 94.7:0, HR 120:2, RR 17:0, FiO2 57% A-a 375:3, pH 7.53:1, Na/K 0, Cr 1.85 with ARF (oliguria) 2x2=4, Hct 35:0, WBC 9.1:0, GCS 3+4+5=12:3. ARF inferred from oliguria (104 mL/6 h), which is reasonable.",
+   "evidence_quote": "Urine output over the past six hours was 104 mL, suggesting oliguria."
+  },
+  {
+   "row": "870",
+   "status": "OK",
+   "stored_answer": "21",
+   "mdcalc_answer": "21",
+   "details": "Age 61:3, HR 143:3, K 6.43:3, Cr 2.57 with ARF (acute-on-chronic, decreased urine output) 3x2=6, Hct 54:2, WBC 27.5:2, FiO2 68% A-a 240:2, GCS 15. CKD not on dialysis correctly not counted as severe organ insufficiency. ARF is implied (decreased urine output, suprapubic fullness) rather than stated; stored True accepted.",
+   "evidence_quote": "presents with decreased urine output, mild abdominal tenderness, and suprapubic fullness"
+  },
+  {
+   "row": "871",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "26",
+   "mdcalc_answer": "26 (22 if ARF not assumed)",
+   "details": "All other inputs match the note (age 73:5, cirrhosis -> organ insufficiency, nonoperative:5, RR 35:3, FiO2 63% A-a 331:2, pH 7.29:2, WBC 15.1:1). Stored 'Acute renal failure': True, but the note never states acute renal failure; it only says creatinine 4.58 'indicating impaired renal function' with no baseline or CKD history. With ARF the creatinine score is 8 (total 26); without it, 4 (total 22). The note should state ARF explicitly to support the label.",
+   "evidence_quote": "Laboratory results show a creatinine level of 4.58 mg/dL, indicating impaired renal function"
+  },
+  {
+   "row": "872",
+   "status": "INPUT_ERROR",
+   "stored_answer": "15",
+   "mdcalc_answer": "18",
+   "details": "Surgery Type stored 'Elective' -> correct 'Nonoperative'. The patient presents to the ED and is described as preoperative, not admitted after elective surgery; under APACHE II/MDCalc, elective-postoperative (+2) applies only when the current admission follows elective surgery, so a nonoperative admission with organ insufficiency/immunocompromise gets +5. Other values: age 57:3, MAP 112.7:2, RR 27:1, PaO2 57 on 32%:3, Cr 3.67 (no ARF):4, GCS 15 -> 3+5+2+1+3+4 = 18. The note is also internally unclear ('chronic renal failure, managed conservatively' yet 'had a scheduled kidney transplant in the past'): if no transplant was done and he is not on dialysis, organ insufficiency would be False (total 13). Stored 15 is not supported under either reading.",
+   "evidence_quote": "presents to the emergency department ... had a scheduled kidney transplant in the past ... suggest a need for careful preoperative management"
+  },
+  {
+   "row": "873",
+   "status": "OK",
+   "stored_answer": "13",
+   "mdcalc_answer": "13",
+   "details": "Age 52:2, severe organ failure + immunocompromise, nonoperative:5, MAP 86.7, FiO2 60% A-a 375:3, GCS 12:3, Cr 1.2 no ARF:0. Sum 13.",
+   "evidence_quote": "Owing to the patient's historical pattern of severe organ failure and present immunocompromised state"
+  },
+  {
+   "row": "874",
+   "status": "OK",
+   "stored_answer": "19",
+   "mdcalc_answer": "19",
+   "details": "Age 65:5, T 38.5:1, HR 110:2, MAP 100:0, GCS 14:1, Cr 2.0 with ARF (AKI stated) 3x2=6, WBC 15.0:1, pH 7.30:2, PaO2 65 on 45%:1. CKD not dialysis-dependent, so no chronic health points. Sum 19. (Gender pronoun inconsistency in the note doesn't affect the score.)",
+   "evidence_quote": "creatinine levels of 2.0 mg/dL, a clear indication of an acute kidney injury"
+  },
+  {
+   "row": "875",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Age 58:3, FiO2 54% A-a 425:3, GCS 13:2, everything else normal. Sum 8.",
+   "evidence_quote": "A_A_gradient of 425 on 54 % FiO2"
+  },
+  {
+   "row": "876",
+   "status": "OK",
+   "stored_answer": "22",
+   "mdcalc_answer": "22",
+   "details": "Age 60:3, organ failure/immunocompromise +5 (stored type 'Emergency' comes from a past surgery; the current ED admission is nonoperative, but both score 5), GCS 14:1, Cr 3.8 with ARF 4x2=8, pH 7.32:2, FiO2 55% A-a 364:3. Sum 22.",
+   "evidence_quote": "This patient's acute renal failure symptomatology, alongside the history of severe organ failure and immunocompromised"
+  },
+  {
+   "row": "877",
+   "status": "OK",
+   "stored_answer": "17",
+   "mdcalc_answer": "17",
+   "details": "Age 67:5, T 38.7:1, GCS 13:2, Cr 2.5 with ARF 3x2=6, FiO2 exactly 50% so A-a 473 used:3, pH 7.33:0. Sum 17. ARF hedged as 'possible' but the note clearly intends it.",
+   "evidence_quote": "the possible occurrence of acute renal failure"
+  },
+  {
+   "row": "878",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Age 55:3, Cr 1.6 with ARF stated 2x2=4, FiO2 52% A-a 430:3, rest normal. Sum 10.",
+   "evidence_quote": "creatinine level of 1.6 mg/dL, consistent with acute renal failure not requiring dialysis"
+  },
+  {
+   "row": "879",
+   "status": "OK",
+   "stored_answer": "13",
+   "mdcalc_answer": "13",
+   "details": "Age 70:5, HR 115:2, GCS 14:1, Cr 2.0 (CKD, no ARF):3, pH 7.28:2, PaO2 80 on 40%:0. Sum 13. CKD II isn't severe organ insufficiency.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "880",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Age 63:3, HR 129:2, RR 32:1, MAP 113.3:2, PaO2 74 on 46%:0, rest normal. Sum 8.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "881",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "Age 56:3, GCS 13:2, Cr 1.8 (CKD, no ARF):2, PaO2 77 on 49%:0. Sum 7.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "882",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "Age 50:2, pH 7.32:2, PaO2 76 on 48%:0, rest normal. Sum 4.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "883",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "Age 64:3, GCS 14:1, FiO2 52% A-a 478:3, pH 7.33:0. Sum 7.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "884",
+   "status": "INPUT_ERROR",
+   "stored_answer": "12",
+   "mdcalc_answer": "15",
+   "details": "Surgery Type stored 'Elective' -> correct 'Nonoperative'. The patient has chronic liver failure awaiting a scheduled (future) transplant and presents to the emergency unit; he isn't postoperative, so the chronic health score is +5, not +2. Other values: age 57:3, FiO2 54% A-a 400:3, pH 7.31:2, GCS 13:2 -> 3+5+3+2+2 = 15.",
+   "evidence_quote": "significant chronic liver failure requiring a scheduled transplant. The individual presented to the emergency unit"
+  },
+  {
+   "row": "885",
+   "status": "OK",
+   "stored_answer": "4",
+   "mdcalc_answer": "4",
+   "details": "Age 59:3, GCS 14:1, PaO2 76 on 43%:0, Cr 0.7:0. Sum 4.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "886",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "Age 61:3, GCS 14:1, Cr 1.8 (CKD, no ARF):2, FiO2 53% A-a 445:3. Sum 9.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "887",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Age 68:5, history of severe liver failure, outpatient (nonoperative):5, rest normal (PaO2 78 on 45%). Sum 10.",
+   "evidence_quote": "previously experienced severe liver failure managed with medications"
+  },
+  {
+   "row": "888",
+   "status": "OK",
+   "stored_answer": "3",
+   "mdcalc_answer": "3",
+   "details": "Age 64:3, rest normal. Sum 3.",
+   "evidence_quote": ""
+  },
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "21",
+   "mdcalc_answer": "21",
+   "details": "Age 57:3, stage 5 kidney failure + immunocompromise, nonoperative:5, PaO2 65 on 35%:1, MAP 120:2, HR 63:2, RR 25:1, pH 7.29:2, Cr 2.24 chronic (no ARF):3, Hct 47:1, WBC 15.4:1, GCS 15:0. Sum 21.",
+   "evidence_quote": "Given his history of stage 5 kidney failure and immunocompromised state"
+  }
+ ]
+}

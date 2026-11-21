@@ -1,0 +1,27 @@
+Row Number,Calculator,Input,Value,Unit
+106,Calcium Correction for Hypoalbuminemia,Calcium,12.35,mg/dL
+179,Ideal Body Weight,height,1.65,m
+248,Revised Cardiac Risk Index for Pre-Operative Risk,Pre-operative creatinine,1.6,mg/dL
+254,Revised Cardiac Risk Index for Pre-Operative Risk,Pre-operative creatinine,1.7,mg/dL
+282,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,165000.0,µL
+285,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,103000.0,µL
+288,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,283000.0,µL
+289,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,186000.0,µL
+292,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,297000.0,µL
+294,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,115000.0,mm^3
+296,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,252000.0,µL
+299,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,147000000000.0,L
+300,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,Platelet count,127000.0,µL
+479,Free Water Deficit,age,50.0,years
+552,CURB-65 Score for Pneumonia Severity,age,50.0,years
+592,SIRS Criteria,White blood cell count,10780.0,µL
+593,SIRS Criteria,White blood cell count,9440000000.0,L
+595,SIRS Criteria,White blood cell count,5700.0,mm^3
+596,SIRS Criteria,White blood cell count,25960.0,mm^3
+599,SIRS Criteria,White blood cell count,13700.0,µL
+600,SIRS Criteria,White blood cell count,7000.0,µL
+601,SIRS Criteria,White blood cell count,13000.0,µL
+604,SIRS Criteria,White blood cell count,21160.0,µL
+606,SIRS Criteria,White blood cell count,12300.0,µL
+607,SIRS Criteria,White blood cell count,15500.0,mm^3
+821,Albumin Corrected Delta Ratio,Bicarbonate,9.0,mEq/L

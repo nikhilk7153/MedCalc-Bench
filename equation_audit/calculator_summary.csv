@@ -1,0 +1,32 @@
+Calculator ID,Calculator Name,Category,Rows,Model Accuracy,Label Wrong,Label Wrong (wrong_equation),Ambiguous,Model Wrong,Label Wrong Rate
+66,Albumin Corrected Delta Gap,lab,20,0.0,10,10,9,1,0.5
+63,Delta Gap,lab,20,0.0,5,5,15,0,0.25
+3,CKD-EPI Equations for Glomerular Filtration Rate,lab,20,0.85,2,2,1,0,0.1
+23,MELD Na (UNOS/OPTN),lab,5,0.0,5,0,0,0,1.0
+46,Framingham Risk Score for Hard Coronary Heart Disease,lab,16,0.0,14,0,2,0,0.875
+31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),lab,2,0.5,1,0,0,0,0.5
+44,LDL Calculated,lab,20,0.6,7,0,1,0,0.35
+22,Maintenance Fluids Calculations,physical,20,0.7,5,0,1,0,0.25
+38,Free Water Deficit,lab,20,0.65,5,0,1,1,0.25
+7,Calcium Correction for Hypoalbuminemia,lab,19,0.789,4,0,0,0,0.211
+19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,lab,20,0.85,3,0,0,0,0.15
+9,MDRD GFR Equation,lab,20,0.7,2,0,4,0,0.1
+39,Anion Gap,lab,20,0.9,2,0,0,0,0.1
+2,Creatinine Clearance (Cockcroft-Gault Equation),lab,20,0.9,1,0,1,0,0.05
+30,Serum Osmolality,lab,20,0.95,1,0,0,0,0.05
+65,Albumin Corrected Anion Gap,lab,20,0.9,1,0,1,0,0.05
+67,Albumin Corrected Delta Ratio,lab,20,0.95,1,0,0,0,0.05
+5,Mean Arterial Pressure (MAP),physical,20,1.0,0,0,0,0,0.0
+6,Body Mass Index (BMI),physical,20,1.0,0,0,0,0,0.0
+10,Ideal Body Weight,physical,20,1.0,0,0,0,0,0.0
+11,QTc Bazett Calculator,physical,20,1.0,0,0,0,0,0.0
+26,Sodium Correction for Hyperglycemia,lab,20,0.9,0,0,2,0,0.0
+40,Fractional Excretion of Sodium (FENa),lab,5,1.0,0,0,0,0,0.0
+56,QTc Fridericia Calculator,physical,20,1.0,0,0,0,0,0.0
+57,QTc Framingham Calculator,physical,20,1.0,0,0,0,0,0.0
+58,QTc Hodges Calculator,physical,20,1.0,0,0,0,0,0.0
+59,QTc Rautaharju Calculator,physical,20,1.0,0,0,0,0,0.0
+60,Body Surface Area Calculator,physical,20,1.0,0,0,0,0,0.0
+61,Target weight,physical,20,1.0,0,0,0,0,0.0
+62,Adjusted Body Weight,physical,20,1.0,0,0,0,0,0.0
+64,Delta Ratio,lab,20,0.8,0,0,4,0,0.0

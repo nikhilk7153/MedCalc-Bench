@@ -1,0 +1,205 @@
+{
+ "calculator_id": "25",
+ "rows": [
+  {
+   "row": "346",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "5",
+   "final_answer": "4",
+   "corrected_relevant_entities": {
+    "Stroke": false,
+    "Hypertension": true,
+    "age": [
+     22.0,
+     "years"
+    ],
+    "Medication usage predisposing to bleeding": false,
+    "Liver disease criteria for the HAS-BLED rule": true,
+    "Number of Alcoholic Drinks Per Week": 12,
+    "Labile international normalized ratio": false,
+    "Renal disease criteria for the HAS-BLED rule": true,
+    "Prior major bleeding or predisposition to bleeding": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The only cerebrovascular event is \"a transient ischemic attack of her brain last year\"; HAS-BLED's item is stroke history and the dataset's one-shot example scores a TIA as no stroke, so Stroke should be False. Other points stand: kidney transplant/\"confirmed renal disease\" (1), \"suggestive signs of hepatic cirrhosis\" (1, clinician-asserted), HTN with \"several recorded high blood pressure readings\" (1, as both reviewers scored), 12 drinks/wk (1). Total 4.",
+   "confidence": "high"
+  },
+  {
+   "row": "348",
+   "verdict": "NOTE_FIX",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": {
+    "old": "(AST and ALT were 4 times the normal value)",
+    "new": "(AST and ALT were 4 times the normal value, with bilirubin more than twice the upper limit of normal)"
+   },
+   "code_change": null,
+   "options": null,
+   "rationale": "Stored inputs reflect the author's intent (\"suggesting liver disease\"), but the note supplies only \"AST and ALT were 4 times the normal value\", which by itself fails MDCalc's liver criterion (bilirubin >2x normal together with AST/ALT/AP >3x normal), so a strict reader scores 2. Adding the bilirubin clause makes the note meet the criterion and keeps the stored answer of 3. Renal (\"elevated creatinine levels and a decrease in glomerular filtration rate\") is clinician-asserted, which the dataset accepts as in other rows, and the GI bleed requiring admission scores 1.",
+   "confidence": "medium"
+  },
+  {
+   "row": "349",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "2",
+   "final_answer": "0",
+   "corrected_relevant_entities": {
+    "Stroke": false,
+    "Hypertension": false,
+    "age": [
+     33.0,
+     "years"
+    ],
+    "Medication usage predisposing to bleeding": false,
+    "Liver disease criteria for the HAS-BLED rule": false,
+    "Number of Alcoholic Drinks Per Week": 4,
+    "Labile international normalized ratio": false,
+    "Renal disease criteria for the HAS-BLED rule": false,
+    "Prior major bleeding or predisposition to bleeding": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The only drug named is \"a specific anticoagulant recommended following a DVT\". HAS-BLED's drug point covers antiplatelets/NSAIDs, not anticoagulants, so Medication should be False. Hypertension is \"being managed with antihypertensive medication\" with no reading or statement that it is uncontrolled (SBP >160), so H should be False (v1.0 'history of HTN' semantics). Nothing else scores (age 33, 4 drinks, stable INR, no liver, renal, stroke or bleed), so the total is 0.",
+   "confidence": "high"
+  },
+  {
+   "row": "350",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "5",
+   "final_answer": "3",
+   "corrected_relevant_entities": {
+    "Labile international normalized ratio": true,
+    "Liver disease criteria for the HAS-BLED rule": false,
+    "Stroke": true,
+    "Hypertension": false,
+    "Number of Alcoholic Drinks Per Week": 5,
+    "Renal disease criteria for the HAS-BLED rule": false,
+    "Medication usage predisposing to bleeding": false,
+    "age": [
+     75.0,
+     "years"
+    ],
+    "Prior major bleeding or predisposition to bleeding": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The note says the past uncontrolled HTN is no longer uncontrolled: \"although his blood pressure has been consistently well-controlled in recent times\". At presentation BP is controlled, so H=0. The only medication is \"anticoagulants, initiated after his stroke\", which is not an antiplatelet/NSAID, so the drug point is 0. Valid points are age 75 (1), \"history of stroke\" (1) and \"fluctuating international normalized ratio\" (1), for a total of 3.",
+   "confidence": "medium"
+  },
+  {
+   "row": "351",
+   "verdict": "CORRECT",
+   "stored_answer": "4",
+   "final_answer": "4",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "\"above 170 mmHg for the systolic pressure\" (H=1), \"aspirin and NSAIDs\" (1), \"12 drinks per week\" (1), \"laboratory evidence of chronic kidney disease\" (1, clinician-asserted renal disease, which the dataset accepts). Age 58, and DVT is not a bleed. Total 4 matches the stored answer.",
+   "confidence": "high"
+  },
+  {
+   "row": "352",
+   "verdict": "CORRECT",
+   "stored_answer": "4",
+   "final_answer": "4",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 67 (1); HTN \"seems to be poorly controlled recently\" (1); \"a major bleeding episode that occurred in the past\" (1); \"irreversible, end stage liver fibrosis\" is cirrhosis (1); 3 drinks; no bleeding-risk medications. The lack of an SBP number does not override the explicit 'poorly controlled' wording. Total 4.",
+   "confidence": "high"
+  },
+  {
+   "row": "354",
+   "verdict": "CORRECT",
+   "stored_answer": "5",
+   "final_answer": "5",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 72 (1); \"well-documented history of uncontrolled hypertension\" with no statement that it is now controlled (1); \"averaging 9 drinks per week\" (1); \"repeated indications of hepatic impairment due to ALD\" (1); \"elevated creatinine and reduced glomerular filtration rate\" (1, clinician-asserted renal disease, which the dataset accepts). Total 5.",
+   "confidence": "medium"
+  },
+  {
+   "row": "356",
+   "verdict": "CORRECT",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 78 (1); \"elevated blood pressure readings consistent with uncontrolled hypertension\" (1); \"frequently demonstrates an unpredictable INR\" (1); 7 drinks/wk is <8; no stroke, bleed, renal or liver disease; no medications mentioned. Total 3.",
+   "confidence": "high"
+  },
+  {
+   "row": "357",
+   "verdict": "CORRECT",
+   "stored_answer": "5",
+   "final_answer": "5",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Age 85 (1); \"a stroke incident\" (1); \"a major bleeding episode\" (1); \"antiplatelet medications\" (1); \"renal impairment - a high creatinine level and a low glomerular filtration rate\" (1, clinician-asserted). BP \"well-managed and within acceptable limits\" (0); 4 drinks. Total 5.",
+   "confidence": "high"
+  },
+  {
+   "row": "360",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "5",
+   "final_answer": "4",
+   "corrected_relevant_entities": {
+    "Labile international normalized ratio": false,
+    "Liver disease criteria for the HAS-BLED rule": true,
+    "Hypertension": false,
+    "Number of Alcoholic Drinks Per Week": 8,
+    "Medication usage predisposing to bleeding": true,
+    "age": [
+     52.0,
+     "years"
+    ],
+    "Prior major bleeding or predisposition to bleeding": true,
+    "Renal disease criteria for the HAS-BLED rule": false,
+    "Stroke": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "HTN is explicitly controlled: \"has been doing well with controlled blood pressure readings on his antihypertensive medications\". HAS-BLED H requires uncontrolled HTN (SBP >160), so stored True is the carried-over v1.0 history value. Valid points: \"indicating liver cirrhosis\" (1), \"major bleeding episode ... multiple transfusions\" (1), \"about 8 alcoholic drinks each week\" (>=8, 1), \"regularly takes ibuprofen\" (1). Total 4.",
+   "confidence": "high"
+  },
+  {
+   "row": "362",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "4",
+   "final_answer": "3",
+   "corrected_relevant_entities": {
+    "Liver disease criteria for the HAS-BLED rule": true,
+    "Stroke": false,
+    "Hypertension": false,
+    "Number of Alcoholic Drinks Per Week": 0,
+    "Renal disease criteria for the HAS-BLED rule": true,
+    "Medication usage predisposing to bleeding": false,
+    "age": [
+     61.0,
+     "years"
+    ],
+    "Prior major bleeding or predisposition to bleeding": true,
+    "Labile international normalized ratio": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "\"currently his blood pressure profile shows well-controlled readings (118/61)\", so H=0 because it is not uncontrolled (SBP >160). Stored True reflects 'history of hypertension'. Valid points: \"significant bleeding during a dental extraction\" (1), \"diagnosis of liver cirrhosis\" (1), \"creatinine (baseline 3.2 mg/dL)\" >2.26 (1); age 61, no alcohol, no aspirin/NSAIDs/clopidogrel. Total 3.",
+   "confidence": "high"
+  }
+ ]
+}

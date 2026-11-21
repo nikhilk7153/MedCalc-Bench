@@ -1,0 +1,472 @@
+{
+ "calculator_id": "21",
+ "calculator_name": "Glasgow Coma Score (GCS)",
+ "mdcalc_source": "https://www.mdcalc.com/calc/64/glasgow-coma-scale-score-gcs",
+ "mdcalc_rules": "Eye: spontaneous 4, to verbal command 3, to pain 2, none 1, NT (local injury/edema). Verbal: oriented 5, confused 4, inappropriate words 3, incomprehensible sounds 2, none 1, NT/intubated. Motor: obeys commands 6, localizes pain 5, withdrawal from pain 4, flexion to pain 3, extension to pain 2, none 1, NT (sedation/paralysis). NT options carry no points; MDCalc reports a total only when all three components are testable, otherwise component scores only. Dataset convention: NT component gets full points.",
+ "code_vs_mdcalc": [
+  {
+   "issue": "Verbal 'not testable' is scored 4 in the code, but the dataset convention (and the code's own explanation text, 'we assume the patient's verbal response is oriented') implies full points = 5. MDCalc itself gives no total when any component is NT. No current stored row uses 'not testable', so no stored answer is affected, but the corrected inputs for rows 857 and 861 would be mis-scored (6 and 12 instead of 7 and 13).",
+   "rows_affected": [
+    "857",
+    "861"
+   ]
+  },
+  {
+   "issue": "Motor has no 'not testable' option in the code (MDCalc has one for sedation/paralysis); an NT motor input would raise KeyError. No row currently needs it.",
+   "rows_affected": []
+  },
+  {
+   "issue": "Any unrecognised response string raises KeyError (exact-match dictionary lookup); all stored strings match the dictionary keys.",
+   "rows_affected": []
+  }
+ ],
+ "code_file": "calculator_implementations_verified/glasgow_coma_score.py",
+ "dataset_conventions": [
+  "A criterion the note does not mention is absent/normal; for 'absence' criteria the criterion is met.",
+  "Values are taken at the time point the question names (admission/initial presentation before treatment) unless the question says otherwise.",
+  "GCS: a component documented as not testable gets full points.",
+  "Keep as close to v1.0 as possible; change only genuine mistakes (wrong input vs note, wrong label, unit/typo errors, contradictions). Prefer the smallest fix: correct an input if the note is clear; edit the note minimally if the note itself is ambiguous or contradictory."
+ ],
+ "rows": [
+  {
+   "row": "849",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 32-year-old female is found unconscious at home by her roommate and is brought to the emergency department. Her roommate reports that the patient has been feeling increasingly depressed over the past few weeks and had recently stopped taking her antidepressant medication. She has a history of depression and occasional migraines but no other significant medical history. Upon arrival, the patient's vital signs are stable: blood pressure is 120/75 mmHg, heart rate is 90 beats per minute, respiratory rate is 14 breaths per minute, and oxygen saturation is 98 % on room air. On a physical exam, she is seen unconscious on the stretcher with her eyes closed. She is not able to be aroused verbally but does momentarily open her eyes to sternal rub. She also adjusted her position to move her chest away from the examiner's hand. When asked if she knows where she is, she responds, 'I am in the Lego aisle of Target.' There are no signs of trauma or focal neurological deficits. Blood tests, including a toxicology screen, are pending. Her pupils are equal and reactive to light, and there are no signs of nystagmus.",
+   "stored_relevant_entities": "{'Best eye response': 'eye opening to pain', 'Best verbal response': 'inappropriate words', 'Best motor response': 'withdrawal from pain'}",
+   "stored_answer": "9",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to pain', and so we add 2 points making the current total 0 + 2 = 2.\nBased on the patient note, the best verbal response for the patient is 'inappropriate words', and so we add 3 points making the current total 2 + 3 = 5.\nBased on the patient note, the best motor response for the patient is 'withdrawal from pain', and so we add 4 points making the current total 5 + 4 = 9.\nHence, the patient's glasgow coma score is 9.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "10",
+    "details": "Best verbal response: stored 'inappropriate words' (3), correct 'confused' (4). She answers the orientation question with a coherent, grammatical sentence that is wrong about place = disoriented but conversational (confused). 'Inappropriate words' means random/exclamatory words without conversational exchange. E2 (eyes open momentarily to sternal rub) and M4 (moves chest away from the hand = withdrawal, not localization) are correct. GCS 2+4+4 = 10. Moderate confidence: the bizarre content makes some raters choose inappropriate words; v1.0 also used 'inappropriate words'.",
+    "evidence_quote": "When asked if she knows where she is, she responds, 'I am in the Lego aisle of Target.'"
+   },
+   "blind_pass": {
+    "score": 10,
+    "working": "E2 V4 M4",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to pain",
+      "quote": "does momentarily open her eyes to sternal rub"
+     },
+     "Best verbal response": {
+      "value": "confused",
+      "quote": "When asked if she knows where she is, she responds, 'I am in the Lego aisle of Target.'"
+     },
+     "Best motor response": {
+      "value": "withdrawal from pain",
+      "quote": "She also adjusted her position to move her chest away from the examiner's hand."
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best motor response",
+      "issue": "Moving the chest away from the examiner's hand during sternal rub is a withdrawal (moving away from the stimulus), but the note may have intended 'localizes'. If localizes (M5) the score is 11.",
+      "alternative_score": 11
+     },
+     {
+      "field": "Best verbal response",
+      "issue": "The patient is described as unconscious and not arousable verbally, yet she answers a question with a full but disoriented sentence. Read as a conversational but disoriented answer this is confused (V4). If the off-topic answer is taken as inappropriate words (V3) the score is 9.",
+      "alternative_score": 9
+     },
+     {
+      "field": "general",
+      "issue": "Contradiction: 'unconscious... not able to be aroused verbally' conflicts with her giving a verbal answer to a question.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "850",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58 year old female is brought to the emergency department following a high speed head-on motor vehicle collision. Upon extrication from the vehicle, he was found conscious but confused by emergency responders. Vital signs are notable for  heart rate 100 bpm, blood pressure 150/90 mmHg, respiratory rate 22 breaths per minute, temperature 37.2°C (99.0°F), and O2 sat 95 % on room air. The patient appears anxious and disoriented. He intermittently opens his eyes in response to verbal commands but is unable to provide accurate information about the injury. He localizes painful stimuli. Cranial nerves are intact. Secondary assessment reveals tenderness and swelling over the right forearm and abdominal tenderness to palpation. Further evaluation with head CT, X-rays of the right forearm, and abdominal imaging are ordered.",
+   "stored_relevant_entities": "{'Best eye response': 'eye opening to verbal command', 'Best verbal response': 'confused', 'Best motor response': 'localizes pain'}",
+   "stored_answer": "12",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to verbal command', and so we add 3 points making the current total 0 + 3 = 3.\nBased on the patient note, the best verbal response for the patient is 'confused', and so we add 4 points making the current total 3 + 4 = 7.\nBased on the patient note, the best motor response for the patient is 'localizes pain', and so we add 5 points making the current total 7 + 5 = 12.\nHence, the patient's glasgow coma score is 12.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "12",
+    "details": "E3 (opens eyes intermittently to verbal commands), V4 (disoriented, can't give accurate information), M5 (localizes). 3+4+5=12. Pronoun mix-up (female/he) is wording only.",
+    "evidence_quote": "He intermittently opens his eyes in response to verbal commands ... He localizes painful stimuli."
+   },
+   "blind_pass": {
+    "score": 12,
+    "working": "E3 V4 M5",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to verbal command",
+      "quote": "He intermittently opens his eyes in response to verbal commands"
+     },
+     "Best verbal response": {
+      "value": "confused",
+      "quote": "The patient appears anxious and disoriented... unable to provide accurate information about the injury"
+     },
+     "Best motor response": {
+      "value": "localizes pain",
+      "quote": "He localizes painful stimuli."
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best motor response",
+      "issue": "Whether he obeys commands is not tested. If he did obey (M6) the score would be 13.",
+      "alternative_score": 13
+     },
+     {
+      "field": "general",
+      "issue": "Sex mismatch: the note says '58 year old female' but then uses 'he'. This does not affect the GCS.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "855",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 56-year-old male construction worker was admitted to the emergency department after a minor fall from scaffolding. He was awake but appeared somewhat disoriented. Initial vital signs included a blood pressure of 128/85 mmHg, heart rate of 80 bpm, respirations at 18 breaths per minute, and oxygen saturation of 96 % on room air. He opens his eyes upon verbal request. His speech was disjointed and he appeared confused when asked about the day of the week, though he correctly identified his location as a hospital. Upon sternal rub, he was able to specifically locate the sensation and attempted to push the hand away. His wife denies any known allergies and states that he only takes occasional over-the-counter ibuprofen for joint pain. A STAT CT scan was ordered to assess for any potential traumatic brain injury. The remainder of his physical examination was unremarkable, and he was moved to observation for further evaluation.",
+   "stored_relevant_entities": "{'Best motor response': 'localizes pain', 'Best eye response': 'eye opening to verbal command', 'Best verbal response': 'confused'}",
+   "stored_answer": "12",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to verbal command', and so we add 3 points making the current total 0 + 3 = 3.\nBased on the patient note, the best verbal response for the patient is 'confused', and so we add 4 points making the current total 3 + 4 = 7.\nBased on the patient note, the best motor response for the patient is 'localizes pain', and so we add 5 points making the current total 7 + 5 = 12.\nHence, the patient's glasgow coma score is 12.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "12",
+    "details": "E3 (opens eyes upon verbal request; 'awake' is not stated as eyes open spontaneously), V4 (confused about day), M5 (locates sternal rub and pushes hand away = localizes). 3+4+5=12.",
+    "evidence_quote": "He opens his eyes upon verbal request ... he was able to specifically locate the sensation and attempted to push the hand away."
+   },
+   "blind_pass": {
+    "score": 12,
+    "working": "E3 V4 M5",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to verbal command",
+      "quote": "He opens his eyes upon verbal request."
+     },
+     "Best verbal response": {
+      "value": "confused",
+      "quote": "His speech was disjointed and he appeared confused when asked about the day of the week"
+     },
+     "Best motor response": {
+      "value": "localizes pain",
+      "quote": "Upon sternal rub, he was able to specifically locate the sensation and attempted to push the hand away."
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best motor response",
+      "issue": "Whether he obeys commands is not tested. If he did obey (M6) the score would be 13.",
+      "alternative_score": 13
+     },
+     {
+      "field": "Best eye response",
+      "issue": "He is described as 'awake', which could suggest spontaneous eye opening (E4), but the note specifically says he opens his eyes 'upon verbal request'. If E4 the score is 13.",
+      "alternative_score": 13
+     }
+    ]
+   }
+  },
+  {
+   "row": "857",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 55-year-old man was brought in by ambulance after collapsing at his work. His colleagues report a sudden onset of headache followed by loss of consciousness. Upon arrival, the patient was found to be in full cardiac arrest, CPR was initiated immediately, and he was intubated on site by paramedics. In the emergency department, vital signs were: heart rate of 60 bpm under active CPR, non-measurable blood pressure, and respiratory rate controlled by the ventilatory assistance. Despite attempts to rouse him, there was no eye opening, no purposeful movement of his limbs in response to tactile or painful stimulation, and he made no sounds or attempts to speak. His intubation prevented further assessment of verbal responsiveness. An urgent CT scan revealed a massive intracranial hemorrhage. The patient was promptly evaluated by the neurosurgery team.",
+   "stored_relevant_entities": "{'Best motor response': 'no motor response', 'Best eye response': 'no eye opening', 'Best verbal response': 'no verbal response'}",
+   "stored_answer": "3",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'no eye opening', and so we add 1 point making the current total 0 + 1 = 1.\nBased on the patient note, the best verbal response for the patient is 'no verbal response', and so we add 1 point making the current total 1 + 1 = 2.\nBased on the patient note, the best motor response for the patient is 'no motor response', and so we add 1 point making the current total 2 + 1 = 3.\nHence, the patient's glasgow coma score is 3.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "7 under dataset NT=full-points convention (E1 + V5 + M1); MDCalc itself gives no total, only components E1 V-NT M1 (i.e. '3T'-type reporting). Current code would output 6 because it scores verbal NT as 4.",
+    "details": "Best verbal response: stored 'no verbal response' (1), correct 'not testable' — the note explicitly says intubation prevented verbal assessment, and MDCalc's verbal NT option is specifically for intubated patients. v1.0 stored 'not testable' for this note; the corrected set changed it. E1 and M1 are correct ('no purposeful movement' is slightly loose wording for M1 but intent is clear). Clinically the patient is in arrest and a total of 7 is counter-intuitive; if the reviewers want 3, the note should drop the intubation/not-assessable sentence.",
+    "evidence_quote": "he was intubated on site by paramedics ... His intubation prevented further assessment of verbal responsiveness."
+   },
+   "blind_pass": {
+    "score": 7,
+    "working": "E1 V5(NT, full points per dataset convention) M1",
+    "fields": {
+     "Best eye response": {
+      "value": "no eye opening",
+      "quote": "there was no eye opening"
+     },
+     "Best verbal response": {
+      "value": "no verbal response",
+      "quote": "he made no sounds or attempts to speak. His intubation prevented further assessment of verbal responsiveness."
+     },
+     "Best motor response": {
+      "value": "no motor response",
+      "quote": "no purposeful movement of his limbs in response to tactile or painful stimulation"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best verbal response",
+      "issue": "He is intubated, so verbal is not testable. 'Not testable' is not an allowed value, so the observed 'no verbal response' is recorded. With NT scored as full points the GCS is 7. Scored as the lowest response (V1) it is 3.",
+      "alternative_score": 3
+     },
+     {
+      "field": "Best motor response",
+      "issue": "'No purposeful movement' does not strictly exclude non-purposeful posturing (flexion or extension). It is read as no motor response (M1).",
+      "alternative_score": null
+     },
+     {
+      "field": "general",
+      "issue": "Exam during active CPR and cardiac arrest. The GCS is barely meaningful.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "859",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 68-year-old woman, with past medical history of hypertension and diabetes, arrived at the emergency department in a state of confusion. She complained of a sharp pain in her lower back, which started abruptly while she was gardening. Upon hearing the nurse ask her to open her eyes, she complied. However, her speech was disoriented and she was unable to provide coherent responses to questions related to time and place. She was able to follow simple commands. Her vital signs were stable with a blood pressure of 130/80 mmHg and a heart rate of 86 bpm. Measures were taken to manage her pain with analgesics and her back pain was investigated by the orthopedic team. Further neurological evaluation was also warranted considering her state of confusion and delirium.",
+   "stored_relevant_entities": "{'Best motor response': 'obeys commands', 'Best eye response': 'eye opening to verbal command', 'Best verbal response': 'confused'}",
+   "stored_answer": "13",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to verbal command', and so we add 3 points making the current total 0 + 3 = 3.\nBased on the patient note, the best verbal response for the patient is 'confused', and so we add 4 points making the current total 3 + 4 = 7.\nBased on the patient note, the best motor response for the patient is 'obeys commands', and so we add 6 points making the current total 7 + 6 = 13.\nHence, the patient's glasgow coma score is 13.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "13",
+    "details": "E3 (opens eyes when asked), V4 (disoriented to time/place; 'unable to provide coherent responses' is slightly loose but context is a confused/delirious patient), M6 (follows simple commands). 3+4+6=13. Analgesia given after the assessment.",
+    "evidence_quote": "Upon hearing the nurse ask her to open her eyes, she complied. However, her speech was disoriented ... She was able to follow simple commands."
+   },
+   "blind_pass": {
+    "score": 13,
+    "working": "E3 V4 M6",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to verbal command",
+      "quote": "Upon hearing the nurse ask her to open her eyes, she complied."
+     },
+     "Best verbal response": {
+      "value": "confused",
+      "quote": "her speech was disoriented and she was unable to provide coherent responses to questions related to time and place"
+     },
+     "Best motor response": {
+      "value": "obeys commands",
+      "quote": "She was able to follow simple commands."
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best verbal response",
+      "issue": "'Unable to provide coherent responses' could be read as inappropriate words (V3), which gives 12. 'Disoriented' with confusion and delirium best fits confused (V4).",
+      "alternative_score": 12
+     }
+    ]
+   }
+  },
+  {
+   "row": "861",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 60-year-old male with a history of thyroid surgery was rushed to the emergency department after collapsing at home. The patient's wife reported he complained of difficulty breathing. Emergency airway was required and a tracheostomy was performed by EMS on site. On physical examination, his hemisphere functions such as sensation, power, tone, and deep tendon reflexes are intact on both sides and he is able to obey commands to grip and release his hand. He opens his eyes when pinched but does not attempt to verbalize due to the tracheostomy. Initial vital signs are; a heart rate of 100 bpm, blood pressure 140/85 mmHg, respiratory rate 19 breaths per minute, and O2 saturation 93 % on room air. Blood work including complete blood count, coagulation panel, comprehensive metabolic panel, and arterial blood gas is collected. ENT is consulted for a tracheostomy review and the patient is admitted to ICU for further care.",
+   "stored_relevant_entities": "{'Best motor response': 'obeys commands', 'Best eye response': 'eye opening to pain', 'Best verbal response': 'no verbal response'}",
+   "stored_answer": "9",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to pain', and so we add 2 points making the current total 0 + 2 = 2.\nBased on the patient note, the best verbal response for the patient is 'no verbal response', and so we add 1 point making the current total 2 + 1 = 3.\nBased on the patient note, the best motor response for the patient is 'obeys commands', and so we add 6 points making the current total 3 + 6 = 9.\nHence, the patient's glasgow coma score is 9.",
+   "first_pass": {
+    "status": "INPUT_ERROR",
+    "mdcalc_answer": "13 under dataset NT=full-points convention (E2 + V5 + M6); MDCalc gives no total (E2 V-NT M6). Current code would output 12 (verbal NT scored 4).",
+    "details": "Best verbal response: stored 'no verbal response' (1), correct 'not testable' — the note attributes the absent speech to the tracheostomy (airway device), which is MDCalc's NT/intubated situation, not a true V1. E2 (opens eyes when pinched) and M6 (obeys grip/release commands) are correct. Same stored input as v1.0, but it contradicts the dataset convention.",
+    "evidence_quote": "He opens his eyes when pinched but does not attempt to verbalize due to the tracheostomy."
+   },
+   "blind_pass": {
+    "score": 13,
+    "working": "E2 V5(NT, full points per dataset convention) M6",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to pain",
+      "quote": "He opens his eyes when pinched"
+     },
+     "Best verbal response": {
+      "value": "no verbal response",
+      "quote": "does not attempt to verbalize due to the tracheostomy"
+     },
+     "Best motor response": {
+      "value": "obeys commands",
+      "quote": "he is able to obey commands to grip and release his hand"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best verbal response",
+      "issue": "The tracheostomy makes verbal not testable. 'Not testable' is not an allowed value, so the observed 'no verbal response' is recorded. With NT scored as full points the GCS is 13. Scored as the lowest response (V1) it is 9.",
+      "alternative_score": 9
+     },
+     {
+      "field": "Best eye response",
+      "issue": "He obeys commands yet opens his eyes only to a pinch (E2). This is unusual but stated explicitly.",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "863",
+   "kind": "SCORE_DISAGREEMENT",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "An elderly gentleman, aged 78, was brought to the emergency department after a minor fall at home. His family reported that he was initially unresponsive but became alert shortly after. Upon arrival, his initial vital signs included a blood pressure of 145/85 mmHg, pulse of 78 bpm, and respiratory rate of 18 breaths per minute. His eyes were open on arrival, and he appeared fully aware of his surroundings, accurately identifying the date, his location, and explaining what had happened. During a pain assessment, he instinctively pulled his arm away when pressure was applied to his nail bed. A full workup was initiated, including a CT scan to rule out any head injury given his recent fall. Blood tests, including a complete blood count, metabolic panel, and coagulation profile, were also ordered.",
+   "stored_relevant_entities": "{'Best motor response': 'withdrawal from pain', 'Best eye response': 'eyes open spontaneously', 'Best verbal response': 'oriented'}",
+   "stored_answer": "13",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eyes open spontaneously', and so we add 4 points making the current total 0 + 4 = 4.\nBased on the patient note, the best verbal response for the patient is 'oriented', and so we add 5 points making the current total 4 + 5 = 9.\nBased on the patient note, the best motor response for the patient is 'withdrawal from pain', and so we add 4 points making the current total 9 + 4 = 13.\nHence, the patient's glasgow coma score is 13.",
+   "first_pass": {
+    "status": "NOTE_PROBLEM",
+    "mdcalc_answer": "13 as literally documented (likely 15 in reality)",
+    "details": "E4 and V5 are correct. Motor is scored withdrawal (4) from nail-bed pressure, but GCS motor is the BEST response and command-following was never tested in a fully alert, oriented patient who explains what happened; reflexive withdrawal during a pain assessment does not establish that M6 is absent. The stored answer follows the literal note, but the note is clinically implausible / incomplete for motor. Suggest the note either state he does not follow commands or document command-following.",
+    "evidence_quote": "he appeared fully aware of his surroundings, accurately identifying the date, his location ... he instinctively pulled his arm away when pressure was applied to his nail bed."
+   },
+   "blind_pass": {
+    "score": 13,
+    "working": "E4 V5 M4",
+    "fields": {
+     "Best eye response": {
+      "value": "eyes open spontaneously",
+      "quote": "His eyes were open on arrival"
+     },
+     "Best verbal response": {
+      "value": "oriented",
+      "quote": "accurately identifying the date, his location, and explaining what had happened"
+     },
+     "Best motor response": {
+      "value": "withdrawal from pain",
+      "quote": "he instinctively pulled his arm away when pressure was applied to his nail bed"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best motor response",
+      "issue": "Commands are not tested, and the only motor finding is withdrawal to nail-bed pressure. In a fully alert, oriented patient the best motor response would almost certainly be obeys commands (M6), which gives 15. Scored literally as withdrawal it is 13.",
+      "alternative_score": 15
+     }
+    ]
+   }
+  },
+  {
+   "row": "865",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old woman was brought to the emergency department by her son due to issues with her speech and lack of movement of her limbs. He reports that she was behaving unusually during their phone conversation, speaking in a confused and delirious manner, which caused him to rush to her house to check on her. Upon arrival at the ED, the patient had no voluntary movements in her limbs, including to painful stimuli. Despite her severe motor response deficiency, she showed a response to verbal commands by opening her eyes when she was told to. Her speech was rambling with significant tangents in her chain of thought. Her vital signs were within normal limits: temperature 98.6°F, pulse 72 beats per minute, respiratory rate 20 breaths per minute, blood pressure 120/80 mmHg, and oxygen saturation 98 % on room air. A complete neurologic exam was ordered, and a battery of lab tests were performed along with a state CT scan to further assess her condition. The stroke team was promptly notified due to suspicions of a neurological event.",
+   "stored_relevant_entities": "{'Best motor response': 'no motor response', 'Best eye response': 'eye opening to verbal command', 'Best verbal response': 'confused'}",
+   "stored_answer": "8",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to verbal command', and so we add 3 points making the current total 0 + 3 = 3.\nBased on the patient note, the best verbal response for the patient is 'confused', and so we add 4 points making the current total 3 + 4 = 7.\nBased on the patient note, the best motor response for the patient is 'no motor response', and so we add 1 point making the current total 7 + 1 = 8.\nHence, the patient's glasgow coma score is 8.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "8",
+    "details": "E3 (opens eyes when told), V4 (rambling, tangential, confused), M1 (no movement including to pain). 3+4+1=8.",
+    "evidence_quote": "no voluntary movements in her limbs, including to painful stimuli ... opening her eyes when she was told to. Her speech was rambling"
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "E3 V4 M1",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to verbal command",
+      "quote": "she showed a response to verbal commands by opening her eyes when she was told to"
+     },
+     "Best verbal response": {
+      "value": "confused",
+      "quote": "Her speech was rambling with significant tangents in her chain of thought."
+     },
+     "Best motor response": {
+      "value": "no motor response",
+      "quote": "the patient had no voluntary movements in her limbs, including to painful stimuli"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best verbal response",
+      "issue": "Rambling, tangential speech described as 'confused and delirious' is read as confused (V4). If read as inappropriate words (V3) the score is 7.",
+      "alternative_score": 7
+     },
+     {
+      "field": "Best motor response",
+      "issue": "'No voluntary movements' does not strictly exclude reflex posturing. It is read as no motor response (M1).",
+      "alternative_score": null
+     }
+    ]
+   }
+  },
+  {
+   "row": "866",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 59-year-old man was found unconscious in his apartment by a neighbor and was immediately rushed by ambulance to the emergency department. Upon admission, his vital signs were: blood pressure 94/58 mmHg, heart rate 110 bpm, temperature 38.1°C, and O2 saturation at 95 %. The man was clearly in distress. On examination, he was able to react to painful stimuli by grimacing and moving his hands towards the site of the pinch. He opened his eyes only in response to sternal rub. As for verbal responses, the patient kept mumbling nonsensical words. Blood was drawn for labs, which included a CBC, CMP, blood cultures, and a lumbar puncture was quickly organized considering the possibility of meningitis. Meanwhile, the infectious disease team was alerted and the patient was placed under respiratory isolation due to recent reports of meningococcal outbreaks in the area.",
+   "stored_relevant_entities": "{'Best motor response': 'localizes pain', 'Best eye response': 'eye opening to pain', 'Best verbal response': 'inappropriate words'}",
+   "stored_answer": "10",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to pain', and so we add 2 points making the current total 0 + 2 = 2.\nBased on the patient note, the best verbal response for the patient is 'inappropriate words', and so we add 3 points making the current total 2 + 3 = 5.\nBased on the patient note, the best motor response for the patient is 'localizes pain', and so we add 5 points making the current total 5 + 5 = 10.\nHence, the patient's glasgow coma score is 10.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "10",
+    "details": "E2 (eyes open only to sternal rub), V3 (nonsensical words = articulated words without conversational exchange), M5 (moves hands towards the site of the pinch = localizes). 2+3+5=10.",
+    "evidence_quote": "moving his hands towards the site of the pinch. He opened his eyes only in response to sternal rub ... kept mumbling nonsensical words."
+   },
+   "blind_pass": {
+    "score": 10,
+    "working": "E2 V3 M5",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to pain",
+      "quote": "He opened his eyes only in response to sternal rub."
+     },
+     "Best verbal response": {
+      "value": "inappropriate words",
+      "quote": "the patient kept mumbling nonsensical words"
+     },
+     "Best motor response": {
+      "value": "localizes pain",
+      "quote": "moving his hands towards the site of the pinch"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best verbal response",
+      "issue": "'Mumbling nonsensical words' could be incomprehensible sounds (V2), which gives 9, rather than inappropriate words (V3). 'Words' favors V3.",
+      "alternative_score": 9
+     }
+    ]
+   }
+  },
+  {
+   "row": "868",
+   "kind": "AMBIGUITY_ONLY",
+   "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 40-year-old male was brought to the emergency department by EMS after he was found unconscious in a park. Per EMS report, he was found with a half-empty bottle of pills nearby. His vital signs were stable on arrival: BP 110/70 mmHg, HR 60 bpm, and O2sat at 98 %. On hearing his name called out, the patient managed to open his eyes and look towards the source intermittently, but he did not appear to follow the speaker or make sustained eye contact. When painful stimuli were applied, such as a sternal rub or fingernail pressure, the patient responded by grimacing and attempts to evade the source of the discomfort. He did not respond verbally to any inquiry or command. His medical bracelet indicates he is diabetic but does not mention any allergies or additional conditions. A toxicology screen, liver profile, renal profile, and blood glucose level were ordered to gather more information on his condition. The mental health team was also alerted due to the suspicion of a possible suicide attempt.",
+   "stored_relevant_entities": "{'Best motor response': 'withdrawal from pain', 'Best eye response': 'eye opening to verbal command', 'Best verbal response': 'no verbal response'}",
+   "stored_answer": "8",
+   "stored_explanation": "For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.\nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'eye opening to verbal command', and so we add 3 points making the current total 0 + 3 = 3.\nBased on the patient note, the best verbal response for the patient is 'no verbal response', and so we add 1 point making the current total 3 + 1 = 4.\nBased on the patient note, the best motor response for the patient is 'withdrawal from pain', and so we add 4 points making the current total 4 + 4 = 8.\nHence, the patient's glasgow coma score is 8.",
+   "first_pass": {
+    "status": "OK",
+    "mdcalc_answer": "8",
+    "details": "E3 (opens eyes when name called), V1 (no verbal response), M4 (grimaces and attempts to evade the stimulus = withdrawal, not localization). 3+1+4=8.",
+    "evidence_quote": "On hearing his name called out, the patient managed to open his eyes ... attempts to evade the source of the discomfort. He did not respond verbally"
+   },
+   "blind_pass": {
+    "score": 8,
+    "working": "E3 V1 M4",
+    "fields": {
+     "Best eye response": {
+      "value": "eye opening to verbal command",
+      "quote": "On hearing his name called out, the patient managed to open his eyes"
+     },
+     "Best verbal response": {
+      "value": "no verbal response",
+      "quote": "He did not respond verbally to any inquiry or command."
+     },
+     "Best motor response": {
+      "value": "withdrawal from pain",
+      "quote": "the patient responded by grimacing and attempts to evade the source of the discomfort"
+     }
+    },
+    "note_issues": [
+     {
+      "field": "Best motor response",
+      "issue": "'Attempts to evade the source of the discomfort' is read as withdrawal (M4). If read as localizing (M5) the score is 9.",
+      "alternative_score": 9
+     }
+    ]
+   }
+  }
+ ]
+}

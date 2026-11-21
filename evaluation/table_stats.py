@@ -37,7 +37,7 @@ def compute_overall_accuracy(output_path, model_name, prompt_style):
     # Compute overall average and standard deviation
     all_results_array = np.array(all_results)
     overall_average = np.mean(all_results_array)
-    overall_std =  round(np.sqrt(overall_average * (1-overall_average) / 1047), 2)
+    overall_std =  round(np.sqrt(overall_average * (1-overall_average) / len(all_results_array)), 2)
 
     category_stats["overall"] = {
         "average": round(overall_average * 100, 2),

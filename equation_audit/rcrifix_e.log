@@ -1,0 +1,4 @@
+20 non-template rows from rcri_fixed.csv to check
+entities_rcrifix.jsonl: 0 cached, 20 to run
+Entities Match
+False    20

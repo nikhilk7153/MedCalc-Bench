@@ -1,0 +1,271 @@
+Row Number,1_31 Row Number,Calculator ID,Calculator Name,Note ID,Difference,10_22 Label,1_31 Label,Verdict,Reason
+23,21,3,CKD-EPI Equations for Glomerular Filtration Rate,pmc-6605692-1,"same note, same entities",7.45479,7.51,Keep 10_22,1_31 rounds the creatinine conversion (7.6 vs 7.6469 mg/dL)
+25,22,3,CKD-EPI Equations for Glomerular Filtration Rate,pmc-8173432-1,"same note, same entities",46.49254,46.475,Keep 10_22,1_31 rounds the creatinine conversion (7.6 vs 7.6469 mg/dL)
+36,36,3,CKD-EPI Equations for Glomerular Filtration Rate,pmc-6919406-1,"same note, same entities",49.1517,49.774,Keep 10_22,1_31 rounds the creatinine conversion (7.6 vs 7.6469 mg/dL)
+43,43,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-8136881-1,diff note,6,8,Keep 10_22,"Verified's edit (note ends before the readmission, matching the time point); in the review sheet (ambiguous)"
+51,51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-3318870-1,"same note, diff entities",1,2,Keep 10_22,Verified agrees with 10_22
+114,114,7,Calcium Correction for Hypoalbuminemia,pmc-5051225-2,"same note, same entities",10.0181,8.96,Keep 10_22,1_31 bug: wrong unit conversion (2.26 mmol/L calcium -> 8.0 mg/dL; correct 9.06)
+117,117,7,Calcium Correction for Hypoalbuminemia,pmc-5051225-1,"same note, same entities",11.141,12.72,Keep 10_22,1_31 bug: wrong unit conversion (2.26 mmol/L calcium -> 8.0 mg/dL; correct 9.06)
+121,120,8,Wells' Criteria for Pulmonary Embolism,pmc-8230162-2,"same note, diff entities",1.5,4.5,Keep 10_22,"Verified, v1.0 and 1/17 agree with 10_22"
+122,121,8,Wells' Criteria for Pulmonary Embolism,pmc-8494530-1,"same note, same entities",4.5,3,Keep 10_22,1_31 gives 1.5 instead of 3 for 'PE is the most likely diagnosis'
+124,123,8,Wells' Criteria for Pulmonary Embolism,pmc-8647083-1,"same note, diff entities",4.5,6,Keep 10_22,Verified agrees with 10_22
+131,130,8,Wells' Criteria for Pulmonary Embolism,pmc-8294994-1,"same note, diff entities",5.5,2.5,Keep 10_22,Verified agrees with 10_22; already in the review sheet (ambiguous)
+136,135,8,Wells' Criteria for Pulmonary Embolism,pmc-5039122-1,diff note,1.5,0,Keep 10_22,Note replaced by a Verified note (different patient)
+147,142,9,MDRD GFR Equation,pmc-6691829-1,"same note, same entities",8.85245,8.832,Keep 10_22,1_31 rounds the creatinine conversion (6.3 vs 6.2872 mg/dL)
+168,167,10,Ideal Body Weight,pmc-4805055-1,"same note, same entities",80.4253,80.424,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+181,180,11,QTc Bazett Calculator,1,diff note,487.60901,652.13,Not comparable,Template note regenerated with different values (different patient)
+182,181,11,QTc Bazett Calculator,2,diff note,295.16097,420.315,Not comparable,Template note regenerated with different values (different patient)
+183,182,11,QTc Bazett Calculator,3,diff note,385.78421,641.942,Not comparable,Template note regenerated with different values (different patient)
+184,183,11,QTc Bazett Calculator,4,diff note,368.95122,331.307,Not comparable,Template note regenerated with different values (different patient)
+185,184,11,QTc Bazett Calculator,5,diff note,511.23176,614.232,Not comparable,Template note regenerated with different values (different patient)
+186,185,11,QTc Bazett Calculator,6,diff note,496.82796,599.444,Not comparable,Template note regenerated with different values (different patient)
+187,186,11,QTc Bazett Calculator,7,diff note,547.24035,537.29,Not comparable,Template note regenerated with different values (different patient)
+188,187,11,QTc Bazett Calculator,8,diff note,321.64445,564.115,Not comparable,Template note regenerated with different values (different patient)
+189,188,11,QTc Bazett Calculator,9,diff note,430.26564,401.663,Not comparable,Template note regenerated with different values (different patient)
+190,189,11,QTc Bazett Calculator,10,diff note,298.21969,179.78,Not comparable,Template note regenerated with different values (different patient)
+191,190,11,QTc Bazett Calculator,11,diff note,505.88156,578.016,Not comparable,Template note regenerated with different values (different patient)
+192,191,11,QTc Bazett Calculator,12,"same note, same entities",540.48209,540.456,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+193,192,11,QTc Bazett Calculator,13,diff note,538.88774,223.011,Not comparable,Template note regenerated with different values (different patient)
+194,193,11,QTc Bazett Calculator,14,diff note,361.49761,424.853,Not comparable,Template note regenerated with different values (different patient)
+195,194,11,QTc Bazett Calculator,15,diff note,491.31846,581.68,Not comparable,Template note regenerated with different values (different patient)
+196,195,11,QTc Bazett Calculator,16,diff note,464.74264,345.566,Not comparable,Template note regenerated with different values (different patient)
+197,196,11,QTc Bazett Calculator,17,diff note,480.10984,636.648,Not comparable,Template note regenerated with different values (different patient)
+198,197,11,QTc Bazett Calculator,18,diff note,476.31397,277.513,Not comparable,Template note regenerated with different values (different patient)
+199,198,11,QTc Bazett Calculator,19,diff note,528.68732,469.068,Not comparable,Template note regenerated with different values (different patient)
+200,199,11,QTc Bazett Calculator,20,diff note,288.94612,288.467,Not comparable,Template note regenerated with different values (different patient)
+221,220,16,Wells' Criteria for DVT,pmc-5295552-1,"same note, diff entities",-2,-1,Keep 10_22,Surgery/bed rest in 1_31 happen after admission; time point is first admission
+222,221,16,Wells' Criteria for DVT,pmc-6959932-1,"same note, diff entities",-1,1,Keep 10_22,"Collateral circulation is cerebral (venous sinus), not leg superficial veins; bed rest after admission"
+224,223,16,Wells' Criteria for DVT,pmc-4341247-1,"same note, diff entities",-2,-1,Keep 10_22,"Operations happen during the admission described, after the time point"
+230,229,16,Wells' Criteria for DVT,pmc-3876687-1,"same note, diff entities",-2,-1,Label error in 10_22 (1_31 right on active cancer),"Her medications include gefitinib (lung-cancer treatment), so active cancer is True; the surgery is after admission. Correct label -1 (ambiguity audit 2026-10-26)."
+231,230,16,Wells' Criteria for DVT,pmc-2488320-1,"same note, diff entities",-1,2,Keep 10_22,Stump revision occurs during the stay; v1.0 and 1/17 agree with 10_22
+232,231,16,Wells' Criteria for DVT,pmc-8168998-1,diff note,3,-1,Keep 10_22,Note replaced by a Verified note (different patient)
+234,233,16,Wells' Criteria for DVT,pmc-4918891-1,"same note, diff entities",-2,1,Keep 10_22,"Elective shoulder surgery is the reason for presentation, not prior surgery; v1.0 and 1/17 agree with 10_22"
+236,235,16,Wells' Criteria for DVT,pmc-8383636-1,"same note, diff entities",0,1,Keep 10_22,Caesarean happens after presentation; cone biopsy was in 2017
+237,236,16,Wells' Criteria for DVT,pmc-3127500-1,"same note, diff entities",-2,0,Keep 10_22,"Benign WHO grade I meningioma, not active cancer; surgery happens after presentation"
+239,238,16,Wells' Criteria for DVT,pmc-4882526-1,"same note, diff entities",-2,-1,Keep 10_22,ICU stay happens after admission; v1.0 and 1/17 agree with 10_22
+240,239,16,Wells' Criteria for DVT,pmc-7111022-1,"same note, diff entities",-2,-1,Keep 10_22,Castleman disease is not a malignancy (one of the 13 label fixes)
+266,265,18,HEART Score for Major Cardiac Events,pmc-6276522-1,"same note, same entities",10,9,Keep 10_22,1_31 gives 1 point for risk factors although atherosclerotic disease is present (2 points)
+267,266,18,HEART Score for Major Cardiac Events,pmc-5741599-1,"same note, diff entities",1,2,Keep 10_22,Pre-operative patient without cardiac complaint: 'slightly suspicious' is defensible; v1.0 and 1/17 agree with 10_22
+268,267,18,HEART Score for Major Cardiac Events,pmc-8161714-1,"same note, diff entities",2,3,Keep 10_22,ECG at presentation was normal (abnormalities appear months later); troponin not measured either way
+274,273,18,HEART Score for Major Cardiac Events,pmc-7290110-1,"same note, diff entities",3,4,Ambiguous (physician),"Initial ECG: atrial fibrillation with abnormal R-wave progression; 10_22 scores it Normal, 1_31 Non-specific repolarization (+1). Note also says the echocardiogram showed 'moderate Non-specific repolarization disturbance', which looks like a text-replacement artifact"
+275,274,18,HEART Score for Major Cardiac Events,pmc-7780869-1,"same note, diff entities",5,6,Keep 10_22,Verified agrees with 10_22
+276,275,18,HEART Score for Major Cardiac Events,pmc-4793133-1,"same note, diff entities",6,7,Keep 10_22,Verified agrees with 10_22
+280,279,18,HEART Score for Major Cardiac Events,usmle-353,"same note, diff entities",4,5,Keep 10_22,Palpitations/dyspnoea without chest pain: 'moderately suspicious' is defensible; v1.0 and 1/17 agree with 10_22
+282,281,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,pmc-7524929-1,"same note, same entities",1.11536,1.115,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+285,283,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,pmc-3813587-1,"same note, same entities",6.21522,6.215,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+302,301,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-4681016-1,diff note,2,1,Keep 10_22,Whitespace only in the note; label difference is 1_31's cough convention
+303,302,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-414,diff note,4,3,Keep 10_22,Verified's note edit (5-day -> 3-day history) adopted
+306,305,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-8066,"same note, same entities",3,2,Keep 10_22,"1_31 does not score an unmentioned cough as absent (+1), the convention used throughout (cf. fixes 304, 318)"
+308,307,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-6356,diff note,2,1,Keep 10_22,Verified's note edit (four -> three days) adopted
+309,308,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-4026,diff note,4,3,Keep 10_22,Verified's note edit (tender and swollen anterior cervical nodes) adopted
+310,309,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-4327960-1,"same note, diff entities",3,1,Keep 10_22,Verified and 1/17 agree with 10_22
+312,311,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-6179,"same note, same entities",3,2,Keep 10_22,"1_31 does not score an unmentioned cough as absent (+1), the convention used throughout (cf. fixes 304, 318)"
+313,312,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-4307710-1,diff note,2,1,Keep 10_22,Verified's note edit (four-day -> threeday) adopted
+314,313,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-9610,"same note, same entities",1,0,Keep 10_22,"1_31 does not score an unmentioned cough as absent (+1), the convention used throughout (cf. fixes 304, 318)"
+316,315,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-4327,"same note, same entities",3,2,Keep 10_22,"1_31 does not score an unmentioned cough as absent (+1), the convention used throughout (cf. fixes 304, 318)"
+317,316,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-8175,"same note, diff entities",4,2,Keep 10_22,Verified and 1/17 agree with 10_22
+318,317,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-5745701-1,"same note, diff entities",1,0,Keep 10_22,Unmentioned cough scored absent (one of the 13 label fixes)
+320,319,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-8240916-1,"same note, same entities",0,-1,Keep 10_22,"1_31 does not score an unmentioned cough as absent (+1), the convention used throughout (cf. fixes 304, 318)"
+380,379,26,Sodium Correction for Hyperglycemia,pmc-2860402-1,"same note, same entities",131.52917,131.357,Keep 10_22,1_31 bug: wrong glucose conversion (11.4 mmol/L -> 198.2 mg/dL; correct 205.4)
+406,416,30,Serum Osmolality,pmc-3950226-1,diff note,367.35714,366.413,Keep 10_22,Verified's note edit (serum glucose added) adopted
+407,406,30,Serum Osmolality,pmc-3856144-1,"same note, same entities",332.6746,332.675,Keep 10_22,Rounding (1_31 explanation also has a formula typo: BUN/18 for glucose/18)
+414,413,30,Serum Osmolality,pmc-3614763-1,"same note, same entities",285.19044,285.358,Keep 10_22,Rounding (1_31 explanation also has a formula typo: BUN/18 for glucose/18)
+415,409,30,Serum Osmolality,pmc-7544303-1,"same note, same entities",311.51722,312,Keep 10_22,Rounding (1_31 explanation also has a formula typo: BUN/18 for glucose/18)
+417,412,30,Serum Osmolality,pmc-7294477-1,"same note, same entities",316.92031,317.006,Keep 10_22,Rounding (1_31 explanation also has a formula typo: BUN/18 for glucose/18)
+419,418,30,Serum Osmolality,pmc-4663776-1,diff note,293.13492,304.921,Keep 10_22,Verified's note edit (blood urea 62 -> BUN 29) adopted
+448,447,33,FeverPAIN Score for Strep Pharyngitis,usmle-3456,"same note, same entities",4,8,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+449,448,33,FeverPAIN Score for Strep Pharyngitis,usmle-6072,"same note, same entities",2,6,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+451,450,33,FeverPAIN Score for Strep Pharyngitis,pmc-3603656-1,diff note,4,8,Keep 10_22,Verified's note edit (7-day -> 2-day) adopted
+453,452,33,FeverPAIN Score for Strep Pharyngitis,pmc-5661752-1,"same note, diff entities",3,9,Keep 10_22,"Verified, v1.0 and 1/17 agree with 10_22 (1_31 score above the FeverPAIN maximum)"
+454,453,33,FeverPAIN Score for Strep Pharyngitis,pmc-7219994-1,"same note, diff entities",3,9,Keep 10_22,"Verified, v1.0 and 1/17 agree with 10_22 (1_31 score above the FeverPAIN maximum)"
+455,454,33,FeverPAIN Score for Strep Pharyngitis,usmle-1376,"same note, same entities",2,6,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+457,456,33,FeverPAIN Score for Strep Pharyngitis,pmc-8380012-1,"same note, diff entities",2,7,Keep 10_22,Verified agrees with 10_22 (1_31 score above the FeverPAIN maximum)
+460,459,33,FeverPAIN Score for Strep Pharyngitis,usmle-1375,"same note, same entities",3,7,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+462,461,33,FeverPAIN Score for Strep Pharyngitis,pmc-7979303-1,"same note, same entities",4,8,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+464,463,33,FeverPAIN Score for Strep Pharyngitis,usmle-6762,"same note, same entities",3,7,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+467,466,33,FeverPAIN Score for Strep Pharyngitis,pmc-7463145-1,"same note, same entities",3,7,Keep 10_22,1_31 bug: scores above the maximum of 5 (counts criteria twice)
+468,467,38,Free Water Deficit,pmc-8531789-1,diff note,4.69273,-0.828,Keep 10_22 (your decision; disclose),"Sodium raised to 157 in the note by your 10-22 decision; value is not in the source article (1_31, v1.0, Verified: 137)"
+472,471,38,Free Water Deficit,pmc-8059042-1,diff note,6.86571,-0.763,Keep 10_22 (your decision; disclose),"Sodium 158 in the note by your 10-22 decision; 1_31, v1.0 and Verified have 138"
+473,472,38,Free Water Deficit,pmc-7859974-2,diff note,2.14286,-2.14,Keep 10_22 (your decision; disclose),Sodium raised to 150 by your 10-22 decision; 1_31 and Verified have 130
+474,468,38,Free Water Deficit,pmc-7050167-1,diff note,1.54286,-1.03,Keep 10_22 (your decision; disclose),Sodium raised to 152 by your 10-22 decision; 1_31 has 132
+482,469,38,Free Water Deficit,pmc-6834714-1,diff note,0.42857,274.286,Keep 10_22,"1_31 note has a typo ('mEq/dL'), giving a deficit of 274 L"
+496,495,39,Anion Gap,pmc-4530922-1,"same note, diff entities",14,18.5,Keep 10_22,Verified agrees with 10_22
+504,503,39,Anion Gap,pmc-6031073-1,"same note, diff entities",30,29,Keep 10_22,Verified agrees with 10_22
+514,513,44,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),pmc-8523937-1,"same note, same entities",125.0588,137.38,Keep 10_22,1_31 bug: wrong mmol/L -> mg/dL conversions
+522,521,44,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),pmc-4296242-1,"same note, same entities",92.2464,109.12,Keep 10_22,1_31 bug: wrong mmol/L -> mg/dL conversions
+562,561,46,Framingham Risk Score for Hard Coronary Heart Disease,pmc-4429202-1,"same note, diff entities",3.647,9.351,Keep 10_22,Verified agrees with 10_22
+563,562,46,Framingham Risk Score for Hard Coronary Heart Disease,pmc-4114920-1,"same note, diff entities",0.276,1.937,Keep 10_22,Verified agrees with 10_22
+567,566,46,Framingham Risk Score for Hard Coronary Heart Disease,pmc-2813536-1,diff note,10.975,12.02,Keep 10_22,Verified's note edit (cholesterol and HDL added) adopted
+609,608,56,QTc Fridericia Calculator,1,diff note,413.45238,481.996,Not comparable,Template note regenerated with different values (different patient)
+610,609,56,QTc Fridericia Calculator,2,diff note,447.87891,281.474,Not comparable,Template note regenerated with different values (different patient)
+611,610,56,QTc Fridericia Calculator,3,diff note,412.28002,455.58,Not comparable,Template note regenerated with different values (different patient)
+612,611,56,QTc Fridericia Calculator,4,diff note,299.82515,364.276,Not comparable,Template note regenerated with different values (different patient)
+613,612,56,QTc Fridericia Calculator,5,diff note,376.35089,391.482,Not comparable,Template note regenerated with different values (different patient)
+614,613,56,QTc Fridericia Calculator,6,diff note,306.34486,577.854,Not comparable,Template note regenerated with different values (different patient)
+615,614,56,QTc Fridericia Calculator,7,diff note,466.96068,522.367,Not comparable,Template note regenerated with different values (different patient)
+616,615,56,QTc Fridericia Calculator,8,diff note,461.40212,286.002,Not comparable,Template note regenerated with different values (different patient)
+617,616,56,QTc Fridericia Calculator,9,diff note,454.73852,395.681,Not comparable,Template note regenerated with different values (different patient)
+618,617,56,QTc Fridericia Calculator,10,diff note,373.51002,500.076,Not comparable,Template note regenerated with different values (different patient)
+619,618,56,QTc Fridericia Calculator,11,diff note,316.63207,566.479,Not comparable,Template note regenerated with different values (different patient)
+620,619,56,QTc Fridericia Calculator,12,diff note,347.40016,312.107,Not comparable,Template note regenerated with different values (different patient)
+621,620,56,QTc Fridericia Calculator,13,diff note,469.69135,606.178,Not comparable,Template note regenerated with different values (different patient)
+622,621,56,QTc Fridericia Calculator,14,diff note,324.40586,305.267,Not comparable,Template note regenerated with different values (different patient)
+623,622,56,QTc Fridericia Calculator,15,diff note,405.10847,622.381,Not comparable,Template note regenerated with different values (different patient)
+624,623,56,QTc Fridericia Calculator,16,diff note,318.6116,578.395,Not comparable,Template note regenerated with different values (different patient)
+625,624,56,QTc Fridericia Calculator,17,diff note,445.87774,659.868,Not comparable,Template note regenerated with different values (different patient)
+626,625,56,QTc Fridericia Calculator,18,diff note,322.49724,361.473,Not comparable,Template note regenerated with different values (different patient)
+627,626,56,QTc Fridericia Calculator,19,diff note,333.62689,592.979,Not comparable,Template note regenerated with different values (different patient)
+628,627,56,QTc Fridericia Calculator,20,diff note,402.66018,351.173,Not comparable,Template note regenerated with different values (different patient)
+629,628,57,QTc Framingham Calculator,1,diff note,406.3532,560.07,Not comparable,Template note regenerated with different values (different patient)
+630,629,57,QTc Framingham Calculator,2,diff note,369.92604,353.448,Not comparable,Template note regenerated with different values (different patient)
+631,630,57,QTc Framingham Calculator,3,diff note,427.3126,307.034,Not comparable,Template note regenerated with different values (different patient)
+632,631,57,QTc Framingham Calculator,4,diff note,393.41104,442.066,Not comparable,Template note regenerated with different values (different patient)
+633,632,57,QTc Framingham Calculator,5,diff note,359.13526,262.718,Not comparable,Template note regenerated with different values (different patient)
+634,633,57,QTc Framingham Calculator,6,diff note,405.69562,270.986,Not comparable,Template note regenerated with different values (different patient)
+635,634,57,QTc Framingham Calculator,7,diff note,419.83282,480.486,Not comparable,Template note regenerated with different values (different patient)
+636,635,57,QTc Framingham Calculator,8,diff note,355.66718,525.93,Not comparable,Template note regenerated with different values (different patient)
+637,636,57,QTc Framingham Calculator,9,"same note, same entities",457.66718,457.718,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+638,637,57,QTc Framingham Calculator,10,diff note,432.3792,540.044,Not comparable,Template note regenerated with different values (different patient)
+639,638,57,QTc Framingham Calculator,11,diff note,414.52598,543.39,Not comparable,Template note regenerated with different values (different patient)
+640,639,57,QTc Framingham Calculator,12,diff note,395.15432,338.624,Not comparable,Template note regenerated with different values (different patient)
+641,640,57,QTc Framingham Calculator,13,diff note,403.65204,332.022,Not comparable,Template note regenerated with different values (different patient)
+642,641,57,QTc Framingham Calculator,14,diff note,332.52406,396.75,Not comparable,Template note regenerated with different values (different patient)
+643,642,57,QTc Framingham Calculator,15,diff note,360.8,297.464,Not comparable,Template note regenerated with different values (different patient)
+644,643,57,QTc Framingham Calculator,16,diff note,382.46164,382.07,Not comparable,Template note regenerated with different values (different patient)
+645,644,57,QTc Framingham Calculator,17,diff note,409.48402,261.592,Not comparable,Template note regenerated with different values (different patient)
+646,645,57,QTc Framingham Calculator,18,diff note,362.42162,469.63,Not comparable,Template note regenerated with different values (different patient)
+647,646,57,QTc Framingham Calculator,19,diff note,426.96302,449.486,Not comparable,Template note regenerated with different values (different patient)
+648,647,57,QTc Framingham Calculator,20,diff note,315.99986,302.6,Not comparable,Template note regenerated with different values (different patient)
+649,648,58,QTc Hodges Calculator,1,diff note,452.49924,413.34,Not comparable,Template note regenerated with different values (different patient)
+650,649,58,QTc Hodges Calculator,2,diff note,358.00062,460.245,Not comparable,Template note regenerated with different values (different patient)
+651,650,58,QTc Hodges Calculator,3,diff note,517.25117,562.909,Not comparable,Template note regenerated with different values (different patient)
+652,651,58,QTc Hodges Calculator,4,diff note,506.75061,444.541,Not comparable,Template note regenerated with different values (different patient)
+653,652,58,QTc Hodges Calculator,5,diff note,321.24992,514.479,Not comparable,Template note regenerated with different values (different patient)
+654,653,58,QTc Hodges Calculator,6,diff note,359.75013,433,Not comparable,Template note regenerated with different values (different patient)
+655,654,58,QTc Hodges Calculator,7,diff note,461.25236,326.588,Not comparable,Template note regenerated with different values (different patient)
+656,655,58,QTc Hodges Calculator,8,diff note,354.50013,517.661,Not comparable,Template note regenerated with different values (different patient)
+657,656,58,QTc Hodges Calculator,9,diff note,335.25011,619.501,Not comparable,Template note regenerated with different values (different patient)
+658,657,58,QTc Hodges Calculator,10,diff note,524.24761,343,Not comparable,Template note regenerated with different values (different patient)
+659,658,58,QTc Hodges Calculator,11,diff note,438.50142,491,Not comparable,Template note regenerated with different values (different patient)
+660,659,58,QTc Hodges Calculator,12,diff note,415.74955,428.348,Not comparable,Template note regenerated with different values (different patient)
+661,660,58,QTc Hodges Calculator,13,diff note,489.25066,498.74,Not comparable,Template note regenerated with different values (different patient)
+662,661,58,QTc Hodges Calculator,14,diff note,494.50027,527.594,Not comparable,Template note regenerated with different values (different patient)
+663,662,58,QTc Hodges Calculator,15,diff note,349.25006,493.707,Not comparable,Template note regenerated with different values (different patient)
+664,663,58,QTc Hodges Calculator,16,diff note,326.50027,329.103,Not comparable,Template note regenerated with different values (different patient)
+665,664,58,QTc Hodges Calculator,17,diff note,405.25132,442.678,Not comparable,Template note regenerated with different values (different patient)
+666,665,58,QTc Hodges Calculator,18,diff note,403.49857,601.122,Not comparable,Template note regenerated with different values (different patient)
+667,666,58,QTc Hodges Calculator,19,diff note,413.99849,408.715,Not comparable,Template note regenerated with different values (different patient)
+668,667,58,QTc Hodges Calculator,20,diff note,475.25025,413.095,Not comparable,Template note regenerated with different values (different patient)
+669,668,59,QTc Rautaharju Calculator,1,diff note,469.33333,503.75,Not comparable,Template note regenerated with different values (different patient)
+670,669,59,QTc Rautaharju Calculator,2,diff note,546.33333,338.35,Not comparable,Template note regenerated with different values (different patient)
+671,670,59,QTc Rautaharju Calculator,3,diff note,326.33333,638.083,Not comparable,Template note regenerated with different values (different patient)
+672,671,59,QTc Rautaharju Calculator,4,diff note,401.5,290.4,Not comparable,Template note regenerated with different values (different patient)
+673,672,59,QTc Rautaharju Calculator,5,diff note,386.83333,738.556,Not comparable,Template note regenerated with different values (different patient)
+674,673,59,QTc Rautaharju Calculator,6,diff note,515.16667,354.444,Not comparable,Template note regenerated with different values (different patient)
+675,674,59,QTc Rautaharju Calculator,7,diff note,364.83333,352.75,Not comparable,Template note regenerated with different values (different patient)
+676,675,59,QTc Rautaharju Calculator,8,diff note,350.16667,673.4,Not comparable,Template note regenerated with different values (different patient)
+677,676,59,QTc Rautaharju Calculator,9,diff note,414.33333,228.378,Not comparable,Template note regenerated with different values (different patient)
+678,677,59,QTc Rautaharju Calculator,10,diff note,407,403.433,Not comparable,Template note regenerated with different values (different patient)
+679,678,59,QTc Rautaharju Calculator,11,diff note,372.16667,314.739,Not comparable,Template note regenerated with different values (different patient)
+680,679,59,QTc Rautaharju Calculator,12,diff note,377.66667,248.083,Not comparable,Template note regenerated with different values (different patient)
+681,680,59,QTc Rautaharju Calculator,13,diff note,531.66667,609.4,Not comparable,Template note regenerated with different values (different patient)
+682,681,59,QTc Rautaharju Calculator,14,diff note,412.5,416.267,Not comparable,Template note regenerated with different values (different patient)
+683,682,59,QTc Rautaharju Calculator,15,diff note,381.33333,805.2,Not comparable,Template note regenerated with different values (different patient)
+685,683,59,QTc Rautaharju Calculator,16,diff note,438.16667,459.333,Not comparable,Template note regenerated with different values (different patient)
+687,684,59,QTc Rautaharju Calculator,17,diff note,315.33333,421.3,Not comparable,Template note regenerated with different values (different patient)
+688,685,59,QTc Rautaharju Calculator,18,diff note,550,305.717,Not comparable,Template note regenerated with different values (different patient)
+689,690,60,Body Surface Area Calculator,pmc-7418236-1,"same note, same entities",1.30512,1.305,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+691,686,59,QTc Rautaharju Calculator,19,diff note,509.66667,300.333,Not comparable,Template note regenerated with different values (different patient)
+693,687,59,QTc Rautaharju Calculator,20,diff note,542.66667,317.778,Not comparable,Template note regenerated with different values (different patient)
+695,694,60,Body Surface Area Calculator,pmc-6166568-1,diff note,1.1547,1.155,Keep 10_22,Rounding only (note differs by ' kg')
+721,720,62,Adjusted Body Weight,pmc-7891243-1,"same note, same entities",46.48588,46.485,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+725,724,62,Adjusted Body Weight,pmc-3816165-1,"same note, same entities",48.85596,48.855,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+791,790,66,Albumin Corrected Delta Gap,pmc-6467431-1,diff note,28.95,19.5,FIX 10_22,"Note says albumin 4.2 g/L (implausible; normal 35-50 g/L). Row 811 (same note) already uses 4.2 g/dL; 1_31 and Verified edit the note to g/dL. With g/dL the delta gap is 19.5, not 28.95"
+849,848,21,Glasgow Coma Score (GCS),1,diff note,10,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+871,870,28,APACHE II Score,3,diff note,26,21,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+872,871,28,APACHE II Score,4,diff note,15,13,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+873,872,28,APACHE II Score,5,diff note,13,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+876,875,28,APACHE II Score,8,diff note,22,17,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+884,883,28,APACHE II Score,16,diff note,12,10,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+887,886,28,APACHE II Score,19,diff note,10,5,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+889,888,43,Sequential Organ Failure Assessment (SOFA) Score,1,diff note,11,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+890,889,43,Sequential Organ Failure Assessment (SOFA) Score,2,diff note,10,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+892,891,43,Sequential Organ Failure Assessment (SOFA) Score,4,diff note,13,10,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+893,892,43,Sequential Organ Failure Assessment (SOFA) Score,5,diff note,7,6,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+894,893,43,Sequential Organ Failure Assessment (SOFA) Score,6,diff note,12,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+895,894,43,Sequential Organ Failure Assessment (SOFA) Score,7,diff note,9,7,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+896,895,43,Sequential Organ Failure Assessment (SOFA) Score,8,diff note,11,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+897,896,43,Sequential Organ Failure Assessment (SOFA) Score,9,diff note,11,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+898,897,43,Sequential Organ Failure Assessment (SOFA) Score,10,diff note,10,6,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+899,898,43,Sequential Organ Failure Assessment (SOFA) Score,11,diff note,10,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+900,899,43,Sequential Organ Failure Assessment (SOFA) Score,12,diff note,10,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+901,900,43,Sequential Organ Failure Assessment (SOFA) Score,13,diff note,8,6,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+902,901,43,Sequential Organ Failure Assessment (SOFA) Score,14,diff note,10,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+903,902,43,Sequential Organ Failure Assessment (SOFA) Score,15,diff note,10,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+904,903,43,Sequential Organ Failure Assessment (SOFA) Score,16,diff note,9,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+905,904,43,Sequential Organ Failure Assessment (SOFA) Score,17,diff note,8,7,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+906,905,43,Sequential Organ Failure Assessment (SOFA) Score,18,diff note,9,7,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+907,906,43,Sequential Organ Failure Assessment (SOFA) Score,19,diff note,10,8,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+908,907,43,Sequential Organ Failure Assessment (SOFA) Score,20,diff note,11,9,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+909,908,36,Caprini Score for Venous Thromboembolism (2005),1,diff note,26,25,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+910,909,36,Caprini Score for Venous Thromboembolism (2005),2,diff note,27,17,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+911,910,36,Caprini Score for Venous Thromboembolism (2005),3,diff note,20,16,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+912,911,36,Caprini Score for Venous Thromboembolism (2005),4,diff note,21,22,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+913,912,36,Caprini Score for Venous Thromboembolism (2005),5,diff note,23,14,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+914,913,36,Caprini Score for Venous Thromboembolism (2005),6,diff note,33,10,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+915,914,36,Caprini Score for Venous Thromboembolism (2005),7,diff note,21,23,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+916,915,36,Caprini Score for Venous Thromboembolism (2005),8,diff note,22,16,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+918,917,36,Caprini Score for Venous Thromboembolism (2005),10,diff note,14,12,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+919,918,36,Caprini Score for Venous Thromboembolism (2005),11,diff note,28,23,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+920,919,36,Caprini Score for Venous Thromboembolism (2005),12,diff note,18,20,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+921,920,36,Caprini Score for Venous Thromboembolism (2005),13,diff note,27,20,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+924,923,36,Caprini Score for Venous Thromboembolism (2005),16,diff note,13,11,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+925,924,36,Caprini Score for Venous Thromboembolism (2005),17,diff note,18,17,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+926,925,36,Caprini Score for Venous Thromboembolism (2005),18,diff note,16,12,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+927,926,36,Caprini Score for Venous Thromboembolism (2005),19,diff note,17,14,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+928,927,36,Caprini Score for Venous Thromboembolism (2005),20,diff note,17,20,Not comparable,10_22 synthetic note vs a different 1_31 note (different patient)
+929,928,13,Estimated Due Date,1,"same note, same entities",09/11/2014,09/23/2014,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+930,929,13,Estimated Due Date,2,"same note, same entities",01/01/2007,01/09/2007,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+931,930,13,Estimated Due Date,3,"same note, same entities",11/17/2002,11/23/2002,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+932,931,13,Estimated Due Date,4,"same note, same entities",03/19/2012,04/02/2012,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+933,932,13,Estimated Due Date,5,"same note, same entities",10/18/2023,10/26/2023,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+936,935,13,Estimated Due Date,8,"same note, same entities",07/27/2007,08/02/2007,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+937,936,13,Estimated Due Date,9,"same note, same entities",10/08/2021,10/22/2021,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+938,937,13,Estimated Due Date,10,"same note, same entities",12/01/2007,12/09/2007,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+939,938,13,Estimated Due Date,11,"same note, same entities",04/14/2009,04/28/2009,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+941,940,13,Estimated Due Date,13,"same note, same entities",01/11/2022,01/17/2022,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+944,943,13,Estimated Due Date,16,"same note, same entities",12/13/2014,12/23/2014,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+945,944,13,Estimated Due Date,17,"same note, same entities",08/21/2023,08/29/2023,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+946,945,13,Estimated Due Date,18,"same note, same entities",08/29/2011,09/08/2011,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+947,946,13,Estimated Due Date,19,"same note, same entities",01/23/2002,02/08/2002,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+948,947,13,Estimated Due Date,20,"same note, same entities",04/06/2009,04/12/2009,Keep 10_22,1_31 bug: explanation subtracts the cycle-length days but the label adds them
+950,949,24,Steroid Conversion Calculator,2,"same note, same entities",6.10925,6.029,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+952,951,24,Steroid Conversion Calculator,4,"same note, same entities",44.49288,44.466,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+953,952,24,Steroid Conversion Calculator,5,"same note, same entities",183.1393,183.162,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+954,953,24,Steroid Conversion Calculator,6,"same note, same entities",26.36095,26.352,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+955,954,24,Steroid Conversion Calculator,7,"same note, same entities",4.4025,4.411,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+959,958,24,Steroid Conversion Calculator,11,"same note, same entities",59.8637,59.844,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+960,959,24,Steroid Conversion Calculator,12,"same note, same entities",233.5244,233.554,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+962,961,24,Steroid Conversion Calculator,14,"same note, same entities",188.2054,188.229,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+963,962,24,Steroid Conversion Calculator,15,"same note, same entities",102.31208,102.335,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+965,964,24,Steroid Conversion Calculator,17,"same note, same entities",46.68405,46.667,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+967,966,24,Steroid Conversion Calculator,19,"same note, same entities",38.14748,38.134,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+973,972,61,Target weight,5,"same note, same entities",73.4349,73.435,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+974,973,61,Target weight,6,"same note, same entities",88.70847,88.691,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+976,975,61,Target weight,8,"same note, same entities",91.06356,91.045,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+978,977,61,Target weight,10,"same note, same entities",74.9472,74.981,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+982,981,61,Target weight,14,"same note, same entities",75.35553,75.371,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+983,982,61,Target weight,15,"same note, same entities",57.13189,57.158,Keep 10_22,Rounding only (1_31 rounds intermediate values to 3 decimals)
+991,990,49,Morphine Milligram Equivalents (MME) Calculator,3,diff note,426,444,Not comparable,Template note regenerated with different values (different patient)
+993,992,49,Morphine Milligram Equivalents (MME) Calculator,5,diff note,704,207.8,Not comparable,Template note regenerated with different values (different patient)
+994,993,49,Morphine Milligram Equivalents (MME) Calculator,6,diff note,793,4,Not comparable,Template note regenerated with different values (different patient)
+996,995,49,Morphine Milligram Equivalents (MME) Calculator,8,diff note,194.5,61,Not comparable,Template note regenerated with different values (different patient)
+997,996,49,Morphine Milligram Equivalents (MME) Calculator,9,diff note,372,213,Not comparable,Template note regenerated with different values (different patient)
+998,997,49,Morphine Milligram Equivalents (MME) Calculator,10,diff note,290,366.6,Not comparable,Template note regenerated with different values (different patient)
+1002,1001,49,Morphine Milligram Equivalents (MME) Calculator,14,diff note,238,40,Not comparable,Template note regenerated with different values (different patient)
+1003,1002,49,Morphine Milligram Equivalents (MME) Calculator,15,diff note,139,12,Not comparable,Template note regenerated with different values (different patient)
+1004,1003,49,Morphine Milligram Equivalents (MME) Calculator,16,diff note,322,175,Not comparable,Template note regenerated with different values (different patient)
+1006,1005,49,Morphine Milligram Equivalents (MME) Calculator,18,diff note,308,324,Not comparable,Template note regenerated with different values (different patient)
+1007,1006,49,Morphine Milligram Equivalents (MME) Calculator,19,diff note,747,150,Not comparable,Template note regenerated with different values (different patient)
+1008,1007,49,Morphine Milligram Equivalents (MME) Calculator,20,diff note,650,186.2,Not comparable,Template note regenerated with different values (different patient)
+1021,1020,68,Estimated Date of Conception,13,diff note,12/04/2020,06/27/2003,Not comparable,Template note regenerated with different values (different patient)

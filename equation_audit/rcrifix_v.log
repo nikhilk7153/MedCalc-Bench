@@ -1,0 +1,5 @@
+20 rows from rcri_fixed.csv to check
+final_rcrifix_verify.jsonl: 0 cached, 20 to run
+Verdict
+correct      16
+incorrect     4

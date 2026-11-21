@@ -1,0 +1,145 @@
+{
+ "calculator_id": "17",
+ "rows": [
+  {
+   "row": "241",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "3",
+   "final_answer": "4",
+   "corrected_relevant_entities": {
+    "History of cerebrovascular disease": true,
+    "Pre-operative treatment with insulin": false,
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": true,
+    "Pre-operative creatinine": [
+     2.1,
+     "mg/dL"
+    ],
+    "History of ischemic heart disease": true,
+    "Elevated-risk surgery": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The note explicitly lists 'well-controlled congestive heart failure' (on furosemide), and the MDCalc criterion is history of CHF, so it scores +1 even when controlled. The stored False is an extraction error. Final total: IHD ('stable angina', nitroglycerin) + CHF + CVD ('ischemic stroke') + Cr 2.1 >2 = 4. Breast biopsy is not elevated-risk, and the diabetes is 'non-insulin-dependent'.",
+   "confidence": "high"
+  },
+  {
+   "row": "242",
+   "verdict": "CORRECT",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Scheduled minor gynecological operation' is not an intraperitoneal/intrathoracic/suprainguinal vascular procedure. TIA (+1), 'ischemic heart disease' (+1), CHF with 'S3 gallop' (+1), 'does not rely on insulin', and Cr 1.74 ≤2 give 3. The blind reviewer's point about the surgical approach is speculative because the note calls the operation minor.",
+   "confidence": "high"
+  },
+  {
+   "row": "248",
+   "verdict": "CORRECT",
+   "stored_answer": "2",
+   "final_answer": "2",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "Surgery type is not specified ('a scheduled operation'), so per convention it is not elevated-risk. CHF (+1) and insulin (+1); 'no history of ischemic heart disease or cerebrovascular accidents'; Cr 140 µmol/L ≈ 1.58 mg/dL ≤2. Total 2. The stored creatinine is the pre-converted [1.6, 'mg/dL'] rather than the note's µmol/L value, which is a harmless quirk that does not change the score.",
+   "confidence": "high"
+  },
+  {
+   "row": "250",
+   "verdict": "CORRECT",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Scheduled operation' does not name a surgery type, so it is not elevated-risk by convention. IHD with 'coronary stents' (+1), 'previous cerebrovascular accident' (+1), 'managed with insulin' (+1), 'no known history of congestive heart failure', and Cr 1.2 give 3.",
+   "confidence": "high"
+  },
+  {
+   "row": "251",
+   "verdict": "CORRECT",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'High-risk thoracic surgery for a large lung mass' is intrathoracic (+1). CHF with S3 (+1) and 'stroke three years prior' (+1); 'does not include insulin'; Cr 1.9 ≤2. IHD is not mentioned, so per convention it is absent. Total 3.",
+   "confidence": "high"
+  },
+  {
+   "row": "252",
+   "verdict": "INPUT_FIX",
+   "stored_answer": "2",
+   "final_answer": "1",
+   "corrected_relevant_entities": {
+    "Congestive Heart Failure criteria for the Cardiac Risk Index rule": false,
+    "Elevated-risk surgery": false,
+    "History of ischemic heart disease": false,
+    "Pre-operative creatinine": [
+     1.5,
+     "mg/dL"
+    ],
+    "History of cerebrovascular disease": true,
+    "Pre-operative treatment with insulin": false
+   },
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "The procedure is clearly stated: 'high-risk orthopedic surgery for revision hip replacement'. MDCalc limits elevated-risk surgery to intraperitoneal, intrathoracic or suprainguinal vascular procedures, and hip revision is none of these, so the generic 'high-risk' label does not satisfy the criterion. Only the CVA scores (+1), with Cr 1.5, giving 1. Both reviewers agree. Optionally, deleting 'high-risk ' from the note would remove the misleading cue, but the score is determined without it.",
+   "confidence": "medium"
+  },
+  {
+   "row": "253",
+   "verdict": "CORRECT",
+   "stored_answer": "2",
+   "final_answer": "2",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Elective hernia repair' is not an intraperitoneal procedure by default (approach not stated), so it is not elevated-risk. IHD s/p PCI (+1) and 'well controlled with insulin therapy' (+1); no CVD/CHF; Cr 1.4. Total 2.",
+   "confidence": "high"
+  },
+  {
+   "row": "256",
+   "verdict": "CORRECT",
+   "stored_answer": "3",
+   "final_answer": "3",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Abdominal aortic aneurysm repair' is suprainguinal vascular (+1). CVA (+1) and insulin (+1); CHF symptoms are denied; IHD is not mentioned, so it is absent per convention. Cr 1.9 ≤2. Total 3.",
+   "confidence": "high"
+  },
+  {
+   "row": "258",
+   "verdict": "CORRECT",
+   "stored_answer": "2",
+   "final_answer": "2",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'High-risk surgery for carotid artery stenosis' is suprainguinal vascular, and the note labels it high-risk, consistent with stored True (+1). CHF (+1); 'no known history of ischemic heart disease nor cerebrovascular accidents'. Cr 2.0 is not >2 under MDCalc's strict threshold. Total 2. Debate over whether carotid surgery counts is minor and does not override the note's explicit label.",
+   "confidence": "medium"
+  },
+  {
+   "row": "260",
+   "verdict": "CORRECT",
+   "stored_answer": "5",
+   "final_answer": "5",
+   "corrected_relevant_entities": null,
+   "note_edit": null,
+   "code_change": null,
+   "options": null,
+   "rationale": "'Major high-risk endovascular aneurysm repair' (EVAR, aortic) is suprainguinal vascular (+1). TIA (+1). 'Well-managed congestive heart failure' counts as CHF history even though she is now euvolemic (+1). Insulin (+1) and Cr 2.3 >2 (+1); 'not been diagnosed with ischemic heart disease'. Total 5.",
+   "confidence": "high"
+  }
+ ]
+}

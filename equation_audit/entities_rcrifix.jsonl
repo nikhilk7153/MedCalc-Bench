@@ -1,0 +1,20 @@
+{"Row Number": 242, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "75-year-old woman", "issue": "omitted"}], "Tokens": 705}
+{"Row Number": 248, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 74 years old.", "issue": "omitted"}], "Tokens": 686}
+{"Row Number": 247, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 83 years old.", "issue": "omitted"}], "Tokens": 699}
+{"Row Number": 245, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 68 years old.", "issue": "omitted"}], "Tokens": 683}
+{"Row Number": 244, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 77 years old.", "issue": "omitted"}], "Tokens": 851}
+{"Row Number": 246, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "81 years old at the pre-operative assessment.", "issue": "omitted"}], "Tokens": 708}
+{"Row Number": 243, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "67-year-old female", "issue": "omitted"}], "Tokens": 733}
+{"Row Number": 250, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 70 years old.", "issue": "omitted"}], "Tokens": 667}
+{"Row Number": 249, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 56 years old.", "issue": "omitted"}], "Tokens": 639}
+{"Row Number": 251, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "78-year-old man", "issue": "omitted"}], "Tokens": 680}
+{"Row Number": 241, "all_match": false, "problems": [{"input": "Congestive Heart Failure criteria for the Cardiac Risk Index rule", "extracted": false, "note_says": "History of well-controlled congestive heart failure.", "issue": "omitted"}, {"input": "Pre-operative creatinine", "extracted": [2.1, "mg/dL"], "note_says": "Creatinine is 158.21 \u00b5mol/L, equivalent to approximately 1.79 mg/dL.", "issue": "wrong_value"}, {"input": "age", "extracted": "absent", "note_says": "The patient is 74 years old.", "issue": "omitted"}], "Tokens": 872}
+{"Row Number": 255, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "69-year-old man", "issue": "omitted"}], "Tokens": 640}
+{"Row Number": 253, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 72 years old.", "issue": "omitted"}], "Tokens": 697}
+{"Row Number": 257, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "68-year-old gentleman", "issue": "omitted"}], "Tokens": 653}
+{"Row Number": 252, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 64 years old.", "issue": "omitted"}], "Tokens": 730}
+{"Row Number": 254, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 80 years old.", "issue": "omitted"}], "Tokens": 700}
+{"Row Number": 259, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 72 years old.", "issue": "omitted"}], "Tokens": 673}
+{"Row Number": 256, "all_match": false, "problems": [{"input": "age", "extracted": "absent", "note_says": "The patient is 76 years old.", "issue": "omitted"}], "Tokens": 690}
+{"Row Number": 258, "all_match": false, "problems": [{"input": "age", "extracted": "missing", "note_says": "The patient is 73 years old.", "issue": "omitted"}], "Tokens": 667}
+{"Row Number": 260, "all_match": false, "problems": [{"input": "Congestive Heart Failure criteria for the Cardiac Risk Index rule", "extracted": false, "note_says": "The patient has documented congestive heart failure requiring regular medication, despite being euvolemic without current clinical signs.", "issue": "omitted"}, {"input": "age", "extracted": "absent", "note_says": "The patient is 77 years old.", "issue": "omitted"}], "Tokens": 763}

@@ -1,0 +1,14 @@
+Calculator ID,Calculator Name,Reason,Old Answer,New Answer,Same Note
+4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,CHA2DS2-VASc: heart failure counted but not documented (Verified relabels the same note),3,2,True
+15,Child-Pugh Score for Cirrhosis Mortality,Child-Pugh: v1.0 score 4 is impossible (minimum 5); Verified gives 6 for the same note,4,6,True
+17,Revised Cardiac Risk Index for Pre-Operative Risk,RCRI: intraperitoneal surgery not counted (Verified relabels the same note),2,3,True
+25,HAS-BLED Score for Major Bleeding Risk,HAS-BLED: TIA counted as stroke (Verified relabels the same note),2,1,True
+28,APACHE II Score,APACHE II: v1.0 label 32 does not follow from the documented values,32.0,11,False
+29,PSI Score: Pneumonia Severity Index for CAP,PSI: age 25 used instead of the documented 72,160.0,77,False
+31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),HOMA-IR: insulin multiplied by 6 instead of divided (label 30.271),30.271,10.66914,False
+36,Caprini Score for Venous Thromboembolism (2005),"Caprini: v1.0 label 1 misses stroke, central line, thrombophilia and other factors",1,15,False
+38,Free Water Deficit,Free Water Deficit: a 22 kg weight loss was used as the body weight,0.236,-2.1,False
+43,Sequential Organ Failure Assessment (SOFA) Score,SOFA: creatinine and bilirubin entered with wrong units,3,9,False
+46,Framingham Risk Score for Hard Coronary Heart Disease,Framingham: cholesterol substituted in mmol/L into the mg/dL equation (label 0.0),0.0,17.123,False
+49,Morphine Milligram Equivalents (MME) Calculator,MME: fentanyl buccal dosed in mg,82.6,82.6,False
+68,Estimated of Conception,"Estimated Date of Conception: use Verified's note (no cycle length), as in the final test set",01/21/2017,01/21/2017,False

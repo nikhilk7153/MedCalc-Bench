@@ -1,0 +1,56 @@
+Calculator ID,Calculator,Rows,Distinct Questions,Question,Same As v1.0,Rows With Time Point
+2,Creatinine Clearance (Cockcroft-Gault Equation),20,1,"What is the patient's Creatinine Clearance using the Cockroft-Gault Equation in terms of mL/min? You should use the patient's adjusted body weight in kg instead of the patient's actual body weight if the patient is overweight or obese based on their BMI. If the patient's BMI's normal, set their adjusted body weight to the minimum of the ideal body and actual weight. If the patient is underweight, please set their adjusted body weight to their actual body weight.",True,20
+3,CKD-EPI Equations for Glomerular Filtration Rate,20,1,"Using the 2021 CKD-EPI Creatinine equation, what is the patient's Glomerular Filtration Rate (GFR) in terms of mL/min/1.73 m²?",True,20
+4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,20,1,What is the patient's CHA2DS2-VASc Score?,True,20
+5,Mean Arterial Pressure (MAP),20,1,What is patient's mean arterial pressure in mm Hg?,True,20
+6,Body Mass Index (BMI),20,1,What is the patient's body mass index (BMI)? Your answer should be in terms of kg/m².,False,20
+7,Calcium Correction for Hypoalbuminemia,20,1,"Using the Calcium Correction for Hypoalbuminemia formula, what is the patient's corrected calcium in mg/dL? Your may set your normal albumin concentration to be 4 g/dL.",True,20
+8,Wells' Criteria for Pulmonary Embolism,20,1,What is the patient's score of Wells' criteria for Pulmonary Embolism?,False,20
+9,MDRD GFR Equation,20,1,"Using the MDRD GFR Equation, what is the patient's Glomerular Filtration Rate (GFR) in terms of mL/min/1.73 m²? If the patient is Black, apply the race coefficient of 1.212; otherwise, use a race coefficient of 1.",False,20
+10,Ideal Body Weight,20,1,"Using the Devine formula, what is the patient's ideal body weight?",False,20
+11,QTc Bazett Calculator,20,1,"Using the Bazett Formula for corrected QT interval, what is the patient's corrected QT interval in terms of msec?",False,0
+13,Estimated Due Date,20,1,"Using Naegele's Rule for estimated due date based on the last menstrual period and cycle length, what is the patient's estimated due date? Your response should be in the format of M/D/Y (ie 08/31/2023, 07/03/2000) with just the date and no other text.",False,0
+15,Child-Pugh Score for Cirrhosis Mortality,20,1,What is the patient's Child-Pugh Score?,True,20
+16,Wells' Criteria for DVT,20,1,What is the patient's score of Wells' criteria for Deep Vein Thrombosis?,False,20
+17,Revised Cardiac Risk Index for Pre-Operative Risk,20,1,What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk?,False,20
+18,HEART Score for Major Cardiac Events,20,1,What is the patient's score of the HEART Score?,False,20
+19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,20,1,What is the patient's score of the Fibrosis 4 Index?,False,20
+20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,20,1,What is the patient's Centor Score?,True,20
+21,Glasgow Coma Score (GCS),20,1,What is the patient's Glasgow Coma Score?,True,20
+22,Maintenance Fluids Calculations,20,1,"Based on the patient's weight, what is the patient's maintenance fluid in mL/hr?",True,20
+23,MELD Na (UNOS/OPTN),5,1,What is the patient's MELD Na (UNOS/OPTN) score?,False,5
+24,Steroid Conversion Calculator,20,15,"Based on the patient's dose of Betamethasone IV, what is the equivalent dosage in mg of Cortisone PO? || Based on the patient's dose of Cortisone PO, what is the equivalent dosage in mg of Betamethasone IV? || Based on the patient's dose of Cortisone PO, what is the equivalent dosage in mg of PrednisoLONE PO? || Based on the patient's dose of Dexamethasone IV, what is the equivalent dosage in mg of Hydrocortisone PO? || Based on the patient's dose of Dexamethasone IV, what is the equivalent dosage in mg of MethylPrednisoLONE PO? || Based on the patient's dose of Dexamethasone IV, what is the equivalent dosage in mg of Triamcinolone IV? || Based on the patient's dose of Dexamethasone PO, what is the equivalent dosage in mg of PrednisoLONE PO? || Based on the patient's dose of Hydrocortisone IV, what is the equivalent dosage in mg of PredniSONE PO? || Based on the patient's dose of Hydrocortisone PO, what is the equivalent dosage in mg of Cortisone PO? || Based on the patient's dose of Hydrocortisone PO, what is the equivalent dosage in mg of Dexamethasone PO? || Based on the patient's dose of MethylPrednisoLONE IV, what is the equivalent dosage in mg of PrednisoLONE PO? || Based on the patient's dose of PredniSONE PO, what is the equivalent dosage in mg of Cortisone PO? || Based on the patient's dose of PredniSONE PO, what is the equivalent dosage in mg of Hydrocortisone IV? || Based on the patient's dose of PrednisoLONE PO, what is the equivalent dosage in mg of Dexamethasone PO? || Based on the patient's dose of Triamcinolone IV, what is the equivalent dosage in mg of Betamethasone IV?",False,0
+25,HAS-BLED Score for Major Bleeding Risk,20,1,What is the patient's HAS-BLED score?,True,20
+26,Sodium Correction for Hyperglycemia,20,1,"What is the patient's corrected sodium concentration for hyperglycemia in terms of mEq/L? Use the sodium correction equation based on the one derived in Hillier, 1999, with a correction factor of 0.024.",False,20
+27,Glasgow-Blatchford Bleeding Score (GBS),20,1,What is the patient's Glasgow-Blatchford Bleeding score?,True,20
+28,APACHE II Score,20,1,What is the patient's APACHE II score?,True,0
+29,PSI Score: Pneumonia Severity Index for CAP,20,1,What is the patient's Pneumonia Severity Index (PSI)?,True,20
+30,Serum Osmolality,20,1,What is the patient's serum osmolality in terms of mOsm/kg? You may take the alcohol content as 0 mg/dL.,False,20
+31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),2,1,What is the patient's HOMA-IR score?,True,2
+32,Charlson Comorbidity Index (CCI),20,1,What is the patient's Charlson Comorbidity Index (CCI)?,True,20
+33,FeverPAIN Score for Strep Pharyngitis,20,1,What is the patient's FeverPAIN score?,True,20
+36,Caprini Score for Venous Thromboembolism (2005),20,1,What is the patient's Caprini Score for Venous Thromboembolism?,True,0
+38,Free Water Deficit,20,1,What is the patient's free water deficit in terms of kg? The desired serum sodium concentration is 140 mEq/L.,False,20
+39,Anion Gap,20,1,What is the patient's anion gap in terms of mEq/L?,True,20
+40,Fractional Excretion of Sodium (FENa),5,1,What is the patient's Fractional Excretion of Sodium (FENa)? Please return your answer as a percentage value.,True,5
+43,Sequential Organ Failure Assessment (SOFA) Score,20,1,What is the patient's Sequential Organ Failure Assessment (SOFA) Score?,True,0
+44,Friedewald Equation for Low-Density Lipoprotein Cholesterol (LDL-C),20,1,"Using the Friedewald equation, what is the patient's LDL cholesterol concentration? Please output your answer in terms of mg/dL.",False,20
+45,CURB-65 Score for Pneumonia Severity,20,1,What is the patient's CURB-65 score?,True,20
+46,Framingham Risk Score for Hard Coronary Heart Disease,16,1,"Based on the Framingham Risk Score for Hard Coronary Heart Disease, what is the likelihood of 10-year risk of MI or death for this patient? Please return your answer as a percentage value.",False,16
+48,PERC Rule for Pulmonary Embolism,20,1,What are the number of criteria met for the PERC Rule for Pulmonary Embolism (PE)?,True,20
+49,Morphine Milligram Equivalents (MME) Calculator,20,1,"Based on the number of doses per day and the quantity of different doses, what is the patient's daily Morphine Miligram Equivalents (MME)? You should use the conversions from the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022.",False,0
+51,SIRS Criteria,20,1,What are the number of SIRS critiera met by the patient?,False,20
+56,QTc Fridericia Calculator,20,1,"Using the Fridericia Formula for corrected QT interval, what is the patient's corrected QT interval in terms of msec?",True,0
+57,QTc Framingham Calculator,20,1,"Using the Framingham Formula for corrected QT interval, what is the patient's corrected QT interval in terms of msec?",True,0
+58,QTc Hodges Calculator,20,1,"Using the Hodges Formula for corrected QT interval, what is the patient's corrected QT interval in terms of msec?",True,0
+59,QTc Rautaharju Calculator,20,1,"Using the Rautaharju Formula for corrected QT interval, what is the patient's corrected QT interval in terms of msec?",True,0
+60,Body Surface Area Calculator,20,1,What is the patient's body surface area? Please output your answer in terms of m².,True,20
+61,Target weight,20,1,"Based on the patient's height and target BMI, what is the patient's target weight in kg?",True,0
+62,Adjusted Body Weight,20,1,"Using the adjusted body weight formula, what is the patient's adjusted body weight in terms of kg?",True,20
+63,Delta Gap,20,1,What is the patient's delta gap in mEq/L?,True,20
+64,Delta Ratio,20,1,What is the patient's delta ratio?,True,20
+65,Albumin Corrected Anion Gap,20,1,What is the patient's albumin corrected anion gap in mEq/L?,True,20
+66,Albumin Corrected Delta Gap,20,1,What is the patient's albumin corrected delta gap in mEq/L?,True,20
+67,Albumin Corrected Delta Ratio,20,1,What is the patient's albumin corrected delta ratio?,True,20
+68,Estimated Date of Conception,20,1,"Based on the patient's last menstrual period, what is the patient's estimated date of conception? Your answer should be in the format of M/D/Y (ie 08/31/2023, 07/03/2000) with just the date and not other text.",False,0
+69,Estimated Gestational Age,20,1,"Based on the patient's last menstrual period, what is the patient's estimated gestational age? Your answer should be a tuple, specifying the number of weeks and days (i.e. (4 weeks, 3 days), (0 weeks, 5 days), (1 week, 5 days), (8 weeks, 0 days)).",True,0

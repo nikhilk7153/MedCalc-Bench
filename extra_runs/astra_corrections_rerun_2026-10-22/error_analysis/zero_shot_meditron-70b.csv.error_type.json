@@ -1,0 +1,310 @@
+{
+    "4_pmc-7196137-1": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation. It is impossible to determine the error type due to lack of information.",
+        "error_type": []
+    },
+    "4_pmc-8136881-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the parameters used. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "4_pmc-8096577-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "8_pmc-8101672-1": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to identify the error.",
+        "error_type": [
+            "B",
+            "C",
+            "A"
+        ]
+    },
+    "8_pmc-8294994-1": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to identify the error.",
+        "error_type": [
+            "B"
+        ]
+    },
+    "8_pmc-5039122-1": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, nor does it provide a numerical answer. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "16_pmc-6959932-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "16_pmc-4341247-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "18_pmc-4244065-1": {
+        "analysis": "The prediction does not provide any rationale or answer, making it impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "18_pmc-7290110-1": {
+        "analysis": "The prediction does not provide any explanation or rationale for the calculation, and the answer is not provided.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "20_usmle-12605": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation. It is impossible to determine the error type without any provided details.",
+        "error_type": []
+    },
+    "20_pmc-4307710-1": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation. It also does not provide a numerical answer.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "20_pmc-8240916-1": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "33_usmle-3456": {
+        "analysis": "The prediction does not provide any information or calculation related to the problem. It is impossible to determine the type of error due to lack of information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "33_pmc-3603656-1": {
+        "analysis": "The prediction does not provide any information or calculation related to the problem. It is impossible to determine the type of error due to lack of information.",
+        "error_type": [
+            "B",
+            "C",
+            "A"
+        ]
+    },
+    "33_usmle-7961": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "45_pmc-2988179-1": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, and the final answer is missing.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_6": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, making it impossible to identify the specific error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_8": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, making it impossible to identify the specific error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_18": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, making it impossible to identify the specific error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_19": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, making it impossible to identify the specific error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "29_20": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, making it impossible to determine the type of error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "21_13": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "28_1": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result, making it impossible to identify the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "28_2": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation. It is impossible to determine the type of error without any provided calculation or reasoning.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_3": {
+        "analysis": "The prediction does not provide any information or calculation, hence it's impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "28_4": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_9": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation. It is impossible to determine the type of error without any provided calculation or reasoning.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_11": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, and the final answer is missing.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_13": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, hence it is impossible to determine the type of error.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "28_14": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, making it impossible to identify the specific error.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "28_16": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "D"
+        ]
+    },
+    "43_1": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, and the final answer is missing.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_2": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, and the answer is missing.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_4": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, and the final answer is missing.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "43_18": {
+        "analysis": "The prediction does not provide any information or rationale for the calculation, and the final answer is missing.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_1": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_3": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    },
+    "36_5": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_6": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_10": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_13": {
+        "analysis": "The prediction does not provide any information about the calculation or the rationale behind it. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_14": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "36_18": {
+        "analysis": "The prediction does not provide any information about the calculation or the final result. It is impossible to determine the type of error without this information.",
+        "error_type": []
+    }
+}

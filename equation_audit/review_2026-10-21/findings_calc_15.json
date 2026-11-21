@@ -1,0 +1,185 @@
+{
+ "calculator_id": "15",
+ "mdcalc_source": "https://www.mdcalc.com/calc/340/child-pugh-score-cirrhosis-mortality",
+ "mdcalc_rules": "Five criteria, each scored 1-3. Total bilirubin: <2 mg/dL (<34.2 umol/L) +1, 2-3 mg/dL (34.2-51.3 umol/L) +2, >3 mg/dL (>51.3 umol/L) +3. Albumin: >3.5 g/dL (>35 g/L) +1, 2.8-3.5 g/dL (28-35 g/L) +2, <2.8 g/dL +3. INR: <1.7 +1, 1.7-2.3 +2, >2.3 +3. Ascites: absent +1, slight +2, moderate +3. Encephalopathy: none +1, grade 1-2 +2, grade 3-4 +3. The middle bins include both endpoints, so bili 2.0 or 3.0 = +2, albumin 3.5 or 2.8 = +2, INR 1.7 or 2.3 = +2. Total 5-15 (class A 5-6, B 7-9, C 10-15 by the standard Pugh cutoffs).",
+ "code_vs_mdcalc": [
+  {
+   "issue": "Bilirubin in umol/L is converted with molar mass 584.66 (1 mg/dL = 17.104 umol/L), not the factor 17.1 that MDCalc's printed cutoffs imply. So exactly 34.2 umol/L becomes 1.9995 mg/dL and scores +1, while MDCalc puts 34.2 umol/L in the 2-3 bin (+2). The upper boundary is unaffected: 51.3 umol/L becomes 2.9993 and scores +2, as on MDCalc. This is an edge case only.",
+   "rows_affected": []
+  },
+  {
+   "issue": "All thresholds, inclusive boundaries, the albumin g/L to g/dL conversion and the defaults (missing ascites = absent +1, missing encephalopathy = none +1) match MDCalc. Minor robustness gaps: INR, bilirubin and albumin are required with no default; an ascites or encephalopathy string outside the expected labels silently adds 0 points; and the ascites 'absent' check reads input_variables['ascites'] directly rather than ascites_state, which is harmless. No stored row hits any of these.",
+   "rows_affected": []
+  }
+ ],
+ "items": [
+  {
+   "row": "one_shot",
+   "status": "OK",
+   "stored_answer": "6",
+   "mdcalc_answer": "6",
+   "details": "INR 2.0 (+2); bili 28.1 umol/L = 1.64 mg/dL (+1); albumin 3.7 (+1); no ascites (+1); no HE (+1).",
+   "evidence_quote": "no ascites... There is no asterixis or tremor... INR 2.0"
+  },
+  {
+   "row": "201",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "INR 2.1 (+2); bili 40.2 umol/L = 2.35 mg/dL (+2); albumin 3.1 (+2); ascites absent (+1); HE Grade 1-2 (+2): lethargy, confusion, asterixis fit West Haven grade 2. 'Oriented only to self' could be read as grade 3 gross disorientation (would give 10), but grade 1-2 is defensible and matches v1.0, so not flagged.",
+   "evidence_quote": "lethargy and confusion... oriented only to self. Asterixis is present... negative for ascites"
+  },
+  {
+   "row": "202",
+   "status": "OK",
+   "stored_answer": "12",
+   "mdcalc_answer": "12",
+   "details": "INR 2.2 (+2); bili 13.3 (+3); albumin 3.33 (+2); moderate ascites with fluid wave (+3); HE grade 1-2 (hallucinations, asterixis) (+2).",
+   "evidence_quote": "moderately distended abdomen with positive fluid wave"
+  },
+  {
+   "row": "203",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "INR 2.1 (+2); albumin 3.1 (+2); bili 2.45 (+2); minimal ascites = slight (+2); A&Ox1 with hyperreflexia and rigidity = grade 3-4 (+3).",
+   "evidence_quote": "minimal palpable ascites... A&Ox1 (self) with hyperactive reflexes, and rigidity"
+  },
+  {
+   "row": "204",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "INR 2.4 (+3); bili 3.00 is in MDCalc's 2-3 bin (+2); albumin 2.7 (+3); ascites not mentioned = absent (+1); no HE (+1).",
+   "evidence_quote": "INR of 2.4, a total bilirubin level of 3.00 mg/dL and albumin level of 2.7 g/dL... A&Ox3... absent asterixis"
+  },
+  {
+   "row": "205",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "INR 1.8 (+2); albumin 3.1 (+2); bili 2.4 (+2); mild ascites = slight (+2); HE grade 1-2 (+2).",
+   "evidence_quote": "grade 1-2 encephalopathy... mild ascites"
+  },
+  {
+   "row": "206",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "INR 1.5 (+1); albumin 2.9 (+2); bili 1.8 (+1); moderate ascites (+3); no HE (+1).",
+   "evidence_quote": "consistent with moderate ascites... indicating no encephalopathy"
+  },
+  {
+   "row": "207",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "Total bili 3.0 is in the 2-3 bin (+2); no ascites (+1); INR 1.3 (+1); albumin 3.4 (+2); HE not mentioned = none (+1).",
+   "evidence_quote": "total bilirubin of 3.0 mg/dL. INR was 1.3. Her albumin level was 3.4 g/dL"
+  },
+  {
+   "row": "208",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Bili 2.1 (+2); INR 1.7 is in the 1.7-2.3 bin (+2); albumin 3.2 (+2); no distension = absent ascites (+1, default); HE grade 3-4 (+3).",
+   "evidence_quote": "suggestive of grade 3-4 hepatic encephalopathy. There was no visible abdominal distension"
+  },
+  {
+   "row": "209",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Bili 1.6 (+1); slight ascites (+2); INR 2.0 (+2); albumin 3.0 (+2); HE not mentioned (+1).",
+   "evidence_quote": "mild distension in the abdominal area indicating slight ascites"
+  },
+  {
+   "row": "210",
+   "status": "OK",
+   "stored_answer": "11",
+   "mdcalc_answer": "11",
+   "details": "Bili 2.5 (+2); moderate ascites (+3); INR 1.9 (+2); albumin 2.8 is in the 2.8-3.5 bin (+2); HE grade 1-2 (+2).",
+   "evidence_quote": "albumin level of 2.8 g/dL... consistent with grade 1-2 hepatic encephalopathy"
+  },
+  {
+   "row": "211",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "Bili 2.7 (+2); no ascites (+1); INR 1.4 (+1); albumin 3.5 is not >3.5, so (+2); no HE (+1).",
+   "evidence_quote": "Albumin level of 3.5 g/dL. Bilirubin was slightly elevated at 2.7 mg/dL"
+  },
+  {
+   "row": "212",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Bili 1.9 (+1); INR 1.6 (+1); albumin 3.3 (+2); ascites not mentioned (+1); HE grade 3-4: unresponsive to verbal stimuli (+3).",
+   "evidence_quote": "extreme confusion and unresponsiveness to verbal stimuli... stage 3-4 hepatic encephalopathy"
+  },
+  {
+   "row": "213",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Bili 2.3 (+2); minimally distended abdomen on diuretics = slight ascites (+2); INR 1.5 (+1); albumin 3.1 (+2); no HE (+1).",
+   "evidence_quote": "minimally distended abdomen... diuretics for ascitic control"
+  },
+  {
+   "row": "214",
+   "status": "OK",
+   "stored_answer": "10",
+   "mdcalc_answer": "10",
+   "details": "Bili 1.7 (+1); moderately distended abdomen with ascites on diuretics = moderate (+3); INR 2.2 (+2); albumin 2.6 (+3); HE not mentioned (+1).",
+   "evidence_quote": "abdomen was moderately distended... diuretics for ascites"
+  },
+  {
+   "row": "215",
+   "status": "OK",
+   "stored_answer": "9",
+   "mdcalc_answer": "9",
+   "details": "Bili 2.0 is in the 2-3 bin (+2); no ascites (+1); INR 1.9 (+2); albumin 3.2 (+2); slight mental slowness and mild asterixis = grade 1-2 (+2).",
+   "evidence_quote": "slight mental slowness and mild asterixis... no evidence of ascites"
+  },
+  {
+   "row": "216",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "10",
+   "mdcalc_answer": "9 (if HE graded 1-2) / 10 (if 3-4)",
+   "details": "Bili 2.2 (+2), INR 2.1 (+2), albumin 3.0 (+2) and ascites (not mentioned, +1) are fine. The note does not say how severe the HE is. 'Disoriented and exhibited asterixis' in a patient at a routine check-up matches West Haven grade 2 (disorientation, asterixis), not grade 3-4 (somnolence, stupor, gross disorientation, coma). The stored value is Grade 3-4 (+3), the same as v1.0. Grade 1-2 is the better-supported reading and gives 9. This also clashes with row 201, where a more impaired patient (oriented to self only, lethargic) was stored as Grade 1-2. Either state the HE grade in the note or change it to Grade 1-2 (answer 9).",
+   "evidence_quote": "presents for a routine check-up. On neurological examination, the patient was disoriented and exhibited asterixis"
+  },
+  {
+   "row": "217",
+   "status": "OK",
+   "stored_answer": "8",
+   "mdcalc_answer": "8",
+   "details": "Bili 1.5 (+1); mild ascites = slight (+2); INR 1.7 is in the 1.7-2.3 bin (+2); albumin 3.3 (+2); no HE (+1).",
+   "evidence_quote": "Palpation revealed mild ascites... no indications of hepatic encephalopathy... INR, recorded at 1.7"
+  },
+  {
+   "row": "218",
+   "status": "OK",
+   "stored_answer": "12",
+   "mdcalc_answer": "12",
+   "details": "Bili 2.6 (+2); moderate ascites (+3); INR 2.0 (+2); albumin 2.7 (+3); episodic forgetfulness with suspected HE = grade 1-2 (+2).",
+   "evidence_quote": "episodic forgetfulness... fluid thrill sign indicative of moderate ascites"
+  },
+  {
+   "row": "219",
+   "status": "OK",
+   "stored_answer": "7",
+   "mdcalc_answer": "7",
+   "details": "Bili 2.8 (+2); no ascites (+1); INR 1.6 (+1); albumin 3.4 (+2); HE not documented = none (+1).",
+   "evidence_quote": "no notable ascites... No specific evidence or comment was documented concerning hepatic encephalopathy"
+  },
+  {
+   "row": "220",
+   "status": "NOTE_PROBLEM",
+   "stored_answer": "9",
+   "mdcalc_answer": "8 (if HE graded 1-2) / 9 (if 3-4)",
+   "details": "Bili 1.9 (+1), INR 1.8 (+2), albumin 3.1 (+2) and ascites (not mentioned, +1) are fine. The HE grade is ambiguous. Asterixis and slurred speech (dysarthria) are West Haven/Conn grade 2 signs, and the patient is an outpatient at a follow-up visit. 'Confusion' alone could be read as grade 3, but there is no somnolence, stupor, gross disorientation, hyperreflexia or rigidity. The stored value is Grade 3-4 (+3), the same as v1.0. Grade 1-2 would give 8. Specify the grade in the note, or accept either answer.",
+   "evidence_quote": "came for a follow-up consultation. During the appointment, he exhibited confusion, asterixis, and slurred speech"
+  }
+ ]
+}

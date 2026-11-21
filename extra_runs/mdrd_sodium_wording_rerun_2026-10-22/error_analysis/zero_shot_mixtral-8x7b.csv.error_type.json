@@ -1,0 +1,183 @@
+{
+    "9_pmc-6007257-1": {
+        "analysis": "The assistant used a different formula for the calculation of GFR. The correct formula as per the ground truth is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-3764696-1": {
+        "analysis": "The assistant used the wrong formula for the MDRD equation. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black). This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-4065736-1": {
+        "analysis": "The assistant failed to extract the patient's age from the given information, which led to an incorrect conclusion that the GFR could not be calculated.",
+        "error_type": [
+            "B. extracted different parameters than the ground-truth"
+        ]
+    },
+    "9_pmc-6902272-1": {
+        "analysis": "The assistant used the wrong formula for the MDRD equation. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6485150-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186.3 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black). Also, the assistant did not apply the gender coefficient in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-4381148-1": {
+        "analysis": "The assistant used the wrong constant in the MDRD equation. The correct constant is 175, not 186.3. This led to a different result than the ground truth.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6691829-1": {
+        "analysis": "The prediction used a different formula for the GFR calculation, and also used a wrong gender coefficient. The correct gender coefficient for males is 1, not -0.329. The correct formula for GFR calculation is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, not 186.3 * (creatinine)^-1.154 * (age)^-0.203 * race_coefficient * (gender_coefficient) + 32.786. The prediction also performed the arithmetic incorrectly, resulting in a different GFR value.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_pmc-1847820-1": {
+        "analysis": "The assistant used a different formula for the calculation of GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186.3 * (serum creatinine)^-1.154 * (age)^-0.203 * (1.212 if Black) * (0.742 if female). This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-5451771-1": {
+        "analysis": "The prediction used a different formula for the GFR calculation, and also incorrectly ignored the age factor in the calculation.",
+        "error_type": [
+            "A",
+            "C"
+        ]
+    },
+    "9_pmc-6454930-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (creatinine)^-1.154 * (age)^-0.203.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-4652317-1": {
+        "analysis": "The assistant used the wrong formula to calculate the estimated Glomerular Filtration Rate (eGFR). The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used eGFR = 186.3 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-6122666-1": {
+        "analysis": "The prediction correctly identified the parameters and used the correct formula. However, the final GFR value calculated is different from the ground truth.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "9_pmc-7787914-1": {
+        "analysis": "The assistant used the wrong formula for the MDRD equation and incorrectly converted the creatinine level from mg/dL to mg/mL. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient and the creatinine concentration should remain in mg/dL.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-3104662-1": {
+        "analysis": "The assistant used a different formula to calculate the GFR. The correct formula is 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used 186 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black). Also, the assistant extracted the BUN value, which is not needed in the calculation.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-3841498-1": {
+        "analysis": "The assistant used the wrong formula for the MDRD GFR Equation. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186.3 * (SCr)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black). This led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-5971350-1": {
+        "analysis": "The assistant used the wrong formula for the calculation. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (serum creatinine (\u03bcmol/L) / 88.4) ^ -1.154 * (age in years) ^ -0.203 * (0.742 if female) * (1.212 if Black, otherwise 1). Also, the assistant incorrectly converted the creatinine value from mg/dL to \u03bcmol/L, which was not required.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_usmle-3704": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "9_pmc-8022897-1": {
+        "analysis": "The prediction incorrectly assumed the patient's race as Black and used the wrong coefficient. It also used a different GFR equation (186.3 instead of 175). Additionally, the prediction incorrectly stated that the patient's gender was not specified, while the ground truth clearly stated that the patient is female.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "9_pmc-8432418-1": {
+        "analysis": "The assistant used the wrong formula to calculate the GFR. The correct formula is GFR = 175 * creatinine^(-1.154) * age^(-0.203) * race_coefficient * gender_coefficient, but the assistant used GFR = 186 * (serum creatinine)^-1.154 * (age)^-0.203 * (0.742 if female) * (1.212 if black).",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_usmle-5686": {
+        "analysis": "The assistant used the correct formula but made an error in the conversion of glucose level from mg/dL to mmol/L. The formula does not require this conversion. The assistant then used the incorrect glucose value in the formula, leading to a wrong result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-4541682-1": {
+        "analysis": "The prediction used a different formula for Sodium Correction for Hyperglycemia, and also used a different normal glucose level in the formula. The arithmetic was performed correctly based on the formula and parameters used in the prediction.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-6029742-1": {
+        "analysis": "The assistant correctly identified the parameters and used the correct formula. However, the final calculated value is incorrect.",
+        "error_type": [
+            "C. performed the arithmetic incorrectly"
+        ]
+    },
+    "26_pmc-3797951-1": {
+        "analysis": "The prediction incorrectly interpreted the formula for Sodium Correction for Hyperglycemia. Even though the patient's glucose level is within the normal range, the formula still requires a correction to be made.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_pmc-7455384-1": {
+        "analysis": "The assistant incorrectly converted the glucose level from mg/dL to mmol/L, which is not required in the formula. The assistant then used this incorrect value in the formula, leading to an incorrect result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-6549199-1": {
+        "analysis": "The assistant used the correct formula but made an error in converting the glucose level from mg/dL to mmol/L. This conversion was unnecessary and led to an incorrect result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-3350132-1": {
+        "analysis": "The assistant used a different formula for the sodium correction calculation, which led to a different result.",
+        "error_type": [
+            "A"
+        ]
+    },
+    "26_pmc-6142732-1": {
+        "analysis": "The assistant used the wrong formula for Sodium Correction for Hyperglycemia. The correct formula is Measured sodium + 0.024 * (Serum glucose - 100), but the assistant used corrected sodium = measured sodium + 0.024 * (normal glucose - patient's glucose). Also, the assistant incorrectly used the normal glucose level instead of the patient's glucose level in the formula.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    },
+    "26_pmc-6559115-1": {
+        "analysis": "The prediction incorrectly converted the glucose value from mg/dL to mmol/L, which is not required in the formula. The formula uses the glucose value in mg/dL, not in mmol/L. This incorrect conversion led to a wrong result.",
+        "error_type": [
+            "A",
+            "B"
+        ]
+    }
+}

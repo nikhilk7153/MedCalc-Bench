@@ -1,0 +1,401 @@
+﻿Row Number,Calculator ID,Calculator Name,Note ID,Note Type,Ground Truth Answer,Lower Limit,Upper Limit,Verdict,Error Type,Corrected Answer,Explanation,Question,Patient Note,Ground Truth Explanation
+245,17,Revised Cardiac Risk Index for Pre-Operative Risk,6,Synthetic,2,2,2,incorrect,input_extraction,1,"Under the original published RCRI definition, prior coronary revascularization alone does not qualify as ischemic heart disease; patients with prior CABG must also have a qualifying feature such as prior myocardial infarction, a positive exercise test, ischemic chest pain, nitrate use, or pathological Q waves. None is documented here, so the ischemic-heart-disease point is unsupported. Congestive heart failure contributes 1 point. Shoulder arthroscopy is not high-risk surgery under RCRI, creatinine 1.7 mg/dL is below the >2 mg/dL threshold, and cerebrovascular disease and insulin treatment are absent. The pretreatment total is therefore 1, outside the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 68-year-old male patient arrives for presurgical consultation before planned shoulder arthroscopy. His medical records indicate a history of coronary artery disease and congestive heart failure. He had a bypass surgery 5 years ago due to significant left main coronary artery stenosis. He denies any history of cerebrovascular events, such as stroke or transient ischemic attack. He endorses orthopnea and bilateral lower extremity edema. The patient's heart rate is 83 beats per minute and blood pressure is 145/90 mmHg. The cardiopulmonary exam shows jugular venous distention, an S3 heart sound, and crackles at both lung bases. His renal function tests return with a creatinine level of 1.7 mg/dL. His echocardiogram suggests reduced left ventricular ejection fraction. Cardiac optimization is recommended prior to surgery with an increased dose of his diuretic. The patient is also reminded of the importance of a low-salt diet to manage his heart failure.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 1.7 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+252,17,Revised Cardiac Risk Index for Pre-Operative Risk,13,Synthetic,2,2,2,incorrect,input_extraction,1,"Revision hip replacement does not meet the RCRI high-risk surgery criterion, which is restricted to intraperitoneal, intrathoracic, or suprainguinal vascular surgery, despite the note describing it as high-risk. Prior stroke contributes 1 point. Creatinine is 130 µmol/L ÷ 88.4 ≈ 1.47 mg/dL, below the >2 mg/dL threshold. Ischemic heart disease, congestive heart failure, and preoperative insulin treatment are absent or undocumented and contribute 0 points. Total RCRI score: 1.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 64-year-old female patient presents to the clinic for her pre-operative evaluation for high-risk orthopedic surgery for revision hip replacement. Her medical history is significant for a cerebrovascular accident two years ago, with no residual deficits. No known history of congestive heart failure or ischemic heart disease is documented. Her vitals are stable, including a heart rate of 78 beats per minute, and blood pressure of 135/80 mmHg. The physical examination is unremarkable except for limited mobility due to hip pain. Her respiratory system was clear on auscultation, no edema or jugular vein distention was noticed, and heart sounds were noted to be normal. Laboratory investigations show her creatinine level is 130 µmol/L. Further cardiology and nephrology evaluations and consultations have been planned as part of the pre-surgical risk assessment and management. The patient is also reminded of the need for strict adherence to medication and regular post-operative follow-ups.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 1.5 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+258,17,Revised Cardiac Risk Index for Pre-Operative Risk,19,Synthetic,2,2,2,incorrect,unit_conversion,3,"Using the note's explicitly documented high-risk surgery, the RCRI assigns 1 point for surgery, 1 for congestive heart failure, and 1 for preoperative creatinine >2 mg/dL. Creatinine 180 µmol/L converts to 180/88.4 ≈ 2.036 mg/dL, which exceeds the threshold; rounding to 2.0 before applying the cutoff incorrectly removes this point. Ischemic heart disease, cerebrovascular disease, and insulin treatment contribute no points. Total: 3.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 73-year-old man presents for pre-operative evaluation in anticipation of a high-risk surgery for carotid artery stenosis. His medical history includes a diagnosis of congestive heart failure, characterized by exertional dyspnea and lower limb swelling. He does not have any known history of ischemic heart disease nor cerebrovascular accidents. Physical examination reveals bilateral ankle edema and raised jugular venous pressure. Laboratory investigations show a creatinine level of 180 µmol/L. The patient's heart failure and renal function will be monitored and optimized leading up to his surgery. The patient is advised to follow a strict low-sodium diet and comply with his medications to manage his heart failure. His renal function will also be closely monitored leading up to and following the surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 2.0 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+260,17,Revised Cardiac Risk Index for Pre-Operative Risk,21,Synthetic,4,4,4,incorrect,input_extraction,5,"The documented history of congestive heart failure earns 1 RCRI point even though it is well controlled and the patient is currently euvolemic. The other points are for the documented high-risk vascular surgery, prior TIA, insulin treatment, and creatinine >2 mg/dL (200 µmol/L ÷ 88.4 ≈ 2.26 mg/dL). Ischemic heart disease is absent and contributes 0. The total is 5, outside the accepted range of 4–4.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 77-year-old woman attends a pre-operative assessment visit for a major high-risk endovascular aneurysm repair. Her medical history is notable for a transient ischemic attack four years ago that subsequently resolved without any significant sequelae. Additionally, she has well-managed congestive heart failure that requires a regular medication regimen. Importantly, she's not been diagnosed with ischemic heart disease. She is noted to have very well controlled type 2 diabetes managed with insulin. Upon checking her vitals, she was found to be euvolemic without clinically appreciable signs of heart failure. Her baseline labs highlight an elevated creatinine of 200 µmol/L. The patient is counseled and informed about the increased likelihood of potential perioperative cardiac and renal risks, owing to her medical history and current conditions. She is advised to manage her heart failure meticulously and continue her current medications leading up to the surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+The concentration of Pre-Operative Creatinine is 2.3 mg/dL. The patient's pre-operative creatinine is greater than 2 mg/dL, so we increment the score by one and the current total will be 3 + 1 = 4.
+
+The cardiac risk index score is 4."
+241,17,Revised Cardiac Risk Index for Pre-Operative Risk,2,Synthetic,3,3,3,correct,none,3,"The correct RCRI score is 3: ischemic heart disease (stable angina and nitrate use), documented history of congestive heart failure despite current compensation, and prior ischemic stroke each contribute 1 point. Breast biopsy is not high-risk surgery, and she does not use insulin. Creatinine 158.21 µmol/L ÷ 88.4 = 1.79 mg/dL, below the >2 mg/dL threshold. The ground-truth explanation incorrectly omits the CHF point and incorrectly converts creatinine to 2.1 mg/dL; these errors cancel, leaving the ground-truth total correct.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 74 year old female with a history of non-insulin-dependent diabetes mellitus, ischemic stroke with mild residual aphasia, well-controlled congestive heart failure, and stable angina presents for evaluation prior to biopsy of a right sided breast mass found on mammogram. She uses nitroglycerin for occasional chest pain on exertion. Other medications include metformin, losartan, furosemide, and aspirin. The patient denies dyspnea, orthopnea, leg swelling, lightheadedness, cough, or palpitations. Vital signs are stable. On examination, the patient is generally well-appearing. Heart sounds are regular and no jugular venous distention is noted. Lung sounds are clear bilaterally and the abdomen is nontender. Lower extremities have no edema. Laboratory studies show creatinine of 158.21 µmol/L and otherwise unremarkable CBC and BMP.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 2.1 mg/dL. The patient's pre-operative creatinine is greater than 2 mg/dL, so we increment the score by one and the current total will be 2 + 1 = 3.
+
+The cardiac risk index score is 3."
+242,17,Revised Cardiac Risk Index for Pre-Operative Risk,3,Synthetic,3,3,3,correct,none,3,"Using the documented pretreatment status, the RCRI assigns 1 point each for ischemic heart disease, congestive heart failure (also supported by the S3 gallop), and prior TIA. No points apply for insulin treatment or creatinine >2 mg/dL, since she does not use insulin and creatinine is 1.74 mg/dL. The minor gynecological procedure is not documented as meeting the high-risk surgery criterion, so that criterion is treated as absent. Total: 3 points, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 75-year-old woman appears for an evaluation related to her scheduled minor gynecological operation. She reports shortness of breath and associated fatigue. She experienced a transient ischemic attack several months ago, and her medical history includes episodes linked to ischemic heart disease and congestive heart failure. She does not rely on insulin for the management of her type 2 diabetes mellitus. She reports no known allergies to medication. Vital signs record a blood pressure of 132/80 mm Hg, heart rate of 85 beats per minute, and oxygen saturation 96 % on room air. On examination, an S3 gallop rhythm was noted, and reduced breath sounds seemed predominantly in the lower lung fields. Laboratory data including complete blood count and electrolytes were generally within normal range. However, the creatinine level was found to be 1.74 mg/dL. Interpretation of the electrocardiography revealed nonspecific ST-T wave changes, but no acute events transpired. Further cardiac workup is planned for the control of her heart failure before the pending procedure.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+The concentration of Pre-Operative Creatinine is 1.74 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+243,17,Revised Cardiac Risk Index for Pre-Operative Risk,4,Synthetic,3,3,3,correct,none,3,"The RCRI assigns 1 point each for ischemic heart disease (stable angina with nitrate use), history of congestive heart failure, and prior ischemic stroke. Breast biopsy is not high-risk surgery, diabetes is not treated with insulin, and creatinine is 158.21/88.4 ≈ 1.79 mg/dL, below the >2 mg/dL threshold. Thus the pre-treatment score is 3, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 67 year old female with a history of non-insulin-dependent diabetes mellitus, ischemic stroke with mild residual aphasia, well-controlled congestive heart failure, and stable angina presents for evaluation prior to biopsy of a right sided breast mass found on mammogram. She uses nitroglycerin for occasional chest pain on exertion. Other medications include metformin, losartan, furosemide, and aspirin. The patient denies dyspnea, orthopnea, leg swelling, lightheadedness, cough, or palpitations. Vital signs are stable. On examination, the patient is generally well-appearing. Heart sounds are regular and no jugular venous distention is noted. Lung sounds are clear bilaterally and the abdomen is nontender. Lower extremities have no edema. Laboratory studies show creatinine of 158.21 µmol/L and otherwise unremarkable CBC and BMP.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+The concentration of Pre-Operative Creatinine is 1.8 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+244,17,Revised Cardiac Risk Index for Pre-Operative Risk,5,Synthetic,3,3,3,correct,none,3 points,"Using the documented pre-treatment status, the RCRI assigns 1 point each for ischemic heart disease (prior myocardial infarction), congestive heart failure (known HFrEF with bilateral rales), and cerebrovascular disease (prior TIAs). Retinal detachment repair is not an RCRI high-risk surgery, insulin treatment is not documented, and creatinine is 1.6 mg/dL, below the >2 mg/dL threshold. The total is 3 points, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 77 year old male presents to his PCP for pre-operative evaluation prior to repair of a rhegmatogenous retinal detachment in the left eye. He has a past medical history of coronary artery disease with myocardial infarction and subsequent percutaneous coronary intervention 9 years ago, heart failure with reduced ejection fraction, paroxysmal atrial fibrillation, and multiple transient ischemic attacks. The patient reports orthopnea, shortness of breath on exertion, and occasional cough. The patient denies any recent chest pain, lightheadedness, palpitations, or wheezing. He has no recent history of respiratory infections, vomiting or diarrhea. Medications include lisinopril, furosemide, metoprolol, rivaroxaban, and rosuvastatin. The patient has no known allergies. Vitals today are significant for heart rate 97 bpm, blood pressure 134/83, respiratory rate 16, and temperature 98.9°F. On physical exam, the patient has mildly increased work of breathing on room air. Heart sounds are regular with no murmurs rubs or gallops. Pulmonary exam is notable for rales in the bilateral lower lung fields. The abdomen is nontender and nondistended. 2+ pitting edema to the knees is noted in bilateral lower extremities. Laboratory studies include creatinine at patient's baseline of 1.6 mg/dL, sodium 143 µmol/L, and hemoglobin A1c 5.4 %. CBC and CMP are otherwise within normal limits. ECG shows evidence of remote ischemia to the anterior wall and borderline left ventricular hypertrophy. Cardiac optimization with increased diuretic dose is planned prior to surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+The concentration of Pre-Operative Creatinine is 1.6 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+246,17,Revised Cardiac Risk Index for Pre-Operative Risk,7,Synthetic,3,3,3,correct,none,3,"The RCRI assigns 1 point each for high-risk abdominal aortic aneurysm repair, prior cerebrovascular accident, and chronic preoperative insulin treatment. No ischemic heart disease or congestive heart failure is documented. Creatinine 120 µmol/L ÷ 88.4 = approximately 1.36 mg/dL, below the >2 mg/dL threshold, so it adds no points. Total: 3, matching the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"An 81-year-old female presents for a pre-operative assessment before a scheduled high-risk abdominal aortic aneurysm repair surgery. She has a history of a past cerebrovascular accident with residual left-sided weakness. She has no history of congestive heart failure and denies any history of chest pain or dyspnea. On examination, her blood pressure is stable at 130/85 mmHg, the pulse rate is 72 beats per minute, and oxygen saturation is 97 % on room air. She has chronic type 2 diabetes managed with insulin, with good glycemic control. Her creatinine level is maintained at a steady-state of 120 µmol/L. She is referred for further cardiology evaluation for perioperative risk assessment and management due to the high-risk nature of the planned surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+The concentration of Pre-Operative Creatinine is 1.4 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+247,17,Revised Cardiac Risk Index for Pre-Operative Risk,8,Synthetic,2,2,2,correct,none,2,"The preoperative RCRI is 2: 1 point for documented ischemic heart disease and 1 point for prior cerebrovascular disease. The minor inguinal hernia repair is not documented as high-risk surgery. There is no heart failure or preoperative insulin use, and creatinine is 1.3 mg/dL, below the >2 mg/dL threshold. Age does not contribute to this score. No unit conversion or rounding is needed.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"An 83-year-old male presents for a pre-operative risk assessment ahead of his minor procedure for the repair of an inguinal hernia. His past medical history is notable for ischemic heart disease, status post percutaneous coronary intervention a decade ago, and a cerebrovascular event from which he has recovered well, with no residual deficits. He denies any chest pain, dyspnea, or history of heart failure. His medications include aspirin, metoprolol, and rosuvastatin, and he does not require insulin for glycemic control. The vitals including heart rate and blood pressure are within normal limits. On examination, heart sounds are regular, and no lower limb edema or jugular venous distress is noted. His laboratory findings indicate a creatinine level at 1.3 mg/dL. He is counseled to continue his current medications and report any new symptoms promptly. His electrolyte profile and cardiac markers will be monitored closely in the perioperative period.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 1.3 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+248,17,Revised Cardiac Risk Index for Pre-Operative Risk,9,Synthetic,2,2,2,correct,none,2 points,"The RCRI assigns 1 point for documented congestive heart failure and 1 point for preoperative insulin treatment. Ischemic heart disease and cerebrovascular disease are absent. High-risk surgery is not documented and is treated as absent under the stated rules. Creatinine of 140 µmol/L converts to approximately 1.58 mg/dL (140/88.4), below the >2 mg/dL threshold, adding no points. The documented preoperative values yield a total of 2 points.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 74-year-old male was evaluated in anticipation of a scheduled operation. He has a long-standing history of insulin-dependent diabetes, with no history of ischemic heart disease or cerebrovascular accidents. However, he has been diagnosed with congestive heart failure, with frequent hospital visits due to exacerbations and now experiences dyspnea and fatigue on moderate exertion. His daily medications include insulin, metolazone, and bisoprolol. On physical examination, his vitals were stable, but distal pitting edema and raised jugular venous pressure were noted. His lab reports indicated an elevated creatinine level of 140 µmol/L, potentially related to his chronic heart failure. The patient is counseled about the possible implications of his renal function status relating to the surgery, and the team will work towards optimizing his condition preoperatively.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+The concentration of Pre-Operative Creatinine is 1.6 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+249,17,Revised Cardiac Risk Index for Pre-Operative Risk,10,Synthetic,2,2,2,correct,none,2 points,"Using the documented preoperative status, the RCRI assigns 1 point for intraperitoneal surgery (colonic resection) and 1 point for the documented history of ischemic heart disease. There are no points for heart failure or cerebrovascular disease, which are absent; insulin treatment, since diabetes is treated only with oral medications; or creatinine, since 1.5 mg/dL does not exceed 2 mg/dL. The total is 2 points, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 56-year-old man is evaluated for a high-risk surgery involving colonic resection for a recently diagnosed colon carcinoma. His past medical history is significant for ischemic heart disease. He had a history of stable angina and underwent successful percutaneous coronary intervention seven years ago. He has not reported any cerebrovascular disease or heart failure. His diabetes is well-managed by oral antihyperglycemics only. On examination, his vitals are within the normal range, and cardiovascular and pulmonary examinations reveal no abnormalities. Laboratory investigations reveal a serum creatinine level of 1.5 mg/dL. He is recommended for a cardiology consultation for further risk stratification and appropriate preoperative optimization.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 1.5 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+250,17,Revised Cardiac Risk Index for Pre-Operative Risk,11,Synthetic,3,3,3,correct,none,3,"The RCRI assigns 1 point each for documented ischemic heart disease, prior stroke, and preoperative insulin use. There is no heart failure. Creatinine 110 µmol/L ÷ 88.4 = approximately 1.24 mg/dL, below the >2 mg/dL threshold, so it contributes 0 points. High-risk surgery is not documented and is treated as absent under the stated instructions. Total: 1 + 1 + 1 = 3, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 70-year-old female is being evaluated prior to a scheduled operation. Her medical history is significant for diabetes, ischemic heart disease requiring coronary stents, and a previous cerebrovascular accident with complete recovery. Her type 2 diabetes mellitus is managed with insulin and lifestyle modifications. She has no known history of congestive heart failure and remains asymptomatic, with no dyspnea or leg edema. On physical exam, her vitals were within normal limits, heart sounds were regular with no murmur, and her lungs were clear to auscultation. Laboratory investigations indicated a creatinine level of 110 µmol/L. Given her comorbidities, she is further referred for a detailed cardiology evaluation and optimal perioperative management.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+The concentration of Pre-Operative Creatinine is 1.2 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+251,17,Revised Cardiac Risk Index for Pre-Operative Risk,12,Synthetic,3,3,3,correct,none,3 points,"At the initial pre-treatment assessment, the RCRI assigns 1 point each for high-risk intrathoracic surgery, congestive heart failure, and prior stroke. Ischemic heart disease is not documented, insulin treatment is absent, and creatinine of 1.9 mg/dL does not exceed the >2 mg/dL threshold, so these contribute 0 points. The total is 3, matching the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 78-year-old man presents for a pre-operative assessment before his high-risk thoracic surgery for a large lung mass. His past medical history is significant for congestive heart failure, and he experienced a stroke three years prior. Medication list does not include insulin. As part of the pre-operative evaluation, his blood pressure and heart rate were found within normal limits, and his oxygen saturation was 93 % on room air. On inspection, slight pitting edema was noticed on lower extremities, and auscultation revealed an S3 heart sound. He is asymptomatic with no recent dyspnea or orthopnea, but his diuretic dosage will be optimized pre-operation due to his chronic heart failure. His latest labs report an increased creatinine level measured at 1.9 mg/dL, and he will receive further nephrology consultation to assess the best management of his renal function before the surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+The concentration of Pre-Operative Creatinine is 1.9 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+253,17,Revised Cardiac Risk Index for Pre-Operative Risk,14,Synthetic,2,2,2,correct,none,2,"Using the documented pre-operative status, the RCRI assigns 1 point for ischemic heart disease and 1 point for insulin-treated diabetes. There is no documented heart failure or cerebrovascular disease, and creatinine of 1.4 mg/dL does not exceed the >2 mg/dL threshold. The hernia repair is not documented as an elevated-risk procedure, so that criterion is treated as absent. Total: 2 points, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 72-year-old gentleman presents to the clinic for a pre-operative evaluation ahead of an elective hernia repair surgery. His past medical history is significant for stable ischemic heart disease for which he underwent successful percutaneous coronary intervention five years ago. He has type 2 diabetes mellitus, well controlled with insulin therapy. No known history of any cerebrovascular events is noted in his records. On examination, his vital signs, respiratory rate, and SpO2 levels are within standard norms. Cardiac auscultation reveals a regular rhythm with no murmurs, gallops, or rubs. Pulmonary assessment is unremarkable, with no audible crackles, wheezing, or pleural rubs. Peripheral examination did not reveal any ankle edema. His pre-operative serum creatinine level comes back slightly elevated with a reading of 1.4 mg/dL. Given his clinical history and findings, the patient’s operation will continue as planned with routine post-operative monitoring.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+The concentration of Pre-Operative Creatinine is 1.4 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+254,17,Revised Cardiac Risk Index for Pre-Operative Risk,15,Synthetic,2,2,2,correct,none,2,"The RCRI assigns 1 point for congestive heart failure and 1 point for prior stroke, even with complete recovery. Transurethral prostate resection does not meet the RCRI high-risk surgery definition. Ischemic heart disease and preoperative insulin use are absent. Creatinine 150 µmol/L ÷ 88.4 = 1.70 mg/dL, below the >2 mg/dL threshold, so it contributes no points. The total is 2, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"An 80-year-old male patient presents for pre-operative evaluation ahead of a scheduled transurethral resection of the prostate. His medical history includes a stroke three years ago, from which he has completely recovered, and congestive heart failure, which currently causes him dyspnea on moderate exertion. Notably, his medical history is absent of ischemic heart disease, and he confirms he's not been prescribed insulin for diabetes management. On examination, his blood pressure is stable at 145/85 mmHg, the heart rate sits at 72 beats per minute, oxygen saturation is 95 % on room air, and the respiratory rate is 18 per minute. Cardiopulmonary examination reveals bilateral ankle edema and an audible S3 gallop rhythm. Laboratory findings show an elevated creatinine of 150 µmol/L, which, along with his heart failure, warrants careful monitoring leading up to and throughout his surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 1.7 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+255,17,Revised Cardiac Risk Index for Pre-Operative Risk,16,Synthetic,3,3,3,correct,none,3 points,"Using the documented preoperative status, the RCRI assigns 1 point for intrathoracic surgery (lung resection), 1 for documented ischemic heart disease, and 1 for congestive heart failure. There is no cerebrovascular disease or documented insulin treatment. Creatinine is 1.8 mg/dL, below the >2 mg/dL threshold, so it contributes no points. The total is 3, matching the accepted range; no unit conversion or rounding is needed.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 69-year-old man presents to the clinic for a pre-operative assessment ahead of lung cancer resection. His medical history is significant for congestive heart failure, for which he is on diuretic therapy, and ischemic heart disease that required coronary artery bypass grafting eight years ago. There is no recorded history of cerebrovascular disease. On physical examination, the patient's vital signs are stable, and he exhibits mild jugular venous distention and trace lower extremity pitting edema. Laboratory findings indicate a creatinine level of 1.8 mg/dL. Given his cardiopulmonary status and kidney function, additional preoperative evaluations and optimizations are recommended for his upcoming procedure. The patient is advised to comply strictly with his medication schedule and to report any new symptoms promptly while awaiting the surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+Based on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.
+The concentration of Pre-Operative Creatinine is 1.8 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+256,17,Revised Cardiac Risk Index for Pre-Operative Risk,17,Synthetic,3,3,3,correct,none,3,"At the initial preoperative evaluation, the RCRI assigns 1 point each for high-risk surgery (abdominal aortic aneurysm repair, a suprainguinal vascular procedure), prior stroke, and insulin-treated diabetes. Ischemic heart disease and congestive heart failure are not documented and contribute 0 points. Creatinine 165 µmol/L ÷ 88.4 = 1.87 mg/dL, below the >2 mg/dL threshold, contributing 0 points. Total: 3 points, within the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,A 76-year-old gentleman is evaluated prior to his elective abdominal aortic aneurysm repair surgery. He has a history of a cerebrovascular accident three years ago with minor residual right-sided deficits. He manages his type 2 diabetes mellitus with insulin therapy. He states that he has not experienced any symptoms suggestive of congestive heart failure such as dyspnea on exertion or lower limb swelling. His vitals are found to be within normal range. Physical examination did not reveal rales on chest auscultation or pitting edema. His pre-operative investigations show a slightly elevated creatinine level of 165 µmol/L. The patient is thoroughly counseled about the possible increased perioperative risk due to his renal function status. He is referred for further nephrologist evaluation and consultation to optimize his kidney function prior to his surgery.,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.
+The concentration of Pre-Operative Creatinine is 1.9 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 3.
+
+The cardiac risk index score is 3."
+257,17,Revised Cardiac Risk Index for Pre-Operative Risk,18,Synthetic,2,2,2,correct,none,2,"The RCRI assigns 1 point for ischemic heart disease with prior myocardial infarction and 1 point for prior TIA. Inguinal hernia repair is not a qualifying high-risk procedure. No heart failure is documented, diabetes is treated with metformin rather than insulin, and creatinine of 1.6 mg/dL does not exceed the 2 mg/dL threshold. The total is 2 points, matching the accepted range.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 68-year-old gentleman presents for a pre-operative evaluation for his upcoming direct inguinal hernia repair. His medical background includes a diagnosis of ischemic heart disease, and he had a non-ST-segment elevation myocardial infarction five years ago. In addition to this, he had a transient ischemic attack two years ago but has shown satisfactory recovery since then. His type 2 diabetes is managed with metformin. On examination, his vitals are within a satisfactory range. Lab investigations display a slightly elevated creatinine level of 1.6 mg/dL, which will be monitored closely. Given his previous cardiological events, the patient is referred to cardiology to ensure optimal management of his ischemic heart disease before surgery.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+Based on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+Based on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.
+The concentration of Pre-Operative Creatinine is 1.6 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."
+259,17,Revised Cardiac Risk Index for Pre-Operative Risk,20,Synthetic,2,2,2,correct,none,2,"The pre-operative RCRI is 2: 1 point for documented ischemic heart disease and 1 point for established insulin treatment. Knee replacement is not an RCRI high-risk surgery. Congestive heart failure is denied, cerebrovascular disease is not documented and is treated as absent, and creatinine of 1.2 mg/dL does not exceed the 2 mg/dL threshold. No unit conversion or rounding is needed.",What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.,"A 72-year-old male attends the clinic for a pre-operative assessment ahead of an upcoming knee replacement surgery. His past medical history is significant for ischemic heart disease, for which he underwent a successful percutaneous coronary intervention seven years ago. He has been managing his type 2 diabetes with insulin therapy for the past few years. He denies any history of congestive heart failure, and his physical examination corroborates this, with no signs of fluid overload present. His renal function is stable, with a pre-operative serum creatinine level of 1.2 mg/dL. Considering his clinical history, the patient's perioperative management will require meticulous monitoring of his blood glucose levels and renal function. The patient is informed about the importance of adhering strictly to his insulin regimen and is given guidance on managing possible hypoglycemia. The surgery is planned as scheduled given the stability of his cardiac and renal conditions.","The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point
+3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point
+4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point
+5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point
+6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point
+
+The total score is calculated by summing the points for each criterion.
+
+The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for the patient. This means that the total score remains unchanged at 0.
+Based on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.
+Based on the patient note, a history of congestive heart failure is determined to be absent for the patient. This means that the total score remains unchanged at 1.
+The patient note does not mention anything about a history of cerebrovascular disease and is assumed to be absent. This means that the total score remains unchanged at 1.
+Based on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.
+The concentration of Pre-Operative Creatinine is 1.2 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 2.
+
+The cardiac risk index score is 2."

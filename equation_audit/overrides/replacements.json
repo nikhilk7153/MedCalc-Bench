@@ -1,0 +1,320 @@
+[
+ {
+  "calculator_id": "2",
+  "note_id": "pmc-4359532-1",
+  "verified_row": "15",
+  "reason": "Creatinine Clearance: only a baseline creatinine, no admission value"
+ },
+ {
+  "calculator_id": "8",
+  "note_id": "pmc-2803837-1",
+  "verified_row": "127",
+  "reason": "Wells' PE: cancer treatment timing relative to admission not documented"
+ },
+ {
+  "calculator_id": "8",
+  "note_id": "usmle-9051",
+  "verified_row": "130",
+  "reason": "Wells' PE: no pre-treatment heart rate; surgery happened after admission"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-8053007-1",
+  "verified_row": "261",
+  "reason": "HEART: troponin 0.44 ng/mL given without a reference limit"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "usmle-9492",
+  "verified_row": "263",
+  "reason": "HEART: ECG only in an unavailable figure"
+ },
+ {
+  "calculator_id": "18",
+  "note_id": "pmc-4793133-1",
+  "verified_row": "266",
+  "reason": "HEART: initial troponin inconclusive"
+ },
+ {
+  "calculator_id": "48",
+  "note_id": "pmc-7343298-3",
+  "verified_row": "622",
+  "reason": "PERC: heart rate only after treatment"
+ },
+ {
+  "calculator_id": "48",
+  "note_id": "pmc-4614570-1",
+  "verified_row": "624",
+  "reason": "PERC: oxygen saturation only on supplemental oxygen"
+ },
+ {
+  "calculator_id": "48",
+  "note_id": "pmc-8088400-1",
+  "verified_row": "627",
+  "reason": "PERC: oxygen saturation only on supplemental oxygen"
+ },
+ {
+  "calculator_id": "48",
+  "note_id": "pmc-3883470-1",
+  "verified_row": "633",
+  "reason": "PERC: oxygen saturation only on supplemental oxygen"
+ },
+ {
+  "calculator_id": "30",
+  "note_id": "pmc-8684410-1",
+  "verified_row": "432",
+  "reason": "Serum Osmolality: only a glucose-corrected sodium is given"
+ },
+ {
+  "calculator_id": "38",
+  "note_id": "pmc-3862585-2",
+  "verified_row": "508",
+  "reason": "Free Water Deficit: no pre-treatment sodium"
+ },
+ {
+  "calculator_id": "63",
+  "note_id": "pmc-8387066-1",
+  "verified_row": "782",
+  "reason": "Delta Gap: electrolytes only after treatment"
+ },
+ {
+  "calculator_id": "66",
+  "note_id": "pmc-6506427-1",
+  "verified_row": "845",
+  "reason": "Albumin Corrected Delta Gap: admission albumin not reported"
+ },
+ {
+  "calculator_id": "31",
+  "note_id": "1",
+  "verified_row": "extra-1",
+  "reason": "HOMA-IR: Verified has no Extracted HOMA-IR note left; use the v1.0 train case pmc-3114100-1 (insulin 21 pmol/L as written; v1.0 had 756) (user decision 2026-10-17)"
+ },
+ {
+  "calculator_id": "26",
+  "note_id": "pmc-6311974-1",
+  "verified_row": "388",
+  "reason": "Sodium Correction for Hyperglycemia: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "26",
+  "note_id": "pmc-2943705-1",
+  "verified_row": "389",
+  "reason": "Sodium Correction for Hyperglycemia: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "38",
+  "note_id": "pmc-8059042-1",
+  "verified_row": "509",
+  "reason": "Free Water Deficit: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "39",
+  "note_id": "pmc-3950226-1",
+  "verified_row": "527",
+  "reason": "Anion Gap: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "63",
+  "note_id": "pmc-4614622-1",
+  "verified_row": "783",
+  "reason": "Delta Gap: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "63",
+  "note_id": "pmc-8182158-1",
+  "verified_row": "791",
+  "reason": "Delta Gap: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-8627704-1",
+  "verified_row": "808",
+  "reason": "Delta Ratio: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-6462314-1",
+  "verified_row": "811",
+  "reason": "Delta Ratio: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-3354932-1",
+  "verified_row": "812",
+  "reason": "Delta Ratio: electrolyte input taken from a blood gas, no serum value in the note"
+ },
+ {
+  "calculator_id": "3",
+  "note_id": "pmc-7405101-3",
+  "verified_row": "30",
+  "reason": "CKD-EPI: patient on maintenance hemodialysis; replaced with the v1.1/Verified note for this row (user decision 2026-10-17)"
+ },
+ {
+  "calculator_id": "65",
+  "note_id": "pmc-3950226-1",
+  "verified_row": "extra-2",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 768 (its edit: bicarbonate listed with the serum panel)"
+ },
+ {
+  "calculator_id": "65",
+  "note_id": "pmc-6363666-1",
+  "verified_row": "833",
+  "reason": "Electrolyte input taken from a blood gas; replaced with Verified test row 833 (no clean test_set_1_31 note left for this calculator; Verified edit, negative anion gap)"
+ },
+ {
+  "calculator_id": "65",
+  "note_id": "pmc-4411570-1",
+  "verified_row": "extra-3",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 779"
+ },
+ {
+  "calculator_id": "65",
+  "note_id": "pmc-4047698-1",
+  "verified_row": "extra-4",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 785 (same note, edited: serum bicarbonate 18.4, albumin g/dL)"
+ },
+ {
+  "calculator_id": "66",
+  "note_id": "pmc-3354932-1",
+  "verified_row": "extra-5",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 797"
+ },
+ {
+  "calculator_id": "67",
+  "note_id": "pmc-3354932-1",
+  "verified_row": "extra-6",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 819 (its slot note, row 808, is already our row 821)"
+ },
+ {
+  "calculator_id": "67",
+  "note_id": "pmc-4241748-1",
+  "verified_row": "extra-7",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 810"
+ },
+ {
+  "calculator_id": "67",
+  "note_id": "usmle-2638",
+  "verified_row": "extra-8",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 811"
+ },
+ {
+  "calculator_id": "39",
+  "note_id": "pmc-2657771-1",
+  "verified_row": "extra-9",
+  "reason": "Electrolyte input taken from a blood gas; replaced with test_set_1_31 row 499"
+ },
+ {
+  "calculator_id": "2",
+  "note_id": "pmc-5411661-1",
+  "verified_row": "sheet-18",
+  "reason": "User edit from the review sheet (2026-10-20): row 18"
+ },
+ {
+  "calculator_id": "3",
+  "note_id": "pmc-6988719-1",
+  "verified_row": "sheet-29",
+  "reason": "User edit from the review sheet (2026-10-20): row 29"
+ },
+ {
+  "calculator_id": "26",
+  "note_id": "pmc-5224414-1",
+  "verified_row": "sheet-375",
+  "reason": "User edit from the review sheet (2026-10-20): row 375"
+ },
+ {
+  "calculator_id": "26",
+  "note_id": "pmc-8110288-1",
+  "verified_row": "sheet-383",
+  "reason": "User edit from the review sheet (2026-10-20): row 383"
+ },
+ {
+  "calculator_id": "31",
+  "note_id": "pmc-6128601-1",
+  "verified_row": "sheet-427",
+  "reason": "User edit from the review sheet (2026-10-20): row 427"
+ },
+ {
+  "calculator_id": "38",
+  "note_id": "pmc-6699429-1",
+  "verified_row": "sheet-472",
+  "reason": "User edit from the review sheet (2026-10-20): row 472"
+ },
+ {
+  "calculator_id": "39",
+  "note_id": "pmc-3544066-1",
+  "verified_row": "sheet-500",
+  "reason": "User edit from the review sheet (2026-10-20): row 500"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-4534995-1",
+  "verified_row": "sheet-518",
+  "reason": "User edit from the review sheet (2026-10-20): row 518"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-2767135-1",
+  "verified_row": "sheet-528",
+  "reason": "User edit from the review sheet (2026-10-20): row 528"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-3800306-1",
+  "verified_row": "sheet-529",
+  "reason": "User edit from the review sheet (2026-10-20): row 529"
+ },
+ {
+  "calculator_id": "44",
+  "note_id": "pmc-2770547-1",
+  "verified_row": "sheet-532",
+  "reason": "User edit from the review sheet (2026-10-20): row 532"
+ },
+ {
+  "calculator_id": "63",
+  "note_id": "pmc-5661137-1",
+  "verified_row": "sheet-729",
+  "reason": "User edit from the review sheet (2026-10-20): row 729"
+ },
+ {
+  "calculator_id": "63",
+  "note_id": "usmle-4395",
+  "verified_row": "sheet-740",
+  "reason": "User edit from the review sheet (2026-10-20): row 740"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-5458028-1",
+  "verified_row": "sheet-749",
+  "reason": "User edit from the review sheet (2026-10-20): row 749"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-6374870-1",
+  "verified_row": "sheet-750",
+  "reason": "User edit from the review sheet (2026-10-20): row 750"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-7606204-1",
+  "verified_row": "sheet-756",
+  "reason": "User edit from the review sheet (2026-10-20): row 756"
+ },
+ {
+  "calculator_id": "64",
+  "note_id": "pmc-4992786-1",
+  "verified_row": "sheet-761",
+  "reason": "User edit from the review sheet (2026-10-20): row 761"
+ },
+ {
+  "calculator_id": "65",
+  "note_id": "pmc-5885426-1",
+  "verified_row": "sheet-779",
+  "reason": "User edit from the review sheet (2026-10-20): row 779"
+ },
+ {
+  "calculator_id": "67",
+  "note_id": "pmc-6031073-1",
+  "verified_row": "sheet-809",
+  "reason": "User edit from the review sheet (2026-10-20): row 809"
+ }
+]

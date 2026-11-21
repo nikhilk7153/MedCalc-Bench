@@ -1,0 +1,7 @@
+/Users/nikhilkhandekar/Downloads/MedCalc-Bench-version-1.0 2/equation_audit/check_blood_gas.py:40: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  df = df[(df['Note Type'] != 'Template') & df['Patient Note'].str.contains(BLOOD_GAS)]
+4 rows mention a blood gas in cand_18_740.csv
+blood_gas_c18740.jsonl: 0 cached, 4 to run
+Uses Blood Gas Value
+True     3
+False    1

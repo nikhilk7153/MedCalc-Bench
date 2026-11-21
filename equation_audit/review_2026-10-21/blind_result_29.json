@@ -1,0 +1,2396 @@
+{
+ "calculator_id": "29",
+ "rows": [
+  {
+   "row": "829",
+   "fields": {
+    "age": {
+     "value": [
+      25,
+      "years"
+     ],
+     "quote": "A 25-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "25-year-old male"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "recent episode of fever and altered mental state"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "denies any past history of heart disease"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "denies any past history of ... renal disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "denies ... cerebrovascular disease"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "denies ... liver disease"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "denies ... or cancer"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "lives alone"
+    },
+    "Temperature": {
+     "value": [
+      34,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 34 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      101,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 101 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      32,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 32 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      123,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measures at 123/85 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      35,
+      "%"
+     ],
+     "quote": "hematocrit level of 35"
+    },
+    "Glucose": {
+     "value": [
+      15,
+      "mmol/L"
+     ],
+     "quote": "blood glucose level of 15 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      33.21,
+      "mg/dL"
+     ],
+     "quote": "BUN of 33.21 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      123,
+      "mmol/L"
+     ],
+     "quote": "sodium level is moderately low at 123 mmol/L"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      67,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 67 mm Hg"
+    },
+    "pH": {
+     "value": 7.17,
+     "quote": "slightly acidotic pH of 7.17"
+    },
+    "Pleural effusion on x-ray": {
+     "value": false,
+     "quote": "chest X-ray shows no signs of pleural effusion"
+    }
+   },
+   "score": 160,
+   "score_working": "age 25; AMS +20; temp 34C +15; RR 32 +20; glucose 15 mmol/L (>=14) +10; BUN 33.21 +20; Na 123 +20; pH 7.17 +30 = 160",
+   "note_issues": [
+    {
+     "field": "Altered mental status",
+     "issue": "'Recent episode' of altered mental state described at a routine clinic physical; unclear whether AMS is present at presentation. If not counted: -20.",
+     "alternative_score": 140
+    },
+    {
+     "field": "Congestive Heart Failure",
+     "issue": "Only 'heart disease' denied, read as CHF absent; no score change.",
+     "alternative_score": null
+    },
+    {
+     "field": "Hematocrit",
+     "issue": "Hematocrit given without unit (35); % assumed; no score change.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "830",
+   "fields": {
+    "age": {
+     "value": [
+      64,
+      "years"
+     ],
+     "quote": "A 64-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "64-year-old male"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "fever, disorientation ... altered mental status is consistent with potential encephalopathy"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "His history includes renal disease and liver disease"
+    },
+    "Liver disease history": {
+     "value": true,
+     "quote": "His history includes renal disease and liver disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no documented history of heart failure"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "no documented history of ... cerebrovascular disease"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "not currently residing in a nursing home"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "no history of neoplastic disease"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      94,
+      "beats per minute"
+     ],
+     "quote": "Heart rate of 94 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      34,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 34 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      94,
+      "mm Hg"
+     ],
+     "quote": "blood pressure 94/70 mm Hg"
+    },
+    "Temperature": {
+     "value": [
+      38,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 38 degrees celsius"
+    },
+    "Hematocrit": {
+     "value": [
+      37,
+      "%"
+     ],
+     "quote": "hematocrit of 37"
+    },
+    "Glucose": {
+     "value": [
+      251.12,
+      "mg/dL"
+     ],
+     "quote": "glucose level of 251.12 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      26.75,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen levels are relatively high at 26.75 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      128.43,
+      "mmol/L"
+     ],
+     "quote": "sodium level of 128.43 mmol/L"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "PaO2 level of 75 mm Hg"
+    },
+    "pH": {
+     "value": 7.6,
+     "quote": "alkalotic pH level of 7.60"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "chest X-ray reveals the presence of a pleural effusion"
+    }
+   },
+   "score": 174,
+   "score_working": "age 64; renal +10; liver +20; AMS +20; RR 34 +20; glucose 251.12 +10; Na 128.43 +20; effusion +10 = 174",
+   "note_issues": []
+  },
+  {
+   "row": "831",
+   "fields": {
+    "age": {
+     "value": [
+      77,
+      "years"
+     ],
+     "quote": "A 77-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "77-year-old female"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "chronic kidney disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "previous cerebrovascular accident"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "no history of liver disease"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "no history of ... neoplastic disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no history of ... congestive heart failure"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "She is not a nursing home resident"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "has no change in her mental status at present"
+    },
+    "Temperature": {
+     "value": [
+      42,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 42 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      130,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 130 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      34,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 34 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      87,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading of 87/70 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      37,
+      "%"
+     ],
+     "quote": "hematocrit of 37"
+    },
+    "Sodium": {
+     "value": [
+      117,
+      "mmol/L"
+     ],
+     "quote": "sodium level of 117 mmol/L"
+    },
+    "Glucose": {
+     "value": [
+      250.21,
+      "mg/dL"
+     ],
+     "quote": "random blood glucose of 250.21 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      36.75,
+      "mg/dL"
+     ],
+     "quote": "BUN) level is significantly high at 36.75 mg/dL"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      87,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 87 mm Hg"
+    },
+    "pH": {
+     "value": 7.39,
+     "quote": "normal pH at 7.39"
+    },
+    "Pleural effusion on x-ray": {
+     "value": false,
+     "quote": "chest X-ray shows no signs of any pleural effusion"
+    }
+   },
+   "score": 202,
+   "score_working": "age 77; female -10; renal +10; cerebrovascular +10; temp 42C +15; HR 130 +10; RR 34 +20; SBP 87 +20; Na 117 +20; glucose 250.21 +10; BUN 36.75 +20 = 202",
+   "note_issues": [
+    {
+     "field": "Altered mental status",
+     "issue": "Note reports 'confusion over the past week' yet 'no change in her mental status at present'; scored as absent. If confusion counted: +20.",
+     "alternative_score": 222
+    },
+    {
+     "field": "Temperature",
+     "issue": "Temperature of 42 C in an outpatient clinic visit for fatigue is clinically implausible (possible typo); if it were not >39.9 C: -15.",
+     "alternative_score": 187
+    }
+   ]
+  },
+  {
+   "row": "832",
+   "fields": {
+    "age": {
+     "value": [
+      73,
+      "years"
+     ],
+     "quote": "A 73-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "73-year-old female"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "coming from her house"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "She had an altered mental status onset around an hour prior to arrival"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "denies any past medical history of congestive heart failure"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "denies ... renal disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "denies ... cerebrovascular disease"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "denies ... liver disease"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "denies ... or neoplastic disease"
+    },
+    "Temperature": {
+     "value": [
+      36,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 36 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      130,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 130 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      31,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 31 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      140,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 140/90 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      28,
+      "%"
+     ],
+     "quote": "hematocrit of 28"
+    },
+    "Glucose": {
+     "value": [
+      17,
+      "mmol/L"
+     ],
+     "quote": "elevated glucose level of 17 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      28.43,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level of 28.43 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      127,
+      "mmol/L"
+     ],
+     "quote": "Sodium was slightly low at 127 mmol/L"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      59,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 59 mm Hg"
+    },
+    "pH": {
+     "value": 7.81,
+     "quote": "alkalotic pH of 7.81"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "chest X-ray was positive for pleural effusion"
+    }
+   },
+   "score": 173,
+   "score_working": "age 73; female -10; AMS +20; HR 130 +10; RR 31 +20; Hct 28 +10; glucose 17 mmol/L (>=14) +10; Na 127 +20; PaO2 59 +10; effusion +10 = 173",
+   "note_issues": [
+    {
+     "field": "pH",
+     "issue": "pH 7.81 is physiologically extreme (possible typo); no score change either way since not <7.35.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "833",
+   "fields": {
+    "age": {
+     "value": [
+      72,
+      "years"
+     ],
+     "quote": "A 72-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "72-year-old female"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "past medical history of stroke"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "and congestive heart failure"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "She is alert and responsive"
+    },
+    "Temperature": {
+     "value": [
+      37.6,
+      "degrees celsius"
+     ],
+     "quote": "afebrile body temperature of 37.6 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      85,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 85 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 20 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      125,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 125/85 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      39,
+      "%"
+     ],
+     "quote": "hematocrit level of 39 %"
+    },
+    "Glucose": {
+     "value": [
+      122,
+      "mg/dL"
+     ],
+     "quote": "average glucose level of 122 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      22,
+      "mg/dL"
+     ],
+     "quote": "(BUN) level of 22 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      138,
+      "mEq/L"
+     ],
+     "quote": "sodium level is normal at 138 mEq/L"
+    },
+    "pH": {
+     "value": 7.2,
+     "quote": "pH to be 7.2 indicating mild acidemia"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "(PaO₂) is 75 mm Hg"
+    }
+   },
+   "score": 112,
+   "score_working": "age 72; female -10; cerebrovascular +10; CHF +10; pH 7.2 +30 = 112",
+   "note_issues": [
+    {
+     "field": "Renal disease history",
+     "issue": "Kidney disease history 'unclear'; omitted (scored absent). If present: +10.",
+     "alternative_score": 122
+    },
+    {
+     "field": "Liver disease history",
+     "issue": "Liver disease history 'unclear'; omitted (scored absent). If present: +20.",
+     "alternative_score": 132
+    },
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "Chest X-ray could not be reviewed; effusion unknown, scored absent. If present: +10.",
+     "alternative_score": 122
+    },
+    {
+     "field": "pH",
+     "issue": "pH 7.2 described as 'mild acidemia' (it is substantial); value used as written, no score change.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "834",
+   "fields": {
+    "age": {
+     "value": [
+      78,
+      "years"
+     ],
+     "quote": "A 78-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "78-year-old male"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "who lives independently"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "presents to the emergency department with an altered mental status"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "past medical history includes renal disease"
+    },
+    "Neoplastic disease": {
+     "value": true,
+     "quote": "currently under treatment for neoplasia"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "doesn't have a history of any liver disease"
+    },
+    "Temperature": {
+     "value": [
+      99.5,
+      "degrees fahrenheit"
+     ],
+     "quote": "temperature of 99.5 degrees Fahrenheit"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      85,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 85 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      24,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 24 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      115,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 115/75 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      33,
+      "%"
+     ],
+     "quote": "hematocrit of 33%"
+    },
+    "Glucose": {
+     "value": [
+      7.2,
+      "mmol/L"
+     ],
+     "quote": "glucose level of 7.2 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      30,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level of 30 mg/dl"
+    },
+    "Sodium": {
+     "value": [
+      140,
+      "mEq/L"
+     ],
+     "quote": "sodium level is within the normal range at 140 mEq/L"
+    },
+    "pH": {
+     "value": 7.35,
+     "quote": "pH of 7.35"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      70,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 70 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": false,
+     "quote": "chest X-ray does not denote any pleural effusion"
+    }
+   },
+   "score": 158,
+   "score_working": "age 78; AMS +20; renal +10; neoplastic +30; BUN 30 (>=30) +20; pH 7.35 not <7.35 +0 = 158",
+   "note_issues": [
+    {
+     "field": "Congestive Heart Failure",
+     "issue": "'Cardiovascular history could not be ascertained'; CHF (and arguably cerebrovascular disease) unknown, scored absent. CHF present: +10; both: +20.",
+     "alternative_score": 168
+    },
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN exactly 30 mg/dL sits on the >=30 threshold (counted); a strict >30 reading would give -20.",
+     "alternative_score": 138
+    }
+   ]
+  },
+  {
+   "row": "835",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "A 68-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "68-year-old female"
+    },
+    "Nursing home resident": {
+     "value": true,
+     "quote": "who resides in a nursing home"
+    },
+    "Liver disease history": {
+     "value": true,
+     "quote": "known liver disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "not significant for cerebrovascular disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "or congestive heart failure"
+    },
+    "Temperature": {
+     "value": [
+      38.2,
+      "degrees celsius"
+     ],
+     "quote": "body temperature is 38.2 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      110,
+      "beats per minute"
+     ],
+     "quote": "heart rate is 110 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      16,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate is 16 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      135,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is 135/90 mm Hg"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "She shows no signs of altered mental status"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "hematocrit of 41 %"
+    },
+    "Glucose": {
+     "value": [
+      165,
+      "mg/dL"
+     ],
+     "quote": "glucose level at 165 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      15,
+      "mg/dL"
+     ],
+     "quote": "(BUN) is within normal range at 15 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      132,
+      "mEq/L"
+     ],
+     "quote": "sodium at slightly low at 132 mEq/L"
+    },
+    "pH": {
+     "value": 7.48,
+     "quote": "pH of 7.48"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      92,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 92 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "chest X-ray reveals the presence of pleural effusion"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "does not have any history of renal conditions"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "or neoplastic diseases"
+    }
+   },
+   "score": 98,
+   "score_working": "age 68; female -10; nursing home +10; liver +20; effusion +10 = 98",
+   "note_issues": []
+  },
+  {
+   "row": "836",
+   "fields": {
+    "age": {
+     "value": [
+      80,
+      "years"
+     ],
+     "quote": "An 80-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "80-year-old male"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "not a nursing home resident"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "presents ... with fever and an altered mental status"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "documented history of congestive heart failure"
+    },
+    "Neoplastic disease": {
+     "value": true,
+     "quote": "currently under treatment for neoplastic disease"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "do not list renal disease"
+    },
+    "Temperature": {
+     "value": [
+      100.2,
+      "degrees fahrenheit"
+     ],
+     "quote": "body temperature of 100.2 degrees Fahrenheit"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      90,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 90 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      140,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 140/85 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      38,
+      "%"
+     ],
+     "quote": "hematocrit of 38 %"
+    },
+    "Glucose": {
+     "value": [
+      6.0,
+      "mmol/L"
+     ],
+     "quote": "glucose level of 6.0 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      18,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level is found to be 18 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      135,
+      "mEq/L"
+     ],
+     "quote": "sodium level is within normal limits at 135 mEq/L"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      60,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 60 mm Hg"
+    },
+    "pH": {
+     "value": 7.28,
+     "quote": "pH of 7.28"
+    }
+   },
+   "score": 170,
+   "score_working": "age 80; AMS +20; CHF +10; neoplastic +30; pH 7.28 +30; PaO2 60 not <60 +0 = 170",
+   "note_issues": [
+    {
+     "field": "Liver disease history",
+     "issue": "Liver disease history could not be obtained; scored absent. If present: +20.",
+     "alternative_score": 190
+    },
+    {
+     "field": "Cerebrovascular disease history",
+     "issue": "Cerebrovascular history could not be obtained; scored absent. If present: +10.",
+     "alternative_score": 180
+    },
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "No chest X-ray reported; effusion unknown, scored absent. If present: +10.",
+     "alternative_score": 180
+    },
+    {
+     "field": "Partial pressure of oxygen",
+     "issue": "PaO2 exactly 60 mm Hg is at the <60 threshold (not counted).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "837",
+   "fields": {
+    "age": {
+     "value": [
+      75,
+      "years"
+     ],
+     "quote": "A 75-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "75-year-old woman"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "history of a prior stroke"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "no known incidents of congestive heart failure"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "no existing kidney ailments"
+    },
+    "Temperature": {
+     "value": [
+      36.6,
+      "degrees celsius"
+     ],
+     "quote": "standard body temperature of 36.6 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      105,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 105 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      22,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 22 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading of 120/85 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      42,
+      "%"
+     ],
+     "quote": "hematocrit of 42 %"
+    },
+    "Sodium": {
+     "value": [
+      137,
+      "mEq/L"
+     ],
+     "quote": "sodium level of 137 mEq/L"
+    },
+    "Glucose": {
+     "value": [
+      95,
+      "mg/dL"
+     ],
+     "quote": "glucose level of 95 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      24,
+      "mg/dL"
+     ],
+     "quote": "(BUN) of 24 mg/dL"
+    },
+    "pH": {
+     "value": 7.4,
+     "quote": "pH of 7.40"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 80 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "chest X-ray shows the presence of pleural effusion"
+    }
+   },
+   "score": 85,
+   "score_working": "age 75; female -10; cerebrovascular +10; effusion +10 = 85",
+   "note_issues": [
+    {
+     "field": "Nursing home resident",
+     "issue": "Routine clinic checkup; residence, liver disease, neoplastic disease and mental status not stated (scored absent). Not a clear pneumonia admission.",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "838",
+   "fields": {
+    "age": {
+     "value": [
+      67,
+      "years"
+     ],
+     "quote": "A 67-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "67-year-old male"
+    },
+    "Nursing home resident": {
+     "value": true,
+     "quote": "residing in a nursing home"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "brought to the ER due to recent episodes of confusion"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "chronic renal disease"
+    },
+    "Liver disease history": {
+     "value": true,
+     "quote": "and liver illness"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "doesn't have any known history of congestive heart failure"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 130/90 mm Hg"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      100,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 100 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      24,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate at a steady 24 breaths per minute"
+    },
+    "Temperature": {
+     "value": [
+      98.6,
+      "degrees fahrenheit"
+     ],
+     "quote": "body temperature holding at a normal 98.6 degrees Fahrenheit"
+    },
+    "Hematocrit": {
+     "value": [
+      37,
+      "%"
+     ],
+     "quote": "hematocrit level of 37 %"
+    },
+    "Sodium": {
+     "value": [
+      134,
+      "mEq/L"
+     ],
+     "quote": "sodium concentration at 134 mEq/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      28,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level elevated at 28 mg/dL"
+    },
+    "Glucose": {
+     "value": [
+      150,
+      "mg/dL"
+     ],
+     "quote": "glucose level at 150 mg/dL"
+    },
+    "pH": {
+     "value": 7.32,
+     "quote": "slightly decreased pH of 7.32"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      88,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 88 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": false,
+     "quote": "absence of pleural effusion"
+    }
+   },
+   "score": 157,
+   "score_working": "age 67; nursing home +10; AMS +20; renal +10; liver +20; pH 7.32 +30 = 157",
+   "note_issues": [
+    {
+     "field": "Altered mental status",
+     "issue": "'Recent episodes of confusion' prompted the ER visit, but mental status on exam is not documented; if not present at presentation: -20.",
+     "alternative_score": 137
+    }
+   ]
+  },
+  {
+   "row": "839",
+   "fields": {
+    "age": {
+     "value": [
+      70,
+      "years"
+     ],
+     "quote": "A 70-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "70-year-old female"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "recent discharge from the hospital due to congestion heart failure"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "previous cerebrovascular accident"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "no evidence of neoplastic disease"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "or liver disease"
+    },
+    "Temperature": {
+     "value": [
+      36.8,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 36.8 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      80,
+      "beats per minute"
+     ],
+     "quote": "heart rhythm showing 80 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      19,
+      "breaths per minute"
+     ],
+     "quote": "breathing rate counted at 19 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      140,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading of 140/85 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      44,
+      "%"
+     ],
+     "quote": "hematocrit of 44 %"
+    },
+    "Glucose": {
+     "value": [
+      4.8,
+      "mmol/L"
+     ],
+     "quote": "glucose level of 4.8 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      26,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen of 26 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      135,
+      "mEq/L"
+     ],
+     "quote": "Sodium levels are normal at 135 mEq/L"
+    },
+    "pH": {
+     "value": 7.36,
+     "quote": "pH at 7.36"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      77,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 77 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "Chest X-ray indicates the presence of a pleural effusion"
+    }
+   },
+   "score": 90,
+   "score_working": "age 70; female -10; CHF +10; cerebrovascular +10; effusion +10 = 90",
+   "note_issues": [
+    {
+     "field": "Nursing home resident",
+     "issue": "Outpatient follow-up; residence, renal disease and mental status not stated (scored absent).",
+     "alternative_score": null
+    }
+   ]
+  },
+  {
+   "row": "840",
+   "fields": {
+    "age": {
+     "value": [
+      76,
+      "years"
+     ],
+     "quote": "A 76-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "76-year-old male"
+    },
+    "Nursing home resident": {
+     "value": true,
+     "quote": "resident of a nursing home"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "history of renal disease"
+    },
+    "Neoplastic disease": {
+     "value": true,
+     "quote": "undergoing treatment for neoplastic disease"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "exhibits no signs of cognitive impairment"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "doesn't highlight any history of heart disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "or stroke"
+    },
+    "Temperature": {
+     "value": [
+      98.4,
+      "degrees fahrenheit"
+     ],
+     "quote": "stable 98.4 degrees Fahrenheit"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      92,
+      "beats per minute"
+     ],
+     "quote": "heart rate is at 92 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      21,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate is 21 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      150,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is found to be 150/90 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      36,
+      "%"
+     ],
+     "quote": "hematocrit level of 36 %"
+    },
+    "Glucose": {
+     "value": [
+      120,
+      "mg/dL"
+     ],
+     "quote": "glucose level of 120 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      23,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level of 23 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      143,
+      "mEq/L"
+     ],
+     "quote": "Sodium readings are robust coming in at 143 mEq/L"
+    },
+    "pH": {
+     "value": 7.44,
+     "quote": "pH value of 7.44"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      68,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 68 mm Hg"
+    }
+   },
+   "score": 126,
+   "score_working": "age 76; nursing home +10; renal +10; neoplastic +30 = 126",
+   "note_issues": [
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "No chest X-ray reported; effusion unknown, scored absent. If present: +10.",
+     "alternative_score": 136
+    }
+   ]
+  },
+  {
+   "row": "841",
+   "fields": {
+    "age": {
+     "value": [
+      68,
+      "years"
+     ],
+     "quote": "A 68-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "68-year-old female"
+    },
+    "Nursing home resident": {
+     "value": true,
+     "quote": "resident of a nearby nursing home"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "brought to the emergency department due to alterations in her mental status"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "no previous record of renal disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "congestive heart failure"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "or cancer"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      88,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 88 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      22,
+      "breaths per minute"
+     ],
+     "quote": "respiratory pace of 22 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      130,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 130/80 mm Hg"
+    },
+    "Temperature": {
+     "value": [
+      37.4,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 37.4 degrees celsius"
+    },
+    "Hematocrit": {
+     "value": [
+      40,
+      "%"
+     ],
+     "quote": "hematocrit is at 40 %"
+    },
+    "Glucose": {
+     "value": [
+      7.1,
+      "mmol/L"
+     ],
+     "quote": "glucose reading stands at 7.1 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      25,
+      "mg/dL"
+     ],
+     "quote": "(BUN) reaching 25 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      142,
+      "mEq/L"
+     ],
+     "quote": "sodium level measures within the normal range at 142 mEq/L"
+    },
+    "pH": {
+     "value": 7.38,
+     "quote": "pH of 7.38"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      82,
+      "mm Hg"
+     ],
+     "quote": "partial pressure of oxygen at 82 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "chest X-ray revealed the presence of pleural effusion"
+    }
+   },
+   "score": 98,
+   "score_working": "age 68; female -10; nursing home +10; AMS +20; effusion +10 = 98",
+   "note_issues": []
+  },
+  {
+   "row": "842",
+   "fields": {
+    "age": {
+     "value": [
+      80,
+      "years"
+     ],
+     "quote": "An 80-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "80-year-old male"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "chronic kidney disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "previous cerebrovascular accident"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "history of congestive heart failure"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "no known neoplastic conditions"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "or liver illness"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      110,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 110 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 20 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 120/80 mm Hg"
+    },
+    "Temperature": {
+     "value": [
+      38.2,
+      "degrees celsius"
+     ],
+     "quote": "temperature of 38.2 degrees celsius"
+    },
+    "Hematocrit": {
+     "value": [
+      41,
+      "%"
+     ],
+     "quote": "hematocrit level of 41 %"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      30,
+      "mg/dL"
+     ],
+     "quote": "Blood Urea Nitrogen value at 30 mg/dL"
+    },
+    "Glucose": {
+     "value": [
+      105,
+      "mg/dL"
+     ],
+     "quote": "glucose of 105 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      139,
+      "mEq/L"
+     ],
+     "quote": "sodium level at 139 mEq/L"
+    },
+    "pH": {
+     "value": 7.46,
+     "quote": "pH at 7.46"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      90,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 90 mm Hg"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "He currently lives at home with his son"
+    }
+   },
+   "score": 130,
+   "score_working": "age 80; renal +10; cerebrovascular +10; CHF +10; BUN 30 (>=30) +20 = 130",
+   "note_issues": [
+    {
+     "field": "Blood Urea Nitrogen (BUN)",
+     "issue": "BUN exactly 30 mg/dL at the >=30 threshold (counted); strict >30 reading gives -20.",
+     "alternative_score": 110
+    },
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "No chest X-ray or mental status reported; scored absent. Effusion present: +10.",
+     "alternative_score": 140
+    }
+   ]
+  },
+  {
+   "row": "843",
+   "fields": {
+    "age": {
+     "value": [
+      74,
+      "years"
+     ],
+     "quote": "A 74-year-old woman"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "74-year-old woman"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "living independently"
+    },
+    "Liver disease history": {
+     "value": true,
+     "quote": "known history of liver disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "denies any past heart failure"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "or prior strokes"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "her mental status appears undisturbed"
+    },
+    "Temperature": {
+     "value": [
+      99.5,
+      "degrees fahrenheit"
+     ],
+     "quote": "body temperature at 99.5 degrees Fahrenheit"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      115,
+      "beats per minute"
+     ],
+     "quote": "elevated heart rate at 115 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      110,
+      "mm Hg"
+     ],
+     "quote": "blood pressure at 110/75 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      37,
+      "%"
+     ],
+     "quote": "hematocrit of 37 %"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      28,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen at 28 mg/dL"
+    },
+    "Glucose": {
+     "value": [
+      6.4,
+      "mmol/L"
+     ],
+     "quote": "glucose at 6.4 mmol/L"
+    },
+    "Sodium": {
+     "value": [
+      136,
+      "mEq/L"
+     ],
+     "quote": "sodium at the upper normal limit at 136 mEq/L"
+    },
+    "pH": {
+     "value": 7.42,
+     "quote": "pH of 7.42"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      84,
+      "mm Hg"
+     ],
+     "quote": "PaO2 at 84 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "chest X-ray demonstrates presence of pleural effusion"
+    }
+   },
+   "score": 94,
+   "score_working": "age 74; female -10; liver +20; effusion +10 = 94",
+   "note_issues": [
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "Effusion is on a 'recent' chest X-ray, not explicitly one taken at this presentation; if excluded: -10.",
+     "alternative_score": 84
+    }
+   ]
+  },
+  {
+   "row": "844",
+   "fields": {
+    "age": {
+     "value": [
+      79,
+      "years"
+     ],
+     "quote": "A 79-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "79-year-old male"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "lives independently at home"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "he is A&Ox2 (but not to year or situation)"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "medical history includes renal disease"
+    },
+    "Neoplastic disease": {
+     "value": true,
+     "quote": "an active neoplastic condition"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "no records of cerebrovascular disease"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "congestive heart failure"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "or liver disease"
+    },
+    "Temperature": {
+     "value": [
+      37.0,
+      "degrees celsius"
+     ],
+     "quote": "body temperature registers at 37.0 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      95,
+      "beats per minute"
+     ],
+     "quote": "heart rate is measured at 95 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      24,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate is regular at 24 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      115,
+      "mm Hg"
+     ],
+     "quote": "blood pressure is noted to be 115/70 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      36,
+      "%"
+     ],
+     "quote": "hematocrit level of 36 %"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      35,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen concentration of 35 mg/dL"
+    },
+    "Glucose": {
+     "value": [
+      8.0,
+      "mmol/L"
+     ],
+     "quote": "glucose level of 8.0 mmol/L"
+    },
+    "Sodium": {
+     "value": [
+      141,
+      "mEq/L"
+     ],
+     "quote": "Sodium level in his blood is found to be 141 mEq/L"
+    },
+    "pH": {
+     "value": 7.34,
+     "quote": "pH of 7.34"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 75 mm Hg"
+    }
+   },
+   "score": 189,
+   "score_working": "age 79; AMS +20; renal +10; neoplastic +30; BUN 35 +20; pH 7.34 +30 = 189",
+   "note_issues": [
+    {
+     "field": "pH",
+     "issue": "pH 7.34 described as 'within normal limits' but is <7.35 (scored +30). If treated as normal: -30.",
+     "alternative_score": 159
+    },
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "No chest X-ray reported; effusion unknown, scored absent. If present: +10.",
+     "alternative_score": 199
+    }
+   ]
+  },
+  {
+   "row": "845",
+   "fields": {
+    "age": {
+     "value": [
+      75,
+      "years"
+     ],
+     "quote": "A 75-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "75-year-old female"
+    },
+    "Nursing home resident": {
+     "value": true,
+     "quote": "residing in a nursing home"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "past history of congestive heart failure"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "no known liver disease"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "or neoplastic conditions"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "finds her mentally alert"
+    },
+    "Temperature": {
+     "value": [
+      36.5,
+      "degrees celsius"
+     ],
+     "quote": "body temperature reading of 36.5 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      82,
+      "beats per minute"
+     ],
+     "quote": "pulse rate of 82 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      22,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 22 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      128,
+      "mm Hg"
+     ],
+     "quote": "blood pressure measuring at 128/80 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      39,
+      "%"
+     ],
+     "quote": "hematocrit at 39 %"
+    },
+    "Glucose": {
+     "value": [
+      180,
+      "mg/dL"
+     ],
+     "quote": "glucose elevated to 180 mg/dL"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      27,
+      "mg/dL"
+     ],
+     "quote": "(BUN) slightly high at 27 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      139,
+      "mEq/L"
+     ],
+     "quote": "sodium within normal limits at 139 mEq/L"
+    },
+    "pH": {
+     "value": 7.4,
+     "quote": "pH of 7.40"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      80,
+      "mm Hg"
+     ],
+     "quote": "PaO2 at 80 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "Chest X-rays show indications of pleural effusion"
+    }
+   },
+   "score": 95,
+   "score_working": "age 75; female -10; nursing home +10; CHF +10; effusion +10 = 95",
+   "note_issues": []
+  },
+  {
+   "row": "846",
+   "fields": {
+    "age": {
+     "value": [
+      71,
+      "years"
+     ],
+     "quote": "A 71-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "71-year-old male"
+    },
+    "Renal disease history": {
+     "value": true,
+     "quote": "history of chronic kidney disease"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "a prior stroke in 2018"
+    },
+    "Congestive Heart Failure": {
+     "value": true,
+     "quote": "an active diagnosis of congestive heart failure"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "exhibits no sign of altered mental status today"
+    },
+    "Temperature": {
+     "value": [
+      37.8,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 37.8 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      105,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 105 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      19,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 19 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      140,
+      "mm Hg"
+     ],
+     "quote": "blood pressure reading at 140/80 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      45,
+      "%"
+     ],
+     "quote": "hematocrit level of 45 %"
+    },
+    "Glucose": {
+     "value": [
+      7.2,
+      "mmol/L"
+     ],
+     "quote": "glucose level of 7.2 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      22,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen concentration of 22 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      133,
+      "mEq/L"
+     ],
+     "quote": "Sodium level is slightly low at 133 mEq/L"
+    },
+    "pH": {
+     "value": 7.37,
+     "quote": "pH of 7.37"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      75,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 75 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": false,
+     "quote": "chest x-ray from the previous consultation was without any abnormalities"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "no past history of liver disease"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "or neoplastic diseases"
+    }
+   },
+   "score": 101,
+   "score_working": "age 71; renal +10; cerebrovascular +10; CHF +10 = 101",
+   "note_issues": [
+    {
+     "field": "Nursing home resident",
+     "issue": "Living situation 'not recorded'; scored not nursing home. If nursing home: +10.",
+     "alternative_score": 111
+    },
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "Only a chest X-ray from a previous consultation is reported (no current film); effusion at presentation unknown. If present: +10.",
+     "alternative_score": 111
+    }
+   ]
+  },
+  {
+   "row": "847",
+   "fields": {
+    "age": {
+     "value": [
+      77,
+      "years"
+     ],
+     "quote": "A 77-year-old female"
+    },
+    "sex": {
+     "value": "Female",
+     "quote": "77-year-old female"
+    },
+    "Nursing home resident": {
+     "value": false,
+     "quote": "living in her own home"
+    },
+    "Altered mental status": {
+     "value": false,
+     "quote": "she appears alert and well-oriented"
+    },
+    "Neoplastic disease": {
+     "value": false,
+     "quote": "significant for prior breast cancer"
+    },
+    "Liver disease history": {
+     "value": false,
+     "quote": "no record of liver"
+    },
+    "Renal disease history": {
+     "value": false,
+     "quote": "renal"
+    },
+    "Cerebrovascular disease history": {
+     "value": false,
+     "quote": "or cerebrovascular diseases"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "or congestive heart failure"
+    },
+    "Temperature": {
+     "value": [
+      98.6,
+      "degrees fahrenheit"
+     ],
+     "quote": "temperature at 98.6 degrees Fahrenheit"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      78,
+      "beats per minute"
+     ],
+     "quote": "heart rate counted at 78 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      18,
+      "breaths per minute"
+     ],
+     "quote": "breathing rate of 18 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      135,
+      "mm Hg"
+     ],
+     "quote": "blood pressure level of 135/85 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      42,
+      "%"
+     ],
+     "quote": "hematocrit is at 42 %"
+    },
+    "Glucose": {
+     "value": [
+      6.9,
+      "mmol/L"
+     ],
+     "quote": "blood glucose level of 6.9 mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      20,
+      "mg/dL"
+     ],
+     "quote": "(BUN) value is 20 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      140,
+      "mEq/L"
+     ],
+     "quote": "sodium is within the normal range at 140 mEq/L"
+    },
+    "pH": {
+     "value": 7.45,
+     "quote": "pH of 7.45"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      78,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 78 mm Hg"
+    }
+   },
+   "score": 67,
+   "score_working": "age 77; female -10; prior (non-active) breast cancer +0 = 67",
+   "note_issues": [
+    {
+     "field": "Neoplastic disease",
+     "issue": "'Prior breast cancer' with no date or activity stated; Fine 1997 counts only active or diagnosed within the past year, so scored absent. If counted: +30.",
+     "alternative_score": 97
+    },
+    {
+     "field": "Pleural effusion on x-ray",
+     "issue": "Chest X-ray not available; effusion unknown, scored absent. If present: +10.",
+     "alternative_score": 77
+    }
+   ]
+  },
+  {
+   "row": "848",
+   "fields": {
+    "age": {
+     "value": [
+      73,
+      "years"
+     ],
+     "quote": "A 73-year-old male"
+    },
+    "sex": {
+     "value": "Male",
+     "quote": "73-year-old male"
+    },
+    "Altered mental status": {
+     "value": true,
+     "quote": "Mental status on physical exam reveals only A&Ox2"
+    },
+    "Cerebrovascular disease history": {
+     "value": true,
+     "quote": "a prior stroke"
+    },
+    "Liver disease history": {
+     "value": true,
+     "quote": "and MASH"
+    },
+    "Congestive Heart Failure": {
+     "value": false,
+     "quote": "the patient has no reported heart failure"
+    },
+    "Temperature": {
+     "value": [
+      36.3,
+      "degrees celsius"
+     ],
+     "quote": "body temperature of 36.3 degrees celsius"
+    },
+    "Heart Rate or Pulse": {
+     "value": [
+      90,
+      "beats per minute"
+     ],
+     "quote": "heart rate of 90 beats per minute"
+    },
+    "respiratory rate": {
+     "value": [
+      20,
+      "breaths per minute"
+     ],
+     "quote": "respiratory rate of 20 breaths per minute"
+    },
+    "Systolic Blood Pressure": {
+     "value": [
+      120,
+      "mm Hg"
+     ],
+     "quote": "blood pressure of 120/80 mm Hg"
+    },
+    "Hematocrit": {
+     "value": [
+      39,
+      "%"
+     ],
+     "quote": "hematocrit level of 39 %"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+     "value": [
+      24,
+      "mg/dL"
+     ],
+     "quote": "blood urea nitrogen level of 24 mg/dL"
+    },
+    "Glucose": {
+     "value": [
+      115,
+      "mg/dL"
+     ],
+     "quote": "glucose value of 115 mg/dL"
+    },
+    "Sodium": {
+     "value": [
+      137,
+      "mEq/L"
+     ],
+     "quote": "sodium level is at 137 mEq/L"
+    },
+    "pH": {
+     "value": 7.48,
+     "quote": "pH of 7.48"
+    },
+    "Partial pressure of oxygen": {
+     "value": [
+      72,
+      "mm Hg"
+     ],
+     "quote": "PaO2 of 72 mm Hg"
+    },
+    "Pleural effusion on x-ray": {
+     "value": true,
+     "quote": "recent chest X-ray was marked by the presence of pleural effusion"
+    }
+   },
+   "score": 133,
+   "score_working": "age 73; AMS +20; cerebrovascular +10; liver (MASH) +20; effusion +10 = 133",
+   "note_issues": [
+    {
+     "field": "Nursing home resident",
+     "issue": "Residency status 'not clearly mentioned'; scored not nursing home. If nursing home: +10.",
+     "alternative_score": 143
+    },
+    {
+     "field": "Renal disease history",
+     "issue": "'No mention' of renal or neoplastic disease (not an explicit denial); omitted and scored absent.",
+     "alternative_score": null
+    }
+   ]
+  }
+ ]
+}

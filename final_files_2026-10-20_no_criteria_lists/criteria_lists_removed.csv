@@ -1,0 +1,2166 @@
+File,Row Number,Calculator ID,Calculator Name,Removed,New start
+test_data_final.csv,41,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 38 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,42,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 68 years old. Because the age is between 65 and 74, one point added "
+test_data_final.csv,43,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 86 years old. Because the age is greater than 74, two points added t"
+test_data_final.csv,44,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 68 years old. Because the age is between 65 and 74, one point added "
+test_data_final.csv,45,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 75 years old. Because the age is greater than 74, two points added t"
+test_data_final.csv,46,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 56 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,47,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 21 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,48,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 75 years old. Because the age is greater than 74, two points added t"
+test_data_final.csv,49,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 90.0 years old. Because the age is greater than 74, two points added"
+test_data_final.csv,50,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 55 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 63 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,52,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 59 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,53,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 78 years old. Because the age is greater than 74, two points added t"
+test_data_final.csv,54,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 64 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,55,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 57 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,56,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 62 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,57,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 73 years old. Because the age is between 65 and 74, one point added "
+test_data_final.csv,58,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 76 years old. Because the age is greater than 74, two points added t"
+test_data_final.csv,59,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 42 years old. Because the age is less than 65 years, no points are a"
+test_data_final.csv,60,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 83 years old. Because the age is greater than 74, two points added t"
+test_data_final.csv,121,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,122,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,123,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,124,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are reported to be present an"
+test_data_final.csv,125,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,126,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,127,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,128,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,129,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,130,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,131,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,132,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are reported to be present an"
+test_data_final.csv,133,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,134,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,135,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,136,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,137,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are repoted to be absent and "
+test_data_final.csv,138,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,139,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,140,8,Wells' Criteria for Pulmonary Embolism,"The criteria for the Wells' Criteria for Pulmonary Embolism score are listed below:
+
+1. Clinical signs and symptoms of DVT: No = 0 points, Yes = +3 points
+2. PE is #1 diagnosis OR equally likely: No =","The Well's score for pulmonary embolism is currently 0.
+Clinical signs and symptoms of DVT are not reported and so we as"
+test_data_final.csv,201,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.1. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,202,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.2. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,203,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.1. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,204,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.4. Because the INR is greater than 2.3, we add three to the sc"
+test_data_final.csv,205,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.8. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,206,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.5. Because the INR is less than 1.7, we add 1 to the score, ma"
+test_data_final.csv,207,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.3. Because the INR is less than 1.7, we add 1 to the score, ma"
+test_data_final.csv,208,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.7. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,209,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.0. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,210,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.9. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,211,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.4. Because the INR is less than 1.7, we add 1 to the score, ma"
+test_data_final.csv,212,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.6. Because the INR is less than 1.7, we add 1 to the score, ma"
+test_data_final.csv,213,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.5. Because the INR is less than 1.7, we add 1 to the score, ma"
+test_data_final.csv,214,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.2. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,215,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.9. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,216,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.1. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,217,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.7. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,218,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.0. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,219,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.6. Because the INR is less than 1.7, we add 1 to the score, ma"
+test_data_final.csv,220,15,Child-Pugh Score for Cirrhosis Mortality,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 1.8. Because the INR is between 1.7 and 2.3, we add two to the s"
+test_data_final.csv,221,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,222,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,223,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,224,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,225,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,226,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,227,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is present. Hence, a point s"
+test_data_final.csv,228,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,229,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,230,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is present. Hence, a point s"
+test_data_final.csv,231,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,232,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is present. Hence, a point s"
+test_data_final.csv,233,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,234,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,235,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,236,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,237,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is present. Hence, a point s"
+test_data_final.csv,238,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is present. Hence, a point s"
+test_data_final.csv,239,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,240,16,Wells' Criteria for DVT,"The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:
+
+1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point
+2. Bedridden rece","The current Well's DVT Score is 0.
+From the patient's note, the criterion, 'active cancer,' is absent. Hence, a point sh"
+test_data_final.csv,241,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,242,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,243,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,244,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,245,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,246,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,247,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,248,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,249,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,250,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,251,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,252,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,253,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,254,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,255,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,256,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,257,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,258,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,259,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be absent for "
+test_data_final.csv,260,17,Revised Cardiac Risk Index for Pre-Operative Risk,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+test_data_final.csv,261,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,262,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,263,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,264,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,265,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,266,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,267,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,268,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,269,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Highly suspicious'. Base"
+test_data_final.csv,270,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,271,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,272,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Moderately suspicious'. "
+test_data_final.csv,273,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Highly suspicious'. Base"
+test_data_final.csv,274,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,275,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Moderately suspicious'. "
+test_data_final.csv,276,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Highly suspicious'. Base"
+test_data_final.csv,277,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,278,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+test_data_final.csv,279,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Highly suspicious'. Base"
+test_data_final.csv,280,18,HEART Score for Major Cardiac Events,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Moderately suspicious'. "
+test_data_final.csv,301,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 15.0 years old. Because the age is in between 15 and 44 years, the score d"
+test_data_final.csv,302,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+This means that the patient is 1.0 year and 2.0 oldThe patient's temperature is 38.4 degr"
+test_data_final.csv,303,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 4 years old. Because the age is between 3 and 14 years, we add one point t"
+test_data_final.csv,304,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 29.0 years old. Because the age is in between 15 and 44 years, the score d"
+test_data_final.csv,305,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 14 years old. Because the age is between 3 and 14 years, we add one point "
+test_data_final.csv,306,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 32 years old. Because the age is in between 15 and 44 years, the score doe"
+test_data_final.csv,307,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 68.0 years old. Because the age is greater than 44 years, we decrease the "
+test_data_final.csv,308,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 19 years old. Because the age is in between 15 and 44 years, the score doe"
+test_data_final.csv,309,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 14 years old. Because the age is between 3 and 14 years, we add one point "
+test_data_final.csv,310,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 32 years old. Because the age is in between 15 and 44 years, the score doe"
+test_data_final.csv,311,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 16.0 years old. Because the age is in between 15 and 44 years, the score d"
+test_data_final.csv,312,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 17 years old. Because the age is in between 15 and 44 years, the score doe"
+test_data_final.csv,313,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 59 years old. Because the age is greater than 44 years, we decrease the sc"
+test_data_final.csv,314,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 64 years old. Because the age is greater than 44 years, we decrease the sc"
+test_data_final.csv,315,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 8.0 years old. Because the age is between 3 and 14 years, we add one point"
+test_data_final.csv,316,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 16 years old. Because the age is in between 15 and 44 years, the score doe"
+test_data_final.csv,317,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 6 years old. Because the age is between 3 and 14 years, we add one point t"
+test_data_final.csv,318,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 66.0 years old. Because the age is greater than 44 years, we decrease the "
+test_data_final.csv,319,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 7 years old. Because the age is between 3 and 14 years, we add one point t"
+test_data_final.csv,320,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 57.0 years old. Because the age is greater than 44 years, we decrease the "
+test_data_final.csv,346,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 22.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,347,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 72.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,348,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 57.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,349,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 33.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,350,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 75.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,351,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 58.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,352,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 67.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,353,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 82.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,354,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 72.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,355,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 65.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,356,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 78.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,357,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 85.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,358,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 62.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,359,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 70.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,360,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 52.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,361,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 59.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,362,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 61.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,363,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 65.0 years old. Because the patient's age is less than 66 years, we don'"
+test_data_final.csv,364,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 70.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,365,25,HAS-BLED Score for Major Bleeding Risk,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 80.0 years old. Because the patient's age is greater than 65 years, we i"
+test_data_final.csv,386,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 13.0 g/dL. B"
+test_data_final.csv,387,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 14.0 g/dL. Bec"
+test_data_final.csv,388,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 14.0 g/dL. Bec"
+test_data_final.csv,389,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 10.4 g/dL. B"
+test_data_final.csv,390,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 13.0 g/dL. Bec"
+test_data_final.csv,391,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 12.0 g/dL. B"
+test_data_final.csv,392,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 10.0 g/dL. Bec"
+test_data_final.csv,393,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 14.0 g/dL. Bec"
+test_data_final.csv,394,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 11.0 g/dL. B"
+test_data_final.csv,395,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 9.0 g/dL. Be"
+test_data_final.csv,396,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 15.0 g/dL. Bec"
+test_data_final.csv,397,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 14.5 g/dL. Bec"
+test_data_final.csv,398,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 11.5 g/dL. B"
+test_data_final.csv,399,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 16.0 g/dL. Bec"
+test_data_final.csv,400,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 12.0 g/dL. B"
+test_data_final.csv,401,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 9.5 g/dL. Be"
+test_data_final.csv,402,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 14.2 g/dL. Bec"
+test_data_final.csv,403,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 12.5 g/dL. Bec"
+test_data_final.csv,404,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Female.
+The concentration of hemoglobin is 13.0 g/dL. B"
+test_data_final.csv,405,27,Glasgow-Blatchford Bleeding Score (GBS),"The criteria for the Glasgow-Blatchford Score are listed below:
+
+1. BUN (mg/dL): <18.2 = 0 points, 18.2-22.3 = +2 points, 22.4-28 = +3 points, 28-70 = +4 points, >70 = +6 points
+2. Hemoglobin (g/dL) f","The current glasgow bleeding score is 0. The patient's gender is Male.
+The concentration of hemoglobin is 10.2 g/dL. Bec"
+test_data_final.csv,428,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 60.0 years old. Because the patient's age is between 60 and 69, we add 2 p"
+test_data_final.csv,429,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 75.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,430,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 58 years old. Because the patient's age is between 50 and 59, we add 1 poi"
+test_data_final.csv,431,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 55.0 years old. Because the patient's age is between 50 and 59, we add 1 p"
+test_data_final.csv,432,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 72.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,433,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 72.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,434,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 68.0 years old. Because the patient's age is between 60 and 69, we add 2 p"
+test_data_final.csv,435,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 80.0 years old. Because the patient's age is greater than or equal to 80 y"
+test_data_final.csv,436,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 55.0 years old. Because the patient's age is between 50 and 59, we add 1 p"
+test_data_final.csv,437,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 60.0 years old. Because the patient's age is between 60 and 69, we add 2 p"
+test_data_final.csv,438,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 65.0 years old. Because the patient's age is between 60 and 69, we add 2 p"
+test_data_final.csv,439,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 75.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,440,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 85.0 years old. Because the patient's age is greater than or equal to 80 y"
+test_data_final.csv,441,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 78.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,442,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 70.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,443,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 88.0 years old. Because the patient's age is greater than or equal to 80 y"
+test_data_final.csv,444,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 90.0 years old. Because the patient's age is greater than or equal to 80 y"
+test_data_final.csv,445,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 82.0 years old. Because the patient's age is greater than or equal to 80 y"
+test_data_final.csv,446,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 79.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,447,32,Charlson Comorbidity Index (CCI),"The Charlson Comorbidity Index (CCI) are listed below:
+
+1. Age: <50 years = 0 points, 50-59 years = +1 point, 60-69 years = +2 points, 70-79 years = +3 points, ≥80 years = +4 points
+2. Myocardial infa","The current CCI is value is 0.
+The patient is 76.0 years old. Because the patient's age is between 70 and 79, we add 3 p"
+test_data_final.csv,448,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,449,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,450,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so "
+test_data_final.csv,451,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,452,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so "
+test_data_final.csv,453,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,454,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,455,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,456,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so "
+test_data_final.csv,457,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,458,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,459,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,460,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,461,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so "
+test_data_final.csv,462,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,463,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,464,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,465,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+Whether the patient has a fever in the past 24 hours is not reported and so "
+test_data_final.csv,466,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to not have a fever in the past 24 hours and so we d"
+test_data_final.csv,467,33,FeverPAIN Score for Strep Pharyngitis,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+test_data_final.csv,533,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 57.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,534,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 76.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,535,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 63.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,536,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 78.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,537,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 78.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,538,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 70.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,539,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 65.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,540,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 27.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,541,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 60.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,542,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 37.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,543,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 73.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,544,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 32.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,545,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 78.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,546,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 44.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,547,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 85.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,548,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 61.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,549,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 41.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,550,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 68.0 years old. The patient's age is greater than or equal to 6"
+test_data_final.csv,551,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 62.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,552,45,CURB-65 Score for Pneumonia Severity,"The CURB-65 Score criteria are listed below:
+
+1. Confusion: No = 0 points, Yes = +1 point
+2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point
+3. Respiratory Rate ≥30: No = 0 points, Yes =","The CURB-65 score is current at 0 points.
+The patient is 50.0 years old. The patient's age is less than 65 years, and so"
+test_data_final.csv,569,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 61.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,570,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 48 years old. The patient's age is less than 50 years, and s"
+test_data_final.csv,571,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 35.0 years old. The patient's age is less than 50 years, and"
+test_data_final.csv,572,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 23.0 years old. The patient's age is less than 50 years, and"
+test_data_final.csv,573,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 60 years old. The patient's age is greater than or equal to "
+test_data_final.csv,574,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 82.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,575,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 76.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,576,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 52 years old. The patient's age is greater than or equal to "
+test_data_final.csv,577,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 66.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,578,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 73.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,579,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 65.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,580,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 69.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,581,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 54.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,582,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 78.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,583,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 59.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,584,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 77.0 years old. The patient's age is greater than or equal t"
+test_data_final.csv,585,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 18.0 years old. The patient's age is less than 50 years, and"
+test_data_final.csv,586,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 47 years old. The patient's age is less than 50 years, and s"
+test_data_final.csv,587,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 42.0 years old. The patient's age is less than 50 years, and"
+test_data_final.csv,588,48,PERC Rule for Pulmonary Embolism,"The PERC Rule critiera are listed below:
+
+1. Age ≥50: No = 0 points, Yes = +1 point
+2. Heart Rate (HR) ≥100: No = 0 points, Yes = +1 point
+3. O₂ saturation on room air <95%: No = 0 points, Yes = +1 po","The current count of PERC criteria met is 0.
+The patient is 46.0 years old. The patient's age is less than 50 years, and"
+test_data_final.csv,589,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 37.2 degrees celsius. Because the temperature "
+test_data_final.csv,590,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 37.0 degrees celsius. Because the temperature "
+test_data_final.csv,591,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 39.4 degrees celsius. Because the temperature "
+test_data_final.csv,592,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 37.8 degrees celsius. Because the temperature "
+test_data_final.csv,593,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 99.3 degrees fahrenheit. To convert to degrees"
+test_data_final.csv,594,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 37.4 degrees celsius. Because the temperature "
+test_data_final.csv,595,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 38.0 degrees celsius. Because the temperature "
+test_data_final.csv,596,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 36.8 degrees celsius. Because the temperature "
+test_data_final.csv,597,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 38.5 degrees celsius. Because the temperature "
+test_data_final.csv,598,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 39.0 degrees celsius. Because the temperature "
+test_data_final.csv,599,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 37.3 degrees celsius. Because the temperature "
+test_data_final.csv,600,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 99.0 degrees fahrenheit. To convert to degrees"
+test_data_final.csv,601,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 97.8 degrees fahrenheit. To convert to degrees"
+test_data_final.csv,602,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 39.0 degrees celsius. Because the temperature "
+test_data_final.csv,603,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 36.5 degrees celsius. Because the temperature "
+test_data_final.csv,604,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 36.0 degrees celsius. Because the temperature "
+test_data_final.csv,605,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 37.4 degrees celsius. Because the temperature "
+test_data_final.csv,606,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 102.6 degrees fahrenheit. To convert to degree"
+test_data_final.csv,607,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 97.9 degrees fahrenheit. To convert to degrees"
+test_data_final.csv,608,51,SIRS Criteria,"The rules for SIRS Criteria are listed below:
+    
+1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point
+2. Heart rate >90: No = 0 points, Yes = +1 point
+3. Respiratory rate ","The current count of SIRS criteria met is 0.
+The patient's temperature is 38.5 degrees celsius. Because the temperature "
+test_data_final.csv,829,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 25.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,830,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 64.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,831,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 77.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,832,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 73.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,833,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 72.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,834,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 78 years old. We add the the number of years of age of the patient to the psi"
+test_data_final.csv,835,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 68.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,836,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 80.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,837,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 75.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,838,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 67.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,839,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 70.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,840,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 76.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,841,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 68.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,842,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 80.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,843,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 74.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,844,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 79.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,845,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 75.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,846,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 71.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,847,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 77.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,848,29,PSI Score: Pneumonia Severity Index for CAP,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 73.0 years old. We add the the number of years of age of the patient to the p"
+test_data_final.csv,849,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,850,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,851,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,852,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,853,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,854,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,855,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,856,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,857,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,858,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,859,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,860,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,861,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,862,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,863,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,864,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,865,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,866,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,867,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,868,21,Glasgow Coma Score (GCS),"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+test_data_final.csv,869,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 43.0 years old. Because the patient's age is less than"
+test_data_final.csv,870,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 61.0 years old. Because the patient's age is between 5"
+test_data_final.csv,871,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 73.0 years old. Because the patient's age is between 6"
+test_data_final.csv,872,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 57.0 years old. Because the patient's age is between 5"
+test_data_final.csv,873,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 52.0 years old. Because the patient's age is between 4"
+test_data_final.csv,874,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 65.0 years old. Because the patient's age is between 6"
+test_data_final.csv,875,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 58.0 years old. Because the patient's age is between 5"
+test_data_final.csv,876,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 60.0 years old. Because the patient's age is between 5"
+test_data_final.csv,877,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 67.0 years old. Because the patient's age is between 6"
+test_data_final.csv,878,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 55.0 years old. Because the patient's age is between 5"
+test_data_final.csv,879,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 70.0 years old. Because the patient's age is between 6"
+test_data_final.csv,880,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 63.0 years old. Because the patient's age is between 5"
+test_data_final.csv,881,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 56.0 years old. Because the patient's age is between 5"
+test_data_final.csv,882,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 50.0 years old. Because the patient's age is between 4"
+test_data_final.csv,883,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 64.0 years old. Because the patient's age is between 5"
+test_data_final.csv,884,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 57.0 years old. Because the patient's age is between 5"
+test_data_final.csv,885,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 59.0 years old. Because the patient's age is between 5"
+test_data_final.csv,886,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 61.0 years old. Because the patient's age is between 5"
+test_data_final.csv,887,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 68.0 years old. Because the patient's age is between 6"
+test_data_final.csv,888,28,APACHE II Score,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 64.0 years old. Because the patient's age is between 5"
+test_data_final.csv,889,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 60."
+test_data_final.csv,890,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 90.0 mm Hg and FiO₂ percentage is 41."
+test_data_final.csv,891,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 87.0 mm Hg and FiO₂ percentage is 53."
+test_data_final.csv,892,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 87.0 mm Hg and FiO₂ percentage is 71."
+test_data_final.csv,893,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 68.0 mm Hg and FiO₂ percentage is 60."
+test_data_final.csv,894,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 80 mm Hg and FiO₂ percentage is 50 %."
+test_data_final.csv,895,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 45."
+test_data_final.csv,896,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 70.0 mm Hg and FiO₂ percentage is 55."
+test_data_final.csv,897,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 80.0 mm Hg and FiO₂ percentage is 50."
+test_data_final.csv,898,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 54."
+test_data_final.csv,899,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 74.0 mm Hg and FiO₂ percentage is 51."
+test_data_final.csv,900,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 55."
+test_data_final.csv,901,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 72.0 mm Hg and FiO₂ percentage is 53."
+test_data_final.csv,902,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 52."
+test_data_final.csv,903,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 55."
+test_data_final.csv,904,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 75.0 mm Hg and FiO₂ percentage is 53."
+test_data_final.csv,905,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 77.0 mm Hg and FiO₂ percentage is 54."
+test_data_final.csv,906,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 54."
+test_data_final.csv,907,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 78.0 mm Hg and FiO₂ percentage is 55."
+test_data_final.csv,908,43,Sequential Organ Failure Assessment (SOFA) Score,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 76.0 mm Hg and FiO₂ percentage is 52."
+test_data_final.csv,909,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 63.0 years old. Because the pat"
+test_data_final.csv,910,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 81.0 years old. Because the patie"
+test_data_final.csv,911,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 74.0 years old. Because the pat"
+test_data_final.csv,912,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 67.0 years old. Because the pat"
+test_data_final.csv,913,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 76.0 years old. Because the patie"
+test_data_final.csv,914,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 72 years old. Because the patient"
+test_data_final.csv,915,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 68.0 years old. Because the pat"
+test_data_final.csv,916,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 39.0 years old. Because the patie"
+test_data_final.csv,917,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 45.0 years old. Because the pat"
+test_data_final.csv,918,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 55.0 years old. Because the patie"
+test_data_final.csv,919,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 70.0 years old. Because the pat"
+test_data_final.csv,920,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 52.0 years old. Because the patie"
+test_data_final.csv,921,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 60.0 years old. Because the pat"
+test_data_final.csv,922,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 48.0 years old. Because the patie"
+test_data_final.csv,923,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 72.0 years old. Because the pat"
+test_data_final.csv,924,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 65.0 years old. Because the pat"
+test_data_final.csv,925,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 56.0 years old. Because the patie"
+test_data_final.csv,926,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 62.0 years old. Because the patie"
+test_data_final.csv,927,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 58.0 years old. Because the pat"
+test_data_final.csv,928,36,Caprini Score for Venous Thromboembolism (2005),"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Female.
+The patient is 50.0 years old. Because the pat"
+test_data_final.csv,949,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Dexamethasone PO is 7.96 mg. 
+To convert from the Dexamethasone PO to PrednisoLONE PO, multiply by the conve"
+test_data_final.csv,950,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Hydrocortisone PO is 162.935 mg. 
+To convert from the Hydrocortisone PO to Dexamethasone PO, multiply by the"
+test_data_final.csv,951,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of PrednisoLONE PO is 34.068 mg. 
+To convert from the PrednisoLONE PO to Dexamethasone PO, multiply by the conv"
+test_data_final.csv,952,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Cortisone PO is 222.331 mg. 
+To convert from the Cortisone PO to PrednisoLONE PO, multiply by the conversion"
+test_data_final.csv,953,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of PredniSONE PO is 45.802 mg. 
+To convert from the PredniSONE PO to Hydrocortisone IV, multiply by the convers"
+test_data_final.csv,954,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of MethylPrednisoLONE IV is 21.065 mg. 
+To convert from the MethylPrednisoLONE IV to PrednisoLONE PO, multiply "
+test_data_final.csv,955,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Triamcinolone IV is 23.465 mg. 
+To convert from the Triamcinolone IV to Betamethasone IV, multiply by the co"
+test_data_final.csv,956,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Cortisone PO is 260.997 mg. 
+To convert from the Cortisone PO to Betamethasone IV, multiply by the conversio"
+test_data_final.csv,957,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Dexamethasone IV is 7.25 mg. 
+To convert from the Dexamethasone IV to Triamcinolone IV, multiply by the conv"
+test_data_final.csv,958,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of MethylPrednisoLONE IV is 6.026 mg. 
+To convert from the MethylPrednisoLONE IV to PrednisoLONE PO, multiply b"
+test_data_final.csv,959,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of MethylPrednisoLONE IV is 47.837 mg. 
+To convert from the MethylPrednisoLONE IV to PrednisoLONE PO, multiply "
+test_data_final.csv,960,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of PredniSONE PO is 58.403 mg. 
+To convert from the PredniSONE PO to Hydrocortisone IV, multiply by the convers"
+test_data_final.csv,961,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Betamethasone IV is 6.33 mg. 
+To convert from the Betamethasone IV to Cortisone PO, multiply by the conversi"
+test_data_final.csv,962,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of PredniSONE PO is 47.069 mg. 
+To convert from the PredniSONE PO to Hydrocortisone IV, multiply by the convers"
+test_data_final.csv,963,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Hydrocortisone PO is 81.868 mg. 
+To convert from the Hydrocortisone PO to Cortisone PO, multiply by the conv"
+test_data_final.csv,964,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Dexamethasone IV is 0.63 mg. 
+To convert from the Dexamethasone IV to MethylPrednisoLONE PO, multiply by the"
+test_data_final.csv,965,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Hydrocortisone IV is 186.669 mg. 
+To convert from the Hydrocortisone IV to PredniSONE PO, multiply by the co"
+test_data_final.csv,966,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of PredniSONE PO is 52.736 mg. 
+To convert from the PredniSONE PO to Cortisone PO, multiply by the conversion f"
+test_data_final.csv,967,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Hydrocortisone IV is 152.535 mg. 
+To convert from the Hydrocortisone IV to PredniSONE PO, multiply by the co"
+test_data_final.csv,968,24,Steroid Conversion Calculator,"The Steroid Conversions providing equivalent doses for various corticosteroids are listed below:
+1. Betamethasone: Route = IV, Equivalent Dose = 0.75 mg
+2. Cortisone: Route = PO, Equivalent Dose = 25 ","The mass of Dexamethasone IV is 7.01 mg. 
+To convert from the Dexamethasone IV to Hydrocortisone PO, multiply by the con"
+test_data_final.csv,989,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 10 mg. The patient"
+test_data_final.csv,990,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of FentaNYL buccal is 20 µg.
+The p"
+test_data_final.csv,991,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of HYDROmorphone is 60 mg. The pat"
+test_data_final.csv,992,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 30 mg. The patient"
+test_data_final.csv,993,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Tapentadol is 60 mg. The patien"
+test_data_final.csv,994,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of OxyCODONE is 60 mg. The patient"
+test_data_final.csv,995,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 30 mg. The patient"
+test_data_final.csv,996,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Morphine is 10 mg. The patient "
+test_data_final.csv,997,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 40 mg. The patient"
+test_data_final.csv,998,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Codeine is 20 mg. The patient t"
+test_data_final.csv,999,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 20 mg. The patient"
+test_data_final.csv,1000,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of HYDROmorphone is 20 mg. The pat"
+test_data_final.csv,1001,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of FentaNYL buccal is 30 µg.
+The p"
+test_data_final.csv,1002,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of OxyCODONE is 30 mg. The patient"
+test_data_final.csv,1003,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Codeine is 30 mg. The patient t"
+test_data_final.csv,1004,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of TraMADol is 70 mg. The patient "
+test_data_final.csv,1005,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of HYDROcodone is 30 mg. The patie"
+test_data_final.csv,1006,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Methadone is 40 mg. The patient"
+test_data_final.csv,1007,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of Morphine is 60 mg. The patient "
+test_data_final.csv,1008,49,Morphine Milligram Equivalents (MME) Calculator,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of HYDROcodone is 60 mg. The patie"
+one_shot_finalized_explanation.json,,4,,"The criteria for the CHA2DS2-VASc score are listed below:
+
+1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points
+2. Sex: Female = +1 point, Male = 0 points
+3. Congestive Heart ","The current CHA2DS2-VASc score is 0.
+The patient is 62 years old. Because the age is less than 65 years, no points are a"
+one_shot_finalized_explanation.json,,15,,"The criteria for the Child-Pugh Score are listed below:
+
+1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points
+2. Albu","The current child pugh score is 0.
+The patient's INR is 2.0. Because the INR is between 1.7 and 2.3, we add two to the s"
+one_shot_finalized_explanation.json,,17,,"The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:
+
+1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point
+2. History","The current cardiac risk index is 0.
+Based on the patient note, an elevated risk surgery is determined to be present for"
+one_shot_finalized_explanation.json,,18,,"The HEART Score for risk stratification in patients with chest pain is shown below:
+
+1. History: Slightly suspicious = 0 points, Moderately suspicious = +1 point, Highly suspicious = +2 points
+2. EKG:","The current HEART Score is 0.
+The value of 'history' in the patient's note is determined to be 'Slightly suspicious'. Ba"
+one_shot_finalized_explanation.json,,20,,"The criteria listed in the Centor Score formula are listed below:
+
+1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point
+2. Exudate or swelling on tonsils: No = 0 points, Yes = +","The current Centor score is 0.
+The patient is 17 years old. Because the age is in between 15 and 44 years, the score doe"
+one_shot_finalized_explanation.json,,25,,"The criteria for the HAS-BLED score are listed below below:
+
+1. Hypertension (Uncontrolled, >160 mmHg systolic): No = 0 points, Yes = +1 point
+2. Renal disease (Dialysis, transplant, Cr >2.26 mg/dL or","The current HAS-BLED score is 0.
+The patient is 43 years old. Because the patient's age is less than 66 years, we don't "
+one_shot_finalized_explanation.json,,33,,"The criteria for the FeverPAIN score are listed below:
+    
+1. Fever in past 24 hours: No = 0 points, Yes = +1 point
+2. Absence of cough or coryza: No = 0 points, Yes = +1 point
+3. Symptom onset ≤3 da","The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we incre"
+one_shot_finalized_explanation.json,,29,,"The rules for computing the Pneumonia Severity Index (PSI) are shown below:
+
+1. Age: Enter age in years (age score will be equal to age in years)
+2. Sex: Female = -10 points, Male = 0 points
+3. Nursin","The current PSI score is 0.
+The patient is 72.0 years old. We add the the number of years of age of the patient to the p"
+one_shot_finalized_explanation.json,,21,,"The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:
+    
+1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, ","For each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score"
+one_shot_finalized_explanation.json,,28,,"The criteria for the APACHE II Score are listed below:
+
+1. Age, years: ≤44 = 0 points, 45-54 = +2 points, 55-64 = +3 points, 65-74 = +5 points, ≥75 = +6 points
+2. History of severe organ insufficiency","The patient's current APACHE II score is 0 points.
+The patient is 57.0 years old. Because the patient's age is between 5"
+one_shot_finalized_explanation.json,,43,,"The criteria for the SOFA Score are shown below:
+    
+1. PaO₂/FiO₂ ratio (mm Hg): ≥400 = 0 points, 300-399 = +1 point, 200-299 = +2 points, < 200 and NOT mechanically ventillated = +2 points, 100-199 ","The patient's current SOFA score is 0.
+The patient's partial pressure of oxygen is 87.0 mm Hg and FiO₂ percentage is 53."
+one_shot_finalized_explanation.json,,36,,"The criteria for the Caprini Score are listed below:
+
+1. Age, years: ≤40 = 0 points, 41-60 = +1 point, 61-74 = +2 points, ≥75 = +3 points
+2. Type of surgery: None = 0 points, Minor = +1 point, Major >","The patient's current caprini score is 0.
+The patient's gender is Male.
+The patient is 56.0 years old. Because the patie"
+one_shot_finalized_explanation.json,,49,,"The Opioid Conversion Table with MME (Morphine Milligram Equivalent) conversion factors based on the CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022 are listed b","The current Morphine Milligram Equivalents (MME) is 0 MME per day.
+The patient's dose of OxyMORphone is 10 mg. The patie"

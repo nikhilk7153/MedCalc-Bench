@@ -1,0 +1,4 @@
+5 non-template rows from ckdepi_cand.csv to check
+entities_ckdcand.jsonl: 0 cached, 5 to run
+Entities Match
+True    5

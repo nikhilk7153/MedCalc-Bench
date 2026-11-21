@@ -1,0 +1,35 @@
+row,calculator_id,calculator,note_id,v1.0_slot,1_31_note_in_slot,1_31_alt_is_new
+263,18,HEART Score for Major Cardiac Events,pmc-4132257-1,3,pmc-7997683-3,True
+270,18,HEART Score for Major Cardiac Events,pmc-4754474-1,10,pmc-7846195-1,True
+271,18,HEART Score for Major Cardiac Events,pmc-4244065-1,11,pmc-4857828-1,True
+277,18,HEART Score for Major Cardiac Events,pmc-5014934-1,17,pmc-5654271-1,True
+302,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-7205374-1,2,pmc-4681016-1,True
+304,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-8169128-1,4,pmc-7978146-1,True
+450,33,FeverPAIN Score for Strep Pharyngitis,pmc-8610453-1,3,pmc-8628097-1,True
+452,33,FeverPAIN Score for Strep Pharyngitis,pmc-3326926-1,5,usmle-585,True
+456,33,FeverPAIN Score for Strep Pharyngitis,pmc-5219707-1,9,usmle-262,True
+461,33,FeverPAIN Score for Strep Pharyngitis,pmc-8454594-1,14,usmle-11773,True
+465,33,FeverPAIN Score for Strep Pharyngitis,pmc-8091626-1,18,usmle-414,True
+466,33,FeverPAIN Score for Strep Pharyngitis,pmc-8653919-1,19,usmle-7401,True
+533,45,CURB-65 Score for Pneumonia Severity,usmle-5128,1,pmc-5646314-1,True
+534,45,CURB-65 Score for Pneumonia Severity,pmc-3914016-1,2,usmle-4969,True
+537,45,CURB-65 Score for Pneumonia Severity,pmc-8104349-1,5,pmc-7425612-1,False
+539,45,CURB-65 Score for Pneumonia Severity,usmle-6047,7,pmc-7725203-1,False
+540,45,CURB-65 Score for Pneumonia Severity,usmle-6150,8,pmc-7916639-1,True
+542,45,CURB-65 Score for Pneumonia Severity,pmc-7480889-1,10,pmc-7294477-1,False
+543,45,CURB-65 Score for Pneumonia Severity,pmc-4070485-1,11,pmc-8236776-1,True
+544,45,CURB-65 Score for Pneumonia Severity,pmc-7755652-1,12,pmc-7571607-1,True
+546,45,CURB-65 Score for Pneumonia Severity,pmc-5298528-1,14,pmc-5754342-1,False
+547,45,CURB-65 Score for Pneumonia Severity,pmc-8025799-1,15,pmc-7220071-1,True
+548,45,CURB-65 Score for Pneumonia Severity,pmc-3447652-1,16,pmc-7142028-1,True
+549,45,CURB-65 Score for Pneumonia Severity,pmc-7282354-1,17,pmc-4974841-1,True
+551,45,CURB-65 Score for Pneumonia Severity,usmle-187,19,usmle-8555,False
+552,45,CURB-65 Score for Pneumonia Severity,pmc-2988179-1,20,pmc-3874924-1,True
+571,48,PERC Rule for Pulmonary Embolism,pmc-8011470-1,3,pmc-7433124-1,True
+575,48,PERC Rule for Pulmonary Embolism,pmc-7012568-1,7,pmc-7061779-1,True
+579,48,PERC Rule for Pulmonary Embolism,pmc-8223855-1,11,pmc-2850855-1,True
+581,48,PERC Rule for Pulmonary Embolism,pmc-7676805-1,13,pmc-6283766-1,True
+594,51,SIRS Criteria,pmc-5828046-1,6,pmc-6029742-1,True
+598,51,SIRS Criteria,usmle-9804,10,pmc-3048475-1,True
+599,51,SIRS Criteria,pmc-7847810-1,11,pmc-5500273-1,True
+604,51,SIRS Criteria,pmc-2769425-1,16,pmc-4378701-1,True

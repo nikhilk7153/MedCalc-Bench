@@ -1,0 +1,5 @@
+gpt-3.5-turbo-0125: 0 rows already done, 40 to run
+gpt-3.5-turbo-0125: 40 rows in 16s wall clock (0.3 min, 8 workers)
+per row: median 2s, max 5s; rounds median 2
+correct 32/40; API errors 0
+{"lab": {"average": 80.0, "std": 0.06}, "overall": {"average": 80.0, "std": 0.06}}

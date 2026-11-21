@@ -1,0 +1,163 @@
+{
+ "calculator_id": "27",
+ "calculator_name": "Glasgow-Blatchford Bleeding Score (GBS)",
+ "fields": [
+  {
+   "field": "Heart Rate or Pulse",
+   "type": "number with unit",
+   "typical_units": [
+    "beats per minute"
+   ]
+  },
+  {
+   "field": "Blood Urea Nitrogen (BUN)",
+   "type": "number with unit",
+   "typical_units": [
+    "mg/dL",
+    "mmol/L"
+   ]
+  },
+  {
+   "field": "sex",
+   "type": "category",
+   "allowed_values": [
+    "Female",
+    "Male"
+   ]
+  },
+  {
+   "field": "Cardiac Failure Present",
+   "type": "boolean"
+  },
+  {
+   "field": "Hemoglobin",
+   "type": "number with unit",
+   "typical_units": [
+    "g/dL"
+   ]
+  },
+  {
+   "field": "Melena Present",
+   "type": "boolean"
+  },
+  {
+   "field": "Systolic Blood Pressure",
+   "type": "number with unit",
+   "typical_units": [
+    "mm Hg"
+   ]
+  },
+  {
+   "field": "Recent Syncope",
+   "type": "boolean"
+  },
+  {
+   "field": "Hepatic disease history",
+   "type": "boolean"
+  }
+ ],
+ "rows": [
+  {
+   "row": "386",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 65-year-old female enters the emergency department complaining of weakness and black stools over the past couple of days. She has a history of heart failure, which she manages with prescribed medication. The patient has not experienced any recent fainting episodes. She denies any history of liver disease and has a blood urea nitrogen level of 34 mg/dL according to the laboratory tests. Her hemoglobin level is 13 g/dL and vital signs reveal a heart rate in the regular range; however, her systolic blood pressure was noted to be slightly low at 90 mmHg. HR is 80 bpm. The patient has a well-controlled cholesterol levels, denies history of any respiratory issues, and has a normal urinalysis output. She denies use of any anticoagulant or antiplatelet medications. The combination of her history, alongside her recent symptoms of melena prompts a significant concern in her clinical status warranting further investigation."
+  },
+  {
+   "row": "387",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A middle-aged male with a past medical history of chronic liver disease presents to the clinic complaining of lightheadedness and a recent episode of syncope. His usual blood pressure readings usually are distributed around the lower end of the normal range; today's measurement was 95 mmHg systolic. His pulse was slightly elevated at 110 beats per minute. He does not have a history of heart failure. He denies any changes in bowel habits, specifically noting no presence of dark, tarry stools. Additional routine tests were conducted showing a blood urea nitrogen (BUN) level at 21 mg/dL, and his hemoglobin was on par with his previous readings at 14 g/dL. He was on an acid suppression therapy for a recently documented peptic ulcer. This patient's history of hepatic disease, coupled with his other clinical findings raises concern for potential risks and warrants further evaluation."
+  },
+  {
+   "row": "388",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 52-year-old gentleman presents himself to the clinic after experiencing an incidence of sudden fainting earlier in the day. His medical records don't reveal any hepatic disease history. He mentions an ongoing treatment for heart failure and his vitals record a slightly elevated pulse rate of 110 beats per minute. The patient's blood pressure is stable at a systolic 103 mmHg. The patient was adamant in stating that recent bowel movements were normal in color, denying any past or present occurrence of black tarry stools. His laboratory tests returned normal with a blood urea nitrogen (BUN) concentration of 18 mg/dL and a hemoglobin count of 14 g/dL. The patient is a non-smoker and keeps a balanced diet but has a family history of diabetes. Taking into consideration his clinical presentation and past medical history, despite denying certain important risk factors, further investigations were deemed necessary."
+  },
+  {
+   "row": "389",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 61-year-old female has presented herself in the ER. She denies any history of chronic liver disease, nor has she had any recent fainting episodes. Additionally, she vehemently denies any changes in her stool color, stating they're a regular brown color, not black or tarry in nature. Past medical history includes management of osteoarthritis and mild hypertension, with no heart failure events noted. Physical examination shows no evident peripheral edema, and she appears vitally stable with a heart rate reading of 115 beats per minute and systolic blood pressure at 108 mmHg. Her routine lab results indicate a hemoglobin level of 10.4 g/dL and blood urea nitrogen (BUN) level of 18 mg/dL. Despite her stable clinical presentation, her elevated heart rate and decreased hemoglobin values prompt further investigation."
+  },
+  {
+   "row": "390",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 69-year-old male has come in for a routine evaluation, complaining of dark, tarry stools over the last two days. Claiming no history of heart failure, the patient presented with a heart rate of 88 beats per minute and a systolic blood pressure reading of 130 mm Hg. Laboratory tests were ordered and returned a blood urea nitrogen (BUN) level of 18 mg/dL and hemoglobin concentration at 13 g/dL. Review of his medication profile revealed he has been consistently taking sodium bicarbonate for his diagnosed peptic stomach ulcer. Despite the normalcy of most of his parameters, his complaint of melena urges further medical attention."
+  },
+  {
+   "row": "391",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 58-year-old female presents with a history of liver disease and recent episode of syncope. She is visibly nervous about her visit and her vital signs reveal a heart rate of 96 beats per minute and systolic blood pressure at 120 mm Hg. Blood tests include mildly elevated blood urea nitrogen levels at 22 mmol/L. Her hemoglobin was found to be at the lower boundary of normal at 12 g/dL. During the visit, she mentioned keeping a regular exercise routine and having no known allergies. Given her liver disease history and recent syncope event, her signs and symptoms warrant a more comprehensive workup to ensure optimal medical management."
+  },
+  {
+   "row": "392",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A male patient, a non-smoker with no history of hepatic disease, has been under management for heart failure and was in the clinic for a regular check-up. On examination, the heart rate was higher than usual at 108 beats per minute and the systolic blood pressure was noted to be 100 mm Hg. The patient adamantly mentioned having normal brownish stools, ruling out the possibility of melena. Lab results showed their BUN at slightly elevated at 25 mg/dL. It was also found that the patient's hemoglobin was marginally decreased, currently at 10 g/dL, lower than their typical values seen in past readings. The patient has a self-reported good nutritional state and keeps up with a dedicated exercise routine to manage body weight. Despite the absence of significant findings, the clinical presentation and lab results necessitate additional evaluation for this patient."
+  },
+  {
+   "row": "393",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 62-year-old male attended his routine checkup today. His vital signs appeared normal, with a heart rate noted at 72 beats per minute and a systolic blood pressure reading of 110 mm Hg. This patient has no prior history of cardiac failure, nor has he reported any recent fainting spells. He underwent few laboratory tests, including a blood urea nitrogen (BUN) test, which was indicative of an elevated BUN level at 30 mg/dL. The patient's hemoglobin was notably normal at 14 g/dL. He was managing diabetes with oral hypoglycemic medications and also adhering to a low carb diet. This gentleman's high BUN levels call for a more detailed assessment to provide early intervention for any potential risks."
+  },
+  {
+   "row": "394",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "Presenting in the emergency department just after an episode of sudden fainting, a female patient was visibly concerned about the concurrent occurrence of dark, tarry stools. Her vitals exhibited a stable heart rate of 80 beats per minute and good blood pressure at 115 mm Hg systolic. The patient denies having any hepatic ailments. Blood tests were immediately ordered in light of the circumstances and demonstrated a higher than average BUN level at 28 mmol/L along with lower than usual hemoglobin levels at 11 g/dL. Extra information provided included a consistent exercise routine and mediated diet for controlled pre-diabetes. While symptomatically stable, the patient's syncope paired with melena raised flags requiring thorough evaluation of the situation."
+  },
+  {
+   "row": "395",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A female patient in her late sixties was in for a follow-up after heart failure was diagnosed earlier this year. She mentioned experiencing no recent episodes of fainting. Her vitals were taken, documenting a heart rate of 92 beats per minute and a systolic blood pressure of 140 mm Hg. The labs returned with a blood urea nitrogen (BUN) level of 24 mg/dL and a slightly reduced hemoglobin count at 9 g/dL. The patient was previously diagnosed with mixed hearing loss and had been using hearing aids. She reports compliance with her low-sodium diet for heart failure management. Given the patient's cardiac history and current laboratory indicators, she was recommended for further diagnostic evaluation."
+  },
+  {
+   "row": "396",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 60-year-old male with a known history of liver disease, type-2 diabetes, and hyperlipidemia came into the clinic, reporting several instances of passing black, tarry stools in recent days. Vital signs were within the normal range, showing a heart rate of 85 beats per minute and systolic blood pressure of 128 mm Hg. The patient's recent laboratory studies showed a BUN level at 20 mmol/L and a hemoglobin concentration of 15 g/dL."
+  },
+  {
+   "row": "397",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A male patient presented to the clinic today after recently experiencing an episode of fainting. The initial evaluation showed a relaxed heart rate of 78 beats per minute and stable blood pressure of 120 mm Hg systolic. Furthermore, the patient denied any instances of darkened, coffee-ground-like stools. Routine labs were ordered, revealing increased levels of blood urea nitrogen (BUN) at 33 mg/dL and a good hemoglobin reading of 14.5 g/dL. The patient denied any history of heart failure."
+  },
+  {
+   "row": "398",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 53-year-old female recently diagnosed with liver disease has come in for a consultation. She presents with complaints of passage of black, tarry stools over the past couple of days. Clinically she seemed stable, her vital signs were within the normal limit with a heart rate of 90 beats per minute and blood pressure at 125/80 mm Hg. She also reported that she has been managing her mild diabetes with dietary changes and hypoglycemic agents. Blood investigations revealed a Blood Urea Nitrogen (BUN) level of 27 mmol/L, and her hemoglobin was slightly lower than her average figures at 11.5 g/dL."
+  },
+  {
+   "row": "399",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 67-year-old gentleman who has a history of cardiac failure and liver disease presented in the clinic today. Vital signs revealed a heart rate of 76 beats per minute and slightly elevated blood pressure readings with systolic 135 mmHg. He denied any recent black-out episodes. Laboratory results came back, showing a Blood Urea Nitrogen (BUN) level at 30 mg/dL and a hemoglobin concentration at 16 g/dL. He recently completed a course of antibiotics for a mild respiratory infection. He has been judiciously following a low cholesterol, heart-healthy diet as advised by his nutritionist."
+  },
+  {
+   "row": "400",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A patient came in for her evaluation today after a recent fainting episode. She was noticeably agitated, which matched the elevated heart rate at 98 beats per minute during the examination. Blood pressure was taken and read a fairly steady systolic measurement at 118 mm Hg. The patient also reported a new observable change in bowel habits, noticing black, tarry stools. Blood tests showed the urea nitrogen level moderately high at 21 mg/dL and a low hemoglobin count at 12 g/dL. Currently, on medication for hypertension and osteoarthritis, the patient confirmed the absence of any chronic liver conditions."
+  },
+  {
+   "row": "401",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A woman in her late sixties with history of heart failure appeared distraught when reporting recent episodes of black, tarry stools. Upon physical assessment, her heart rate was noted to be 82 beats per minute and systolic blood pressure reading was at 105 mmHg. Lab results indicated her blood urea nitrogen (BUN) level at 23 mmol/L, which is higher than the normal range. Also, her hemoglobin count was found to be below normal, at 9.5 g/dL. The patient also mentioned taking daily aspirin for preventive measures and was on calcium supplements for osteopenia. Given her gastrointestinal symptom and recent lab findings, a thorough clinical evaluation was deemed necessary."
+  },
+  {
+   "row": "402",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "The patient is a male in his mid-seventies, known to have chronic liver disease. Although a bit anxious, his heart rate was fairly on the high side with a reading of 94 beats per minute, while his systolic blood pressure was measured at 112 mm Hg. He mentions not having suffered any recent episodes of fainting. Laboratory tests showed a Blood Urea Nitrogen (BUN) level at 26 mg/dL, while his hemoglobin stood healthy at 14.2 g/dL. Over the past year, he has lost some weight and employed dietary changes for blood sugar management after being diagnosed as pre-diabetic. His clinical presentation, inclusive of past medical history, despite the absence of any alarming symptoms prompts the need for further evaluation given the increased BUN levels."
+  },
+  {
+   "row": "403",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A male arrived for a review after a recent syncopal episode. Although nervous, vitals recorded a heart rate of 100 beats per minute and a systolic blood pressure of 110 mm Hg. Blood tests show a BUN of 29 mmol/L and hemoglobin of 12.5 g/dL. The patient denies current or past liver conditions and does not exhibit any symptoms or report any cases of dark, tarry stools. Additional information provided pointed to regular exercise, non-smoker status, and a balanced diet regime to manage body weight and cholesterol levels. Despite no history of heart failure or hepatic disease, recent syncope and elevated BUN levels should prompt further evaluation."
+  },
+  {
+   "row": "404",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A 70-year-old woman came in today for an evaluation of her recent episodes of black, tarry stools. Initially, she showed a rested heart rate at 86 beats per minute, and her blood pressure was plateaued at 115 mmHg systolic. When asked, she denied any recent episodes of fainting but confirmed ongoing management for her hypertension. Results from the lab show a slightly elevated Blood Urea Nitrogen (BUN) level at 25 mg/dL while her hemoglobin readings are within normal limits at 13 g/dL. The patient takes calcium and Vitamin D supplements to manage her osteoporosis, in addition to a low-salt diet for her hypertension."
+  },
+  {
+   "row": "405",
+   "question": "What is the patient's Glasgow-Blatchford Bleeding score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+   "patient_note": "A gentleman in his late fifties, managing heart failure, came in for his routine consultation. His vitals were documented, which revealed a resting heart rate of 77 beats per minute and blood pressure at 130/85 mmHg. He reported no recent fainting events and hasn't noticed any black, tarry stools. Lab investigations were ordered, and results showed a Blood Urea Nitrogen level at 24 mmol/L and a reduced hemoglobin level of 10.2 g/dL. He discussed his plan of retiring soon and is especially motivated to stay active and fit. Despite his daily walks, yoga sessions, and moderate dietary habits to maintain his health, his lab findings are a cause for concern, hence warranting further assessment."
+  }
+ ],
+ "mdcalc_rules": "BUN (urea) mmol/L: <6.5 =0; 6.5-<8 =+2; 8-<10 =+3; 10-25 =+4; >25 =+6 (mg/dL equivalents ~<18.2, 18.2-22.3, 22.4-27.9, 28-70, >70). Hb men: >=13 =0; 12-<13 =+1; 10-<12 =+3; <10 =+6. Hb women: >=12 =0; 10-<12 =+1; <10 =+6. SBP: >=110 =0; 100-109 =+1; 90-99 =+2; <90 =+3. HR >=100 =+1. Melena +1. Syncope +2. Hepatic disease history +2. Cardiac failure +2. Range 0-23.",
+ "mdcalc_source": "https://www.mdcalc.com/calc/518/glasgow-blatchford-bleeding-score-gbs (page fetched; binary criteria/points confirmed there, but BUN/Hb/SBP band tables were not in the fetched content, so bands taken from standard published GBS (Blatchford 2000) as reproduced by WikEM/Radiopaedia)"
+}

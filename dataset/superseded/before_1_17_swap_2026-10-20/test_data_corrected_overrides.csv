@@ -1,0 +1,7 @@
+Calculator ID,Note ID,Kind,Change,Reason
+44,pmc-7903926-1,note edit,"[["", low-density lipoproteins of 103.8 milligrams per deciliter (reference range: <100 milligrams per deciliter)"", """"]]","The note stated the measured LDL, which is the answer the LDL Calculated question asks for"
+44,pmc-3221905-1,note edit,"[["", low density lipoprotein-cholesterol <10 mg/dL"", """"]]",The note reported a measured LDL (<10 mg/dL) that conflicts with the calculated LDL the question asks for
+44,pmc-3651988-1,note edit,"[[""the low-density lipoprotein cholesterol concentration was 214.4 mg/dl, "", """"]]","The note stated the measured LDL, which is the answer the LDL Calculated question asks for"
+44,pmc-6728653-1,note edit,"[[""lipoprotein 49 mg/dL, low-density lipoprotein 63 mg/dL, and"", ""lipoprotein 49 mg/dL, and""]]","The note stated the measured LDL, which is the answer the LDL Calculated question asks for"
+44,pmc-6150762-1,note edit,"[["", low-density lipoprotein 90 mg/dL"", """"]]","The note stated the measured LDL, which is the answer the LDL Calculated question asks for"
+65,pmc-6957036-1,note edit,"[["" anion gap 25 mEq/L after correcting for albumin (normal: 8-12),"", """"]]","The note stated the albumin-corrected anion gap, which is the answer the question asks for"

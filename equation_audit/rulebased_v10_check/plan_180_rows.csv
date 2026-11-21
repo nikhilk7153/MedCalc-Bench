@@ -1,0 +1,181 @@
+row,calculator_id,calculator,current_note,final_note,action,current_answer,physician_review,proposed_answer,answer_changes
+41,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-7196137-1,pmc-7196137-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+42,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-7099753-3,pmc-7099753-3,A. Use 1_31 validated inputs (same v1.0 note),5,no,5,False
+43,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-8136881-1,pmc-8136881-1,A. Use 1_31 validated inputs (same v1.0 note),6,no,8,True
+44,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-7294161-1,pmc-7294161-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+45,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-6959961-2,pmc-6959961-2,A. Use 1_31 validated inputs (same v1.0 note),5,no,5,False
+46,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-3317869-1,pmc-3317869-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+47,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-3888688-1,pmc-3888688-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+48,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-6939804-1,pmc-6939804-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+49,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-8096577-1,pmc-8096577-1,A. Use 1_31 validated inputs (same v1.0 note),7,no,7,False
+50,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-4369977-1,pmc-4369977-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+51,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-3318870-1,pmc-3318870-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,2,True
+52,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-4967640-1,pmc-4967640-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+53,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-3286501-2,pmc-3286501-2,A. Use 1_31 validated inputs (same v1.0 note),5,no,5,False
+54,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-7437123-4,pmc-7437123-4,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+55,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-6533936-1,pmc-6533936-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+56,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-4157480-1,pmc-4157480-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+57,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-8515802-1,pmc-8515802-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+58,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-7229273-1,pmc-7229273-1,A. Use 1_31 validated inputs (same v1.0 note),6,no,6,False
+59,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-6296059-1,pmc-6296059-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+60,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,pmc-4464016-1,pmc-4464016-1,A. Use 1_31 validated inputs (same v1.0 note),6,no,6,False
+121,8,Wells' Criteria for Pulmonary Embolism,pmc-8230162-2,pmc-8230162-2,A. Use 1_31 validated inputs (same v1.0 note),1.5,no,6,True
+122,8,Wells' Criteria for Pulmonary Embolism,pmc-8494530-1,pmc-8494530-1,A. Use 1_31 validated inputs (same v1.0 note),4.5,no,4.5,False
+123,8,Wells' Criteria for Pulmonary Embolism,pmc-5597065-1,pmc-5597065-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+124,8,Wells' Criteria for Pulmonary Embolism,pmc-8647083-1,pmc-8647083-1,A. Use 1_31 validated inputs (same v1.0 note),4.5,no,6,True
+125,8,Wells' Criteria for Pulmonary Embolism,pmc-8293858-1,pmc-8293858-1,A. Use 1_31 validated inputs (same v1.0 note),1.5,no,1.5,False
+126,8,Wells' Criteria for Pulmonary Embolism,usmle-9149,usmle-9149,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+127,8,Wells' Criteria for Pulmonary Embolism,pmc-7580750-1,pmc-7580750-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+128,8,Wells' Criteria for Pulmonary Embolism,pmc-8101672-1,pmc-8101672-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,1.5,True
+129,8,Wells' Criteria for Pulmonary Embolism,pmc-4703166-1,pmc-4703166-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+130,8,Wells' Criteria for Pulmonary Embolism,pmc-3250605-1,pmc-3250605-1,A. Use 1_31 validated inputs (same v1.0 note),2.5,no,2.5,False
+131,8,Wells' Criteria for Pulmonary Embolism,pmc-8294994-1,pmc-8294994-1,A. Use 1_31 validated inputs (same v1.0 note),5.5,no,2.5,True
+132,8,Wells' Criteria for Pulmonary Embolism,usmle-7246,usmle-7246,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+133,8,Wells' Criteria for Pulmonary Embolism,pmc-8443390-1,pmc-2803837-1,"D. Swap back to v1.0 note, use 1_31 validated version",4.5,no,1,True
+134,8,Wells' Criteria for Pulmonary Embolism,pmc-4119326-1,pmc-4119326-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+135,8,Wells' Criteria for Pulmonary Embolism,pmc-5837304-1,pmc-5837304-1,A. Use 1_31 validated inputs (same v1.0 note),1.5,no,1.5,False
+136,8,Wells' Criteria for Pulmonary Embolism,pmc-5039122-1,pmc-5039122-1,A. Use 1_31 validated inputs (same v1.0 note),1.5,no,0,True
+137,8,Wells' Criteria for Pulmonary Embolism,pmc-5295575-1,usmle-9051,"D. Swap back to v1.0 note, use 1_31 validated version",0,no,0,False
+138,8,Wells' Criteria for Pulmonary Embolism,pmc-6020350-1,pmc-6020350-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+139,8,Wells' Criteria for Pulmonary Embolism,pmc-8209631-1,pmc-8209631-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+140,8,Wells' Criteria for Pulmonary Embolism,pmc-6984815-1,pmc-6984815-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+221,16,Wells' Criteria for DVT,pmc-5295552-1,pmc-5295552-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,-1,False
+222,16,Wells' Criteria for DVT,pmc-6959932-1,pmc-6959932-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,1,True
+223,16,Wells' Criteria for DVT,usmle-9119,usmle-9119,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-2,False
+224,16,Wells' Criteria for DVT,pmc-4341247-1,pmc-4341247-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,-1,False
+225,16,Wells' Criteria for DVT,pmc-3334262-1,pmc-3334262-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-2,False
+226,16,Wells' Criteria for DVT,pmc-6180957-1,pmc-6180957-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-2,False
+227,16,Wells' Criteria for DVT,pmc-7059892-1,pmc-7059892-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,-2,True
+228,16,Wells' Criteria for DVT,pmc-4676672-1,pmc-4676672-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-2,False
+229,16,Wells' Criteria for DVT,pmc-3291722-1,pmc-3291722-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-2,False
+230,16,Wells' Criteria for DVT,pmc-3876687-1,pmc-3876687-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,-1,False
+231,16,Wells' Criteria for DVT,pmc-2488320-1,pmc-2488320-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,2,True
+232,16,Wells' Criteria for DVT,pmc-8168998-1,pmc-8168998-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,-1,True
+233,16,Wells' Criteria for DVT,pmc-8514746-2,pmc-8514746-2,A. Use 1_31 validated inputs (same v1.0 note),-1,no,-1,False
+234,16,Wells' Criteria for DVT,pmc-4918891-1,pmc-4918891-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,1,True
+235,16,Wells' Criteria for DVT,pmc-6940349-1,pmc-6940349-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-2,False
+236,16,Wells' Criteria for DVT,pmc-8383636-1,pmc-8383636-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,1,True
+237,16,Wells' Criteria for DVT,pmc-3127500-1,pmc-3127500-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,0,True
+238,16,Wells' Criteria for DVT,pmc-4320908-1,pmc-4320908-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,-2,True
+239,16,Wells' Criteria for DVT,pmc-4882526-1,pmc-4882526-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-1,True
+240,16,Wells' Criteria for DVT,pmc-7111022-1,pmc-7111022-1,A. Use 1_31 validated inputs (same v1.0 note),-2,no,-1,True
+261,18,HEART Score for Major Cardiac Events,pmc-3466862-1,pmc-3466862-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,3,True
+262,18,HEART Score for Major Cardiac Events,pmc-8509094-1,pmc-8509094-1,A. Use 1_31 validated inputs (same v1.0 note),5,no,6,True
+263,18,HEART Score for Major Cardiac Events,pmc-4132257-1,pmc-4132257-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+264,18,HEART Score for Major Cardiac Events,pmc-8643279-1,pmc-8643279-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+265,18,HEART Score for Major Cardiac Events,pmc-7752799-1,pmc-7752799-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,4,True
+266,18,HEART Score for Major Cardiac Events,pmc-6276522-1,pmc-6276522-1,A. Use 1_31 validated inputs (same v1.0 note),5,no,10,True
+267,18,HEART Score for Major Cardiac Events,pmc-5741599-1,pmc-5741599-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,2,True
+268,18,HEART Score for Major Cardiac Events,pmc-8161714-1,pmc-8161714-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,3,True
+269,18,HEART Score for Major Cardiac Events,pmc-7966959-1,pmc-8053007-1,"D. Swap back to v1.0 note, use 1_31 validated version",4,no,6,True
+270,18,HEART Score for Major Cardiac Events,pmc-4754474-1,pmc-4754474-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",0,yes,0,False
+271,18,HEART Score for Major Cardiac Events,pmc-4244065-1,pmc-4244065-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",2,yes,2,False
+272,18,HEART Score for Major Cardiac Events,pmc-7305571-1,pmc-7305571-1,A. Use 1_31 validated inputs (same v1.0 note),6,no,6,False
+273,18,HEART Score for Major Cardiac Events,pmc-7997683-3,usmle-9492,"D. Swap back to v1.0 note, use 1_31 validated version",5,no,1,True
+274,18,HEART Score for Major Cardiac Events,pmc-7290110-1,pmc-7290110-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,4,True
+275,18,HEART Score for Major Cardiac Events,pmc-7780869-1,pmc-7780869-1,A. Use 1_31 validated inputs (same v1.0 note),5,no,6,True
+276,18,HEART Score for Major Cardiac Events,pmc-6415980-1,pmc-4793133-1,"D. Swap back to v1.0 note, use 1_31 validated version",7,no,7,False
+277,18,HEART Score for Major Cardiac Events,pmc-5014934-1,pmc-5014934-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",0,yes,0,False
+278,18,HEART Score for Major Cardiac Events,pmc-2783103-1,pmc-2783103-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,2,True
+279,18,HEART Score for Major Cardiac Events,pmc-4980942-1,pmc-4980942-1,A. Use 1_31 validated inputs (same v1.0 note),5,no,5,False
+280,18,HEART Score for Major Cardiac Events,usmle-353,usmle-353,A. Use 1_31 validated inputs (same v1.0 note),4,no,5,True
+301,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-12605,usmle-12605,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+302,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-7205374-1,pmc-7205374-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+303,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-414,usmle-414,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+304,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-8169128-1,pmc-8169128-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",2,yes,2,False
+305,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-12316,usmle-12316,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+306,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-8066,usmle-8066,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+307,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-7362490-1,pmc-7362490-1,A. Use 1_31 validated inputs (same v1.0 note),-1,no,-1,False
+308,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-6356,usmle-6356,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+309,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-4026,usmle-4026,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+310,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-4327960-1,pmc-4327960-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,2,True
+311,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-5931247-2,pmc-5931247-2,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+312,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-6179,usmle-6179,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+313,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-4307710-1,pmc-4307710-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+314,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-9610,usmle-9610,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+315,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-4768,usmle-4768,A. Use 1_31 validated inputs (same v1.0 note),2,no,3,True
+316,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-4327,usmle-4327,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+317,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-8175,usmle-8175,A. Use 1_31 validated inputs (same v1.0 note),4,no,3,True
+318,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-5745701-1,pmc-5745701-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,1,True
+319,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,usmle-262,usmle-262,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+320,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,pmc-8240916-1,pmc-8240916-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+448,33,FeverPAIN Score for Strep Pharyngitis,usmle-3456,usmle-3456,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+449,33,FeverPAIN Score for Strep Pharyngitis,usmle-6072,usmle-6072,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+450,33,FeverPAIN Score for Strep Pharyngitis,pmc-8610453-1,pmc-8610453-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+451,33,FeverPAIN Score for Strep Pharyngitis,pmc-3603656-1,pmc-3603656-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+452,33,FeverPAIN Score for Strep Pharyngitis,pmc-3326926-1,pmc-3326926-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",2,yes,2,False
+453,33,FeverPAIN Score for Strep Pharyngitis,pmc-5661752-1,pmc-5661752-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,5,True
+454,33,FeverPAIN Score for Strep Pharyngitis,pmc-7219994-1,pmc-7219994-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,5,True
+455,33,FeverPAIN Score for Strep Pharyngitis,usmle-1376,usmle-1376,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+456,33,FeverPAIN Score for Strep Pharyngitis,pmc-5219707-1,pmc-5219707-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+457,33,FeverPAIN Score for Strep Pharyngitis,pmc-8380012-1,pmc-8380012-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,3,True
+458,33,FeverPAIN Score for Strep Pharyngitis,usmle-7961,usmle-7961,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+459,33,FeverPAIN Score for Strep Pharyngitis,pmc-3034928-1,pmc-3034928-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+460,33,FeverPAIN Score for Strep Pharyngitis,usmle-1375,usmle-1375,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+461,33,FeverPAIN Score for Strep Pharyngitis,pmc-8454594-1,pmc-8454594-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",3,yes,3,False
+462,33,FeverPAIN Score for Strep Pharyngitis,pmc-7979303-1,pmc-7979303-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+463,33,FeverPAIN Score for Strep Pharyngitis,usmle-965,usmle-965,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+464,33,FeverPAIN Score for Strep Pharyngitis,usmle-6762,usmle-6762,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+465,33,FeverPAIN Score for Strep Pharyngitis,pmc-8091626-1,pmc-8091626-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",2,yes,2,False
+466,33,FeverPAIN Score for Strep Pharyngitis,pmc-8653919-1,pmc-8653919-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+467,33,FeverPAIN Score for Strep Pharyngitis,pmc-7463145-1,pmc-7463145-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+533,45,CURB-65 Score for Pneumonia Severity,usmle-5128,usmle-5128,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+534,45,CURB-65 Score for Pneumonia Severity,pmc-3914016-1,pmc-3914016-1,B. Keep as is (not in 1_31; astra: correct),2,no,2,False
+535,45,CURB-65 Score for Pneumonia Severity,pmc-5519313-1,pmc-5519313-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+536,45,CURB-65 Score for Pneumonia Severity,pmc-7425612-1,pmc-7425612-1,A. Use 1_31 validated inputs (same v1.0 note),5,no,5,False
+537,45,CURB-65 Score for Pneumonia Severity,pmc-8104349-1,pmc-8104349-1,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+538,45,CURB-65 Score for Pneumonia Severity,pmc-7725203-1,pmc-7725203-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+539,45,CURB-65 Score for Pneumonia Severity,usmle-6047,usmle-6047,B. Keep as is (not in 1_31; astra: correct),2,no,2,False
+540,45,CURB-65 Score for Pneumonia Severity,usmle-6150,usmle-6150,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+541,45,CURB-65 Score for Pneumonia Severity,pmc-7294477-1,pmc-7294477-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+542,45,CURB-65 Score for Pneumonia Severity,pmc-7480889-1,pmc-7480889-1,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+543,45,CURB-65 Score for Pneumonia Severity,pmc-4070485-1,pmc-4070485-1,B. Keep as is (not in 1_31; astra: correct),2,no,2,False
+544,45,CURB-65 Score for Pneumonia Severity,pmc-7755652-1,pmc-7755652-1,B. Keep as is (not in 1_31; astra: correct),2,no,2,False
+545,45,CURB-65 Score for Pneumonia Severity,pmc-5754342-1,pmc-5754342-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+546,45,CURB-65 Score for Pneumonia Severity,pmc-5298528-1,pmc-5298528-1,B. Keep as is (not in 1_31; astra: correct),2,no,2,False
+547,45,CURB-65 Score for Pneumonia Severity,pmc-8025799-1,pmc-8025799-1,B. Keep as is (not in 1_31; astra: correct),2,no,2,False
+548,45,CURB-65 Score for Pneumonia Severity,pmc-3447652-1,pmc-3447652-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",2,yes,2,False
+549,45,CURB-65 Score for Pneumonia Severity,pmc-7282354-1,pmc-7282354-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+550,45,CURB-65 Score for Pneumonia Severity,usmle-8555,usmle-8555,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+551,45,CURB-65 Score for Pneumonia Severity,usmle-187,usmle-187,B. Keep as is (not in 1_31; astra: correct),0,no,0,False
+552,45,CURB-65 Score for Pneumonia Severity,pmc-2988179-1,pmc-2988179-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",1,yes,1,False
+569,48,PERC Rule for Pulmonary Embolism,pmc-7315174-1,pmc-7315174-1,A. Use 1_31 validated inputs (same v1.0 note),4,no,4,False
+570,48,PERC Rule for Pulmonary Embolism,pmc-2840956-1,pmc-2840956-1,F. Keep replacement (v1.0 note unscorable: HR only after treatment),0,no,0,False
+571,48,PERC Rule for Pulmonary Embolism,pmc-8011470-1,pmc-8011470-1,B. Keep as is (not in 1_31; astra: correct),0,no,0,False
+572,48,PERC Rule for Pulmonary Embolism,usmle-5963,usmle-5963,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+573,48,PERC Rule for Pulmonary Embolism,usmle-5182,pmc-4614570-1,"D. Swap back to v1.0 note, use 1_31 validated version",3,no,1,True
+574,48,PERC Rule for Pulmonary Embolism,pmc-7306638-1,pmc-7306638-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+575,48,PERC Rule for Pulmonary Embolism,pmc-7012568-1,pmc-7012568-1,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+576,48,PERC Rule for Pulmonary Embolism,pmc-7061779-1,pmc-8088400-1,"D. Swap back to v1.0 note, use 1_31 validated version",1,no,1,False
+577,48,PERC Rule for Pulmonary Embolism,pmc-4280479-1,pmc-4280479-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+578,48,PERC Rule for Pulmonary Embolism,pmc-7890353-1,pmc-7890353-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+579,48,PERC Rule for Pulmonary Embolism,pmc-8223855-1,pmc-8223855-1,"C. Keep v1.0 note, physician checks label (not in 1_31; astra flagged)",4,yes,4,False
+580,48,PERC Rule for Pulmonary Embolism,usmle-1611,usmle-1611,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+581,48,PERC Rule for Pulmonary Embolism,pmc-7676805-1,pmc-7676805-1,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+582,48,PERC Rule for Pulmonary Embolism,pmc-6994785-1,pmc-6994785-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+583,48,PERC Rule for Pulmonary Embolism,pmc-8520941-1,pmc-8520941-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+584,48,PERC Rule for Pulmonary Embolism,pmc-7444888-1,pmc-7444888-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+585,48,PERC Rule for Pulmonary Embolism,pmc-6075479-1,pmc-6075479-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+586,48,PERC Rule for Pulmonary Embolism,pmc-6283766-1,pmc-3883470-1,"E. Swap back to v1.0 note, physician re-annotates",0,yes,3,True
+587,48,PERC Rule for Pulmonary Embolism,pmc-5412761-1,pmc-5412761-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+588,48,PERC Rule for Pulmonary Embolism,usmle-4760,usmle-4760,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+589,51,SIRS Criteria,pmc-6935617-1,pmc-6935617-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+590,51,SIRS Criteria,pmc-6311171-1,pmc-6311171-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+591,51,SIRS Criteria,pmc-2474644-1,pmc-2474644-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+592,51,SIRS Criteria,pmc-5578525-1,pmc-5578525-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+593,51,SIRS Criteria,pmc-6171780-1,pmc-6171780-1,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+594,51,SIRS Criteria,pmc-5828046-1,pmc-5828046-1,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+595,51,SIRS Criteria,pmc-5406774-1,pmc-5406774-1,A. Use 1_31 validated inputs (same v1.0 note),2,no,2,False
+596,51,SIRS Criteria,pmc-6029742-1,pmc-3484318-2,"E. Swap back to v1.0 note, physician re-annotates",2,yes,3,True
+597,51,SIRS Criteria,pmc-4499596-1,pmc-4499596-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+598,51,SIRS Criteria,usmle-9804,usmle-9804,B. Keep as is (not in 1_31; astra: correct),3,no,3,False
+599,51,SIRS Criteria,pmc-7847810-1,pmc-7847810-1,B. Keep as is (not in 1_31; astra: correct),1,no,1,False
+600,51,SIRS Criteria,trec-cds-2016-23,trec-cds-2016-23,A. Use 1_31 validated inputs (same v1.0 note),0,no,0,False
+601,51,SIRS Criteria,pmc-7189307-1,pmc-7568833-1,"E. Swap back to v1.0 note, physician re-annotates",3,yes,3,False
+602,51,SIRS Criteria,pmc-3048475-1,pmc-4429388-1,"E. Swap back to v1.0 note, physician re-annotates",3,yes,3,False
+603,51,SIRS Criteria,pmc-5500273-1,pmc-6440265-1,"E. Swap back to v1.0 note, physician re-annotates",2,yes,3,True
+604,51,SIRS Criteria,pmc-2769425-1,pmc-2769425-1,B. Keep as is (not in 1_31; astra: correct),3,no,3,False
+605,51,SIRS Criteria,pmc-6423866-1,pmc-6423866-1,A. Use 1_31 validated inputs (same v1.0 note),3,no,3,False
+606,51,SIRS Criteria,pmc-5997433-1,pmc-8008694-1,"E. Swap back to v1.0 note, physician re-annotates",3,yes,3,False
+607,51,SIRS Criteria,pmc-7652029-1,pmc-7652029-1,A. Use 1_31 validated inputs (same v1.0 note),1,no,1,False
+608,51,SIRS Criteria,pmc-1780062-1,pmc-7788814-1,"E. Swap back to v1.0 note, physician re-annotates",2,yes,1,True

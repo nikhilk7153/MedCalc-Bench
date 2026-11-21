@@ -1,0 +1,22 @@
+\begin{table}[ht]
+    \centering
+    \caption{Comparison of GPT-3.5-turbo and GPT-4 in zero-shot CoT before and after adding code interpreter}
+    \begin{tabularx}{\textwidth}{l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+    \toprule
+    & \multicolumn{2}{c}{\textbf{GPT-3.5-turbo}} & \multicolumn{2}{c}{\textbf{GPT-4}} \\
+    \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+    & \textbf{Zero-Shot CoT} & \textbf{Code Prompt} & \textbf{Zero-Shot CoT} & \textbf{Code Prompt}\\
+    \midrule
+    \textbf{Equation} &  &  &  &  \\ \midrule
+    \quad Lab Test & 30.79\% & 42.68\% & 32.93\% & 65.24\% \\
+    \quad Physical & 47.50\% & 74.17\% & 72.92\% & 81.67\% \\
+    \quad Dosage & 2.50\% & 35.00\% & 42.50\% & 32.50\% \\
+    \quad Date & 35.00\% & 65.00\% & 61.67\% & 73.33\% \\ \midrule
+    \textbf{Rule} &  &  &  &  \\ \midrule
+    \quad Severity & 25.00\% & 25.00\% & 37.50\% & 55.00\% \\
+    \quad Diagnosis & 26.67\% & 35.00\% & 38.33\% & 55.00\% \\
+    \quad Risk & 18.33\% & 18.33\% & 32.50\% & 45.00\% \\ \midrule
+    \textbf{Overall} & 30.25\% & 43.51\% & 44.66\% & 62.21\% \\ 
+    \bottomrule
+    \end{tabularx}
+\end{table}
