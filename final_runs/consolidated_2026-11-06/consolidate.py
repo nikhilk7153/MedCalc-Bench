@@ -4,15 +4,17 @@ category. Each output is the latest run of that row (by timestamp), among the ru
   < CKD-EPI re-run (10-22 13:53: 13 label-fix rows and CKD-EPI rows 21-40, all styles)
   < MDRD/Sodium re-run (10-22 16:51: rows 141-160 and 366-385, zero- and one-shot).
 Kept on the main run: the Astra rows (re-run 10-22 14:24 on unreviewed corrections; physician review pending), and the
-LDL Friedewald and SOFA one-shot re-runs (10-23/10-24; GPT-4, and for LDL GPT-3.5, never ran them)."""
+LDL Friedewald and SOFA one-shot re-runs (10-23/10-24; GPT-4, and for LDL GPT-3.5, never ran them).
+With MEDCALC_VARIANT=astra (see variant.py) the Astra rows come from the Astra re-run instead, scored against its labels."""
 import json, os, re, sys
 import numpy as np
 import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = f"{HERE}/outputs"
 sys.path.insert(0, f"{ROOT}/evaluation")
 from evaluate import check_correctness
+import variant
+OUT = f"{variant.OUT}/outputs"
 
 MODELS = [  # table name, main-run file prefix, re-run folder, re-run file prefix
     ("PMC-LLaMA", "axiong_PMC_LLaMA_13B", "PMC_LLaMA_13B", "axiong_PMC_LLaMA_13B"),
@@ -32,7 +34,7 @@ MDRD = f"{ROOT}/extra_runs/mdrd_sodium_wording_rerun_2026-10-22"
 
 norm = lambda s: re.sub(r"\s+", " ", str(s)).strip()
 as_run = pd.read_csv(f"{ROOT}/extra_runs/gpt-4o-2024-08-06_benchmark_2026-10-24/input/test_data_10_22_as_run.csv", dtype=str, keep_default_na=False).set_index("Row Number")
-labels = pd.read_csv(f"{ROOT}/dataset/test_data_10_22_corrected.csv", dtype=str, keep_default_na=False).set_index("Row Number")
+labels = variant.labels()
 MDRD_ROWS = {str(r) for r in list(range(141, 161)) + list(range(366, 386))}
 
 def load(path):
@@ -55,6 +57,10 @@ for name, prefix, folder, rprefix in MODELS:
         rerun = load(f"{CKDEPI}/{folder}/outputs/{rprefix}_{style}.jsonl")
         for r in rerun:
             rows[r], source[r] = rerun[r], "corrected_rows_ckdepi_rerun_2026-10-22"
+        if variant.ASTRA:
+            rerun = load(f"{variant.ASTRA_RUN}/{folder}/outputs/{rprefix}_{style}.jsonl")
+            for r in variant.ASTRA_ROWS:
+                rows[r], source[r] = rerun[r], "astra_corrections_rerun_2026-10-22"
         if style != "direct_answer":
             rerun = load(f"{MDRD}/{folder}/outputs/{rprefix}_{style}.jsonl")
             for r in MDRD_ROWS:
@@ -64,7 +70,7 @@ for name, prefix, folder, rprefix in MODELS:
             for r in sorted(rows, key=int):
                 x = dict(rows[r])
                 # prompt check: question and note must match the test row this output stands for
-                ref = labels if (r in MDRD_ROWS and style != "direct_answer") else as_run
+                ref = labels if (r in MDRD_ROWS and style != "direct_answer") or r in variant.ASTRA_ROWS else as_run
                 if norm(x["Question"]) != norm(ref.at[r, "Question"]):
                     problems.append((name, style, r, "question"))
                 note = norm(x["Patient Note"])
@@ -90,5 +96,5 @@ for (name, style), cats in table.items():
         v = np.array(allr if c == "overall" else cats[c], float); m = v.mean()
         line[c] = round(m * 100, 2); line[c + "_std"] = round(np.sqrt(m * (1 - m) / len(v)), 2); line[c + "_n"] = len(v)
     stats.append(line)
-pd.DataFrame(stats).to_csv(f"{HERE}/accuracy_by_category.csv", index=False)
+pd.DataFrame(stats).to_csv(f"{variant.OUT}/accuracy_by_category.csv", index=False)
 print(pd.DataFrame(stats)[["Model", "Style"] + CATS + ["overall"]].to_string(index=False))

@@ -1,0 +1,47 @@
+\begin{table}[h!]
+    \centering
+    \caption{Number of tokens used for zero-shot direct prompting}
+    \resizebox{\textwidth}{!}{ % Adjust table to fit within the text width
+    \begin{tabular}{ccccccccc}
+    \toprule
+         & PMC-LLaMA & \textsc{MediTron} & Mistral & Mixtral & Llama 3-8B & Llama 3-70B & GPT-3.5 & GPT-4 \\
+    \midrule
+        Input & 353.5k & 926.1k & 811.0k & 811.0k & 691.0k & 691.0k & 687.3k & 687.3k \\
+        Output & 1.0k & 15.3k & 213.2k & 59.9k & 9.4k & 8.5k & 7.6k & 8.4k \\
+    \bottomrule
+    \end{tabular}
+    }
+    \label{tab:tokens_direct}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Number of tokens used for zero-shot CoT prompting}
+    \resizebox{\textwidth}{!}{ % Adjust table to fit within the text width
+    \begin{tabular}{ccccccccc}
+    \toprule
+         & PMC-LLaMA & \textsc{MediTron} & Mistral & Mixtral & Llama 3-8B & Llama 3-70B & GPT-3.5 & GPT-4 \\
+    \midrule
+        Input & 447.2k & 1.1M & 904.7k & 904.7k & 742.7k & 742.7k & 739.0k & 739.0k \\
+        Output & 157.3k & 26.5k & 324.5k & 265.5k & 275.7k & 240.5k & 171.2k & 251.0k \\
+    \bottomrule
+    \end{tabular}
+    }
+    \label{tab:tokens_zero}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Number of tokens used for one-shot CoT prompting}
+    \resizebox{\textwidth}{!}{ % Adjust table to fit within the text width
+    \begin{tabular}{ccccccccc}
+    \toprule
+         & PMC-LLaMA & \textsc{MediTron} & Mistral & Mixtral & Llama 3-8B & Llama 3-70B & GPT-3.5 & GPT-4 \\
+    \midrule
+        Input & 1.1M & 1.8M & 2.1M & 2.1M & 1.8M & 1.8M & 1.8M & 1.8M \\
+        Output & 370.5k & 480.5k & 348.0k & 372.0k & 367.9k & 352.6k & 333.3k & 345.7k \\
+    \bottomrule
+    \end{tabular}
+    }
+    \label{tab:tokens_one}
+\end{table}

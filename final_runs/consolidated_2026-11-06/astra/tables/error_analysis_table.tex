@@ -1,0 +1,34 @@
+\begin{table}[h!] \small
+    \centering
+    \caption{Error type distribution of LLMs on \textsc{MedCalc-Bench}. Numbers in parentheses denote the relative proportions. Arrows indicate the proportion changes from zero-shot to one-shot learning.}
+    \begin{tabular}{lccccc}
+        \toprule
+        \bf Model & \textbf{Type A Error} & \textbf{Type B Error} & \textbf{Type C Error} & \textbf{Type D Error} & \bf \textbf{Error Rate} \\
+        \midrule
+        \rowcolor[RGB]{234, 238, 234}
+        \multicolumn{6}{l}{\it Zero-shot CoT Prompting} \\
+        % \midrule
+PMC-LLaMA-13B & 0.53 (53\%) & 0.01 (1\%) & 0.00 (0\%) & 0.46 (46\%) & 1.00 \\
+\textsc{MediTron}-70B & 0.30 (30\%) & 0.02 (2\%) & 0.06 (6\%) & 0.63 (63\%) & 1.00 \\
+Mistral-7B & 0.73 (83\%) & 0.08 (9\%) & 0.06 (7\%) & 0.00 (0\%) & 0.88 \\
+Mixtral-8x7B & 0.54 (71\%) & 0.12 (15\%) & 0.08 (11\%) & 0.02 (3\%) & 0.77 \\
+Llama 3-8B & 0.65 (78\%) & 0.10 (12\%) & 0.09 (10\%) & 0.00 (0\%) & 0.83 \\
+Llama 3-70B & 0.38 (65\%) & 0.13 (22\%) & 0.08 (13\%) & 0.00 (0\%) & 0.58 \\
+GPT-3.5 & 0.44 (62\%) & 0.13 (19\%) & 0.13 (18\%) & 0.00 (0\%) & 0.70 \\
+GPT-4 & 0.33 (60\%) & 0.12 (22\%) & 0.10 (17\%) & 0.00 (0\%) & 0.56 \\
+        \midrule
+        \rowcolor[RGB]{234, 238, 234}
+        \multicolumn{6}{l}{\it One-shot CoT Prompting} \\
+        % \midrule
+PMC-LLaMA-13B & 0.42 (48\%\(\downarrow\)) & 0.28 (31\%\(\uparrow\)) & 0.18 (20\%\(\uparrow\)) & 0.00 (0\%\(\downarrow\)) & 0.88 \\
+\textsc{MediTron}-70B & 0.26 (36\%\(\uparrow\)) & 0.20 (28\%\(\uparrow\)) & 0.27 (37\%\(\uparrow\)) & 0.00 (0\%\(\downarrow\)) & 0.74 \\
+Mistral-7B & 0.42 (53\%\(\downarrow\)) & 0.14 (18\%\(\uparrow\)) & 0.22 (28\%\(\uparrow\)) & 0.00 (0\%--) & 0.78 \\
+Mixtral-8x7B & 0.33 (51\%\(\downarrow\)) & 0.10 (16\%\(\uparrow\)) & 0.20 (32\%\(\uparrow\)) & 0.00 (1\%\(\downarrow\)) & 0.63 \\
+Llama 3-8B & 0.26 (39\%\(\downarrow\)) & 0.14 (21\%\(\uparrow\)) & 0.27 (41\%\(\uparrow\)) & 0.00 (0\%--) & 0.68 \\
+Llama 3-70B & 0.20 (36\%\(\downarrow\)) & 0.11 (20\%\(\downarrow\)) & 0.24 (44\%\(\uparrow\)) & 0.00 (0\%--) & 0.55 \\
+GPT-3.5 & 0.24 (41\%\(\downarrow\)) & 0.10 (18\%\(\downarrow\)) & 0.24 (41\%\(\uparrow\)) & 0.00 (0\%--) & 0.58 \\
+GPT-4 & 0.17 (45\%\(\downarrow\)) & 0.07 (18\%\(\downarrow\)) & 0.14 (38\%\(\uparrow\)) & 0.00 (0\%--) & 0.38 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:error_analysis_results}
+\end{table}

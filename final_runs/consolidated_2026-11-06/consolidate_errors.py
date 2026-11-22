@@ -1,13 +1,15 @@
 """Error classifications for the consolidated outputs: for every wrong zero/one-shot answer, take the classification
-made on that same output (from the run it came from), and record whether it used the current reference explanation."""
+made on that same output (from the run it came from), and record whether it used the current reference explanation. MEDCALC_VARIANT=astra: see variant.py."""
 import json, os, re
 import pandas as pd
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
 HERE = os.path.dirname(os.path.abspath(__file__))
-CONS = f"{HERE}/outputs"
+import variant
+CONS = f"{variant.OUT}/outputs"
 EA = {"final_runs/test_data_10_22": f"{ROOT}/evaluation/error_analysis_10_22",
       "corrected_rows_ckdepi_rerun_2026-10-22": f"{ROOT}/extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/error_analysis",
-      "mdrd_sodium_wording_rerun_2026-10-22": f"{ROOT}/extra_runs/mdrd_sodium_wording_rerun_2026-10-22/error_analysis"}
+      "mdrd_sodium_wording_rerun_2026-10-22": f"{ROOT}/extra_runs/mdrd_sodium_wording_rerun_2026-10-22/error_analysis",
+      "astra_corrections_rerun_2026-10-22": f"{variant.ASTRA_RUN}/error_analysis"}
 MODELS = [("PMC-LLaMA", "axiong_PMC_LLaMA_13B", "pmc-llama-13b"), ("MediTron", "epfl-llm_meditron-70b", "meditron-70b"),
           ("Mistral", "mistralai_Mistral-7B-Instruct-v0.2", "mistral-7b"), ("Mixtral", "mistralai_Mixtral-8x7B-Instruct-v0.1", "mixtral-8x7b"),
           ("Llama 3 8B", "meta-llama_Meta-Llama-3-8B-Instruct", "llama-3-8b"), ("Llama 3 70B", "meta-llama_Meta-Llama-3-70B-Instruct", "llama-3-70b"),
@@ -52,7 +54,7 @@ for model, prefix, ename in MODELS:
                                       else "classified against the old explanation")
             lines.append(line)
 d = pd.DataFrame(lines)
-d.to_csv(f"{HERE}/error_classifications.csv", index=False)
+d.to_csv(f"{variant.OUT}/error_classifications.csv", index=False)
 print(d.groupby("Status").size().to_string(), "\n")
 print(d[d.Status != "classified"].groupby(["Status", "Source Run"]).size().to_string(), "\n")
 ok = d[d.Status == "classified"]
@@ -62,5 +64,5 @@ for (m, s), g in ok.groupby(["Model", "Style"], sort=False):
     for t in "ABCD":
         row[t] = round(100 * g["Error Types"].str.contains(t).mean(), 1)
     summ.append(row)
-summ = pd.DataFrame(summ); summ.to_csv(f"{HERE}/error_type_summary.csv", index=False)
+summ = pd.DataFrame(summ); summ.to_csv(f"{variant.OUT}/error_type_summary.csv", index=False)
 print(summ.to_string(index=False))

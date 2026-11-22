@@ -1,0 +1,257 @@
+Calculator Type,Model,Attributes,Rows,Correct,Accuracy
+equation,PMC Llama 13b,1,40,0,0.0
+equation,PMC Llama 13b,2,304,0,0.0
+equation,PMC Llama 13b,3,155,0,0.0
+equation,PMC Llama 13b,4,115,0,0.0
+equation,PMC Llama 13b,5,20,0,0.0
+equation,PMC Llama 13b,6,21,0,0.0
+equation,PMC Llama 13b,7,13,0,0.0
+equation,Meditron 70b,1,40,0,0.0
+equation,Meditron 70b,2,304,1,0.0033
+equation,Meditron 70b,3,155,0,0.0
+equation,Meditron 70b,4,115,0,0.0
+equation,Meditron 70b,5,20,0,0.0
+equation,Meditron 70b,6,21,0,0.0
+equation,Meditron 70b,7,13,0,0.0
+equation,Llama3 8b,1,40,8,0.2
+equation,Llama3 8b,2,304,71,0.2336
+equation,Llama3 8b,3,155,27,0.1742
+equation,Llama3 8b,4,115,2,0.0174
+equation,Llama3 8b,5,20,1,0.05
+equation,Llama3 8b,6,21,1,0.0476
+equation,Llama3 8b,7,13,1,0.0769
+equation,Llama3 70b,1,40,26,0.65
+equation,Llama3 70b,2,304,188,0.6184
+equation,Llama3 70b,3,155,94,0.6065
+equation,Llama3 70b,4,115,18,0.1565
+equation,Llama3 70b,5,20,0,0.0
+equation,Llama3 70b,6,21,3,0.1429
+equation,Llama3 70b,7,13,2,0.1538
+equation,Mistral 7b,1,40,3,0.075
+equation,Mistral 7b,2,304,62,0.2039
+equation,Mistral 7b,3,155,20,0.129
+equation,Mistral 7b,4,115,1,0.0087
+equation,Mistral 7b,5,20,0,0.0
+equation,Mistral 7b,6,21,0,0.0
+equation,Mistral 7b,7,13,1,0.0769
+equation,Mixtral 8x7b,1,40,10,0.25
+equation,Mixtral 8x7b,2,304,117,0.3849
+equation,Mixtral 8x7b,3,155,46,0.2968
+equation,Mixtral 8x7b,4,115,8,0.0696
+equation,Mixtral 8x7b,5,20,1,0.05
+equation,Mixtral 8x7b,6,21,2,0.0952
+equation,Mixtral 8x7b,7,13,1,0.0769
+equation,GPT 4,1,40,29,0.725
+equation,GPT 4,2,304,215,0.7072
+equation,GPT 4,3,155,69,0.4452
+equation,GPT 4,4,115,16,0.1391
+equation,GPT 4,5,20,3,0.15
+equation,GPT 4,6,21,5,0.2381
+equation,GPT 4,7,13,0,0.0
+equation,GPT-3.5-turbo,1,40,20,0.5
+equation,GPT-3.5-turbo,2,304,131,0.4309
+equation,GPT-3.5-turbo,3,155,70,0.4516
+equation,GPT-3.5-turbo,4,115,13,0.113
+equation,GPT-3.5-turbo,5,20,1,0.05
+equation,GPT-3.5-turbo,6,21,2,0.0952
+equation,GPT-3.5-turbo,7,13,0,0.0
+rule,PMC Llama 13b,1,1,0,0.0
+rule,PMC Llama 13b,2,7,0,0.0
+rule,PMC Llama 13b,3,46,0,0.0
+rule,PMC Llama 13b,4,49,0,0.0
+rule,PMC Llama 13b,5,50,0,0.0
+rule,PMC Llama 13b,6,42,0,0.0
+rule,PMC Llama 13b,7,9,0,0.0
+rule,PMC Llama 13b,8,5,0,0.0
+rule,PMC Llama 13b,9,56,0,0.0
+rule,PMC Llama 13b,10,1,0,0.0
+rule,PMC Llama 13b,11,16,0,0.0
+rule,PMC Llama 13b,12,16,0,0.0
+rule,PMC Llama 13b,13,7,0,0.0
+rule,PMC Llama 13b,14,3,0,0.0
+rule,PMC Llama 13b,15,5,0,0.0
+rule,PMC Llama 13b,16,6,0,0.0
+rule,PMC Llama 13b,17,15,0,0.0
+rule,PMC Llama 13b,18,18,0,0.0
+rule,PMC Llama 13b,19,4,0,0.0
+rule,PMC Llama 13b,20,13,0,0.0
+rule,PMC Llama 13b,21,4,0,0.0
+rule,PMC Llama 13b,22,1,0,0.0
+rule,PMC Llama 13b,24,1,0,0.0
+rule,PMC Llama 13b,29,1,0,0.0
+rule,PMC Llama 13b,31,4,0,0.0
+rule,Meditron 70b,1,1,0,0.0
+rule,Meditron 70b,2,7,0,0.0
+rule,Meditron 70b,3,46,0,0.0
+rule,Meditron 70b,4,49,1,0.0204
+rule,Meditron 70b,5,50,0,0.0
+rule,Meditron 70b,6,42,0,0.0
+rule,Meditron 70b,7,9,0,0.0
+rule,Meditron 70b,8,5,0,0.0
+rule,Meditron 70b,9,56,0,0.0
+rule,Meditron 70b,10,1,0,0.0
+rule,Meditron 70b,11,16,0,0.0
+rule,Meditron 70b,12,16,0,0.0
+rule,Meditron 70b,13,7,0,0.0
+rule,Meditron 70b,14,3,0,0.0
+rule,Meditron 70b,15,5,0,0.0
+rule,Meditron 70b,16,6,0,0.0
+rule,Meditron 70b,17,15,0,0.0
+rule,Meditron 70b,18,18,0,0.0
+rule,Meditron 70b,19,4,0,0.0
+rule,Meditron 70b,20,13,0,0.0
+rule,Meditron 70b,21,4,0,0.0
+rule,Meditron 70b,22,1,0,0.0
+rule,Meditron 70b,24,1,0,0.0
+rule,Meditron 70b,29,1,0,0.0
+rule,Meditron 70b,31,4,0,0.0
+rule,Llama3 8b,1,1,0,0.0
+rule,Llama3 8b,2,7,3,0.4286
+rule,Llama3 8b,3,46,8,0.1739
+rule,Llama3 8b,4,49,11,0.2245
+rule,Llama3 8b,5,50,8,0.16
+rule,Llama3 8b,6,42,13,0.3095
+rule,Llama3 8b,7,9,1,0.1111
+rule,Llama3 8b,8,5,2,0.4
+rule,Llama3 8b,9,56,12,0.2143
+rule,Llama3 8b,10,1,0,0.0
+rule,Llama3 8b,11,16,0,0.0
+rule,Llama3 8b,12,16,4,0.25
+rule,Llama3 8b,13,7,0,0.0
+rule,Llama3 8b,14,3,0,0.0
+rule,Llama3 8b,15,5,0,0.0
+rule,Llama3 8b,16,6,0,0.0
+rule,Llama3 8b,17,15,0,0.0
+rule,Llama3 8b,18,18,0,0.0
+rule,Llama3 8b,19,4,0,0.0
+rule,Llama3 8b,20,13,0,0.0
+rule,Llama3 8b,21,4,0,0.0
+rule,Llama3 8b,22,1,0,0.0
+rule,Llama3 8b,24,1,0,0.0
+rule,Llama3 8b,29,1,0,0.0
+rule,Llama3 8b,31,4,0,0.0
+rule,Llama3 70b,1,1,0,0.0
+rule,Llama3 70b,2,7,2,0.2857
+rule,Llama3 70b,3,46,24,0.5217
+rule,Llama3 70b,4,49,21,0.4286
+rule,Llama3 70b,5,50,15,0.3
+rule,Llama3 70b,6,42,12,0.2857
+rule,Llama3 70b,7,9,1,0.1111
+rule,Llama3 70b,8,5,1,0.2
+rule,Llama3 70b,9,56,18,0.3214
+rule,Llama3 70b,10,1,0,0.0
+rule,Llama3 70b,11,16,4,0.25
+rule,Llama3 70b,12,16,6,0.375
+rule,Llama3 70b,13,7,0,0.0
+rule,Llama3 70b,14,3,0,0.0
+rule,Llama3 70b,15,5,0,0.0
+rule,Llama3 70b,16,6,0,0.0
+rule,Llama3 70b,17,15,0,0.0
+rule,Llama3 70b,18,18,0,0.0
+rule,Llama3 70b,19,4,2,0.5
+rule,Llama3 70b,20,13,0,0.0
+rule,Llama3 70b,21,4,0,0.0
+rule,Llama3 70b,22,1,0,0.0
+rule,Llama3 70b,24,1,0,0.0
+rule,Llama3 70b,29,1,0,0.0
+rule,Llama3 70b,31,4,0,0.0
+rule,Mistral 7b,1,1,0,0.0
+rule,Mistral 7b,2,7,0,0.0
+rule,Mistral 7b,3,46,5,0.1087
+rule,Mistral 7b,4,49,4,0.0816
+rule,Mistral 7b,5,50,9,0.18
+rule,Mistral 7b,6,42,11,0.2619
+rule,Mistral 7b,7,9,0,0.0
+rule,Mistral 7b,8,5,0,0.0
+rule,Mistral 7b,9,56,9,0.1607
+rule,Mistral 7b,10,1,0,0.0
+rule,Mistral 7b,11,16,0,0.0
+rule,Mistral 7b,12,16,1,0.0625
+rule,Mistral 7b,13,7,0,0.0
+rule,Mistral 7b,14,3,0,0.0
+rule,Mistral 7b,15,5,0,0.0
+rule,Mistral 7b,16,6,1,0.1667
+rule,Mistral 7b,17,15,1,0.0667
+rule,Mistral 7b,18,18,1,0.0556
+rule,Mistral 7b,19,4,0,0.0
+rule,Mistral 7b,20,13,0,0.0
+rule,Mistral 7b,21,4,0,0.0
+rule,Mistral 7b,22,1,0,0.0
+rule,Mistral 7b,24,1,0,0.0
+rule,Mistral 7b,29,1,0,0.0
+rule,Mistral 7b,31,4,0,0.0
+rule,Mixtral 8x7b,1,1,0,0.0
+rule,Mixtral 8x7b,2,7,0,0.0
+rule,Mixtral 8x7b,3,46,6,0.1304
+rule,Mixtral 8x7b,4,49,16,0.3265
+rule,Mixtral 8x7b,5,50,8,0.16
+rule,Mixtral 8x7b,6,42,8,0.1905
+rule,Mixtral 8x7b,7,9,3,0.3333
+rule,Mixtral 8x7b,8,5,2,0.4
+rule,Mixtral 8x7b,9,56,12,0.2143
+rule,Mixtral 8x7b,10,1,0,0.0
+rule,Mixtral 8x7b,11,16,0,0.0
+rule,Mixtral 8x7b,12,16,2,0.125
+rule,Mixtral 8x7b,13,7,0,0.0
+rule,Mixtral 8x7b,14,3,1,0.3333
+rule,Mixtral 8x7b,15,5,0,0.0
+rule,Mixtral 8x7b,16,6,0,0.0
+rule,Mixtral 8x7b,17,15,1,0.0667
+rule,Mixtral 8x7b,18,18,0,0.0
+rule,Mixtral 8x7b,19,4,1,0.25
+rule,Mixtral 8x7b,20,13,0,0.0
+rule,Mixtral 8x7b,21,4,0,0.0
+rule,Mixtral 8x7b,22,1,0,0.0
+rule,Mixtral 8x7b,24,1,0,0.0
+rule,Mixtral 8x7b,29,1,0,0.0
+rule,Mixtral 8x7b,31,4,0,0.0
+rule,GPT 4,1,1,0,0.0
+rule,GPT 4,2,7,5,0.7143
+rule,GPT 4,3,46,19,0.413
+rule,GPT 4,4,49,29,0.5918
+rule,GPT 4,5,50,23,0.46
+rule,GPT 4,6,42,25,0.5952
+rule,GPT 4,7,9,2,0.2222
+rule,GPT 4,8,5,2,0.4
+rule,GPT 4,9,56,17,0.3036
+rule,GPT 4,10,1,0,0.0
+rule,GPT 4,11,16,1,0.0625
+rule,GPT 4,12,16,2,0.125
+rule,GPT 4,13,7,2,0.2857
+rule,GPT 4,14,3,0,0.0
+rule,GPT 4,15,5,0,0.0
+rule,GPT 4,16,6,0,0.0
+rule,GPT 4,17,15,1,0.0667
+rule,GPT 4,18,18,1,0.0556
+rule,GPT 4,19,4,0,0.0
+rule,GPT 4,20,13,0,0.0
+rule,GPT 4,21,4,0,0.0
+rule,GPT 4,22,1,0,0.0
+rule,GPT 4,24,1,0,0.0
+rule,GPT 4,29,1,0,0.0
+rule,GPT 4,31,4,0,0.0
+rule,GPT-3.5-turbo,1,1,1,1.0
+rule,GPT-3.5-turbo,2,7,0,0.0
+rule,GPT-3.5-turbo,3,46,12,0.2609
+rule,GPT-3.5-turbo,4,49,17,0.3469
+rule,GPT-3.5-turbo,5,50,12,0.24
+rule,GPT-3.5-turbo,6,42,14,0.3333
+rule,GPT-3.5-turbo,7,9,2,0.2222
+rule,GPT-3.5-turbo,8,5,1,0.2
+rule,GPT-3.5-turbo,9,56,12,0.2143
+rule,GPT-3.5-turbo,10,1,0,0.0
+rule,GPT-3.5-turbo,11,16,0,0.0
+rule,GPT-3.5-turbo,12,16,4,0.25
+rule,GPT-3.5-turbo,13,7,0,0.0
+rule,GPT-3.5-turbo,14,3,1,0.3333
+rule,GPT-3.5-turbo,15,5,1,0.2
+rule,GPT-3.5-turbo,16,6,0,0.0
+rule,GPT-3.5-turbo,17,15,0,0.0
+rule,GPT-3.5-turbo,18,18,0,0.0
+rule,GPT-3.5-turbo,19,4,0,0.0
+rule,GPT-3.5-turbo,20,13,0,0.0
+rule,GPT-3.5-turbo,21,4,0,0.0
+rule,GPT-3.5-turbo,22,1,0,0.0
+rule,GPT-3.5-turbo,24,1,0,0.0
+rule,GPT-3.5-turbo,29,1,0,0.0
+rule,GPT-3.5-turbo,31,4,0,0.0

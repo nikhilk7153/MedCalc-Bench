@@ -9,7 +9,9 @@ The first version of MedCalc-Bench Verified is an update from v1.2 on this repos
 
 # Correction to the NeurIPS 2024 paper (2026)
 
-The corrected test set, one-shot examples, model outputs, error analysis and paper tables for the correction of the NeurIPS 2024 paper are in `final_release_2026-11-08/` (see its README). The scripts that build them are in `final_runs/consolidated_2026-11-06/` (see its README), and `dataset/CHANGELOG.md` lists the dataset changes.
+> **Work in progress.** The correction is not final. Open items, including corrections still awaiting physician review, are listed in `final_release_2026-11-08/README.md`, and the dataset, outputs and numbers may still change.
+
+The corrected test set, one-shot examples, model outputs, error analysis and paper tables for the correction of the NeurIPS 2024 paper are in `final_release_2026-11-08/` (see its README). `final_release_2026-11-22_astra/` is the same release with the 45 rows changed by the Astra corrections, which have not yet been reviewed by a physician. The scripts that build them are in `final_runs/consolidated_2026-11-06/` (see its README), and `dataset/CHANGELOG.md` lists the dataset changes.
 
 # MedCalc-Bench
 

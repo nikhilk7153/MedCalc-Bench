@@ -1,12 +1,13 @@
 """Dataset statistics table (paper Table 1) for the corrected test set, computed as for v1.0: lengths in GPT-4 tokens
 (tiktoken cl100k_base), attributes = number of Relevant Entities. The test set is the one the consolidated results use:
 dataset/test_data_10_22.csv (notes and questions as run; MDRD/Sodium reworded, LDL not) with the inputs and labels of
-dataset/test_data_10_22_corrected.csv."""
+dataset/test_data_10_22_corrected.csv. MEDCALC_VARIANT=astra: see variant.py."""
 import ast, json, os, re
 from decimal import Decimal, ROUND_HALF_UP
 from fractions import Fraction
 import pandas as pd
 import tiktoken
+import variant
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repository root
 HERE = os.path.dirname(os.path.abspath(__file__))
 enc = tiktoken.get_encoding("cl100k_base")
@@ -18,7 +19,7 @@ def load_release():
     c = pd.read_csv(f"{ROOT}/dataset/test_data_10_22_corrected.csv", dtype=str, keep_default_na=False).set_index("Row Number")
     for col in ["Relevant Entities", "Ground Truth Answer", "Lower Limit", "Upper Limit", "Ground Truth Explanation"]:
         t[col] = c[col]
-    return t.reset_index()
+    return variant.with_astra(t).reset_index()
 
 def stats(d, question):
     d = d.assign(nl=d["Patient Note"].map(ntok), ql=question.map(ntok), na=d["Relevant Entities"].map(ents))
@@ -57,5 +58,5 @@ if __name__ == "__main__":
     t, n, nl, ql, mn, mx, av = s["overall"]
     tex += [r"    \midrule", rf"    \textbf{{Overall}} & {t} & {n} & {f1(nl)} & {f1(ql)} & {mn} & {mx} & {f1(av)} & -- \\",
             r"    \bottomrule", r"    \end{tabular}", r"    \label{tab:dataset_statistics}", r"\end{table}"]
-    open(f"{HERE}/tables/dataset_statistics_table.tex", "w").write("\n".join(tex) + "\n")
+    open(f"{variant.OUT}/tables/dataset_statistics_table.tex", "w").write("\n".join(tex) + "\n")
     print("\n".join(tex))

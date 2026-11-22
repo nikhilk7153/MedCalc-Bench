@@ -11,34 +11,40 @@ Copies only (no recomputation, no model calls); source folders are not modified.
 - dataset/train_data.csv: dataset/train_data_10_22.csv (open items listed in the release README).
 - calculator_sources.csv (per calculator ID: changes used, outputs by run, later changes not used), outputs/,
   error_analysis/, tables/, figures/ (Appendix E.1): from this folder.
-Writes MANIFEST.csv (rows and sha256 per file)."""
+Writes MANIFEST.csv (rows and sha256 per file).
+MEDCALC_VARIANT=astra (see variant.py): the Astra set, from astra/, into <repo>/final_release_2026-11-22_astra/, with the
+Astra re-run's per-row change list (astra_changes_applied.csv)."""
 import hashlib, json, os, shutil, sys
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-DEST = f"{ROOT}/final_release_2026-11-08"
 sys.path.insert(0, HERE)
 from make_stats_table import load_release
+import variant
+DEST = f"{ROOT}/final_release_2026-11-22_astra" if variant.ASTRA else f"{ROOT}/final_release_2026-11-08"
+SRC = os.path.relpath(variant.OUT, ROOT)  # final_runs/consolidated_2026-11-06 (or its astra/ folder)
 
 COPIES = {
     "dataset/one_shot_examples.json": "extra_runs/mdrd_sodium_wording_rerun_2026-10-22/input/one_shot_10_17_2026_corrected.json",
     "dataset/train_data.csv": "dataset/train_data_10_22.csv",
     "dataset/CHANGELOG.md": "dataset/CHANGELOG.md",
-    "outputs/accuracy_by_category.csv": "final_runs/consolidated_2026-11-06/accuracy_by_category.csv",
-    "calculator_sources.csv": "final_runs/consolidated_2026-11-06/calculator_sources.csv",
-    "error_analysis/error_classifications.csv": "final_runs/consolidated_2026-11-06/error_classifications.csv",
-    "error_analysis/error_type_summary.csv": "final_runs/consolidated_2026-11-06/error_type_summary.csv",
-    "error_analysis/error_type_table_values.csv": "final_runs/consolidated_2026-11-06/error_type_table_values.csv",
+    "outputs/accuracy_by_category.csv": f"{SRC}/accuracy_by_category.csv",
+    "calculator_sources.csv": f"{SRC}/calculator_sources.csv",
+    "error_analysis/error_classifications.csv": f"{SRC}/error_classifications.csv",
+    "error_analysis/error_type_summary.csv": f"{SRC}/error_type_summary.csv",
+    "error_analysis/error_type_table_values.csv": f"{SRC}/error_type_table_values.csv",
 }
-for f in sorted(os.listdir(f"{HERE}/outputs")):
+if variant.ASTRA:
+    COPIES["dataset/astra_changes_applied.csv"] = "extra_runs/astra_corrections_rerun_2026-10-22/astra_changes_applied.csv"
+for f in sorted(os.listdir(f"{variant.OUT}/outputs")):
     if f.endswith(".jsonl"):
-        COPIES[f"outputs/{f}"] = f"final_runs/consolidated_2026-11-06/outputs/{f}"
-for f in sorted(os.listdir(f"{HERE}/accuracy_vs_param_count")):
+        COPIES[f"outputs/{f}"] = f"{SRC}/outputs/{f}"
+for f in sorted(os.listdir(f"{variant.OUT}/accuracy_vs_param_count")):
     if f.endswith((".png", ".csv")):
-        COPIES[f"figures/{f}"] = f"final_runs/consolidated_2026-11-06/accuracy_vs_param_count/{f}"
-for f in sorted(os.listdir(f"{HERE}/tables")):
-    COPIES[f"tables/{f}"] = f"final_runs/consolidated_2026-11-06/tables/{f}"
+        COPIES[f"figures/{f}"] = f"{SRC}/accuracy_vs_param_count/{f}"
+for f in sorted(os.listdir(f"{variant.OUT}/tables")):
+    COPIES[f"tables/{f}"] = f"{SRC}/tables/{f}"
 
 test = load_release()
 assert len(test) == 1048 and test["Row Number"].is_unique

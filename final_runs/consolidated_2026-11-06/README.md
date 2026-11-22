@@ -1,5 +1,7 @@
 # Consolidated results and paper tables (2026-11-06)
 
+> **Work in progress.** These results are not final; see the open items in `../../final_release_2026-11-08/README.md`.
+
 One output per model, prompt style and row, spliced from runs that already exist (no new model calls), re-scored
 against the corrected labels, and the three paper tables built from them. Source folders are not modified.
 
@@ -23,6 +25,11 @@ against the corrected labels, and the three paper tables built from them. Source
 | `check_open_patients_table.py` | Prints the Open-Patients table (Table 1) recomputed from `ncbi/Open-Patients` next to the published values. Needs `nltk` with `punkt_tab` |
 | `make_token_tables.py` | `token_counts.csv` and `tables/token_tables.tex` (Appendix B.3 token tables). Needs `transformers`, `tiktoken`, `sentencepiece`, `protobuf`, `jinja2` (no torch) and Hugging Face access to the gated Llama 3 / Mistral tokenizers |
 
+**Two test sets.** By default the scripts build the current set into this folder. With `MEDCALC_VARIANT=astra` set,
+the same scripts, run in the same order, build the Astra set into `astra/` and `../../final_release_2026-11-22_astra/`:
+the 45 rows changed by the unreviewed Astra corrections then use the Astra re-run (its labels, notes, outputs and error
+classifications). `variant.py` holds the switch and the Astra rows.
+
 `run_py_as_run_5f7e8a9d.py` is the `evaluation/run.py` the final runs used (= `git show 80dc902:evaluation/run.py`);
 `make_token_tables.py` rebuilds prompts with it, since `evaluation/run.py` has changed since.
 
@@ -35,7 +42,8 @@ Rule (2026-11-14): the latest run of the row, by timestamp, among the runs all 8
 | MDRD and Sodium rows 141-160, 366-385, zero- and one-shot and code prompt | `extra_runs/mdrd_sodium_wording_rerun_2026-10-22/` (reworded questions) | 10-22 16:51 |
 
 Kept on the main run although a later run exists:
-- **Astra rows (45):** re-run 10-22 14:24 on unreviewed corrections; physician review pending.
+- **Astra rows (45):** re-run 10-22 14:24 on unreviewed corrections; physician review pending. The Astra set
+  (`MEDCALC_VARIANT=astra`, above) uses that re-run for them.
 - **LDL rows 513-532 (Friedewald question) and the SOFA one-shot rows 889-908 (corrected example):** re-run 10-23/10-24
   without GPT-4 (and, for LDL, without GPT-3.5), so the models would have answered different prompts.
 - Side experiments (`gpt-4o`, PMC-LLaMA fit-context, time-point replay) and the superseded GPT-only

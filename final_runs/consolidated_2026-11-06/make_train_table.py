@@ -11,6 +11,7 @@ Centor (in the data) was missing (added; attributes 5, as in the test-set table)
 test note's case, so the corrected training set has none."""
 import os
 import pandas as pd
+import variant  # MEDCALC_VARIANT=astra: see variant.py (same training set)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))  # repository root
@@ -46,7 +47,7 @@ lines = []
 for cid, name, attributes in ROWS:
     kind, sub = SUBTYPE[category[cid]]
     lines.append(f"{name} & {kind} & {sub} & {attributes} & {counts[cid]} \\\\")
-open(f"{HERE}/tables/train_table.tex", "w").write("\n".join(lines) + "\n")
+open(f"{variant.OUT}/tables/train_table.tex", "w").write("\n".join(lines) + "\n")
 print("\n".join(lines))
 
 types = train.groupby("Calculator ID")["Note Type"].agg(lambda s: "/".join(sorted(set(s))))

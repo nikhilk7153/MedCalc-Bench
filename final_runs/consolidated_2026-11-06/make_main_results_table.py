@@ -3,8 +3,8 @@ import json, os
 from decimal import Decimal, ROUND_HALF_UP
 from fractions import Fraction
 import numpy as np
-HERE = os.path.dirname(os.path.abspath(__file__))
-D = f"{HERE}/outputs"
+import variant  # MEDCALC_VARIANT=astra: see variant.py
+D = f"{variant.OUT}/outputs"
 CATS = ["lab", "physical", "date", "dosage", "risk", "severity", "diagnosis"]
 MODELS = [
     (r"\includegraphics[width=0.4cm]{icons/pmc.png} PMC-LLaMA \cite{wu2024pmc}", "13B", "axiong_PMC_LLaMA_13B"),
@@ -44,5 +44,5 @@ for title, style in SECTIONS:
         cells = [cell(by[c]) for c in CATS] + [cell(sum(by.values(), []))]
         out.append(f"{name} & {size} & " + "  & ".join(cells) + "  \\\\")
 out += [r"        \bottomrule", r"    \end{tabular}", r"    \label{tab:main_results}", r"\end{table}"]
-open(f"{HERE}/tables/main_results_table.tex", "w").write("\n".join(out) + "\n")
+open(f"{variant.OUT}/tables/main_results_table.tex", "w").write("\n".join(out) + "\n")
 print("n per category:", ns, "total", sum(ns.values()))

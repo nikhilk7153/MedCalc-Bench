@@ -5,9 +5,9 @@ classified errors (empty or blocked classifications excluded) and scaled to the 
 import os
 from decimal import Decimal, ROUND_HALF_UP
 import pandas as pd
-HERE = os.path.dirname(os.path.abspath(__file__))
+import variant  # MEDCALC_VARIANT=astra: see variant.py
 N = 1048
-d = pd.read_csv(f"{HERE}/error_classifications.csv", dtype={"Error Types": str}, keep_default_na=False)
+d = pd.read_csv(f"{variant.OUT}/error_classifications.csv", dtype={"Error Types": str}, keep_default_na=False)
 used = d[d.Status == "classified"]
 NAMES = [("PMC-LLaMA", "PMC-LLaMA-13B"), ("MediTron", r"\textsc{MediTron}-70B"), ("Mistral", "Mistral-7B"), ("Mixtral", "Mixtral-8x7B"),
          ("Llama 3 8B", "Llama 3-8B"), ("Llama 3 70B", "Llama 3-70B"), ("GPT-3.5", "GPT-3.5"), ("GPT-4", "GPT-4")]
@@ -46,7 +46,7 @@ for style, title in [("zero_shot", "Zero-shot CoT Prompting"), ("one_shot", "One
             rows_csv.append({"Model": model, "Style": style, "Type": t, "Share of notes": s["rate"] * s["share"][t], "Share of errors": s["share"][t]})
         out.append(f"{label} & " + " & ".join(cells) + f" & {r2(s['rate'])} \\\\")
 out += [r"        \bottomrule", r"    \end{tabular}", r"    \label{tab:error_analysis_results}", r"\end{table}"]
-open(f"{HERE}/tables/error_analysis_table.tex", "w").write("\n".join(out) + "\n")
-pd.DataFrame(rows_csv).to_csv(f"{HERE}/error_type_table_values.csv", index=False)
+open(f"{variant.OUT}/tables/error_analysis_table.tex", "w").write("\n".join(out) + "\n")
+pd.DataFrame(rows_csv).to_csv(f"{variant.OUT}/error_type_table_values.csv", index=False)
 print("\n".join(out))
 print({k: (v["wrong"], v["used"]) for k, v in stats.items()})

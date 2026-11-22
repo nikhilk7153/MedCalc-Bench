@@ -9,7 +9,7 @@ Output tokens: open models, the `Output Tokens` vLLM recorded; GPT, tiktoken cl1
 Check: for main-run rows the rebuilt prompts must equal the ones in final_runs/test_data_10_22_with_prompts.
 
 Needs transformers, tiktoken, sentencepiece, protobuf and jinja2 (no torch), and Hugging Face access to the gated
-Llama 3 and Mistral tokenizers. Writes token_counts.csv and tables/token_tables.tex."""
+Llama 3 and Mistral tokenizers. Writes token_counts.csv and tables/token_tables.tex. MEDCALC_VARIANT=astra: see variant.py."""
 import importlib.util, json, os, re, sys
 import pandas as pd
 import tiktoken
@@ -20,6 +20,8 @@ EVAL = f"{ROOT}/evaluation"
 sys.path.insert(0, EVAL)  # run.py imports evaluate and table_stats
 spec = importlib.util.spec_from_file_location("run_as_run", f"{HERE}/run_py_as_run_5f7e8a9d.py")
 run = importlib.util.module_from_spec(spec); spec.loader.exec_module(run)
+sys.path.insert(0, HERE)
+import variant
 
 MODELS = [  # table name, model name for run.py, output file prefix
     ("PMC-LLaMA", "axiong/PMC_LLaMA_13B", "axiong_PMC_LLaMA_13B"),
@@ -40,6 +42,7 @@ SOURCES = {
     "final_runs/test_data_10_22": (AS_RUN_TEST, f"{ROOT}/gpu_backup_2026-10-22/medcalc/final_files_2026-10-16/one_shot_10_17_2026.json"),
     "corrected_rows_ckdepi_rerun_2026-10-22": (AS_RUN_TEST, f"{ROOT}/extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/input/one_shot_10_17_2026_corrected.json"),
     "mdrd_sodium_wording_rerun_2026-10-22": (f"{ROOT}/dataset/test_data_10_22.csv", f"{ROOT}/extra_runs/mdrd_sodium_wording_rerun_2026-10-22/input/one_shot_10_17_2026_corrected.json"),
+    "astra_corrections_rerun_2026-10-22": (variant.ASTRA_TEST, f"{variant.ASTRA_RUN}/input/one_shot_10_17_2026_corrected.json"),
 }
 tests = {p: pd.read_csv(p, dtype=str, keep_default_na=False).set_index("Row Number") for p in {t for t, _ in SOURCES.values()}}
 shots = {p: json.load(open(p)) for p in {s for _, s in SOURCES.values()}}
@@ -63,7 +66,7 @@ for label, model, prefix in MODELS:
     for style, _, _ in STYLES:
         check = main_run_prompts(prefix, style, "Prompt Messages (reconstructed)" if openai else "Prompt (reconstructed)")
         n_in = n_out = 0
-        for x in map(json.loads, open(f"{HERE}/outputs/{prefix}_{style}.jsonl")):
+        for x in map(json.loads, open(f"{variant.OUT}/outputs/{prefix}_{style}.jsonl")):
             r = str(x["Row Number"])
             test, shot = SOURCES[x["Source Run"]]
             row = tests[test].loc[r].to_dict() | {"Row Number": r}
@@ -86,7 +89,7 @@ for label, model, prefix in MODELS:
         print(label, style, n_in, n_out, flush=True)
 
 print("prompt mismatches against the main-run reconstructions:", len(mismatches), mismatches[:10])
-d = pd.DataFrame(counts); d.to_csv(f"{HERE}/token_counts.csv", index=False)
+d = pd.DataFrame(counts); d.to_csv(f"{variant.OUT}/token_counts.csv", index=False)
 
 
 def fmt(n):
@@ -104,5 +107,5 @@ for style, caption, tab in STYLES:
     for kind in ("Input", "Output"):
         tex.append(f"        {kind} & " + " & ".join(fmt(int(s.at[m, kind])) for m, _, _ in MODELS) + r" \\")
     tex += [r"    \bottomrule", r"    \end{tabular}", r"    }", rf"    \label{{{tab}}}", r"\end{table}", ""]
-open(f"{HERE}/tables/token_tables.tex", "w").write("\n".join(tex))
+open(f"{variant.OUT}/tables/token_tables.tex", "w").write("\n".join(tex))
 print("\n".join(tex))

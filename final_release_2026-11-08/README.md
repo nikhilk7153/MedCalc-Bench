@@ -1,4 +1,7 @@
-# MedCalc-Bench correction: finalized dataset, outputs and error analysis (2026-11-08)
+# MedCalc-Bench correction: dataset, outputs and error analysis (2026-11-08)
+
+> **Work in progress.** This release is not final. The open items at the end of this file (including the Astra
+> corrections awaiting physician review) are not yet reflected here, and the dataset, outputs and numbers may still change.
 
 Everything the corrected paper's numbers come from, in one place. Built by
 `final_runs/consolidated_2026-11-06/build_final_release.py` (copies only; rerun it to rebuild this folder). The scripts
@@ -48,7 +51,8 @@ Appendix E.1 Figures 2 and 3 (accuracy vs. number of parameters, zero-shot), the
 LaTeX for the main results, error types, dataset statistics, code interpreter, token counts (B.3) and training set (C).
 
 ## Open items, not yet reflected here
-- **Astra corrections** (89 input corrections, 15 note edits): set aside pending physician review. Applying them would change the test set and the scores.
+- **Astra corrections** (89 input corrections, 15 note edits): set aside pending physician review. Applying them would change the test set and the scores;
+  the same release with the 45 Astra rows applied (from the Astra re-run) is `../final_release_2026-11-22_astra/`.
 - **Blood-gas rows:** 1,048 rows kept. The alternative is dropping 9.
 - **Training set:**
   - de-duplication against the test set and one-shot examples is undecided (173 / 144 / 72 rows);
