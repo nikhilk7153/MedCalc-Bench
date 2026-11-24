@@ -33,7 +33,7 @@ def as_json(output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--outputs", required=True)
-    parser.add_argument("--data", default=f"{ROOT}/dataset/test_data_10_22_corrected.csv")
+    parser.add_argument("--data", default=f"{ROOT}/final_release_2026-11-08/dataset/test_data.csv")
     parser.add_argument("--out_dir", default=os.path.join(HERE, "results"))
     args = parser.parse_args()
 
