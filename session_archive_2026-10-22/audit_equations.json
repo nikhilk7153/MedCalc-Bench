@@ -1,0 +1,652 @@
+[
+ {
+  "Row Number": 21,
+  "Calculator": "CKD-EPI Equations for Glomerular Filtration Rate",
+  "Calculator ID": 3,
+  "Ground Truth Answer": "129.30045",
+  "Lower/Upper": [
+   "122.83543",
+   "135.76547"
+  ],
+  "Consensus wrong answer from strong models": "108.6",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "108.6",
+    "reasoning": "The formula for computing GFR is 144 x (Scr/A)**B x 0.9938**age x (gender_coeffcient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coeffient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.\\nThe patient is 32 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.\\nThe concentration of Serum Creatinine is 42.0 \u03bcmol/L. We need to convert this to mg/dL by dividing by 88.4, which gives us 0.475 mg/dL. Because the patient's gender is female and the creatinine concentration is less than 0.7 mg/dL, A = 0.7 and B = -0.329.\\nPlugging in these values, we get 144 * (0.475/0.7)**-0.329 * 0.9938**32 * 1.012 = 108.6.\\nHence, the GFR value is 108.6 ml/min/1.73 m\\u00b2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "118.5",
+    "reasoning": "First, I converted the patient's serum creatinine from \u03bcmol/L to mg/dL by dividing by 88.4. Then, I identified the correct values for \u03ba and \u03b1 based on the patient's gender and whether their serum creatinine was above or below \u03ba. I then substituted these values, along with the patient's age, into the CKD-EPI Creatinine equation and calculated the result."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "104.4",
+    "reasoning": "To calculate the patient's Glomerular Filtration Rate (GFR) using the 2021 CKD-EPI Creatinine equation, we need to know the patient's serum creatinine (SCr) level and other demographic information. From the patient note, we can find the SCr level is 42.0 \u03bcmol/L. We need to convert this value to mg/dL. The conversion factor is 0.0113, so SCr in mg/dL is 42.0 * 0.0113 = 0.4746 mg/dL. The patient is a female, and her age is 32 years old. Now we can plug these values into the 2021 CKD-EPI Creatinine equation: GFR = 142 * min(Scr/0.7, 1) ^ -0.241 * max(Scr/0.7, 1) ^ -1.012 * 0.9938 ^ Age * 1.012 (if female). After calculation, we get the patient's GFR."
+   }
+  }
+ },
+ {
+  "Row Number": 24,
+  "Calculator": "CKD-EPI Equations for Glomerular Filtration Rate",
+  "Calculator ID": 3,
+  "Ground Truth Answer": "88.19933",
+  "Lower/Upper": [
+   "83.78936",
+   "92.6093"
+  ],
+  "Consensus wrong answer from strong models": "104.99999",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "108.999",
+    "reasoning": "The formula for computing GFR is 144 x (Scr/A)**B x 0.9938**age x (gender_coeffcient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.012 if the patient is female, else the coeffient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.\\nThe patient is 30 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.012.\\nThe concentration of Serum Creatinine is 0.9 mg/dL. Because the patient's gender is female and the creatinine concentration is less than or equal to 0.7 mg/dL, A = 0.7 and B = -0.329.\\nBut since the creatinine concentration is greater than 0.7 mg/dL, A = 0.9 and B = -1.209.\\nPlugging in these values, we get 144 * (0.9/0.9)**-1.209 * 0.9938**30 * 1.012 = 108.999.\\nHence, the GFR value is 108.999 ml/min/1.73 m\\u00b2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "name 'N' is not defined",
+    "reasoning": "name 'N' is not defined"
+   },
+   "llama3-70b zero-shot": {
+    "answer": "104.4",
+    "reasoning": "To calculate the patient's Glomerular Filtration Rate (GFR) using the 2021 CKD-EPI Creatinine equation, we need to follow these steps:\\n1. Identify the patient's creatinine level, which is 0.9 mg/dL.\\n2. Identify the patient's sex, which is female.\\n3. Plug the values into the 2021 CKD-EPI Creatinine equation, which is: GFR (mL/min/1.73 m\u00b2) = 142 \u00d7 min(Scr/\u03ba, 1)\u03b1 \u00d7 max(Scr/\u03ba, 1)-1.200 \u00d7 0.9938Age, where Scr is the serum creatinine in mg/dL, \u03ba is 0.7 for females, \u03b1 is -0.241, and Age is the patient's age in years.\\n4. Calculate the GFR using the equation.\\n\\nNow, let's plug in the values: GFR = 142 \u00d7 min(0.9/0.7, 1)-0.241 \u00d7 max(0.9/0.7, 1)-1.200 \u00d7 0.993830.\\nGFR \u2248 104.4 mL/min/1.73 m\u00b2.\\n"
+   }
+  }
+ },
+ {
+  "Row Number": 35,
+  "Calculator": "CKD-EPI Equations for Glomerular Filtration Rate",
+  "Calculator ID": 3,
+  "Ground Truth Answer": "68.04278",
+  "Lower/Upper": [
+   "64.64064",
+   "71.44492"
+  ],
+  "Consensus wrong answer from strong models": "91.682",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "91.682",
+    "reasoning": "The formula for computing GFR is 144 x (Scr/A)**B x 0.993**age x (gender_coeffcient), where the ** indicates an exponent operation, Scr is the concentration of serum creatinine in mg/dL and gender_coefficient is 1.018 if the patient is female, else the coeffient is 1. The coefficients A and B are dependent on the patient's gender and the patient's creatinine concentration.\\nThe patient is 33 years old. The patient's gender is Female, and so the patient's gender coefficient is 1.018.\\nThe concentration of Serum Creatinine is 1.1 mg/dL. Because the patient's gender is female and the creatinine concentration is greater than or equal to 0.7 mg/dL, A = 0.7 and B = -0.61.\\nPlugging in these values, we get 144 * (1.1/0.7)**-0.61 * 0.993**33 * 1.018 = 91.682.\\nHence, the GFR value is 91.682 ml/min/1.73 m\\u00b2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "89.4",
+    "reasoning": "First, I identified the necessary values from the patient's note. The patient is a 33-year-old female with a serum creatinine level of 1.1 mg/dL. I then used the CKD-EPI Creatinine equation for females, which is GFR = 144 * (Scr/\u03ba)^-\u03b1 * 0.993^Age. Since the patient's serum creatinine level is greater than 0.7, I used \u03b1 = -1.209. I then substituted the patient's values into the equation and calculated the GFR."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "76.3",
+    "reasoning": "To calculate the patient's Glomerular Filtration Rate (GFR) using the 2021 CKD-EPI Creatinine equation, we need to use the patient's serum creatinine value, which is 1.1 mg/dL. The equation is: GFR = 142 \u00d7 (min(Scr/\u03ba, 1))\u03b1 \u00d7 (max(Scr/\u03ba, 1))-1.209 \u00d7 0.993Age, where Scr is the serum creatinine in mg/dL, \u03ba is 0.7 for females, \u03b1 is -0.241 for females, and Age is the patient's age in years. First, we need to calculate the minimum and maximum of Scr/\u03ba and 1. Scr/\u03ba = 1.1/0.7 = 1.57. Since 1.57 is greater than 1, max(Scr/\u03ba, 1) = 1.57 and min(Scr/\u03ba, 1) = 1. Now, we can plug in the values into the equation. GFR = 142 \u00d7 (1)\u03b1 \u00d7 (1.57)-1.209 \u00d7 0.993\u00b3\u00b3. GFR \u2248 76.3 mL/min/1.73 m\u00b2."
+   }
+  }
+ },
+ {
+  "Row Number": 37,
+  "Calculator": "CKD-EPI Equations for Glomerular Filtration Rate",
+  "Calculator ID": 3,
+  "Ground Truth Answer": "43.99322",
+  "Lower/Upper": [
+   "41.79356",
+   "46.19288"
+  ],
+  "Consensus wrong answer from strong models": "40.91",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "46.6",
+    "reasoning": "The formula for computing GFR is 141 x min(Scr/\u03ba, 1)^\u03b1 x max(Scr/\u03ba, 1)^-1.209 x 0.993^Age x 1.018 [if female] x 1.159 [if black], where Scr is serum creatinine, \u03ba is 0.7 for females and 0.9 for males, \u03b1 is -0.329 for females and -0.411 for males, min indicates the minimum of Scr/\u03ba or 1, and max indicates the maximum of Scr/\u03ba or 1. The patient is a 75-year-old male, and his serum creatinine is 1.62 mg/dL. Plugging in these values, we get 141 x min(1.62/0.9, 1)^-0.411 x max(1.62/0.9, 1)^-1.209 x 0.993^75 x 1 = 46.6 mL/min/1.73 m\u00b2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "39.4",
+    "reasoning": "The CKD-EPI Creatinine equation is used to calculate the Glomerular Filtration Rate (GFR). The equation is different for men and women, and also varies based on whether the patient is Black or not. In this case, the patient is a 75-year-old man, and there is no information about his race, so I will assume he is not Black. The serum creatinine level when he was first admitted to the hospital was 1.62 mg/dl. The equation for a non-Black man is: GFR = 141 * min(Scr/k, 1)^a * max(Scr/k, 1)^-1.209 * 0.993^Age, where Scr is serum creatinine, k is 0.9, and a is -0.411. Substituting the given values into the equation, we get: GFR = 141 * min(1.62/0.9, 1)^-0.411 * max(1.62/0.9, 1)^-1.209 * 0.993^75."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "44.4",
+    "reasoning": "To calculate the patient's Glomerular Filtration Rate (GFR) using the 2021 CKD-EPI Creatinine equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know that the patient is a 75-year-old man, and his initial laboratory findings revealed a serum creatinine level of 1.62 mg/dl. We can assume that the patient is of white race, as no other race is mentioned. The 2021 CKD-EPI Creatinine equation is: GFR = 142 \u00d7 min(Scr/\u03ba, 1)\u03b1 \u00d7 max(Scr/\u03ba, 1)-1.200 \u00d7 0.993Age \u00d7 1.018[if female] \u00d7 1.159[if black]. For males, \u03b1 is -0.241 and \u03ba is 0.7. Plugging in the values, we get: GFR = 142 \u00d7 min(1.62/0.7, 1)-0.241 \u00d7 max(1.62/0.7, 1)-1.200 \u00d7 0.99375 \u00d7 1."
+   }
+  }
+ },
+ {
+  "Row Number": 38,
+  "Calculator": "CKD-EPI Equations for Glomerular Filtration Rate",
+  "Calculator ID": 3,
+  "Ground Truth Answer": "28.20762",
+  "Lower/Upper": [
+   "26.79724",
+   "29.618"
+  ],
+  "Consensus wrong answer from strong models": "24.99991",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "29.99",
+    "reasoning": "The formula for computing GFR is 141 x min(Scr/k, 1)^a x max(Scr/k, 1)^-1.209 x 0.993^Age x 1.018 [if female] x 1.159 [if black], where Scr is the serum creatinine, k is 0.7 for females and 0.9 for males, a is -0.329 for females and -0.411 for males, min indicates the minimum of Scr/k or 1, and max indicates the maximum of Scr/k or 1. The patient is a 78-year-old male, and his serum creatinine is 2.31 mg/dL. Plugging in these values, we get 141 x min(2.31/0.9, 1)^-0.411 x max(2.31/0.9, 1)^-1.209 x 0.993^78 x 1 = 29.99 mL/min/1.73 m\u00b2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "name 'N' is not defined",
+    "reasoning": "name 'N' is not defined"
+   },
+   "llama3-70b zero-shot": {
+    "answer": "24.4",
+    "reasoning": "To calculate the patient's Glomerular Filtration Rate (GFR) using the 2021 CKD-EPI Creatinine equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we know the patient's serum creatinine level is 2.31 mg/dL, age is 78 years, and sex is male. We assume the patient's race is White, as it is not specified in the note. The 2021 CKD-EPI Creatinine equation is: GFR (mL/min/1.73 m\u00b2) = 142 \u00d7 min(Scr/\u03ba, 1)\u03b1 \u00d7 max(Scr/\u03ba, 1)-1.200 \u00d7 0.993Age \u00d7 1.012 [if female] \u00d7 1.159 [if Black]. For males, \u03b1 is -0.241 and \u03ba is 0.7. Plugging in the values, we get: GFR = 142 \u00d7 min(2.31/0.7, 1)-0.241 \u00d7 max(2.31/0.7, 1)-1.200 \u00d7 0.99378. Calculating the value, we get:"
+   }
+  }
+ },
+ {
+  "Row Number": 40,
+  "Calculator": "CKD-EPI Equations for Glomerular Filtration Rate",
+  "Calculator ID": 3,
+  "Ground Truth Answer": "40.43277",
+  "Lower/Upper": [
+   "38.41113",
+   "42.45441"
+  ],
+  "Consensus wrong answer from strong models": "33.978",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "33.6",
+    "reasoning": "The formula for computing GFR is 141 x min(Scr/k, 1)**a x max(Scr/k, 1)**-1.209 x 0.993**Age x 1.018 [if female] x 1.159 [if black], where Scr is serum creatinine, k is 0.7 for females and 0.9 for males, a is -0.329 for females and -0.411 for males, min indicates the minimum of Scr/k or 1, and max indicates the maximum of Scr/k or 1. The patient is a 64-year-old male, and his serum creatinine is 1.84 mg/dL. Plugging in these values, we get 141 x min(1.84/0.9, 1)**-0.411 x max(1.84/0.9, 1)**-1.209 x 0.993**64 x 1 = 33.6 mL/min/1.73 m\u00b2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "name 'N' is not defined",
+    "reasoning": "name 'N' is not defined"
+   },
+   "llama3-70b zero-shot": {
+    "answer": "24.4",
+    "reasoning": "To calculate the patient's Glomerular Filtration Rate (GFR) using the 2021 CKD-EPI Creatinine equation, we need to know the patient's serum creatinine level, age, sex, and race. From the patient note, we can find the following values: serum creatinine level = 1.84 mg/dL, age = 64 years, sex = male, and race = unknown (but we can assume non-African American as the patient is Brazilian). The 2021 CKD-EPI Creatinine equation is: GFR (mL/min/1.73 m\u00b2) = 142 \u00d7 min(Scr/\u03ba, 1)\u03b1 \u00d7 max(Scr/\u03ba, 1)-1.200 \u00d7 0.993Age \u00d7 1.012 [if female] \u00d7 1.159 [if African American]. For males, \u03b1 = -0.241 and \u03ba = 0.7. Plugging in the values, we get: GFR = 142 \u00d7 min(1.84/0.7, 1)-0.241 \u00d7 max(1.84/0.7, 1)-1.200 \u00d7 0.99364 \u00d7 1.0120 \u00d7 1.1590. Calculating the value, we get:"
+   }
+  }
+ },
+ {
+  "Row Number": 175,
+  "Calculator": "Ideal Body Weight",
+  "Calculator ID": 10,
+  "Ground Truth Answer": "55.97646",
+  "Lower/Upper": [
+   "53.17764",
+   "58.77528"
+  ],
+  "Consensus wrong answer from strong models": "63.48",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "55.9765",
+    "reasoning": "The patient's gender is Male.\\nThe patient's height is 159.0 cm, which is 159.0 cm * 0.393701 in/cm = 62.59839 in. \\nFor males, the ideal body weight (IBW) is calculated as follows:\\nIBW = 50 kg + 2.3 kg * (height (in inches) - 60)\\nPlugging in the values gives us 50 kg + 2.3 kg * (62.59839 (in inches) - 60) = 55.9765 kg.\\nHence, the patient's IBW is 55.9765 kg."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "63.48",
+    "reasoning": "The Devine formula for calculating the ideal body weight (IBW) for men is: IBW (kg) = 50 kg + 2.3 kg for each inch over 5 feet. The patient's height is given in centimeters, so first I need to convert it to feet and inches. 1 inch is approximately 2.54 cm, and 1 foot is approximately 30.48 cm. The patient is 159 cm tall, which is approximately 5.2 feet or 62.6 inches. Therefore, the patient is approximately 7.6 inches over 5 feet. Now I can substitute these values into the Devine formula to calculate the patient's ideal body weight."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "51.1",
+    "reasoning": "To calculate the patient's ideal body weight using the Devine formula, we need to know the patient's height in inches. The patient's height is given as 159 cm, which is equivalent to 62.6 inches (1 inch = 2.54 cm). The Devine formula is: ideal body weight (men) = 50 kg + 0.91 kg/cm (height in cm - 152 cm) or ideal body weight (men) = 50 kg + 0.425 kg/in (height in inches - 60 inches). Plugging in the patient's height, we get: ideal body weight = 50 kg + 0.425 kg/in (62.6 in - 60 in) = 50 kg + 0.425 kg/in (2.6 in) = 50 kg + 1.105 kg = 51.105 kg. "
+   }
+  }
+ },
+ {
+  "Row Number": 417,
+  "Calculator": "Serum Osmolality",
+  "Calculator ID": 30,
+  "Ground Truth Answer": "316.92031",
+  "Lower/Upper": [
+   "301.07429",
+   "332.76633"
+  ],
+  "Consensus wrong answer from strong models": "301",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "316.9",
+    "reasoning": "The formula for calculating serum osmolality is 2 * Na + (BUN / 2.8) + (glucose / 18), where Na is the concentration of sodium in mmol/L, BUN is the concentration of blood urea nitrogen in mg/dL, and glucose is the concentration of glucose in mg/dL. The concentration of sodium is 145 mmol/L. The concentration of BUN is 20.5 mmol/L, but we need to convert this to mg/dL. The conversion factor is 2.8, so 20.5 mmol/L * 2.8 = 57.4 mg/dL. The concentration of glucose is 6.4 mmol/L, but we need to convert this to mg/dL. The conversion factor is 18, so 6.4 mmol/L * 18 = 115.2 mg/dL. Plugging these values into the equation, we get 2 * 145 + (57.4 / 2.8) + (115.2 / 18) = 290 + 20.5 + 6.4 = 316.9 mOsm/kg."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "301",
+    "reasoning": "Serum osmolality is a measure of the concentration of solutes in the blood and can be calculated using the formula: 2 * (Na+ concentration) + (glucose concentration / 18) + (BUN concentration / 2.8). The values needed for this calculation are given in the patient's initial blood workup. The Na+ concentration is 145 mmol/L, the glucose concentration is 6.4 mmol/L, and the BUN concentration is 20.5 mmol/L. Substituting these values into the formula gives: 2 * 145 + 6.4 / 18 + 20.5 / 2.8."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "317.3",
+    "reasoning": "To calculate the patient's serum osmolality, we can use the following formula: Osmolality (mOsm/kg) = 2 \u00d7 Na+ (mmol/L) + Glucose (mmol/L) + Blood Urea Nitrogen (mmol/L). From the patient's initial blood workup, we have: Na+ = 145 mmol/L, Glucose = 6.4 mmol/L, and Blood Urea Nitrogen = 20.5 mmol/L. Plugging these values into the formula, we get: Osmolality (mOsm/kg) = 2 \u00d7 145 + 6.4 + 20.5 = 317.3 mOsm/kg."
+   }
+  }
+ },
+ {
+  "Row Number": 500,
+  "Calculator": "Anion Gap",
+  "Calculator ID": 39,
+  "Ground Truth Answer": "14",
+  "Lower/Upper": [
+   "13.3",
+   "14.7"
+  ],
+  "Consensus wrong answer from strong models": "8.0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "8.0",
+    "reasoning": "The formula for computing a patient's anion gap is: sodium (mEq/L) - (chloride (mEq/L)+ bicarbonate (mEq/L)).\\nThe concentration of sodium is 143.0 mEq/L. \\nThe concentration of chloride is 109.0 mEq/L. \\nThe concentration of bicarbonate is 26.0 mEq/L. \\nPlugging in these values into the anion gap formula gives us 143.0 mEq/L - (109.0 mEq/L + 26.0 mEq/L) = 8.0 mEq/L. Hence, The patient's anion gap is 8.0 mEq/L."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "8",
+    "reasoning": "The anion gap is calculated using the formula: Anion Gap = Sodium - (Chloride + Bicarbonate). From the patient's initial lab results, we have Sodium = 143 meq/L, Chloride = 109 meq/L, and Bicarbonate = 26 mEq/L."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "8",
+    "reasoning": "To calculate the anion gap, we need to know the patient's sodium, chloride, and bicarbonate levels. From the patient note, we can find these values: sodium 143 meq/L, chloride 109 meq/L, and bicarbonate 26 mEq/L. The anion gap formula is: anion gap = sodium - (chloride + bicarbonate). Plugging in the values, we get: anion gap = 143 - (109 + 26) = 143 - 135 = 8 mEq/L."
+   }
+  }
+ },
+ {
+  "Row Number": 657,
+  "Calculator": "QTc Hodges Calculator",
+  "Calculator ID": 58,
+  "Ground Truth Answer": "335.25011",
+  "Lower/Upper": [
+   "318.4876",
+   "352.01262"
+  ],
+  "Consensus wrong answer from strong models": "366.42857",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "330.08333",
+    "reasoning": "The corrected QT interval using the Hodges formula is computed as QTc = QT interval + 1.75 * [(60 /rr_interval_sec) - 60], where QT interval is in msec, and RR interval is given as 60/(heart rate).\\nThe patient's heart rate is 63 beats per minute.\\nThe QT interval is 330 msec.\\nThe RR interval is computed as 60/(heart rate), and so the RR interval is 60/63 = 0.95238.\\nHence, plugging in these values, we will get 330 + 1.75 * [(60/0.95238) - 60] = 330.08333.\\nThe patient's corrected QT interval (QTc) is 330.08333 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "335.25",
+    "reasoning": "First, I calculated the value of (HR - 60), which is 3. Then, I multiplied this value by 1.75, which gave me 5.25. Finally, I added this value to the QT interval, which gave me 335.25 msec."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "379",
+    "reasoning": "To calculate the corrected QT interval using the Hodges Formula, we need to know the patient's heart rate in beats per minute (bpm) and the QT interval in milliseconds (msec). We are given a heart rate of 63 bpm and a QT interval of 330 msec. The Hodges Formula is: QTc = QT / \u221a(RR), where QTc is the corrected QT interval, QT is the QT interval, and RR is the R-R interval in seconds. First, we need to convert the heart rate from bpm to R-R interval in seconds. We can do this by taking the reciprocal of the heart rate and multiplying by 60 (since there are 60 seconds in a minute). So, RR = 60 / 63 = 0.95 seconds. Now, we can plug in the values to the Hodges Formula: QTc = 330 / \u221a(0.95) = 378.8 msec. Therefore, the patient's corrected QT interval is approximately 379 msec."
+   }
+  }
+ },
+ {
+  "Row Number": 659,
+  "Calculator": "QTc Hodges Calculator",
+  "Calculator ID": 58,
+  "Ground Truth Answer": "438.50142",
+  "Lower/Upper": [
+   "416.57635",
+   "460.42649"
+  ],
+  "Consensus wrong answer from strong models": "401.74982",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "401.74982",
+    "reasoning": "The corrected QT interval using the Hodges formula is computed as QTc = QT interval + 1.75 * [(60 /rr_interval_sec) - 60], where QT interval is in msec, and RR interval is given as 60/(heart rate).\\nThe patient's heart rate is 122 beats per minute.\\nThe QT interval is 330 msec.\\nThe RR interval is computed as 60/(heart rate), and so the RR interval is 60/122 = 0.49180.\\nHence, plugging in these values, we will get 330 + 1.75 * [(60/0.49180) - 60] = 401.74982.\\nThe patient's corrected QT interval (QTc) is 401.74982 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "438.5",
+    "reasoning": "First, I calculated the value of 1.75 * (heart rate - 60), which is 1.75 * (122 - 60) = 108.5. Then, I added this value to the QT interval, which gives us 330 + 108.5 = 438.5 msec."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "471",
+    "reasoning": "To calculate the corrected QT interval using the Hodges Formula, we need to know the patient's heart rate in beats per minute (bpm) and the QT interval in milliseconds (msec). The formula is: QTc = QT / \u221a(RR), where QTc is the corrected QT interval, QT is the QT interval, and RR is the R-R interval in seconds. First, we need to convert the heart rate from bpm to R-R interval in seconds. We can do this by taking the reciprocal of the heart rate in bpm and multiplying by 60. So, RR = 60 / 122 = 0.49 seconds. Next, we can plug in the values to the formula: QTc = 330 / \u221a(0.49) = 330 / 0.7 = 471.43 msec. Therefore, the patient's corrected QT interval is approximately 471 msec."
+   }
+  }
+ },
+ {
+  "Row Number": 668,
+  "Calculator": "QTc Hodges Calculator",
+  "Calculator ID": 58,
+  "Ground Truth Answer": "475.25025",
+  "Lower/Upper": [
+   "451.48774",
+   "499.01276"
+  ],
+  "Consensus wrong answer from strong models": "394.11511",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "401.74982",
+    "reasoning": "The corrected QT interval using the Hodges formula is computed as QTc = QT interval + 1.75 * [(60 /rr_interval_sec) - 60], where QT interval is in msec, and RR interval is given as 60/(heart rate).\\nThe patient's heart rate is 143 beats per minute.\\nThe QT interval is 330 msec.\\nThe RR interval is computed as 60/(heart rate), and so the RR interval is 60/143 = 0.41958.\\nHence, plugging in these values, we will get 330 + 1.75 * [(60/0.41958) - 60] = 401.74982.\\nThe patient's corrected QT interval (QTc) is 401.74982 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "475.25",
+    "reasoning": "First, I calculated the value of 1.75*(HR - 60), which is 1.75*(143 - 60) = 145.25. Then, I added this value to the QT interval, which gives us 330 + 145.25 = 475.25 msec."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "508",
+    "reasoning": "To calculate the corrected QT interval using the Hodges Formula, we need to know the patient's heart rate in beats per minute (bpm) and the QT interval in milliseconds (msec). The formula is: QTc = QT / \u221a(RR), where QTc is the corrected QT interval, QT is the QT interval, and RR is the R-R interval in seconds. First, we need to convert the heart rate from bpm to R-R interval in seconds. We can do this by taking the reciprocal of the heart rate in bpm and multiplying by 60. So, RR = 60 / 143 = 0.42 seconds. Next, we can plug in the values to the formula: QTc = 330 / \u221a(0.42) = 330 / 0.65 = 507.7 msec. Therefore, the patient's corrected QT interval is approximately 508 msec."
+   }
+  }
+ },
+ {
+  "Row Number": 669,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "469.33333",
+  "Lower/Upper": [
+   "445.86666",
+   "492.8"
+  ],
+  "Consensus wrong answer from strong models": "429.33333",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "429.33333",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 136 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 136) / 180 = 429.33333.\\nThe patient's corrected QT interval (QTc) is 429.33333 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "416",
+    "reasoning": "First, I substituted the given values into the Rautaharju formula for corrected QT interval. Then, I calculated the value inside the parentheses, multiplied this value by 154, and added this value to the original QT interval. Finally, I rounded the result to the nearest whole number."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "500",
+    "reasoning": "To calculate the corrected QT interval using the Rautaharju Formula, we need to follow these steps: 1. The formula is QTc = QT / \u221a(RR), where QT is the QT interval in seconds, and RR is the R-R interval in seconds. 2. First, we need to convert the heart rate from beats per minute (bpm) to seconds. We can do this by dividing 60 by the heart rate: 60 / 136 = 0.44 seconds per beat. 3. Since the R-R interval is the time between two beats, it is equal to the time per beat. So, RR = 0.44 seconds. 4. Now, we need to convert the QT interval from milliseconds to seconds: 330 msec = 0.33 seconds. 5. Finally, we can plug in the values to the formula: QTc = 0.33 / \u221a(0.44) = 0.33 / 0.66 = 0.50 seconds. 6. To convert the answer back to milliseconds, we multiply by 1000: QTc = 500 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 670,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "546.33333",
+  "Lower/Upper": [
+   "519.01666",
+   "573.65"
+  ],
+  "Consensus wrong answer from strong models": "440",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "456.66667",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 178 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 178) / 180 = 456.66667.\\nThe patient's corrected QT interval (QTc) is 456.66667 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "432",
+    "reasoning": "First, I substituted the given values into the Rautaharju formula for corrected QT interval. Then, I calculated the value inside the parentheses, multiplied this by 154, and added this to the original QT interval. Finally, I rounded the result to the nearest whole number."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "566",
+    "reasoning": "To calculate the corrected QT interval, we need to use the Rautaharju Formula, which is QTc = QT / \u221a(RR). First, we need to convert the heart rate from beats per minute (bpm) to seconds. 1 minute has 60 seconds, so the heart rate in seconds is 60 / 178 = 0.337 seconds per beat. Then, we can calculate the RR interval, which is the time between two heart beats, as 0.337 seconds. Now, we can plug in the values into the formula: QTc = 330 / \u221a(0.337) = 330 / 0.583 = 566 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 677,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "414.33333",
+  "Lower/Upper": [
+   "393.61666",
+   "435.05"
+  ],
+  "Consensus wrong answer from strong models": "369",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "351.33333",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 106 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 106) / 180 = 351.33333.\\nThe patient's corrected QT interval (QTc) is 351.33333 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "369",
+    "reasoning": "First, I will substitute the given values into the Rautaharju formula for corrected QT interval. The formula is QTc = QT + 154*(1-60/HR). The patient's heart rate (HR) is 106 bpm and the QT interval is 330 msec. So, QTc = 330 + 154*(1-60/106). Now, I will calculate the value inside the parentheses (1-60/106). Then, I will multiply the result by 154. Finally, I will add the result to the QT interval of 330 msec to get the corrected QT interval."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "439",
+    "reasoning": "To calculate the corrected QT interval using the Rautaharju Formula, we need to follow these steps: 1. The formula is QTc = QT / \u221a(RR), where QT is the QT interval in seconds, and RR is the R-R interval in seconds. 2. First, we need to convert the heart rate from beats per minute (bpm) to seconds. We can do this by dividing 60 by the heart rate: 60 / 106 = 0.566 seconds per beat. 3. Since the R-R interval is the time between two beats, it is equal to the time per beat. So, RR = 0.566 seconds. 4. Now, we need to convert the QT interval from milliseconds to seconds: 330 msec = 0.33 seconds. 5. Finally, we can plug in the values to the formula: QTc = 0.33 / \u221a(0.566) = 0.33 / 0.752 = 0.439 seconds. 6. To convert the corrected QT interval back to milliseconds, we multiply by 1000: QTc = 0.439 * 1000 = 439 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 681,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "531.66667",
+  "Lower/Upper": [
+   "505.08334",
+   "558.25"
+  ],
+  "Consensus wrong answer from strong models": "412.5",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "412.5",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 170 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 170) / 180 = 412.5.\\nThe patient's corrected QT interval (QTc) is 412.5 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "430",
+    "reasoning": "First, I substituted the given values into the Rautaharju formula for corrected QT interval. Then, I calculated the value inside the parentheses, multiplied this by 154, and added this to the original QT interval. Finally, I rounded the result to the nearest whole number."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "556.7",
+    "reasoning": "To calculate the corrected QT interval, we need to use the Rautaharju Formula, which is QTc = QT / \u221a(RR). First, we need to convert the heart rate from beats per minute (bpm) to seconds. 1 minute has 60 seconds, so the heart rate in seconds is 60 / 170 = 0.353 seconds per beat. Then, we can calculate the RR interval, which is the time between two heart beats, as 0.353 seconds. Now, we can plug in the values to the formula: QTc = 330 / \u221a(0.353) = 330 / 0.593 = 556.7 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 685,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "438.16667",
+  "Lower/Upper": [
+   "416.25834",
+   "460.075"
+  ],
+  "Consensus wrong answer from strong models": "391.11111",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "366.5",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 119 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 119) / 180 = 366.5.\\nThe patient's corrected QT interval (QTc) is 366.5 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "406.44",
+    "reasoning": "First, I substituted the given values into the Rautaharju formula for corrected QT interval. Then, I calculated the value inside the parentheses, multiplied this by 154, and added this to the original QT interval. The final result is the patient's corrected QT interval."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "465",
+    "reasoning": "To calculate the corrected QT interval using the Rautaharju Formula, we need to follow these steps: 1. The formula is QTc = QT / \u221a(RR), where QT is the QT interval in seconds, and RR is the R-R interval in seconds. 2. First, we need to convert the heart rate from beats per minute (bpm) to seconds. We can do this by dividing 60 by the heart rate: 60 / 119 bpm = 0.503 seconds per beat. 3. Since the R-R interval is the time between two beats, it is equal to the time per beat. So, RR = 0.503 seconds. 4. Now, we need to convert the QT interval from milliseconds to seconds: 330 msec = 0.33 seconds. 5. Finally, we can plug in the values to the formula: QTc = 0.33 / \u221a(0.503) = 0.33 / 0.709 = 0.465 seconds. 6. To convert the corrected QT interval back to milliseconds, we multiply by 1000: QTc = 0.465 * 1000 = 465 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 688,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "550",
+  "Lower/Upper": [
+   "522.5",
+   "577.5"
+  ],
+  "Consensus wrong answer from strong models": "433",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "412.5",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 180 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 180) / 180 = 412.5.\\nThe patient's corrected QT interval (QTc) is 412.5 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "433",
+    "reasoning": "First, I substituted the given values into the Rautaharju formula for corrected QT interval. Then, I calculated the value inside the brackets. After that, I multiplied this value by 154. Finally, I added this value to the original QT interval."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "579",
+    "reasoning": "To calculate the corrected QT interval, we need to use the Rautaharju Formula, which is QTc = QT / \u221a(RR). First, we need to convert the heart rate from beats per minute (bpm) to seconds. 1 minute has 60 seconds, so the heart rate in seconds is 60 / 180 = 0.33 seconds. Then, we can calculate the RR interval, which is the time between two heart beats, as 0.33 seconds. Now, we can plug in the values to the formula: QTc = 330 / \u221a(0.33) = 330 / 0.57 = 579 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 691,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "509.66667",
+  "Lower/Upper": [
+   "484.18334",
+   "535.15"
+  ],
+  "Consensus wrong answer from strong models": "426",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "397.33333",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 158 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 158) / 180 = 397.33333.\\nThe patient's corrected QT interval (QTc) is 397.33333 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "426",
+    "reasoning": "First, I converted the heart rate to RR using the formula RR = 60 / heart rate. Then, I substituted the values into the Rautaharju formula for corrected QT interval. Finally, I rounded the result to the nearest whole number."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "530",
+    "reasoning": "To calculate the corrected QT interval using the Rautaharju Formula, we need to follow these steps: 1. The formula is QTc = QT / \u221a(RR), where QT is the QT interval in seconds, and RR is the R-R interval in seconds. 2. First, we need to convert the heart rate from beats per minute (bpm) to seconds. We can do this by dividing 60 by the heart rate: 60 / 158 = 0.38 seconds per beat. 3. Since the R-R interval is the time between two beats, it is equal to the time per beat. So, RR = 0.38 seconds. 4. Now, we need to convert the QT interval from milliseconds to seconds: 330 msec = 0.33 seconds. 5. Finally, we can plug in the values to the formula: QTc = 0.33 / \u221a(0.38) = 0.33 / 0.62 = 0.53 seconds. 6. To convert the answer back to milliseconds, we multiply by 1000: QTc = 0.53 * 1000 = 530 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 693,
+  "Calculator": "QTc Rautaharju Calculator",
+  "Calculator ID": 59,
+  "Ground Truth Answer": "542.66667",
+  "Lower/Upper": [
+   "515.53334",
+   "569.8"
+  ],
+  "Consensus wrong answer from strong models": "432",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "462",
+    "reasoning": "The corrected QT interval using the Rautaharju formula is computed as QTc = QT interval x (120 + HR) / 180, where QT interval is in msec, and HR is the heart rate in beats per minute.\\nThe QT interval is 330 msec.\\nThe patient's heart rate is 176 beats per minute.\\nHence, plugging in these values, we will get 330 x (120 + 176) / 180 = 462.\\nThe patient's corrected QT interval (QTc) is 462 msec."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "432",
+    "reasoning": "First, I substituted the given values into the Rautaharju formula for corrected QT interval. Then, I calculated the value inside the parentheses. After that, I multiplied this by 154. Finally, I added this to the original QT interval."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "569",
+    "reasoning": "To calculate the corrected QT interval, we need to use the Rautaharju Formula, which is QTc = QT / \u221a(RR). First, we need to convert the heart rate from beats per minute (bpm) to seconds. 1 minute has 60 seconds, so the heart rate in seconds is 60 / 176 = 0.34 seconds. Then, we can calculate the RR interval, which is the time between two heart beats, as 0.34 seconds. Now, we can plug in the values into the formula: QTc = 330 / \u221a(0.34) = 330 / 0.58 = 569 msec. "
+   }
+  }
+ },
+ {
+  "Row Number": 695,
+  "Calculator": "Body Surface Area Calculator",
+  "Calculator ID": 60,
+  "Ground Truth Answer": "1.1547",
+  "Lower/Upper": [
+   "1.09696",
+   "1.21244"
+  ],
+  "Consensus wrong answer from strong models": "1.28207",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "1.28207",
+    "reasoning": "For the body surface area computation, the formula is sqrt((weight (in kgs) * height (in cm))/3600, where the units of weight is in kg and the units of height is in cm.\\nThe patient's height is 150.0 cm. \\nThe patient's weight is 32.0 kg. \\nTherefore, the patient's bsa is sqrt((32.0 (in kgs) * 150.0 (in cm))/3600) = 1.28207 m^2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "1.23",
+    "reasoning": "To calculate the body surface area (BSA), we need the patient's weight and height. The Mosteller formula is commonly used for this calculation: BSA = sqrt((Height(cm)*Weight(kg))/3600). From the patient note, we know that the patient's height is 150 cm and weight is 32 kg. Now we can substitute these values into the formula."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0.365",
+    "reasoning": "To calculate the patient's body surface area (BSA), we can use the Mosteller formula, which is BSA (m\u00b2) = \u221a(height (cm) \u00d7 weight (kg) / 3600). From the patient note, we know the patient's height is 150 cm and weight is 32 kg (assuming the unit is kg, as it is a common unit for weight). Plugging in these values, we get BSA (m\u00b2) = \u221a(150 \u00d7 32 / 3600) = \u221a(0.1333) = 0.365 m\u00b2."
+   }
+  }
+ },
+ {
+  "Row Number": 696,
+  "Calculator": "Body Surface Area Calculator",
+  "Calculator ID": 60,
+  "Ground Truth Answer": "1.23333",
+  "Lower/Upper": [
+   "1.17166",
+   "1.295"
+  ],
+  "Consensus wrong answer from strong models": "1.332",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "1.332",
+    "reasoning": "For the body surface area computation, the formula is sqrt((weight (in kgs) * height (in cm))/3600, where the units of weight is in kg and the units of height is in cm.\\nThe patient's height is 148.0 cm. \\nThe patient's weight is 37.0 kg. \\nTherefore, the patient's bsa is sqrt((37.0 (in kgs) * 148.0 (in cm))/3600) = 1.332 m^2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "1.33",
+    "reasoning": "To calculate the body surface area (BSA), I used the Mosteller formula: BSA = sqrt((Height in cm * Weight in kg) / 3600). From the patient note, I found that the patient's height is 148 cm and weight is 37 kg when they were first admitted to the hospital. So, I substituted these values into the formula to get the BSA."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "1.39",
+    "reasoning": "To calculate the patient's body surface area, we need to know their height and weight. According to the patient note, the patient's height is 148 cm and weight is 37 kg when they were first admitted to the hospital. We can use the Mosteller formula to calculate the body surface area, which is BSA = sqrt((height * weight) / 3600). First, we need to convert the height from cm to meters, which is 148 cm / 100 = 1.48 m. Then, we can plug in the values to the formula: BSA = sqrt((1.48 * 37) / 3600) = sqrt(1.9344) = 1.39 m\u00b2."
+   }
+  }
+ },
+ {
+  "Row Number": 697,
+  "Calculator": "Body Surface Area Calculator",
+  "Calculator ID": 60,
+  "Ground Truth Answer": "1.53912",
+  "Lower/Upper": [
+   "1.46216",
+   "1.61608"
+  ],
+  "Consensus wrong answer from strong models": "1.617",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "1.617",
+    "reasoning": "For the body surface area computation, the formula is sqrt((weight (in kgs) * height (in cm))/3600, where the units of weight is in kg and the units of height is in cm.\\nThe patient's height is 164.0 cm. \\nThe patient's weight is 52.0 kg. \\nTherefore, the patient's bsa is sqrt((52.0 (in kgs) * 164.0 (in cm))/3600) = 1.617 m^2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "1.65",
+    "reasoning": "To calculate the body surface area (BSA), I used the Mosteller formula which is BSA = sqrt((Height(cm)*Weight(kg))/3600). The patient's height is 164 cm and weight is 52 kg. So, I substituted these values into the formula and calculated the BSA."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0.0815",
+    "reasoning": "To calculate the patient's body surface area, we need to use the patient's weight and height. The patient's weight is 52 kg and height is 164 cm. We can use the Mosteller formula to calculate the body surface area, which is BSA = sqrt((height * weight) / 3600). First, we need to convert the height from cm to m, which is 164 cm / 100 = 1.64 m. Then, we can plug in the values to the formula: BSA = sqrt((1.64 * 52) / 3600) = sqrt(23.948 / 3600) = sqrt(0.00665) = 0.0815 m\u00b2. "
+   }
+  }
+ },
+ {
+  "Row Number": 705,
+  "Calculator": "Body Surface Area Calculator",
+  "Calculator ID": 60,
+  "Ground Truth Answer": "0.41553",
+  "Lower/Upper": [
+   "0.39475",
+   "0.43631"
+  ],
+  "Consensus wrong answer from strong models": "0.46",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "0.509",
+    "reasoning": "For the body surface area computation, the formula is sqrt((weight (in kgs) * height (in cm))/3600, where the units of weight is in kg and the units of height is in cm.\\nThe patient's height is 74.0 cm. \\nThe patient's weight is 8.4 kg. \\nTherefore, the patient's bsa is sqrt((8.4 (in kgs) * 74.0 (in cm))/3600) = 0.509 m^2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0.44",
+    "reasoning": "To calculate the body surface area (BSA) for a child, we can use the Mosteller formula: BSA = sqrt((Height(cm)*Weight(kg))/3600). From the patient note, we know that the patient's weight was 8.4 kg and height was 74 cm when they were first admitted to the hospital. Substituting these values into the formula, we get BSA = sqrt((74*8.4)/3600)."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0.46",
+    "reasoning": "To calculate the patient's body surface area, we need to know their weight and height. According to the patient note, when the patient was first admitted to the hospital, their weight was 8.4 kg and height was 74 cm. We can use the Mosteller formula to calculate the body surface area, which is BSA = sqrt((height (cm) * weight (kg)) / 3600). Plugging in the values, we get BSA = sqrt((74 * 8.4) / 3600) = 0.46 m\u00b2."
+   }
+  }
+ },
+ {
+  "Row Number": 707,
+  "Calculator": "Body Surface Area Calculator",
+  "Calculator ID": 60,
+  "Ground Truth Answer": "0.47677",
+  "Lower/Upper": [
+   "0.45293",
+   "0.50061"
+  ],
+  "Consensus wrong answer from strong models": "0.53",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "0.442",
+    "reasoning": "For the body surface area computation, the formula is sqrt((weight (in kgs) * height (in cm))/3600, where the units of weight is in kg and the units of height is in cm.\\nThe patient's height is 77.2 cm. \\nThe patient's weight is 10.6 kg. \\nTherefore, the patient's bsa is sqrt((10.6 (in kgs) * 77.2 (in cm))/3600) = 0.442 m^2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0.477",
+    "reasoning": "To calculate the body surface area (BSA) of a patient, we can use the Mosteller formula: BSA (m\u00b2) = sqrt([Height(cm) x Weight(kg)]/3600). The patient's weight is given as 10.6 kg and height as 77.2 cm. So, BSA = sqrt([77.2 cm x 10.6 kg]/3600) = sqrt(819.52/3600) = sqrt(0.22764) = 0.47713 m\u00b2."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0.53",
+    "reasoning": "To calculate the patient's body surface area, we need to know the patient's weight and height. According to the patient note, the patient's weight is 10.6 kg and height is 77.2 cm. We can use the Mosteller formula to calculate the body surface area, which is BSA = sqrt((height * weight) / 3600). First, we need to convert the height from cm to meters, which is 0.772 m. Then, we can plug in the values to get BSA = sqrt((0.772 * 10.6) / 3600) = 0.53 m\u00b2."
+   }
+  }
+ },
+ {
+  "Row Number": 1042,
+  "Calculator": "Estimated Gestational Age",
+  "Calculator ID": 69,
+  "Ground Truth Answer": "('4 weeks', '3 days')",
+  "Lower/Upper": [
+   "('4 weeks', '3 days')",
+   "('4 weeks', '3 days')"
+  ],
+  "Consensus wrong answer from strong models": "(4, 0)",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "(4, 0)",
+    "reasoning": "To calculate the estimated gestational age, we need to find out how many weeks and days have passed since the patient's last menstrual period. The current date is 04/07/2022 and the patient's last menstrual period was on 03/07/2022. The difference between these two dates is 4 weeks and 0 days. Therefore, the estimated gestational age is 4 weeks and 0 days."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "(4, 0)",
+    "reasoning": "The gestational age is calculated from the first day of the last menstrual period. The patient's last menstrual period was on 03/07/2022 and today's date is 04/07/2022. This means that one month has passed. Considering that a month is approximately 4 weeks, the patient's estimated gestational age is 4 weeks and 0 days."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "(4, 3)",
+    "reasoning": "To calculate the estimated gestational age, I first need to calculate the number of days since the last menstrual period. The last menstrual period was on 03/07/2022 and today's date is 04/07/2022, so I subtract the two dates to get the number of days. 04/07/2022 - 03/07/2022 = 31 days. Since a week has 7 days, I divide the number of days by 7 to get the number of weeks: 31 days / 7 = 4 weeks and 3 days. Therefore, the estimated gestational age is 4 weeks and 3 days."
+   }
+  }
+ }
+]

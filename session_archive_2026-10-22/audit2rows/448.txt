@@ -1,0 +1,21 @@
+ROW 448 | FeverPAIN Score for Strep Pharyngitis | GT 4 | consensus 3
+NOTE ID: usmle-3456 TPI: You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.
+NOTE:
+A 17-year-old girl comes to the physician because of a sore throat, fevers, and fatigue for the past 3 weeks. Her temperature is 37.8°C (100°F), pulse is 97/min, and blood pressure is 90/60 mm Hg. Examination of the head and neck shows cervical lymphadenopathy, pharyngeal erythema, enlarged tonsils with exudates, and palatal petechiae. The spleen is palpated 2 cm below the left costal margin. Her leukocyte count is 14,100/mm3 with 54% lymphocytes (12% atypical lymphocytes). Results of a heterophile agglutination test are positive.
+
+ENTITIES:
+{'Symptom onset <=3 days': False, 'Purulent tonsils': True, 'Fever in past 24 hours': True, 'Severe tonsil inflammation': True}
+
+EXPL:
+The patient's current FeverPain score is 0.
+The patient is reported to have a fever in the past 24 hours and so we increment the score by 1, making the current total 0 + 1 = 1.
+Whether the patient has an absence of cough or coryza is not reported and so we assume that it is absent for the patient. Because of this, we add one point to the score, making the current total 1 + 1 =  2.
+The patient is reported to not have a symptom onset ≤3 days and so we do not increment the score, keeping the current total at 2.
+The patient is reported to have purulent tonsils and so we increment the score by 1, making the current total 2 + 1 = 3.
+The patient is reported to have severe tonsil inflammation and so we increment the score by 1, making the current total 3 + 1 = 4.
+The patient's FeverPain score is 4 points.
+
+MODELS:
+-- gpt-4 one-shot: 4: The FeverPAIN score is calculated based on five criteria: Fever in the last 24 hours, Purulence (pus), Attend rapidly (within 3 days), severely Inflamed tonsils, and No cough or coryza (inflammation of the mucous membranes in the nose). Each criteria scores 1 point. From the patient note, the patient has a fever, so that's 1 point. The patient has enlarged tonsils with exudates, which indicates purulence, so that's another point. The patient has been sick for 3 weeks, so she did not attend rapidly, so no point is added. The patient has severely inflamed tonsils, so that's another point. There is no mention of a cough or coryza, so that's another point. Adding these up, the FeverPAIN score is 4.
+-- gpt-4 zero-shot: 4: The FeverPAIN score includes five criteria: Fever, Purulence, Attend rapidly, severely Inflamed tonsils, and No cough or coryza. Each criterion scores one point. The patient has a fever, purulence, severely inflamed tonsils, and no cough or coryza, which gives her 4 points. She did not attend rapidly, so she gets 0 points for that criterion.
+-- llama3-70b zero-shot: 3: To calculate the FeverPAIN score, we need to evaluate the patient's symptoms and medical values at the time of admission. The FeverPAIN score is a clinical prediction rule used to identify patients at low risk of complications from acute sore throat. The score consists of 5 components: F (Fever >38°C), E (Elevated inflammatory markers), V (Vomiting), E (Erythema), R (Rapid strep test or recent exposure), and P (Purulent tonsils), A (Abnormal tonsillar appearance), I (Infiltrate or inflammation on a soft tissue radiograph), and N (No cough). From the patient note, we can identify the following components: - F: The patient's temperature is 37.8°C (100°F), which is not greater than 38°C, so this component is 0. - E: Although the patient's leukocyte count is elevated, there is no mention of elevated inflammatory markers, so this component is 0. - V: There is no mention of vomiting, so this component is 0. - E: The patient has pharyngeal erythema, so this component is 1. - R: There is no mention of a rapid strep test or recent exposure, so this component is 0. - P: The patient has purulent tonsils, so this component is 1. - A: The patient has an abnormal tonsillar appearance, so this component is 1. - I: There is no mention of an infiltrate or inflammation on a soft tissue radiograph, so this component is 0. - N: The patient does not have a cough, so this component is 1. The total FeverPAIN score is the sum of these components, which is 0 + 0 + 0 + 1 + 0 + 1 + 1 + 0 = 3.

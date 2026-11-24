@@ -1,0 +1,56 @@
+Calculator ID,Calculator Name,Category,Rows,Rows in v1.0,Extracted,Synthetic,Template,Same_Note_as_v10,Replaced_or_Added,Corrected_Row
+2,Creatinine Clearance (Cockcroft-Gault Equation),lab,20,20,20,0,0,17,3,0
+3,CKD-EPI Equations for Glomerular Filtration Rate,lab,20,20,20,0,0,17,3,0
+4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,risk,20,20,20,0,0,18,8,3
+5,Mean Arterial Pressure (MAP),physical,20,20,20,0,0,20,0,0
+6,Body Mass Index (BMI),physical,20,20,20,0,0,20,0,0
+7,Calcium Correction for Hypoalbuminemia,lab,20,19,20,0,0,16,6,0
+8,Wells' Criteria for Pulmonary Embolism,risk,20,20,20,0,0,16,7,3
+9,MDRD GFR Equation,lab,20,20,20,0,0,12,8,0
+10,Ideal Body Weight,physical,20,20,20,0,0,20,0,0
+11,QTc Bazett Calculator,physical,20,20,0,0,20,19,1,0
+15,Child-Pugh Score for Cirrhosis Mortality,severity,20,20,19,1,0,0,20,0
+16,Wells' Criteria for DVT,risk,20,20,20,0,0,18,1,6
+17,Revised Cardiac Risk Index for Pre-Operative Risk,risk,20,20,20,0,0,0,20,5
+18,HEART Score for Major Cardiac Events,risk,20,20,19,1,0,15,6,5
+19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,lab,20,20,20,0,0,16,4,0
+20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,severity,20,20,20,0,0,16,11,5
+22,Maintenance Fluids Calculations,physical,20,20,20,0,0,13,7,0
+23,MELD Na (UNOS/OPTN),lab,5,5,5,0,0,4,5,0
+25,HAS-BLED Score for Major Bleeding Risk,risk,20,20,20,0,0,0,20,9
+26,Sodium Correction for Hyperglycemia,lab,20,20,20,0,0,16,5,0
+27,Glasgow-Blatchford Bleeding Score (GBS),risk,20,20,20,0,0,0,20,1
+30,Serum Osmolality,lab,20,20,20,0,0,14,6,0
+31,HOMA-IR (Homeostatic Model Assessment for Insulin Resistance),lab,2,2,1,1,0,1,1,0
+32,Charlson Comorbidity Index (CCI),risk,20,20,20,0,0,0,20,4
+33,FeverPAIN Score for Strep Pharyngitis,diagnosis,20,20,20,0,0,17,11,6
+38,Free Water Deficit,lab,20,20,20,0,0,14,6,0
+39,Anion Gap,lab,20,20,20,0,0,17,3,0
+40,Fractional Excretion of Sodium (FENa),lab,5,5,5,0,0,3,2,0
+44,LDL Calculated,lab,20,20,20,0,0,11,8,1
+45,CURB-65 Score for Pneumonia Severity,risk,20,20,20,0,0,19,1,1
+46,Framingham Risk Score for Hard Coronary Heart Disease,lab,16,16,14,2,0,9,16,0
+48,PERC Rule for Pulmonary Embolism,diagnosis,20,20,19,1,0,15,5,0
+51,SIRS Criteria,diagnosis,20,20,20,0,0,14,12,0
+56,QTc Fridericia Calculator,physical,20,20,0,0,20,20,0,0
+57,QTc Framingham Calculator,physical,20,20,0,0,20,19,1,0
+58,QTc Hodges Calculator,physical,20,20,0,0,20,20,0,0
+59,QTc Rautaharju Calculator,physical,20,20,0,0,20,20,0,0
+60,Body Surface Area Calculator,physical,20,20,20,0,0,19,1,0
+62,Adjusted Body Weight,physical,20,20,20,0,0,18,2,0
+63,Delta Gap,lab,20,20,20,0,0,19,1,1
+64,Delta Ratio,lab,20,20,20,0,0,13,7,0
+65,Albumin Corrected Anion Gap,lab,20,20,20,0,0,16,5,0
+66,Albumin Corrected Delta Gap,lab,20,20,20,0,0,17,3,0
+67,Albumin Corrected Delta Ratio,lab,20,20,20,0,0,17,3,0
+29,PSI Score: Pneumonia Severity Index for CAP,severity,20,20,0,20,0,7,0,5
+21,Glasgow Coma Score (GCS),severity,20,20,0,20,0,17,0,4
+28,APACHE II Score,risk,20,20,0,20,0,4,0,12
+43,Sequential Organ Failure Assessment (SOFA) Score,risk,20,20,0,20,0,18,0,9
+36,Caprini Score for Venous Thromboembolism (2005),risk,20,20,0,20,0,18,1,12
+13,Estimated Due Date,date,20,20,0,0,20,20,0,0
+24,Steroid Conversion Calculator,dosage,20,20,0,0,20,17,3,0
+61,Target weight,physical,20,20,0,0,20,20,0,0
+49,Morphine Milligram Equivalents (MME) Calculator,dosage,20,20,0,0,20,12,8,0
+68,Estimated Date of Conception,date,20,20,0,0,20,1,19,0
+69,Estimated Gestational Age,date,20,20,0,0,20,20,0,0

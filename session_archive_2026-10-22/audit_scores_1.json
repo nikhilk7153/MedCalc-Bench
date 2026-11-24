@@ -1,0 +1,677 @@
+[
+ {
+  "Row Number": 41,
+  "Calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "Calculator ID": 4,
+  "Ground Truth Answer": "4",
+  "Lower/Upper": [
+   "4",
+   "4"
+  ],
+  "Consensus wrong answer from strong models": "2",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "2",
+    "reasoning": "The current CHA2DS2-VASc score is 0.\\nThe patient is 38 years old. Because the age is less than 65 years, no points are added to the current total, keeping the total at 0.\\nThe patient's gender is female and so one point is added to the current total, making the total 1.\\nBecause the congestive heart failure history is not specified in the patient note, we assume it is absent from the patient. Because the patient does not have congestive heart failure, no points are added to the current total, keeping the total at 1.\\nBecause hypertension history is not specified in the patient note, we assume that it is absent from the patient. Because the patient does not have hypertension, no points are added to the current total, keeping the total at 1.\\nOne criteria of the CHA2DS2-VASc score is to check if the patient has had any history of stroke, transient ischemic attacks (TIA), or thromboembolism. Based on the patient note, the patient history for stroke, TIA, or thromboembolism is not present. Because none of stroke, tia, or thromboembolism is present, no points are added to the score, keeping the current total 1.\\nBecause vascular disease history is not specified in the patient note, we assume it to be absent. Because the patient does not have vascular disease, no points are added to score, keeping the score at 1. The patient has a history of diabetes, so one point is added to the score, making the total 2.\\nThe patient's CHA2DS2-VASc Score is 2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "2",
+    "reasoning": "The patient is a 38-year-old woman, which gives her 1 point for being female. She has a history of type 2 diabetes mellitus, which gives her another point. There is no mention of congestive heart failure, hypertension, stroke, vascular disease, or age above 65 years. Therefore, the patient's CHA2DS2-VASc Score is 2."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the CHA2DS2-VASc score, we need to identify the presence of certain risk factors in the patient's medical history. The CHA2DS2-VASc score is a clinical prediction rule that estimates the risk of stroke in patients with atrial fibrillation. The score is calculated based on the presence of the following risk factors: Congestive heart failure (1 point), Hypertension (1 point), Age \u2265 75 years (2 points), Diabetes mellitus (1 point), Stroke or transient ischemic attack (2 points), Vascular disease (1 point), Age 65-74 years (1 point), and Sex category (female) (1 point). From the patient's medical history, we can identify the following risk factors: - Age: 38 years (no points) - Diabetes mellitus: present (1 point) - Vascular disease: left portal vein branch thrombosis (1 point) - Sex category: female (1 point) The patient does not have a history of atrial fibrillation, congestive heart failure, hypertension, stroke or transient ischemic attack. Therefore, the patient's CHA2DS2-VASc score is 3."
+   }
+  }
+ },
+ {
+  "Row Number": 42,
+  "Calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "Calculator ID": 4,
+  "Ground Truth Answer": "5",
+  "Lower/Upper": [
+   "5",
+   "5"
+  ],
+  "Consensus wrong answer from strong models": "3",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "3",
+    "reasoning": "The current CHA2DS2-VASc score is 0.\\nThe patient is 68 years old. Because the age is between 65 and 74 years, one point is added to the current total, making the total 1.\\nThe patient's gender is female and so one point is added to the current total, making the total 2.\\nBecause the congestive heart failure history is not specified in the patient note, we assume it is absent from the patient. Because the patient does not have congestive heart failure, no points are added to the current total, keeping the total at 2.\\nThe patient has a history of hypertension. Because the patient has hypertension, one point is added to the current total, making the total 3.\\nOne criteria of the CHA2DS2-VASc score is to check if the patient has had any history of stroke, transient ischemic attacks (TIA), or thromboembolism. Based on the patient note, the patient history for stroke, TIA, or thromboembolism is not specified, we assume that it is absent from the patient. Because none of stroke, tia, or thromboembolism is present, no points are added to the score, keeping the current total 3.\\nBecause vascular disease history is not specified in the patient note, we assume it to be absent.\\nBecause the patient does not have vascular disease, no points are added to score, keeping the score at 3. Because diabetes history is not specified in the patient note, we assume it's value as 'absent'. Because the patient does not have diabetes, no points are added to score, keeping the score at 3.\\nThe patient's CHA2DS2-VASc Score is 3."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "The CHA2DS2-VASc Score is a clinical prediction rule for estimating the risk of stroke in patients with non-rheumatic atrial fibrillation (AF), a common and serious heart arrhythmia associated with thromboembolic stroke. However, in this case, the patient does not have any mention of atrial fibrillation. Therefore, the CHA2DS2-VASc Score is not applicable. The components of the CHA2DS2-VASc Score include: Congestive heart failure, Hypertension, Age >=75 (Doubled), Diabetes Mellitus, Stroke (Doubled), Vascular disease, Age 65\u201374, and Sex category (Female). In this case, the patient has Hypertension (1 point) and is a Female (1 point). She is also in the age group of 65-74 (1 point). There is no mention of Congestive heart failure, Diabetes Mellitus, Stroke, or Vascular disease."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the CHA2DS2-VASc score, we need to evaluate the patient's medical history and current health status at the time of admission. The score is calculated based on the following criteria: C - Congestive heart failure, H - Hypertension, A2 - Age \u2265 75 years, D - Diabetes, S2 - Stroke or TIA, V - Vascular disease, A - Age 65-74 years, Sc - Sex category (female). From the patient note, we know that the patient is 68 years old (A), has a history of hypertension (H), and no history of diabetes, heart disease, or vascular disease. The patient does not have congestive heart failure, stroke, or TIA at the time of admission. However, the patient has lung cancer and multiple metastases in the lungs, which can be considered as vascular disease (V). Therefore, the patient's CHA2DS2-VASc score is 3."
+   }
+  }
+ },
+ {
+  "Row Number": 43,
+  "Calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "Calculator ID": 4,
+  "Ground Truth Answer": "6",
+  "Lower/Upper": [
+   "6",
+   "6"
+  ],
+  "Consensus wrong answer from strong models": "5",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "4",
+    "reasoning": "The current CHA2DS2-VASc score is 0.\\nThe patient is 86 years old. Because the age is more than 75 years, two points are added to the current total, making the total 2.\\nThe patient's gender is female and so one point is added to the current total, making the total 3.\\nBecause the congestive heart failure history is not specified in the patient note, we assume it is absent from the patient. Because the patient does not have congestive heart failure, no points are added to the current total, keeping the total at 3.\\nBecause hypertension history is specified in the patient note, we assume that it is present in the patient. Because the patient has hypertension, one point is added to the current total, making the total 4.\\nOne criteria of the CHA2DS2-VASc score is to check if the patient has had any history of stroke, transient ischemic attacks (TIA), or thromboembolism. Based on the patient note, the patient history for stroke, TIA, or thromboembolism is not specified, we assume that it is absent from the patient. Because none of stroke, tia, or thromboembolism is present, no points are added to the score, keeping the current total 4.\\nBecause vascular disease history is not specified in the patient note, we assume it to be absent.\\nBecause the patient does not have vascular disease, no points are added to score, keeping the score at 4. Because diabetes history is not specified in the patient note, we assume it's value as 'absent'. Because the patient does not have diabetes, no points are added to score, keeping the score at 4.\\nThe patient's CHA2DS2-VASc Score is 4."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "5",
+    "reasoning": "The CHA2DS2-VASc Score is a clinical prediction rule for estimating the risk of stroke in patients with non-rheumatic atrial fibrillation (AF), a common and serious heart arrhythmia associated with thromboembolic stroke. The score is simple to use and provides a numeric score for each risk factor. The risk factors are: Congestive heart failure (1 point), Hypertension (1 point), Age \u226575 years (2 points), Diabetes Mellitus (1 point), Stroke/TIA/TE (2 points), Vascular disease (1 point), Age 65-74 years (1 point), Sex category (1 point for female). From the patient's note, the patient has a history of atrial fibrillation, is 86 years old, and has hypertension. Therefore, the patient's CHA2DS2-VASc Score is 2 (for age) + 1 (for hypertension) + 1 (for atrial fibrillation) + 1 (for being female) = 5."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "4",
+    "reasoning": "To calculate the CHA2DS2-VASc score, I will go through the patient's medical history and current condition at the time of admission. The CHA2DS2-VASc score is a clinical prediction rule for estimating the risk of stroke in patients with atrial fibrillation. The score is calculated based on the presence or absence of several risk factors, which are: Congestive heart failure (C), Hypertension (H), Age \u2265 75 years (A2), Diabetes (D), Stroke or transient ischemic attack (S2), Vascular disease (V), Age 65-74 years (A), and Sex category (female) (S). From the patient note, I can identify the following risk factors: - Age \u2265 75 years (A2): The patient is 86 years old, so this risk factor is present. - Hypertension (H): The patient has a history of hypertension, so this risk factor is present. - Vascular disease (V): The patient has a history of aortic stenosis, which is a vascular disease, so this risk factor is present. - Sex category (female) (S): The patient is female, so this risk factor is present. The patient does not have a history of congestive heart failure, diabetes, stroke, or transient ischemic attack. The total CHA2DS2-VASc score is the sum of the points for each risk factor, with a maximum score of 9 points. In this case, the patient has 4 risk factors, so the total score is 4."
+   }
+  }
+ },
+ {
+  "Row Number": 49,
+  "Calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+  "Calculator ID": 4,
+  "Ground Truth Answer": "7",
+  "Lower/Upper": [
+   "7",
+   "7"
+  ],
+  "Consensus wrong answer from strong models": "6",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "6",
+    "reasoning": "The current CHA2DS2-VASc score is 0.\\nThe patient is 90 years old. Because the age is above 75 years, two points are added to the current total, making the total 2.\\nThe patient's gender is female and so one point is added to the current total, making the total 3.\\nBecause the congestive heart failure history is not specified in the patient note, we assume it is absent from the patient. Because the patient does not have congestive heart failure, no points are added to the current total, keeping the total at 3.\\nThe patient has a history of hypertension. Because the patient has hypertension, one point is added to the current total, making the total 4.\\nOne criteria of the CHA2DS2-VASc score is to check if the patient has had any history of stroke, transient ischemic attacks (TIA), or thromboembolism. Based on the patient note, the patient history for stroke, TIA, or thromboembolism is not present. Because none of stroke, TIA, or thromboembolism is present, no points are added to the score, keeping the current total at 4.\\nThe patient has a history of atheroembolism, which is considered as vascular disease. Because the patient has vascular disease, one point is added to score, making the score 5. The patient has a history of diabetes. Because the patient has diabetes, one point is added to score, making the score 6.\\nThe patient's CHA2DS2-VASc Score is 6."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "8",
+    "reasoning": "The CHA2DS2-VASc Score is a clinical prediction rule for estimating the risk of stroke in patients with non-rheumatic atrial fibrillation (AF), a common and serious heart arrhythmia associated with thromboembolic stroke. It is used to determine whether or not treatment is required with anticoagulation therapy or antiplatelet therapy. The score is calculated based on the presence of various risk factors. The patient is a 90-year-old female, which gives her 2 points for age and 1 point for sex category. She has a history of hypertension, which gives her 1 point. She also has a history of diabetes, which gives her 1 point. She has a history of stroke (atheroembolism), which gives her 2 points. She also has a history of heart failure (atrial flutter), which gives her 1 point. She does not have a history of vascular disease. Therefore, her total CHA2DS2-VASc Score is 8."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "7",
+    "reasoning": "To calculate the CHA2DS2-VASc score, I will go through the patient's medical history and current status at the time of admission. The score is calculated based on the presence of certain conditions or risk factors. 1. C: Congestive heart failure - The patient has a history of atrial flutter, which is a type of heart arrhythmia, but there is no mention of congestive heart failure. So, this is 0 points. 2. H: Hypertension - The patient has a history of essential hypertension, so this is 1 point. 3. A2: Age \u2265 75 years - The patient is 90 years old, so this is 2 points. 4. D: Diabetes - The patient has a history of type 2 diabetes, so this is 1 point. 5. S2: Stroke or thromboembolism - The patient has a history of pulmonary embolism and deep venous thrombosis, so this is 2 points. 6. V: Vascular disease - The patient has a history of atheroembolism, which is a type of vascular disease, so this is 1 point. 7. A: Age 65-74 years - This does not apply to the patient as she is older than 74 years. 8. Sc: Sex category (female sex) - The patient is female, so this is 1 point. Adding up the points, the patient's CHA2DS2-VASc score is 7."
+   }
+  }
+ },
+ {
+  "Row Number": 123,
+  "Calculator": "Wells' Criteria for Pulmonary Embolism",
+  "Calculator ID": 8,
+  "Ground Truth Answer": "0",
+  "Lower/Upper": [
+   "0",
+   "0"
+  ],
+  "Consensus wrong answer from strong models": "1.5",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "0",
+    "reasoning": "The Well's score for pulmonary embolism is currently 0.\\nClinical signs and symptoms of DVT are not reported and so the total score remains unchanged, keeping the total score at 0. Pulmonary Embolism is not reported to be the #1 diagnosis and so the total score remains unchanged, keeping the total score at 0.\\nThe patient's heart rate is 100 beats per minute. The heart rate is equal to 100 bpm, and so the score is not increased, keeping the total score at 0.\\nBecause the patient has not had an immobilization for at least 3 days, and the patient did not have a surgery in the past 4 weeks, the score remains at 0.\\nBecause the patient has no previous diagnosis of pulmonary embolism (PE) or deep vein thrombosis (DVT), the score remains at 0.\\nHemoptysis is reported to be absent and so the total score remains unchanged, keeping the total score at 0.\\nMalignany with treatment within 6 months or palliative is reported to be absent and so the total score remains unchanged, keeping the total score at 0.\\nThe patient's Well's score for pulmonary embolism is 0."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "1.5",
+    "reasoning": "The Wells' criteria for Pulmonary Embolism includes the following factors: clinical signs and symptoms of DVT, an alternative diagnosis is less likely than a pulmonary embolism, heart rate over 100 beats per minute, immobilization for three days or more or surgery in the previous four weeks, previous objectively diagnosed PE or DVT, hemoptysis, and malignancy. In this case, the patient has a heart rate over 100 beats per minute, which gives her 1.5 points. However, there are no other factors mentioned in the note that would contribute to the Wells' score. Therefore, her score is 1.5."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "1.5",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Pulmonary Embolism, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) Clinical signs and symptoms of DVT (3 points), 2) Alternative diagnosis less likely than PE (1.5 points), 3) Heart rate > 100/min (1.5 points), 4) Immobilization or surgery in the previous 4 weeks (1.5 points), 5) Previous DVT or PE (1.5 points), 6) Hemoptysis (1 point), and 7) Malignancy (1 point). From the patient note, I can see that the patient has a heart rate of 100/min, which satisfies criterion 3. No other criteria are met. Therefore, the patient's score is 1.5."
+   }
+  }
+ },
+ {
+  "Row Number": 131,
+  "Calculator": "Wells' Criteria for Pulmonary Embolism",
+  "Calculator ID": 8,
+  "Ground Truth Answer": "5.5",
+  "Lower/Upper": [
+   "5.5",
+   "5.5"
+  ],
+  "Consensus wrong answer from strong models": "2.5",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "2.5",
+    "reasoning": "The Well's score for pulmonary embolism is currently 0.\\nClinical signs and symptoms of DVT are reported to be absent and so the total score remains unchanged, keeping the total score at 0. Pulmonary Embolism is not reported to be the #1 diagnosis and so the total score remains unchanged, keeping the total score at 0.\\nThe patient's heart rate is 101 beats per minute. The heart rate is more than 100 bpm, and so the score is increased by 1.5, making the total score, 0 + 1.5 = 1.5.\\nBecause the patient has not had an immobilization for at least 3 days, and the patient did not have a surgery in the past 4 weeks, the score remains at 1.5.\\nBecause the patient has no previous diagnosis of pulmonary embolism (PE) or deep vein thrombosis (DVT), the score remains at 1.5.\\nHemoptysis is reported to be absent and so the total score remains unchanged, keeping the total score at 1.5.\\nMalignancy with treatment within 6 months or palliative is reported to be present and so the total score is increased by 1, making the total score, 1.5 + 1 = 2.5.\\nThe patient's Well's score for pulmonary embolism is 2.5."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "2.5",
+    "reasoning": "The Wells' criteria for Pulmonary Embolism includes seven factors: 1. Clinical signs and symptoms of DVT (3 points), 2. An alternative diagnosis is less likely than a PE (3 points), 3. Heart rate over 100 beats per minute (1.5 points), 4. Immobilization for 3 days or more or surgery in the previous 4 weeks (1.5 points), 5. Previous, objectively diagnosed PE or DVT (1.5 points), 6. Hemoptysis (1 point), 7. Malignancy with treatment within 6 months (1 point). In this case, the patient has a heart rate over 100 beats per minute (1.5 points) and a malignancy with treatment within 6 months (1 point). There are no signs of DVT, the alternative diagnosis of gastropericardial fistula is more likely than PE, the patient was not immobilized, there is no previous history of PE or DVT, and the patient does not have hemoptysis. Therefore, the total score is 2.5."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Pulmonary Embolism, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) Clinical signs and symptoms of DVT (3 points), 2) PE is #1 or equally likely diagnosis (3 points), 3) Heart rate > 100 bpm (1.5 points), 4) Immobilization or surgery in the previous 4 weeks (1.5 points), 5) Previous DVT or PE (1.5 points), 6) Hemoptysis (1 point), and 7) Malignancy (1 point). From the patient note, I can see that the patient has a heart rate of 101/minute, which meets criterion 3. The patient also has a past medical history of stage IV colon cancer, which meets criterion 7. The patient has not had any immobilization or surgery in the previous 4 weeks, and there is no mention of hemoptysis. The patient's symptoms are more suggestive of a gastrointestinal issue rather than PE, so criterion 2 is not met. There is no mention of DVT or previous PE, so criterion 5 is not met. Criterion 1 is also not met as there are no clinical signs and symptoms of DVT. Therefore, the patient's score is 1.5 + 1.5 = 3 points."
+   }
+  }
+ },
+ {
+  "Row Number": 221,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so the total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes the following factors: active cancer, paralysis or recent plaster immobilization of the lower extremities, recently bedridden for more than 3 days or major surgery within the previous 4 weeks, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling at least 3 cm larger than asymptomatic side, pitting edema confined to the symptomatic leg, collateral superficial veins (non-varicose), and previously documented DVT. In the patient's note, there is no mention of any of these factors. Therefore, the patient's Wells' score for DVT is 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "1",
+    "reasoning": "To calculate the Wells' criteria for Deep Vein Thrombosis, we need to evaluate the patient's medical values and health status when they were first admitted to the hospital prior to any treatment. The Wells' criteria consists of 7 items: (1) active cancer, (2) paralysis, paresis, or recent immobilization of the affected leg, (3) recently bedridden for 3 days or more, or major surgery within 4 weeks, (4) localized tenderness along the distribution of the deep venous system, (5) entire leg swelling, (6) calf swelling at least 3 cm larger than asymptomatic side, and (7) pitting edema confined to the symptomatic leg. From the patient note, we can identify the following information: - The patient was admitted after sustaining an ST-elevation myocardial infarction (STEMI) just 10 days ago, which suggests recent immobilization (item 3). - Physical examination revealed fine wet rales in the bottom part of the lung, but there is no mention of leg swelling, tenderness, or pitting edema. - There is no mention of active cancer, paralysis, or recent major surgery. Therefore, the patient scores 1 point for item 3 (recently bedridden for 3 days or more, or major surgery within 4 weeks). The total score is 1."
+   }
+  }
+ },
+ {
+  "Row Number": 223,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.\\nF"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes factors such as active cancer, paralysis, recent plaster immobilization of the lower extremities, recently bedridden for 3 days or more, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling by more than 3 cm when compared with the asymptomatic leg, pitting edema, collateral superficial veins (non-varicose), and previously documented DVT. In this case, the patient does not have any of these symptoms or risk factors. His symptoms are related to urinary retention, constipation, and dry mouth, which are likely side effects of his new medication for depression. There is no mention of any symptoms or risk factors related to DVT."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "-2",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, I will go through the criteria one by one. The criteria are: 1) active cancer (3 points), 2) paralysis, paresis, or recent immobilization of the affected leg (3 points), 3) recently bedridden for 3 days or more, or major surgery within 4 weeks (3 points), 4) localized tenderness along the distribution of the deep venous system (3 points), 5) entire leg swelling (2 points), 6) calf swelling at least 3 cm larger than asymptomatic side (2 points), 7) pitting edema (1 point), 8) collateral superficial veins (1 point), 9) alternative diagnosis at least as likely as DVT (minus 2 points). From the patient note, I do not see any information that suggests active cancer, paralysis, paresis, or recent immobilization of the affected leg, recently bedridden for 3 days or more, or major surgery within 4 weeks. There is no mention of localized tenderness along the distribution of the deep venous system, entire leg swelling, calf swelling at least 3 cm larger than asymptomatic side, pitting edema, or collateral superficial veins. The patient's symptoms are more related to urinary retention, depression, constipation, and dry mouth. Therefore, I will not assign any points for these criteria. However, the patient's symptoms are more likely related to the new medication for depression, so I will assign minus 2 points for alternative diagnosis at least as likely as DVT. The total score is 0 - 2 = -2."
+   }
+  }
+ },
+ {
+  "Row Number": 227,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so the total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes the following factors: active cancer, paralysis, recent bedridden for 3 days or major surgery, localized tenderness along the deep venous system, entire leg swollen, calf swelling, pitting edema, collateral superficial veins, and previously documented DVT. In this case, the patient has a history of basal cell carcinoma, but it's not mentioned if it's active. There's no mention of paralysis, recent bedridden status, or major surgery. There's no mention of localized tenderness along the deep venous system, leg swelling, calf swelling, pitting edema, collateral superficial veins, or previously documented DVT. Therefore, based on the information provided, the patient's Wells' score for DVT is 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "-2",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) active cancer (1 point), 2) paralysis, paresis, or recent immobilization of the affected leg (1 point), 3) recently bedridden for 3 days or more, or major surgery within 4 weeks (1 point), 4) localized tenderness along the distribution of the deep venous system (1 point), 5) entire leg swelling (1 point), 6) calf swelling at least 3 cm larger than asymptomatic side (1 point), 7) pitting edema (1 point), 8) collateral superficial veins (1 point), 9) alternative diagnosis at least as likely as DVT (minus 2 points). From the patient note, I can see that the patient has a history of cancer (basal cell carcinoma), but it is not active. There is no mention of paralysis, paresis, or recent immobilization of the affected leg. The patient has not been recently bedridden for 3 days or more, or had major surgery within 4 weeks. There is no mention of localized tenderness along the distribution of the deep venous system, entire leg swelling, calf swelling, pitting edema, or collateral superficial veins. The patient's symptoms are related to the anal mass, which is an alternative diagnosis. Therefore, the patient's score of Wells' criteria for Deep Vein Thrombosis is -2."
+   }
+  }
+ },
+ {
+  "Row Number": 229,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.\\nF"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes the following factors: active cancer, paralysis or recent plaster immobilization of the lower extremities, recently bedridden for 3 days or more or major surgery within the previous 12 weeks, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling by more than 3 cm when compared with the asymptomatic leg, pitting edema confined to the symptomatic leg, collateral superficial veins (non-varicose), and previously documented DVT. The patient's note does not mention any of these factors. Therefore, the patient's Wells' score for DVT is 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, we need to evaluate the patient's medical values and health status when they were first admitted to the hospital prior to any treatment. The Wells' criteria for Deep Vein Thrombosis consists of 7 items: (1) active cancer, (2) paralysis, paresis, or recent immobilization of the affected leg, (3) recently bedridden for 3 days or more, or major surgery within 4 weeks, (4) localized tenderness along the distribution of the deep venous system, (5) entire leg swelling, (6) calf swelling at least 3 cm larger than asymptomatic side, and (7) pitting edema confined to the symptomatic leg. From the patient note, we can identify the following information: - The patient has a history of SLE, but no active cancer is mentioned. - There is no mention of paralysis, paresis, or recent immobilization of the affected leg. - The patient was not recently bedridden for 3 days or more, or had major surgery within 4 weeks. - There is no mention of localized tenderness along the distribution of the deep venous system. - There is no mention of entire leg swelling or calf swelling at least 3 cm larger than asymptomatic side. - There is no mention of pitting edema confined to the symptomatic leg. Therefore, the patient's score of Wells' criteria for Deep Vein Thrombosis is 0."
+   }
+  }
+ },
+ {
+  "Row Number": 234,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "1",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.\\nF"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes several factors such as active cancer, paralysis, recent immobilization, localized tenderness, entire leg swollen, calf swelling, pitting edema, collateral superficial veins, and an alternative diagnosis being less likely than DVT. In this patient note, there is no mention of any of these factors. The patient is a 21-year-old male with a history of asthma and reactive airway disease, who was admitted for a shoulder surgery. There is no mention of any symptoms or conditions related to DVT."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "1",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) active cancer (3 points), 2) paralysis, paresis, or recent plaster immobilization of the lower extremities (1 point), 3) recently bedridden for 3 days or more, or major surgery within 4 weeks (1 point), 4) localized tenderness along the distribution of the deep venous system (1 point), 5) entire leg swollen (1 point), 6) calf swelling at least 3 cm larger than asymptomatic side (1 point), 7) pitting edema (1 point), 8) collateral superficial veins (1 point), 9) alternative diagnosis at least as likely as DVT (minus 2 points). From the patient note, I can see that the patient is 21 years old, has a history of asthma and reactive airway disease, and is scheduled to undergo left shoulder arthroscopy and labral repair surgery. There is no mention of active cancer, paralysis, paresis, or recent plaster immobilization of the lower extremities. The patient is not recently bedridden for 3 days or more, but is undergoing major surgery. There is no mention of localized tenderness along the distribution of the deep venous system, entire leg swelling, calf swelling, pitting edema, or collateral superficial veins. Therefore, the patient scores 1 point for major surgery within 4 weeks. There is no alternative diagnosis at least as likely as DVT mentioned in the note, so no points are subtracted. "
+   }
+  }
+ },
+ {
+  "Row Number": 235,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so the total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes several factors: active cancer, paralysis or recent plaster immobilization of the lower extremities, recently bedridden for 3 days or more or major surgery within the previous 4 weeks, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling at least 3 cm larger than that on the asymptomatic side, pitting edema confined to the symptomatic leg, collateral superficial veins (non-varicose), and previously documented DVT. In this case, the patient does not have active cancer, paralysis, recent immobilization, recent bedridden status or major surgery, localized tenderness along the deep venous system, leg swelling, calf swelling, pitting edema, collateral superficial veins, or a history of DVT. Therefore, the patient's Wells' score for DVT is 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "-2",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) active cancer (3 points), 2) paralysis, paresis, or recent immobilization of the lower extremities (3 points), 3) recently bedridden for 3 days or more, or major surgery within 4 weeks (3 points), 4) localized tenderness along the distribution of the deep venous system (3 points), 5) entire leg swelling (2 points), 6) calf swelling at least 3 cm larger than asymptomatic side (2 points), 7) pitting edema (1 point), 8) collateral superficial veins (1 point), 9) alternative diagnosis at least as likely as DVT (minus 2 points). From the patient note, I can see that the patient was healthy prior to the accident with no history of chronic disease, so there is no active cancer. The patient was not paralyzed or immobilized, and was not bedridden for 3 days or more, or had major surgery within 4 weeks. The patient did not have localized tenderness along the distribution of the deep venous system, entire leg swelling, calf swelling, pitting edema, or collateral superficial veins. The patient had a traumatic avulsion of the penile and scrotal skin, which is an alternative diagnosis, so minus 2 points. Therefore, the patient's score of Wells' criteria for Deep Vein Thrombosis is 0 - 2 = -2."
+   }
+  }
+ },
+ {
+  "Row Number": 239,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-2",
+  "Lower/Upper": [
+   "-2",
+   "-2"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.\\nF"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes several factors: active cancer, paralysis or recent plaster immobilization of the lower extremities, recently bedridden for more than 3 days or major surgery within the previous 4 weeks, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling at least 3 cm larger than asymptomatic side, pitting edema confined to the symptomatic leg, collateral superficial veins (non-varicose), and previously documented DVT. From the patient note, there is no mention of any of these factors. The patient was not bedridden, had no surgery, no mention of leg swelling, tenderness, or pitting edema. There is also no history of DVT or cancer. Therefore, the patient's Wells' score for DVT would be 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) active cancer (1 point), 2) paralysis, paresis, or recent plaster immobilization of the lower extremities (1 point), 3) recently bedridden for 3 days or more, or major surgery within 4 weeks (1 point), 4) localized tenderness along the distribution of the deep venous system (1 point), 5) entire leg swelling (1 point), 6) calf swelling at least 3 cm larger than asymptomatic side (1 point), 7) pitting edema (1 point), 8) collateral superficial veins (1 point), 9) alternative diagnosis at least as likely as DVT (minus 2 points). From the patient note, I can see that the patient was admitted to the hospital with severe pneumonia and respiratory failure, but there is no mention of cancer, paralysis, recent plaster immobilization, or major surgery. The patient was not bedridden for 3 days or more before admission. There is no mention of localized tenderness, entire leg swelling, calf swelling, pitting edema, or collateral superficial veins. The patient's symptoms are more consistent with severe pneumonia and respiratory failure than DVT. Therefore, the patient's score of Wells' criteria for Deep Vein Thrombosis is 0."
+   }
+  }
+ },
+ {
+  "Row Number": 240,
+  "Calculator": "Wells' Criteria for DVT",
+  "Calculator ID": 16,
+  "Ground Truth Answer": "-1",
+  "Lower/Upper": [
+   "-1",
+   "-1"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "-2",
+    "reasoning": "The current Well's DVT Score is 0.\\nFrom the patient's note, the criterion, 'active cancer,' is absent. Hence, a point should not be given, and so we keep the score at 0.\\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is absent. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. This is not the case for this patient, and so the score remains unchanged at 0.\\nFrom the patient's note, the criterion, 'calf swelling >3 cm compared to the other leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'collateral (nonvaricose) superficial veins present,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'entire leg swollen,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'localized tenderness along the deep venous system,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'pitting edema, confined to symptomatic leg,' is absent. Hence, a point should not be given, and so total remains at 0.\\nFrom the patient's note, the criterion, 'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is absent. Hence, a point should not be given, and so total remains at 0.\\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0"
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Wells' criteria for Deep Vein Thrombosis (DVT) includes several factors: active cancer, paralysis or recent plaster immobilization of the lower extremities, recently bedridden for more than 3 days or major surgery within the previous 4 weeks, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling at least 3 cm larger than asymptomatic side, pitting edema confined to the symptomatic leg, collateral superficial veins (non-varicose), and previously documented DVT. In the provided patient note, there is no mention of any of these factors. Therefore, the patient's score on the Wells' criteria for DVT would be 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "1",
+    "reasoning": "To calculate the patient's score of Wells' criteria for Deep Vein Thrombosis, I will go through the criteria one by one and assign points accordingly. The criteria are: 1) active cancer (1 point), 2) paralysis, paresis, or recent immobilization of the affected leg (1 point), 3) recently bedridden for 3 days or more, or major surgery within 4 weeks (1 point), 4) localized tenderness along the distribution of the deep venous system (1 point), 5) entire leg swollen (1 point), 6) calf swelling at least 3 cm larger than asymptomatic side (1 point), 7) pitting edema confined to the symptomatic leg (1 point), 8) collateral superficial veins (1 point), 9) alternative diagnosis at least as likely as DVT (minus 2 points). From the patient note, I do not find any information about active cancer, paralysis, paresis, or recent immobilization of the affected leg, localized tenderness along the distribution of the deep venous system, entire leg swollen, calf swelling at least 3 cm larger than asymptomatic side, pitting edema confined to the symptomatic leg, or collateral superficial veins. The patient underwent a kidney transplant, which can be considered as major surgery within 4 weeks, so 1 point is assigned. There is no alternative diagnosis at least as likely as DVT mentioned in the patient note, so no points are subtracted. Therefore, the patient's score of Wells' criteria for Deep Vein Thrombosis is 1."
+   }
+  }
+ },
+ {
+  "Row Number": 241,
+  "Calculator": "Revised Cardiac Risk Index for Pre-Operative Risk",
+  "Calculator ID": 17,
+  "Ground Truth Answer": "3",
+  "Lower/Upper": [
+   "3",
+   "3"
+  ],
+  "Consensus wrong answer from strong models": "5",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "5",
+    "reasoning": "The current cardiac risk index is 0.\\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\\nBased on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\\nBased on the patient note, a history of cerebrovascular disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 3 + 1 = 4.\\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 4.\\nThe concentration of Pre-Operative Creatinine is 2.1 mg/dL. The patient's pre-operative creatinine is greater than 2 mg/dL, so we increment the score by one and the current total will be 4 + 1 = 5.\\n\\nThe cardiac risk index score is 5."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "4",
+    "reasoning": "The patient has a history of ischemic stroke, which counts as cerebrovascular disease. The patient has well-controlled congestive heart failure. The patient has stable angina, which counts as ischemic heart disease. The patient has non-insulin-dependent diabetes mellitus, which does not count towards the RCRI as it is not insulin-dependent. The patient's creatinine level is 2.1 mg/dL, which is above the threshold of 2.0 mg/dL. The patient is not undergoing high-risk surgery (a biopsy is not considered high-risk)."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "5",
+    "reasoning": "To calculate the Revised Cardiac Risk Index (RCRI) for Pre-Operative Risk, we need to identify the presence of six risk factors: high-risk surgery, ischemic heart disease, heart failure, cerebrovascular disease, diabetes, and renal insufficiency. From the patient note, we can identify the following risk factors: - Ischemic heart disease: The patient has a history of stable angina and uses nitroglycerin for occasional chest pain on exertion. - Heart failure: The patient has a history of well-controlled congestive heart failure. - Cerebrovascular disease: The patient has a history of ischemic stroke with mild residual aphasia. - Diabetes: The patient has a history of non-insulin-dependent diabetes mellitus. - Renal insufficiency: The patient's creatinine level is 2.1 mg/dL, which indicates renal insufficiency. The patient does not have high-risk surgery as a risk factor. The RCRI score is calculated by assigning 1 point for each of the above risk factors. Therefore, the patient's RCRI score is 5."
+   }
+  }
+ },
+ {
+  "Row Number": 248,
+  "Calculator": "Revised Cardiac Risk Index for Pre-Operative Risk",
+  "Calculator ID": 17,
+  "Ground Truth Answer": "2",
+  "Lower/Upper": [
+   "2",
+   "2"
+  ],
+  "Consensus wrong answer from strong models": "3",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "3",
+    "reasoning": "The current cardiac risk index is 0.\\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\\nBased on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 2.\\nBased on the patient note, a pre-operative insulin treatment is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\\nThe concentration of Pre-Operative Creatinine is 140 \u00b5mol/L. The patient's pre-operative creatinine is greater than 2 mg/dL (or 176.8 \u00b5mol/L), so we do not increment the score and the current total remains at 3.\\n\\nThe cardiac risk index score is 3."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "2",
+    "reasoning": "The Revised Cardiac Risk Index includes six factors. The patient has a history of insulin-dependent diabetes and congestive heart failure, which are two of the factors. The patient's creatinine level is elevated, but after converting from \u00b5mol/L to mg/dL, it is less than 2.0 mg/dL, so this factor does not contribute to the score. Therefore, the patient's RCRI score is 2."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the Revised Cardiac Risk Index (RCRI) score, we need to identify the presence of six risk factors: high-risk surgery, ischemic heart disease, heart failure, cerebrovascular disease, diabetes, and renal insufficiency. From the patient note, we can identify the following risk factors: - Heart failure: The patient has a history of congestive heart failure with frequent hospital visits due to exacerbations and experiences dyspnea and fatigue on moderate exertion. - Diabetes: The patient has a long-standing history of insulin-dependent diabetes. - Renal insufficiency: The patient's lab reports indicate an elevated creatinine level of 140 \u00b5mol/L, which is a sign of renal insufficiency. The patient does not have a history of ischemic heart disease or cerebrovascular accidents, and the type of surgery is not specified as high-risk. Therefore, the patient has three risk factors, which corresponds to a RCRI score of 3."
+   }
+  }
+ },
+ {
+  "Row Number": 255,
+  "Calculator": "Revised Cardiac Risk Index for Pre-Operative Risk",
+  "Calculator ID": 17,
+  "Ground Truth Answer": "3",
+  "Lower/Upper": [
+   "3",
+   "3"
+  ],
+  "Consensus wrong answer from strong models": "2",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "3",
+    "reasoning": "The current cardiac risk index is 0.\\nBased on the patient note, an elevated risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\\nBased on the patient note, a history of ischemic heart disease is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 2 + 1 = 3.\\nBased on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 3.\\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 3.\\nThe concentration of Pre-Operative Creatinine is 1.8 mg/dL. The patient's pre-operative creatinine is less than 2 mg/dL, so the total score remains unchanged at 3.\\n\\nThe cardiac risk index score is 3."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "2",
+    "reasoning": "The patient has a history of ischemic heart disease, which contributes 1 point to the RCRI score. He also has a history of congestive heart failure, which contributes another point. His creatinine level is less than 2.0 mg/dL, so it does not contribute a point. There is no mention of high-risk surgery, cerebrovascular disease, or insulin therapy for diabetes, so these do not contribute points. Therefore, the patient's RCRI score is 2."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "2",
+    "reasoning": "To calculate the Revised Cardiac Risk Index (RCRI) score, we need to identify the presence of six risk factors: high-risk surgery, ischemic heart disease, heart failure, cerebrovascular disease, diabetes, and renal insufficiency (creatinine > 2 mg/dL). From the patient note, we can identify the following risk factors: 1. Ischemic heart disease: Yes, the patient has a history of ischemic heart disease that required coronary artery bypass grafting eight years ago. 2. Heart failure: Yes, the patient has congestive heart failure and is on diuretic therapy. 3. Renal insufficiency: Yes, the patient's creatinine level is 1.8 mg/dL, which is less than 2 mg/dL, so this risk factor is not met. The patient does not have cerebrovascular disease, diabetes, or high-risk surgery (lung cancer resection is considered an intermediate-risk surgery). The RCRI score is calculated by assigning 1 point for each of the six risk factors present. In this case, the patient has two risk factors, so the RCRI score is 2."
+   }
+  }
+ },
+ {
+  "Row Number": 258,
+  "Calculator": "Revised Cardiac Risk Index for Pre-Operative Risk",
+  "Calculator ID": 17,
+  "Ground Truth Answer": "2",
+  "Lower/Upper": [
+   "2",
+   "2"
+  ],
+  "Consensus wrong answer from strong models": "3",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "3",
+    "reasoning": "The current cardiac risk index is 0.\\nBased on the patient note, a high-risk surgery is determined to be present for the patient. This means that we increment the score by one and the current total will be 0 + 1 = 1.\\nBased on the patient note, a history of ischemic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 1.\\nBased on the patient note, a history of congestive heart failure is determined to be present for the patient. This means that we increment the score by one and the current total will be 1 + 1 = 2.\\nBased on the patient note, a history of cerebrovascular disease is determined to be absent for the patient. This means that the total score remains unchanged at 2.\\nBased on the patient note, a pre-operative insulin treatment is determined to be absent for the patient. This means that the total score remains unchanged at 2.\\nThe concentration of Pre-Operative Creatinine is 2.0 mg/dL. The patient's pre-operative creatinine is equal to 2 mg/dL, so we increment the score by one and the current total will be 2 + 1 = 3.\\n\\nThe cardiac risk index score is 3."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "First, I identified the factors of the Revised Cardiac Risk Index: high-risk surgery, history of ischemic heart disease, history of congestive heart failure, history of cerebrovascular disease, preoperative treatment with insulin, and preoperative serum creatinine >2.0 mg/dL. Then, I reviewed the patient's note and found that he has three of these factors: high-risk surgery, history of congestive heart failure, and preoperative serum creatinine >2.0 mg/dL. Therefore, his RCRI score is 3."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the Revised Cardiac Risk Index (RCRI) score, we need to identify the presence of six risk factors: high-risk surgery, ischemic heart disease, heart failure, cerebrovascular disease, diabetes, and renal insufficiency. From the patient note, we can identify the following risk factors: - High-risk surgery: Yes, the patient is undergoing a high-risk surgery for carotid artery stenosis. - Heart failure: Yes, the patient has a diagnosis of congestive heart failure. - Renal insufficiency: Yes, the patient's creatinine level is 2.0 mg/dL, which indicates renal insufficiency. The patient does not have a history of ischemic heart disease, cerebrovascular disease, or diabetes. Each risk factor is assigned 1 point, and the total score is the sum of the points. In this case, the patient has 3 risk factors, so the total score is 3."
+   }
+  }
+ },
+ {
+  "Row Number": 301,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "1",
+  "Lower/Upper": [
+   "1",
+   "1"
+  ],
+  "Consensus wrong answer from strong models": "2",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "2",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 15 years old. Because the age is less than 15 years, we add one point to the score, making the current score 0 + 1 = 1.\\nThe patient's temperature is 37.8 degrees celsius. The patient's temperature is less than 38 degrees Celsius, and so we do not change the score, keeping the current score at 1.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nThe patient note does not mention details about 'tender/swollen anterior cervical lymph nodes' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 2.\\nThe patient note does not mention details about 'exudate or swelling on tonsils' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 2.\\nHence, the Centor score for the patient is 2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Centor Score is used to identify the likelihood of a streptococcal pharyngitis infection in patients presenting with a sore throat. It includes four criteria: history of fever, tonsillar exudates, tender anterior cervical adenopathy, and absence of cough. In this case, the patient does not have a history of fever, no mention of tonsillar exudates or tender anterior cervical adenopathy, and there is no mention of a cough. Therefore, the patient's Centor Score is 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "2",
+    "reasoning": "To calculate the Centor Score, we need to evaluate the patient's symptoms and medical values at the time of admission. The Centor Score is a clinical prediction rule used to diagnose group A beta-hemolytic streptococcal pharyngitis. The score consists of 4 criteria: 1) tonsillar exudates, 2) tender anterior cervical adenopathy, 3) history of fever, and 4) absence of cough. From the patient note, we can see that the patient has a temperature of 100.1 deg F (37.8 deg C), which indicates a history of fever. The patient also has a tender neck mass, which can be considered as tender anterior cervical adenopathy. However, there is no mention of tonsillar exudates or cough. Therefore, the patient scores 2 out of 4 on the Centor Score."
+   }
+  }
+ },
+ {
+  "Row Number": 303,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "4",
+  "Lower/Upper": [
+   "4",
+   "4"
+  ],
+  "Consensus wrong answer from strong models": "3",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "2",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 4 years old. Because the age is less than 15 years, we subtract one point from the score, making the current score 0 - 1 = -1.\\nThe patient's temperature is 37.7 degrees celsius. The patient's temperature is less than 38 degrees Celsius, and so we do not add any points to the score, keeping the score at -1.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score -1 + 1 = 0.\\nThe patient note mentions 'tender/swollen anterior cervical lymph nodes'. Hence, we add 1 point to the score, making the current score 0 + 1 = 1.\\nThe patient note mentions 'exudate or swelling on tonsils'. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nHence, the Centor score for the patient is 2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "The Centor Score includes four criteria: history of fever, tonsillar exudates, tender anterior cervical adenopathy, and absence of cough. Each criterion scores 1 point. The patient has a history of fever, tonsillar exudates, and tender anterior cervical adenopathy. However, the absence of cough is not mentioned in the note. Therefore, we can only confirm 3 points for the Centor Score."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the Centor Score, we need to evaluate four criteria: 1) tonsillar exudates, 2) tender anterior cervical lymphadenopathy, 3) history of fever, and 4) absence of cough. From the patient note, we can see that the patient has tonsillar exudates (criterion 1), tender anterior cervical lymphadenopathy (criterion 2), and no mention of cough (criterion 4). However, the patient's temperature is 37.7\u00b0C (99.9\u00b0F), which is not considered a fever. Therefore, criterion 3 is not met. The patient meets 3 out of 4 criteria, so the Centor Score is 3."
+   }
+  }
+ },
+ {
+  "Row Number": 304,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "2",
+  "Lower/Upper": [
+   "2",
+   "2"
+  ],
+  "Consensus wrong answer from strong models": "3",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "3",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 29 years old. Because the age is in between 15 and 44 years, the score does not change, keeping the score at 0.\\nThe patient's temperature is 37.0 degrees celsius. The patient's temperature is less than 38 degrees Celsius, and so we do not add any point to the score, keeping the score at 0.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 0 + 1 = 1.\\nThe patient note mentions 'two inflamed lymph nodes below the jaw' which can be considered as 'tender/swollen anterior cervical lymph nodes'. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nThe patient note mentions 'white spots' on his tonsil which can be considered as 'exudate or swelling on tonsils'. Hence, we add 1 point to the score, making the current score 2 + 1 = 3.\\nHence, the Centor score for the patient is 3."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "2",
+    "reasoning": "The Centor Score is calculated based on four criteria: presence of fever, absence of cough, swollen and tender anterior cervical lymph nodes, and tonsillar exudate or swelling. Each criterion is worth 1 point. The patient had tonsillar exudate and swollen lymph nodes, so he gets 2 points. He reported no fever, so no point is given for this. There is no mention of cough, so we can't determine if a point should be given for this. Therefore, the patient's Centor Score is 2."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the Centor Score, we need to evaluate the patient's symptoms and physical examination findings when they were first admitted to the hospital prior to any treatment. The Centor Score is a clinical prediction rule used to diagnose streptococcal pharyngitis. It consists of four criteria: 1) tonsillar exudates, 2) tender anterior cervical lymph nodes, 3) absence of a cough, and 4) fever. From the patient note, on the second day, the patient had an extensive membrane covering the right tonsil, which indicates tonsillar exudates (1 point). He also had two inflamed lymph nodes below the jaw, which indicates tender anterior cervical lymph nodes (1 point). There is no mention of a cough, so we can assume the absence of a cough (1 point). His temperature was 37.0\u00b0C, which is not considered a fever (0 points). Therefore, the patient's Centor Score is 3."
+   }
+  }
+ },
+ {
+  "Row Number": 307,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "-1",
+  "Lower/Upper": [
+   "-1",
+   "-1"
+  ],
+  "Consensus wrong answer from strong models": "0",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "1",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 68 years old. Because the age is above 44 years, we add one point to the score, making the current score 0 + 1 = 1.\\nThe patient's temperature is 36.2 degrees celsius. The patient's temperature is less than 38 degrees Celsius, and so we do not change the score, keeping the score at 1.\\nThe patient note mentions the patient has been coughing, hence we do not add any points to the score, keeping the current score at 1.\\nThe patient note does not mention details about 'tender/swollen anterior cervical lymph nodes' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 1.\\nThe patient note does not mention details about 'exudate or swelling on tonsils' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 1.\\nHence, the Centor score for the patient is 1."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "0",
+    "reasoning": "The Centor Score is used to identify the likelihood of a streptococcal pharyngitis infection and the subsequent need for antibiotics. It takes into account four factors: fever by history, absence of cough, swollen and tender cervical lymph nodes, and tonsillar exudate or swelling. In this patient's case, she has a cough, no mention of a fever, no swollen or tender cervical lymph nodes, and no tonsillar exudate or swelling. Therefore, her Centor Score would be 0."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "0",
+    "reasoning": "To calculate the Centor score, we need to evaluate four criteria: 1) tonsillar exudates, 2) tender anterior cervical lymph nodes, 3) fever (>38\u00b0C), and 4) absence of cough. The patient note does not mention tonsillar exudates, so we score 0 for this criterion. The patient note also does not mention tender anterior cervical lymph nodes, so we score 0 for this criterion. The patient's body temperature is 36.2\u00b0C, which is not fever (>38\u00b0C), so we score 0 for this criterion. The patient has an intermittent cough, so we score 0 for this criterion. Therefore, the patient's Centor score is 0."
+   }
+  }
+ },
+ {
+  "Row Number": 308,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "2",
+  "Lower/Upper": [
+   "2",
+   "2"
+  ],
+  "Consensus wrong answer from strong models": "3",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "3",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 19 years old. Because the age is in between 15 and 44 years, the score does not change, keeping the score at 0.\\nThe patient's temperature is 38.2 degrees celsius. The patient's temperature is greater than 38 degrees Celsius, and so we add one point to the score, making the current score 0 + 1 = 1.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nThe patient note mentions 'posterior cervical lymphadenopathy' which is not the same as 'tender/swollen anterior cervical lymph nodes'. Hence, we do not change the score, keeping the current score at 2.\\nThe patient note mentions 'erythematous oropharynx' which can be considered as 'exudate or swelling on tonsils'. Hence, we add 1 point to the score, making the current score 2 + 1 = 3.\\nHence, the Centor score for the patient is 3."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "The Centor Score is calculated based on four criteria: history of fever, tonsillar exudates, tender anterior cervical lymphadenopathy, and absence of cough. Each criterion scores 1 point. The patient has a history of fever, tender anterior cervical lymphadenopathy, and absence of cough, which gives him a score of 3. There is no mention of tonsillar exudates, so no point is given for that criterion."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "2",
+    "reasoning": "To calculate the Centor Score, I will evaluate the patient's symptoms and physical exam findings at the time of admission. The Centor Score is a clinical prediction rule used to diagnose streptococcal pharyngitis. It consists of 4 criteria: 1) tonsillar exudates, 2) tender anterior cervical lymph nodes, 3) history of fever, and 4) absence of cough. From the patient note, I can identify the following criteria: - Tonsillar exudates: not mentioned, so I will assume it is absent. - Tender anterior cervical lymph nodes: present, as the patient has posterior cervical lymphadenopathy. - History of fever: present, as the patient's temperature is 100.8\u00b0F (38.2\u00b0C). - Absence of cough: not mentioned, but the patient does have a sore throat, so I will assume it is absent. The patient meets 2 out of 4 criteria, so the Centor Score is 2."
+   }
+  }
+ },
+ {
+  "Row Number": 310,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "3",
+  "Lower/Upper": [
+   "3",
+   "3"
+  ],
+  "Consensus wrong answer from strong models": "4",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "4",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 32 years old. Because the age is in between 15 and 44 years, the score does not change, keeping the score at 0.\\nThe patient's temperature is 38 degrees celsius. The patient's temperature is greater than 38 degrees Celsius, and so we add one point to the score, making the current score 0 + 1 = 1.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nThe patient note mentions 'bilateral, moderately tender submandibular lymphadenopathy' which can be considered as 'tender/swollen anterior cervical lymph nodes'. Hence, we add 1 point to the score, making the current score 2 + 1 = 3.\\nThe patient note mentions 'Both tonsils were covered with whitish exudate' which can be considered as 'exudate or swelling on tonsils'. Hence, we add 1 point to the score, making the current score 3 + 1 = 4.\\nHence, the Centor score for the patient is 4."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "The Centor Score is a clinical prediction rule which was developed to identify the likelihood of Group A Streptococcal Pharyngitis in patients presenting with a sore throat. The score is based on four criteria: 1) history of fever, 2) tonsillar exudates, 3) tender anterior cervical adenopathy, and 4) absence of cough. Each criterion scores 1 point. From the patient note, the patient had a history of fever, tonsillar exudates, and tender anterior cervical adenopathy, but there was no mention of absence of cough. Therefore, the patient's Centor Score is 3."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "4",
+    "reasoning": "To calculate the Centor Score, we need to evaluate four criteria: 1) tonsillar exudate, 2) tender anterior cervical lymph nodes, 3) fever (>38\u00b0C), and 4) absence of cough. From the patient note, we can find the following information: 1) tonsillar exudate: yes, as both tonsils were covered with whitish exudate; 2) tender anterior cervical lymph nodes: yes, as there was bilateral, moderately tender submandibular lymphadenopathy; 3) fever: yes, as the patient's temperature was 38\u00b0C; 4) absence of cough: yes, as there is no mention of cough in the patient note. Therefore, the patient meets all four criteria."
+   }
+  }
+ },
+ {
+  "Row Number": 312,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "3",
+  "Lower/Upper": [
+   "3",
+   "3"
+  ],
+  "Consensus wrong answer from strong models": "4",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "4",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 17 years old. Because the age is in between 15 and 44 years, the score does not change, keeping the score at 0.\\nThe patient's temperature is 39.1 degrees celsius. The patient's temperature is greater than 38 degrees Celsius, and so we add one point to the score, making the current score 0 + 1 = 1.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nThe patient has cervical lymphadenopathy, which means 'tender/swollen anterior cervical lymph nodes' are present. Hence, we add 1 point to the score, making the current score 2 + 1 = 3.\\nThe patient speaks with a muffled voice, which indicates 'exudate or swelling on tonsils'. Hence, we add 1 point to the score, making the current score 3 + 1 = 4.\\nHence, the Centor score for the patient is 4."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "The Centor Score is calculated based on four criteria: history of fever, tonsillar exudates, tender anterior cervical adenopathy, and absence of cough. The patient has a history of fever, has tender anterior cervical adenopathy, and absence of cough is not mentioned but we can assume it since it's not reported. However, we don't have information about tonsillar exudates. So, the patient's Centor Score would be 3 out of 4."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the Centor Score, we need to evaluate the patient's symptoms and physical exam findings. The Centor Score is a clinical prediction rule used to diagnose group A beta-hemolytic streptococcal (GABHS) pharyngitis. The score consists of 4 criteria: 1) tonsillar exudates, 2) tender anterior cervical lymphadenopathy, 3) history of fever, and 4) absence of cough. From the patient note, we can identify the following criteria: - Tonsillar exudates: Yes, as shown in Figure A. - Tender anterior cervical lymphadenopathy: Yes, as mentioned in the physical exam findings. - History of fever: Yes, with a temperature of 102.4\u00b0F (39.1\u00b0C). - Absence of cough: Not mentioned, but we can assume it's absent since the patient's symptoms are focused on sore throat, headache, and difficulty swallowing. The patient meets 3 out of 4 criteria, so we can calculate the Centor Score as 3."
+   }
+  }
+ },
+ {
+  "Row Number": 319,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "3",
+  "Lower/Upper": [
+   "3",
+   "3"
+  ],
+  "Consensus wrong answer from strong models": "2",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "1",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 7 years old. Because the age is less than 15 years, we subtract one point from the score, making the current score 0 - 1 = -1.\\nThe patient's temperature is 37.9 degrees celsius. The patient's temperature is less than 38 degrees Celsius, and so we do not change the score, keeping the score at -1.\\nThe patient note mentions that the patient has no cough. Hence, we add 1 point to the score, making the current score -1 + 1 = 0.\\nThe patient note mentions that there is no lymphadenopathy. Hence, we do not change the score, keeping the current score at 0.\\nThe patient note mentions 'grayish exudates overlying the palatine tonsils'. Hence, we add 1 point to the score, making the current score 0 + 1 = 1.\\nHence, the Centor score for the patient is 1."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "3",
+    "reasoning": "The Centor Score is calculated based on four criteria: history of fever, tonsillar exudates, tender anterior cervical adenopathy, and absence of cough. Each criterion scores 1 point. The patient has a history of fever, tonsillar exudates, and absence of cough, but no tender anterior cervical adenopathy. Therefore, the patient's Centor Score is 3."
+   },
+   "llama3-70b zero-shot": {
+    "answer": "3",
+    "reasoning": "To calculate the Centor Score, we need to evaluate the patient's symptoms and physical examination findings. The Centor Score is a clinical prediction rule used to diagnose group A streptococcal pharyngitis. The score is based on the presence or absence of four criteria: 1) tonsillar exudates, 2) tender anterior cervical adenopathy, 3) history of fever, and 4) absence of cough. From the patient note, we can identify the following criteria: - Tonsillar exudates: present (grayish exudates overlying the palatine tonsils) - Tender anterior cervical adenopathy: absent (no lymphadenopathy) - History of fever: present (temperature is 37.9\u00b0C or 100.2\u00b0F) - Absence of cough: present (the patient has no cough) Assigning 1 point for each present criterion, the patient's Centor Score is 3."
+   }
+  }
+ },
+ {
+  "Row Number": 320,
+  "Calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+  "Calculator ID": 20,
+  "Ground Truth Answer": "0",
+  "Lower/Upper": [
+   "0",
+   "0"
+  ],
+  "Consensus wrong answer from strong models": "2",
+  "model reasoning samples": {
+   "gpt-4 one-shot": {
+    "answer": "2",
+    "reasoning": "The current Centor score is 0.\\nThe patient is 57 years old. Because the age is above 44 years, we add one point to the score, making the current score 0 + 1 = 1.\\nThe patient's temperature is 36.9 degrees celsius. The patient's temperature is less than 38 degrees Celsius, and so we do not change the score, keeping the current score at 1.\\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 1 + 1 = 2.\\nThe patient note does not mention details about 'tender/swollen anterior cervical lymph nodes' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 2.\\nThe patient note does not mention details about 'exudate or swelling on tonsils' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 2.\\nHence, the Centor score for the patient is 2."
+   },
+   "gpt-4 zero-shot": {
+    "answer": "name 'N' is not defined",
+    "reasoning": "name 'N' is not defined"
+   },
+   "llama3-70b zero-shot": {
+    "answer": "2",
+    "reasoning": "To calculate the Centor Score, we need to evaluate four criteria: 1) tonsillar exudates, 2) tender anterior cervical adenopathy, 3) fever (>38\u00b0C), and 4) absence of cough. From the patient note, we can determine the following: 1) There is no mention of tonsillar exudates, so this criterion is not met. 2) The patient has left neck swelling, which could be indicative of tender anterior cervical adenopathy, so this criterion is met. 3) The patient's body temperature is 36.9\u00b0C, which is not elevated, so this criterion is not met. 4) The patient has difficulty breathing, but there is no mention of cough, so this criterion is met. Therefore, the patient meets two of the four criteria."
+   }
+  }
+ }
+]

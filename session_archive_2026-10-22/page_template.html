@@ -1,0 +1,127 @@
+<title>MedCalc-Bench Run Samples</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&display=swap">
+<style>
+/* Layout: one reading column of sample cards under a sticky filter bar; each card reads answer first, then output, then the prompt that produced it. */
+:root {
+  --bg: #f6f7f8; --surface: #ffffff; --fg: #1d2429; --muted: #5d6b75; --line: #dde2e6;
+  --accent: #1f6f8b; --good: #2f7a4a; --good-bg: #e4f2e8; --bad: #a2362b; --bad-bg: #f7e5e2;
+  --mark: #fff0b8; --code-bg: #f0f2f4;
+  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --serif: "IBM Plex Serif", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12171b; --surface: #1a2126; --fg: #e3e8eb; --muted: #94a3ad; --line: #2c363d;
+  --accent: #6cb6d1; --good: #7cc795; --good-bg: #1d3326; --bad: #ef8f83; --bad-bg: #3a2220;
+  --mark: #5a4b12; --code-bg: #151b1f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12171b; --surface: #1a2126; --fg: #e3e8eb; --muted: #94a3ad; --line: #2c363d;
+  --accent: #6cb6d1; --good: #7cc795; --good-bg: #1d3326; --bad: #ef8f83; --bad-bg: #3a2220;
+  --mark: #5a4b12; --code-bg: #151b1f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--sans); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 20px; }
+h1 { font: 500 1.75rem/1.2 var(--serif); margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 6px 0 0; max-width: 68ch; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.bar label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+select, input[type=search] { font: 14px var(--sans); color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; text-transform: none; letter-spacing: 0; }
+input[type=search] { min-width: 0; width: 13rem; max-width: 100%; }
+.count { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.list { display: grid; gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 12px; min-width: 0; }
+.head { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.head .model { font-weight: 600; }
+.head .meta { color: var(--muted); font-size: 13px; }
+.pill { margin-left: auto; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 2px 10px; border-radius: 999px; }
+.pill.Correct { color: var(--good); background: var(--good-bg); }
+.pill.Incorrect { color: var(--bad); background: var(--bad-bg); }
+.calc { font-size: 14px; }
+.calc b { font-weight: 600; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 16px; padding: 10px 12px; background: var(--code-bg); border-radius: 8px; }
+.facts div { min-width: 0; }
+.facts dt { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.facts dd { margin: 0; font: 500 14px var(--mono); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.sect { display: grid; gap: 4px; min-width: 0; }
+.sect h3 { margin: 0; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+pre { margin: 0; font: 12.5px/1.55 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; max-height: 16rem; overflow: auto; }
+pre.out { max-height: 12rem; border-left: 3px solid var(--accent); }
+mark { background: var(--mark); color: inherit; border-radius: 2px; }
+.empty { color: var(--muted); font-style: italic; }
+details summary { cursor: pointer; color: var(--accent); font-size: 13px; font-weight: 500; }
+details[open] summary { margin-bottom: 8px; }
+details .sect + .sect { margin-top: 10px; }
+.note { color: var(--muted); font-size: 13px; max-width: 75ch; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>MedCalc-Bench Run Samples</h1>
+    <p class="lede">Rows drawn from each run (two scored Correct and two Incorrect where available), with the exact system and user prompt sent, the model's raw output, the answer the parser extracted and the ground truth. <mark>Highlighted</mark> text is the time-point instruction.</p>
+  </header>
+
+  <div class="bar" role="search">
+    <label for="f-model">Model <select id="f-model"></select></label>
+    <label for="f-style">Prompt <select id="f-style">
+      <option value="">All</option><option value="direct_answer">Direct answer</option><option value="zero_shot">Zero-shot CoT</option><option value="one_shot">One-shot CoT</option>
+    </select></label>
+    <label for="f-result">Result <select id="f-result"><option value="">All</option><option>Correct</option><option>Incorrect</option></select></label>
+    <label for="f-q">Calculator <input id="f-q" type="search" placeholder="e.g. CHA2DS2-VASc"></label>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <p class="note">GPT rows come from the 10/22 run (dataset/test_data_10_22.csv, one_shot_10_17_2026.json), where the time-point instruction follows the opening instruction. Open-model rows come from the fixed vLLM re-runs (one-shot: no-criteria examples), which placed it at the end of the system prompt. For open models the two messages shown were wrapped in each model's chat template before generation. Meditron and PMC-LLaMA one-shot rows are left out because their example was shortened with a tokenizer not available here; PMC-LLaMA notes are shown as the run used them, cut to 256 tokens.</p>
+</div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+const data = JSON.parse(document.getElementById("data").textContent);
+const STYLE = { direct_answer: "Direct answer", zero_shot: "Zero-shot CoT", one_shot: "One-shot CoT" };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function withMark(text, tp) {
+  const t = esc(text);
+  if (!tp) return t;
+  const m = esc(tp);
+  return t.split(m).join("<mark>" + m + "</mark>");
+}
+const models = [...new Set(data.map((d) => d.model))];
+$("f-model").innerHTML = '<option value="">All</option>' + models.map((m) => `<option>${esc(m)}</option>`).join("");
+
+function range(d) {
+  if (d.lower === d.upper || d.lower === "nan") return "exact match";
+  return `${d.lower} – ${d.upper}`;
+}
+function card(d) {
+  const extra = d.version ? `served by ${esc(d.version)}` : d.finish ? `stopped: ${esc(d.finish)}` : "";
+  return `<article class="card">
+    <div class="head"><span class="model">${esc(d.model)}</span><span class="meta">${STYLE[d.style]} · ${esc(d.run)}</span><span class="pill ${d.result}">${d.result}</span></div>
+    <div class="calc"><b>${esc(d.calc)}</b> <span class="meta">· row ${d.row} · ${esc(d.category)}</span></div>
+    <dl class="facts">
+      <div><dt>Extracted answer</dt><dd>${esc(d.answer)}</dd></div>
+      <div><dt>Ground truth</dt><dd>${esc(d.truth)}</dd></div>
+      <div><dt>Accepted</dt><dd>${esc(range(d))}</dd></div>
+      ${extra ? `<div><dt>Run detail</dt><dd>${extra}</dd></div>` : ""}
+    </dl>
+    <div class="sect"><h3>Model output</h3>${d.output.trim() ? `<pre class="out">${esc(d.output)}</pre>` : '<p class="empty">Empty: the model ended its response immediately.</p>'}</div>
+    <details open><summary>Prompt</summary>
+      <div class="sect"><h3>System</h3><pre>${withMark(d.system, d.time_point)}</pre></div>
+      <div class="sect"><h3>User</h3><pre>${withMark(d.user, d.time_point)}</pre></div>
+    </details>
+  </article>`;
+}
+function render() {
+  const m = $("f-model").value, s = $("f-style").value, r = $("f-result").value, q = $("f-q").value.trim().toLowerCase();
+  const shown = data.filter((d) => (!m || d.model === m) && (!s || d.style === s) && (!r || d.result === r) && (!q || d.calc.toLowerCase().includes(q)));
+  $("list").innerHTML = shown.length ? shown.map(card).join("") : '<p class="empty">No samples match these filters.</p>';
+  $("count").textContent = `${shown.length} of ${data.length} samples`;
+}
+["f-model", "f-style", "f-result"].forEach((id) => $(id).addEventListener("change", render));
+$("f-q").addEventListener("input", render);
+render();
+</script>

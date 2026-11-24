@@ -5,14 +5,10 @@
 .venv_openai028/
 __pycache__/
 .DS_Store
-.vscode/
 
-# large backups (copies of the GPU instance and pre-edit file versions); keep the archive's scripts and notes
-gpu_backup_2026-10-22/
-session_archive_2026-10-22/*
-!session_archive_2026-10-22/*.py
-!session_archive_2026-10-22/*.md
-!session_archive_2026-10-22/*.txt
-
-# separate git repository
+# separate git repository: its calculator code is in medcalc_verified_code_snapshot/; its unpushed branches are kept
+# in a private repository (see medcalc_verified_code_snapshot/README.md)
 medcalc_verified_code/
+
+# over GitHub's 100 MB limit: committed compressed as merge_ref.pkl.gz (gunzip to restore)
+session_archive_2026-10-22/merge_ref.pkl

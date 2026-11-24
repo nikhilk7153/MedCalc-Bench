@@ -1,0 +1,65 @@
+Setting,Calculator Type,Model,Attributes,Rows,Correct,Accuracy
+code_augmented,equation,GPT 4,1,40,38,0.95
+code_augmented,equation,GPT 4,2,304,230,0.7566
+code_augmented,equation,GPT 4,3,155,112,0.7226
+code_augmented,equation,GPT 4,4,115,63,0.5478
+code_augmented,equation,GPT 4,5,20,16,0.8
+code_augmented,equation,GPT 4,6,21,7,0.3333
+code_augmented,equation,GPT 4,7,13,0,0.0
+code_augmented,equation,GPT-3.5-turbo,1,40,25,0.625
+code_augmented,equation,GPT-3.5-turbo,2,304,221,0.727
+code_augmented,equation,GPT-3.5-turbo,3,155,75,0.4839
+code_augmented,equation,GPT-3.5-turbo,4,115,24,0.2087
+code_augmented,equation,GPT-3.5-turbo,5,20,11,0.55
+code_augmented,equation,GPT-3.5-turbo,6,21,3,0.1429
+code_augmented,equation,GPT-3.5-turbo,7,13,0,0.0
+code_augmented,rule,GPT 4,1,1,1,1.0
+code_augmented,rule,GPT 4,2,8,7,0.875
+code_augmented,rule,GPT 4,3,49,33,0.6735
+code_augmented,rule,GPT 4,4,50,39,0.78
+code_augmented,rule,GPT 4,5,45,29,0.6444
+code_augmented,rule,GPT 4,6,43,30,0.6977
+code_augmented,rule,GPT 4,7,8,3,0.375
+code_augmented,rule,GPT 4,8,6,0,0.0
+code_augmented,rule,GPT 4,9,55,22,0.4
+code_augmented,rule,GPT 4,10,1,0,0.0
+code_augmented,rule,GPT 4,11,16,6,0.375
+code_augmented,rule,GPT 4,12,16,6,0.375
+code_augmented,rule,GPT 4,13,7,2,0.2857
+code_augmented,rule,GPT 4,14,3,1,0.3333
+code_augmented,rule,GPT 4,15,5,0,0.0
+code_augmented,rule,GPT 4,16,8,1,0.125
+code_augmented,rule,GPT 4,17,15,2,0.1333
+code_augmented,rule,GPT 4,18,18,2,0.1111
+code_augmented,rule,GPT 4,19,7,0,0.0
+code_augmented,rule,GPT 4,20,8,0,0.0
+code_augmented,rule,GPT 4,21,4,0,0.0
+code_augmented,rule,GPT 4,22,1,0,0.0
+code_augmented,rule,GPT 4,24,1,0,0.0
+code_augmented,rule,GPT 4,29,1,0,0.0
+code_augmented,rule,GPT 4,31,4,0,0.0
+code_augmented,rule,GPT-3.5-turbo,1,1,0,0.0
+code_augmented,rule,GPT-3.5-turbo,2,8,0,0.0
+code_augmented,rule,GPT-3.5-turbo,3,49,19,0.3878
+code_augmented,rule,GPT-3.5-turbo,4,50,20,0.4
+code_augmented,rule,GPT-3.5-turbo,5,45,12,0.2667
+code_augmented,rule,GPT-3.5-turbo,6,43,19,0.4419
+code_augmented,rule,GPT-3.5-turbo,7,8,1,0.125
+code_augmented,rule,GPT-3.5-turbo,8,6,0,0.0
+code_augmented,rule,GPT-3.5-turbo,9,55,8,0.1455
+code_augmented,rule,GPT-3.5-turbo,10,1,0,0.0
+code_augmented,rule,GPT-3.5-turbo,11,16,0,0.0
+code_augmented,rule,GPT-3.5-turbo,12,16,0,0.0
+code_augmented,rule,GPT-3.5-turbo,13,7,1,0.1429
+code_augmented,rule,GPT-3.5-turbo,14,3,0,0.0
+code_augmented,rule,GPT-3.5-turbo,15,5,0,0.0
+code_augmented,rule,GPT-3.5-turbo,16,8,1,0.125
+code_augmented,rule,GPT-3.5-turbo,17,15,2,0.1333
+code_augmented,rule,GPT-3.5-turbo,18,18,0,0.0
+code_augmented,rule,GPT-3.5-turbo,19,7,0,0.0
+code_augmented,rule,GPT-3.5-turbo,20,8,1,0.125
+code_augmented,rule,GPT-3.5-turbo,21,4,0,0.0
+code_augmented,rule,GPT-3.5-turbo,22,1,0,0.0
+code_augmented,rule,GPT-3.5-turbo,24,1,0,0.0
+code_augmented,rule,GPT-3.5-turbo,29,1,0,0.0
+code_augmented,rule,GPT-3.5-turbo,31,4,0,0.0

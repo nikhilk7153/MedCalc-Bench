@@ -1,0 +1,153 @@
+Setting,Calculator Type,Model,Attributes,Rows,Correct,Accuracy
+direct_answer,equation,PMC Llama 13b,1,60,0,0.0
+direct_answer,equation,PMC Llama 13b,2,282,0,0.0
+direct_answer,equation,PMC Llama 13b,3,160,0,0.0
+direct_answer,equation,PMC Llama 13b,4,125,0,0.0
+direct_answer,equation,PMC Llama 13b,5,20,0,0.0
+direct_answer,equation,PMC Llama 13b,6,5,0,0.0
+direct_answer,equation,PMC Llama 13b,7,16,0,0.0
+direct_answer,equation,Meditron 70b,1,60,0,0.0
+direct_answer,equation,Meditron 70b,2,282,19,0.0674
+direct_answer,equation,Meditron 70b,3,160,5,0.0312
+direct_answer,equation,Meditron 70b,4,125,0,0.0
+direct_answer,equation,Meditron 70b,5,20,0,0.0
+direct_answer,equation,Meditron 70b,6,5,0,0.0
+direct_answer,equation,Meditron 70b,7,16,0,0.0
+direct_answer,equation,Llama3 8b,1,60,0,0.0
+direct_answer,equation,Llama3 8b,2,282,52,0.1844
+direct_answer,equation,Llama3 8b,3,160,26,0.1625
+direct_answer,equation,Llama3 8b,4,125,3,0.024
+direct_answer,equation,Llama3 8b,5,20,1,0.05
+direct_answer,equation,Llama3 8b,6,5,0,0.0
+direct_answer,equation,Llama3 8b,7,16,0,0.0
+direct_answer,equation,Llama3 70b,1,60,8,0.1333
+direct_answer,equation,Llama3 70b,2,282,88,0.3121
+direct_answer,equation,Llama3 70b,3,160,37,0.2312
+direct_answer,equation,Llama3 70b,4,125,11,0.088
+direct_answer,equation,Llama3 70b,5,20,5,0.25
+direct_answer,equation,Llama3 70b,6,5,2,0.4
+direct_answer,equation,Llama3 70b,7,16,1,0.0625
+direct_answer,equation,Mistral 7b,1,60,0,0.0
+direct_answer,equation,Mistral 7b,2,282,49,0.1738
+direct_answer,equation,Mistral 7b,3,160,16,0.1
+direct_answer,equation,Mistral 7b,4,125,6,0.048
+direct_answer,equation,Mistral 7b,5,20,2,0.1
+direct_answer,equation,Mistral 7b,6,5,0,0.0
+direct_answer,equation,Mistral 7b,7,16,0,0.0
+direct_answer,equation,Mixtral 8x7b,1,60,2,0.0333
+direct_answer,equation,Mixtral 8x7b,2,282,57,0.2021
+direct_answer,equation,Mixtral 8x7b,3,160,28,0.175
+direct_answer,equation,Mixtral 8x7b,4,125,5,0.04
+direct_answer,equation,Mixtral 8x7b,5,20,1,0.05
+direct_answer,equation,Mixtral 8x7b,6,5,0,0.0
+direct_answer,equation,Mixtral 8x7b,7,16,1,0.0625
+direct_answer,equation,GPT 4,1,60,20,0.3333
+direct_answer,equation,GPT 4,2,282,118,0.4184
+direct_answer,equation,GPT 4,3,160,41,0.2562
+direct_answer,equation,GPT 4,4,125,2,0.016
+direct_answer,equation,GPT 4,5,20,0,0.0
+direct_answer,equation,GPT 4,6,5,0,0.0
+direct_answer,equation,GPT 4,7,16,0,0.0
+direct_answer,equation,GPT-3.5-turbo,1,60,10,0.1667
+direct_answer,equation,GPT-3.5-turbo,2,282,108,0.383
+direct_answer,equation,GPT-3.5-turbo,3,160,41,0.2562
+direct_answer,equation,GPT-3.5-turbo,4,125,9,0.072
+direct_answer,equation,GPT-3.5-turbo,5,20,3,0.15
+direct_answer,equation,GPT-3.5-turbo,6,5,1,0.2
+direct_answer,equation,GPT-3.5-turbo,7,16,2,0.125
+direct_answer,rule,PMC Llama 13b,3,20,0,0.0
+direct_answer,rule,PMC Llama 13b,5,80,0,0.0
+direct_answer,rule,PMC Llama 13b,6,20,0,0.0
+direct_answer,rule,PMC Llama 13b,7,20,0,0.0
+direct_answer,rule,PMC Llama 13b,9,100,0,0.0
+direct_answer,rule,PMC Llama 13b,11,20,0,0.0
+direct_answer,rule,PMC Llama 13b,12,20,0,0.0
+direct_answer,rule,PMC Llama 13b,16,20,0,0.0
+direct_answer,rule,PMC Llama 13b,18,20,0,0.0
+direct_answer,rule,PMC Llama 13b,20,20,0,0.0
+direct_answer,rule,PMC Llama 13b,21,20,0,0.0
+direct_answer,rule,PMC Llama 13b,31,20,0,0.0
+direct_answer,rule,Meditron 70b,3,20,3,0.15
+direct_answer,rule,Meditron 70b,5,80,12,0.15
+direct_answer,rule,Meditron 70b,6,20,6,0.3
+direct_answer,rule,Meditron 70b,7,20,0,0.0
+direct_answer,rule,Meditron 70b,9,100,12,0.12
+direct_answer,rule,Meditron 70b,11,20,0,0.0
+direct_answer,rule,Meditron 70b,12,20,2,0.1
+direct_answer,rule,Meditron 70b,16,20,7,0.35
+direct_answer,rule,Meditron 70b,18,20,1,0.05
+direct_answer,rule,Meditron 70b,20,20,0,0.0
+direct_answer,rule,Meditron 70b,21,20,0,0.0
+direct_answer,rule,Meditron 70b,31,20,0,0.0
+direct_answer,rule,Llama3 8b,3,20,4,0.2
+direct_answer,rule,Llama3 8b,5,80,18,0.225
+direct_answer,rule,Llama3 8b,6,20,6,0.3
+direct_answer,rule,Llama3 8b,7,20,1,0.05
+direct_answer,rule,Llama3 8b,9,100,14,0.14
+direct_answer,rule,Llama3 8b,11,20,1,0.05
+direct_answer,rule,Llama3 8b,12,20,4,0.2
+direct_answer,rule,Llama3 8b,16,20,0,0.0
+direct_answer,rule,Llama3 8b,18,20,1,0.05
+direct_answer,rule,Llama3 8b,20,20,0,0.0
+direct_answer,rule,Llama3 8b,21,20,0,0.0
+direct_answer,rule,Llama3 8b,31,20,0,0.0
+direct_answer,rule,Llama3 70b,3,20,2,0.1
+direct_answer,rule,Llama3 70b,5,80,23,0.2875
+direct_answer,rule,Llama3 70b,6,20,4,0.2
+direct_answer,rule,Llama3 70b,7,20,13,0.65
+direct_answer,rule,Llama3 70b,9,100,31,0.31
+direct_answer,rule,Llama3 70b,11,20,2,0.1
+direct_answer,rule,Llama3 70b,12,20,2,0.1
+direct_answer,rule,Llama3 70b,16,20,4,0.2
+direct_answer,rule,Llama3 70b,18,20,2,0.1
+direct_answer,rule,Llama3 70b,20,20,0,0.0
+direct_answer,rule,Llama3 70b,21,20,1,0.05
+direct_answer,rule,Llama3 70b,31,20,0,0.0
+direct_answer,rule,Mistral 7b,3,20,3,0.15
+direct_answer,rule,Mistral 7b,5,80,7,0.0875
+direct_answer,rule,Mistral 7b,6,20,4,0.2
+direct_answer,rule,Mistral 7b,7,20,6,0.3
+direct_answer,rule,Mistral 7b,9,100,11,0.11
+direct_answer,rule,Mistral 7b,11,20,1,0.05
+direct_answer,rule,Mistral 7b,12,20,1,0.05
+direct_answer,rule,Mistral 7b,16,20,1,0.05
+direct_answer,rule,Mistral 7b,18,20,2,0.1
+direct_answer,rule,Mistral 7b,20,20,0,0.0
+direct_answer,rule,Mistral 7b,21,20,0,0.0
+direct_answer,rule,Mistral 7b,31,20,0,0.0
+direct_answer,rule,Mixtral 8x7b,3,20,7,0.35
+direct_answer,rule,Mixtral 8x7b,5,80,18,0.225
+direct_answer,rule,Mixtral 8x7b,6,20,3,0.15
+direct_answer,rule,Mixtral 8x7b,7,20,11,0.55
+direct_answer,rule,Mixtral 8x7b,9,100,17,0.17
+direct_answer,rule,Mixtral 8x7b,11,20,1,0.05
+direct_answer,rule,Mixtral 8x7b,12,20,1,0.05
+direct_answer,rule,Mixtral 8x7b,16,20,2,0.1
+direct_answer,rule,Mixtral 8x7b,18,20,2,0.1
+direct_answer,rule,Mixtral 8x7b,20,20,0,0.0
+direct_answer,rule,Mixtral 8x7b,21,20,2,0.1
+direct_answer,rule,Mixtral 8x7b,31,20,0,0.0
+direct_answer,rule,GPT 4,3,20,8,0.4
+direct_answer,rule,GPT 4,5,80,24,0.3
+direct_answer,rule,GPT 4,6,20,7,0.35
+direct_answer,rule,GPT 4,7,20,12,0.6
+direct_answer,rule,GPT 4,9,100,25,0.25
+direct_answer,rule,GPT 4,11,20,2,0.1
+direct_answer,rule,GPT 4,12,20,1,0.05
+direct_answer,rule,GPT 4,16,20,3,0.15
+direct_answer,rule,GPT 4,18,20,1,0.05
+direct_answer,rule,GPT 4,20,20,0,0.0
+direct_answer,rule,GPT 4,21,20,0,0.0
+direct_answer,rule,GPT 4,31,20,0,0.0
+direct_answer,rule,GPT-3.5-turbo,3,20,7,0.35
+direct_answer,rule,GPT-3.5-turbo,5,80,15,0.1875
+direct_answer,rule,GPT-3.5-turbo,6,20,4,0.2
+direct_answer,rule,GPT-3.5-turbo,7,20,9,0.45
+direct_answer,rule,GPT-3.5-turbo,9,100,21,0.21
+direct_answer,rule,GPT-3.5-turbo,11,20,1,0.05
+direct_answer,rule,GPT-3.5-turbo,12,20,4,0.2
+direct_answer,rule,GPT-3.5-turbo,16,20,2,0.1
+direct_answer,rule,GPT-3.5-turbo,18,20,1,0.05
+direct_answer,rule,GPT-3.5-turbo,20,20,0,0.0
+direct_answer,rule,GPT-3.5-turbo,21,20,0,0.0
+direct_answer,rule,GPT-3.5-turbo,31,20,0,0.0

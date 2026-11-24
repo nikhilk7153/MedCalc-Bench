@@ -1,0 +1,4 @@
+Wed Oct 21 02:10:55 UTC 2026 start mistralai/Mixtral-8x7B-Instruct-v0.1
+Wed Oct 21 02:29:19 UTC 2026 Mixtral finished; start Llama3-70B (GPUs 0,1) and Meditron-70B (GPUs 2,3)
+Wed Oct 21 02:45:13 UTC 2026 70B runs finished; start PMC rerun
+Wed Oct 21 02:53:15 UTC 2026 all done

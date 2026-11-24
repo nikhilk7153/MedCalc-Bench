@@ -1,0 +1,257 @@
+Setting,Calculator Type,Model,Attributes,Rows,Correct,Accuracy
+one_shot,equation,PMC Llama 13b,1,40,12,0.3
+one_shot,equation,PMC Llama 13b,2,304,52,0.1711
+one_shot,equation,PMC Llama 13b,3,155,14,0.0903
+one_shot,equation,PMC Llama 13b,4,115,2,0.0174
+one_shot,equation,PMC Llama 13b,5,20,2,0.1
+one_shot,equation,PMC Llama 13b,6,21,0,0.0
+one_shot,equation,PMC Llama 13b,7,13,2,0.1538
+one_shot,equation,Meditron 70b,1,40,26,0.65
+one_shot,equation,Meditron 70b,2,304,112,0.3684
+one_shot,equation,Meditron 70b,3,155,60,0.3871
+one_shot,equation,Meditron 70b,4,115,6,0.0522
+one_shot,equation,Meditron 70b,5,20,2,0.1
+one_shot,equation,Meditron 70b,6,21,4,0.1905
+one_shot,equation,Meditron 70b,7,13,2,0.1538
+one_shot,equation,Llama3 8b,1,40,29,0.725
+one_shot,equation,Llama3 8b,2,304,108,0.3553
+one_shot,equation,Llama3 8b,3,155,83,0.5355
+one_shot,equation,Llama3 8b,4,115,13,0.113
+one_shot,equation,Llama3 8b,5,20,4,0.2
+one_shot,equation,Llama3 8b,6,21,1,0.0476
+one_shot,equation,Llama3 8b,7,13,1,0.0769
+one_shot,equation,Llama3 70b,1,40,38,0.95
+one_shot,equation,Llama3 70b,2,304,162,0.5329
+one_shot,equation,Llama3 70b,3,155,92,0.5935
+one_shot,equation,Llama3 70b,4,115,28,0.2435
+one_shot,equation,Llama3 70b,5,20,1,0.05
+one_shot,equation,Llama3 70b,6,21,5,0.2381
+one_shot,equation,Llama3 70b,7,13,2,0.1538
+one_shot,equation,Mistral 7b,1,40,15,0.375
+one_shot,equation,Mistral 7b,2,304,94,0.3092
+one_shot,equation,Mistral 7b,3,155,37,0.2387
+one_shot,equation,Mistral 7b,4,115,9,0.0783
+one_shot,equation,Mistral 7b,5,20,3,0.15
+one_shot,equation,Mistral 7b,6,21,2,0.0952
+one_shot,equation,Mistral 7b,7,13,0,0.0
+one_shot,equation,Mixtral 8x7b,1,40,29,0.725
+one_shot,equation,Mixtral 8x7b,2,304,160,0.5263
+one_shot,equation,Mixtral 8x7b,3,155,63,0.4065
+one_shot,equation,Mixtral 8x7b,4,115,26,0.2261
+one_shot,equation,Mixtral 8x7b,5,20,3,0.15
+one_shot,equation,Mixtral 8x7b,6,21,4,0.1905
+one_shot,equation,Mixtral 8x7b,7,13,0,0.0
+one_shot,equation,GPT 4,1,40,40,1.0
+one_shot,equation,GPT 4,2,304,232,0.7632
+one_shot,equation,GPT 4,3,155,106,0.6839
+one_shot,equation,GPT 4,4,115,60,0.5217
+one_shot,equation,GPT 4,5,20,6,0.3
+one_shot,equation,GPT 4,6,21,4,0.1905
+one_shot,equation,GPT 4,7,13,0,0.0
+one_shot,equation,GPT-3.5-turbo,1,40,35,0.875
+one_shot,equation,GPT-3.5-turbo,2,304,170,0.5592
+one_shot,equation,GPT-3.5-turbo,3,155,97,0.6258
+one_shot,equation,GPT-3.5-turbo,4,115,22,0.1913
+one_shot,equation,GPT-3.5-turbo,5,20,2,0.1
+one_shot,equation,GPT-3.5-turbo,6,21,4,0.1905
+one_shot,equation,GPT-3.5-turbo,7,13,1,0.0769
+one_shot,rule,PMC Llama 13b,1,1,1,1.0
+one_shot,rule,PMC Llama 13b,2,8,4,0.5
+one_shot,rule,PMC Llama 13b,3,49,9,0.1837
+one_shot,rule,PMC Llama 13b,4,50,4,0.08
+one_shot,rule,PMC Llama 13b,5,45,0,0.0
+one_shot,rule,PMC Llama 13b,6,43,7,0.1628
+one_shot,rule,PMC Llama 13b,7,8,1,0.125
+one_shot,rule,PMC Llama 13b,8,6,0,0.0
+one_shot,rule,PMC Llama 13b,9,55,4,0.0727
+one_shot,rule,PMC Llama 13b,10,1,0,0.0
+one_shot,rule,PMC Llama 13b,11,16,0,0.0
+one_shot,rule,PMC Llama 13b,12,16,1,0.0625
+one_shot,rule,PMC Llama 13b,13,7,0,0.0
+one_shot,rule,PMC Llama 13b,14,3,0,0.0
+one_shot,rule,PMC Llama 13b,15,5,0,0.0
+one_shot,rule,PMC Llama 13b,16,8,0,0.0
+one_shot,rule,PMC Llama 13b,17,15,0,0.0
+one_shot,rule,PMC Llama 13b,18,18,0,0.0
+one_shot,rule,PMC Llama 13b,19,7,0,0.0
+one_shot,rule,PMC Llama 13b,20,8,0,0.0
+one_shot,rule,PMC Llama 13b,21,4,0,0.0
+one_shot,rule,PMC Llama 13b,22,1,0,0.0
+one_shot,rule,PMC Llama 13b,24,1,0,0.0
+one_shot,rule,PMC Llama 13b,29,1,0,0.0
+one_shot,rule,PMC Llama 13b,31,4,0,0.0
+one_shot,rule,Meditron 70b,1,1,1,1.0
+one_shot,rule,Meditron 70b,2,8,5,0.625
+one_shot,rule,Meditron 70b,3,49,11,0.2245
+one_shot,rule,Meditron 70b,4,50,10,0.2
+one_shot,rule,Meditron 70b,5,45,8,0.1778
+one_shot,rule,Meditron 70b,6,43,8,0.186
+one_shot,rule,Meditron 70b,7,8,1,0.125
+one_shot,rule,Meditron 70b,8,6,1,0.1667
+one_shot,rule,Meditron 70b,9,55,13,0.2364
+one_shot,rule,Meditron 70b,10,1,0,0.0
+one_shot,rule,Meditron 70b,11,16,4,0.25
+one_shot,rule,Meditron 70b,12,16,3,0.1875
+one_shot,rule,Meditron 70b,13,7,0,0.0
+one_shot,rule,Meditron 70b,14,3,0,0.0
+one_shot,rule,Meditron 70b,15,5,0,0.0
+one_shot,rule,Meditron 70b,16,8,0,0.0
+one_shot,rule,Meditron 70b,17,15,1,0.0667
+one_shot,rule,Meditron 70b,18,18,0,0.0
+one_shot,rule,Meditron 70b,19,7,0,0.0
+one_shot,rule,Meditron 70b,20,8,1,0.125
+one_shot,rule,Meditron 70b,21,4,0,0.0
+one_shot,rule,Meditron 70b,22,1,0,0.0
+one_shot,rule,Meditron 70b,24,1,0,0.0
+one_shot,rule,Meditron 70b,29,1,0,0.0
+one_shot,rule,Meditron 70b,31,4,0,0.0
+one_shot,rule,Llama3 8b,1,1,1,1.0
+one_shot,rule,Llama3 8b,2,8,4,0.5
+one_shot,rule,Llama3 8b,3,49,17,0.3469
+one_shot,rule,Llama3 8b,4,50,16,0.32
+one_shot,rule,Llama3 8b,5,45,13,0.2889
+one_shot,rule,Llama3 8b,6,43,16,0.3721
+one_shot,rule,Llama3 8b,7,8,4,0.5
+one_shot,rule,Llama3 8b,8,6,2,0.3333
+one_shot,rule,Llama3 8b,9,55,16,0.2909
+one_shot,rule,Llama3 8b,10,1,0,0.0
+one_shot,rule,Llama3 8b,11,16,1,0.0625
+one_shot,rule,Llama3 8b,12,16,4,0.25
+one_shot,rule,Llama3 8b,13,7,1,0.1429
+one_shot,rule,Llama3 8b,14,3,1,0.3333
+one_shot,rule,Llama3 8b,15,5,0,0.0
+one_shot,rule,Llama3 8b,16,8,1,0.125
+one_shot,rule,Llama3 8b,17,15,1,0.0667
+one_shot,rule,Llama3 8b,18,18,2,0.1111
+one_shot,rule,Llama3 8b,19,7,1,0.1429
+one_shot,rule,Llama3 8b,20,8,1,0.125
+one_shot,rule,Llama3 8b,21,4,1,0.25
+one_shot,rule,Llama3 8b,22,1,0,0.0
+one_shot,rule,Llama3 8b,24,1,0,0.0
+one_shot,rule,Llama3 8b,29,1,0,0.0
+one_shot,rule,Llama3 8b,31,4,0,0.0
+one_shot,rule,Llama3 70b,1,1,0,0.0
+one_shot,rule,Llama3 70b,2,8,5,0.625
+one_shot,rule,Llama3 70b,3,49,28,0.5714
+one_shot,rule,Llama3 70b,4,50,24,0.48
+one_shot,rule,Llama3 70b,5,45,17,0.3778
+one_shot,rule,Llama3 70b,6,43,21,0.4884
+one_shot,rule,Llama3 70b,7,8,3,0.375
+one_shot,rule,Llama3 70b,8,6,2,0.3333
+one_shot,rule,Llama3 70b,9,55,16,0.2909
+one_shot,rule,Llama3 70b,10,1,0,0.0
+one_shot,rule,Llama3 70b,11,16,8,0.5
+one_shot,rule,Llama3 70b,12,16,3,0.1875
+one_shot,rule,Llama3 70b,13,7,4,0.5714
+one_shot,rule,Llama3 70b,14,3,1,0.3333
+one_shot,rule,Llama3 70b,15,5,1,0.2
+one_shot,rule,Llama3 70b,16,8,0,0.0
+one_shot,rule,Llama3 70b,17,15,3,0.2
+one_shot,rule,Llama3 70b,18,18,6,0.3333
+one_shot,rule,Llama3 70b,19,7,4,0.5714
+one_shot,rule,Llama3 70b,20,8,3,0.375
+one_shot,rule,Llama3 70b,21,4,0,0.0
+one_shot,rule,Llama3 70b,22,1,0,0.0
+one_shot,rule,Llama3 70b,24,1,0,0.0
+one_shot,rule,Llama3 70b,29,1,0,0.0
+one_shot,rule,Llama3 70b,31,4,0,0.0
+one_shot,rule,Mistral 7b,1,1,0,0.0
+one_shot,rule,Mistral 7b,2,8,0,0.0
+one_shot,rule,Mistral 7b,3,49,15,0.3061
+one_shot,rule,Mistral 7b,4,50,14,0.28
+one_shot,rule,Mistral 7b,5,45,7,0.1556
+one_shot,rule,Mistral 7b,6,43,13,0.3023
+one_shot,rule,Mistral 7b,7,8,2,0.25
+one_shot,rule,Mistral 7b,8,6,2,0.3333
+one_shot,rule,Mistral 7b,9,55,10,0.1818
+one_shot,rule,Mistral 7b,10,1,0,0.0
+one_shot,rule,Mistral 7b,11,16,1,0.0625
+one_shot,rule,Mistral 7b,12,16,3,0.1875
+one_shot,rule,Mistral 7b,13,7,0,0.0
+one_shot,rule,Mistral 7b,14,3,0,0.0
+one_shot,rule,Mistral 7b,15,5,1,0.2
+one_shot,rule,Mistral 7b,16,8,1,0.125
+one_shot,rule,Mistral 7b,17,15,0,0.0
+one_shot,rule,Mistral 7b,18,18,2,0.1111
+one_shot,rule,Mistral 7b,19,7,0,0.0
+one_shot,rule,Mistral 7b,20,8,1,0.125
+one_shot,rule,Mistral 7b,21,4,0,0.0
+one_shot,rule,Mistral 7b,22,1,0,0.0
+one_shot,rule,Mistral 7b,24,1,0,0.0
+one_shot,rule,Mistral 7b,29,1,0,0.0
+one_shot,rule,Mistral 7b,31,4,0,0.0
+one_shot,rule,Mixtral 8x7b,1,1,0,0.0
+one_shot,rule,Mixtral 8x7b,2,8,2,0.25
+one_shot,rule,Mixtral 8x7b,3,49,15,0.3061
+one_shot,rule,Mixtral 8x7b,4,50,17,0.34
+one_shot,rule,Mixtral 8x7b,5,45,10,0.2222
+one_shot,rule,Mixtral 8x7b,6,43,20,0.4651
+one_shot,rule,Mixtral 8x7b,7,8,3,0.375
+one_shot,rule,Mixtral 8x7b,8,6,0,0.0
+one_shot,rule,Mixtral 8x7b,9,55,15,0.2727
+one_shot,rule,Mixtral 8x7b,10,1,0,0.0
+one_shot,rule,Mixtral 8x7b,11,16,3,0.1875
+one_shot,rule,Mixtral 8x7b,12,16,4,0.25
+one_shot,rule,Mixtral 8x7b,13,7,1,0.1429
+one_shot,rule,Mixtral 8x7b,14,3,0,0.0
+one_shot,rule,Mixtral 8x7b,15,5,0,0.0
+one_shot,rule,Mixtral 8x7b,16,8,1,0.125
+one_shot,rule,Mixtral 8x7b,17,15,0,0.0
+one_shot,rule,Mixtral 8x7b,18,18,2,0.1111
+one_shot,rule,Mixtral 8x7b,19,7,2,0.2857
+one_shot,rule,Mixtral 8x7b,20,8,2,0.25
+one_shot,rule,Mixtral 8x7b,21,4,0,0.0
+one_shot,rule,Mixtral 8x7b,22,1,0,0.0
+one_shot,rule,Mixtral 8x7b,24,1,0,0.0
+one_shot,rule,Mixtral 8x7b,29,1,0,0.0
+one_shot,rule,Mixtral 8x7b,31,4,1,0.25
+one_shot,rule,GPT 4,1,1,0,0.0
+one_shot,rule,GPT 4,2,8,5,0.625
+one_shot,rule,GPT 4,3,49,32,0.6531
+one_shot,rule,GPT 4,4,50,28,0.56
+one_shot,rule,GPT 4,5,45,25,0.5556
+one_shot,rule,GPT 4,6,43,29,0.6744
+one_shot,rule,GPT 4,7,8,2,0.25
+one_shot,rule,GPT 4,8,6,2,0.3333
+one_shot,rule,GPT 4,9,55,36,0.6545
+one_shot,rule,GPT 4,10,1,0,0.0
+one_shot,rule,GPT 4,11,16,11,0.6875
+one_shot,rule,GPT 4,12,16,7,0.4375
+one_shot,rule,GPT 4,13,7,2,0.2857
+one_shot,rule,GPT 4,14,3,0,0.0
+one_shot,rule,GPT 4,15,5,1,0.2
+one_shot,rule,GPT 4,16,8,0,0.0
+one_shot,rule,GPT 4,17,15,7,0.4667
+one_shot,rule,GPT 4,18,18,8,0.4444
+one_shot,rule,GPT 4,19,7,3,0.4286
+one_shot,rule,GPT 4,20,8,3,0.375
+one_shot,rule,GPT 4,21,4,0,0.0
+one_shot,rule,GPT 4,22,1,0,0.0
+one_shot,rule,GPT 4,24,1,0,0.0
+one_shot,rule,GPT 4,29,1,1,1.0
+one_shot,rule,GPT 4,31,4,0,0.0
+one_shot,rule,GPT-3.5-turbo,1,1,1,1.0
+one_shot,rule,GPT-3.5-turbo,2,8,5,0.625
+one_shot,rule,GPT-3.5-turbo,3,49,18,0.3673
+one_shot,rule,GPT-3.5-turbo,4,50,13,0.26
+one_shot,rule,GPT-3.5-turbo,5,45,6,0.1333
+one_shot,rule,GPT-3.5-turbo,6,43,20,0.4651
+one_shot,rule,GPT-3.5-turbo,7,8,3,0.375
+one_shot,rule,GPT-3.5-turbo,8,6,1,0.1667
+one_shot,rule,GPT-3.5-turbo,9,55,20,0.3636
+one_shot,rule,GPT-3.5-turbo,10,1,0,0.0
+one_shot,rule,GPT-3.5-turbo,11,16,2,0.125
+one_shot,rule,GPT-3.5-turbo,12,16,4,0.25
+one_shot,rule,GPT-3.5-turbo,13,7,2,0.2857
+one_shot,rule,GPT-3.5-turbo,14,3,1,0.3333
+one_shot,rule,GPT-3.5-turbo,15,5,1,0.2
+one_shot,rule,GPT-3.5-turbo,16,8,1,0.125
+one_shot,rule,GPT-3.5-turbo,17,15,4,0.2667
+one_shot,rule,GPT-3.5-turbo,18,18,3,0.1667
+one_shot,rule,GPT-3.5-turbo,19,7,1,0.1429
+one_shot,rule,GPT-3.5-turbo,20,8,2,0.25
+one_shot,rule,GPT-3.5-turbo,21,4,0,0.0
+one_shot,rule,GPT-3.5-turbo,22,1,0,0.0
+one_shot,rule,GPT-3.5-turbo,24,1,0,0.0
+one_shot,rule,GPT-3.5-turbo,29,1,0,0.0
+one_shot,rule,GPT-3.5-turbo,31,4,0,0.0

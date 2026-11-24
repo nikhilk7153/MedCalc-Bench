@@ -1,0 +1,233 @@
+Row Number,Spreadsheet line,Calculator,As written,Should read
+1,2,Creatinine Clearance (Cockcroft-Gault Equation),4.2 × 109/L,4.2 × 10⁹/L
+1,2,Creatinine Clearance (Cockcroft-Gault Equation),106 × 109/L,106 × 10⁹/L
+3,4,Creatinine Clearance (Cockcroft-Gault Equation),"1,097 ×109/L","1,097 × 10⁹/L"
+7,8,Creatinine Clearance (Cockcroft-Gault Equation),3.4 × 106/mm3,3.4 × 10⁶/mm3
+10,11,Creatinine Clearance (Cockcroft-Gault Equation),27.4 × 104/μL,27.4 × 10⁴/μL
+21,22,CKD-EPI Equations for Glomerular Filtration Rate,4.61 × 10 12/L,4.61 × 10¹²/L
+21,22,CKD-EPI Equations for Glomerular Filtration Rate,10.04 × 10 9/L,10.04 × 10⁹/L
+21,22,CKD-EPI Equations for Glomerular Filtration Rate,180 × 10 12/L,180 × 10¹²/L
+22,23,CKD-EPI Equations for Glomerular Filtration Rate,246 × 109/L,246 × 10⁹/L
+22,23,CKD-EPI Equations for Glomerular Filtration Rate,63 × 109/L,63 × 10⁹/L
+22,23,CKD-EPI Equations for Glomerular Filtration Rate,36 × 109/L,36 × 10⁹/L
+25,26,CKD-EPI Equations for Glomerular Filtration Rate,4.8 × 109/L,4.8 × 10⁹/L
+25,26,CKD-EPI Equations for Glomerular Filtration Rate,218 × 109/L,218 × 10⁹/L
+25,26,CKD-EPI Equations for Glomerular Filtration Rate,1.25 × 109/L,1.25 × 10⁹/L
+25,26,CKD-EPI Equations for Glomerular Filtration Rate,13 × 109/L,13 × 10⁹/L
+25,26,CKD-EPI Equations for Glomerular Filtration Rate,0.01 × 109/L,0.01 × 10⁹/L
+36,37,CKD-EPI Equations for Glomerular Filtration Rate,13.32 × 109/L,13.32 × 10⁹/L
+36,37,CKD-EPI Equations for Glomerular Filtration Rate,12.36 × 109/L,12.36 × 10⁹/L
+40,41,CKD-EPI Equations for Glomerular Filtration Rate,3.02 × 109/L,3.02 × 10⁹/L
+40,41,CKD-EPI Equations for Glomerular Filtration Rate,2.3 × 109/L,2.3 × 10⁹/L
+40,41,CKD-EPI Equations for Glomerular Filtration Rate,0.5 × 109/L,0.5 × 10⁹/L
+40,41,CKD-EPI Equations for Glomerular Filtration Rate,39 × 109/L,39 × 10⁹/L
+44,45,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,13.9 × 109/L,13.9 × 10⁹/L
+44,45,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,11 × 109/L,11 × 10⁹/L
+44,45,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,147 × 109/L,147 × 10⁹/L
+44,45,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,400 × 109/L,400 × 10⁹/L
+47,48,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,33 × 109/L,33 × 10⁹/L
+73,74,Mean Arterial Pressure (MAP),9.54 × 109/L,9.54 × 10⁹/L
+73,74,Mean Arterial Pressure (MAP),232 × 109/L,232 × 10⁹/L
+98,99,Body Mass Index (BMI),1.51 × 109/L,1.51 × 10⁹/L
+98,99,Body Mass Index (BMI),2.21 × 1012/L,2.21 × 10¹²/L
+98,99,Body Mass Index (BMI),56 × 109/L,56 × 10⁹/L
+100,101,Body Mass Index (BMI),7.8×103/µL,7.8 × 10³/µL
+100,101,Body Mass Index (BMI),252×103/µL,252 × 10³/µL
+103,104,Calcium Correction for Hypoalbuminemia,132 × 109/L,132 × 10⁹/L
+108,109,Calcium Correction for Hypoalbuminemia,10.8 × 103/UL,10.8 × 10³/UL
+108,109,Calcium Correction for Hypoalbuminemia,7.0 × 103/UL,7.0 × 10³/UL
+108,109,Calcium Correction for Hypoalbuminemia,450 × 103/UL,450 × 10³/UL
+134,135,Wells' Criteria for Pulmonary Embolism,5.8 ×106/µL,5.8 × 10⁶/µL
+134,135,Wells' Criteria for Pulmonary Embolism,4.02 × 106/µL,4.02 × 10⁶/µL
+134,135,Wells' Criteria for Pulmonary Embolism,171 × 106/µL,171 × 10⁶/µL
+135,136,Wells' Criteria for Pulmonary Embolism,2.2 x 103/µL,2.2 × 10³/µL
+140,141,Wells' Criteria for Pulmonary Embolism,11.0 × 103/mm3,11.0 × 10³/mm3
+147,148,MDRD GFR Equation,5.06 × 109/L,5.06 × 10⁹/L
+147,148,MDRD GFR Equation,126 × 109/L,126 × 10⁹/L
+155,156,MDRD GFR Equation,5.65 × 103/μl,5.65 × 10³/μl
+157,158,MDRD GFR Equation,14.5 × 103/μL,14.5 × 10³/μL
+177,178,Ideal Body Weight,10.54 × 109/L,10.54 × 10⁹/L
+222,223,Wells' Criteria for DVT,17.4 × 109/L,17.4 × 10⁹/L
+233,234,Wells' Criteria for DVT,5.6 × 104/μL,5.6 × 10⁴/μL
+233,234,Wells' Criteria for DVT,11.1 × 104/μL,11.1 × 10⁴/μL
+235,236,Wells' Criteria for DVT,12.3 × 109/L,12.3 × 10⁹/L
+265,266,HEART Score for Major Cardiac Events,33 x 103/mm3,33 × 10³/mm3
+265,266,HEART Score for Major Cardiac Events,366 x 103/mm3,366 × 10³/mm3
+282,283,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,16.5 × 104/µL,16.5 × 10⁴/µL
+288,289,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,283 × 103/µL,283 × 10³/µL
+296,297,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,252×103/µL,252 × 10³/µL
+299,300,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,4.3X109/L,4.3 × 10⁹/L
+299,300,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,147X109/L,147 × 10⁹/L
+302,303,Centor Score (Modified/McIsaac) for Strep Pharyngitis,7 × 109/L,7 × 10⁹/L
+302,303,Centor Score (Modified/McIsaac) for Strep Pharyngitis,353 × 109/L,353 × 10⁹/L
+320,321,Centor Score (Modified/McIsaac) for Strep Pharyngitis,38.3 × 104/mm3,38.3 × 10⁴/mm3
+320,321,Centor Score (Modified/McIsaac) for Strep Pharyngitis,40.8 × 104/mm3,40.8 × 10⁴/mm3
+320,321,Centor Score (Modified/McIsaac) for Strep Pharyngitis,38.0 × 104/mm3,38.0 × 10⁴/mm3
+322,323,Maintenance Fluids Calculations,125 × 109/L,125 × 10⁹/L
+322,323,Maintenance Fluids Calculations,445.000 × 109/L,445.000 × 10⁹/L
+322,323,Maintenance Fluids Calculations,2.600 × 109/L,2.600 × 10⁹/L
+322,323,Maintenance Fluids Calculations,800 × 109/L,800 × 10⁹/L
+322,323,Maintenance Fluids Calculations,32.000 × 109/L,32.000 × 10⁹/L
+322,323,Maintenance Fluids Calculations,"1,358 × 109/L","1,358 × 10⁹/L"
+322,323,Maintenance Fluids Calculations,"1,119 × 109/L","1,119 × 10⁹/L"
+322,323,Maintenance Fluids Calculations,"2,017 × 109/L","2,017 × 10⁹/L"
+322,323,Maintenance Fluids Calculations,487 × 109/L,487 × 10⁹/L
+322,323,Maintenance Fluids Calculations,2 × 109/L,2 × 10⁹/L
+370,371,Sodium Correction for Hyperglycemia,13.150×109/L,13.150 × 10⁹/L
+370,371,Sodium Correction for Hyperglycemia,507×109/L,507 × 10⁹/L
+379,380,Sodium Correction for Hyperglycemia,11.0 × 103/μL,11.0 × 10³/μL
+379,380,Sodium Correction for Hyperglycemia,400 × 103/μL,400 × 10³/μL
+380,381,Sodium Correction for Hyperglycemia,14.6×109 /L,14.6 × 10⁹/L
+380,381,Sodium Correction for Hyperglycemia,25×109 /L,25 × 10⁹/L
+382,383,Sodium Correction for Hyperglycemia,400 × 103/μL,400 × 10³/μL
+384,385,Sodium Correction for Hyperglycemia,7.4 × 109/L,7.4 × 10⁹/L
+417,418,Serum Osmolality,12.8 × 109/L,12.8 × 10⁹/L
+417,418,Serum Osmolality,10 × 109/L,10 × 10⁹/L
+417,418,Serum Osmolality,181 × 109/L,181 × 10⁹/L
+417,418,Serum Osmolality,300 × 109/L,300 × 10⁹/L
+417,418,Serum Osmolality,243 × 109/L,243 × 10⁹/L
+421,422,Serum Osmolality,7.8×103/µL,7.8 × 10³/µL
+421,422,Serum Osmolality,252×103/µL,252 × 10³/µL
+423,424,Serum Osmolality,12 × 109/L,12 × 10⁹/L
+423,424,Serum Osmolality,11.0 × 109/L,11.0 × 10⁹/L
+423,424,Serum Osmolality,62 × 103/μL,62 × 10³/μL
+423,424,Serum Osmolality,400 × 103/μL,400 × 10³/μL
+453,454,FeverPAIN Score for Strep Pharyngitis,14.2 × 103/µL,14.2 × 10³/µL
+453,454,FeverPAIN Score for Strep Pharyngitis,14.2 × 109/L,14.2 × 10⁹/L
+453,454,FeverPAIN Score for Strep Pharyngitis,208 × 103/µL,208 × 10³/µL
+453,454,FeverPAIN Score for Strep Pharyngitis,208 × 109/L,208 × 10⁹/L
+457,458,FeverPAIN Score for Strep Pharyngitis,3.3 × 109/L,3.3 × 10⁹/L
+457,458,FeverPAIN Score for Strep Pharyngitis,0.75 × 109/L,0.75 × 10⁹/L
+466,467,FeverPAIN Score for Strep Pharyngitis,7 × 103/µL,7 × 10³/µL
+479,480,Free Water Deficit,12.6 × 109/l,12.6 × 10⁹/l
+481,482,Free Water Deficit,107 × 109/L,107 × 10⁹/L
+483,484,Free Water Deficit,5.25 × 103/μL,5.25 × 10³/μL
+483,484,Free Water Deficit,156 × 103/μL,156 × 10³/μL
+484,485,Free Water Deficit,476 × 104 /μL,476 × 10⁴/μL
+484,485,Free Water Deficit,26.5 × 104 /μL,26.5 × 10⁴/μL
+489,490,Anion Gap,14 × 109/L,14 × 10⁹/L
+489,490,Anion Gap,11 × 109/L,11 × 10⁹/L
+490,491,Anion Gap,8.1 × 103/µL,8.1 × 10³/µL
+490,491,Anion Gap,172 × 103/µL,172 × 10³/µL
+537,538,CURB-65 Score for Pneumonia Severity,3.4 × 10 9/L,3.4 × 10⁹/L
+537,538,CURB-65 Score for Pneumonia Severity,11.0 × 109/L,11.0 × 10⁹/L
+537,538,CURB-65 Score for Pneumonia Severity,2.43 × 10 9/L,2.43 × 10⁹/L
+537,538,CURB-65 Score for Pneumonia Severity,0.82 × 10 9/L,0.82 × 10⁹/L
+541,542,CURB-65 Score for Pneumonia Severity,12.8 × 109/L,12.8 × 10⁹/L
+541,542,CURB-65 Score for Pneumonia Severity,10 × 109/L,10 × 10⁹/L
+541,542,CURB-65 Score for Pneumonia Severity,181 × 109/L,181 × 10⁹/L
+541,542,CURB-65 Score for Pneumonia Severity,300 × 109/L,300 × 10⁹/L
+541,542,CURB-65 Score for Pneumonia Severity,243 × 109/L,243 × 10⁹/L
+544,545,CURB-65 Score for Pneumonia Severity,12.5 × 109/L,12.5 × 10⁹/L
+544,545,CURB-65 Score for Pneumonia Severity,388 × 109/L,388 × 10⁹/L
+570,571,PERC Rule for Pulmonary Embolism,0.5×106/L,0.5 × 10⁶/L
+570,571,PERC Rule for Pulmonary Embolism,9×106/L,9 × 10⁶/L
+575,576,PERC Rule for Pulmonary Embolism,400 × 109/L,400 × 10⁹/L
+579,580,PERC Rule for Pulmonary Embolism,25.73 × 109/L,25.73 × 10⁹/L
+590,591,SIRS Criteria,419 × 104/mm3,419 × 10⁴/mm3
+590,591,SIRS Criteria,16.8 × 104/mm3,16.8 × 10⁴/mm3
+592,593,SIRS Criteria,10.78 × 103/μl,10.78 × 10³/μl
+592,593,SIRS Criteria,6.22 × 103/μl,6.22 × 10³/μl
+592,593,SIRS Criteria,174 × 103/μl,174 × 10³/μl
+593,594,SIRS Criteria,9.44 x 109/L,9.44 × 10⁹/L
+593,594,SIRS Criteria,54 x 109/L,54 × 10⁹/L
+606,607,SIRS Criteria,12.3 x 103/µL,12.3 × 10³/µL
+701,702,Body Surface Area Calculator,1 × 103/μL,1 × 10³/μL
+701,702,Body Surface Area Calculator,8.5 × 103/μL,8.5 × 10³/μL
+701,702,Body Surface Area Calculator,10 × 103/μL,10 × 10³/μL
+701,702,Body Surface Area Calculator,13.6 × 103/μL,13.6 × 10³/μL
+701,702,Body Surface Area Calculator,30 × 103/μL,30 × 10³/μL
+701,702,Body Surface Area Calculator,22 × 103/μL,22 × 10³/μL
+701,702,Body Surface Area Calculator,204 × 103/μL,204 × 10³/μL
+701,702,Body Surface Area Calculator,75 × 103/μL,75 × 10³/μL
+709,710,Adjusted Body Weight,9.0 × 109/L,9.0 × 10⁹/L
+709,710,Adjusted Body Weight,1.4 × 109/L,1.4 × 10⁹/L
+709,710,Adjusted Body Weight,261 × 109/L,261 × 10⁹/L
+709,710,Adjusted Body Weight,10.8 × 109/L,10.8 × 10⁹/L
+709,710,Adjusted Body Weight,307 × 109/L,307 × 10⁹/L
+723,724,Adjusted Body Weight,8.0 × 104/μl,8.0 × 10⁴/μl
+723,724,Adjusted Body Weight,6.8 × 104/μl,6.8 × 10⁴/μl
+723,724,Adjusted Body Weight,0.8 × 104/μl,0.8 × 10⁴/μl
+723,724,Adjusted Body Weight,3.14 × 106/μl,3.14 × 10⁶/μl
+723,724,Adjusted Body Weight,1.1 × 104/μl,1.1 × 10⁴/μl
+723,724,Adjusted Body Weight,1.0 × 104/μl,1.0 × 10⁴/μl
+723,724,Adjusted Body Weight,10 × 104/μl,10 × 10⁴/μl
+730,731,Delta Gap,11.0 × 103/μL,11.0 × 10³/μL
+730,731,Delta Gap,286 × 103 /μL,286 × 10³/μL
+731,732,Delta Gap,5.15 x 106/mm3,5.15 × 10⁶/mm3
+734,735,Delta Gap,223 × 103/μL,223 × 10³/μL
+741,742,Delta Gap,1.35 × 109/l,1.35 × 10⁹/l
+741,742,Delta Gap,99 × 109/l,99 × 10⁹/l
+741,742,Delta Gap,0.1 × 109/l,0.1 × 10⁹/l
+741,742,Delta Gap,7.13 × 109/l,7.13 × 10⁹/l
+741,742,Delta Gap,216 × 109/l,216 × 10⁹/l
+741,742,Delta Gap,0.1 × 109/l,0.1 × 10⁹/l
+757,758,Delta Ratio,3.4 × 109/L,3.4 × 10⁹/L
+757,758,Delta Ratio,322 × 109/L,322 × 10⁹/L
+761,762,Delta Ratio,5.3 × 109/L,5.3 × 10⁹/L
+761,762,Delta Ratio,273 × 109/L,273 × 10⁹/L
+766,767,Delta Ratio,1.35 × 109/l,1.35 × 10⁹/l
+766,767,Delta Ratio,99 × 109/l,99 × 10⁹/l
+766,767,Delta Ratio,0.1 × 109/l,0.1 × 10⁹/l
+766,767,Delta Ratio,7.13 × 109/l,7.13 × 10⁹/l
+766,767,Delta Ratio,216 × 109/l,216 × 10⁹/l
+766,767,Delta Ratio,0.1 × 109/l,0.1 × 10⁹/l
+771,772,Albumin Corrected Anion Gap,9.46 × 109 /L,9.46 × 10⁹/L
+771,772,Albumin Corrected Anion Gap,234 × 109 /L,234 × 10⁹/L
+773,774,Albumin Corrected Anion Gap,9.8 × 103/μL,9.8 × 10³/μL
+773,774,Albumin Corrected Anion Gap,7.7 × 103/UL,7.7 × 10³/UL
+773,774,Albumin Corrected Anion Gap,0.9 × 103/UL,0.9 × 10³/UL
+778,779,Albumin Corrected Anion Gap,3.97 × 109 /L,3.97 × 10⁹/L
+778,779,Albumin Corrected Anion Gap,239 × 109 /L,239 × 10⁹/L
+779,780,Albumin Corrected Anion Gap,220 × 103/uL,220 × 10³/uL
+781,782,Albumin Corrected Anion Gap,11 × 103/uL,11 × 10³/uL
+781,782,Albumin Corrected Anion Gap,11.0 × 103/uL,11.0 × 10³/uL
+784,785,Albumin Corrected Anion Gap,9.13 × 109/L,9.13 × 10⁹/L
+784,785,Albumin Corrected Anion Gap,12 × 109/L,12 × 10⁹/L
+784,785,Albumin Corrected Anion Gap,23 × 109/L,23 × 10⁹/L
+784,785,Albumin Corrected Anion Gap,400 × 109/L,400 × 10⁹/L
+784,785,Albumin Corrected Anion Gap,169 × 109/L,169 × 10⁹/L
+784,785,Albumin Corrected Anion Gap,543 × 109/L,543 × 10⁹/L
+784,785,Albumin Corrected Anion Gap,494 × 109/L,494 × 10⁹/L
+785,786,Albumin Corrected Anion Gap,3.87 x 106/ul,3.87 × 10⁶/ul
+790,791,Albumin Corrected Delta Gap,9.13 × 109/L,9.13 × 10⁹/L
+790,791,Albumin Corrected Delta Gap,12 × 109/L,12 × 10⁹/L
+790,791,Albumin Corrected Delta Gap,23 × 109/L,23 × 10⁹/L
+790,791,Albumin Corrected Delta Gap,400 × 109/L,400 × 10⁹/L
+790,791,Albumin Corrected Delta Gap,169 × 109/L,169 × 10⁹/L
+790,791,Albumin Corrected Delta Gap,543 × 109/L,543 × 10⁹/L
+790,791,Albumin Corrected Delta Gap,494 × 109/L,494 × 10⁹/L
+792,793,Albumin Corrected Delta Gap,6.1 × 103/μl,6.1 × 10³/μl
+792,793,Albumin Corrected Delta Gap,433 × 103/μl,433 × 10³/μl
+797,798,Albumin Corrected Delta Gap,25.9 × 109/L,25.9 × 10⁹/L
+797,798,Albumin Corrected Delta Gap,386 × 109/L,386 × 10⁹/L
+798,799,Albumin Corrected Delta Gap,5.1 × 103/µL,5.1 × 10³/µL
+798,799,Albumin Corrected Delta Gap,276 × 103/µL,276 × 10³/µL
+799,800,Albumin Corrected Delta Gap,7.2 ×109/L,7.2 × 10⁹/L
+799,800,Albumin Corrected Delta Gap,99 × 109/L,99 × 10⁹/L
+803,804,Albumin Corrected Delta Gap,11 × 103/uL,11 × 10³/uL
+803,804,Albumin Corrected Delta Gap,11.0 × 103/uL,11.0 × 10³/uL
+808,809,Albumin Corrected Delta Gap,11.48 × 109/L,11.48 × 10⁹/L
+808,809,Albumin Corrected Delta Gap,13 × 109/L,13 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,34.85×109/L,34.85 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,294×109/L,294 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,34.85×109/L,34.85 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,10.67×109/L,10.67 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,31.98×109/L,31.98 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,14.99×109/L,14.99 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,546 ×109/L,546 × 10⁹/L
+809,810,Albumin Corrected Delta Ratio,450×109/L,450 × 10⁹/L
+820,821,Albumin Corrected Delta Ratio,5.1 × 103/µL,5.1 × 10³/µL
+820,821,Albumin Corrected Delta Ratio,276 × 103/µL,276 × 10³/µL
+821,822,Albumin Corrected Delta Ratio,37.4×109/L,37.4 × 10⁹/L
+821,822,Albumin Corrected Delta Ratio,494×109/L,494 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,9.13 × 109/L,9.13 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,12 × 109/L,12 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,23 × 109/L,23 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,400 × 109/L,400 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,169 × 109/L,169 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,543 × 109/L,543 × 10⁹/L
+824,825,Albumin Corrected Delta Ratio,494 × 109/L,494 × 10⁹/L
+828,829,Albumin Corrected Delta Ratio,10.8 × 103/UL,10.8 × 10³/UL
+828,829,Albumin Corrected Delta Ratio,7.0 × 103/UL,7.0 × 10³/UL
+828,829,Albumin Corrected Delta Ratio,450 × 103/UL,450 × 10³/UL
