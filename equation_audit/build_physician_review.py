@@ -6,7 +6,7 @@ Run: python3 equation_audit/build_physician_review.py <labels-before-corrections
 Writes dataset/physician_review.csv. Groups, in review order:
   1 Rule: one decision covers several rows      2 Case: individual clinical reading
   3 Mechanical: extraction contradicts the note (confirm)      4 Kept: judgment calls left unchanged
-"Label If Rejected" re-scores the row with that row's changes reverted (calculator code in medcalc_verified_code).
+"Label If Rejected" re-scores the row with that row's changes reverted (calculator code in medcalc_verified_code_snapshot).
 """
 import ast
 import glob
@@ -20,7 +20,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT.parent / 'dataset'
-IMPL = ROOT.parent / 'medcalc_verified_code/calculator_implementations'
+IMPL = ROOT.parent / 'medcalc_verified_code_snapshot/calculator_implementations'
 sys.path.insert(0, str(IMPL))
 from rounding import round_number  # noqa: E402
 

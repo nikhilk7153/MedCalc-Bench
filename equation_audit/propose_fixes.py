@@ -17,7 +17,7 @@ import pandas as pd
 import run_gpt6_astra as audit
 
 ROOT = Path(__file__).resolve().parent
-IMPLEMENTATIONS = Path(os.environ.get('MEDCALC_IMPL', ROOT.parent / 'medcalc_verified_code/calculator_implementations'))
+IMPLEMENTATIONS = Path(os.environ.get('MEDCALC_IMPL', ROOT.parent / 'medcalc_verified_code_snapshot/calculator_implementations'))
 META_KEYS = {'file path', 'explanation function', 'calculator name', 'type', 'question'}
 
 PROMPT = """You are correcting the extracted inputs of one example in a medical calculation benchmark. The final answer is

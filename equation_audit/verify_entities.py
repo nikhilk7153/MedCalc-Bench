@@ -3,7 +3,7 @@
 Run: OPENAI_API_KEY=... python3 equation_audit/verify_entities.py <csv> <tag>
 Labels are computed from the entities by the calculator code, so this checks extraction only, not the label.
 The model gets the note, question, extracted entities and the calculator's full entity list (name_to_python.json,
-$MEDCALC_IMPL or medcalc_verified_code/calculator_implementations). Template rows are skipped.
+$MEDCALC_IMPL or medcalc_verified_code_snapshot/calculator_implementations). Template rows are skipped.
 Writes entities_<tag>.jsonl and entities_<tag>.csv in equation_audit/. Reruns resume from the JSONL.
 AUDIT_ADMISSION=1 enforces admission/initial-presentation values before any treatment, whatever the question says.
 """
@@ -17,7 +17,7 @@ import pandas as pd
 import run_gpt6_astra as audit
 
 ROOT = Path(__file__).resolve().parent
-IMPLEMENTATIONS = Path(os.environ.get('MEDCALC_IMPL', Path(__file__).resolve().parent.parent / 'medcalc_verified_code/calculator_implementations'))
+IMPLEMENTATIONS = Path(os.environ.get('MEDCALC_IMPL', Path(__file__).resolve().parent.parent / 'medcalc_verified_code_snapshot/calculator_implementations'))
 META_KEYS = {'file path', 'explanation function', 'calculator name', 'type', 'question'}
 
 PROMPT = """You are checking the extracted inputs for one example of a medical calculation benchmark.

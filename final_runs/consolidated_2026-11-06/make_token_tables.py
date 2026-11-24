@@ -39,7 +39,7 @@ STYLES = [("direct_answer", "Number of tokens used for zero-shot direct promptin
 # test set and one-shot file each source run used (md5s in the runs' manifests)
 AS_RUN_TEST = f"{ROOT}/extra_runs/gpt-4o-2024-08-06_benchmark_2026-10-24/input/test_data_10_22_as_run.csv"
 SOURCES = {
-    "final_runs/test_data_10_22": (AS_RUN_TEST, f"{ROOT}/gpu_backup_2026-10-22/medcalc/final_files_2026-10-16/one_shot_10_17_2026.json"),
+    "final_runs/test_data_10_22": (AS_RUN_TEST, f"{ROOT}/extra_runs/gpt-4o-2024-08-06_benchmark_2026-10-24/input/one_shot_10_17_2026_as_run.json"),
     "corrected_rows_ckdepi_rerun_2026-10-22": (AS_RUN_TEST, f"{ROOT}/extra_runs/corrected_rows_ckdepi_rerun_2026-10-22/input/one_shot_10_17_2026_corrected.json"),
     "mdrd_sodium_wording_rerun_2026-10-22": (f"{ROOT}/dataset/test_data_10_22.csv", f"{ROOT}/extra_runs/mdrd_sodium_wording_rerun_2026-10-22/input/one_shot_10_17_2026_corrected.json"),
     "astra_corrections_rerun_2026-10-22": (variant.ASTRA_TEST, f"{variant.ASTRA_RUN}/input/one_shot_10_17_2026_corrected.json"),

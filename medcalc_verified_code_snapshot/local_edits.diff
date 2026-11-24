@@ -1,0 +1,44 @@
+diff --git a/calculator_implementations/name_to_python.json b/calculator_implementations/name_to_python.json
+index 3ca9416..432a209 100644
+--- a/calculator_implementations/name_to_python.json
++++ b/calculator_implementations/name_to_python.json
+@@ -53,7 +53,7 @@
+         "explanation function": "bmi_calculator_explanation",
+         "calculator name": "Body Mass Index (BMI)",
+         "type": "physical",
+-        "question": "What is the patient's body mass mass index (BMI)? Your answer should be in terms of kg/m²."
++        "question": "What is the patient's body mass index (BMI)? Your answer should be in terms of kg/m²."
+     },
+     "7": {
+         "Calcium": "calcium",
+@@ -117,7 +117,7 @@
+         "explanation function": "add_40_weeks_explanation",
+         "calculator name": "Estimated Due Date",
+         "type": "date",
+-        "question": "Using Naegele's Rule for estimated due date based on the last menstrual period and cycle length, what is the the patient's estimated due date? Your response should be in the format of M/D/Y (ie 08/31/2023, 07/03/2000) with just the date and no other text."
++        "question": "Using Naegele's Rule for estimated due date based on the last menstrual period and cycle length, what is the patient's estimated due date? Your response should be in the format of M/D/Y (ie 08/31/2023, 07/03/2000) with just the date and no other text."
+     },
+     "15": {
+         "international normalized ratio": "inr",
+@@ -685,7 +685,7 @@
+         "explanation function": "add_2_weeks_explanation",
+         "calculator name": "Estimated Date of Conception",
+         "type": "date",
+-        "question": "Based on the patient's last menstrual period, what is the the patient's estimated date of conception? Your answer should be in the format of M/D/Y (ie 08/31/2023, 07/03/2000) with just the date and not other text."
++        "question": "Based on the patient's last menstrual period, what is the patient's estimated date of conception? Your answer should be in the format of M/D/Y (ie 08/31/2023, 07/03/2000) with just the date and not other text."
+     },
+     "69": {
+         "Current Date": "current_date",
+diff --git a/calculator_implementations/sOsm.py b/calculator_implementations/sOsm.py
+index f327c13..34dd040 100644
+--- a/calculator_implementations/sOsm.py
++++ b/calculator_implementations/sOsm.py
+@@ -16,7 +16,7 @@ def compute_serum_osmolality_explanation(input_parameters):
+ 
+     serum_os = round_number(2 * sodium + (bun / 2.8) + (glucose / 18))
+ 
+-    explanation += f"Plugging these values into the equation, we get 2 * {sodium} + ({bun} / 2.8) + ({bun} / 18) = {serum_os} mmol/L."
++    explanation += f"Plugging these values into the equation, we get 2 * {sodium} + ({bun} / 2.8) + ({glucose} / 18) = {serum_os} mmol/L."
+     explanation += f"The patient's calculated serum osmolality concentration is {serum_os} mmol/L. This is equalivalent to {serum_os} mOsm/kg."
+ 
+     return {"Explanation": explanation, "Answer": serum_os}
