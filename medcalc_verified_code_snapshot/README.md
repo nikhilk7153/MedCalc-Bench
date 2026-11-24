@@ -7,7 +7,8 @@ uncommitted edits, saved in `local_edits.diff`:
 - `sOsm.py`: the explanation text showed BUN where glucose belongs in "(glucose / 18)" (the computed value was right);
 - `name_to_python.json`: three question typos ("body mass mass index", "the the" twice).
 
-That branch is not on GitHub, so this copy is the only one outside the original computer. It is read by
+That branch is not in the public MedCalc-Bench-Verified repository; it and `fix/one-shot-anion-gap-chloride` are kept in
+the authors' private repository `nikhilk7153/medcalc-bench-private` (2026-11-24). It is read by
 `equation_audit/verify_entities.py`, `propose_fixes.py` and `build_physician_review.py` (`$MEDCALC_IMPL` overrides it).
 The paper's labels do not depend on it: they come from `calculator_implementations_verified/` (the same commit with
 the criteria lists removed from the explanations, as in v1.0), via `equation_audit/run_generate_csv.py`.
